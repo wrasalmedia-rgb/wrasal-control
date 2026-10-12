@@ -1,4 +1,4 @@
-# wrasal-control-
+# wrasal-control
 
 WRASAL portfolio-control repository.
 
