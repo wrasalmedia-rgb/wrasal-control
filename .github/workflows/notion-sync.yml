@@ -1,0 +1,76 @@
+name: WRASAL Notion S2 Sync (guarded)
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/notion_work_queue_sync.rb'
+      - 'tests/notion_work_queue_sync_test.rb'
+      - '.github/workflows/notion-sync.yml'
+  workflow_dispatch:
+    inputs:
+      apply:
+        type: boolean
+        description: 'Apply one-way Notion mirror writes; requires protected environment and secrets'
+        default: false
+        required: true
+      adopt_manual:
+        type: boolean
+        description: 'Allow explicitly reviewed one-time manual snapshot adoption'
+        default: false
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: ruby/setup-ruby@824c0e29fdfc7d689c191c27acc969d2d04b7dd8
+        with:
+          ruby-version: '3.3'
+      - name: Run Ruby source and fake-client verification
+        run: |
+          ruby -c scripts/notion_work_queue_sync.rb
+          ruby tests/notion_work_queue_sync_test.rb
+          ruby scripts/notion_work_queue_sync.rb --dry-run > /tmp/wrasal-notion-projection.json
+          ruby -rjson -e 'r = JSON.parse(File.read(ARGV.fetch(0))); abort "bad dry run" unless r.fetch("mode") == "DRY RUN" && r.fetch("count") > 0' /tmp/wrasal-notion-projection.json
+
+  # No secrets available to PR builds. Apply requires a separately reviewed
+  # merge to main, an explicit dispatch, a protected environment approval,
+  # and a distinct opt-in secret. No periodic schedule is configured.
+  apply:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.apply == true && github.ref == 'refs/heads/main' }}
+    needs: test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    environment: notion-sync
+    concurrency:
+      group: wrasal-notion-sync
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@824c0e29fdfc7d689c191c27acc969d2d04b7dd8
+        with:
+          ruby-version: '3.3'
+      - name: Fail closed without authorization, then project Git source to Notion
+        env:
+          NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+          WRASAL_NOTION_APPLY: ${{ secrets.WRASAL_NOTION_APPLY }}
+          NOTION_DATA_SOURCE_ID: bb6c034c-1032-8388-b290-871e298c82dd
+          ADOPT_MANUAL: ${{ inputs.adopt_manual }}
+        run: |
+          set -eu
+          if [ "$WRASAL_NOTION_APPLY" != 'EXPLICITLY_AUTHORIZED' ] || [ -z "$NOTION_API_TOKEN" ]; then
+            echo 'BLOCKED: Notion write authorization or credentials not provisioned.' >&2
+            exit 1
+          fi
+          args=(--apply)
+          if [ "$ADOPT_MANUAL" = 'true' ]; then
+            args+=(--adopt-verified-manual-snapshot)
+          fi
+          ruby scripts/notion_work_queue_sync.rb "${args[@]}"
