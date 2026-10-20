@@ -151,7 +151,7 @@ class NotionSyncTest < Minitest::Test
   def test_destination_allowlist_and_write_retry_policy
     assert_raises(Blocked) { Client.new(token: 'redacted', data_source_id: 'another') }
     attempts = 0
-    c = Client.new(token: 'redacted', data_source_id: WRASAL::NotionWorkQueue::DATA_SOURCE_ID,
+    c = Client.new(token: 'redacted', data_source_id: 'bb6c034c-1032-8388-b290-871e298c82dd',
                    transport: ->(_method, _path, _body) { attempts += 1; { code: 429, body: '{}' } })
     assert_raises(Blocked) { c.create({}) }
     assert_equal 1, attempts
