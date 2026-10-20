@@ -61,7 +61,7 @@ jobs:
         env:
           NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
           WRASAL_NOTION_APPLY: ${{ secrets.WRASAL_NOTION_APPLY }}
-          NOTION_DATA_SOURCE_ID: bb6c034c-1032-8388-b290-871e298c82dd
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
           ADOPT_MANUAL: ${{ inputs.adopt_manual }}
         run: |
           set -eu
