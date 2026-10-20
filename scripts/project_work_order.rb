@@ -34,18 +34,9 @@ module WRASAL
       raise InvalidSource, 'references must be an object' unless document['references'].is_a?(Hash)
       raise InvalidSource, 'evidence must be an array' unless document['evidence'].is_a?(Array)
 
-      approved = document['canonical_acceptance'] == 'accepted' &&
-                 document['execution_status'] == 'passed' &&
-                 document['implementation_result'] == 'pass' &&
-                 document['verification_result'] == 'pass' &&
-                 populated?(document['references']['canonical_acceptance_record'])
-      status = if approved
-                 'Done'
-               elsif document['execution_status'] == 'requested'
-                 'Not started'
-               else
-                 'In progress'
-               end
+      # Fail closed: do not infer verified human approval from a source field.
+      # This projector NEVER marks an item Done.
+      status = document['execution_status'] == 'requested' ? 'Not started' : 'In progress'
       evidence = document['verification_result'] == 'pass' ? 'PARTIAL' : 'UNVERIFIED'
       gate = document['verification_result'] == 'pass' ? 'REVIEW' : 'VERIFY'
       gate = 'SCOPE' if document['execution_status'] == 'requested'
@@ -59,6 +50,9 @@ module WRASAL
           'Control Record URL' => source_url,
           'Control Execution' => document['execution_status'],
           'Control Acceptance' => document['canonical_acceptance'],
+          'Control Implementation' => document['implementation_result'],
+          'Control Verification' => document['verification_result'],
+          'Control Authority' => document['record_authority'],
           'Source Revision' => revision,
           'Projection Mode' => 'READ ONLY SNAPSHOT',
           'Evidence Status' => evidence,
