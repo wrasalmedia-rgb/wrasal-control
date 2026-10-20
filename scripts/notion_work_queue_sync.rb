@@ -12,7 +12,7 @@ module WRASAL
   module NotionWorkQueue
     class Blocked < StandardError; end
 
-    DATA_SOURCE_ID = 'bb6c034c-1032-8388-b290-871e298c82dd'
+    DATA_SOURCE_PATTERN = /\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/i
     REPOSITORY = 'wrasalmedia-rgb/wrasal-control'
     API_VERSION = '2025-09-03'
     MAX_RECORDS = 30
@@ -30,7 +30,7 @@ module WRASAL
     class NotionClient
       def initialize(token:, data_source_id:, transport: nil)
         raise Blocked, 'Notion token is missing' if token.to_s.empty?
-        raise Blocked, 'Invalid target data source' unless data_source_id == DATA_SOURCE_ID
+        raise Blocked, 'Invalid target data source' unless DATA_SOURCE_PATTERN.match?(data_source_id.to_s)
 
         @token, @transport = token, transport
         @root = URI('https://api.notion.com')
