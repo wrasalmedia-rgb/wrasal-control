@@ -1,0 +1,29 @@
+name: Ruby Work Order Projection
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/project_work_order.rb'
+      - 'tests/project_work_order_test.rb'
+      - 'docs/notion-work-queue-projection.md'
+      - '.github/workflows/notion-projection.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  projection-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout pinned revision
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Ruby 3.3
+        uses: ruby/setup-ruby@824c0e29fdfc7d689c191c27acc969d2d04b7dd8
+        with:
+          ruby-version: '3.3'
+      - name: Ruby syntax and fail-closed projection tests
+        run: |
+          ruby -c scripts/project_work_order.rb
+          ruby tests/project_work_order_test.rb
