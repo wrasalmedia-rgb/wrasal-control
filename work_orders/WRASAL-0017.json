@@ -1,0 +1,128 @@
+{
+    "work_order_id": "WRASAL-0017",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0017",
+    "recorded_on": "2026-10-25",
+    "recorded_by": "Arena external execution worker",
+    "objective": "M02 V1.1 bounded patch — align §5B, Example 5, KC26-27 to same statutory vs policy sequence per SSL 413 prior-approval prohibition and NYC ACS cause-report verification; keep execution vs scheduled re-verification separate; preserve V1 and provide diff. M03 V1 declustered revision — ensure characters have individual preferences/agency, language access/disability/respectful communication distinct with applicable sources, ask-vs-infer practice, every objective with teaching+practice+explanatory assessment.",
+    "success_condition": "M02 manuscript google_drive/M02-textbook-chapter-v1.txt patched V1 39148B md5 4acc0908 → V1.1 46866B md5 ef3a6043: §5B now separates statutory listed reporters (immediately report/cause report, no prior approval/notification condition per 413(1)(c), then immediately notify after per 413(1)(b), ensure filed Call I.D./named) from policy-only (handbook may require supervisor first) and splits imminent-risk supervisor rule as separate domain [M02-4][M02-8] vs child-abuse immediate-report [M02-5]; Example 5 and KC26 teach same sequence with statutory vs policy branches and NYC ACS ensure-report verification; KC27 distinct domain labeled with cross-reference to KC26; all headers/footers changed to Scheduled re-verification date Oct 24 2026 with execution 2026-10-23 EDT noted; M02 V1 preserved at evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt; diff evidence/M02-V1.1-bounded-corrections.diff 128 lines. M03 manuscript google_drive/M03-textbook-chapter-v1.txt revised V1 39609B md5 9fd2d7 → 52833B md5 39f5d87c: declustered Mx Rivera (removed cane, added self-filled preference agency), added Mr Jackson handwritten preference agency (62, retired housing advocate), Aisha participant-led labeling agency (17, peer volunteer), Ms Thompson separate mobility agency (68 cane knee surgery); §4 split into 4 names/pronouns (NYC CCHR [M03-2]) and 4B language access (Title VI/LEP.gov [M03-6]) distinct from §5 disability (ADA [M03-7]); every scenario now teaches ask-what-help-person-wants vs infer; Chapter Recap + KC31-38 enhanced to teaching+practice+explanatory answer per objective; headers/footers to Scheduled re-verification Oct 25 2026 with execution note; M03 V1 preserved at evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt; diff evidence/M03-V1-declustered-revision.diff 253 lines. Filenames 2026-10-24/25 clarified as scheduled dates not completed reviews in evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md. No Drive originals modified, no merge/deploy, canonical pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m02_v1_preserved": "evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39148 bytes md5 4acc0908650818122675602b00b126af (V1 before patch)",
+        "m02_v1_1": "google_drive/M02-textbook-chapter-v1.txt — 46866 bytes md5 ef3a604372374b0ed074b7e4719de348 V1.1 DRAFT Scheduled re-verification Oct 24 2026 execution 2026-10-23 EDT",
+        "m02_diff": "evidence/M02-V1.1-bounded-corrections.diff — 128 lines unified diff V1→V1.1 §5B Example5 KC26-27 headers/footers",
+        "m02_ssl_413": "SSL 413(1)(c) via nysenate.gov https://www.nysenate.gov/legislation/laws/SOS/413 — No prior approval/prior notification condition; 413(1)(b) immediately notify after report",
+        "m02_nyc_acs": "NYC ACS https://www.nyc.gov/site/acs/child-welfare/mandated-reporters.page — immediately make report or cause report (ensuring supervisor makes report), simply notifying supervisor not equivalent, must ensure filed Call I.D./named",
+        "m02_kc26_alignment": "KC26 now statutory vs policy branches, same sequence as §5B + Example 5: immediately report/cause report without prior approval then notify after + ensure filed",
+        "m02_kc27_distinct": "KC27 labeled imminent-risk different domain from KC26 child-abuse, cross-references KC26, teaches supervisor rule for safety [M02-4][M02-8] not for child abuse",
+        "m03_v1_preserved": "evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39609 bytes md5 9fd2d71536e338d5d555ed6967195cc1 (V1 before decluster)",
+        "m03_v1_revised": "google_drive/M03-textbook-chapter-v1.txt — 52833 bytes md5 39f5d87c42ca1d293171cb2d9e9615c1 V1 declustered Scheduled re-verification Oct 25 2026 execution 2026-10-23 EDT",
+        "m03_diff": "evidence/M03-V1-declustered-revision.diff — 253 lines unified diff V1→declustered revision",
+        "m03_agency": "Mx Rivera self-filled they/them + Spanish interpreter preference agency; Mr Jackson 62 handwritten ASL preference agency; Aisha 17 peer volunteer participant-led labeling agency; Ms Thompson 68 cane agency separate from Mx Rivera",
+        "m03_distinct_sources": "§4 names/pronouns NYC CCHR Gender Guidance [M03-2] vs §4B language access Title VI LEP.gov [M03-6] vs §5 disability ADA.gov [M03-7] — distinct explanations and sources",
+        "m03_ask_vs_infer": "All 5 Examples + §§3-5 + KCs teach ask what assistance person wants rather than infer from appearance/cane/hijab/accent/age; document stated preference",
+        "m03_objective_coverage": "8 objectives each with teaching (§§1-9) + practice (Examples 1-5) + explanatory KC answer (KC31-38 explain why correct and why others wrong, linking to teaching sources)",
+        "execution_vs_reverification": "evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md — execution all 2026-10-23 America/New_York EDT, scheduled re-verification M02 Oct24 M03 Oct25 prospective, filenames 2026-10-24/25 denote scheduled dates not completed reviews",
+        "prior_state": "M01 Review pending, M02 draft authored reporting-guidance patch pending, M03 V1 draft reported authored review pending, M04-M11 not established, canonical pending",
+        "updated_state": "M01 Review pending, M02 V1.1 patch reported applied pending review (bounded, V1 preserved+diff, alignment of §5B+Example5+KC26-27), M03 V1 declustered revision reported applied pending review (agency+distinct sources+ask vs infer+full objective coverage), M04-M11 not established, canonical pending",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0017-m02-v1-preserved-and-diff",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt 39148B md5 4acc0908 vs google_drive/M02-textbook-chapter-v1.txt 46866B md5 ef3a6043 + evidence/M02-V1.1-bounded-corrections.diff 128 lines",
+            "observed_result": "Verified M02 V1 preserved before patch at evidence/sources/ 39148B md5 4acc0908650818122675602b00b126af (same as f78d202 after nysenate/gift fix). V1.1 now 46866B md5 ef3a604372374b0ed074b7e4719de348. Diff 128 lines shows bounded changes only: headers/footers V1 DRAFT→V1.1 DRAFT Scheduled re-verification Oct24 2026 (execution 2026-10-23 EDT) + §5B split into statutory (listed 413(1)(a), no prior approval/notification 413(1)(c), then immediately notify after 413(1)(b)) vs policy-only vs imminent-risk separate domain + Example5 statutory vs policy branches with ensure-filed Call I.D. + Chapter Recap same + KC26 statutory/policy immediate-report vs policy handbook then notify after + KC27 distinct domain label + Reviewer Notes expanded + References M02-5 extended with NYC ACS + execution footnote. No other manuscripts modified in diff.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m02-section5b-example5-kc26-27-alignment",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt §5B lines ~86-92, Example 5 ~172, KC26 ~233, KC27 ~242 + SSL 413 via nysenate.gov + NYC ACS page",
+            "observed_result": "Verified §5B, Example 5, KC26, KC27 teach same sequence: Child-abuse statutory reporters listed in 413(1)(a) must immediately make/cause report to SCR when reasonable cause while acting in professional capacity — employer shall not impose prior approval/prior notification [M02-5 via nysenate.gov Official NYS Legislature publisher] — quote preserved; then immediately notify person in charge after report per 413(1)(b) [M02-5]; if causing report via supervisor must ensure report actually made, get Call I.D., be named if multiple reporters — simply notifying supervisor not equivalent per NYC ACS [M02-5]. Policy-only reporters follow handbook (may include supervisor first) but does not alter statutory duty — separated. Imminent-risk harm-to-self/identifiable-other kept as separate domain requiring immediate supervisor/clinical-lead assessment least-necessary [M02-4][M02-8] — not conflated with child-abuse. Example5 shows both branches with same facts, asks ensure-filed. KC26 lists statutory immediate without prior approval then notify after + ensure filed vs policy handbook, KC27 explicitly labeled different domain from KC26 with cross-reference. Lesson (§5B), Example (5), Assessment (KC26-27) aligned.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m02-execution-vs-reverification-dates",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt 4× Oct24 labels + git log AuthorDate 2026-10-23T22:11:55Z EDT + evidence/M02-V1-date-reconciliation-2026-10-24.md + evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md",
+            "observed_result": "Verified 4 M02 labels now read Scheduled re-verification date Oct24 2026 (V1.1 header, status line with execution 2026-10-23 EDT note, Section9 footer, References footer) — all prospective, internally consistent, execution 2026-10-23 America/New_York EDT reconciled to git AuthorDate 2026-10-23T22:11:55Z / Commit 2026-10-23T22:19:45Z. Evidence clarification file states filenames 2026-10-24/25 denote scheduled dates not completed reviews, execution 2026-10-23 per all commits. No claim review occurred Oct24.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m03-preserved-and-diff",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt 39609B md5 9fd2d715 vs google_drive/M03-textbook-chapter-v1.txt 52833B md5 39f5d87c + evidence/M03-V1-declustered-revision.diff 253 lines",
+            "observed_result": "Verified M03 V1 preserved 39609B md5 9fd2d71536e338d5d555ed6967195cc1 (af081c6). Revised V1 52833B md5 39f5d87c42ca1d293171cb2d9e9615c1. Diff 253 lines shows targeted declustering + distinct-sources revision only: header/status/footer to Scheduled re-verification Oct25 2026 execution 2026-10-23 note; Opening Situation declustered (Mx Rivera removed cane/extra time, added self-filled preference agency; Mr Jackson 62 with handwritten ASL preference; Aisha 17 peer volunteer with prior labeling agency; Ms Thompson 68 cane separate); §4 split into 4 names/pronouns [M03-2] and 4B language access Title VI [M03-6]; §5 distinct ADA [M03-7] + Ms Thompson agency; Examples 1-5 all rewritten with ask-vs-infer and agency; Chapter Recap expanded to 9 objective-linked lines; KCs 31-38 explanatory answers added; footer expanded. No unrelated files changed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m03-characters-agency-declustering",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt Opening Situation + §§3-5 + Examples 1-5 + evidence/M03-V1-declustered-revision.diff",
+            "observed_result": "Characters have individual preferences and agency; clustering avoided: Mx Rivera (34 community health worker, self-filled form, stated they/them + Spanish interpreter + 'I want to follow along and ask questions myself' — 2 language/identity traits with agency, not 4), Mr Jackson (62 retired housing advocate, own words 'I can read English. I prefer ASL for detailed forms — I can write for scheduling' — age+deafness with stated preference), Aisha (17 peer volunteer, previously offered 'Can we list what's in dishes so everyone can choose? I can help label them' — hijab + youth volunteer + prior contribution, not just object of complaint), Ms Thompson (68 cane after knee surgery, stated 'I like to take my time at kiosk — extra minute' — mobility separate person). Each person stated what helps them; staff taught to ask and document stated preference, not infer from appearance (cane, hijab, surname, accent, age) — §§3-5 and all Examples explicitly state ask-vs-infer.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m03-distinct-explanations-sources",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt §§4, 4B, 5 + References [M03-2][M03-6][M03-7]",
+            "observed_result": "Language access, disability accommodations, respectful communication have distinct explanations and applicable sources: §4 Respectful Communication — names/pronouns/identity distinct from language need — source NYC CCHR Gender Guidance [M03-2] protecting gender identity/expression including pronouns in public accommodations; §4B Language Access — separate obligation under Title VI Civil Rights Act 1964 for federally funded programs, LEP.gov planning guidance [M03-6] (qualified interpreters, not family); §5 Disability — separate legal basis ADA Titles II/III effective communication reasonable modifications [M03-7] (ASL/Video Remote, captioning, large print, extra time). Each section cites distinct official source, explains different law/aid, and is practiced in separate Examples (1 for names/pronouns, 2 for language, 3+5 for disability, 4 for belonging). Distinctness stated explicitly in section headers ('distinct from language access', 'distinct legal basis: ADA').",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m03-ask-vs-infer-scenarios",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt §§3-5, Examples 1-5, KCs 32-35",
+            "observed_result": "Scenarios teach readers to ask what assistance someone wants rather than infer needs from appearance: §3 bias lesson 'Do not infer language need from surname/accent/appearance — ask what person prefers' [M03-6]; §4B Working with interpreter 'Offer early: Would you like one in Spanish? Do not infer from surname/accent' + 'Document person stated preference'; §5 Mobility 'Do not infer from cane that someone cannot use touchscreen — ask' + Ms Thompson stated preference followed; §5 Hearing 'Do not infer reading ability from Deaf identity, ask stated ASL vs written preference — Mr Jackson wrote it'; Example1 repair 'is that what you'd like today?' ask; Example2 ask preference first; Example3 ask which he wants today; Example5 ask what she wants; KCs 32-35 correct answers all require asking preference. No scenario infers need from appearance alone.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-m03-objective-teaching-practice-assessment",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt Learning Goals 1-8 + §§1-9 + Examples 1-5 + Chapter Recap 1-9 + KCs 31-38",
+            "observed_result": "Every objective has substantive teaching, practice, explanatory assessment: Obj1 competency/humility taught §2 [M03-1][M03-4] practiced Ex1 assessed KC31 explanatory why B/C/D wrong linking to sources; Obj2 bias taught §3 practiced Ex1,3,4 assessed KC32 explanatory; Obj3 names/pronouns taught §4 [M03-2][M03-8] practiced Ex1 assessed KC33 explanatory why intrusive questions wrong; Obj4 language access taught §4B [M03-6] practiced Ex2 assessed KC34 explanatory why family/limited Spanish fails; Obj5 disability taught §5 [M03-7] practiced Ex3+5 assessed KC35 explanatory why come-back/write-quickly fails; Obj6 boundaries taught §6 practiced all Ex assessed KC36; Obj7 support after disrespect taught §7 practiced Ex4 assessed KC37; Obj8 finding help taught §§8-9 practiced all assessed KC38. Chapter Recap lines 1-9 map each objective to teaching section, practice example, and KC explanatory answer with source tags. All 8 KCs have explanatory answers stating why correct and why distractors wrong.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-control-plane-scope-and-preservation",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs PASS 1297→new + git status + Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+            "observed_result": "1,297 checks remain record-validation only (projects.yml, dependencies.yml, status-vocabulary, work_orders vocabulary) — not content approval/legal/comprehension/accessibility. No Drive originals modified — Drive folder originals retained (M01 docx 49038B, video package 23838B md5 650c422d, etc.). Local manuscripts updated only with preservation at evidence/sources/ and diffs. No merge/deploy/publish. Canonical acceptance remains pending for all modules per validation output.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0017-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Review pending, M02 draft authored patch pending, M03 V1 reported authored review pending, M04-M11 not established",
+            "observed_result": "State transition: M01 Review pending (14:30 arithmetic done, measured runtime pending). M02 V1.1 bounded patch reported applied — §5B+Example5+KC26-27 alignment verified, V1 preserved+diff provided, execution vs scheduled re-verification separated (Oct24 scheduled, execution Oct23 EDT) — pending subject-matter review (legal/comprehension/accessibility still pending). M03 V1 declustered revision reported applied — individual preferences/agency, distinct sources, ask-vs-infer, full objective coverage verified — pending review. M04-M11 draft completion not established. Canonical acceptance and public release remain pending — drafting separate from approval.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M02-textbook-chapter-v1.txt 39148→46866 md5 4acc0908→ef3a6043 V1.1 + preserved V1 at evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt + diff evidence/M02-V1.1-bounded-corrections.diff 128 lines; google_drive/M03-textbook-chapter-v1.txt 39609→52833 md5 9fd2d7→39f5d87c declustered + preserved V1 at evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt + diff evidence/M03-V1-declustered-revision.diff 253 lines; evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md clarification; prior M01 artifacts preserved",
+        "drive_originals": "unchanged — local drafts only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0018 — M02/M03 subject-matter review packet final check (measure runtime 130-150 wpm timed read-through, comprehension test plan, accessibility verification) — keep legal review separate; then M04 drafting on next topic."
+}
