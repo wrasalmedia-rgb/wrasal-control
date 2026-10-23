@@ -1,0 +1,305 @@
+# M02 — Textbook Chapter V1.1 — Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles — DRAFT (bounded patch; V1 preserved 39148B)
+
+M02 — Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles
+V1.1 DRAFT — Sources [M02-1]–[M02-16] with Classifications Labeled (official government, nongovernmental legal-text publisher, professional association, university reference) — Not approved for public release — Scheduled re-verification date Oct 24 2026 (execution 2026-10-23 America/New_York) — see preservation record
+M02 — Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M02-1]–[M02-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1 — Initial draft reusing M01 teaching structure and evidence discipline (Opening Situation, Learning Goals, sections 1–10, Worked Examples, Recap, Knowledge Checks with objective mapping, Glossary, Reviewer Notes, single consistent bracket system); fresh objectives, scenarios, assessments, and source identifiers created for M02; prior M01 findings carried into review (not restarted). Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — federal privacy rules for comparison (HIPAA, 42 CFR Part 2).
+**Scheduled re-verification date:** October 24, 2026 — verify all agency phone numbers, websites, laws, regulations, and agency guidance before publication — laws and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); 4× Oct 24 labels are internally consistent — see evidence/M02-V1-date-reconciliation-2026-10-24.md for execution/re-verification separation.
+**Disclaimer:** General information only. Not legal advice. Not clinical advice. Your agency's policies and your supervisor's guidance control your day-to-day duties. When in doubt, ask a supervisor or agency counsel before sharing information.
+---
+
+Opening Situation
+Sam works full-time as a peer support specialist at a neighborhood wellness center in the Bronx. Sam loves the work because Sam has lived experience and knows how hard it can be to ask for help. One Tuesday, a participant named Elena tells Sam privately that she missed her medication for three days because she is worried about side effects, and asks Sam not to tell anyone. Elena says, "Please keep this between us — I don't want my care team to think I'm not trying."
+
+Later that same day, Elena's sister calls the front desk and says, "I'm Elena's emergency contact — can you tell me what she talked about today? I just want to help." At lunch, a new coworker asks Sam, "Can you forward me Elena's intake form so I can see her address? I want to drop off flyers." After hours, Elena sends Sam a friend request on social media and writes, "You're the only one who gets me."
+
+Sam wants to help Elena, respect her privacy, and be kind to her family and coworker — and Sam also wants to stay in a clear, professional role. This chapter looks at everyday questions like these: What is the difference between privacy and confidentiality? What does consent mean in plain language? What are boundaries, why do they matter, and what do you do when your role requires you to share — or not share — information?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Explain the difference between privacy and confidentiality in everyday language.
+Describe what informed consent means and how you show it was given.
+Give everyday examples of professional boundaries — what is inside your role and what is outside.
+Explain role-dependent disclosure duties — when your role requires you to share, when you must not, and why the answer depends on your role, setting, and consent.
+List practical steps to handle requests for private information — from family, coworkers, or on social media.
+Support someone who shares something sensitive while staying in your role and being clear about limits.
+Find official help in New York and understand where to check current privacy rules before acting.
+
+1. Why Confidentiality and Boundaries Matter
+People share private things when they trust you. That trust lets them get help for health, housing, school, or safety. When confidentiality is handled carefully, people feel safer, are more honest, and are more likely to keep getting care.
+
+When boundaries are unclear or information is shared without a good reason, trust breaks. Someone may stop coming, avoid care, or feel exposed. For staff, unclear boundaries make work harder — you may feel pulled to do too much, share too much, or carry responsibility that belongs to the whole team.
+
+Confidentiality is not about keeping every secret no matter what. It is about handling private information with care, sharing only with a clear purpose, with permission where possible, or when your role and the law require you to act to protect safety [M02-1][M02-3]. Boundaries help keep helping relationships respectful, fair, and safe — for the person you support and for you.
+
+2. What Privacy and Confidentiality Mean — Different Protections for Different Settings
+Privacy and confidentiality are related but not the same. Everyday language helps:
+
+Privacy is a person's right to control who sees or talks about personal information. Think of it as the person holding the door to their own story.
+
+Confidentiality is the duty of a person or organization that received private information to protect it and share it only when appropriate. Think of it as what you do once someone lets you inside that door.
+
+Federal example — HIPAA Privacy Rule: The federal Health Insurance Portability and Accountability Act Privacy Rule protects certain health information held by covered entities such as health plans, most health care providers, and health care clearinghouses, and by business associates that work for them [M02-1]. It sets when information can be used or shared without written permission (for example, for treatment, payment, or health care operations, with limits) and when written authorization is generally needed [M02-1]. You do not need to memorize the whole rule — know that if your agency says "we are a HIPAA covered entity" or "business associate," you must follow that agency's HIPAA policies, training, and forms [M02-1][M02-3].
+
+More protective example — 42 CFR Part 2: Federal rules at 42 CFR Part 2 add extra protections for substance use disorder patient records from certain programs [M02-2]. Those records generally need specific consent to share, with limited exceptions [M02-2]. If you work in a substance use program, ask your supervisor whether Part 2 applies to you — the sharing limits can be stricter than HIPAA [M02-2].
+
+New York example — Mental Hygiene Law: In New York, Mental Hygiene Law §33.13 protects the confidentiality of clinical records for people receiving mental health services, with specific limits on when those records can be shared [M02-4]. Public Health Law §18 governs access to patient information for health care providers in the state [M02-3]. These laws work alongside HIPAA, not instead of it — sometimes state law is more protective [M02-3][M02-4].
+
+Key point: The exact term, the exact form, and the exact time limit depend on where you work, what program you are in, and what kind of information is involved. Do not assume HIPAA is the only rule or that one consent form covers everything.
+
+3. Consent: What It Is and How You Show It Was Given
+Consent means a person was given clear information, understood it, and agreed without pressure. In everyday language:
+
+Informed consent for sharing private information usually includes:
+What information will be shared, with whom, for what purpose, for how long, and that the person can say yes or no and can take back permission later in writing (with limits for information already shared) [M02-1][M02-2].
+
+How you show consent matters:
+Write it down using your agency's approved form. A signed, dated form that lists the what/who/why/when is stronger than "she said it was okay" remembered later. Federal and New York programs often require specific elements on the form to count as valid — generic notes like "share with anyone who asks" usually do not count [M02-1][M02-2][M02-3].
+
+Everyday examples:
+Elena telling Sam privately about missed medication is not the same as Elena signing a release so Sam can talk to her sister or a new coworker. Sam can thank Elena for trusting, explain what Sam can and cannot keep private, and offer to help Elena talk to her prescriber or care team if she wants — with her written permission [M02-1][M02-3].
+
+A sister who says "I'm the emergency contact" still needs Elena's permission for most non-emergency disclosures unless a specific exception or your agency's policy says otherwise. Emergency contact is not automatic permission to share everything [M02-1][M02-4].
+
+4. Professional Boundaries in Everyday Work
+Boundaries are clear, agreed limits that keep a helping relationship respectful and focused on the person's needs — not the worker's needs or wishes.
+
+Common boundaries in community work:
+Time and place: You meet during work hours, in approved places, not at your home or on personal messaging at midnight.
+Role: You do what your job description, license, or agency says you can do. A peer specialist offers lived-experience support, coaching, and connection to resources — not diagnosis, prescribing, lending money, or providing rides in a personal car when agency policy says not to.
+Gifts, money, and favors: Many agencies do not allow gifts over a small value, loans, or extra errands. These can create confusion about expectations or obligation [M02-6][M02-9].
+Social media and personal contact: Friending participants on personal accounts, sharing your personal phone for non-work reasons, or checking on someone via personal social media often crosses an agency boundary, even when meant kindly [M02-7][M02-9].
+Self-disclosure: Sharing some lived experience can help, but the focus should stay on the person you support — not long stories about your own life.
+
+Why boundaries help: They make the relationship predictable and fair. The person knows what to expect, and you are less likely to burn out, make promises you cannot keep, or be asked to keep secrets that put someone at risk. Boundaries are not coldness — you can be warm and caring and still say, "I'm not able to do that, but here's what I can do..." [M02-9].
+
+Elena's social media request is a common boundary moment. An everyday, kind response keeps the relationship on work channels: "Thank you for reaching out. I care about you and want to support you at the center during work hours. I keep my work and personal social media separate to protect your privacy and my role. You can reach me at [work number/email] or talk to me when we meet next, and our team can help in between if you need."
+
+5. Role-Dependent Disclosure Duties — When You Must Share, When You Must Not
+Your role changes what you are allowed to share and what you are required to share.
+
+A) When you generally must NOT share without permission:
+Most private health and service information needs consent to share with family, friends, other agencies, or outside coworkers who do not need it for your job [M02-1][M02-3][M02-4]. That includes telling Elena's sister details about Tuesday's talk just because she is family. "She's worried about me" is not a permission slip.
+
+B) When you must consider whether the law or safety requires you to act:
+Some roles require specific reports, and some situations may require a supervisor to assess safety. Two common New York examples:
+
+Child abuse or maltreatment — two different bases, different steps:
+
+Statutory mandated reporters: People listed in Social Services Law §413(1)(a) — such as physicians, nurses, social workers, teachers, police, child care providers, and others in that law's list — are required by law while acting in their professional capacity to immediately make a report or cause a report to be made to the Statewide Central Register when they have reasonable cause to suspect child abuse or maltreatment [M02-5]. The law says: No school, school official, child care provider, foster care provider, residential care facility provider, hospital, medical institution provider or mental health facility provider shall impose any conditions, including prior approval or prior notification, upon a member of their staff specifically required to report under this title [M02-5]. In everyday language: your employer cannot require you to get permission or to tell a supervisor before you report — do not wait for approval. After you report or cause a report, you must immediately notify the person in charge of your institution after the report was made (and if you are the person in charge, you must ensure the report was made) [M02-5]. If you ask a supervisor to make the report for you — that is, you “cause a report to be made (for example: ensuring that a supervisor makes the report)” as described at NYC Administration for Children’s Services [M02-5] — you must still ensure the report was actually made, get the Call I.D., and ensure you are named in the report if more than one staff had reasonable cause — simply telling a supervisor is not equivalent to ensuring a report occurred [M02-5]. You do not need to prove abuse, and you do not investigate on your own [M02-5].
+
+Policy-based reporting responsibility: Many agencies require all staff to report by agency policy even when the law does not list them as statutory reporters [M02-5]. That creates a workplace reporting duty, not a law-based mandated-reporter status — it does not change the law for statutory reporters and does not itself create statutory immunity. If you are reporting only because agency policy says “all staff report,” follow your agency handbook steps — which may include telling a supervisor first — but that policy cannot be applied to delay a statutory reporter’s immediate legal duty above.
+
+Harm to self or others — a different rule with a different legal basis: When someone may be at imminent risk of serious harm to self or others (for example, a detailed plan to hurt an identifiable person tonight), agencies have safety protocols that are separate from child-abuse reporting. In this imminent-risk domain, frontline staff generally do not make solo decisions to break confidentiality to warn an identifiable third party — they immediately involve a supervisor, clinical lead, or safety team who assesses imminence, checks relevant state law and case law, and decides what, if anything, must be shared to protect safety, using the least amount of private information necessary [M02-4][M02-8]. In New York, duties related to threats and protective actions are role-specific and fact-specific — follow your supervisor and your agency's safety plan [M02-4][M02-8]. This supervisor-involvement rule for imminent-risk safety is not the same as the “report immediately without prior approval” rule for child abuse — keep the two domains separate.
+
+C) What "share only what is needed" means:
+Even when sharing is allowed or required, share the minimum necessary to do your job. A new coworker asking for Elena's full intake form "to see her address" does not need her whole history to drop off flyers — they need a flyer list without private health details, or a supervisor-approved outreach plan [M02-1][M02-3].
+
+D) How to handle uncertainty:
+Do not guess. Pause, explain you will check, and involve a supervisor. Saying "I want to make sure I handle your private information correctly, so let me talk to my supervisor about what I'm allowed to share and how we get permission" protects both the person and you [M02-7].
+
+6. Options When Someone Tells You Something Sensitive
+There is no single right way to respond, but everyday language helps you stay clear and kind.
+
+Steps you can use:
+
+Thank them for trusting you and stay calm: "Thank you for telling me."
+Be clear about your role and limits early, not only at the end: "I care about you, and I want you to know what I can keep private and what I may need to share with a supervisor if safety is involved."
+Help with next steps, don't take over: Offer to sit with them while they call a prescriber, help write down what they want to say to their care team, or ask if they want a trusted person with them — with their permission [M02-1][M02-3].
+Ask about permission to share: "Would you like me to share this with your prescriber or care team? I can help with a signed form, or we can talk together. You can say yes or no, and you can take it back later in writing."
+Explain safety limits in plain words: "If you tell me someone is in danger right now, or you're thinking about hurting yourself, I will need to get help right away and I won't be able to keep that private — I will stay with you and get a supervisor."
+
+Elena's Tuesday talk is a good place to practice: Sam can listen without judging, explain role limits respectfully, and help Elena make an informed choice — for example, "Many people worry about side effects. Would it help to talk to your prescriber together? I can help you write down your questions, and if you sign our release, I can make sure they get the right details. If you decide not yet, I can still help you think through what you want them to know."
+
+7. Supporting Someone While Staying in Your Role
+If someone tells you something private, your job is to support them and protect the information — not to become their only support person or private counselor.
+
+Helpful, in-role support:
+Listen without interrupting. Thank them. Avoid judging or diagnosing.
+Ask what would be helpful today, not forever: "What would support look like for you this week?"
+Offer options, not orders: "Some people find it helpful to... Would you like information about...?"
+Connect to resources: peer groups, clinic hours, crisis resources, supervisor-approved community supports.
+Document what you did in your agency's system using approved language — who you met, when, what the plan was — without adding opinions or stigmatizing words [M02-7].
+
+Less helpful or out-of-role support:
+Promising "I won't tell anyone, no matter what" before you have heard what they need to share.
+Giving medical advice like "stop your medication" when your role is not prescriber — encourage talking to the prescriber instead.
+Sharing their story with other participants to show you care.
+Checking on them repeatedly via personal phone or social media after hours because you are worried — instead, use the team's on-call or crisis coverage [M02-7][M02-9].
+
+A supervisor can help you think about boundaries after a hard conversation: what you did well, what felt unclear, and what you will say next time.
+
+8. What Happens After a Mistake — Breaches, Repair, and Learning
+Even careful people make mistakes — for example, leaving a sign-in sheet where others can see names, saying too much in a hallway, emailing the wrong person, or using a personal phone to text private details.
+
+What to do if a breach may have happened:
+Tell a supervisor right away. Your agency likely has a privacy officer or compliance lead and a timeframe for reviewing possible breaches [M02-1][M02-3].
+Write down promptly: date, time, what was shared, with whom, how it happened, and what you did next. Use facts, not guesses.
+Do not try to hide it or "fix it" by sharing more information.
+Follow the agency's plan — it may include notifying the person, adding safeguards, and retraining. Federal HIPAA has specific breach notification steps for covered entities, and state programs may have their own [M02-1][M02-3].
+
+Repairing trust after a mistake: A simple, honest explanation plus a clear plan helps — "I'm sorry. I shared information I should not have shared when I talked about your situation in the hallway where others could hear. Here is how I will prevent it next time..." Agencies learn from these moments to improve forms, training, and workflows.
+
+9. Finding Help — Jurisdiction, Where to Check Official Rules Before Acting
+Rules depend on your setting — hospital, clinic, substance use program, school, housing program, peer support. Check official sources and your agency's policies before sharing.
+
+Federal — where to start:
+**Health and Human Services, Office for Civil Rights (OCR)** — HIPAA Privacy Rule: who is covered, what counts as protected health information, when permission is needed, and individual rights. Official HHS.gov [M02-1]. SAMHSA — 42 CFR Part 2 extra protections for substance use disorder records [M02-2].
+**eCFR** — official text of 42 CFR Part 2 and HIPAA regulations via ecfr.gov and govinfo.gov [M02-2][M02-10].
+Contact: HHS OCR — hhs.gov/ocr/privacy; SAMHSA — samhsa.gov/confidentiality.
+
+New York — where to start:
+**NYS Department of Health** — Public Health Law §18 patient access and confidentiality materials via health.ny.gov [M02-3].
+**NYS Office of Mental Health (OMH)** — Mental Hygiene Law §33.13 confidentiality of clinical records via omh.ny.gov [M02-4].
+**NYS Office of Addiction Services and Supports (OASAS)** — Part 2 programs and state guidance via oasas.ny.gov [M02-2][M02-4].
+**NYS Justice Center / OCFS / Mandated Reporter Resource Center** — Social Services Law §413 mandated reporting training and Register: `1-800-342-3009` for mandated reporters via nysmandatedreporter.org [M02-5].
+**NYS Education Department — Office of the Professions** — professional misconduct, boundaries, and discipline under Education Law §6509 via op.nysed.gov [M02-6].
+**NYC Department of Health and Mental Hygiene** — local privacy and care-coordination guidance via nyc.gov/health [M02-7].
+Scheduled re-verification date: Oct 24 2026 — verify all contacts, websites, and rules. Laws, regulations, and agency policies change. Execution: manuscript prepared 2026-10-23 America/New_York; scheduled re-verification is prospective.
+
+Your agency:
+Ask for your role-specific handbook: "Am I a statutory mandated reporter listed in Social Services Law §413(1)(a) or am I required to report only by agency policy? What is our safety protocol for imminent risk vs our child-abuse reporting steps? Do we follow HIPAA, Part 2, or both? What form do we use for permission to share? Who is our privacy officer?"
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Elena's missed medication and "don't tell anyone." Sam listened, thanked Elena, and explained role limits kindly: "I want to respect your privacy and help you get the right support. I can keep our talk private from your sister and my new coworker unless you sign a release, but if safety were to come up I would need to get a supervisor right away." With Elena's permission, Sam can help her write questions for her prescriber and, with a signed release, make sure the prescriber gets the needed details — sharing only the minimum necessary [M02-1][M02-3]. Without permission, Sam should not tell the sister or forward the intake form.
+
+Example 2 — Sister calls as emergency contact. Sam can be respectful and protect privacy: "I understand you're worried and want to help. Because I need Elena's written permission to share details about her care, I can't share what we talked about today without a signed release. If Elena wants, I can help her add you with permission, or we can meet together to talk about how you can support her. If you are worried about immediate safety, please call our main number or 988 or 911 if needed, and I will get my supervisor right now." Emergency contact is not automatic permission for non-emergency sharing [M02-1][M02-4].
+
+Example 3 — New coworker asks for intake form to see address for flyers. In-role response: "I can't share her full intake form — it has private health information not needed for flyers. Our policy says to share only what is needed [M02-1]. I can share a flyer-day list without health details that a supervisor approves, or we can ask Elena if she wants flyers and get permission to use her address for that purpose."
+
+Example 4 — Social media friend request from participant. Kind boundary keeps work on work channels: "Thank you for your trust. I keep personal social media separate to protect your privacy and my role. You can reach me at [work number/email] during work hours, and our front desk or crisis line can help after hours. Let's talk more at our next meeting." Many agencies require this by policy [M02-7][M02-9].
+
+Example 5 — Possible mandated report — statutory vs policy (same situation, two duties). While working with a 10-year-old's family, a parent says, "Sometimes I leave her home alone overnight." If Sam is a statutory mandated reporter listed in Social Services Law §413(1)(a) and has reasonable cause to suspect abuse or maltreatment while acting in professional capacity, Sam has a personal legal duty: immediately make a report or cause a report to be made to the Statewide Central Register when the threshold is met — do not wait for prior approval or prior notification from a supervisor, which the law prohibits as a condition [M02-5]; then immediately notify the person in charge after the report was made. If Sam asks a supervisor to call for Sam (cause a report — “for example: ensuring that a supervisor makes the report” per NYC ACS [M02-5]), Sam must ensure the report was actually made, obtain the Call I.D., and ensure Sam is named if more than one staff had reasonable cause — simply telling a supervisor without ensuring the report occurred does not satisfy the duty [M02-5]. If Sam is reporting only because agency policy says “all staff report” and the law does not list Sam, Sam follows agency handbook steps — which may include telling a supervisor first — but that policy does not change the statutory rule above. In either case: ensure immediate safety, do not investigate alone or promise “I won’t report,” and afterward document facts (date, time, what was said, who was contacted, Call I.D. if obtained) without opinions [M02-5].
+
+Chapter Recap — Scannable
+Privacy belongs to the person — the right to control who sees personal information.
+Confidentiality is the receiver's duty to protect private information and share only with purpose and often with permission [M02-1][M02-3].
+Consent means clear information, understanding, and voluntary agreement — shown by a signed, dated release listing what/with whom/why/how long; can be taken back in writing [M02-1][M02-2].
+Boundaries keep helping relationships clear: time/place, role, gifts/money, social media, self-disclosure — warm and kind, still clear [M02-6][M02-9].
+Role matters for disclosure: family role ≠ permission [M02-1][M02-4]; emergency contact ≠ automatic sharing; coworker does not get full files just because they ask [M02-1][M02-3].
+Disclosure duties depend on role, setting, and law — separate statutory child-abuse reporting from imminent-risk safety: statutory reporters listed in Social Services Law §413 must immediately report or cause report to the Statewide Central Register when threshold met — no prior approval/notification condition may be imposed, then notify person in charge after report, ensure report made and get Call I.D. [M02-5]; agency-policy-only reporters follow handbook (may include supervisor first) but that does not alter statutory duty [M02-5]; imminent-risk safety (harm to self/identifiable other) is a separate domain requiring immediate supervisor/clinical-lead assessment and least-necessary sharing, not solo disclosure [M02-4][M02-8]; 42 CFR Part 2 can be stricter than HIPAA for substance use records [M02-2].
+When someone shares something sensitive: thank, explain limits early, offer help with informed choice, ask about permission, explain safety limits [M02-1][M02-2].
+Supporting while staying in role: offer options/resources, document facts, avoid promising total secrecy, avoid personal-channel follow-ups [M02-7][M02-9].
+After a mistake: tell supervisor, write facts promptly, follow agency breach plan [M02-1][M02-3].
+Find official rules at hhs.gov/ocr/privacy, samhsa.gov/confidentiality, health.ny.gov, omh.ny.gov, nysmandatedreporter.org, op.nysed.gov — verify before acting [M02-1]–[M02-10].
+
+Knowledge Checks — Complete Questions With Objective Mapping (M02: 21–28; 21–27 A-D, 28 Two-Option Valid)
+
+**21. Privacy vs confidentiality — everyday language**
+Question: In plain language, what is the difference between privacy and confidentiality?
+A) They mean the same thing — privacy is the legal word.
+B) Privacy is the person's right to control who sees personal information; confidentiality is the receiver's duty to protect information once it was shared and to share it only when appropriate and often with permission.
+C) Confidentiality belongs to the person; privacy belongs to the agency.
+D) Privacy only applies to hospitals.
+Correct Answer: B) Privacy = person's control; confidentiality = receiver's duty to protect and share appropriately [M02-1][M02-3].
+Objective: Explain difference between privacy and confidentiality in everyday language.
+
+**22. Consent — what it is**
+Question: What does informed consent for sharing private information usually include?
+A) Only a verbal "okay" remembered later.
+B) What will be shared, with whom, for what purpose, for how long, that the person can say yes or no, and can take back permission later in writing.
+C) A note that says "share with anyone who asks."
+D) No information needed — just a signature.
+Correct Answer: B) What/who/why/how long, yes/no, can take back in writing; specific form elements often required [M02-1][M02-2].
+Objective: Describe what informed consent means and how you show it.
+
+**23. Boundaries — gift and social media**
+Question: Fictional scenario — A participant sends you a friend request and offers a $40 gift card to thank you. In this fictional scenario, the agency's handbook says gifts over $15 are not allowed and staff should keep personal social media separate. What is the most in-role response?
+A) Accept the gift and the request to show you care.
+B) Kindly decline both, explain the policy keeps the relationship fair and protects privacy, thank them, and offer work-channel contact and other ways to show appreciation that are allowed.
+C) Accept the gift but not the request.
+D) Accept the request but not the gift.
+Correct Answer: B) Warm, clear boundary: explain policy, keep personal/work separate, offer alternatives [M02-6][M02-7][M02-9]. Note: Gift amounts $15/$40 are fictional scenario values for teaching — check your real agency handbook.
+Objective: Give everyday examples of professional boundaries.
+
+**24. Role-dependent sharing — family asks**
+Question: Elena's sister calls and says "I'm her emergency contact, tell me what she said today." Elena has not signed a release and there is no immediate safety emergency. Your agency follows HIPAA and Mental Hygiene Law §33.13. What do you do?
+A) Share details because family wants to help.
+B) Explain you need Elena's written permission for most non-emergency details, emergency contact ≠ automatic sharing; offer to help Elena add permission or meet together, and route immediate safety worries to supervisor/main number.
+C) Share only diagnosis, not the full story.
+D) Ask the sister to guess and confirm.
+Correct Answer: B) Family role ≠ permission; emergency contact not automatic sharing; least-necessary, supervisor route for safety [M02-1][M02-4].
+Objective: Explain role-dependent disclosure — when you must NOT share.
+
+**25. Minimum necessary and coworker request**
+Question: A new coworker asks you to forward Elena's full intake form to see her address for dropping off flyers. What is correct?
+A) Forward the full form — coworker needs it.
+B) Share only what is needed: offer a supervisor-approved flyer list without health details, or ask Elena for permission to use her address for that purpose; do not share full private history [M02-1][M02-3].
+C) Give address verbally but not the form.
+D) Let coworker look at your screen.
+Correct Answer: B) Minimum necessary; no full history for flyers.
+Objective: Explain "share only what is needed" and handling coworker requests.
+
+**26. Mandated reporting — New York child abuse (statutory vs policy)**
+Question: While working in your professional role with a child and family, you have reasonable cause to suspect child abuse or maltreatment (e.g., parent says they leave a 10-year-old home alone overnight repeatedly). You are working under Social Services Law §413 (statutory listed reporter) or your agency policy says “all staff report.” What is the correct sequence — checked together with §5B and Example 5?
+A) Keep it private because the family asked.
+B) Investigate on your own and decide if it really happened.
+C) Statutory listed reporters: immediately make a report or cause a report to be made to the Statewide Central Register when threshold met — employer may not impose prior approval or prior notification as a condition [M02-5]; do not wait for supervisor permission before reporting; then immediately notify the person in charge after the report was made and ensure report was actually made — get Call I.D. and ensure you are named if multiple reporters had reasonable cause (simply telling a supervisor is not equivalent) [M02-5]. Policy-only reporters: follow agency handbook steps — which may include telling a supervisor first — but that handbook cannot delay a statutory reporter’s immediate duty. In either case: ensure immediate safety, do not investigate alone, document facts without opinions [M02-5].
+D) Only report if you saw it happen.
+Correct Answer: C) Statutory: report/cause report immediately without prior approval/notification, then notify after, ensure filed with Call I.D.; policy-only: follow handbook; both: ensure safety, no solo investigation, document facts [M02-5]. Lesson (§5B), Example 5, and KC 26 teach the same sequence.
+Objective: Describe role-dependent duty to report child abuse/maltreatment — statutory listed vs agency-policy, with employer-prohibition and cause-report verification.
+
+**27. Safety concern — imminent risk of harm to self or identifiable other (different domain from KC 26 child-abuse reporting)**
+Question: A participant tells you they have a detailed plan to hurt a specific person tonight. This is an imminent-risk safety situation — not a child-abuse mandated report — and your agency's safety protocol says frontline staff must get a supervisor/clinical lead immediately to assess imminence and decide what, if anything, must be shared to protect safety, using least-necessary information. What should you do?
+A) Promise not to tell anyone and handle it yourself.
+B) Immediately get a supervisor/clinical lead, stay with the person if safe, share only what is needed for the safety assessment, follow the agency safety plan and relevant state law/case law — do not make solo disclosure decisions [M02-4][M02-8]. Note: This supervisor-involvement rule is for imminent-risk safety; it is not the same as KC 26 child-abuse reporting where statutory reporters must report immediately without prior approval/notification and then notify after [M02-5].
+C) Warn the other person directly yourself right away without supervisor.
+D) Wait until tomorrow to see if they feel better.
+Correct Answer: B) Immediate supervisor/clinical-lead involvement, least-necessary sharing, follow safety plan for imminent-risk [M02-4][M02-8] — distinct from statutory child-abuse immediate-report rule in KC 26 [M02-5]. Lesson (§5B), Example 5, KC 26, and KC 27 are taught as two domains with different sequences.
+Objective: Explain handling of imminent safety concerns and role limits — distinguished from child-abuse reporting duty.
+
+**28. After a possible breach — hallway talk**
+Question: You realize you talked about a participant's situation in a hallway where visitors could hear. You may have shared private information you should not have shared. What is the best next step?
+A) Try to hide it and hope no one noticed.
+B) Tell your supervisor right away, write down date/time/what was shared/with whom/how it happened/what you did next using facts, and follow the agency's breach/review plan — do not share more to "fix it" [M02-1][M02-3].
+C) Apologize to the participant but not to your supervisor.
+D) Post on social media that agencies should not have hallways.
+Correct Answer: B) Prompt supervisor report, factual documentation, follow breach plan.
+Objective: Describe what happens after a mistake and how to repair/learn.
+
+Glossary — Plain Language
+**Breach:** Sharing private information with someone who should not have received it, or in a way your agency did not allow.
+**Boundaries:** Agreed, predictable limits (time, place, role, gifts, contact) that keep a helping relationship respectful and safe.
+**Consent:** Clear information given, understood, and agreed to without pressure; shown by a signed, dated form often needed for sharing.
+**Disclosure duty:** What your role and the law require you to share — or not share — in a situation (depends on role, setting, consent, safety).
+**Emergency contact:** A person to call in an emergency — not automatic permission to share all details at other times.
+**Minimum necessary:** Share only the information needed to do the job — no extra.
+**Mimimum necessary example:** Flyer list without health details instead of full intake form.
+**Privacy:** Person's right to control who sees or talks about personal information.
+**Confidentiality:** Receiver's duty to protect private information after it was shared.
+**Role:** Your job, license, and agency rules that define what you can do and what you must do.
+**42 CFR Part 2:** Federal extra protections for certain substance use disorder records — often stricter than HIPAA [M02-2].
+
+Reviewer Notes — Jargon Outside Learner Text
+Duty to warn/protect: Fact-specific, role-specific — frontline staff involve supervisor/clinical lead; state law and case law (e.g., Tarasoff-type analyses) vary by jurisdiction — not for solo frontline judgment [M02-8].
+HIPAA covered entity vs business associate: Determined by agency, not by individual — follow agency HIPAA designation [M02-1].
+Part 2 program: Defined by federal criteria — ask supervisor whether your program is Part 2 — stricter consent elements [M02-2].
+Mandated reporter — two bases: (a) Statutory listed in SSL §413(1)(a) — threshold "reasonable cause to suspect" while acting in professional capacity — must immediately report or cause report to Statewide Central Register, no employer prior approval/notification condition allowed [M02-5], then immediately notify person in charge after report, ensure report filed (Call I.D., named if multiple) [M02-5][M02-5 NYC ACS]; (b) Policy-based — agency says “all staff report” — workplace duty only, follow handbook, does not alter statutory duty. Threshold not proof [M02-5].
+Education Law §6509: Professional misconduct includes boundary violations like harassment, improper personal relationships [M02-6].
+Minimum necessary: HIPAA and agency concept — share least needed to accomplish purpose [M02-1].
+
+References — Single Consistent Numbered System [M02-1]–[M02-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M02-1] HHS — HIPAA Privacy Rule — What is protected health information, who is covered, when permission is needed vs when sharing for treatment/payment/operations is allowed with limits, individual rights, minimum necessary, authorization elements, breach notification. Official HHS.gov: https://www.hhs.gov/hipaa/for-professionals/privacy/index.html ; https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/index.html
+[M02-2] SAMHSA + eCFR — 42 CFR Part 2 — Confidentiality of Substance Use Disorder Patient Records — extra protections, stricter consent, limited exceptions. Official HHS/SAMHSA: https://www.samhsa.gov/about-us/who-we-are/laws-regulations/confidentiality-regulations-faqs ; Official eCFR: https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2 ; Official govinfo: https://www.govinfo.gov/content/pkg/CFR-2021-title42-vol1/xml/CFR-2021-title42-vol1-part2.xml
+[M02-3] NYS Department of Health — Public Health Law §18 — Access to patient information — patient access rights and confidentiality in New York health care. Official NY.gov: https://www.health.ny.gov/regulations/public_health_law/ ; Official governmental publisher (NYS Legislature): https://www.nysenate.gov/legislation/laws/PBH/18 ; Nongovernmental legal-text reference for cross-check: Cornell LII https://www.law.cornell.edu/wex/table_new_york
+[M02-4] NYS Office of Mental Health — Mental Hygiene Law §33.13 — Confidentiality of clinical records for persons receiving mental health services — when records can be shared, safety exceptions. Official OMH: https://omh.ny.gov/omhweb/policy/ ; Official NY.gov law publisher: https://www.nysenate.gov/legislation/laws/MHY/33.13 ; Nongovernmental publisher text: https://www.law.cornell.edu/wex/table_new_york
+[M02-5] NYS Office of Children and Family Services / Justice Center / NYC Administration for Children’s Services — Social Services Law §413 — Mandated reporters of child abuse and maltreatment — who must report (listed in §413(1)(a)), reasonable cause to suspect while acting in professional capacity, immediately report or cause report to Statewide Central Register `1-800-342-3009` (after hours `1-800-635-1522` SCR), written LDSS-2221A within 48h, employer shall not impose prior approval/prior notification [§413(1)(c)], then immediately notify person in charge after report per §413(1)(b) — simply notifying supervisor is not equivalent, must ensure report made and obtain Call I.D./be named if multiple [NYC ACS]. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Official State register training: https://nysmandatedreporter.org/ ; Law text via nysenate.gov (Official NYS Legislature publisher): https://www.nysenate.gov/legislation/laws/SOS/413 ; NYC ACS Mandated Reporters: https://www.nyc.gov/site/acs/child-welfare/mandated-reporters.page
+[M02-6] NYS Education Department — Office of the Professions — Education Law §6509 — Definitions of professional misconduct — includes boundary-related misconduct. Official OP.NYSED.GOV: https://www.op.nysed.gov/profession/ ; Law via nysenate.gov: https://www.nysenate.gov/legislation/laws/EDN/6509
+[M02-7] NYS Office of Mental Health + NYC DOHMH — Privacy, dignity, and respectful communication guidance for community-based programs — work-channel expectations, documentation standards. Official OMH: https://omh.ny.gov/omhweb/rfp/ ; Official NYC.gov: https://www.nyc.gov/site/doh/health/health-topics/mental-health.page
+[M02-8] NYS Office of Mental Health — Safety, threat assessment, and duty-to-protect protocols — role-specific, fact-specific — supervisor/clinical-lead assessment, least-necessary sharing, agency safety plans. Official OMH: https://omh.ny.gov/omhweb/safety/ ; Note: frontline staff do not make solo warning decisions per agency policy
+[M02-9] National Association of Social Workers — NASW Code of Ethics — Boundaries: dual relationships, gifts, personal relationships, social media — professional values. Professional association (nongovernmental, non-legal primary source, ethical standard): https://www.socialworkers.org/About/Ethics/Code-of-Ethics/Code-of-Ethics-English
+[M02-10] HHS + govinfo — Official regulatory text repositories — HIPAA and 42 CFR Part 2 authoritative versions. Official govinfo.gov: https://www.govinfo.gov/ ; Official eCFR: https://www.ecfr.gov/
+[M02-11] NYS Office of Addiction Services and Supports (OASAS) — State guidance for substance use programs subject to Part 2 — confidentiality and sharing with consent. Official OASAS: https://oasas.ny.gov/
+[M02-12] NYS Justice Center for the Protection of People with Special Needs — People in state care — abuse reporting and vulnerable persons protections. Official NY.gov: https://www.justicecenter.ny.gov/
+[M02-13] 42 U.S.C. §290dd-2 — Federal confidentiality statute underlying 42 CFR Part 2 — Official govinfo.gov: https://www.govinfo.gov/content/pkg/USCODE-2021-title42/html/USCODE-2021-title42-chap45-subchapII-sec290dd-2.htm
+[M02-14] SAMHSA — Disclosure exceptions under 42 CFR Part 2 — medical emergency, research, program evaluation with limits. Official SAMHSA: https://www.samhsa.gov/sites/default/files/2022-10/42-cfr-part-2-amended.pdf (guidance PDF)
+[M02-15] NYS Office for People With Developmental Disabilities (OPWDD) — Confidentiality in developmental disabilities services — official agency guidance via opwdd.ny.gov
+[M02-16] Social Service Law + Public Health Law — NY law publisher — cross-reference tables for confidentiality exceptions. Nongovernmental legal-text publisher for statutory text: Cornell LII New York Laws https://www.law.cornell.edu/wex/table_new_york ; Official publisher via nysenate.gov legislation pages
+
+Scheduled re-verification date: Oct 24 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York; 4× Oct 24 labels are scheduled re-verification marker — see evidence/M02-V1-date-reconciliation-2026-10-24.md.
+---
+End of M02 Chapter Draft V1.1 — Single citation system [M02-1]–[M02-16] with source classifications labeled (official government [M02-1]–[M02-8][M02-10]–[M02-15] including Official NYS Legislature publisher nysenate.gov vs nongovernmental legal-text reference Cornell LII for statutes [M02-3]–[M02-6][M02-16] vs professional association NASW [M02-9]), knowledge checks mapped to objectives (21–27 A-D, 28 two-option). V1 preserved at evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt (39148B md5 4acc0908650818122675602b00b126af). Changes: V1.1 bounded patch aligns §5B statutory vs policy, Example 5, KC26–27 to same sequence (immediately report/cause report without prior approval/notification, then notify after, ensure filed; imminent-risk supervisor rule kept separate [M02-4][M02-5][M02-8]). NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1.1 DRAFT · READY FOR SUBJECT-MATTER REVIEW — legal review, comprehension testing, accessibility verification, measured runtime pending. No external records changed. Originals preserved.

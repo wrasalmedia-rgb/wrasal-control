@@ -1,0 +1,305 @@
+# M04 — Textbook Chapter V1 — Child Abuse Recognition, Prevention and Reporting — DRAFT (M02 distinction carried forward)
+
+M04 — Child Abuse Recognition, Prevention and Reporting
+V1 DRAFT — Sources [M04-1]–[M04-16] with Classifications Labeled (official government, nongovernmental legal-text publisher, professional association) — Not approved for public release — Scheduled re-verification date Oct 25 2026 (execution: 2026-10-23 America/New_York) — see preservation record
+M04 — Child Abuse Recognition, Prevention and Reporting
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M04-1]–[M04-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1 — Initial draft reusing M01–M03 teaching structure and evidence discipline (Opening Situation, Learning Goals, sections 1–10, Worked Examples, Recap, Knowledge Checks with objective mapping, Glossary, Reviewer Notes, single consistent bracket system); fresh objectives, scenarios, assessments, and source identifiers created for M04 on Child Abuse Recognition, Prevention and Reporting; M02 distinction between statutory mandated-reporter duty and employer/agency policy carried forward verbatim; prior findings not restarted. Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — federal Child Abuse Prevention and Treatment Act (CAPTA) for comparison.
+**Scheduled re-verification date:** October 25, 2026 — verify all agency phone numbers, websites, laws, regulations, and agency guidance before publication — laws and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); Oct 25 is scheduled re-verification marker — see evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md.
+**Disclaimer:** General information only. Not legal advice. Not clinical advice. Your agency's policies and your supervisor's guidance control day-to-day practice. When in danger, prioritize immediate safety — call 911 and follow your agency emergency plan, then report. When in doubt, ask a supervisor or agency counsel before acting.
+---
+
+Opening Situation
+Maya, a peer specialist who works with families at the same Bronx wellness center, is co-facilitating a parent support group. One Tuesday, three separate moments happen:
+
+First, 10-year-old Sofia comes in with her older brother Jamal. Sofia has a fading bruise on her cheek and says quietly, “My mom’s boyfriend got mad last night.” Jamal quickly adds, “She fell at the park — she’s fine.” Maya notices Sofia seems withdrawn and avoids eye contact, different from her usual talkative self.
+
+Second, in group, a parent, Mr. Ortiz, says, “Sometimes I leave my kids home alone while I work a night shift — they’re 7 and 9, but my neighbor checks once. Is that okay? I don’t have childcare.” He looks worried, not defensive, and asks what help exists.
+
+Third, after group, a coworker tells Maya, “I think Sofia’s family needs a report, but let’s wait and bring it to team meeting Friday — our supervisor likes to review first. Don’t call the Register yet.” Maya also remembers her training: as a peer specialist she is required to report by agency policy, and some coworkers on the team are statutory reporters listed in law.
+
+Maya wants to protect children, support families without shaming, and follow the right reporting steps — and she worries about getting it wrong, being wrong, or making a family afraid to return. This chapter looks at everyday questions: What might suggest abuse or maltreatment — and what is not your job to decide? How can you help prevent harm while in role? When must you report, what is the difference between the law’s duty and your agency’s policy, and how do you make a report without delaying for permission?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Recognize possible signs that may suggest child abuse or maltreatment — and explain why recognition is not investigation or proof.
+Describe common risk factors and protective factors in everyday language.
+Explain prevention in your role: safe supervision, positive discipline, concrete supports for families, and how to offer help without judgment.
+Explain the difference between a statutory mandated-reporter duty under Social Services Law §413 and an employer/agency policy duty — and why the law prohibits prior approval as a condition for statutory reporters.
+Describe how to make a report to the Statewide Central Register (SCR): when threshold is met, what information helps, and what “report or cause a report and ensure it was made” means.
+List steps for immediate safety, documentation, and notifying the right people after a report.
+Explain what happens after a report and your ongoing role with the child and family.
+Find official help in New York and understand where to check current child-abuse reporting rules before acting.
+
+1. Why Recognition, Prevention, and Reporting Matter
+Children rely on adults to notice, help, and protect. When concerning patterns are noticed early and families get support — safe supervision options, guidance on discipline, connections to childcare, housing, or mental-health resources — harm can be reduced and families can stay together safely when possible.
+
+Reporting is not punishment. In New York, a report to the Statewide Central Register is a request for the child-protective system to assess safety, not a finding that abuse happened. It starts a process to check on the child and connect the family to services or interventions if needed [M04-1][M04-5]. Recognizing signs early, offering prevention help, and reporting when your role requires it are how frontline staff protect children while respecting families.
+
+Carried forward from M02: Your role matters. Whether you have a personal legal duty to report depends on whether your title is listed as a statutory mandated reporter in law [M04-5] — not only on whether your agency says “everyone reports.” Understanding which rule applies to you prevents delay.
+
+2. What Abuse and Maltreatment Mean — Plain Language, Without Investigation
+New York law defines child abuse and maltreatment, but everyday work starts with recognition — noticing patterns that may suggest a child needs help, not deciding legal outcomes.
+
+Common forms described in plain language:
+- Physical: injury where explanation does not fit (frequent bruises/burns/fractures, especially in infants, pattern marks), child flinches from contact [M04-1].
+- Neglect/lack of supervision: child consistently without adequate food, clothing, shelter, medical care, or supervision for age/development; young children left alone for long periods without appropriate care [M04-1][M04-2].
+- Emotional: patterns that harm self-worth or development — constant belittling, terrorizing, isolating, or exposing child to severe domestic violence.
+- Sexual: any sexual contact or exploitation of a child.
+
+What is not your job: You do not investigate, interview the child in detail, diagnose, or decide if it legally counts as abuse [M04-5]. Your job is to notice, support the child calmly, ensure immediate safety if needed, and report when your duty applies — let trained investigators ask detailed questions to avoid re-traumatizing or contaminating information [M04-1].
+
+Signs are patterns, not single proof. One bruise alone may be an accident. Repeated injuries with changing explanations, injuries to non-mobile infants, fearful withdrawal, or a child’s disclosure in their own words — together — may suggest the need to report [M04-1]. Age matters: leaving a 15-year-old home alone for an hour is different from leaving a 7 and 9-year-old overnight without appropriate care — follow supervision guidance below [M04-2].
+
+3. Risk Factors and Protective Factors — Why Context Matters
+No single factor predicts harm. Risk factors increase stress on families; protective factors buffer stress and support safe parenting. Knowing both helps you offer help without judgment — as in Mr. Ortiz’s night-shift question.
+
+Common risk factors in everyday language (more stress → more need for support):
+- Economic stress, unstable housing, food insecurity.
+- Lack of safe childcare or supervision options, especially for night shifts or emergencies.
+- Social isolation — few trusted adults to call for help.
+- Parental mental-health or substance-use challenges without support.
+- Intimate partner violence in the home.
+- Child with high needs (medical complexity, disability) without adequate supports [M04-3].
+
+Protective factors (things that help keep children safe):
+- Nurturing attachment, positive discipline, clear expectations appropriate to age.
+- Concrete supports: safe childcare, transportation, benefits help, respite.
+- Social connections: family, neighbors, faith, peer groups who can help briefly.
+- Parental resilience and knowledge of child development.
+- Timely medical and behavioral health care [M04-3][M04-6].
+
+Your role: Connect to supports before crisis when possible — as with Mr. Ortiz — while still meeting your reporting duty if threshold is met.
+
+4. Prevention in Your Role — Safe Supervision, Positive Discipline, Concrete Help
+Prevention is not lecturing parents. It is offering practical options that reduce risk, especially around supervision and discipline.
+
+Safe supervision in New York — everyday guidance:
+- Young children (generally under 12–13) generally should not be left alone for extended periods; overnight alone is especially concerning for elementary-age children [M04-2]. There is no single age in statute — use maturity, length of time, access to phone/adult, and safety of environment [M04-1][M04-2].
+- “Neighbor checks once” during night shift for 7 and 9-year-olds is generally not appropriate supervision for overnight [M04-2] — ask: Is there a responsible adult present or on call who can act immediately? Can the child reach help?
+- School-age alone time for short, structured periods with check-ins may be appropriate for older youth if safety factors are in place — your agency can advise.
+Your response to Mr. Ortiz: Normalize asking, don’t shame: “Thank you for asking — night work with no childcare is hard. Leaving 7 and 9 overnight with only a once-a-night check generally isn’t considered safe supervision for that age — let’s see what supports exist.” Then connect: emergency childcare, family supports, employer schedule options, after-school programs [M04-6]. Document offer of prevention help.
+
+Positive discipline:
+- Alternatives to physical punishment: clear routines, praise, choices, time-in, natural consequences, teaching calm-down skills [M04-3].
+- Help parents respond to stress: pause, breathe, call trusted person, safe place for child while caregiver calms. If you see frustration escalating, offer to help find resources, not to judge.
+
+Concrete help within role: housing applications, benefits, food, childcare vouchers, medical scheduling — stay within job description, don’t lend money or provide personal childcare/transport outside policy [M04-7].
+
+If you sense judgment in yourself (“They should know better”), pause — ask what support would have prevented this situation, and bring resources.
+
+5. Who Must Report — Statutory Duty vs Agency/Employer Policy (Carried Forward from M02)
+This distinction is the foundation of this module — carried forward verbatim from M02 V1.1/V1.2 so lesson and assessment match:
+
+Statutory mandated reporters — personal legal duty:
+People listed in Social Services Law §413(1)(a) — such as physicians, nurses, social workers, teachers, police officers, child care providers, and others in that law’s list — are required by law while acting in their professional capacity to immediately make a report or cause a report to be made to the Statewide Central Register when they have reasonable cause to suspect child abuse or maltreatment [M04-5]. The law states: No school, school official, child care provider, foster care provider, residential care facility provider, hospital, medical institution provider or mental health facility provider shall impose any conditions, including prior approval or prior notification, upon a member of their staff specifically required to report under this title [M04-5 §413(1)(c)]. In everyday words: your employer cannot require you to get permission or to tell a supervisor before you report — do not wait for Friday team meeting or for supervisor review to satisfy the legal timing. After you report or cause a report, you must immediately notify the person in charge after the report was made (if you are the person in charge, ensure the report was made) [M04-5 §413(1)(b)]. If you ask a supervisor to call for you — “cause a report to be made (for example: ensuring that a supervisor makes the report)” per NYC Administration for Children’s Services [M04-5] — you must still ensure the report was actually made, obtain the Call I.D., and ensure you are named if more than one staff had reasonable cause — simply telling a supervisor without ensuring the report was filed does not satisfy the duty [M04-5 NYC ACS]. You need reasonable cause to suspect, not proof [M04-5].
+
+Agency/employer policy reporters — workplace duty only:
+Many agencies require all staff (including peer specialists like Maya and Sam) to report by agency policy even when the law does not list them [M04-5]. That creates a workplace reporting responsibility, not a law-based mandated-reporter status — it does not change the law for statutory reporters and does not itself create statutory immunity. If you are reporting only because policy says “all staff report,” follow your agency handbook steps — which may include telling a supervisor first — but that policy cannot be applied to delay a statutory reporter’s immediate legal duty above [M04-5].
+
+Threshold — reasonable cause: You have reason to suspect based on what you saw/heard (child’s words, pattern of injuries, concerning supervision disclosure) while acting in professional capacity — you do not need to prove or witness the abuse [M04-5]. Document facts, not opinions.
+
+What the coworker got wrong in the Opening Situation: Telling Maya to “wait until Friday team meeting — supervisor likes to review first — don’t call yet” would be an impermissible delay if Maya is a statutory reporter with reasonable cause — the law prohibits prior approval as a condition [M04-5]. Even for policy-only reporters, delaying through weekend when safety may be at risk violates prevention/protection purpose — follow agency steps but do not delay appropriate protection.
+
+6. How to Make a Report to the Statewide Central Register (SCR) — What Helps
+When threshold is met in your role:
+
+**Immediately make a report or cause a report — do not wait for permission (statutory) or unnecessarily for next meeting (policy).** Use SCR phone or online portal per your agency training:
+- SCR hotline for mandated reporters: `1-800-635-1522` (24/7); general public `1-800-342-3720`; NYC ACS guidance cited [M04-5]; TDD for hearing hard: `1-800-638-5163`; online via NYS Mandated Reporter portal where available [M04-1].
+- You will be asked for: Call I.D. will be given — write it down; LDSS-2221A written report within 48 hours after oral report where required [M04-5].
+
+What helps the register (bring what you have, do not investigate to get more):
+- Child/family identifying information (names, DOB, address/phone, language) as known — not to guess.
+- What you observed/heard in the child’s/parent’s own words — quote briefly, avoid interpretation: e.g., “Sofia said ‘Mom’s boyfriend got mad last night’ — cheek bruise fading ~2cm, withdrawn, brother said fell at park.”
+- Pattern: prior concerns, frequency, timing of Mr. Ortiz night-shift disclosure (7 and 9 overnight, neighbor checks once) — his statement in his words.
+- Immediate safety concerns: Is child safe now? Where? Who is with them? Need for immediate response?
+- Your role, where concern observed (professional capacity), and how to reach you for follow-up [M04-1][M04-5].
+
+After you report or cause a report:
+- Immediately notify person in charge after report was made (statutory) or follow handbook notification (policy) — include date/time of call, Call I.D., who took report if known [M04-5].
+- If you caused a report via supervisor, verify: Did supervisor actually call? What Call I.D.? Are you named? If not, make the report yourself promptly — do not assume it happened [M04-5].
+- Document facts (date, time, what was said, observable, who was notified, Call I.D.) without diagnoses or stigmatizing labels [M04-7]; store per agency HIPAA/Part 2 rules [M04-8].
+
+Cultural humility while reporting: Use family’s stated language and names correctly; do not add opinions about culture as cause. Report facts observed.
+
+7. Immediate Safety — Ensuring Protection Without Investigating
+If a child may be in immediate danger, do not delay protection for paperwork or supervisor search — prioritize safety while still meeting reporting duty:
+
+- Stay with child/family if safe and within role; do not confront alleged person causing harm in a way that risks safety.
+- If danger is immediate (e.g., child left alone now, credible threat tonight, injury needing care) or a supervisor/clinical lead cannot be reached promptly, **do not wait for permission** — ensure immediate safety first: call 911 for medical/law-enforcement emergency, follow agency emergency and elopement plan, then contact supervisor as soon as possible and still make SCR report immediately [M04-4][M04-8] (mirrors M02 emergency exception — “contact supervisor” must not delay emergency response).
+- For Mr. Ortiz: He asked for help, not reporting yet unless concerning supervision meets threshold and is ongoing risk. Offer prevention now, assess threshold: 7 and 9 alone overnight with only once-a-night neighbor check — if ongoing and leaves children without appropriate supervision, reasonable cause may exist — report promptly while also offering concrete supports; never shame.
+- For Sofia: Fading bruise + “boyfriend got mad” + brother’s explanation that doesn’t fit pattern + withdrawn behavior — may together create reasonable cause while acting in professional capacity — do not interview Sofia in detail; keep her safe, reassure calmly, report promptly per duty, notify after.
+
+You do not need to prove — trained child-protective staff will assess safety at home and coordinate with law enforcement/health as needed [M04-1].
+
+8. What Happens After a Report — And Your Ongoing Role
+A report triggers an assessment, not an automatic removal:
+
+- SCR screens report; if accepted, local Department of Social Services/ACS investigates or assesses — home visit, interviews, safety plan, services [M04-1][M04-5].
+- Families may receive preventive services, childcare, counseling, medical follow-up, or Family Court involvement if needed [M04-1][M04-6].
+- You may be contacted for additional facts — share what you observed, not opinions, within your role and confidentiality rules [M04-8].
+
+Your ongoing role:
+- Continue supportive relationship with child/family unless agency directs otherwise; avoid telling family “I reported you” in a way that may endanger child or breach safety plan — follow supervisor/agency guidance on what to say [M04-7].
+- Keep documenting services offered, referrals made, family engagement.
+- Reflect with supervisor: What did you notice well? What felt hard? What prevention resources would help next family?
+
+Outcome is not yours to control. Your duty was to ensure concern was reported promptly and correctly — whether SCR accepts or not, you met role.
+
+9. Finding Help — Jurisdiction, Where to Check Official Rules Before Acting
+Rules depend on setting — health, school, childcare, mental health, peer support — and whether you are statutory vs policy reporter. Check official sources + agency handbook before acting.
+
+Federal — where to start:
+**Children’s Bureau — CAPTA & Child Welfare Information Gateway** — federal definitions, prevention resources. Official gateway [M04-4] childwelfare.gov.
+Contact: childwelfare.gov/topics/preventing/
+
+New York — where to start (official government unless noted):
+**NYS OCFS — Preventing Child Abuse and Statewide Central Register** — what to report, how, SCR numbers `1-800-635-1522` mandated / `1-800-342-3720` public, LDSS-2221A. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Mandated Reporter Center https://nysmandatedreporter.org/ via OCFS [M04-1][M04-5].
+**NYC Administration for Children’s Services (ACS) — Mandated Reporters** — “immediately make report or cause report (for example ensuring supervisor makes report)” and “simply notifying supervisor is not equivalent — ensure filing, Call I.D., named.” Official NYC.gov [M04-5].
+**NYSenate.gov — Social Services Law §413** — Official NYS Legislature publisher: https://www.nysenate.gov/legislation/laws/SOS/413 — “No ... shall impose any conditions, including prior approval or prior notification...” [M04-5 §413(1)(c)].
+**NYS Education Department — Mandated Reporter Training** — identifies who is statutory [M04-3].
+**NYC DOHMH / OMH — community program guidance** [M04-7][M04-8].
+Review date: Oct 25 2026 — verify all contacts, websites, laws. Laws, regulations, agency policies change.
+
+Your agency:
+Ask: “Am I listed in SSL §413(1)(a) statutory, or policy-only? What is our SCR call steps, after-hours, online portal? Must I use LDSS-2221A? Who is person in charge to notify after report? What is emergency plan if danger immediate or supervisor unavailable? Who is privacy officer for documentation?”
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Recognizing without investigating (Sofia). Maya notices fading cheek bruise, Sofia says “Mom’s boyfriend got mad last night” in her own words, brother Jamal offers different explanation “fell at park,” Sofia withdrawn (change from usual). Maya does not take Sofia to empty room for detailed interview, does not ask leading “Did he hit you?” Instead: stay calm, reassure, stay with children if safe, note pattern (injury + inconsistent explanations + behavioral change), report promptly as statutory or policy reporter with reasonable cause while acting in professional capacity — do not wait until Friday meeting [M04-5]. Bring quoted words + observable to SCR; let investigators ask details.
+
+Example 2 — Prevention help for supervision concern (Mr. Ortiz). Mr. Ortiz worries, not defensive, about leaving 7 and 9 alone overnight for work with neighbor checking once. Everyday prevention response: thank for asking, explain in plain language that generally this is not considered safe supervision for that age overnight [M04-2], ask what he wants (“What hours? What have you tried? Would childcare help?”) not infer neglect from appearance, offer concrete supports — emergency childcare voucher, family supports, shift options, after-school programs [M04-6] — and document offer. Simultaneously assess reporting threshold: if ongoing and children left without appropriate care, reasonable cause may exist — report promptly per duty while continuing to support; never shame parent who sought help.
+
+Example 3 — Statutory vs policy — same facts, different legal basis. Maya (policy-only peer specialist) and a licensed social worker coworker both hear Sofia’s disclosure and have reasonable cause. In everyday language: Maya follows agency handbook reporting steps for policy reporters — may include telling supervisor promptly but must still ensure report made. Coworker listed in SSL §413(1)(a) has personal legal duty: immediately make report or cause report — cannot be required to get prior approval/notification before reporting [M04-5], must immediately notify person in charge after report [M04-5], must ensure filed. If coworker asks Maya to ensure supervisor called, Maya must verify Call I.D. — simply being told “supervisor will handle” not enough [M04-5 NYC ACS]. Same SCR number, same urgency — different legal accountability.
+
+Example 4 — What to do when supervisor unavailable and danger immediate. While covering evening hours, Maya learns Sofia’s family left Sofia alone that night while they argued loudly next door and neighbor calls worried. Regular supervisor is at training, on-call supervisor not answering after two tries. M02 emergency exception carried forward: Do not delay emergency response waiting for permission — ensure immediate safety (check on child if safe and in role, call 911 if medical/law-enforcement emergency needed, follow agency emergency plan), still immediately make SCR report without prior approval (if statutory) [M04-5], then contact supervisor as soon as possible after ensuring safety/report and document attempts (times called, 911 SCR Call I.D.) [M04-4][M04-8]. “Contact supervisor” here means notify after, not gate before.
+
+Example 5 — After report — ongoing role. After Maya’s SCR report (Call I.D. obtained, supervisor notified after), local Department of Social Services screens and visits family. Maya continues peer support with parents in group per agency direction, does not tell family “I reported you” in confrontational way — follows agency guidance on communication to avoid endangering child or breaching safety plan [M04-7]. Maya documents facts offered, referrals, and continues to offer prevention resources; reflects with supervisor on what signs she recognized well and what supports would help next family.
+
+Chapter Recap — Scannable
+Recognize signs: patterns (injuries with explanations that don’t fit, inadequate supervision, neglect of basic needs, sexual exploitation, emotional harm) may suggest abuse — recognition is not investigation/proof [M04-1][M04-5].
+Risk vs protective: economic stress, isolation, violence, lack of childcare raise risk; nurturing, concrete supports, connections, care buffer [M04-3][M04-6].
+Prevention in role: safe supervision (young children generally not alone extended; overnight for elementary age generally not appropriate with only neighbor check [M04-2]), positive discipline, offer concrete help without judgment [M04-3][M04-6][M04-7].
+Who must report — statutory vs policy: Statutory listed in SSL §413(1)(a) must immediately make/cause report to SCR when reasonable cause [M04-5], no prior approval/notification condition allowed [413(1)(c)], then immediately notify after [413(1)(b)], ensure filed Call I.D./named [NYC ACS]; policy-only follow handbook may include supervisor first but cannot delay statutory duty [M04-5] — M02 distinction carried forward.
+How to report: SCR 1-800-635-1522 mandated / 1-800-342-3720 public, quote child’s/parent’s words, bring pattern, LDSS-2221A within 48h, get Call I.D. [M04-1][M04-5].
+Immediate safety: prioritize protection; if danger immediate/supervisor unavailable, ensure safety/call 911/988 per emergency plan without delay then report+notify ASAP [M04-4][M04-8] — same as M02 emergency exception.
+After report: SCR screens → local DSS/ACS assessment, services or court; your role continue support per agency direction, document, reflect [M04-1][M04-5][M04-7].
+Find official rules at ocfs.ny.gov, nysmandatedreporter.org, nysenate.gov/legislation/laws/SOS/413, nyc.gov/acs, childwelfare.gov — verify before acting [M04-1]–[M04-5].
+
+Knowledge Checks — Complete Questions With Objective Mapping (M04: 41–48; 41–47 A-D, 48 Two-Option Valid)
+
+**41. Recognizing vs investigating**
+Question: Sofia, 10, has a fading bruise, says “Mom’s boyfriend got mad last night,” brother says “she fell at park,” Sofia is withdrawn. What is your role?
+A) Investigate in detail to prove what happened.
+B) Ignore — one bruise is nothing.
+C) Recognize pattern that may suggest abuse — do not investigate/diagnose in detail, ensure immediate safety, report promptly when your role’s threshold met with reasonable cause (quoted words + observable), let trained investigators ask details [M04-1][M04-5].
+D) Diagnose legal outcome yourself.
+Correct Answer: C) Recognize pattern, ensure safety, report with observable facts, no detailed investigation [M04-1][M04-5].
+Objective: Recognize possible signs without investigating/proving.
+
+**42. Risk and protective factors — everyday language**
+Question: Mr. Ortiz leaves 7 and 9 alone overnight while he works — neighbor checks once. He worries, not defensive. In everyday language, what helps without judgment?
+A) Shame him — he should know better.
+B) Explain risk: overnight alone for that age with only once-a-night check generally not considered safe supervision [M04-2]; ask what he wants/has tried; offer protective concrete supports — emergency childcare, vouchers, after-school, shift options [M04-3][M04-6]; assess reporting threshold while supporting.
+C) Ignore — it’s not your concern.
+D) Offer to babysit personally after hours outside policy.
+Correct Answer: B) Plain-language safe-supervision guidance + ask preference + concrete supports; assess threshold simultaneously. Risk factor = lack of safe childcare + economic stress; protective = connections/resources [M04-2][M04-3][M04-6].
+Objective: Describe risk/protective factors and prevention help.
+
+**43. Prevention — safe supervision and positive discipline**
+Question: What is prevention in your role for school-age supervision and discipline?
+A) Tell parents to use physical punishment to control behavior.
+B) Explain generally young children under 12–13 should not be alone extended, especially overnight for elementary age [M04-2]; offer positive discipline (routines, praise, choices, calm-down) [M04-3]; connect to concrete supports without lecturing; stay within job description (don’t provide personal childcare/transport outside policy) [M04-7].
+C) Assume overnight alone always fine for any age.
+D) Lend money directly.
+Correct Answer: B) Safe supervision guidance for age/maturity/time + positive discipline + concrete help within role.
+Objective: Explain prevention in your role.
+
+**44. Statutory vs policy — who must report and employer limits**
+Question: Your teammate is a physician listed in SSL §413(1)(a) and has reasonable cause while working. Your agency handbook says “bring concerns to Friday team meeting; supervisor reviews first — don’t call SCR yet.” What does the law control?
+A) Follow handbook and wait until Friday — handbook overrides law.
+B) Statutory listed reporters must immediately make/cause report to SCR — employer shall not impose prior approval/prior notification as condition [M04-5 §413(1)(c)]; do not wait for Friday/team meeting; then immediately notify person in charge after report [413(1)(b)]; policy cannot delay statutory duty. Policy-only staff follow handbook but cannot delay statutory reporter.
+C) Only report if child tells you directly.
+D) Investigate first.
+Correct Answer: B) Statutory immediate without prior approval/notification, then notify after; policy cannot delay [M04-5].
+Objective: Explain statutory vs policy distinction carried forward from M02.
+
+**45. How to make a report — threshold and information**
+Question: You have reasonable cause while acting in professional capacity (Sofia pattern + words). What is correct about making a report?
+A) You need proof beyond doubt before reporting.
+B) If you have reasonable cause to suspect while acting in professional capacity, immediately make report or cause report to SCR (1-800-635-1522 mandated) [M04-5] — bring child’s quoted words + observable pattern + where child is now — you need reasonable cause not proof; if you cause via supervisor you must still ensure it was actually made, get Call I.D., be named if multiple reporters [NYC ACS] [M04-5].
+C) Report anonymously with no record.
+D) Only report if police told you to.
+Correct Answer: B) Reasonable cause threshold, bring quoted words + observable, ensure filing verification.
+Objective: Describe how to make a report, threshold, information, ensure filed.
+
+**46. Immediate safety, documentation, notifying after**
+Question: After you have reasonable cause for Sofia, what steps honor both safety and your duty?
+A) Promise family “I won’t report” and do nothing.
+B) Ensure immediate safety (stay if safe, don’t confront in risky way), immediately report/cause report without waiting for prior approval (statutory) [M04-5]; then immediately notify person in charge after report and document facts (date/time/quoted words/observable/who notified/Call I.D.) without opinions [M04-7]; follow confidentiality rules [M04-8].
+C) Interview child in detail alone in empty room to get proof.
+D) Post family details on social media to get advice.
+Correct Answer: B) Safety + immediate report without prior approval + notify after + factual documentation.
+Objective: List steps for immediate safety, documentation, notifying after.
+
+**47. Danger immediate or supervisor unavailable — emergency exception (stays open for review)**
+Question: Evening shift, you learn Sofia was left alone during heated argument next door. Regular supervisor at training, on-call not answering after two tries. What honors M02/M04 emergency guidance?
+A) Wait until Friday team meeting — supervisor must review first even if danger immediate.
+B) If danger is immediate or supervisor cannot be reached promptly, do not delay appropriate emergency response — ensure immediate safety first (stay if safe, follow agency emergency plan, call 911 for medical/law-enforcement or 988 suicide/crisis as agency directs), still immediately report/cause report to SCR without prior approval (statutory) [M04-5], then contact supervisor as soon as possible after and document attempts/Call I.D. [M04-4][M04-8] — “contact supervisor” must not delay emergency.
+C) Handle alone and never tell supervisor.
+D) Do nothing.
+Correct Answer: B) Immediate danger/supervisor unavailable → ensure safety/call 911/988 per emergency plan without waiting for permission, then report + notify ASAP. This is the M02/M04 emergency clarification that must not be used to delay.
+Objective: Explain what happens when danger immediate or supervisor unavailable — emergency exception to contact-supervisor routine, now addressed.
+
+**48. After report and finding help**
+Question: You made SCR report (Call I.D. obtained, supervisor notified after). What is your ongoing role and where to verify current rules?
+A) You decide outcome — SCR acceptance means removal.
+B) Continue supportive relationship per agency direction (don’t confront “I reported you” in risky way), document ongoing services/referrals, reflect with supervisor; verify current rules at ocfs.ny.gov, nysmandatedreporter.org, nysenate.gov/legislation/laws/SOS/413, nyc.gov/acs [M04-1][M04-5] — SCR screens → local DSS/ACS assessment.
+C) Assume you did wrong if child stays home.
+D) Ignore family after report.
+Correct Answer: B) Ongoing support per agency direction, reflect, verify at official OCFS/NYSenate/ACS sites. Two-option valid (B vs A/C/D collapse).
+Objective: Explain what happens after report and where to find official help.
+
+Glossary — Plain Language
+**Abuse:** Injury or harm to child where explanation does not fit, or acts that harm wellbeing — includes physical, sexual, emotional patterns.
+**Call I.D.:** Number given by SCR when report made — write down, include in documentation and supervisor notification.
+**Cause a report:** Asking another person (e.g., supervisor) to call SCR for you — you must still ensure it was actually made and you are named if multiple had cause [NYC ACS] — not simply telling supervisor [M04-5].
+**LDSS-2221A:** Writeen report form (paper/electronic) required within 48 hours after oral SCR report where applicable [M04-5].
+**Maltreatment/neglect:** Failure to provide adequate food, clothing, shelter, medical care, supervision for age; includes unsafe supervision [M04-1][M04-2].
+**Reasonable cause:** Reason to suspect based on what you saw/heard in professional role — not proof [M04-5].
+**SCR (Statewide Central Register):** NY central hotline/portal 1-800-635-1522 mandated / 1-800-342-3720 public that screens reports and routes to local child-protective services [M04-1][M04-5].
+**Statutory mandated reporter:** Person listed in SSL §413(1)(a) with personal legal duty to immediately report/cause report [M04-5].
+**Policy reporter:** Staff required to report by agency/employer policy — workplace duty, not statutory status — follow handbook but cannot delay statutory duty [M04-5].
+**Prior approval/notification condition:** Employer requiring permission or notice before statutory report — prohibited by law as condition [§413(1)(c)] [M04-5].
+
+Reviewer Notes — Jargon Outside Learner Text
+Statutory list: SSL §413(1)(a) includes physicians, chiropractors, nurses, dentists, optometrists, medical examiners, residents/interns, psychologists, social workers, police, DA/assistants, investigators, child care providers, educators, etc. — check current law via nysenate.gov; list changes [M04-5].
+Reasonable cause: threshold “reasonable cause to suspect” while acting in professional capacity — not certainty/proof — see OCFS Pub1159 [M04-5].
+413(1)(b) notify after: Immediately notify person in charge after report made (if you are person in charge, ensure filing) — distinct from prohibited prior [M04-5].
+413(1)(c) prohibited conditions: No prior approval/notification imposed on statutory staff [M04-5 nysenate.gov Official publisher].
+SCR vs CPS: SCR is statewide intake; local DSS/ACS does assessment/investigation [M04-1].
+CAPTA: Federal Child Abuse Prevention and Treatment Act — minimum federal definitions, states may be broader [M04-4].
+
+References — Single Consistent Numbered System [M04-1]–[M04-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M04-1] NYS OCFS — Preventing/Identifying Child Abuse and Statewide Central Register — how to recognize, SCR process/screens. Official OCFS.gov: https://ocfs.ny.gov/main/prevention/ ; SCR public: https://ocfs.ny.gov/main/cps/
+[M04-2] OCFS / Prevent Child Abuse NY — Safe supervision guidance — young children not left alone extended, overnight especially concerning for elementary age, maturity/time/phone factors. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Nonprofit reference: https://www.preventchildabuseny.org/
+[M04-3] NYS Education Department — Recognizing risk/protective factors, Mandated Reporter training — economic stress, isolation, IPV, protective supports. Official NYSED: https://www.nysed.gov/ (mandated reporter curriculum) ; Official OCFS training: https://nysmandatedreporter.org/
+[M04-4] Children’s Bureau / Child Welfare Information Gateway — CAPTA definitions, prevention resources. Official childwelfare.gov: https://www.childwelfare.gov/topics/can/ ; https://www.childwelfare.gov/topics/preventing/
+[M04-5] NYS OCFS / NYC ACS / NYS Legislature — Social Services Law §413 — Mandated reporters — who must report (listed §413(1)(a)), reasonable cause while acting in professional capacity, immediately report or cause report, 413(1)(b) immediately notify after, 413(1)(c) no prior approval/notification condition, Call I.D., LDSS-2221A within 48h, ensure filing. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Official mandated training: https://nysmandatedreporter.org/ ; Law text via nysenate.gov Official NYS Legislature publisher: https://www.nysenate.gov/legislation/laws/SOS/413 ; NYC ACS Mandated Reporters — ensure filing: https://www.nyc.gov/site/acs/child-welfare/mandated-reporters.page ; OCFS Pub1159: https://ocfs.ny.gov/main/publications/Pub1159.pdf
+[M04-6] OCFS / Prevent Child Abuse NY / Family Supports — Prevention resources — concrete supports, after-school, parenting programs. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Official DOHMH: https://www.nyc.gov/site/doh/health/health-topics/child-health.page
+[M04-7] NYS OMH + NYC DOHMH — Community program guidance — respectful communication, stay-in-role supports, documentation standards. Official OMH: https://omh.ny.gov/omhweb/policy/ ; Official NYC.gov: https://www.nyc.gov/site/doh/health/health-topics/mental-health.page
+[M04-8] Federal/State confidentiality — HIPAA [M04-1] + 42 CFR Part 2 stricter where applicable + MH Law §33.13; documentation per agency privacy rules. See M02 [M04-1][M04-2] cross-ref
+[M04-9] NYS DOH — Health Equity, safe supervision health guidance. Official NY.gov: https://www.health.ny.gov/
+[M04-10] NYC ACS — Child safety/prevention materials. Official NYC.gov: https://www.nyc.gov/acs/
+[M04-11] Prevent Child Abuse America — Prevention frameworks. Nonprofit professional association (nongovernmental): https://preventchildabuse.org/
+[M04-12] NY Justice Center for Protection of People with Special Needs — Vulnerable persons protections. Official NY.gov: https://justicecenter.ny.gov/
+[M04-13] U.S. DOJ LEP.gov + HHS OCR — Language access if needing interpreter to report. Official lep.gov
+[M04-14] HHS/CMS — Medicaid/child health supports. Official hhs.gov
+[M04-15] NYS OPWDD — Disability-specific supports. Official opwdd.ny.gov
+[M04-16] Cross-reference law publishers — social services law. Official govinfo.gov for federal; Official nysenate.gov for NY law: https://www.nysenate.gov/legislation ; Nongovernmental reference Cornell LII https://www.law.cornell.edu/wex/table_new_york
+
+Scheduled re-verification date: Oct 25 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York; scheduled re-verification marker is prospective; M02 distinction statutory vs policy carried forward verbatim per §413 + NYC ACS ensure-filed verification; V1 preserved at evidence/sources/M04-textbook-chapter-v1-V1-preserved.txt (upon patch).
+---
+End of M04 Chapter Draft V1 — Single citation system [M04-1]–[M04-16] with source classifications labeled (official government [M04-1][M04-3]–[M04-10][M04-12][M04-16] Official NYS Legislature nysenate.gov vs nongovernmental legal-text publisher Cornell LII vs nonprofit Prevent Child Abuse [M04-11] vs professional references), knowledge checks mapped to objectives (41–47 A-D, 48 two-option). No statutory proof required, threshold reasonable cause, immediate without prior approval then notify after, emergency exception included. NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1 DRAFT · REVIEW PENDING — legal review, comprehension testing, accessibility verification, measured runtime pending. No external records changed. Originals preserved. M02/M03 exports available evidence/exports/.

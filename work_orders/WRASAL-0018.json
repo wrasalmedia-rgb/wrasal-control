@@ -1,0 +1,122 @@
+{
+    "work_order_id": "WRASAL-0018",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0018",
+    "recorded_on": "2026-10-25",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Address M02 emergency-guidance open point (immediate danger/supervisor unavailable — do not delay 911/988 emergency response); label revised M03 with new revision identifier preserving V1; export M02 V1.2 + M03 V1.1 with diffs and objective crosswalks for independent inspection; continue M04 Child Abuse Recognition, Prevention and Reporting carrying forward M02 statutory vs policy distinction.",
+    "success_condition": "M02 manuscript updated V1.1 46866B ef3a6043 → V1.2 48546B a8f16faf: §5B Harm, KC27, Chapter Recap expanded with emergency exception 'If danger immediate or supervisor unavailable, do not delay emergency response — ensure safety/call 911/988 per agency emergency plan then notify ASAP [M02-4][M02-8]', previously stayed open point now addressed pending subject-matter verification; V1.1 preserved at evidence/sources/M02-textbook-chapter-v1-V1.1-preserved-2026-10-25.txt + diff evidence/M02-V1.2-emergency-guidance.diff 53 lines. M03 manuscript labeled V1 → V1.1 52833B 39f5d87c → 52898B 2098543b: header/footer now V1.1 DRAFT preservation note to evidence/sources/M03..., revision identifier added; preserved V1 remains 39609B 9fd2d715 at evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt; diffs 253+21 lines. Exports created evidence/exports/M02-V1.2, M03-V1.1, M04-V1 each with manuscript + preserved + diffs + objective crosswalk + README; M04 V1 new 43164B e7f51aba at google_drive/M04-textbook-chapter-v1.txt with statutory vs policy carried forward verbatim, 8 Learning Goals, §§1-10, 5 Examples, KCs 41-48, References M04-1–M04-16. No Drive originals modified, no merge/deploy, canonical pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m02_v1_1_preserved": "evidence/sources/M02-textbook-chapter-v1-V1.1-preserved-2026-10-25.txt — 46866B md5 ef3a604372374b0ed074b7e4719de348 (V1.1 before emergency guidance)",
+        "m02_v1_2": "google_drive/M02-textbook-chapter-v1.txt — 48546B md5 a8f16fafcc0f357fd7df924205bc00c2 V1.2 DRAFT Scheduled re-verification Oct 24 2026 execution 2026-10-23 EDT",
+        "m02_v1_2_diff": "evidence/M02-V1.2-emergency-guidance.diff — 53 lines: §5B emergency exception, KC27 emergency exception, Recap, footer V1.1→V1.2",
+        "m02_emergency_guidance": "Emergency: if danger immediate or supervisor unavailable, do not delay 911/988 per agency emergency plan then notify ASAP — addresses prior open point that contact-supervisor must not delay emergency response [M02-4][M02-8]",
+        "m02_v1_preserved": "evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39148B md5 4acc0908650818122675602b00b126af (V1)",
+        "m02_v1_1_diff": "evidence/M02-V1.1-bounded-corrections.diff — 128 lines statutory vs policy alignment",
+        "m03_v1_preserved": "evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39609B md5 9fd2d71536e338d5d555ed6967195cc1 (V1 original af081c6)",
+        "m03_v1_1": "google_drive/M03-textbook-chapter-v1.txt — 52898B md5 2098543b70d1fadfba74dcc8e931338c V1.1 DRAFT Scheduled re-verification Oct 25 2026 execution 2026-10-23 EDT",
+        "m03_declustered_diff": "evidence/M03-V1-declustered-revision.diff — 253 lines declustered agency + distinct sources + ask-vs-infer",
+        "m03_relabel_diff": "evidence/M03-V1.1-relabel.diff — 21 lines V1→V1.1 revision identifier, preservation note",
+        "exports_readme": "evidence/exports/README.md — index of export packages with execution vs scheduled clarification, V1/V1.1/V1.2 preservation, diffs, crosswalks",
+        "m02_crosswalk": "evidence/exports/M02-V1.2/M02-V1.2-objective-crosswalk.md — 7 Goals + duties to sections/examples/KCs 21-28 explanatory",
+        "m03_crosswalk": "evidence/exports/M03-V1.1/M03-V1.1-objective-crosswalk.md — 8 Goals to teaching/practice/KCs 31-38 explanatory, distinct sources verification",
+        "m04_v1": "google_drive/M04-textbook-chapter-v1.txt — 43164B md5 e7f51aba5405e584d9960b0764402e88 V1 DRAFT Scheduled re-verification Oct 25 2026",
+        "m04_v1_preserved": "evidence/sources/M04-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 43164B md5 e7f51aba5405e584d9960b0764402e88",
+        "m04_crosswalk": "evidence/exports/M04-V1/M04-V1-objective-crosswalk.md — 8 Goals to sections/examples/KCs 41-48, M02 distinction carried forward verbatim per SSL 413 §413(1)(a)(b)(c) + NYC ACS",
+        "m04_statutory_carry": "M04 §5 carries M02 distinction: statutory listed 413(1)(a) immediate without prior approval 413(1)(c) then notify after 413(1)(b) ensure filed NYC ACS vs policy handbook may include supervisor first but cannot delay statutory — taught + Example3 + KC44-47",
+        "prior_state": "M01 Review pending, M02 V1.1 reported patched review pending, M03 revised draft reported authored review pending (V1 identifier unlabeled), M04 not established, canonical pending",
+        "updated_state": "M01 Review pending, M02 V1.2 reported patched (emergency exception added, prior open point addressed pending subject-matter verification), M03 V1.1 reported labeled revision preserving V1 (new identifier), M04 V1 reported authored carrying M02 statutory vs policy distinction, M05-M11 not established, canonical pending",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0018-m02-emergency-guidance",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt §5B Harm, KC27, Recap + evidence/M02-V1.2-emergency-guidance.diff 53 lines vs instruction that one M02 point should stay open for subject-matter review: emergency when danger immediate/supervisor unavailable",
+            "observed_result": "Verified V1.2 adds emergency exception in §5B, KC27 correct answer, Chapter Recap: 'If danger immediate or supervisor unavailable, do not delay emergency response — ensure safety/call 911/988 per agency emergency plan then notify ASAP [M02-4][M02-8]'. Phrase 'contact supervisor must not delay emergency' addressed; V1.1 preserved 46866B ef3a6043 before, V1.2 now 48546B a8f16faf. Diff 53 lines shows bounded addition only to §5B, KC27, Recap, status/footer. Prior open point now has teaching text, stays subject to independent verification. V1 preserved 39148B still at sources.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-m03-revision-identifier",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt header V1 → V1.1 + footer V1.1 + evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt 39609B 9fd2d715 vs evidence/M03-V1.1-relabel.diff 21 lines",
+            "observed_result": "Verified revised M03 now labeled V1.1 Draft with new revision identifier: '# M03 — Textbook Chapter V1.1 — ... (bounded revision; V1 preserved 39609B...)' and 'V1.1 DRAFT — Sources [M03-1]–[M03-16] — see preservation record evidence/sources/M03...' and end footer 'End of M03 Chapter Draft V1.1 — Single citation ... V1 preserved 39609B; V1.1 changes: declustered... Diff: evidence/M03-V1-declustered-revision.diff 253 lines + revision identifier added this commit'. Preserved V1 39609B md5 9fd2d71536e338d5d555ed6967195cc1 remains untouched at evidence/sources/; new V1.1 52898B md5 2098543b70d1fadfba74dcc8e931338c. Two-stage preservation maintained: V1 preserved before decluster (af081c6), V1.1 now labeled revision.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-exports-m02-m03-diff-crosswalk",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/exports/M02-V1.2/, evidence/exports/M03-V1.1/, evidence/exports/M04-V1/, evidence/exports/README.md + crosswalks",
+            "observed_result": "Verified exports for independent inspection: M02-V1.2 folder contains M02-textbook-chapter-V1.2.txt 48546B a8f16faf + preserved V1 39148B + preserved V1.1 46866B + three diffs (bounded 6.1K, V1.1 28K, V1.2 16K) + crosswalk mapping 7 Goals + duties to sections/examples/KCs 21-28 explanatory. M03-V1.1 folder contains M03-textbook-chapter-V1.1.txt 52898B 2098543b + preserved V1 39609B + diffs 47K+5.6K + crosswalk 8 Goals to §§/examples/KCs 31-38. M04-V1 folder contains M04-textbook-chapter-V1.txt 43164B e7f51aba + preserved same + crosswalk 8 Goals to §§/examples/KCs 41-48. README indexes execution vs scheduled clarification (2026-10-24/25 filenames scheduled not completed), V1 preservation, diffs, crosswalks, next module. All exports copy evidence/sources preservation + google_drive manuscripts + diffs + crosswalks.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-m04-carries-m02-distinction",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M04-textbook-chapter-v1.txt §§5-7 + Opening Situation + Examples 3-4 + KCs 44-47 + References [M04-5] nysenate.gov Official + NYC ACS",
+            "observed_result": "Verified M04 V1 43164B e7f51aba carries forward M02 distinction verbatim: §5 Statutory listed §413(1)(a) must immediately make/cause report to SCR — no prior approval/notification as condition [413(1)(c) Official nysenate.gov], then immediately notify after [413(1)(b)], ensure filed Call I.D./named per NYC ACS — simply telling supervisor not equivalent. Policy-only handbook may include supervisor first but cannot delay statutory. Same language as M02 V1.1/V1.2 used in teaching (§5), practice (Example3 statutory vs policy same facts), assessment (KC44 statutory vs policy employer limits, KC45 ensure filed, KC46 immediately report then notify after, KC47 emergency exception if danger immediate/supervisor unavailable do not delay 911/988 then report+notify ASAP). Emergency guidance mirrors M02 V1.2. Threshold reasonable cause while acting in professional capacity, not proof. SCR 1-800-635-1522/3720, LDSS-2221A 48h, Call I.D. cited [M04-5].",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-m04-objectives-scenarios-assessments",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M04-textbook-chapter-v1.txt Opening Situation (Sofia 10 bruise/boyfriend, Jamal brother, Mr Ortiz 7/9 overnight, coworker wait-Friday) + Learning Goals 8 + §§1-10 + 5 Examples + Recap + KCs 41-48 + References [M04-1]–[M04-16]",
+            "observed_result": "Verified M04 has fresh objectives/scenarios/assessments/source identifiers for Child Abuse Recognition, Prevention and Reporting (not M02 duplicate): Opening Maya/Sofia/Jamal/Mr Ortiz distinct from Sam/Elena peer-support; 8 Learning Goals (recognize signs, risk/protective, prevention supervision/discipline, statutory vs policy, how to report SCR, immediate safety/documentation/notify after, what happens after, find help); §§1 Motivation, 2 What abuse/maltreatment plain language & pattern vs proof, 3 Risk/protective everyday, 4 Prevention safe supervision/positive discipline/concrete help, 5 Who must report statutory vs policy, 6 How to report SCR what helps, 7 Immediate safety with emergency exception, 8 After report, 9 Finding Help (OCFS, nysmandatedreporter, nysenate.gov, NYC ACS, childwelfare.gov), 10 Worked Examples 5 full sentences; Recap scannable; KCs 41-48 (41-47 A-D, 48 two-option) each with explanatory answer linking to teaching sources; References [M04-1]–[M04-16] labeled Official nysenate.gov vs Cornell LII vs nonprofit Prevent Child Abuse; every objective has teaching+practice+explanatory assessment per crosswalk.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-execution-vs-scheduled-separation",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02/M03/M04 headers/footers Scheduled re-verification Oct24/25 + evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md",
+            "observed_result": "Verified execution vs scheduled separation kept: M02 Scheduled re-verification date Oct24 2026 (execution 2026-10-23 America/New_York EDT) with note to reconciliation file; M03 and M04 Scheduled re-verification date Oct25 2026 with execution 2026-10-23 EDT and note filenames dated 2026-10-24/25 denote scheduled dates not completed reviews. Evidence clarification file states execution all 2026-10-23 per git AuthorDate 2026-10-23T22:11:55Z, scheduled prospective, no claim work occurred Oct24/25. Headers now include preservation record path.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-preservation-no-drive-modify",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/ M02 V1 39148B + V1.1 46866B + M03 V1 39609B + M04 V1 43164B + Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi metadata preserved",
+            "observed_result": "No Drive originals modified — local manuscripts + preservation at evidence/sources/ + diffs + exports; Drive folder originals retained (M01 docx 49038B extracted 38737B, video package 23838B md5 650c422d). No Drive API modify_content/trash/delete; no merge/deploy; exports are local evidence copies for inspector.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs PASS 1443→ongoing + work_orders status-vocabulary + concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+            "observed_result": "1,443+ checks remain record-validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders vocabulary, references/evidence/canonical_state_impact/next_candidate structure) — not content accuracy/legal/comprehension/accessibility or canonical acceptance. Drafting can continue while verification findings stay open; release_authorized remains false; measured runtime pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0018-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Review pending, M02 V1.1 reported patched review pending, M03 revised draft reported authored review pending unlabeled, M04 not established + handoff instruction continue M04",
+            "observed_result": "State transition: M01 Review pending (14:30 arithmetic closed, timed read-through pending). M02 V1.2 reported patched — emergency exception added (prior open point now has emergency text pending subject-matter verification). M03 V1.1 reported labeled revision (new identifier, V1 preserved, declustered+distinct sources+ask-vs-infer intact). M04 V1 reported authored — Child Abuse Recognition, Prevention and Reporting carrying forward M02 statutory vs policy distinction (immediate without prior approval then notify after + ensure filed + emergency 911/988 exception). M05-M11 not established. Canonical acceptance and public release remain pending — drafting separate from legal approval.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M02-textbook-chapter-v1.txt 46866→48546 md5 ef3a6043→a8f16faf V1.2 emergency guidance + preserved V1.1 at evidence/sources/M02-textbook-chapter-v1-V1.1-preserved-2026-10-25.txt + diff M02-V1.2-emergency-guidance.diff 53 lines; google_drive/M03-textbook-chapter-v1.txt 52833→52898 md5 39f5d87c→2098543b V1.1 labeled + diff M03-V1.1-relabel.diff 21 lines; google_drive/M04-textbook-chapter-v1.txt V1 new 43164B e7f51aba + preserved at evidence/sources/M04-... + exports M02-V1.2, M03-V1.1, M04-V1 with manuscripts+preserved+diffs+crosswalks+README; prior M01-M03 artifacts preserved",
+        "drive_originals": "unchanged — local drafts/exports only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0019 — Independent inspection of M02 V1.2 + M03 V1.1 + M04 V1 exports (subject-matter verification of emergency exception, crosswalks, statutory vs policy carry-forward); then M05 drafting. Keep legal review separate."
+}

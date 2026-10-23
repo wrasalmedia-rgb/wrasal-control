@@ -1,0 +1,291 @@
+# M03 — Textbook Chapter V1.1 — Cultural Competency, Inclusion and Respectful Communication — DRAFT (bounded revision; V1 preserved 39609B md5 9fd2d71536e338d5d555ed6967195cc1)
+
+M03 — Cultural Competency, Inclusion and Respectful Communication
+V1.1 DRAFT — Sources [M03-1]–[M03-16] with Classifications Labeled (official government, nongovernmental research/university reference, professional association) — Not approved for public release — Scheduled re-verification date Oct 25 2026 (execution: 2026-10-23 America/New_York) — see preservation record evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt
+M03 — Cultural Competency, Inclusion and Respectful Communication
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M03-1]–[M03-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1 — Initial draft reusing M01/M02 teaching structure and evidence discipline (Opening Situation, Learning Goals, sections 1–10, Worked Examples, Recap, Knowledge Checks with objective mapping, Glossary, Reviewer Notes, single consistent bracket system); fresh objectives, scenarios, assessments, and source identifiers created for M03 on Cultural Competency, Inclusion and Respectful Communication; prior M01/M02 findings carried into review (not restarted). Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — federal civil-rights and language-access rules for comparison (Title VI, ADA, CLAS).
+**Scheduled re-verification date:** October 25, 2026 — verify all agency phone numbers, websites, laws, regulations, and agency guidance before publication — laws and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); Oct 25 is scheduled re-verification marker — see evidence files for execution vs re-verification separation (filenames dated 2026-10-24/25 denote scheduled dates, not completed reviews).
+**Disclaimer:** General information only. Not legal advice. Not clinical advice. Your agency's policies and your supervisor's guidance control day-to-day practice. When in doubt, ask a supervisor or agency counsel before acting.
+---
+
+Opening Situation
+Luis now works part-time at the front desk of the same neighborhood wellness center in Queens where Sam works. Luis loves greeting people, but he is still learning the desk routine. On Monday morning, three moments happen close together:
+
+First, a new participant, Mx. Rivera, checks in for a peer-training workshop. Their intake form, which Marisol filled out themself, lists name: “Marisol Rivera, pronouns: they/them, language: Spanish — prefers interpreter.” In the “what helps me participate” box Marisol wrote: “Please use they/them and call interpreter — I want to follow along in Spanish and ask questions myself.” Marisol is a community health worker who often advocates for neighbors. Luis, trying to be quick, says “Mari-sol? She is here for 10 a.m.?” and gestures to a seat without offering language help.
+
+Second, an older adult, Mr. Jackson, 62, who is Deaf and uses American Sign Language, arrives without an appointment and writes on a notepad in his own words: “I need help with housing form. I can read English. I prefer ASL interpreter for detailed forms — I can write for quick scheduling.” Mr. Jackson is a retired housing advocate who has been to the center before and knows which forms matter. A coworker whispers to Luis, “We don't have ASL today — can you just write back quickly and get him to come back tomorrow?”
+
+Third, a teenage peer volunteer, Aisha, 17, who wears a hijab and helps plan youth meals, is waiting nearby while a staff member complains loudly in the break area within earshot: “I don't get why we have to change the food options for her.” Last month Aisha asked the kitchen team — in her own words — “Can we list what’s in each dish so everyone can choose? I can help label them.”
+
+Luis wants to be kind, respectful, and efficient — and also worries about saying the wrong thing, taking too long, or making someone feel like a burden. This chapter looks at everyday questions like these: What does cultural competency mean in plain language? How do you show respect for names, pronouns, language, disability, and beliefs while staying in your role? What does inclusion look like at a front desk, in a waiting room, and in the words you choose?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Explain what cultural competency and cultural humility mean in everyday language.
+Describe how bias can show up in small moments — and what you can do to reduce it.
+Show respect for names, pronouns, and identity in the way you greet and document.
+Explain language access: when to offer an interpreter or translated material, and how to work with one.
+Give everyday examples of inclusion for disability and accessibility (mobility, hearing, vision) without making assumptions.
+Explain boundaries that protect inclusion — what you can do, what your agency must provide, and what needs a supervisor.
+Support someone who experienced disrespect or exclusion while staying in your role and being clear about limits.
+Find official help in New York and understand where to check current inclusion rules before acting.
+
+1. Why Cultural Competency, Inclusion and Respectful Communication Matter
+People come for help with their whole lives — language, family, faith, disability, gender, age, race, ethnicity, income, housing. When people feel seen, respected, and understood, they are more likely to trust you, share important information, and keep coming back. When they feel misnamed, rushed, judged, or excluded, they may leave, not ask for help, or feel unsafe — even if you meant to be kind.
+
+Inclusion is not extra — it is part of doing the job well. Simple actions — using the name and pronouns someone gave, offering language help without them having to beg, making space for a cane or wheelchair, explaining what will happen next — build trust and safety for everyone.
+
+Federal guidance from the HHS Office of Minority Health describes the National Standards for Culturally and Linguistically Appropriate Services (CLAS) as a way to help health and human-service organizations provide effective, equitable, understandable, and respectful care that responds to cultural health beliefs, preferred languages, and communication needs [M03-1]. New York City and New York State human-rights resources similarly explain that protections cover race, ethnicity, national origin, disability, gender identity and expression, and other characteristics in employment, housing, and public accommodations like stores, clinics, and transit [M03-2][M03-3]. You do not need to memorize every standard — know where to find your agency’s plan for language, disability, and nondiscrimination, and who to ask when you are not sure.
+
+2. What Culture, Identity, and Inclusion Mean — Everyday Language
+Culture is not one thing about one group. It includes shared language, customs, faith, family roles, food, art, history, and everyday ways of doing things — plus the individual ways each person lives them. Identity is how a person understands themselves — including racial or ethnic identity, language, gender identity and expression, disability, age, veteran status, faith or no faith, and more. People often have several identities at once.
+
+Cultural competency in everyday language means you have the knowledge, skills, and respectful attitudes to work well with people from many backgrounds, and your agency has policies, training, and resources to support you [M03-1]. Cultural humility is the everyday practice inside competency: stay curious, admit you don’t know, ask respectfully, listen more than you assume, and let the person be the expert on their own life [M03-4].
+
+Inclusion means everyone can take part with dignity — physical access (doors, seating, kiosk height), communication access (interpreters, captioning, plain-language forms), and belonging (being greeted by the name and pronouns you use, seeing your community reflected, not being singled out) [M03-5][M03-6].
+
+New York example: City law protects people from discrimination based on actual or perceived race, ethnicity, national origin, disability, gender identity or expression, and other protected characteristics in public accommodations [M03-2]. State resources explain how to report and where to seek help for discrimination statewide [M03-3]. These protections exist alongside federal civil-rights rules like Title VI (language access for programs receiving federal funds) and the Americans with Disabilities Act (ADA) for disability access [M03-6][M03-7].
+
+3. Bias in Everyday Work — Recognizing Small Moments and Repairing
+Bias is a tendency to favor some people or ideas — often without realizing it. Implicit bias is a quick, automatic association that can affect how you listen, who you believe, how long you wait, or what you assume someone needs. It does not mean you are a bad person — it means your brain took a shortcut that you can notice and change.
+
+Small moments where bias can show up:
+Greeting one person with a smile and another with a sigh.
+Assuming a teenager with a hijab wants special food rather than asking the group what options help everyone feel welcome.
+Assuming an older Deaf adult cannot read English or cannot fill out a form without checking what they prefer.
+Mispronouncing a name and not correcting yourself, or correcting someone else’s pronouns only when they are not in the room.
+
+What helps:
+Pause and notice: “What am I assuming before I ask?”
+Ask the person directly, respectfully: “How would you like me to address you? Would an interpreter be helpful? What is the best way for us to communicate today?”
+Correct yourself kindly and move on: “Thank you for telling me — they/them — I’ll make that change. What you said about needing extra time at the kiosk — let’s make space for that.”
+Document respectfully: Use the name, pronouns, and language the person provided on their form; avoid adding opinions like “difficult” or “demanding” [M03-7][M03-8].
+Learn team patterns: If one group often waits longer, misses appointments, or leaves without service, bring it to a supervisor as a possible system issue, not a person’s fault [M03-1][M03-7].
+
+Repair matters more than perfection. A brief, sincere correction builds more trust than pretending it did not happen.
+
+4. Respectful Communication — Names, Pronouns, and Identity (distinct from language access)
+
+Names: Use the name the person gave on the form or when introduced. If you are not sure how to say it, ask: “Did I say your name correctly? I want to say it right.” Repeat it back once you learn it. Avoid shortening without permission or making jokes about names. If you mispronounce, correct quickly: “I’m sorry — Marisol, thank you for correcting me.” [M03-2][M03-8] This is respectful communication about identity — it is about how you address someone, not about which language they need.
+
+Pronouns: Pronouns are words like she/her, he/him, they/them that people use for themselves. New York City human-rights guidance (NYC Commission on Human Rights Gender Guidance) explains that gender identity and expression, including pronouns, are protected characteristics, and that using pronouns consistent with a person’s self-identification is part of respectful treatment in public accommodations and workplaces [M03-2]. Everyday practice: use the pronouns the person provided on the intake form they filled out themself, mirror what the person uses for themselves, and if you slip, correct briefly without long explanations that center your feelings: “They said they will be here at two — thank you for reminding me.” Do not ask intrusive questions about bodies, medical history, or “real” names [M03-2][M03-8]. Ask once, then use consistently: “Thank you for sharing they/them — I’ll note that so you don’t have to repeat it. How would you like to be addressed today?”
+
+What respectful communication is not: It is not guessing gender from appearance, and it is not inferring pronouns from clothing, voice, or name — ask what the person uses, then use it [M03-2].
+
+4B. Language Access — A Separate Obligation with Separate Sources (Title VI)
+
+Language access: Under Title VI of the Civil Rights Act of 1964 for programs receiving federal financial assistance, you generally must take reasonable steps to provide meaningful access for people with limited English proficiency — often through qualified interpreters or translated materials, not by requiring family members to interpret [M03-6]. Federal guidance at LEP.gov explains how to plan for interpretation and translation [M03-6]. Even where Title VI does not apply, many New York agencies provide language help by policy because it is effective and equitable [M03-1][M03-6]. This is distinct from names/pronouns: language access is about the right to understand and be understood in your preferred language.
+
+Working with an interpreter — ask, don’t infer:
+Offer early: “An interpreter can join us at no cost — would you like one in Spanish?” [M03-6] Do not infer language need from surname, accent, or appearance — ask what the person prefers and document what they tell you [M03-6].
+Use a qualified interpreter (in-person, video, or phone) rather than a child, friend, or the front-desk staff who “speaks a little Spanish” for complex or sensitive topics [M03-6][M03-8].
+Speak to the person, not the interpreter: “What brings you in today?” rather than “Ask her what brings her in.” Pause for interpretation.
+Document language preference the person stated so the next staff does not have to ask again [M03-7].
+
+Luis’s first moment missed these steps: using “She” instead of the they/them Marisol wrote themself, mispronouncing “Marisol,” and not offering the Spanish interpreter Marisol requested in their own words. An in-role repair that asks rather than assumes could be: “Good morning, Mx. Rivera — thank you for your form. You wrote you use they/them and prefer Spanish with an interpreter so you can ask questions yourself — thank you for telling us. I’ll make sure we use the right name and pronouns on your paperwork, and I can call Video Interpreter now — is that what you’d like today?”
+
+5. Inclusive Practices — Disability, Accessibility, Belonging Without Assumptions (distinct legal basis: ADA)
+Disability includes many lived experiences — mobility (cane, wheelchair, chronic pain), sensory (Deaf, hard-of-hearing, low vision, blind), cognitive, mental health, and chronic illness. The Americans with Disabilities Act (ADA) requires equitable access for people with disabilities in public programs and public accommodations, which often means reasonable modifications, auxiliary aids and services, and accessible facilities [M03-7]. This is a disability-accommodation obligation, separate from language access under Title VI — different law, different aids, different sources (ADA.gov [M03-7] vs LEP.gov [M03-6]).
+
+Everyday inclusive practices — ask what the person wants, don’t infer from appearance:
+
+Mobility — ask, don’t assume need from cane: Do not move someone’s cane, bag, or wheelchair without permission. Offer extra time and space at kiosks, counters, or waiting areas — but ask first: “What is most helpful for you at the kiosk today? Would you like extra time or a different way to complete this form, or are you all set?” If a line is long, offer a seat or a pager/number so they can wait comfortably. Do not infer from a cane that someone cannot stand briefly or cannot use a touchscreen — ask [M03-7]. At the center, Ms. Thompson, 68, who uses a cane after knee surgery, told the front desk herself: “I like to take my time at the kiosk — can I have an extra minute? I don’t need someone to fill it for me.” That is agency — she stated preference, staff followed it.
+
+Hearing — ask preference, don’t infer reading ability or signing: Do not assume reading ability from Deaf identity, and do not assume everyone signs. Mr. Jackson, in his own handwritten note, wrote “I can read English. I prefer ASL interpreter for detailed forms — I can write for quick scheduling.” That is individual preference — follow it: offer options — qualified ASL interpreter (in-person or Video Remote Interpreting), captioned phone, written exchange for simple topics, or real-time captioning for meetings — and ask which he wants today. “You wrote you prefer ASL for detailed forms and can write for scheduling — we can call Video ASL now, or we can write for scheduling — what works best for you today? Coming back tomorrow is an option, but we have same-day interpreter access if you can wait a few minutes.” [M03-5][M03-7] Many agencies must provide effective communication through appropriate aids and services — “just write back quickly” is often not effective for complex housing forms [M03-7]. Do not infer need from age or appearance — ask.
+
+Vision: Offer verbal wayfinding (“The kiosk is 10 steps ahead on your right”), large-print or electronic forms that work with screen readers, and reading assistance if wanted. Do not touch someone or their guide dog without asking. Ask: “Would you like directions, large print, or to use the accessible kiosk setting?” [M03-7]
+
+Belonging — not singling out: Reflect community in what people see — multilingual signs, diverse images, halal/vegetarian/kosher/vegetarian options noted neutrally, not as “special for her.” When a staff complaint singles out a participant (“change food options for her”), it harms belonging even when the participant overhears it indirectly. Aisha herself had already offered — in her own words — “Can we list what’s in each dish so everyone can choose? I can help label them.” That is agency — the fix was already participant-led; staff should follow it, not debate it. Address complaints privately with a supervisor: “In the break area at 10:15, I heard a comment about food options that referenced a participant’s hijab within earshot of others — I’m concerned it made visitors feel unwelcome,” and model inclusive language: “We offer several food options and list ingredients so everyone can choose comfortably — let’s keep the break area respectful.” [M03-1][M03-8]
+
+Ask, don’t assume — core practice for this section: “What assistance would be most helpful for you today?” is better than guessing needs from one characteristic like cane, hijab, accent, or age — let the person name preference, then provide it [M03-7].
+
+6. Boundaries and Cultural Humility — Staying in Role While Being Respectful
+Being culturally humble does not mean you must be an expert on every culture, faith, or disability community. It means you are willing to learn, to be corrected, and to keep the focus on the person’s needs — not your curiosity or comfort.
+
+Helpful boundaries:
+Time and role: You provide information, support, and connections within your job. You do not provide counseling outside your training, diagnose, or make decisions for someone. If a question is outside your role, say so and connect to the right person: “I’m not able to change your benefits, but our benefits specialist is here until 4 and has an Amharic interpreter available — may I introduce you?”
+Questions: Ask only what your agency needs to provide service. Avoid “Where are you really from?” or “What’s wrong with you?” Instead: “How can I best support you during this visit?”
+Self-awareness: Notice when you feel uncomfortable, impatient, or overly helpful, and pause. Discomfort often signals a chance to learn, not a reason to avoid someone [M03-4].
+Privacy: Do not share someone’s identity, language, disability, or faith with other participants as an example.
+
+Cultural humility in action: If you misnamed or misgendered someone, correct it for yourself and note it respectfully in the file (per agency rules) so the next person does not repeat it — not to label the person, but to avoid asking again. Thank the person for correction: “Thank you for telling me your pronouns are they/them — I’ll update the form.”
+
+7. When Respect and Safety Intersect — Responding to Disrespect or Harm
+Respect does not mean ignoring harm. If you hear demeaning language — about food, clothing, accent, disability, or identity — you have a role to reduce harm and keep the space safe.
+
+If you overhear a staff complaint that targets a participant:
+Stay calm. Do not repeat the language loudly or confront harshly in front of the participant.
+Support the person who may have been affected: acknowledge quietly if they seemed to hear it, offer a private space, and ask what would help now: “I’m sorry if that was uncomfortable to hear. We want everyone to feel welcome here. Would you like to speak with a supervisor or move to a quieter waiting area?”
+Address with a supervisor promptly: name what you heard, where, and what impact you noticed, without diagnosing intent: “In the break area at 10:15, I heard a comment about food options that referenced a participant’s hijab within earshot of others. I’m concerned it made visitors feel unwelcome.” [M03-7][M03-8]
+Document facts (date, time, words or gist, who was affected, what you did) per agency process.
+
+If bias affects service (e.g., someone is told to “come back tomorrow” only when others are helped today), flag it as a possible access issue, not just a one-person delay: “We don’t have ASL in person, but we have Video Remote Interpreting — I offered that and note we should log language/communication aid requests.” [M03-6][M03-7]
+
+If someone reports harassment or discrimination in your program, follow your agency’s nondiscrimination and complaint steps and connect them to official resources (City Commission on Human Rights, State Division of Human Rights) rather than deciding the legal outcome yourself [M03-2][M03-3].
+
+8. Building Trust Across Differences — Small Actions That Add Up
+Trust grows from many small, consistent moments:
+Greet each person by the name and pronouns they provided — consistently, not only when they correct you.
+Offer language help proactively when form says “prefers interpreter” — don’t wait to be asked.
+Make accessibility routine: keep paths clear, offer extra time, keep interpreter video equipment ready, test captioning.
+Explain what happens next: “After check-in, you’ll meet with a counselor for about 20 minutes. I can stay with you until they are ready, or you can wait here — what would you prefer?”
+Follow up as promised: If you said you would update the file, tell them it is done — “I added that you prefer Spanish with interpreter and they/them, so you won’t have to repeat it.”
+
+Accountability: If you learn you repeated a name or pronoun error in notes, correct the file per agency rules and tell the person the correction is made. If a process keeps disadvantaging one community (longer waits, missed language help), bring data patterns to a supervisor — inclusion is a team and system responsibility [M03-1][M03-7].
+
+9. Finding Help — Jurisdiction, Where to Check Official Rules Before Acting
+Rules depend on your setting — health clinic, wellness center, housing, school, workplace, NYC public accommodation. Check official sources and your agency’s policies before acting.
+
+Federal — where to start:
+**HHS Office of Minority Health — National CLAS Standards** — culturally and linguistically appropriate services blueprint, principal standard, governance/communication/engagement themes. Official HHS.gov [M03-1]. **HHS Office for Civil Rights — Title VI Language Access and Nondiscrimination** — LEP guidance via lep.gov and hhs.gov/ocr [M03-6]. **ADA.gov — Americans with Disabilities Act** — rights, reasonable modifications, effective communication [M03-7].
+Contact: ThinkCulturalHealth.hhs.gov (CLAS); ada.gov; lep.gov.
+
+New York — where to start:
+**NYC Commission on Human Rights (CCHR)** — protections for race, ethnicity, national origin, disability, gender identity/expression, religion in public accommodations, housing, employment; inclusive language guidance `NYC Gender Guidance`. Official NYC.gov [M03-2].
+**NYS Division of Human Rights (DHR)** — statewide discrimination reports, statewide process `dhr.ny.gov/report` [M03-3].
+**NYS DOH — Health Equity and Language Assistance** — hospital/clinic language-access materials via health.ny.gov [M03-4][M03-6].
+**NYS Education Department — Culturally Responsive-Sustaining Education** — framework for education settings via nysed.gov [M03-5].
+**NYS OMH — Cultural Competence and Trauma-Informed Care** — official guidance via omh.ny.gov [M03-8].
+Scheduled re-verification date: Oct 25 2026 — verify all contacts, websites, and rules. Laws, regulations, and agency policies change. Execution: manuscript prepared 2026-10-23 America/New_York; scheduled re-verification is prospective — filenames dated 2026-10-24/25 denote scheduled dates, not completed reviews.
+
+Your agency:
+Ask for: nondiscrimination policy and complaint steps, language-access plan (when to call interpreter, how to request Video Remote Interpreting), disability accommodation steps (how to request ASL, captioning, large print), chosen-name/pronoun documentation rules, and who handles cultural-competency training.
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Name and pronouns at check-in (respectful communication). Luis mispronounced “Marisol” and used “she” instead of the they/them Marisol wrote themself on the form, and did not offer the interpreter Marisol requested. In-role repair that shows agency: pause, correct kindly, offer what Marisol asked for in their own words: “Good morning, Mx. Rivera — thank you for your form. You wrote you use they/them and prefer Spanish with interpreter so you can ask questions yourself — thank you for telling us. I’ll update the file to Marisol they/them so you don’t have to repeat it, and I can call Video Interpreter now — is that what you’d like today?” Use correct name/pronouns consistently after, and note them per agency rules [M03-2][M03-8]. Apology is brief; consistent use shows respect; asking what Marisol wants today centers their agency.
+
+Example 2 — Language access (separate from names/pronouns — different law, different source). Marisol prefers Spanish with qualified interpreter for a health-related workshop — a distinct need from pronouns. Luis should not rely on his own limited Spanish for a sensitive health topic or ask a child to interpret. Correct: ask preference first (“Would you like an interpreter in Spanish today?”), offer qualified interpreter early at no cost (in-person, video, or phone) per Title VI/LEP.gov [M03-6], speak to Marisol not the interpreter, pause for interpretation, and document the preference Marisol stated so next staff does not re-ask. If interpreter is delayed, explain wait realistically and offer alternatives Marisol chooses — Marisol decides, not staff inferring that family should interpret [M03-1][M03-6].
+
+Example 3 — Deaf participant and housing form (disability accommodation — distinct from language access; ADA not Title VI). Mr. Jackson, in his own words, wrote “I can read English. I prefer ASL interpreter for detailed forms — I can write for quick scheduling.” “Just write back quickly and come back tomorrow” is not effective communication for a detailed legal housing form and creates access delay. Correct in-role steps that honor agency: offer effective communication options via ADA [M03-7] — qualified ASL interpreter now via Video Remote Interpreting if available, explain same-day option and realistic wait, ask his stated preference (ASL for detailed form vs written exchange for scheduling vs captioning), do not require return solely because in-person ASL was unavailable, log communication aid request per agency process [M03-5][M03-7]. Ask, don’t infer his preference from age or appearance — he already told you.
+
+Example 4 — Break-area complaint about food (belonging, with participant agency). Staff says within earshot of Aisha, who wears a hijab and previously told the kitchen team herself — “Can we list what’s in each dish so everyone can choose? I can help label them” — the team agreed. The complaint “I don’t get why we have to change food options for her” singles out Aisha and undoes her own contribution. Even if not meant to be heard, it harms belonging. In-role response that respects agency: do not repeat language loudly in lobby. Support Aisha quietly, acknowledging her prior agency: “I’m sorry if that was uncomfortable to hear — thank you for offering to help label dishes last month so everyone can choose. Would you like to talk to a supervisor or move to a quieter space? We can keep your labeling idea in place.” Privately tell supervisor what was heard, where, impact, and suggest team refresh on inclusive food/religious accommodation and break-area respectful communication [M03-1][M03-8].
+
+Example 5 — Kiosk and mobility (disability accommodation, with individual preference). Ms. Thompson, 68, who uses a cane after knee surgery, told the front desk herself at check-in: “I like to take my time at the kiosk — can I have an extra minute? I don’t need someone to fill it for me.” Instead of rushing (“We need to keep line moving”) or inferring she cannot use the kiosk from the cane, ask what she wants: “You said you’d like an extra minute — take the time you need. I’ve saved extra space at the kiosk, and I can stay nearby if helpful — let me know when you’re ready.” Keep path clear, do not touch cane/bag without permission, and note the time-preference she stated so next visit is smoother [M03-5][M03-7]. Ask, don’t assume need from cane alone — she stated preference, staff followed it.
+
+Chapter Recap — Scannable (each objective taught, practiced, assessed with explanatory answer)
+1. Cultural competency + humility: knowledge/skills/attitudes + agency supports to work well across differences [M03-1] — taught §2, practiced Example 1, assessed KC31 with explanatory answer distinguishing broader capacity vs humble practice [M03-4].
+2. Inclusion: physical, communication, belonging access for all — not extra [M03-5][M03-7] — taught §2, practiced Examples 2–5, assessed KC32–35.
+3. Bias: small moments (greetings, wait times, assumptions) can affect service — pause, ask directly and respectfully what the person wants, correct kindly, watch team patterns [M03-1][M03-7] — taught §3, practiced Examples 1,3,4, assessed KC32 explanatory answer.
+4. Respectful communication (names/pronouns/identity, distinct obligation): ask name/pronouns the person provided themself, use consistently, don’t infer from appearance [M03-2][M03-8] — taught §4, practiced Example 1, assessed KC33 with explanatory answer why asking/intrusive questions are wrong.
+5. Language access (distinct from above — Title VI/LEP.gov [M03-6]): when to offer qualified interpreter/translated material, how to work with interpreter — ask preference, offer at no cost, speak to person, pause, document [M03-6] — taught §4B, practiced Example 2, assessed KC34 with explanatory answer why family/own limited language fails.
+6. Inclusive disability practice (distinct — ADA effective communication/reasonable modifications [M03-7]): offer ASL/Video Remote, captioning, large print, extra time; ask what assistance the person wants, don’t infer from cane/appearance/age [M03-7] — taught §5, practiced Examples 3,5, assessed KC35 explanatory why “come back tomorrow/write quickly” fails.
+7. Boundaries/cultural humility: stay in role, ask only what needed, be open to correction, protect privacy [M03-8] — taught §6, practiced all examples, assessed KC36.
+8. When respect/safety intersect: support affected person quietly (acknowledge, ask what helps, honor prior agency), tell supervisor promptly with facts, follow nondiscrimination complaint steps [M03-2][M03-3][M03-7] — taught §7, practiced Example 4, assessed KC37.
+9. Trust & finding help: greet by correct name/pronouns consistently, offer language help proactively when person stated it, make accessibility routine, explain next steps, follow up; find official rules at thinkculturalhealth.hhs.gov (CLAS [M03-1]), ada.gov (ADA [M03-7]), lep.gov (Title VI [M03-6]), nyc.gov/cchr [M03-2], dhr.ny.gov [M03-3] — verify before acting [M03-1]–[M03-7] — taught §§8–9, assessed KC38.
+
+Knowledge Checks — Complete Questions With Objective Mapping (M03: 31–38; 31–37 A–D, 38 Two-Option Valid)
+
+**31. Cultural competency vs cultural humility**
+Question: In everyday language, what is the difference between cultural competency and cultural humility?
+A) Competency is knowledge/skills/attitudes and agency resources to work well across differences [M03-1]; humility is the ongoing practice of curiosity, admitting what you don’t know, asking respectfully, listening, letting the person be expert on their life [M03-4].
+B) They mean the same thing — just different words.
+C) Humility means you must know every culture completely.
+D) Competency means you no longer need to ask questions.
+Correct Answer: A) Competency is the broader organizational/interpersonal capacity — knowledge, skills, attitudes, policies, resources [M03-1] taught in §2 and practiced when Luis corrects his greeting; humility is the ongoing interpersonal stance [M03-4] — staying curious, admitting gaps, asking respectfully, letting Marisol be expert on their own pronouns/language — practiced Example 1. Why others wrong: B collapses distinct concepts; C mistakes humility for expertise; D mistakes competency for not needing questions — competency requires ongoing asking [M03-1][M03-4].
+Objective: Explain cultural competency and cultural humility in everyday language. Teaching §2, practice Example 1, assessment KC31 with explanatory answer.
+
+**32. Bias in a small moment — what to do**
+Question: Luis notices he greeted one participant warmly and another briefly, and wonders if bias affected it. What is the most helpful next step?
+A) Ignore it — bias does not affect service.
+B) Pause, notice assumption, ask the person directly and respectfully how you can help, correct warmly if needed, and watch team patterns (wait times, who leaves without service) to bring to supervisor if needed [M03-1][M03-7].
+C) Decide the person was too sensitive.
+D) Avoid that participant next time to avoid mistakes.
+Correct Answer: B) Pause to notice implicit bias (automatic shortcut in greetings [M03-7]), ask the person directly what assistance they want today — e.g., “How would you like me to address you? Would an interpreter be helpful?” — rather than inferring need from appearance, correct warmly, and watch team-level patterns (who waits longer) to raise as system issue not personal fault [M03-1][M03-7]. Why others wrong: A denies bias affects service; C blames participant; D avoids repair. Teaching §3, practiced Examples 1/3/4, assessment explanatory.
+Objective: Describe how bias can show up in small moments and what you can do — substantive teaching §3 with ask-vs-infer practice.
+
+**33. Names and pronouns — respectful practice**
+Question: A participant’s form says name Marisol Rivera, pronouns they/them. You mispronounced the name and used she/her. What is the best respectful correction?
+A) Ignore and hope they do not notice.
+B) Correct briefly: “Thank you for telling me — Marisol, they/them — I’ll update the file so you don’t have to repeat it. How can I help you today?” Use correct name/pronouns consistently after, not just when corrected [M03-2][M03-8].
+C) Ask intrusive questions about their identity to understand better.
+D) Only use correct pronouns when they are in the room.
+Correct Answer: B) Brief correction that honors agency — Marisol wrote they/them themself, so thank them, correct pronunciation/name/pronouns, note respectfully per agency rules so next staff doesn’t re-ask, then use consistently — not only when corrected [M03-2][M03-8]. Why others wrong: A ignores harm and agency; C asks intrusive questions about body/medical history which NYC Gender Guidance says not to do [M03-2]; D performs only when observed. Teaching §4, practiced Example 1, assessment explanatory.
+Objective: Show respect for names, pronouns, and identity in greetings and documentation — substantive teaching with distinct source (NYC CCHR Gender Guidance [M03-2]).
+
+**34. Language access — when and how**
+Question: Mx. Rivera’s form says Spanish — prefers interpreter. What should you do at check-in for a health-related topic?
+A) Use your limited Spanish to get by quickly.
+B) Ask their child to interpret because family is faster.
+C) Offer a qualified interpreter at no cost (in-person, video, or phone), speak to the participant not the interpreter, pause for interpretation, and document preference so next staff does not re-ask [M03-6].
+D) Tell them to bring their own interpreter next time.
+Correct Answer: C) Language access distinct from respectful communication [M03-6]: ask what Marisol wants (they already wrote preference), offer qualified interpreter at no cost via Title VI [M03-6] (in-person/video/phone), speak to Marisol not interpreter, pause for interpretation, document stated preference [M03-7]. Why others wrong: A uses unqualified limited Spanish and infers ability; B requires child family interpreter which LEP.gov says not to do for complex topics [M03-6]; D shifts burden to participant. Teaching §4B with distinct source LEP.gov [M03-6] vs ADA, practiced Example 2, assessment explanatory.
+Objective: Explain language access: when to offer interpreter and how to work with one — substantive teaching §4B distinct from disability, ask-vs-infer practice.
+
+**35. Disability inclusion — Deaf participant**
+Question: Mr. Jackson, Deaf and uses ASL, writes he can read English and needs help with a detailed housing form. Coworker says “We don’t have ASL today — just write back quickly and have him come back tomorrow.” What is inclusive?
+A) Follow coworker advice exactly — writing is effective for any form.
+B) Offer effective communication options: qualified ASL interpreter via Video Remote Interpreting now if available, explain same-day interpreter option and wait, ask his preference (ASL vs written for scheduling vs captioning for detailed form), do not require return solely because in-person ASL was unavailable, log aid request [M03-5][M03-7].
+C) Assume he cannot read English because he uses ASL.
+D) Tell him you cannot help him today.
+Correct Answer: B) Disability accommodation distinct from language access [M03-7 ADA vs M03-6 Title VI]: Mr. Jackson stated preference — “I prefer ASL for detailed forms, can write for scheduling” — so follow it: offer effective communication via ADA [M03-7] — qualified ASL/Video Remote Interpreting now, explain same-day wait, ask which he wants (ASL vs written for scheduling vs captioning), don’t require return because in-person ASL unavailable, log aid request [M03-5][M03-7]. Why others wrong: A assumes writing effective for complex housing form (often not [M03-7]) and infers delay acceptable; C infers reading ability from Deaf identity (Mr. Jackson wrote he can read English — ask, don’t assume); D denies service. Teaching §5 with distinct ADA source, practiced Example 3 + Example 5 (Ms. Thompson cane — ask what help she wants, don’t infer from cane), assessment explanatory with ask-vs-infer.
+Objective: Give everyday examples of inclusion for disability without making assumptions — substantive teaching §5 with distinct ADA source, ask-vs-infer practice.
+
+**36. Boundaries and cultural humility**
+Question: A participant asks you a question about benefits that is outside your role as peer specialist. What is in-role and culturally humble?
+A) Guess the answer to be helpful.
+B) Say “I’m not able to change benefits in my role, but our benefits specialist is here until 4 and has Amharic interpreter available — may I introduce you?” — stay in role, connect to right person, note language access [M03-6][M03-8].
+C) Avoid the person because you don’t know everything about their culture.
+D) Make the benefit decision yourself.
+Correct Answer: B) Stay in role with cultural humility — don’t guess benefits, don’t avoid for discomfort — connect to benefits specialist who has Amharic interpreter, honoring agency must provide language access [M03-6] and you stay within peer role [M03-8]. Why others wrong: A guesses outside training; C avoids due to humility misunderstanding; D exceeds role. Teaching §6, practiced Examples 1–5 (each shows staying in role while asking what help person wants), assessment explanatory.
+Objective: Explain boundaries that protect inclusion — what you can do, what agency must provide — substantive teaching §6 with ask-vs-infer.
+
+**37. Responding to disrespect in common area**
+Question: You overhear a staff member complain loudly about food accommodations within earshot of the participant it references. What should you do?
+A) Repeat the language loudly to make a point.
+B) Support the affected person quietly (“I’m sorry if that was uncomfortable…Would you like to speak to supervisor or move to quieter space?”), address privately with supervisor promptly with facts (what heard, where, impact), follow nondiscrimination complaint steps, model inclusive language [M03-7][M03-8].
+C) Ignore it to avoid conflict.
+D) Confront harshly in front of participant.
+Correct Answer: B) Support affected person quietly while honoring agency — Aisha already offered participant-led labeling, so acknowledge that contribution (“thank you for offering to help label dishes… we’ll keep it”), ask what would help now (talk to supervisor or quieter space), then address privately with supervisor with facts (what heard, where, impact) and follow nondiscrimination complaint steps [M03-7][M03-8] via NYC CCHR [M03-2] / NYS DHR [M03-3]. Why others wrong: A repeats harm loudly; C ignores harm; D escalates in front of participant. Teaching §7, practiced Example 4, assessment explanatory with distinct sources for help.
+Objective: Support someone who experienced disrespect while staying in role — substantive teaching §7, practice Example 4 with participant agency, explanatory answer distinguishing quiet support vs public confrontation.
+
+**38. After a bias-related mistake — hallway note**
+Question: You realize you documented “difficult” about a participant who asked for interpreter and extra time — language that could reflect bias. What is the best next step?
+A) Leave it — documentation is private.
+B) Tell supervisor, correct the file per agency rules to factual respectful language (what was requested, what was provided), note correction, and bring pattern to team if one group often faces barriers — do not add stigmatizing opinions [M03-7][M03-8]. Objective: Build trust and accountability.
+Correct Answer: B) Correct file to factual respectful language — e.g., “Requested Spanish interpreter, provided Video Interpreter 10:15; requested extra minute at kiosk, accommodated” — not stigmatizing “difficult”; tell supervisor, note correction per agency rules, flag pattern if one group often faces barriers [M03-7][M03-8]. This is trust repair: ask what help person wanted, document facts, bring system pattern to supervisor [M03-1][M03-7]. Why A wrong: leaving biased language hides system issue and harms trust. Teaching §8, practiced accountability note after Examples 1–5, assessment explanatory.
+Objective: Describe post-mistake repair and system accountability — substantive teaching §8, practice file-correction, explanatory answer.
+
+Glossary — Plain Language
+**Belonging:** Feeling included and valued, not singled out, in a space.
+**Bias:** Tendency to favor some people/ideas — often automatic — that can affect service.
+**Cultural competency:** Knowledge, skills, attitudes + agency supports to work well across cultures [M03-1].
+**Cultural humility:** Everyday practice of curiosity, admitting gaps, asking respectfully, letting person be expert [M03-4].
+**Effective communication (ADA):** Communication with people with disabilities that is as effective as with others, via appropriate aids/services [M03-7].
+**Inclusion:** Physical, communication, belonging access so everyone can take part with dignity.
+**Language access (Title VI):** Steps to provide meaningful access for limited English proficiency, often via qualified interpreters/translated materials [M03-6].
+**Protected characteristic:** Race, ethnicity, national origin, disability, gender identity/expression, religion, etc., protected by human-rights law [M03-2][M03-3].
+**Reasonable modification:** Change in usual way of doing things to provide access, unless it fundamentally alters nature of service [M03-7].
+
+Reviewer Notes — Jargon Outside Learner Text
+CLAS Standards: HHS National Standards for Culturally and Linguistically Appropriate Services — 15 action steps across Governance/Communication/Engagement — principal standard: provide effective equitable understandable respectful care responsive to cultural health beliefs, preferred languages, health literacy [M03-1].
+Title VI + LEP gov: Title VI Civil Rights Act 1964 §601 prohibits national-origin discrimination including language access for federally funded programs; LEP.gov provides federal language-access planning guidance [M03-6].
+ADA effective communication: ADA Titles II/III require appropriate auxiliary aids/services (ASL, captioning, accessible forms) for effective communication — “just write a note” often insufficient for complex forms [M03-7].
+NYC Gender Guidance: NYC Commission on Human Rights Gender Guidance explains gender identity/expression protections including pronoun use in public accommodations/employment [M03-2].
+Georgetown NCCC: National Center for Cultural Competence at Georgetown University — research/university reference for cultural competency models — not a government primary source [M03-4].
+Belonging vs diversity: Inclusion focuses on experience of being welcomed and able to participate, not mere presence [M03-8].
+
+References — Single Consistent Numbered System [M03-1]–[M03-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M03-1] HHS Office of Minority Health — National CLAS Standards — Culture, language, health literacy blueprint for health and human services — principal standard: provide effective, equitable, understandable, respectful care responsive to cultural health beliefs, preferred languages, health literacy. Official HHS.gov: https://thinkculturalhealth.hhs.gov/clas ; https://www.hhs.gov/guidance/document/national-standards-culturally-and-linguistically-appropriate-services-clas
+[M03-2] NYC Commission on Human Rights — Stop Sexual Harassment Act not relevant — instead Protections against discrimination (race, ethnicity, national origin, disability, gender identity/expression, religion) in public accommodations, housing, employment; Gender guidance pronoun use. Official NYC.gov: https://www.nyc.gov/site/cchr/law/discrimination.page ; https://www.nyc.gov/assets/cchr/downloads/pdf/publications/2019.2.15%20Gender%20Guidance-February%202019%20FINAL.pdf
+[M03-3] NYS Division of Human Rights — Report Discrimination — statewide process for human-rights complaints (race, ethnicity, national origin, disability, gender identity, etc.). Official DHR: https://dhr.ny.gov/report
+[M03-4] Georgetown University — National Center for Cultural Competence (NCCC) — Cultural humility and competency models — humility as ongoing learning, partnership, self-reflection. University research center (nongovernmental, university reference): https://nccc.georgetown.edu/culturalcompetence.php
+[M03-5] NYS Education Department — Culturally Responsive-Sustaining (CR-S) Education Framework — belonging, inclusive education practices. Official NYSED: https://www.nysed.gov/crs/framework
+[M03-6] U.S. DOJ LEP.gov + HHS OCR — Title VI Language Access — meaningful access for limited English proficiency via qualified interpreters/translated materials in federally funded programs. Official LEP.gov: https://www.lep.gov/ ; Official HHS OCR: https://www.hhs.gov/civil-rights/for-providers/laws-regulations-guidance/laws/title-vi/index.html
+[M03-7] U.S. DOJ ADA.gov — Americans with Disabilities Act — effective communication, reasonable modifications, program accessibility Titles II/III, auxiliary aids (ASL, captioning, accessible forms). Official ADA.gov: https://www.ada.gov/ ; https://www.ada.gov/topics/effective-communication/
+[M03-8] NYS OMH — Cultural Competence, Trauma-Informed, and Communication guidance for community-based programs — respectful language, inclusive practices. Official OMH: https://omh.ny.gov/omhweb/cultural_competence/
+[M03-9] NYS Department of Health — Health Equity, language assistance, and patient-access materials via health.ny.gov. Official NY.gov: https://www.health.ny.gov/regulations/public_health_law/ ; health.ny.gov
+[M03-10] NYC DOHMH — Local health equity and respectful care guidance — NYC Department of Health and Mental Hygiene via nyc.gov/health. Official NYC.gov: https://www.nyc.gov/site/doh/health/health-topics/index.page
+[M03-11] HHS Think Cultural Health — CLAS implementation and health-literacy resources for frontline staff. Official HHS.gov: https://thinkculturalhealth.hhs.gov/education/
+[M03-12] NY Justice Center for the Protection of People with Special Needs — disability and vulnerability protections in state care. Official NY.gov: https://www.justicecenter.ny.gov/
+[M03-13] U.S. EEOC — Workplace inclusion and nondiscrimination guidance (race, ethnicity, national origin, disability, sex including gender identity). Official EEOC: https://www.eeoc.gov/
+[M03-14] HHS SAMHSA — Trauma-informed and culturally responsive substance-use/mental-health service guidance. Official SAMHSA: https://www.samhsa.gov/trauma-informed-care
+[M03-15] NYS Office for People With Developmental Disabilities (OPWDD) — Inclusion in developmental disabilities services — official guidance via opwdd.ny.gov. Official OPWDD: https://www.opwdd.ny.gov/
+[M03-16] U.S. Department of Education + HHS — Official law/policy publishers for civil-rights statutes — cross-reference tables. Official govinfo.gov: https://www.govinfo.gov/ ; Official nysenate.gov (NYS Legislature) for NY human-rights law text: https://www.nysenate.gov/legislation ; Nongovernmental legal-text reference: Cornell LII https://www.law.cornell.edu/wex/table_new_york
+
+Scheduled re-verification date: Oct 25 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York; scheduled re-verification marker is prospective — see evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md; V1 preserved evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt.
+---
+End of M03 Chapter Draft V1.1 — Single citation system [M03-1]–[M03-16] with source classifications labeled (official government [M03-1]–[M03-3][M03-5]–[M03-16] including Official NYS Legislature publisher nysenate.gov vs nongovernmental university research Georgetown NCCC [M03-4]), knowledge checks 31–38 mapped to objectives with explanatory answers. V1 preserved 39609B md5 9fd2d71536e338d5d555ed6967195cc1; V1.1 changes: declustered characters with individual agency (Mx Rivera self-filled preference, Mr Jackson handwritten ASL preference, Aisha participant-led labeling, Ms Thompson separate mobility), separated §4 respectful-communication [M03-2] vs §4B language access Title VI [M03-6] vs §5 disability ADA [M03-7], every objective with teaching+practice+explanatory assessment, ask-vs-infer practice. Diff: evidence/M03-V1-declustered-revision.diff 253 lines + revision identifier added this commit. NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1.1 DRAFT · REVIEW PENDING — legal review, comprehension testing, accessibility verification, measured runtime pending. No external records changed. Originals preserved.
