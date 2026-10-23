@@ -1,0 +1,149 @@
+{
+    "work_order_id": "WRASAL-0011",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0011",
+    "recorded_on": "2026-10-23",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Record the M01 V8 receipt check against WO-CAREPATH-TEXTBOOK-001: verify Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi source access, identify inspected source as M01-textbook-chapter-v8.docx (missing textbook .txt not inspected), and report exact check results without modifying Drive originals.",
+    "success_condition": "Drive provenance (folder and 4 file IDs, revision metadata, hashes) recorded; extraction method and extracted-text hash documented; receipt-check criteria (opening passage, section headings, mixed markers, references [1]-[16], knowledge checks 11-18) verified with exact observed results and flags; duplicate video file hash comparison noted; unresolved current-law verification and 14:30 vs 14:40 schedule discrepancy carried forward; no merge/deploy/publish and no Drive originals modified; canonical_acceptance remains pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "carepath_work_order_id": "WO-CAREPATH-TEXTBOOK-001",
+        "carepath_folder_id": "10-9f65DyZfdU37TEf9-ObAnU08BIlnxi",
+        "carepath_folder_name": "Carepath",
+        "carepath_folder_web_view_link": "https://drive.google.com/drive/folders/10-9f65DyZfdU37TEf9-ObAnU08BIlnxi",
+        "carepath_folder_created_time": "2026-10-23T21:39:06.293Z",
+        "carepath_folder_modified_time": "2026-10-23T21:43:23.725Z",
+        "textbook_docx_drive_id": "1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81",
+        "textbook_docx_name": "M01-textbook-chapter-v8.docx",
+        "textbook_docx_mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "textbook_docx_size_bytes": "49038",
+        "textbook_docx_md5": "95efa955bae54929133361cc36872254",
+        "textbook_docx_sha256": "36f0bb25e1e8fbd0f8e33ee45b0af459adb7d9b29f9d270d0e5f36bfa4f929b6",
+        "textbook_docx_created_time": "2026-10-23T21:40:21.681Z",
+        "textbook_docx_modified_time": "2026-10-23T21:40:21.681Z",
+        "textbook_docx_owner": "wrayvol@gmail.com (wrayvol)",
+        "video_docx_drive_id": "1RieM8pVy-TtBcYWrcmuQHnXIrx4HxTNY",
+        "video_docx_name": "M01-video-package-v8.docx",
+        "video_docx_size_bytes": "45349",
+        "video_docx_md5": "9c2f07c092c1830c226f951bfb20da2e",
+        "video_docx_sha256": "c370b7fb3f7d6c2d734d9df101547b7053b4a2c5af846c553e890307f28ccd5b",
+        "video_docx_created_time": "2026-10-23T21:40:58.101Z",
+        "video_txt_duplicate_a_id": "1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p",
+        "video_txt_duplicate_b_id": "159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb",
+        "video_txt_name": "M01-video-package-v8.txt",
+        "video_txt_size_bytes": "23838",
+        "video_txt_md5_both": "650c422d28cc0574a284572a9d06a09a",
+        "video_txt_sha256_both": "6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568",
+        "video_txt_duplicate_a_created": "2026-10-23T21:42:30.289Z",
+        "video_txt_duplicate_b_created": "2026-10-23T21:41:32.484Z",
+        "local_mirror_textbook_docx_path": "google_drive/M01-textbook-chapter-v8.docx",
+        "local_mirror_video_txt_path": "google_drive/M01-video-package-v8.txt",
+        "extraction_method": "google_drive.read_file_text for Drive .txt (23838 bytes) and .docx text extraction; local download of M01-textbook-chapter-v8.docx then same extraction; saved to /tmp/M01-textbook-chapter-v8.txt (38737 bytes on disk, 38534 chars, 237 lines)",
+        "extracted_text_path_tmp": "/tmp/M01-textbook-chapter-v8.txt",
+        "extracted_text_md5": "cf5ac4ae0942fa036fcf828f6f539ffb",
+        "extracted_text_sha256": "cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d",
+        "missing_textbook_txt": "M01-textbook-chapter-v8.txt NOT present in Drive folder; inspected source is M01-textbook-chapter-v8.docx only; no claim of inspection of missing .txt",
+        "review_date_in_draft": "October 23, 2026",
+        "draft_status": "V8 DRAFT \u2014 NOT APPROVED FOR PUBLIC RELEASE \u2014 citation consolidation completed; subject-matter/legal review, comprehension testing, accessibility verification, measured runtime pending",
+        "pull_request": null,
+        "merge": null,
+        "canonical_acceptance_record": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0011-drive-folder-provenance",
+            "type": "google_drive_folder_query",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive.get_file id=10-9f65DyZfdU37TEf9-ObAnU08BIlnxi and list_files q='10-9f65DyZfdU37TEf9-ObAnU08BIlnxi' in parents with fields files(id,name,mimeType,size,createdTime,modifiedTime,md5Checksum,sha256Checksum,owners,webViewLink,webContentLink)",
+            "observed_result": "Folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi name=Carepath created 2026-10-23T21:39:06.293Z modified 2026-10-23T21:43:23.725Z owner wrayvol@gmail.com. List returned 4 files: 1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81 M01-textbook-chapter-v8.docx 49038 md5 95efa955bae54929133361cc36872254 sha256 36f0bb25e1e8fbd0f8e33ee45b0af459adb7d9b29f9d270d0e5f36bfa4f929b6; 1RieM8pVy-TtBcYWrcmuQHnXIrx4HxTNY M01-video-package-v8.docx 45349 md5 9c2f07c092c1830c226f951bfb20da2e sha256 c370b7fb3f7d6c2d734d9df101547b7053b4a2c5af846c553e890307f28ccd5b; 1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p M01-video-package-v8.txt 23838 md5 650c422d28cc0574a284572a9d06a09a sha256 6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568 created 2026-10-23T21:42:30.289Z; 159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb M01-video-package-v8.txt 23838 same md5/sha256 created 2026-10-23T21:41:32.484Z (duplicate name/size/hash, distinct IDs/timestamps).",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-source-preservation",
+            "type": "local_file_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/ local mirror + md5sum/sha256sum/wc -c",
+            "observed_result": "Preserved without modification: google_drive/M01-textbook-chapter-v8.docx 49038 bytes md5 95efa955bae54929133361cc36872254 sha256 36f0bb25e1e8fbd0f8e33ee45b0af459adb7d9b29f9d270d0e5f36bfa4f929b6 matches Drive md5/sha256; google_drive/M01-video-package-v8.txt 23838 bytes md5 650c422d28cc0574a284572a9d06a09a sha256 6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568 matches both Drive .txt IDs. No Drive files trashed/deleted/modified (capabilities.can_trash false, can_delete false for all 4).",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-extraction-provenance",
+            "type": "text_extraction_record",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive.read_file_text for M01-textbook-chapter-v8.docx and both M01-video-package-v8.txt files; local file hash of /tmp/M01-textbook-chapter-v8.txt",
+            "observed_result": "Extracted chapter text to /tmp/M01-textbook-chapter-v8.txt: 38737 bytes on disk, 38534 characters, 237 lines, md5 cf5ac4ae0942fa036fcf828f6f539ffb sha256 cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d. Extraction method: Drive connector text extraction (not manual retyping). Video .txt extractions identical (23838 chars each, md5 650c422d28cc0574a284572a9d06a09a). Inspected source is .docx; missing M01-textbook-chapter-v8.txt in Drive correctly NOT claimed as inspected.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-opening-passage",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "/tmp/M01-textbook-chapter-v8.txt line 12 under Opening Situation",
+            "observed_result": "PASS: Opening passage found verbatim: \"Maya works part-time at a neighborhood coffee shop in Queens. She likes her customers and is saving for college. A new shift manager starts making comments about her clothes. He texts her after her shift and asks for photos. When Maya says she is not comfortable, he cuts her hours the next week from 25 to 12.\" Target string \"Maya works part-time at a neighborhood coffee shop in Queens\" present exactly.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-section-headings",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "/tmp/M01-textbook-chapter-v8.txt headings at lines 11,15,25,29,42,44,56,66,76,79,81,117,140,203,212,218,237",
+            "observed_result": "PASS: Section headings confirmed in order: Opening Situation (line 11); Learning Goals \u2014 Short, Scannable (line 15); 1. Why This Topic Matters (25); 2. What Sexual Harassment Means \u2014 Different Tests for Different Settings (29); 3. Recognizing Conduct, Pressure, and Misuse of Power (42); 4. Workplace Situations and Responsibilities (44); 5. Housing and Public-Facing Services (56); 6. Options When Something Happens to You (66); 7. Supporting Someone and Responding as a Witness (76); 8. Understanding Retaliation (79); 9. Finding Help \u2014 Jurisdiction, Corrected Official Deadlines (81); 10. Worked Examples, Recap, Knowledge Checks \u2014 Full Prose (117) with Knowledge Checks \u2014 Complete Questions With Objective Mapping (140); Glossary \u2014 Plain Language (203); Reviewer Notes \u2014 Jargon Outside Learner Text (212); References \u2014 Single Consistent Numbered System [1]-[16] \u2014 Official Primary Sources Only \u2014 No Duplicate Footnote List (218); End disposition (237). No headings missing; numbering uses \"1.\" with dot, matching source.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-mixed-markers",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "/tmp/M01-textbook-chapter-v8.txt full text regex for bracket refs and superscript",
+            "observed_result": "PASS: No mixed 1-6 markers remain. Only bracket system [1]-[16] present (unique set: [1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16]). No superscript characters \u00b9\u00b2\u00b3\u2074\u2075\u2076 found (0 occurrences). No separate footnote block; reference list is single consistent numbered system. Bare (1) tokens are inside statutory cite \"2000e-5(e)(1)\" not footnotes.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-references",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "/tmp/M01-textbook-chapter-v8.txt lines 218-233 references [1]-[16]",
+            "observed_result": "PASS WITH FLAGS: All 16 reference entries present, unique, in order [1] to [16]. Flags requiring correction (not blocking): [6] 24 CFR \u00a7100.600 at https://www.law.cornell.edu/cfr/text/24/100.600 labeled \"Official Cornell LII (mirrors eCFR)\" \u2014 Cornell LII is a nongovernmental legal-text publisher, not a government primary source; [7] 24 CFR \u00a7100.7 similarly Cornell LII + eCFR \u2014 same classification issue; [10] Bystander Intervention at https://www.rochester.edu/sexualmisconduct/resources/bystander-intervention/ \u2014 University of Rochester page, nongovernmental university reference for Five D's origin, not an official primary source, though fact is non-legal; [14] 42 U.S.C. \u00a73613 cites Official govinfo.gov https://www.govinfo.gov/content/pkg/USCODE-2021-title42/html/USCODE-2021-title42-chap45-subchapI-sec3613.htm alongside unofficial mirror https://uscode.ecfr.io/title/42/section/3613 \u2014 ecfr.io is unofficial mirror, not official; [16] 42 U.S.C. \u00a72000e-5(e)(1) cites Cornell LII https://www.law.cornell.edu/uscode/text/42/2000e-5 \u2014 same nongovernmental publisher classification. Other entries [1][2][3][4][5][8][9][11][12][13][15] are official government domains (ny.gov, dhr.ny.gov, nyc.gov, ag.ny.gov, eeoc.gov, govinfo.gov). All reference entries reproduced verbatim in work order record.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-knowledge-checks",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "/tmp/M01-textbook-chapter-v8.txt lines 140-202 Knowledge Checks 11-18",
+            "observed_result": "PASS WITH ONE DEVIATION: Checks 11-18 each have Question stem, Correct Answer, Explanation, Objective. Detail: 11 (quid pro quo workplace) A-D + Correct B + explanation; 12 (NYS severe/pervasive) A-D + Correct B; 13 (who protected/training) A-D + Correct B; 14 (Luis landlord housing) A-D + Correct B with HUD deadlines [13][14]; 15 (retaliation Maya hours) A-D + Correct B; 16 (bystander Five D's) A-D + Correct B; 17 (DHR deadline) A-D + Correct C (three years on/after Feb 15 2024 [4][5]); 18 (must complain to employer first?) Question present \"Must you complain to your employer before filing with DHR?\" with A) Yes, always required. B) False \u2014 you can file DHR report directly ... [8]; Correct Answer: B) False. Objective present. DEVIATION: Check 18 has only options A and B (two-option True/False), not A-D. Chapter Status line \"knowledge checks rebuilt as complete objective-mapped items\" and video package Review Record \"V8 now full stem + options A-D + correct + explanation + objective\" incorrectly imply A-D for all. Retain 18 as valid two-option item; blanket A-D statement needs correction (addressed in WRASAL-0012).",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-receipt-overall-flags",
+            "type": "receipt_check",
+            "attribution": "Arena external execution worker",
+            "source": "Overall V8 receipt check synthesis per video package closing note requirement",
+            "observed_result": "Overall: Substantive criteria PASS. Flags for housekeeping (non-blocking, addressed in WRASAL-0012 bounded corrections): [10] university source classification mismatch with \"official primary sources only\" claim; [14] ecfr.io unofficial mirror alongside official; Check 18 missing C/D vs blanket A-D claim; Missing M01-textbook-chapter-v8.txt in Drive (correctly not claimed inspected); Duplicate M01-video-package-v8.txt (two IDs with identical content/hash \u2014 recorded, not deleted). Source inspection reported complete (docx bytes accessed and extracted); drafting can proceed on unaffected chapters; legal/subject-matter review, comprehension testing, accessibility verification, measured runtime, current-law verification, and release authorization remain pending (chapter disclaimer: General information only. Not legal advice. NOT APPROVED FOR PUBLIC RELEASE. Review date Oct 23 2026 \u2014 verify all phone numbers, websites, deadlines before publication).",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0011-non-claims",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md governing principles: REALITY FIRST; No evidence \u2192 no authority; No authority \u2192 no state change; AI may propose/inspect/organize/evaluate but must NOT invent evidence, claim human approval, or self-authorize canonical changes. Executor PASS \u2260 canonical acceptance.",
+            "observed_result": "No legal review claimed, no accessibility/readability verification claimed, no approval claimed for M01 draft. Canonical acceptance remains pending. No Drive originals modified, no merges, no deploys, no publishes. This work order records evidence only; promotion to accepted requires separate human action.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M01-textbook-chapter-v8.docx and google_drive/M01-video-package-v8.txt preserved (untracked until this commit); /tmp/M01-textbook-chapter-v8.txt extraction artifact retained externally",
+        "drive_originals": "unchanged \u2014 4 files in folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved; no trash/delete/modify_content via Drive API",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0012 \u2014 BOUNDED HOUSEKEEPING CORRECTIONS: replace 'official primary sources only' with accurate classifications (Cornell LII nongovernmental publisher, Rochester university, ecfr.io unofficial mirror), retain Q18 as two-option and correct blanket A-D statement, create UTF-8 textbook .txt derived from .docx with verification, record duplicate video hash comparison, carry forward unresolved current-law verification and 14:30 vs 14:40 schedule discrepancy. Drafting may proceed on unaffected chapters; legal review, comprehension testing, accessibility verification, measured runtime, and release authorization remain pending."
+}

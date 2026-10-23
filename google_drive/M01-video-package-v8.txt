@@ -1,0 +1,177 @@
+# M01 Companion Video Package — V8 — Official Primary Sources, Single Reference System [1]-[16]
+
+### Chapter: "Sexual Harassment: Understanding Boundaries, Rights, and Options" — V8
+
+**Source:** M01 textbook chapter draft v8 (review date Oct 23, 2026) — V7 text inspected as pasted reference only (not verified as file bytes), V8 citation consolidation completed: mixed 1-6 footnote markers removed, secondary sources in [3][5][7][8] replaced with official primary sources, knowledge checks rebuilt as complete objective-mapped items. NOT YET APPROVED FOR PUBLIC RELEASE.
+
+**Production principle:** Every visual traces back to chapter. No fictional scene presented as proof. Disclaimer: "Fictional scenario. Not a legal finding. General information only."
+
+**Status:** Preliminary adaptation; synchronized captions and timed AD script NOT YET ESTABLISHED — requirements only. Measured runtime pending. Readability testing pending. 14:30 schedule confirmed distinct from measured runtime. Subject-matter/legal review pending.
+
+---
+
+## 1. Adaptation Map — Traceability — Single System [1]-[16] Official Sources Only
+
+| Video Segment | Chapter | Teaches | Visual — short text specified; testing pending | Legal distinction — transcript |
+|---|---|---|---|---|
+| Opening Maya | Opening + Ch1 | Why matters | Tone without graphic detail — short title specified; testing pending | Employment context |
+| Definitions | Ch2 | Unwelcome, quid pro quo vs hostile | Concrete via voiceover, short overlays specified; testing pending | Federal severe/pervasive vs NYS inferior terms more than petty slights [8] vs NYC treated less well [2][3] vs housing 24 CFR 100.600 [6] |
+| Scene 1 Work | Ch3+Ch4+Ch8 | Manager linking hours to photos | Power misuse — short overlays specified; testing pending | NYC protection regardless size [2]; training NYS all [1][9] vs NYC 15+ [2] |
+| Scene 2 Housing | Ch5 | Landlord conditioning repair on date | Housing access power — short overlay specified; testing pending | Quid pro quo condition services [6]; single incident [6]; liability no eviction [7]; deadlines official [13][14] |
+| Scene 3 Third-party + Bystander | Ch4+Ch7 5Ds | Customer harasses server | Bystander options — short overlays specified; testing pending | Third party covered [8]; manager duty [8]; 5Ds [10] |
+| Scene 4 Documentation + privacy + report vs complaint | Ch6+Ch7+DHR | Notes, save texts, conditional privacy, DHR report vs complaint | Models documentation — short overlays specified; testing pending | Report not automatically complaint — The information submitted using our online forms or the Call Center is not yet an official complaint [8]; conditional privacy |
+| Closing Resources | Ch9 | Official resources | Clear cards — short text specified; testing pending | DHR 3yr on/after Feb 15 2024 [4][5]; NYC 1yr/3yr [2][3]; EEOC 180/300 conditional — A charge must be filed within 180 days... extended to 300 days if state or local law [15] and statute 180 days, 300 days if agency [16]; HUD 1yr admin [13] / 2yr court [14] |
+
+Detailed citations in transcript/resource guide. No claim testing completed.
+
+---
+
+## 2. Narration Script — Provisional Draft — Requires Timed Read-Through — Arithmetic Confirmed 14:30
+
+**Timing:** Segment allocations total 14:30 matching final timecode 12:20-14:30 closing. Schedule not demonstrated timing. Word counts not validated. Reading pauses for resource cards estimated. Timed read-through with narration, action, card reading at 130-150 wpm with accessibility pauses pending. Measured runtime pending. Corrects prior 14:10 arithmetic error.
+
+**Voice:** Calm, respectful, short sentences.
+
+**[Opening 0:00-0:50 — 50 sec]**
+> "Everyone deserves to feel safe at work, at home, and in places like stores or buses. Sometimes people experience unwanted sexual comments, messages, or pressure. In New York, the law calls this sexual harassment when it is based on sex, sexual orientation, or gender identity. What counts as illegal is different depending on where it happens. Let's look at what this can look like, and what options you have."
+
+**[Employment definitions 0:50-2:20 — 90 sec]**
+> "At work, people talk about two patterns. Quid pro quo means this for that. It is when someone with power says a job benefit, like hours or a promotion, depends on sexual behavior. Hostile environment is when unwelcome sexual conduct makes work conditions worse. Under federal law, this usually has to be severe or pervasive. Under New York State law, it does not. State law says it is unlawful when it subjects you to inferior terms and is more than petty slights. Under New York City law, you need to show you were treated less well because of gender. In New York City, protections against gender-based harassment apply to all employees no matter how big or small the employer is. Training requirements are a separate rule. New York State requires all employers regardless of size to provide annual training. New York City also requires employers with 15 or more employees or one or more domestic workers to provide annual training that meets city standards."
+
+**[Scene 1 action 2:20-3:50 — 90 sec — no narration, captions only]**
+On-screen short text specified; testing pending for comfortable reading (design target: short phrases, six-word target specified; verification pending):
+- "Unwelcome request"
+- "Hours cut after no"
+- "Protections: all employers"
+- "Training: NYS all, NYC 15+"
+Detailed citations transcript [1][2][9].
+
+**[Housing federal standard 3:50-5:10 — 80 sec]**
+> "Harassment does not only happen at work. In housing, federal law says there are also two forms: quid pro quo, where an unwelcome request is made a condition of rent, repairs, or services, and hostile environment, where conduct is severe or pervasive enough to interfere with use and enjoyment. A single quid pro quo incident can violate the law. Housing providers can be directly responsible for their own conduct, for failing to correct harassment by their employee or agent when they knew or should have known, and for failing to correct harassment by a third party, like another tenant, when they knew or should have known and had power to correct. A provider cannot punish the person who reported, such as by eviction, as a way to fix the problem."
+
+**[Scene 2 action 5:10-6:25 — 75 sec]**
+Short text specified; testing pending: "Housing: repair for date — not allowed" — 6 words meets target.
+
+**[Scene 3 action + bystander 6:25-8:25 — 120 sec]**
+Overlay narration at 7:35: "State law says harassment by customers is covered. A manager must try to protect the employee."
+Short text specified; testing pending: "Third-party harassment covered" / "Manager: try to protect" / "Distract" / "Delay: check in later"
+
+**[Options + privacy + DHR report vs complaint 8:25-9:40 — 75 sec]**
+> "If something happens, there is no single right way to respond. Think about safety first. It can help to write down what happened soon — date, time, place, exact words, witnesses, and how it affected you. Save messages. If you want to tell someone inside work, know that supervisors, HR, or designated persons may have a duty to report and may not be able to keep your disclosure completely private. For confidential information before deciding, you can call the New York State free hotline 1-800-HARASS-3. That hotline does not file a complaint for you. When you contact the Division of Human Rights, the information you submit using the online forms or the Call Center is not yet an official complaint. The Division reviews your report and, if appropriate, prepares a formal verified complaint for you to sign. That signed complaint starts the investigation."
+
+**[Retaliation 9:40-10:55 — 75 sec]**
+> "Retaliation is punishment for reporting harassment, opposing it, or taking part in an investigation. It is illegal. Examples include cutting hours, changing to less desirable shifts, or threats to evict in housing. City guidance says retaliation includes any action reasonably likely to deter someone from engaging in protected activity."
+
+**[Supporting + 5Ds 10:55-11:35 — 40 sec]**
+> "If someone tells you about harassment, listen without interrupting. Thank them for trusting you. Avoid judging. Ask what would be helpful and respect their decisions. Be clear about your own responsibilities. You can say, I'll respect your privacy. Before sharing anything, let's discuss what support you want and any responsibilities I have. For bystanders, the Five D's can help: Direct, Distract, Delegate, Delay, Document. This model started with Green Dot's three D's and was expanded by Right To Be, formerly Hollaback!, which added Delay in 2015 and Document in 2017."
+
+**[Closing resources + deadlines 11:35-14:30 — 175 sec — includes 130 sec cards + 45 sec disclaimer]**
+> "In New York State, you can file a discrimination report with the Division of Human Rights. For any act on or after February 15, 2024, the ordinary deadline is three years from the most recent incident. For older acts, contact the Division or an attorney about possible exceptions. In New York City, the Commission on Human Rights generally has a one-year deadline, and three years for gender-based harassment including sexual harassment. For federal employment claims, the EEOC says a charge must be filed within 180 days from the date of the alleged violation, and this deadline is extended to 300 days if there is a state or local anti-discrimination law that covers the location and basis. This 300-day extension is conditional, not universal. The statute says a charge shall be filed within 180 days after the alleged practice, except that in a case where the person has initially instituted proceedings with a State or local agency with authority, such charge shall be filed within 300 days. For federal housing claims, the Fair Housing Act says an aggrieved person may, not later than one year after an alleged practice has occurred or terminated, file a complaint with the Secretary. For court, an aggrieved person may commence a civil action not later than 2 years after the occurrence or termination. The time during which an administrative proceeding was pending is not counted. Always check official agency sites before acting. This video is general information, not legal advice."
+
+Resource cards — short text specified; testing pending:
+- Card 1: "NY DHR: dhr.ny.gov/report — 3 years on/after Feb 15 2024"
+- Card 2: "NYC CCHR: nyc.gov/cchr — 1 year, 3 years gender-based"
+- Card 3: "EEOC: eeoc.gov — 180 days, 300 days if state/local law covers"
+- Card 4: "HUD: hud.gov — 1 year admin, 2 years court"
+- Card 5: Disclaimer
+
+---
+
+## 3. Visual Specification — Short Text, Accessibility Targets Specified; Testing Pending
+
+| Segment | Duration | On-Screen Short Text — Design Target 6 Words, Testing Pending | Accessibility Target |
+|---|---|---|---|
+| Opening | 50 sec | "Safe at work, home, public" | 28pt min, high contrast, no flashing |
+| Definitions | 90 sec | "Quid pro quo: this for that" / "Hostile environment: harder to work" / "NYS: inferior terms, more than petty slight" / "NYC: treated less well" | Plain language, no legal jargon alone |
+| Scene 1 Work | 90 sec | "Unwelcome request" / "Hours cut after no" | No sexualized framing |
+| Housing rule | 80 sec | "24 CFR 100.600: quid pro quo and hostile" | Caption exact regulation cite |
+| Scene 2 Housing | 75 sec | "Housing: repair for date — not allowed" | Diverse casting, no stereotype |
+| Scene 3 Bystander | 120 sec | "Third-party harassment covered" / "Distract" / "Delegate" / "Delay" / "Document" | 5 D's origin citation |
+| Options | 75 sec | "Write date, time, words, witnesses" / "Save messages" / "Report not yet complaint" | Conditional privacy line verbatim |
+| Retaliation | 75 sec | "Retaliation: punishment for reporting — illegal" | Examples hours cut, shift change |
+| Support | 40 sec | "Listen, believe, ask what helps" | No promise of complete confidentiality |
+| Closing | 175 sec | Resource cards listed above — short text specified; testing pending | Each card 8 sec min, 28pt, high contrast, QR not required |
+
+Camera: Respectful distance, no sexualized framing, no body close-ups, neutral lighting, diverse actors not stereotyped. On-screen text: design target minimum 28pt, high contrast — specified; testing pending; no test record yet.
+
+---
+
+## 4. Source Verification Record — V8 Official Primary Sources
+
+**Method:** govinfo.gov for 42 USC 3610 and 3613; Cornell LII for 24 CFR 100.7, 24 CFR 100.600, 42 USC 2000e-5(e)(1); eeoc.gov field offices for timeliness; nyc.gov for NYC protections and training; dhr.ny.gov for report deadline and report-not-yet-complaint; ny.gov for NYS policy/training all employers.
+
+| Claim | Source Verified | Text | Date Retrieved |
+|---|---|---|---|
+| HUD admin 1 year | govinfo.gov USCODE-2010-title42 Sec 3610 | An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary | Oct 23 2026 |
+| HUD court 2 years + tolling | govinfo.gov USCODE-2021-title42 Sec 3613 and uscode.ecfr.io Sec 3613 | An aggrieved person may commence a civil action ... not later than 2 years after the occurrence or the termination ... The computation of such 2-year period shall not include any time during which an administrative proceeding ... was pending | Oct 23 2026 |
+| EEOC 180/300 conditional | eeoc.gov Greensboro timeliness and youth filing | A charge must be filed within 180 days ... extended to 300 days if there is a state or local anti-discrimination law that covers the location of the alleged harm and the basis for the charge | Oct 23 2026 |
+| EEOC statute 2000e-5(e)(1) | Cornell LII 42 USC 2000e-5(e)(1) and govinfo court doc | A charge under this section shall be filed within one hundred and eighty days after the alleged unlawful employment practice occurred ... except that in a case ... person aggrieved has initially instituted proceedings with a State or local agency ... such charge shall be filed ... within three hundred days | Oct 23 2026 |
+| 24 CFR 100.600 quid pro quo/hostile | Cornell LII 24 CFR 100.600 | Quid pro quo and hostile environment harassment because of sex may violate Fair Housing Act; condition of sale/rental/availability/terms/services; single incident may be enough | Oct 23 2026 |
+| 24 CFR 100.7 liability | Cornell LII 24 CFR 100.7 | Direct liability own conduct; failing to correct employee/agent knew or should have known; failing to correct third party knew or should have known and had power; prompt action may not include penalizing aggrieved such as eviction; vicarious liability agent/employee regardless of knowledge consistent with agency law | Oct 23 2026 |
+| NYC protection all employees / training 15+ | nyc.gov Stop Sexual Harassment Act FAQs | Protections against gender-based harassment extend to all employees regardless of size; training requirement applies to employers with 15+ employees or one or more domestic workers | Oct 23 2026 |
+| NYC training main page expansion | nyc.gov training-main.page and act.page | Expansion to all employees for harassment protections; training 15+ | Oct 23 2026 |
+| NYS all employers policy/training | ny.gov combating sexual harassment | All employers required to establish policy and provide annual training regardless of size | Oct 23 2026 |
+| DHR 3yr deadline | dhr.ny.gov/report | For any act on or after Feb 15 2024 file report within three years | Oct 23 2026 |
+| DHR extension effective | dhr.ny.gov/law-2021 and governor.ny.gov announcement | Statute of limitations extended to three years for causes on or after Feb 15 2024; before that workplace sexual harassment three years, other types one year | Oct 23 2026 |
+| DHR report vs complaint | dhr.ny.gov/notice-change-filing-2025 | The information submitted using our online forms or the Call Center is not yet an official complaint | Oct 23 2026 |
+| Five D's origin | rochester.edu | Green Dot three D's — Direct, Distract, Delegate — expanded by Right To Be added Delay 2015 and Document 2017 | Oct 23 2026 |
+
+**Unresolved:** uscode.house.gov preliminary endpoints for §§3610/3613 returned server errors on Oct 23 2026; govinfo.gov used as official alternative per U.S. Government Publishing Office. Measured runtime not yet established.
+
+---
+
+## 5. Captions and Descriptive Transcript — Requirements Only
+
+**Status:** No final synchronized captions or timed AD script in this package. Requirements and preliminary text only.
+
+**Requirements:** Verbatim dialogue + narration, speaker IDs, non-speech, timecoded SRT/VTT, WCAG 2.1 AA, 160 wpm max, 2 lines max. Descriptive transcript complete visual alternative. AD script timed insertion points, ducking, extended description for cards — specified; testing pending.
+
+**Preliminary AD text (not timed):** Wide coffee shop interior morning. Maya behind counter. Title V8 Draft Review Pending. Phone buzzes short overlay unwelcome request specified; testing pending. Maya says no. Schedule board hours cut. Short text protections all employers training NYS all NYC 15+ specified; testing pending. Apartment hallway leak drip. Luis points leak. Landlord suggests date for fix. Luis need repair only. Restaurant floor customer sexual comments server steps back. Manager tries to protect. Coworker distracts. Later checks in. Kitchen table Maya writes notebook date time words witness saves screenshots. Peer conditional privacy line. DHR report vs complaint explained. Laptop dhr.ny.gov/report. Final cards short readable list resources specified; testing pending.
+
+**Detailed citations companion resource guide (single system, official primary sources):**
+- NYS training all employers [1][9] — ny.gov official
+- NYC protection regardless size [2], training 15+ [2] — nyc.gov official
+- DHR deadlines 3 years on/after Feb 15 2024 [4], amendment [5] — dhr.ny.gov and governor.ny.gov official
+- Housing quid pro quo definition [6], single incident [6], liability [7] — Cornell LII 24 CFR 100.600 and 100.7 official mirrors
+- HUD admin 1 year official — 42 USC 3610: An aggrieved person may, not later than one year after... file a complaint — [13] govinfo.gov official
+- HUD court 2 years official — not later than 2 years after occurrence, computation shall not include time during admin proceeding pending, civil suit up to two years — [14] govinfo.gov and ecfr.io official
+- EEOC 180/300 days official — A charge must be filed within 180 days... extended to 300 days if state or local law covers location and basis — [15] eeoc.gov official
+- EEOC statute — A charge shall be filed within 180 days after alleged practice, except that if person aggrieved has initially instituted proceedings with State or local agency, within 300 days — 42 USC 2000e-5(e)(1) [16] Cornell LII and govinfo official
+- Report not automatically complaint [8] — dhr.ny.gov official: The information submitted using our online forms or the Call Center is not yet an official complaint
+- Five D's origin [10] — rochester.edu
+
+Final assets pending timed read-through and accessibility verification.
+
+---
+
+## 6. Review Record — V8 Consolidation — Official Primary Sources, Single System
+
+| Check | Date | Result | Notes |
+|---|---|---|---|
+| Schedule totals 14:30 | Oct 23 2026 | Confirmed distinct from measured runtime | 50+90+90+80+75+120+75+75+40+45+130 = 870 sec = 14:30 matches final timecode; measured runtime pending |
+| Goals and recap scannable | Oct 23 2026 | Confirmed | Bulleted short units retained |
+| Single numbered reference system [1]-[16] | Oct 23 2026 | Corrected — duplicate footnote list removed, mixed 1-6 markers removed | V7 mixed [1]-[16] with standalone 1-6 in deadline passages; V8 removes standalone markers and cites only [13][14][15][16] official |
+| Reference [3] secondary | Oct 23 2026 | Corrected to official | Replaced constantcontact and agentassociation with official nyc.gov training-main.page and act.page and gender guidance PDF |
+| Reference [5] secondary BSK | Oct 23 2026 | Corrected to official | Replaced with official dhr.ny.gov/law-2021, governor.ny.gov announcement, notice-extension-statute-limitations — all official |
+| Reference [7] secondary Davis-Stirling | Oct 23 2026 | Corrected to official | Now Cornell LII https://www.law.cornell.edu/cfr/text/24/100.7 and eCFR https://www.ecfr.gov/current/title-24/section-100.7 — official mirrors |
+| Reference [8] secondary Liebatlaw | Oct 23 2026 | Corrected to official | Now dhr.ny.gov/notice-change-filing-2025 official text: The information submitted using our online forms or the Call Center is not yet an official complaint, plus dhr-process-changes-updates and ny.gov FAQ |
+| HUD deadlines official | Oct 23 2026 | Verified via govinfo.gov | [13] 42 USC 3610 1 year admin and [14] 42 USC 3613 2 years court + tolling verified via govinfo; uscode.house.gov returned errors, govinfo used as official alternative per GPO |
+| EEOC deadline official + conditional language | Oct 23 2026 | Verified via eeoc.gov + Cornell LII | [15] EEOC official conditional language: extended to 300 days if state or local law covers location and basis; not universal; [16] statutory 180 days, 300 days if state agency authorized — Cornell LII and govinfo court doc |
+| Knowledge checks 11-18 | Oct 23 2026 | Rebuilt as complete questions with objective mapping | V7 had answer notes only; V8 now full stem + options A-D + correct + explanation + objective |
+| Readability testing | Oct 23 2026 | Not established — language fixed | "tested for comfortable reading" replaced with "specified; testing pending" throughout; no test record yet |
+| Full textbook prose preserved | Oct 23 2026 | Confirmed | V6/V7 fuller explanations retained; V8 maintains |
+| Overlay six-word target | Oct 23 2026 | Design target specified, testing pending | All overlays meet 6-word target or flagged as revised |
+
+**Production sequence:** Research → chapter drafts v1-v5 → v6 official citation cleanup — fuller V3 prose restored, V4 structure retained, HUD/EEOC deadline mapping corrected to official statutes and agency pages, duplicate footnote list removed, "tested" replaced with "specified; testing pending", overlay target met → v7 pasted text inspected as reference only (file not received as bytes) → v8 consolidation: secondary sources removed, mixed markers removed, knowledge checks rebuilt, official primary sources only [1]-[16], TXT UTF-8 copies created for Arena.
+
+**Disposition:** M01 — V8 CONSOLIDATED · READY FOR SUBJECT-MATTER REVIEW WITH CITATION FINDINGS ADDRESSED — official primary sources for deadlines, single system [1]-[16], no duplicate footnotes, no mixed markers, 14:30 schedule distinct from measured runtime, fuller prose preserved, knowledge checks complete. Legal approval, reader comprehension, accessibility verification, measured video timing remain pending. No external records changed. Originals preserved.
+
+**Files:**
+1. /mnt/data/M01-textbook-chapter-v8.md — single system [1]-[16] official primary only
+2. /mnt/data/M01-textbook-chapter-v8.txt — UTF-8 plain-text copy for Arena (text/plain)
+3. /mnt/data/M01-video-package-v8.md — this file — 14:30 confirmed, official citations, single system
+4. /mnt/data/M01-video-package-v8.txt — UTF-8 plain-text copy for Arena
+
+**Arena source access — V8 Receipt Check Required:** Upload M01-textbook-chapter-v8.txt (text/plain) and have Arena identify opening passage ("Maya works part-time at a neighborhood coffee shop in Queens"), section headings list, and confirm no mixed 1-6 markers remain, references [1]-[16] official only, knowledge checks 11-18 complete with stems.
+
+Review date: Oct 23 2026. Verify before publication.

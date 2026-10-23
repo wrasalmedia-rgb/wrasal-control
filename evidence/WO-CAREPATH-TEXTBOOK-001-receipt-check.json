@@ -1,0 +1,179 @@
+{
+    "evidence_id": "WO-CAREPATH-TEXTBOOK-001-receipt-check-v8-2026-10-23",
+    "work_order": "WO-CAREPATH-TEXTBOOK-001",
+    "control_plane_work_order": "WRASAL-0011",
+    "folder": {
+        "id": "10-9f65DyZfdU37TEf9-ObAnU08BIlnxi",
+        "name": "Carepath",
+        "web_view_link": "https://drive.google.com/drive/folders/10-9f65DyZfdU37TEf9-ObAnU08BIlnxi",
+        "created_time": "2026-10-23T21:39:06.293Z",
+        "modified_time": "2026-10-23T21:43:23.725Z",
+        "owner": "wrayvol@gmail.com (wrayvol)"
+    },
+    "drive_files": [
+        {
+            "id": "1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81",
+            "name": "M01-textbook-chapter-v8.docx",
+            "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "size_bytes": 49038,
+            "md5": "95efa955bae54929133361cc36872254",
+            "sha256": "36f0bb25e1e8fbd0f8e33ee45b0af459adb7d9b29f9d270d0e5f36bfa4f929b6",
+            "created_time": "2026-10-23T21:40:21.681Z",
+            "modified_time": "2026-10-23T21:40:21.681Z",
+            "web_view_link": "https://docs.google.com/document/d/1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81/edit?usp=drivesdk&ouid=110856313456863035353&rtpof=true&sd=true",
+            "web_content_link": "https://drive.google.com/uc?id=1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81&export=download",
+            "capabilities": "can_download true, can_edit true, can_trash false, can_delete false",
+            "inspected": true,
+            "role": "primary inspected source for chapter text",
+            "local_mirror": "google_drive/M01-textbook-chapter-v8.docx",
+            "local_md5_match": true
+        },
+        {
+            "id": "1RieM8pVy-TtBcYWrcmuQHnXIrx4HxTNY",
+            "name": "M01-video-package-v8.docx",
+            "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "size_bytes": 45349,
+            "md5": "9c2f07c092c1830c226f951bfb20da2e",
+            "sha256": "c370b7fb3f7d6c2d734d9df101547b7053b4a2c5af846c553e890307f28ccd5b",
+            "created_time": "2026-10-23T21:40:58.101Z",
+            "modified_time": "2026-10-23T21:40:58.101Z",
+            "web_view_link": "https://docs.google.com/document/d/1RieM8pVy-TtBcYWrcmuQHnXIrx4HxTNY/edit?usp=drivesdk&ouid=110856313456863035353&rtpof=true&sd=true",
+            "inspected": true,
+            "role": "video package source (docx)"
+        },
+        {
+            "id": "1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p",
+            "name": "M01-video-package-v8.txt",
+            "mime_type": "text/plain",
+            "size_bytes": 23838,
+            "md5": "650c422d28cc0574a284572a9d06a09a",
+            "sha256": "6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568",
+            "created_time": "2026-10-23T21:42:30.289Z",
+            "modified_time": "2026-10-23T21:42:30.289Z",
+            "inspected": true,
+            "role": "video package UTF-8 text (duplicate A)"
+        },
+        {
+            "id": "159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb",
+            "name": "M01-video-package-v8.txt",
+            "mime_type": "text/plain",
+            "size_bytes": 23838,
+            "md5": "650c422d28cc0574a284572a9d06a09a",
+            "sha256": "6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568",
+            "created_time": "2026-10-23T21:41:32.484Z",
+            "modified_time": "2026-10-23T21:41:32.484Z",
+            "inspected": true,
+            "role": "video package UTF-8 text (duplicate B) \u2014 identical hash to A, not deleted"
+        }
+    ],
+    "missing_expected_file": {
+        "name": "M01-textbook-chapter-v8.txt",
+        "expected_mime": "text/plain",
+        "drive_search_q": "'10-9f65DyZfdU37TEf9-ObAnU08BIlnxi' in parents",
+        "found": false,
+        "inspected": false,
+        "action": "Do not claim inspection; inspected .docx only. Bounded correction WRASAL-0012 will create derived UTF-8 .txt labeled as derived."
+    },
+    "extraction": {
+        "method": "google_drive.read_file_text (Drive connector) for .txt files; same connector for .docx text extraction; local download to google_drive/ for hash verification; saved full chapter text to /tmp/M01-textbook-chapter-v8.txt",
+        "extracted_path_tmp": "/tmp/M01-textbook-chapter-v8.txt",
+        "bytes_on_disk": 38737,
+        "chars_utf8": 38534,
+        "lines": 237,
+        "md5": "cf5ac4ae0942fa036fcf828f6f539ffb",
+        "sha256": "cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d",
+        "verification": "Local google_drive/M01-textbook-chapter-v8.docx hashes match Drive metadata; video .txt hashes match both Drive IDs; chapter text contains verbatim opening passage, section headings, and bracket references as logged below."
+    },
+    "receipt_checks": {
+        "opening_passage": {
+            "required_string": "Maya works part-time at a neighborhood coffee shop in Queens",
+            "result": "PASS",
+            "location": "Opening Situation, line 12 of extracted text",
+            "verbatim_context": "Maya works part-time at a neighborhood coffee shop in Queens. She likes her customers and is saving for college. A new shift manager starts making comments about her clothes. He texts her after her shift and asks for photos. When Maya says she is not comfortable, he cuts her hours the next week from 25 to 12."
+        },
+        "section_headings": {
+            "result": "PASS",
+            "ordered_headings": [
+                "Opening Situation (line 11)",
+                "Learning Goals \u2014 Short, Scannable (line 15)",
+                "1. Why This Topic Matters (line 25)",
+                "2. What Sexual Harassment Means \u2014 Different Tests for Different Settings (line 29)",
+                "3. Recognizing Conduct, Pressure, and Misuse of Power (line 42)",
+                "4. Workplace Situations and Responsibilities (line 44)",
+                "5. Housing and Public-Facing Services (line 56)",
+                "6. Options When Something Happens to You (line 66)",
+                "7. Supporting Someone and Responding as a Witness (line 76)",
+                "8. Understanding Retaliation (line 79)",
+                "9. Finding Help \u2014 Jurisdiction, Corrected Official Deadlines (line 81)",
+                "10. Worked Examples, Recap, Knowledge Checks \u2014 Full Prose (line 117) \u2014 subheading Knowledge Checks \u2014 Complete Questions With Objective Mapping (line 140)",
+                "Glossary \u2014 Plain Language (line 203)",
+                "Reviewer Notes \u2014 Jargon Outside Learner Text (line 212)",
+                "References \u2014 Single Consistent Numbered System [1]-[16] \u2014 Official Primary Sources Only \u2014 No Duplicate Footnote List (line 218)"
+            ]
+        },
+        "mixed_markers": {
+            "result": "PASS",
+            "detail": "Only bracket system [1]-[16] present; unique set [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16]; superscript chars \u00b9\u00b2\u00b3\u2074\u2075\u2076 count 0; no separate footnote block; (1) tokens inside 2000e-5(e)(1) statutory cite, not footnotes."
+        },
+        "references_1_16": {
+            "result": "PASS WITH FLAGS",
+            "all_16_present_unique_ordered": true,
+            "entries": [
+                "[1] NYS Combating Sexual Harassment \u2014 ny.gov + dol.ny.gov \u2014 OFFICIAL",
+                "[2] NYC CCHR Stop Sexual Harassment Act FAQs \u2014 nyc.gov \u2014 OFFICIAL",
+                "[3] NYC CCHR training pages + Gender guidance PDF \u2014 nyc.gov \u2014 OFFICIAL",
+                "[4] NYS DHR Report Discrimination \u2014 dhr.ny.gov/report \u2014 OFFICIAL",
+                "[5] NYS Statute of Limitations Extended \u2014 dhr.ny.gov/law-2021, governor.ny.gov, dhr.ny.gov/notice-extension-statute-limitations \u2014 OFFICIAL",
+                "[6] 24 CFR \u00a7100.600 \u2014 https://www.law.cornell.edu/cfr/text/24/100.600 \u2014 FLAGGED: nongovernmental legal-text publisher Cornell LII (mirrors eCFR), not government primary",
+                "[7] 24 CFR \u00a7100.7 \u2014 https://www.law.cornell.edu/cfr/text/24/100.7 + https://www.ecfr.gov/current/title-24/section-100.7 \u2014 FLAGGED: Cornell LII nongovernmental publisher",
+                "[8] NY DHR Notice of Changes to Filing Process \u2014 dhr.ny.gov/notice-change-filing-2025 etc \u2014 OFFICIAL",
+                "[9] NYS Model Policy and Training \u2014 ny.gov \u2014 OFFICIAL",
+                "[10] Bystander Five D's \u2014 https://www.rochester.edu/sexualmisconduct/resources/bystander-intervention/ \u2014 FLAGGED: University of Rochester university reference (non-government, non-legal fact)",
+                "[11] NYC Stop Sexual Harassment Act notice/factsheet \u2014 nyc.gov PDF \u2014 OFFICIAL",
+                "[12] NYS Attorney General \u2014 ag.ny.gov \u2014 OFFICIAL",
+                "[13] 42 U.S.C. \u00a73610 \u2014 govinfo.gov \u2014 OFFICIAL",
+                "[14] 42 U.S.C. \u00a73613 \u2014 govinfo.gov https://www.govinfo.gov/content/pkg/USCODE-2021-title42/html/USCODE-2021-title42-chap45-subchapI-sec3613.htm + unofficial mirror https://uscode.ecfr.io/title/42/section/3613 \u2014 FLAGGED: ecfr.io is unofficial mirror, not official",
+                "[15] EEOC Timeliness \u2014 eeoc.gov \u2014 OFFICIAL",
+                "[16] 42 U.S.C. \u00a72000e-5(e)(1) \u2014 https://www.law.cornell.edu/uscode/text/42/2000e-5 + govinfo court filing \u2014 FLAGGED: Cornell LII nongovernmental publisher component"
+            ]
+        },
+        "knowledge_checks_11_18": {
+            "result": "PASS WITH DEVIATION",
+            "summary": "All checks 11-18 have Question stem, Correct Answer, Explanation, Objective. 11-17 have options A-D. 18 has only A-B (valid two-option True/False).",
+            "details": {
+                "11": "Quid pro quo workplace \u2014 A-D, Correct B \u2014 PASS",
+                "12": "NYS severe/pervasive \u2014 A-D, Correct B \u2014 PASS",
+                "13": "Who protected/training \u2014 A-D, Correct B \u2014 PASS",
+                "14": "Luis landlord housing quid pro quo \u2014 A-D, Correct B \u2014 PASS",
+                "15": "Retaliation Maya hours 25->12 \u2014 A-D, Correct B \u2014 PASS",
+                "16": "Bystander Five D's \u2014 A-D, Correct B \u2014 PASS",
+                "17": "DHR deadline 3 years on/after Feb 15 2024 \u2014 A-D, Correct C \u2014 PASS",
+                "18": "Must complain to employer first? \u2014 A) Yes, always required. B) False \u2014 you can file DHR report directly [8] etc \u2014 Correct B \u2014 DEVIATION: only A-B present, not A-D; valid two-option item, blanket A-D claim inaccurate (corrected in WRASAL-0012)"
+            }
+        },
+        "overall": "Substantive PASS; flags [6][7][10][14][16] classification and check 18 A-D statement do not block drafting but require bounded corrections (WRASAL-0012)."
+    },
+    "unresolved_carry_forward": [
+        "Current-law verification: Review date Oct 23 2026 \u2014 verify all agency phone numbers, websites, deadlines before publication remains pending (no legal review claimed).",
+        "Comprehension testing pending, accessibility verification pending, measured runtime pending (video package: synchronized captions, timed AD script, 130-150 wpm read-through, 28pt high-contrast card checks not yet established).",
+        "Video schedule discrepancy: 14:30 schedule (50+90+90+80+75+120+75+75+40+45+130=870 sec) confirmed distinct from measured runtime in V8; instruction notes 14:30 vs 14:40 discrepancy persists \u2014 carry forward for timed read-through verification (prior 14:10 error corrected to 14:30, but 14:40 reference in authorization requires reconciliation).",
+        "uscode.house.gov endpoints for \u00a7\u00a73610/3613 returned server errors on Oct 23 2026; govinfo.gov used as official alternative per GPO \u2014 verify if house.gov becomes available."
+    ],
+    "duplicate_video_txt_hash_comparison": {
+        "file_a_id": "1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p",
+        "file_b_id": "159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb",
+        "name_both": "M01-video-package-v8.txt",
+        "size_both": 23838,
+        "md5_both": "650c422d28cc0574a284572a9d06a09a",
+        "sha256_both": "6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568",
+        "bytes_identical": true,
+        "action": "Recorded only; not deleted \u2014 deletion requires separate approval. Local mirror google_drive/M01-video-package-v8.txt represents both Drive files."
+    },
+    "governance": {
+        "principle": "REALITY FIRST; No evidence \u2192 no authority; No authority \u2192 no state change; AI may propose/inspect/organize/evaluate but must NOT invent evidence, claim human approval, or self-authorize canonical changes. Executor PASS \u2260 canonical acceptance (stays pending).",
+        "claims_not_made": "No legal review, no accessibility/readability verification, no approval for public release claimed. Draft states NOT APPROVED FOR PUBLIC RELEASE.",
+        "drive_mutation": "none \u2014 no trash/delete/modify_content, no merges, no deploys, no publishes",
+        "canonical_acceptance": "pending \u2014 requires separate human promotion"
+    },
+    "readiness": "Source inspection reported complete \u00b7 drafting can proceed on unaffected chapters \u00b7 review and release remain pending."
+}
