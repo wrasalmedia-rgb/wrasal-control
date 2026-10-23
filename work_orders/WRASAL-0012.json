@@ -1,0 +1,105 @@
+{
+    "work_order_id": "WRASAL-0012",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0012",
+    "recorded_on": "2026-10-23",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Apply bounded housekeeping corrections to M01 V8 derived text: replace inaccurate 'official primary sources only' with accurate source classifications, retain Q18 as valid two-option and correct blanket A-D statement, create UTF-8 textbook .txt derived from inspected .docx with verification, record duplicate video hash comparison without deletion, and carry forward unresolved current-law verification and 14:30 vs 14:40 schedule discrepancy; do not modify Drive originals, merge, deploy, or publish.",
+    "success_condition": "Derived file google_drive/M01-textbook-chapter-v8.txt created as UTF-8 plain text labeled as derived from 1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81, with text equivalence to extraction verified (original extraction md5 cf5ac4ae0942fa036fcf828f6f539ffb sha256 cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d vs corrected file containing intentional classification edits); 'official primary sources only' replaced with accurate labels (Cornell LII nongovernmental publisher [6][7][16], Rochester university [10], ecfr.io unofficial mirror in [14]); Q18 retained as two-option A-B with Status/Knowledge Checks/End disposition corrected to '11-17 A-D, 18 valid two-option'; duplicate video files confirmed identical hash 650c422d28cc0574a284572a9d06a09a and not deleted; unresolved current-law verification and 14:30 vs 14:40 discrepancy carried forward; no Drive originals modified; canonical_acceptance remains pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "carepath_work_order_id": "WO-CAREPATH-TEXTBOOK-001",
+        "prior_receipt_work_order": "WRASAL-0011",
+        "inspected_docx_drive_id": "1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81",
+        "inspected_docx_name": "M01-textbook-chapter-v8.docx",
+        "inspected_docx_size": "49038",
+        "inspected_docx_md5": "95efa955bae54929133361cc36872254",
+        "inspected_docx_sha256": "36f0bb25e1e8fbd0f8e33ee45b0af459adb7d9b29f9d270d0e5f36bfa4f929b6",
+        "original_extraction_tmp": "/tmp/M01-textbook-chapter-v8.txt",
+        "original_extraction_md5": "cf5ac4ae0942fa036fcf828f6f539ffb",
+        "original_extraction_sha256": "cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d",
+        "original_extraction_bytes_disk": "38737",
+        "original_extraction_chars": "38534",
+        "original_extraction_lines": "237",
+        "derived_txt_path": "google_drive/M01-textbook-chapter-v8.txt",
+        "derived_txt_label": "DERIVED UTF-8 TEXT \u2014 V8 with Bounded Housekeeping Corrections (WRASAL-0012) \u2014 labeled as derived from inspected .docx; missing Drive .txt NOT claimed inspected",
+        "derived_txt_bytes": "42682",
+        "derived_txt_chars": "42463",
+        "derived_txt_md5": "0ff247b5e4170856d7363b5e95046fbe",
+        "derived_txt_sha256": "41788f438e42f9668e5a13324023d6e54a2f783cd96f8d439c53f64804780c83",
+        "derived_txt_encoding": "UTF-8, LF, text/plain",
+        "correction_1_source_classifications": "Replaced 'OFFICIAL PRIMARY SOURCES ONLY' / 'OFFICIAL CITATIONS ONLY' / 'Official Primary Sources Only' with 'Sources [1]-[16] with Classifications Labeled'; reference headers and Status now distinguish official government [1][2][3][4][5][8][9][11][12][13][15] vs nongovernmental legal-text publisher Cornell LII [6][7][16] vs university reference Rochester [10] vs unofficial mirror ecfr.io in [14] (alongside official govinfo)",
+        "correction_2_q18": "Retained Q18 as valid two-option item: A) Yes, always required. B) False \u2014 you can file DHR report directly [8]... Correct Answer B; corrected blanket 'all questions have A-D' in Status, Knowledge Checks heading, and End disposition to '11-17 A-D, 18 valid two-option A-B'",
+        "correction_3_utf8_txt": "Created derived UTF-8 .txt from extraction; verified core narrative unchanged except intentional housekeeping edits; banner documents provenance and hashes; file does not replace Drive original (none existed); labeled as derived",
+        "correction_4_duplicate_video_hash": "Duplicate video files 1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p and 159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb both name M01-video-package-v8.txt size 23838 md5 650c422d28cc0574a284572a9d06a09a sha256 6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568 \u2014 identical \u2014 recorded only, not deleted",
+        "correction_5_unresolved_carry_forward": "Current-law verification (review date Oct 23 2026 \u2014 verify phones/websites/deadlines) remains pending; 14:30 schedule (50+90+90+80+75+120+75+75+40+45+130=870 sec) confirmed distinct from measured runtime vs 14:40 discrepancy pending timed read-through; comprehension testing, accessibility verification, measured runtime, legal review, release authorization pending",
+        "drive_mutation": "none \u2014 Drive originals unchanged; no trash/delete/modify_content; no merges/deploys/publishes",
+        "pull_request": null,
+        "merge": null,
+        "canonical_acceptance_record": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0012-correction-1-source-classifications",
+            "type": "text_revision",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M01-textbook-chapter-v8.txt (derived) vs /tmp/M01-textbook-chapter-v8.txt original extraction",
+            "observed_result": "Replaced 10 occurrences of inaccurate 'official primary sources only' claims: Header line 2 V8 DRAFT \u2014 OFFICIAL PRIMARY SOURCES ONLY \u2192 'Sources [1]-[16] with Classifications Labeled (official government, nongovernmental legal-text publisher, university reference, unofficial mirror)'; Line 4 OFFICIAL CITATIONS ONLY \u2192 'Sources [1]-[16] Classified (see References)'; Status line secondary sources replaced with official primary sources [1]-[16] \u2192 'secondary sources replaced and classifications labeled: official government [1]-[5][8][9][11]-[13][15], nongovernmental publisher Cornell LII [6][7][16], university Rochester [10], unofficial mirror ecfr.io in [14] alongside official govinfo'; References header \u2192 'Source Classifications Labeled'; Reference [6] Official Cornell LII \u2192 Nongovernmental legal-text publisher Cornell LII (not government primary); [7] Official Cornell LII \u2192 Nongovernmental publisher Cornell LII + Official eCFR for https://www.ecfr.gov/current/title-24/section-100.7; [10] University reference \u2192 University reference (University of Rochester, nongovernmental, non-legal fact \u2014 not primary legal source); [14] ecfr.io mirror \u2192 unofficial mirror (not government primary, alongside official govinfo); [16] Official Cornell LII \u2192 Nongovernmental publisher Cornell LII + official govinfo filing; End disposition similarly updated to list classifications. Verbatim replacements logged; 0 remaining 'official primary sources only' strings (verified via grep -c 0). Cornell LII correctly identified as nongovernmental legal-text publisher (mirrors eCFR/govinfo but not government), Rochester as university reference, ecfr.io as unofficial mirror.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0012-correction-2-q18-two-option",
+            "type": "text_revision",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M01-textbook-chapter-v8.txt Status, Knowledge Checks heading, End disposition",
+            "observed_result": "Retained Q18 text unchanged as valid two-option item: 'Must you complain to your employer before filing with DHR? A) Yes, always required. B) False \u2014 you can file a DHR report directly via online forms or Call Center [8]; report not automatically formal complaint, DHR reviews before verified complaint prepared and filed [8]; failure to complain to employer is not determinative [8]. However supervisors/HR may have duty to report [8]. Correct Answer: B) False. Objective: Explain practical steps.' No distractors C/D added (per instruction: do not add unnecessary distractors). Corrected blanket statements: Status line now 'knowledge checks rebuilt as complete objective-mapped items (11-17 with options A-D, 18 as valid two-option A-B, each with correct answer, explanation, objective)'; Knowledge Checks heading now 'Knowledge Checks \u2014 Complete Questions With Objective Mapping (11-17 A-D, 18 Two-Option Valid)'; End disposition now 'knowledge checks rebuilt as complete questions with objective mapping (11-17 A-D, 18 valid two-option A-B)'. Original extraction had Check 18 with only A-B; blanket 'A-D for all' was inaccurate and has been corrected to reflect reality.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0012-correction-3-derived-txt-verification",
+            "type": "file_creation_verification",
+            "attribution": "Arena external execution worker",
+            "source": "python script creating google_drive/M01-textbook-chapter-v8.txt from /tmp/M01-textbook-chapter-v8.txt; hashlib verification",
+            "observed_result": "Created UTF-8 plain-text derived file google_drive/M01-textbook-chapter-v8.txt bytes 42682 chars 42463 LF line endings, md5 0ff247b5e4170856d7363b5e95046fbe sha256 41788f438e42f9668e5a13324023d6e54a2f783cd96f8d439c53f64804780c83. Original extraction: 38737 bytes disk 38534 chars 237 lines md5 cf5ac4ae0942fa036fcf828f6f539ffb sha256 cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d. Hashes differ intentionally due to bounded corrections (header banner + classification edits ~3945 bytes added). Core narrative verified: Opening Situation passage 'Maya works part-time at a neighborhood coffee shop in Queens' unchanged; sections 1-10 headings unchanged; knowledge checks 11-18 stems unchanged except Q18 retained A-B. Banner at top of derived file explicitly labels: '# M01-textbook-chapter-v8.txt \u2014 DERIVED UTF-8 TEXT \u2014 V8 with Bounded Housekeeping Corrections (WRASAL-0012)' with provenance Drive ID 1MEEvWMN6PjEcZGvt3OkfXhlqZzXjaQ81, extraction hashes, missing-file note, correction list, encoding, and preservation note. Text equivalence verified by diff: only intentional housekeeping edits present; no Drive .txt existed to compare against \u2014 correctly NOT claimed as inspected.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0012-correction-4-duplicate-video-hash",
+            "type": "hash_comparison",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive.get_file and list_files for 1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p and 159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb; md5sum/sha256sum of local mirror",
+            "observed_result": "Compared duplicate video files: ID 1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p created 2026-10-23T21:42:30.289Z and ID 159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb created 2026-10-23T21:41:32.484Z both name M01-video-package-v8.txt mime text/plain size 23838 md5 650c422d28cc0574a284572a9d06a09a sha256 6dbe68afa15243d7cca6cc4f5c8928d6df22226aff7bc63e09bb53f0e9e4c568 \u2014 byte-identical by Drive md5Checksum/sha256Checksum and by local file hash. Local mirror google_drive/M01-video-package-v8.txt represents both. Recorded result; no deletion performed (capabilities.can_trash false, deletion requires approval; per instruction do not delete either without approval). Entry preserved for audit.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0012-correction-5-unresolved-carry-forward",
+            "type": "governance_record",
+            "attribution": "Arena external execution worker",
+            "source": "Chapter draft review date Oct 23 2026 notice and video package timing section; concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md preconditions",
+            "observed_result": "Carried forward unresolved items without blocking unaffected drafting: (a) Current-law verification remains pending \u2014 chapter footer 'Review date: October 23, 2026 \u2014 verify all agency phone numbers, websites, deadlines before publication' and video package review date same; no legal review claimed. (b) Video schedule discrepancy: V8 package states 'Timing: Segment allocations total 14:30 matching final timecode 12:20-14:30 closing. Schedule not demonstrated timing. Word counts not validated. Reading pauses estimated. Timed read-through pending. Measured runtime pending. Corrects prior 14:10 arithmetic error. 50+90+90+80+75+120+75+75+40+45+130=870 sec=14:30 matches final timecode; distinct from measured runtime.' Instruction notes 14:30 vs 14:40 discrepancy \u2014 carry forward: need timed read-through at 130-150 wpm with accessibility pauses to verify whether 14:30 schedule or 14:40 reference is correct; prior 14:10 corrected to 14:30 but 14:40 still requires reconciliation. (c) Accessibility/measured runtime: synchronized captions, timed AD script, readability testing, 28pt high-contrast cards, QR optional \u2014 all 'specified; testing pending' per package \u2014 not yet established. (d) uscode.house.gov \u00a7\u00a73610/3613 endpoints returned server errors Oct 23 2026; govinfo.gov used as official alternative \u2014 verify if house.gov becomes available. These do not block drafting of unaffected chapters; legal review, comprehension testing, accessibility verification, measured runtime, and release authorization remain pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0012-no-drive-mutation",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive capabilities and local git status; concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md human review boundaries",
+            "observed_result": "No Drive originals modified: folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi and its 4 files preserved with original IDs/timestamps/hashes; corrections applied only to local derived file google_drive/M01-textbook-chapter-v8.txt which is a new derived creation (labeled as such) not a Drive overwrite. No merges, no deploys, no publishes, no Drive permission changes. Canonical acceptance remains pending (requires separate human promotion). Drafting can proceed on unaffected chapters per instruction.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M01-textbook-chapter-v8.txt created (42682 bytes, UTF-8, derived, corrected classifications, Q18 two-option correction) \u2014 new derived file labeled; original extraction provenance preserved in WRASAL-0011 evidence; google_drive/M01-textbook-chapter-v8.docx and google_drive/M01-video-package-v8.txt unchanged",
+        "drive_originals": "unchanged \u2014 4 files in Carepath folder preserved; no Drive API modify_content/trash/delete called",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "Continue research and drafting per WO-CAREPATH-TEXTBOOK-001 sequence: unaffected chapter development may proceed; housekeeping findings do not block. Next verification steps (pending human/scheduled execution): timed read-through to resolve 14:30 vs 14:40 and establish measured runtime, current-law verification of phones/websites/deadlines, comprehension testing, accessibility verification (captions/AD/28pt cards), subject-matter/legal review, and separate release authorization. No external records changed."
+}
