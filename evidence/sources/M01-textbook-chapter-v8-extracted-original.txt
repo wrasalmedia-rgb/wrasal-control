@@ -1,0 +1,237 @@
+
+M01 — Textbook Chapter V8 — Sexual Harassment: Understanding Boundaries, Rights, and Options
+V8 DRAFT — OFFICIAL PRIMARY SOURCES ONLY [1]-[16] — Not approved for public release — Review date Oct 23 2026
+M01 — Sexual Harassment: Understanding Boundaries, Rights, and Options
+Public Education Textbook Chapter — V8 DRAFT FOR SUBJECT-MATTER REVIEW — OFFICIAL CITATIONS ONLY
+**Status:** V8 — Citation consolidation completed; secondary sources replaced with official primary sources [1]-[16]; mixed footnote markers 1-6 removed; reference entries de-duplicated to single consistent bracket system; knowledge checks rebuilt as complete objective-mapped items. Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City. Federal law for comparison.
+**Review date:** October 23, 2026 — verify all agency phone numbers, websites, deadlines before publication.
+**Disclaimer:** General information only. Not legal advice.
+---
+Opening Situation
+Maya works part-time at a neighborhood coffee shop in Queens. She likes her customers and is saving for college. A new shift manager starts making comments about her clothes. He texts her after her shift and asks for photos. When Maya says she is not comfortable, he cuts her hours the next week from 25 to 12. The change affects her pay and her schedule, and it feels like punishment for saying no.
+The same week, Maya's cousin Luis, who rents an apartment nearby, tells her that water is leaking from his ceiling. His landlord says he will fix the leak sooner if Luis will go on a date with him. Luis just wants the repair.
+This chapter looks at questions like these. It explains what sexual harassment is, how it can look different at work, at home, and in places that serve the public, what rights you have in New York, and what options you have if it happens to you or to someone you know.
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Describe what sexual harassment means in plain language.
+Recognize two common patterns: quid pro quo (this for that) and hostile environment.
+Give everyday examples from work, housing, and stores or transit.
+Explain why New York State, New York City, and federal tests are different.
+List practical steps you might consider, including how to write notes and save messages.
+Explain what retaliation is and why it is illegal.
+Support someone who tells you about harassment while being clear about your own responsibilities.
+Find official help in New York and understand ordinary filing deadlines.
+1. Why This Topic Matters
+Everyone deserves to work, live, and get services without being pressured, humiliated, or punished because of sex, sexual orientation, gender identity, or gender expression. When harassment happens, people often feel unsafe, stressed, or isolated. It can affect health, sleep, pay, school, and housing.
+In New York, the law is clear that harassment based on these characteristics is not allowed. Under state law, employers are responsible for providing a workplace free from harassment based on protected characteristics [1]. This applies to all employers, no matter how small, and includes households that employ a nanny or housekeeper. The state also requires every employer to establish a sexual harassment prevention policy and give it to employees, and to provide annual sexual harassment prevention training [1].
+New York City has its own protections. City law protects people from gender-based harassment, which includes sexual harassment, at work, in housing, and in public accommodations like stores and restaurants. The city's frequently asked questions explain that protections against gender-based harassment extend to all employees regardless of the size of their employer [2], while the requirement to provide annual sexual harassment training applies to employers with 15 or more employees or one or more domestic workers [2].
+2. What Sexual Harassment Means — Different Tests for Different Settings
+Sexual harassment is a form of discrimination based on sex. It is illegal, but the exact test depends on where it happens.
+At Work
+**Federal law:** Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature is sexual harassment when it affects employment or creates an intimidating, hostile, or offensive work environment. In federal court, judges often look for conduct that is severe or pervasive.
+**New York State:** State law uses a lower threshold. Harassment is unlawful when it subjects you to inferior terms, conditions, or privileges of employment because you belong to a protected group, such as sex, sexual orientation, or gender identity [8]. Conduct has to be more than petty slights or trivial inconveniences, but does not have to be severe or pervasive.
+**New York City:** City law is broader. You show you were treated less well than other people because of gender [2][3]. Protections against gender-based harassment apply to all employees regardless of employer size [2]. Training requirements are separate: state requires all employers regardless of size to provide annual training [1][9]; city requires employers with 15 or more employees or one or more domestic workers to provide training that meets city standards [2].
+Unwelcome means not wanted. Focus is on how person receiving conduct experiences it, not just intent. Mutual welcome flirting is not harassment. Harassment can be based on sex, sexual orientation, gender identity, or gender expression.
+Two patterns: quid pro quo (this for that) when someone with power links benefit to sexual behavior; hostile environment when unwelcome conduct makes it harder to work, live, or use service. Under state and city employment law, single serious incident can be enough if more than petty slight, and repeated lower-level conduct can add up. Under federal law, courts look more for severe or pervasive.
+In Housing — Federal Rule
+Federal rule at 24 CFR §100.600 explains quid pro quo and hostile environment harassment because of sex may violate Fair Housing Act [6]. Quid pro quo means unwelcome request where submission is made condition of sale, rental, availability, or terms and conditions of housing or services [6]. Single incident may be enough if it shows quid pro quo or severe hostile environment [6].
+Housing provider liability at 24 CFR §100.7: directly liable for own conduct [7]; directly liable for failing to correct employee or agent when knew or should have known [7]; directly liable for failing to correct third party when knew or should have known and had power to correct [7]; prompt action may not include punishing aggrieved person, such as evicting [7]; also responsible for discriminatory practices by agent or employee acting as part of job — vicarious liability in plain language [7].
+In Public Accommodations
+NYC public accommodations — stores, restaurants, clinics, gyms, theaters, transit — protected against gender-based harassment [2][3]. Business may have responsibility if knows and can act.
+3. Recognizing Conduct, Pressure, and Misuse of Power
+Examples: sexual comments about appearance, sexual jokes, showing sexual images, unwanted touching, repeated requests for dates after no. Pressure direct or indirect: offering benefit for sexual behavior, threatening negative consequence, pattern of attention wearing you down, control over assignments. Power from schedule, pay, repairs, ability to evict, customers, tips, age, experience. Maya manager used hours; Luis landlord used repairs.
+4. Workplace Situations and Responsibilities
+Who is Protected
+State: all workers regardless of size — employees, interns, contractors, vendors, gig, domestic workers [1]. City: gender-based harassment protections all employees regardless of size [2]; other discrimination generally 4+ employees, but gender-based harassment exception [3]. Freelancers and independent contractors covered for harassment in city and counted for training threshold [2].
+Who Can Harass
+Supervisor, coworker, third party like client or customer. State says harassment by customers is covered. Manager should try to protect employee.
+What Employers Must Do
+State: all employers regardless of size must establish policy, give copy, provide annual training [1][9]. City: employers with 15+ employees or 1+ domestic worker must provide annual training meeting city standards [2]. So NYC employers must meet both: state all employers plus city if 15+ or domestic worker. Must post notices. City requires English and Spanish posting and fact sheet [11]. Since 2019, failure to complain to employer is not determinative of employer liability under state law [8].
+Everyday Workplace Examples (Full Sentences)
+Maya's situation quid pro quo: manager links benefit to sexual behavior then cuts hours. Inferior terms because sex under state [8], treated less well because gender under city [2], protection regardless of size [2], possible retaliation.
+Group chat sexual memes after request to stop: repeated unwelcome conduct, inferior terms or less well.
+Server harassed by customer: third party covered, manager must try to address.
+Remote work comments or images in video meeting covered; state model includes remote workers [9].
+5. Housing and Public-Facing Services
+Housing
+Federal: quid pro quo definition [6], single incident may violate [6], liability direct own conduct [7], no eviction as correction [7]. Luis landlord conditioning repair on date is quid pro quo condition of services [6]. If repair denied after no, affects housing terms. Other examples: maintenance worker advances during repairs, threat of eviction after refusal, tenant-on-tenant provider knows and can correct [7].
+Federally assisted housing: Violence Against Women Act may provide emergency transfer.
+Deadlines — Official sources:
+HUD administrative: An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary [13]. This language comes from 42 U.S.C. §3610.
+Federal court: An aggrieved person may commence a civil action in an appropriate United States district court or State court not later than 2 years after the occurrence or the termination of an alleged discriminatory housing practice [14]. The computation of such 2-year period shall not include any time during which an administrative proceeding under this subchapter was pending [14]. This language comes from 42 U.S.C. §3613.
+State: DHR 3 years for acts on or after Feb 15, 2024 [4][5]; older acts seek guidance [4].
+Public Accommodations
+NYC stores, restaurants, clinics, gyms, theaters, transit covered [2][3].
+6. Options When Something Happens to You
+No single right way. Safety first. If unsafe, move to safe place, reach trusted person. Assault may be crime — police report separate from civil rights complaint.
+Write down what happened soon: date, time, place, exact words or actions, witnesses, effect. Save messages. Notes soon after more helpful than memory.
+Tell someone inside if you want — understand reporting duties: supervisors, HR, designated persons may have duty to report or investigate and may not keep disclosure completely private [8]. For confidential information before deciding, consider NYS hotline 1-800-HARASS-3, not your employer, does not file complaint.
+Learn government options — report vs formal complaint distinction: DHR explains the information submitted using online forms or Call Center is not yet an official complaint, and a discrimination report is not automatically a formal complaint [8]. DHR reviews submission before verified complaint is prepared and filed [8]. You first file a report, DHR reviews jurisdiction and deadlines, then if appropriate prepares formal verified complaint for signature. That signed complaint starts investigation. Choice of where to file affects whether you can file elsewhere later.
+Deadlines — without categorical expiration language: DHR official page says for any act on or after Feb 15, 2024, file report within three years of most recent incident [4]. For acts before Feb 15, 2024, timeline depends on type: workplace sexual harassment three years, other types ordinary deadline one year before change [4]. Extension to three years for all claims effective Feb 15, 2024 [5]. For older incidents, contact DHR or qualified attorney about possible exceptions rather than assuming no option [4][5].
+Other agencies:
+NYC CCHR: one year generally, three years for gender-based harassment including sexual harassment [2][3].
+EEOC: Official EEOC timeliness — A charge must be filed with EEOC within 180 days from the date of the alleged violation, in order to protect the charging party's rights. This 180-day filing deadline is extended to 300 days if there is a state or local anti-discrimination law [15]. Youth page: There are strict time limits for filing a job discrimination complaint with the EEOC. In some cases, you only have 180 days to report discrimination to EEOC. You have 300 days if your complaint is also covered by a state or local anti-discrimination law [15]. Statute: A charge under this section shall be filed within one hundred and eighty days after the alleged unlawful employment practice occurred, and notice of the charge shall be served upon the person against whom such charge is made within ten days thereafter, except that in a case of an unlawful employment practice with respect to which the person aggrieved has initially instituted proceedings with a State or local agency with authority to grant or seek relief, such charge shall be filed within three hundred days after the alleged unlawful employment practice occurred [16] — 42 U.S.C. §2000e-5(e)(1) [16].
+Take care of yourself: Support from friends, family, a counselor, or community resources can help you cope with stress and make decisions. Reaching out is not overreacting.
+7. Supporting Someone and Responding as a Witness
+If someone tells you about harassment: listen without interrupting, thank for trusting, avoid judging, let them know you believe them and not their fault. Ask what would be helpful, respect decisions. Be clear about your own role. If supervisor, manager, HR, designated reporting person, you may be required to share information or report and may not promise complete confidentiality [8]. If peer, still should not promise complete privacy; respectful approach: "I'll respect your privacy. Before sharing anything, let's discuss what support you want and any responsibilities I have." Encourage documentation, offer to help find resources, offer to go with them if safe and they want company.
+Bystander Five D's: started with Green Dot three D's — Direct, Distract, Delegate — expanded by Right To Be, formerly Hollaback!, added Delay in 2015 and Document in 2017 [10]. Direct: speak up if safe. Distract: create distraction interrupting. Delegate: ask someone with more authority. Delay: check in after. Document: write down date, time, place, exact words or actions, witnesses. Avoid recording video risking privacy; written notes safest. Often delay most supportive.
+8. Understanding Retaliation
+Retaliation is punishment for reporting harassment, opposing it, or taking part in investigation. Illegal under NYS, NYC, federal law. Protected activities include filing internal or agency complaint, testifying, helping investigation, opposing harassment verbally or informally, reporting another employee harassed, encouraging coworker to report. Retaliation can be hours cut, less desirable shifts, transfer, increased workload, exclusion, threats of eviction in housing. City guidance says retaliation any action reasonably likely to deter protected activity [2][3]. Document what changed, when, who decided. May add retaliation claim. Deadlines tied to retaliatory act itself.
+9. Finding Help — Jurisdiction, Corrected Official Deadlines
+Check official sites before acting. Deadlines described as ordinary rules; for older incidents talk to agency or attorney about exceptions.
+New York State
+**Division of Human Rights (DHR)**
+Jurisdiction: Statewide.
+What it does: Takes reports, reviews, when appropriate prepares formal verified complaint for signature then investigates. No attorney needed, free. Process begins online reporting or Call Center — The information submitted using our online forms or the Call Center is not yet an official complaint [8]. Report not automatically formal complaint; DHR reviews before verified complaint prepared and filed [8].
+Deadlines: For any act on or after Feb 15, 2024, file report within three years of most recent incident [4]. For acts before Feb 15, 2024, workplace sexual harassment three years, other types ordinary deadline one year before change [4]. Extension to three years all claims effective Feb 15, 2024 [5]. For older, contact DHR or attorney about exceptions [4][5].
+Contact: https://dhr.ny.gov/report , 844-NYS-DHR1.
+Hotline: 1-800-HARASS-3 (1-800-427-2773), Mon-Fri 9-5.
+Review date: Oct 23 2026
+**Department of Labor**
+Jurisdiction: Statewide employers.
+What it does: Provides model policy and training. State requires all employers regardless of size adopt policy and provide annual training [1][9].
+Contact: https://www.ny.gov/combating-sexual-harassment-workplace
+Review date: Oct 23 2026
+New York City
+**Commission on Human Rights (CCHR)**
+Jurisdiction: Acts within NYC or sufficient connection.
+Protections vs training: Protections gender-based harassment all employees regardless of size [2]. Training only 15+ or domestic worker [2]. State training all employers [1][9] so NYC employers meet both.
+Deadlines: One year generally, three years gender-based harassment [2][3].
+Contact: https://www.nyc.gov/site/cchr/law/stop-sexual-harassment-act-faqs.page , 212-416-0197 or 311.
+Review date: Oct 23 2026
+Federal — Official Sources
+**EEOC — Employment**
+Jurisdiction: Nationwide; in New York, employers 15+ under Title VII, with worksharing.
+Deadline official: A charge must be filed with EEOC within 180 days from the date of the alleged violation, this 180-day deadline is extended to 300 days if there is a state or local anti-discrimination law that covers the location of the alleged harm and the basis for the charge [15]. Statutory: A charge shall be filed within one hundred and eighty days after the alleged unlawful employment practice occurred, except that in a case where the person aggrieved has initially instituted proceedings with a State or local agency with authority to grant or seek relief, such charge shall be filed within three hundred days after the alleged unlawful employment practice occurred [16] — 42 U.S.C. §2000e-5(e)(1) [16].
+Contact: https://www.eeoc.gov/ , New York District 33 Whitehall St, 5th Floor, NY 10004, 1-800-669-4000.
+Review date: Oct 23 2026
+**HUD — Housing**
+Jurisdiction: Nationwide under Fair Housing Act.
+Legal standard: 24 CFR §100.600 quid pro quo and hostile environment [6], definition condition of sale or rental [6], single incident [6]; liability 24 CFR §100.7 [7].
+Deadlines official: An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary [13] — 42 U.S.C. §3610. Court: An aggrieved person may commence a civil action in an appropriate United States district court or State court not later than 2 years after the occurrence or the termination of an alleged discriminatory housing practice [14]; computation shall not include time during which an administrative proceeding was pending [14] — 42 U.S.C. §3613 [14].
+Contact: https://www.hud.gov/program_offices/fair_housing_equal_opp/online-complaint
+Review date: Oct 23 2026
+**Other Resources**
+NYS Attorney General Civil Rights Bureau: https://ag.ny.gov/ , 1-800-771-7755 [12].
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+Maya works at coffee shop. Manager texts after work asking for photos and links more hours to sending photos. When Maya says no, hours cut. Under NYS, subjecting to inferior terms because of sex when more than petty slight [8]. Under NYC, treated less well because gender, protections regardless of size [2]. Cutting hours after saying no can also be retaliation. What could Maya consider? Save texts, write dates and words, keep schedule copy, consider reporting to higher manager or HR if safe, understanding they may have duty to report [8]. Call free confidential hotline 1-800-HARASS-3 for information without filing. If wants government agency, file discrimination report with DHR. DHR reviews and if appropriate prepares formal complaint for signature [8][4]. For acts on or after Feb 15, 2024, ordinary deadline DHR three years from most recent incident [4].
+Luis rents apartment. Landlord says fix leak sooner if Luis goes on date. Example quid pro quo housing: unwelcome demand where submission made condition of services [6]. Under federal housing law, single quid pro quo incident may violate [6]. Landlord directly liable own conduct [7], may not punish person harassed such as evicting as way of correcting [7]. Luis could document leak, save messages, make written repair request keep copy, consider filing report with DHR, CCHR, or HUD, understanding ordinary deadlines official: HUD 1 year administrative complaint [13], 2 years court [14], state DHR three years for acts on or after Feb 15 2024 [4], older seek guidance [4][5].
+Repeated sexual memes in work group chat after request to stop: repeated unwelcome conduct after clear request can make conditions inferior under state [8] and treated less well under city [2]. Employer knows or should know may have responsibility. Bystander could Distract, Delegate, Delay, Document [10].
+Server harassed by customer: third party covered [8], manager should try to protect.
+Security guard in store lewd comments blocks path: NYC public accommodations protected [2][3]. Business may have responsibility if knows and can act.
+Chapter Recap — Scannable
+Sexual harassment is unwelcome sexual behavior based on sex, sexual orientation, gender identity or expression. Illegal.
+Tests differ:
+Work federal: severe or pervasive.
+Work NYS: inferior terms, conditions, privileges because protected characteristic, more than petty slights [8].
+Work NYC: treated less well because gender, protections all employees regardless of size [2]; training thresholds separate: state all employers [1][9], city 15+ or domestic worker [2].
+Housing federal: 24 CFR §100.600 quid pro quo and hostile environment [6]; condition of services [6]; single incident may violate [6]; liability at 24 CFR §100.7 including direct, failure to correct third party where power, no penalty to aggrieved [7].
+Housing federal deadlines official: HUD administrative 1 year [13]; court 2 years, tolling during administrative proceeding [14].
+Employment federal deadline official: 180 days extended to 300 days if state or local law covers same basis and location [15]; statutory 180 days, 300 days if state or local agency with authority [16].
+State DHR deadline: 3 years for acts on or after Feb 15 2024 [4][5]; older seek guidance [4].
+If happens: safety first, write notes close in time, save messages, consider reporting understanding supervisor may have reporting duty [8].
+DHR process: report first via Call Center or online, report not automatically complaint, DHR reviews then prepares verified complaint if appropriate [8].
+Retaliation illegal [2][3].
+Support: listen, believe, ask what helps, conditional privacy: "I'll respect your privacy. Before sharing anything, let's discuss what support you want and any responsibilities I have."
+Bystander Five D's: Direct, Distract, Delegate, Delay, Document — Green Dot 3 D's, Right To Be added Delay 2015, Document 2017 [10].
+Official resources Chapter 9 with jurisdiction, deadlines, review dates.
+Knowledge Checks — Complete Questions With Objective Mapping
+**11. Quid pro quo — Workplace example**
+Question: Which is an example of quid pro quo sexual harassment?
+A) A coworker tells a single off-color joke that no one reports.
+B) A manager says you will get a better schedule if you go on a date with him.
+C) A customer compliments the music in the shop.
+D) Two coworkers who are dating eat lunch together.
+Correct Answer: B) Manager says better schedule if date — correct. Explanation: Quid pro quo means unwelcome request where submission is made condition of employment benefit. This is benefit conditioned on sexual behavior. Housing parallel: unwelcome demand condition of services [6], single incident may violate [6].
+Objective: Recognize quid pro quo pattern.
+**12. Does harassment have to be severe or pervasive under NYS employment law?**
+Question: Under New York State employment law, must sexual harassment be severe or pervasive to be unlawful?
+A) Yes, always severe or pervasive.
+B) No — unlawful when it subjects person to inferior terms, conditions, or privileges because of protected characteristic and is more than petty slights or trivial inconveniences.
+C) Yes, but only if physical touching occurred.
+D) No, any annoying behavior counts.
+Correct Answer: B) No — more than petty slights, inferior terms [8].
+Objective: Explain NYS test difference.
+**13. Who is protected and who must train?**
+Question: Which statement correctly describes coverage and training?
+A) Only employers with 15+ employees must protect against harassment in NY State.
+B) All workers protected in NY State regardless of employer size [1]; NYC gender-based harassment protections apply to all employees regardless of size [2]; state training required for all employers regardless of size [1][9]; city training required for 15+ employees or one or more domestic workers [2].
+C) No training is required anywhere in New York.
+D) Training required only for federal employers.
+Correct Answer: B.
+Objective: Explain NYS, NYC, federal differences; recognize employer duties.
+**14. Housing — Landlord says no fix unless date**
+Question: Luis's landlord says he will fix the leak sooner if Luis goes on a date with him. True or false: This can be quid pro quo housing harassment?
+A) False — landlords can ask for dates.
+B) True — can be quid pro quo housing: unwelcome demand where submission is made condition of housing services [6][7]; single incident may violate [6]; landlord directly liable for own conduct [7]; cannot punish aggrieved such as eviction as correction [7]. Deadlines: HUD administrative 1 year — An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint [13]; court 2 years — An aggrieved person may commence a civil action ... not later than 2 years [14]. State DHR three years for acts on or after Feb 15 2024 [4]; older seek guidance.
+C) False — only workplace counts.
+D) True only if physical touching.
+Correct Answer: B.
+Objective: Give housing example; explain federal housing rule.
+**15. Retaliation**
+Question: After Maya reports her manager, her hours are cut from 25 to 12. What is this?
+A) Not retaliation because manager can set hours.
+B) Retaliation — punishment for reporting that is reasonably likely to deter protected activity [2][3]. Document what changed, when, who decided.
+C) Only retaliation if fired.
+D) Only retaliation under federal law.
+Correct Answer: B.
+Objective: Explain retaliation and why illegal.
+**16. Bystander intervention — Not safe to confront**
+Question: You see a customer harassing a cashier. It does not feel safe to confront directly. Which options from the Five D's could you consider?
+A) Only Direct.
+B) Distract to interrupt, Delegate to ask someone with more authority, Delay to check in after, Document to write down date, time, place, exact words or actions, witnesses [10]. Direct is also an option if safe, but these are safer alternatives.
+C) Record video and post online immediately.
+D) Ignore.
+Correct Answer: B.
+Objective: Support someone and respond as witness; bystander tools.
+**17. DHR deadline**
+Question: What is the ordinary deadline to file a report with NY Division of Human Rights for acts on or after Feb 15, 2024?
+A) 180 days.
+B) One year.
+C) Three years from most recent incident [4]; extension to three years for all claims effective Feb 15, 2024 [5]; for acts before Feb 15, 2024, workplace sexual harassment three years, other types ordinary deadline one year before change [4]; older seek guidance [4][5].
+D) No deadline.
+Correct Answer: C.
+Objective: Find official help and understand deadlines.
+**18. Must you complain to employer first?**
+Question: Must you complain to your employer before filing with DHR?
+A) Yes, always required.
+B) False — you can file a DHR report directly via online forms or Call Center [8]; report not automatically formal complaint, DHR reviews before verified complaint prepared and filed [8]; failure to complain to employer is not determinative of employer liability under state law [8]. However, supervisors, HR, designated persons may have duty to report [8].
+Correct Answer: B) False.
+Objective: Explain practical steps and report vs complaint distinction.
+Glossary — Plain Language
+**Bystander:** Sees harassment but not directly involved.
+**Discrimination report (DHR):** First step submitting information via Call Center or online. The information submitted is not yet an official complaint [8].
+**Formal verified complaint (DHR):** After review, if appropriate, DHR prepares formal complaint for signature under oath. Signed complaint starts investigation. Report alone not automatically formal complaint [8][4].
+**Gender identity/expression:** Internal sense and outward showing; includes transgender, nonbinary.
+**Hostile environment:** Unwelcome conduct that makes it harder to work, live, or use service. Threshold differs.
+**Public accommodation:** Places offering goods or services to public.
+**Quid pro quo:** Benefit depends on sexual behavior.
+**Retaliation:** Punishment for reporting, opposing, participating.
+Reviewer Notes — Jargon Outside Learner Text
+Faragher/Ellerth defense: Federal defense. NYS eliminated.
+Comparator: No comparator required NYS.
+Severe or pervasive: Federal threshold. Not required NYS/NYC employment; NYS inferior terms plus more than petty slights [8], NYC treated less well [2].
+Election of remedies: Choosing where to file can affect ability elsewhere.
+Vicarious liability: Housing provider responsible for employee or agent acting in job even without knowledge [7]. Plain language in learner text.
+References — Single Consistent Numbered System [1]-[16] — Official Primary Sources Only — No Duplicate Footnote List
+[1] New York State — Combating Sexual Harassment — All employers required to establish policy and provide annual training regardless of size. Official NY.gov: https://www.ny.gov/combating-sexual-harassment-workplace ; https://www.ny.gov/programs/combating-sexual-harassment-workplace ; Model materials at https://dol.ny.gov/sexual-harassment
+[2] NYC Commission on Human Rights — Stop Sexual Harassment Act FAQs — Protections against gender-based harassment extend to all employees regardless of employer size; training requirement applies to employers with 15 or more employees or one or more domestic workers. Official NYC.gov: https://www.nyc.gov/site/cchr/law/stop-sexual-harassment-act-faqs.page
+[3] NYC Commission on Human Rights — Sexual harassment training main page and Stop Sexual Harassment Act page — Expansion of City Human Rights Law in cases of gender-based harassment to increase protections to all employees regardless of size, and to require annual training for employers with 15+ employees. Official NYC.gov: https://www.nyc.gov/site/cchr/law/sexual-harassment-training-main.page ; https://www.nyc.gov/site/cchr/law/stop-sexual-harassment-act.page ; Gender guidance: https://www.nyc.gov/assets/cchr/downloads/pdf/publications/2019.2.15%20Gender%20Guidance-February%202019%20FINAL.pdf
+[4] NYS Division of Human Rights — Report Discrimination — Ordinary deadline for any act on or after Feb 15, 2024 is three years; for acts before that date, workplace sexual harassment three years and other types one year. Official DHR: https://dhr.ny.gov/report
+[5] NYS — Statute of Limitations Extended — Extension to three years for all claims effective Feb 15, 2024. Official DHR: https://dhr.ny.gov/law-2021 ; Official Governor announcement: https://www.governor.ny.gov/news/governor-hochul-announces-new-statute-limitations-unlawful-discrimination ; Notice: https://dhr.ny.gov/notice-extension-statute-limitations
+[6] 24 CFR §100.600 — Quid pro quo and hostile environment harassment. Official Cornell LII (mirrors eCFR): https://www.law.cornell.edu/cfr/text/24/100.600
+[7] 24 CFR §100.7 — Liability for discriminatory housing practices — Direct liability for own conduct; failing to correct employee or agent; failing to correct third party where knew or should have known and had power to correct; prompt action may not include penalizing aggrieved such as eviction; vicarious liability. Official Cornell LII: https://www.law.cornell.edu/cfr/text/24/100.7 ; eCFR: https://www.ecfr.gov/current/title-24/section-100.7
+[8] NY DHR — Notice of Changes to Filing Process — Report vs complaint distinction — The information submitted using our online forms or the Call Center is not yet an official complaint; DHR reviews submission before verified complaint is prepared and filed; failure to complain to employer not determinative. Official DHR: https://dhr.ny.gov/notice-change-filing-2025 ; Process updates: https://dhr.ny.gov/dhr-process-changes-updates ; Official NYS FAQ: https://www.ny.gov/combating-sexual-harassment-workplace/combating-sexual-harassment-frequently-asked-questions
+[9] NYS Model Policy and Training — All employers regardless of size must provide annual training. Official NY.gov: https://www.ny.gov/combating-sexual-harassment-workplace/sexual-harassment-prevention-model-policy-and-training
+[10] Bystander Intervention — Five D's origin — Green Dot three D's — Direct, Distract, Delegate — expanded by Right To Be, formerly Hollaback!, added Delay in 2015 and Document in 2017. University reference: https://www.rochester.edu/sexualmisconduct/resources/bystander-intervention/
+[11] NYC Stop Sexual Harassment Act notice and factsheet — English and Spanish posting requirement. Official NYC.gov: https://www.nyc.gov/assets/cchr/downloads/pdf/materials/SexHarass_Notice8.5x14-English.pdf
+[12] NYS Attorney General — Workplace discrimination and harassment publication. Official AG.NY.GOV: https://ag.ny.gov/publications/workplace-discrimination-and-harassment
+[13] 42 U.S.C. §3610 — Administrative enforcement — An aggrieved person may, not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary. Official govinfo.gov — USCODE 2010 Title 42 Sec 3610: https://www.govinfo.gov/content/pkg/USCODE-2010-title42/html/USCODE-2010-title42-chap45-subchapI-sec3610.htm ; See also https://www.govinfo.gov/content/pkg/USCODE-2010-title42/html/USCODE-2010-title42-chap45-subchapI-sec3610.htm lines L20-L21. Statutory text verified October 23, 2026 via govinfo.
+[14] 42 U.S.C. §3613 — Enforcement by private persons — An aggrieved person may commence a civil action in an appropriate United States district court or State court not later than 2 years after the occurrence or the termination of an alleged discriminatory housing practice. The computation of such 2-year period shall not include any time during which an administrative proceeding under this subchapter was pending. Official govinfo.gov — USCODE 2021 Title 42 Sec 3613: https://www.govinfo.gov/content/pkg/USCODE-2021-title42/html/USCODE-2021-title42-chap45-subchapI-sec3613.htm ; and ecfr.io mirror: https://uscode.ecfr.io/title/42/section/3613 ; Text verified October 23, 2026. Note: uscode.house.gov preliminary endpoints returned server errors on review date; govinfo.gov used as official alternative.
+[15] EEOC — Timeliness — A charge must be filed with EEOC within 180 days from the date of the alleged violation, in order to protect the charging party's rights. This 180-day filing deadline is extended to 300 days if there is a state or local anti-discrimination law that covers the location of the alleged harm and the basis for the charge. Official EEOC: https://www.eeoc.gov/field-office/greensboro/timeliness ; Youth: https://www.eeoc.gov/youth/filing-complaint — There are strict time limits; In some cases, you only have 180 days; You have 300 days if your complaint is also covered by a state or local anti-discrimination law. Retrieved October 23, 2026. Official agency guidance describes extension as conditional on state or local law covering same basis and location, not universal.
+[16] 42 U.S.C. §2000e-5(e)(1) — Enforcement provisions — A charge under this section shall be filed within one hundred and eighty days after the alleged unlawful employment practice occurred and notice of the charge shall be served upon the person against whom such charge is made within ten days thereafter, except that in a case of an unlawful employment practice with respect to which the person aggrieved has initially instituted proceedings with a State or local agency with authority to grant or seek relief, such charge shall be filed by or on behalf of the person aggrieved within three hundred days after the alleged unlawful employment practice occurred. Official Cornell LII: https://www.law.cornell.edu/uscode/text/42/2000e-5 ; govinfo court filing quoting statute: https://www.govinfo.gov/content/pkg/USCOURTS-tnmd-3_18-cv-00400/pdf/USCOURTS-tnmd-3_18-cv-00400-1.pdf lines L187-L191. Text verified October 23, 2026.
+Review date: Oct 23 2026. Verify before publication.
+---
+End of M01 Chapter Draft V8 — Single citation system [1]-[16] with official primary sources only, mixed 1-6 footnote markers removed, HUD deadlines cite govinfo.gov official 42 U.S.C. §3610 and §3613, EEOC 300-day conditional language cited to official EEOC timeliness pages and Cornell LII statutory text 42 U.S.C. §2000e-5(e)(1), DHR report vs complaint distinction cited to official DHR notice, NYC training protections cited to official nyc.gov pages, knowledge checks rebuilt as complete questions with objective mapping. NOT APPROVED FOR PUBLIC RELEASE. Disposition: V8 CONSOLIDATED · READY FOR SUBJECT-MATTER REVIEW WITH CITATION FINDINGS ADDRESSED.
