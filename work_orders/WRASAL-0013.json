@@ -1,0 +1,90 @@
+{
+    "work_order_id": "WRASAL-0013",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0013",
+    "recorded_on": "2026-10-24",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Close M01 V8 14:40 discrepancy as verified calculation error — both narration schedule (§2) and visual specification (§3) total 870 seconds (14:30) — and confirm M01 drafting handoff ready for review with M02 ready for drafting, canonical acceptance and release pending.",
+    "success_condition": "Discrepancy closed: verified 50+90+90+80+75+120+75+75+40+175=870 sec=14:30 for both schedules; prior 14:40 claim acknowledged as calculation error, no hypothetical buffer retained; measured runtime documented as pending (timed read-through required); M01 state updated to ready for review, M02 to ready for drafting; evidence/M01-V8-14-40-closure-2026-10-24.md added; no Drive modifications, no legal/comprehension/accessibility claims, canonical_acceptance remains pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "prior_work_orders": "WRASAL-0011 (receipt, 734 checks), WRASAL-0012 (bounded corrections, 853 checks), b961259 (preservation, diffs, reconciliation)",
+        "m01_video_package_path": "google_drive/M01-video-package-v8.txt",
+        "m01_video_package_bytes": "23838",
+        "m01_video_package_md5": "650c422d28cc0574a284572a9d06a09a",
+        "m01_video_package_ids": "1CWt5fMqkY5OJ-Njp6mosfLdnW4lX0h3p / 159Y-kEJGNU29YbVkPtHJ_IZoFtaHToSb",
+        "m01_chapter_derived_path": "google_drive/M01-textbook-chapter-v8.txt",
+        "m01_chapter_derived_bytes": "42682",
+        "m01_chapter_derived_md5": "0ff247b5e4170856d7363b5e95046fbe",
+        "m01_chapter_original_path": "evidence/sources/M01-textbook-chapter-v8-extracted-original.txt",
+        "m01_chapter_original_bytes": "38737",
+        "m01_chapter_original_md5": "cf5ac4ae0942fa036fcf828f6f539ffb",
+        "closure_evidence": "evidence/M01-V8-14-40-closure-2026-10-24.md",
+        "prior_reconciliation": "evidence/M01-V8-14-30-vs-14-40-reconciliation.md (hypothetical 10-sec buffer retracted)",
+        "arithmetic_narration": "50+90+90+80+75+120+75+75+40+175=870 sec=14:30 (Opening 50, Definitions 90, Scene1 90, Housing 80, Scene2 75, Scene3 120, Options 75, Retaliation 75, Support 40, Closing 175=130 cards+45 disclaimer)",
+        "arithmetic_visual_spec": "50+90+90+80+75+120+75+75+40+175=870 sec=14:30 (same 10 segments, Closing 175)",
+        "closure_date": "2026-10-24",
+        "measured_runtime_status": "pending — timed read-through at 130-150 wpm with card reading and accessibility pauses required, not established",
+        "m01_state": "ready for review — preservation, diffs, and pushed commits remain reported evidence until independently inspected",
+        "m02_state": "ready for drafting — manuscripts not yet established prior to WRASAL-0014",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0013-arithmetic-recomputation",
+            "type": "calculation_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M01-video-package-v8.txt Section 2 Narration Script and Section 3 Visual Specification + Review Record",
+            "observed_result": "Recomputed both schedules: Narration §2 segments 50+90+90+80+75+120+75+75+40+175=870 sec=14:30 matching stated 'Segment allocations total 14:30 matching final timecode 12:20-14:30' and 'Corrects prior 14:10'. Visual Specification §3 segments 50+90+90+80+75+120+75+75+40+175=870 sec=14:30 matching same. Review Record 50+90+90+80+75+120+75+75+40+45+130=870 sec=14:30 where Closing 175=45+130. No file states 14:40. Both totals identical at 870 sec.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0013-discrepancy-closure",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "User handoff 2026-10-24: 'Your arithmetic is correct: both listed schedules total 870 seconds, or 14:30. My earlier claim that the visual table totaled 14:40 was a calculation error. Close that discrepancy; no hypothetical accessibility buffer is needed to explain it. Measured runtime remains pending.' + prior evidence/M01-V8-14-30-vs-14-40-reconciliation.md",
+            "observed_result": "Closed discrepancy as calculation error: 14:40 claim acknowledged as error, not a file content. Prior reconciliation hypothesized 10-sec buffer (175 vs 185=880 sec=14:40) is retracted — no buffer needed. Created evidence/M01-V8-14-40-closure-2026-10-24.md documenting closure, preserving 14:30 as authoritative schedule distinct from measured runtime. Measured runtime remains pending per V8 package: 'Timed read-through at 130-150 wpm with accessibility pauses pending' and 'Synchronized captions and timed AD script NOT YET ESTABLISHED'. No legal/comprehension/accessibility review claimed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0013-preservation-remains",
+            "type": "file_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/M01-textbook-chapter-v8-extracted-original.txt (38737 bytes, md5 cf5ac4ae0942fa036fcf828f6f539ffb, sha256 cb9155c467ef0ac0560cf98ca342254dba347267ae94aaa4aee179366f7b3e2d) + google_drive/M01-textbook-chapter-v8.txt (42682 bytes, md5 0ff247b5e4170856d7363b5e95046fbe, sha256 41788f438e42f9668e5a13324023d6e54a2f783cd96f8d439c53f64804780c83) + evidence/M01-V8-bounded-corrections.diff (54 lines) + evidence/M01-V8-full-derived.diff (69 lines) + pushed commits 5026088,58dc805,b961259",
+            "observed_result": "Preservation, diffs, and pushed commits remain reported evidence until independently inspected here (per handoff). Original extraction preserved separately from corrected derivative (WRASAL-0012), diffs show every intentional edit (headers, Status, References entries [6][7][10][14][16], End disposition, Knowledge Checks heading). No Drive modifications in this closure.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0013-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "User state declaration 2026-10-24: 'State: M01 ready for review · M02 ready for drafting · canonical acceptance and release pending'",
+            "observed_result": "Updated state: M01 drafting handoff READY FOR REVIEW (853 checks validate control-plane records within tested scope only, not textbook accuracy/learning effectiveness/accessibility/legal approval). M02 READY FOR DRAFTING (fresh manuscript to be created in WRASAL-0014). Canonical acceptance and public release PENDING / NOT AUTHORIZED — no merge/deploy/publish performed, drafting remains separate from legal approval and public release per user direction.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0013-no-extra-claims",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md: REALITY FIRST; No evidence → no authority; No authority → no state change",
+            "observed_result": "No extra claims made: no textbook accuracy, learning effectiveness, accessibility, or legal approval established by control-plane validation; no hypothetical buffer retained; no Drive files modified/trashed; no PR merged; no canonical acceptance promoted.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "evidence/M01-V8-14-40-closure-2026-10-24.md added; prior M01 artifacts preserved (evidence/sources/M01-textbook-chapter-v8-extracted-original.txt, diffs, reconciliation, preservation note, google_drive/M01-*.docx/.txt)",
+        "m01_video_package": "unchanged — 14:30 schedule remains authoritative distinct from measured runtime",
+        "discrepancy_status": "closed — 14:40 was calculation error, no buffer, arithmetic 870 sec=14:30 verified for both schedules",
+        "measured_runtime": "pending — timed read-through not yet established",
+        "m01_handoff": "ready for review — reported evidence until independently inspected",
+        "m02_readiness": "ready for drafting — per user direction",
+        "wrasal_runtime_world_state": "none",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0014 — M02 Confidentiality and Professional Boundaries V1 draft — reuse M01 teaching structure and evidence discipline, create fresh objectives/scenarios/assessments/source identifiers [M02-1]–[M02-16] explaining privacy/confidentiality/consent/boundaries/role-dependent disclosure duties in everyday language, keep drafting separate from legal approval and public release."
+}

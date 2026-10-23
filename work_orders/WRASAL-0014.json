@@ -1,0 +1,111 @@
+{
+    "work_order_id": "WRASAL-0014",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0014",
+    "recorded_on": "2026-10-24",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Draft M02 Confidentiality and Professional Boundaries V1 reusing M01 teaching structure and evidence discipline — create fresh objectives, scenarios, assessments, and source identifiers [M02-1]–[M02-16] explaining privacy, confidentiality, consent, boundaries, and role-dependent disclosure duties in everyday language, keep drafting separate from legal approval and public release.",
+    "success_condition": "Manuscript google_drive/M02-textbook-chapter-v1.txt created (38924 bytes, 301 lines, md5 dd48d9c492b9a7558b4526b71fa82195, sha256 9f534e979b54f5f7fde31abac33cee3d37a8762d84c6d36b70ea21fa63523d42) with M01 structure (Opening Situation Sam/Elena Bronx wellness center, Learning Goals 7 scannable, sections 1-10, Worked Examples 5, Recap, Glossary, Reviewer Notes, References [M02-1]–[M02-16] with classifications labeled), fresh everyday-language objectives/scenarios (emergency-contact sister call, coworker intake-form request, social-media friend request, gift, mandated reporting example) and fresh assessments 21-28 (21-27 A-D, 28 two-option) with correct answers/explanations/objectives; source register [M02-1]–[M02-16] created appropriate to confidentiality/boundaries with official government vs nongovernmental publisher vs professional association labeling; status V1 DRAFT NOT APPROVED FOR PUBLIC RELEASE with jurisdiction/review date/disclaimer; no legal/comprehension/accessibility claims; canonical_acceptance pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "manuscript_path": "google_drive/M02-textbook-chapter-v1.txt",
+        "manuscript_bytes": "38924",
+        "manuscript_lines": "301",
+        "manuscript_md5": "dd48d9c492b9a7558b4526b71fa82195",
+        "manuscript_sha256": "9f534e979b54f5f7fde31abac33cee3d37a8762d84c6d36b70ea21fa63523d42",
+        "manuscript_title": "M02 — Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles",
+        "reuse_structure": "M01 evidence discipline: Opening Situation, Learning Goals — Short Scannable, sections 1-10, Worked Examples Recap Knowledge Checks Full Prose, Glossary Plain Language, Reviewer Notes Jargon Outside, References Single Consistent Numbered System with Classifications Labeled, End disposition",
+        "fresh_source_register": "[M02-1] HHS HIPAA Privacy Rule (hhs.gov official) — [M02-2] SAMHSA+eCFR 42 CFR Part 2 — [M02-3] NYS DOH Public Health Law §18 — [M02-4] NYS OMH Mental Hygiene Law §33.13 — [M02-5] NYS OCFS Social Services Law §413 mandated reporting — [M02-6] NYS OP Education Law §6509 professional misconduct — [M02-7] NYS OMH+NYC DOHMH privacy/dignity — [M02-8] OMH safety/duty-to-protect — [M02-9] NASW Code of Ethics (professional association nongovernmental) — [M02-10] HHS+govinfo eCFR authoritative — [M02-11] OASAS — [M02-12] Justice Center — [M02-13] 42 USC §290dd-2 — [M02-14] SAMHSA Part2 exceptions — [M02-15] OPWDD — [M02-16] NYS law publisher Cornell LII nongovernmental for statutes",
+        "fresh_objectives": "7 scannable: privacy vs confidentiality, consent, boundaries, role-dependent disclosure duties, handling requests, supporting while staying in role, finding official help",
+        "fresh_scenarios": "Sam Bronx peer support specialist + Elena missed medication private disclosure + sister emergency-contact call + coworker intake-form flyer request + social-media friend request + mandated reporting child overnight example + breach hallway example",
+        "fresh_assessments": "Knowledge Checks M02 21-28: 21 privacy vs confidentiality (B), 22 consent elements (B), 23 gift+social media boundary (B), 24 family emergency-contact not automatic (B), 25 minimum necessary coworker (B), 26 mandated reporting §413 (C), 27 imminent safety supervisor least-necessary (B), 28 breach hallway supervisor report (B) — each with A-D except 28 two-option valid, with correct answer+explanation+objective",
+        "jurisdiction": "New York State and New York City, federal HIPAA/42 CFR Part 2 for comparison",
+        "review_date": "October 24, 2026 — verify phones/websites/laws before publication",
+        "draft_status": "V1 DRAFT — NOT APPROVED FOR PUBLIC RELEASE — subject-matter/legal review, comprehension testing, accessibility verification, measured runtime pending",
+        "prior_m01_handoff": "M01 ready for review (WRASAL-0011/0012 + preservation diffs + 14:40 closure WRASAL-0013)",
+        "m02_state": "ready for drafting → V1 draft created, ready for subject-matter review",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0014-manuscript-creation",
+            "type": "file_creation_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt creation via write_file + md5sum/sha256sum/wc",
+            "observed_result": "Created V1 draft manuscript google_drive/M02-textbook-chapter-v1.txt 38924 bytes 301 lines md5 dd48d9c492b9a7558b4526b71fa82195 sha256 9f534e979b54f5f7fde31abac33cee3d37a8762d84c6d36b70ea21fa63523d42. File header: Title M02 Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles, V1 DRAFT Sources [M02-1]–[M02-16] with Classifications Labeled Not approved Oct 24 2026, Status V1 Initial draft reusing M01 teaching structure and evidence discipline with fresh M02 objectives/scenarios/assessments/sources, Jurisdiction NY State/NYC federal HIPAA/Part2, Review date Oct 24 2026 verify before publication, Disclaimer General information only Not legal/clinical advice — ask supervisor/agency counsel.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-structure-reuse",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt headings and M01 evidence/sources/M01-textbook-chapter-v8-extracted-original.txt structure",
+            "observed_result": "Reused M01 teaching structure with fidelity: Opening Situation (Sam Bronx peer support specialist + Elena missed medication private ask + sister call + coworker intake request + social media friend request — fresh M02 confidentiality scenario distinct from M01 Maya coffee shop harassment), Learning Goals — Short Scannable (7 goals), Sections 1 Why Confidentiality and Boundaries Matter, 2 What Privacy and Confidentiality Mean — Different Protections (HIPAA [M02-1], Part 2 [M02-2], PHL §18 [M02-3], MHL §33.13 [M02-4]), 3 Consent plain language what/who/why/how long revocable [M02-1][M02-2], 4 Professional Boundaries everyday (time/place, role, gifts/money, social media, self-disclosure) [M02-6][M02-9], 5 Role-Dependent Disclosure Duties when you must NOT share vs must consider safety vs mandated reporting SSL §413 [M02-5] vs imminent risk supervisor least-necessary [M02-4][M02-8], 6 Options When Someone Tells You Something Sensitive (thank, explain limits early, offer next steps) [M02-1], 7 Supporting While Staying in Role, 8 What Happens After Mistake Breaches, 9 Finding Help Jurisdiction official sources, 10 Worked Examples Recap Knowledge Checks Full Prose (5 worked examples), Glossary, Reviewer Notes, References [M02-1]–[M02-16] with classifications labeled, End disposition.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-fresh-objectives-scenarios",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt Learning Goals + Opening Situation + Sections 4-6",
+            "observed_result": "Fresh M02 objectives created appropriate to confidentiality: explain privacy vs confidentiality everyday language, describe informed consent and how shown, give boundary examples inside/outside role, explain role-dependent disclosure duties (when must share/when must not, why depends on role/setting/consent), list practical steps for family/coworker/social-media requests, support sensitive disclosure while staying in role and clear about limits, find official help in NY and federal. Fresh scenarios: Sam/Elena Bronx wellness center private disclosure not permission for sister/coworker; sister 'I'm emergency contact' call — explain emergency contact ≠ automatic sharing; coworker 'forward Elena intake for address/flyers' — minimum necessary; social media friend request + gift $40 — agency $15 limit + personal/work separation; 10-year-old overnight mandated reporting example under SSL §413. All everyday language, not legal advice.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-privacy-boundaries-everyday-language",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt Sections 2-5 everyday language explanations",
+            "observed_result": "Explained privacy as person's right to control who sees story (person holding door) and confidentiality as receiver's duty to protect and share only when appropriate (what you do inside door). Consent as clear information + understanding + voluntary agreement without pressure, with what/with whom/purpose/how long/yes-no/revocable elements [M02-1][M02-2]. Boundaries as agreed predictable limits keeping relationship respectful/fair/safe — time/place, role (peer specialist not diagnosis/prescribing/lending money), gifts/money, social media/personal contact, self-disclosure — example 'I keep work and personal social media separate to protect your privacy and my role' [M02-7][M02-9]. Role-dependent duties: must NOT share without permission with family/friends/outside coworkers [M02-1][M02-3][M02-4]; must consider mandated reporting SSL §413 reasonable cause threshold to Statewide Central Register 1-800-342-3009 via nysmandatedreporter.org [M02-5]; imminent risk requires immediate supervisor/clinical lead assessment least-necessary sharing agency safety plan [M02-4][M02-8]; Part 2 stricter than HIPAA [M02-2]. All plain language with role examples.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-fresh-source-register",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt References [M02-1]–[M02-16] list with classifications",
+            "observed_result": "Created fresh source identifiers [M02-1]–[M02-16] appropriate to M02 with accurate classifications: [M02-1] HHS HIPAA Privacy Rule hhs.gov official; [M02-2] SAMHSA+eCFR 42 CFR Part 2 official + govinfo; [M02-3] NYS DOH PHL §18 official health.ny.gov + statute text via Cornell LII nysenate nongovernmental publisher labeled; [M02-4] NYS OMH MHL §33.13 official omh.ny.gov + nysenate; [M02-5] NYS OCFS/Justice Center SSL §413 official ocfs.ny.gov + mandated reporter training; [M02-6] NYS OP Education Law §6509 official op.nysed.gov; [M02-7] NYS OMH+NYC DOHMH official; [M02-8] OMH safety/duty-to-protect official; [M02-9] NASW Code of Ethics professional association nongovernmental (not government primary); [M02-10] HHS+govinfo official regulatory repositories; [M02-11] OASAS official; [M02-12] Justice Center official; [M02-13] 42 USC §290dd-2 official govinfo; [M02-14] SAMHSA Part2 exceptions official; [M02-15] OPWDD official; [M02-16] law publisher Cornell LII nysenate nongovernmental for statutes. No duplicate footnote list, single consistent bracket system [M02-1]–[M02-16], classifications labeled avoiding prior M01 'official primary sources only' error.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-fresh-assessments",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt Knowledge Checks 21–28 (301 lines) + prior M01 Knowledge Checks 11–18 preserved",
+            "observed_result": "Created fresh assessments 21–28 distinct from M01 11–18: 21 privacy vs confidentiality (B privacy person's control/confidentiality receiver's duty [M02-1][M02-3]); 22 consent elements what/who/why/how long (B [M02-1][M02-2]); 23 gift $40 + friend request agency $15 limit (B warm clear boundary [M02-6][M02-7][M02-9]); 24 sister emergency-contact not automatic permission (B family role≠permission [M02-1][M02-4]); 25 coworker full intake flyer request minimum necessary (B [M02-1][M02-3]); 26 mandated reporting SSL §413 reasonable cause Statewide Central Register (C [M02-5]); 27 imminent risk detailed plan supervisor least-necessary (B [M02-4][M02-8]); 28 breach hallway talk supervisor report factual documentation (B [M02-1][M02-3]). All have Question + A-D (21-27) or 28 two-option valid + Correct Answer + Explanation + Objective. Objectives mapped (e.g., explain privacy vs confidentiality, describe consent, give boundary examples, etc.). No claim of testing/comprehension/accessibility.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-drafting-vs-approval",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt header Status/Disclaimer/Review date/End disposition + concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+            "observed_result": "Kept drafting separate from legal approval and public release: Status V1 DRAFT reuse structure, subject-matter/legal review comprehension testing accessibility verification measured runtime remain pending NOT APPROVED FOR PUBLIC RELEASE; Jurisdiction NY State/NYC federal for comparison; Review date Oct 24 2026 verify before publication laws change; Disclaimer General information only Not legal/clinical advice ask supervisor/agency counsel; End disposition V1 DRAFT READY FOR SUBJECT-MATTER REVIEW legal review etc pending No external records changed Originals preserved. No legal approval, comprehension testing, accessibility verification, measured runtime, or release authorization claimed. Executor PASS ≠ canonical acceptance.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0014-m02-ready",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "User state: M01 ready for review · M02 ready for drafting · canonical acceptance and release pending",
+            "observed_result": "M02 ready for drafting transitioned to V1 draft created and ready for subject-matter review; M01 remains ready for review (preservation diffs reconciliation closure remain reported evidence until independently inspected). Drafting can continue for remaining modules M03–M11 per existing work order WO-CAREPATH-TEXTBOOK-001. No merge/deploy/publish; canonical_acceptance remains pending.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M02-textbook-chapter-v1.txt created (38924 bytes) — V1 draft fresh M02 content; evidence/M01-V8-14-40-closure-2026-10-24.md added (WRASAL-0013); existing M01 artifacts preserved",
+        "drive_originals": "unchanged — M01 Drive originals preserved; M02 is local draft, not a Drive file yet",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0015 — M02 review preparation or M03 drafting — continue WO-CAREPATH-TEXTBOOK-001 sequence: subject-matter review of M02 V1, comprehension/accessibility checks, video package adaptation if needed, and continued drafting M03–M11. Keep legal review and release separate. Timed read-through for M01 to establish measured runtime remains pending."
+}
