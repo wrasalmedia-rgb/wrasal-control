@@ -1,30 +1,22 @@
-# Exports for Independent Inspection — M02 V1.2, M03 V1.1, M04 V1
+# Evidence Exports — Review Packages (Execution vs Scheduled Re-verification Clarified)
 
-**Execution:** All manuscripts prepared 2026-10-23 America/New_York (EDT); scheduled re-verification dates are prospective: M02 Oct 24 2026, M03 Oct 25 2026, M04 Oct 25 2026 — see `evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md` (filenames dated 2026-10-24/25 denote scheduled dates, not completed reviews).
+**Execution (actual work):** 2026-10-23 America/New_York (EDT) — all manuscripts, diffs, crosswalks, and this README prepared then; see `evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md`.
+**Scheduled re-verification markers (prospective, not completed reviews):** M02 Oct 24 2026 per footer, M03 Oct 25 2026, M04 Oct 25 2026, M05 Oct 26 2026 — filenames dated to denote scheduled review dates, not execution.
+**Status:** NOT APPROVED FOR PUBLIC RELEASE — control-record validation only; content approval and canonical acceptance pending.
 
-**Status:** NOT APPROVED FOR PUBLIC RELEASE — drafting separate from legal review, comprehension testing, accessibility verification, release authorization. **1,443+ checks remain record-validation within tested scope; content approval and canonical acceptance remain pending.**
+- **M02 V1.2 — Mandated Reporter — Statutory vs Organizational Duties + Emergency Guidance** (48546B, md5 `a8f16fafcc0f357fd7df924205bc00c2`)
+  Package: `evidence/exports/M02-V1.2/` — manuscript `M02-textbook-chapter-v1.txt`, preserved V1 (39148B 4acc09) + V1.1 (46866B ef3a6043), diffs `M02-V1-bounded-corrections.diff` (128 lines), `M02-V1.1-bounded-corrections.diff` (128 lines), `M02-V1.2-emergency-guidance.diff` (53 lines ~16K, §5B + Recap + KCs27 emergency exception — if danger immediate or supervisor unavailable do not delay 911/988 per agency emergency plan then notify ASAP), objective crosswalk `M02-V1.2-objective-crosswalk.md`.
+  Emergency/crisis vs statutory vs notification verified distinct per `evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md`.
 
-## Packages
+- **M03 V1.1 — Discrimination: Legal Foundations and Frontline Response** (52898B, md5 `2098543b70d1fadfba74dcc8e931338c`)
+  Package: `evidence/exports/M03-V1.1/` — manuscript `M03-textbook-chapter-v1.txt`, preserved V1 (39609B 9fd2d715), diffs `M03-V1-declustered-revision.diff` (253 lines declustering/ask-vs-infer — agency split, Title VI vs ADA, explanatory answers), `M03-V1.1-relabel.diff` (21 lines relabel execution 2026-10-23 vs scheduled Oct 25), objective crosswalk `M03-V1.1-objective-crosswalk.md`.
 
-### M02 — Confidentiality and Professional Boundaries: Privacy, Trust, and Clear Roles — V1.2
-- **Folder:** `evidence/exports/M02-V1.2/` (also accessible at `google_drive/M02-textbook-chapter-v1.txt`)
-- **Current:** `M02-textbook-chapter-V1.2.txt` 48546B md5 `a8f16fafcc0f357fd7df924205bc00c2` — V1.2 DRAFT Scheduled re-verification Oct 24 2026
-- **Preserved:** `M02-V1-preserved-39148B.txt` 39148B md5 `4acc0908650818122675602b00b126af` (V1 before first patch); `M02-V1.1-preserved-46866B.txt` 46866B md5 `ef3a604372374b0ed074b7e4719de348` (V1.1 before emergency guidance)
-- **Diffs:** `M02-V1-bounded-corrections.diff` (nysenate/gift fix), `M02-V1.1-bounded-corrections.diff` 128 lines (statutory vs policy alignment §5B+Example5+KC26-27 same sequence per SSL 413), `M02-V1.2-emergency-guidance.diff` 53 lines (emergency exception: if danger immediate or supervisor unavailable, do not delay 911/988 per agency emergency plan, then notify ASAP [M02-4][M02-8])
-- **Crosswalk:** `M02-V1.2-objective-crosswalk.md` — maps 7 Learning Goals + duties to sections, worked examples, and explanatory KC answers (21-28, 21-27 A-D, 28 two-option valid); shows Lesson (§5B) + Example 5 + KC26 teach same sequence per SSL 413(1)(c) no prior approval + 413(1)(b) notify after + NYC ACS cause-report verification, KC27 distinct domain with emergency exception that stays open for subject-matter verification.
+- **M04 V1 — Child Abuse Recognition, Prevention and Reporting** (43164B, md5 `e7f51aba5405e584d9960b0764402e88`)
+  Package: `evidence/exports/M04-V1/` — manuscript `M04-textbook-chapter-v1.txt`, preserved V1 (identical, carrying forward M02 §5B distinction verbatim: SSL §413(1)(a) statutory vs organizational, §413(1)(c) no prior approval, §413(1)(b) then notify after, NYC Call I.D. verification; emergency exception 911 without waiting), objective crosswalk `M04-V1-objective-crosswalk.md` (8 Goals, Examples 1-5, KCs 41-48).
+  Emergency/crisis vs statutory vs notification verified distinct together with M02 per companion verification.
 
-### M03 — Cultural Competency, Inclusion and Respectful Communication — V1.1 (labeled revision)
-- **Folder:** `evidence/exports/M03-V1.1/` (also at `google_drive/M03-textbook-chapter-v1.txt`)
-- **Current:** `M03-textbook-chapter-V1.1.txt` 52898B md5 `2098543b70d1fadfba74dcc8e931338c` — V1.1 DRAFT Scheduled re-verification Oct 25 2026 — bounded revision labeled with new identifier, V1 preserved
-- **Preserved:** `M03-V1-preserved-39609B.txt` 39609B md5 `9fd2d71536e338d5d555ed6967195cc1` (V1 before declustering, commit af081c6)
-- **Diffs:** `M03-V1-declustered-revision.diff` 253 lines (declustered characters with agency, §4/4B/5 distinct sources, ask-vs-infer, explanatory answers); `M03-V1.1-relabel.diff` 21 lines (new revision identifier V1 → V1.1, preservation note, footer)
-- **Crosswalk:** `M03-V1.1-objective-crosswalk.md` — maps 8 Learning Goals to substantive teaching, practice, explanatory assessment; verifies distinct sources [M03-2] NYC CCHR Gender Guidance vs [M03-6] LEP.gov Title VI vs [M03-7] ADA.gov, ask-vs-infer practice, individual preferences/agency.
+- **M05 V1 — Elder Abuse Recognition, Prevention and Reporting** (44901B, md5 `b925774ce780efbde60fef19ef4eae3a`) — **NEW**
+  Package: `evidence/exports/M05-V1/` — manuscript `M05-textbook-chapter-v1.txt`, preserved V1 (`M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt` identical), companion verification `M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md` (10225B 48b83dbe — M02+M04 emergency/reporting four pathways distinct), objective crosswalk `M05-V1-objective-crosswalk.md` (8 Goals → §§1-10, Examples 1-5, KCs 51-58).
+  Research: elder settings/reporting researched afresh — community APS via local DSS under SSL Art 9-B §473 (voluntary, consent/capacity) vs facility DOH 1-888-201-4563 / Justice Center 1-855-373-2122 / Long-Term Care Ombudsman vs 911 crime/danger — not analogized from child SCR/413; emergency exception (ensure safety/call 911 without delay then notify) carried as principle, not statute transplant.
 
-### M04 — Child Abuse Recognition, Prevention and Reporting — V1 (new, carries forward M02 distinction)
-- **Folder:** `evidence/exports/M04-V1/` (also at `google_drive/M04-textbook-chapter-v1.txt`)
-- **Current:** `M04-textbook-chapter-V1.txt` 43164B md5 `e7f51aba5405e584d9960b0764402e88` — V1 DRAFT Scheduled re-verification Oct 25 2026 — statutory vs policy distinction carried forward verbatim per SSL 413 + NYC ACS, emergency exception carried forward
-- **Preserved:** `M04-V1-preserved.txt` 43164B md5 `e7f51aba5405e584d9960b0764402e88` (initial V1)
-- **Crosswalk:** `M04-V1-objective-crosswalk.md` — maps 8 Learning Goals to teaching (safe supervision [M04-2], risk/protective [M04-3]), practice (5 examples), explanatory KCs 41-48 (41-47 A-D, 48 two-option) with emergency exception KC47 staying open.
-
-**Preservation & Verification discipline:** All V1 originals at `evidence/sources/`; diffs + crosswalks provided; independent inspector can verify without merging canonical state. No Drive originals modified, no public release. Measured runtime pending per M01 closure (14:30 arithmetic closed, timed read-through 130-150 wpm pending).
-
+Review order: Start with `M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md`, then `M02-V1.2`, `M04-V1`, `M03-V1.1`, `M05-V1`.

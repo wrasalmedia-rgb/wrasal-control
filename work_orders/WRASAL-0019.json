@@ -1,0 +1,103 @@
+{
+    "work_order_id": "WRASAL-0019",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0019",
+    "recorded_on": "2026-10-26",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Prioritize independent review preparation for M02+M04 emergency and reporting passages together — verify emergency services (911), crisis support (988), statutory reporting (SCR), internal notification remain distinct pathways in lessons/examples/assessments; continue M05 Elder Abuse Recognition, Prevention and Reporting — research applicable settings/reporting routes afresh, do not carry child-abuse rules by analogy.",
+    "success_condition": "M02 V1.2 48546B a8f16faf and M04 V1 43164B e7f51aba verified together via evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md 10225B 48b83dbe — confirms four distinct pathways (911 emergency, 988 crisis, SCR statutory 1-800-635-1522/3720 Call I.D. SSL 413(1)(c) no prior approval + 413(1)(b) notify after + NYC ACS verify, internal notification after) taught in §5B/§7 + Examples 5/3-4 + KCs 26-27/44-47 + Recaps. M05 V1 new 44901B b925774ce780efbde60fef19ef4eae3a at google_drive/M05-textbook-chapter-v1.txt with preserved at evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt, 8 Learning Goals, §§1-10, 5 Examples, KCs 51-58 (51-57 A-D, 58 two-option), References [M05-1]–[M05-16] classified, elder settings researched afresh (community APS via local DSS under SSL Art 9-B §473 voluntary with capacity/consent vs nursing home DOH 1-888-201-4563 / Justice Center 1-855-373-2122 / Ombudsman / OMH/OASAS/OPWDD, 911 not replaced by APS), emergency exception only principle shared (ensure safety/call 911 without delay then refer + notify ASAP). Export evidence/exports/M05-V1/ with manuscript+preserved+verification+crosswalk M05-V1-objective-crosswalk.md. README updated. No Drive originals modified, no merge/deploy, canonical pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m02_v1_2": "google_drive/M02-textbook-chapter-v1.txt — 48546B md5 a8f16fafcc0f357fd7df924205bc00c2 V1.2 DRAFT Scheduled re-verification Oct 24 2026 execution 2026-10-23 EDT — emergency exception 911/988 added",
+        "m02_v1_preserved": "evidence/sources/M02-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39148B md5 4acc0908650818122675602b00b126af (V1)",
+        "m02_v1_1_preserved": "evidence/sources/M02-textbook-chapter-v1-V1.1-preserved-2026-10-25.txt — 46866B md5 ef3a604372374b0ed074b7e4719de348",
+        "m02_m04_verification": "evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md — 10225B md5 48b83dbea82f0881a750d3704f736586 — four pathways distinct: 911 emergency, 988 crisis, SCR statutory (1-800-635-1522 Call I.D. SSL 413(1)(c)/(b) + NYC ACS verify), internal notification after; M02 §5B+Recap+KC27 vs M04 §5-7+Ex3-4+KCs44-47 verified together",
+        "m03_v1_preserved": "evidence/sources/M03-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 39609B md5 9fd2d71536e338d5d555ed6967195cc1 (V1)",
+        "m03_v1_1": "google_drive/M03-textbook-chapter-v1.txt — 52898B md5 2098543b70d1fadfba74dcc8e931338c V1.1 DRAFT Scheduled re-verification Oct 25 2026 execution 2026-10-23 EDT",
+        "m04_v1": "google_drive/M04-textbook-chapter-v1.txt — 43164B md5 e7f51aba5405e584d9960b0764402e88 V1 DRAFT Scheduled re-verification Oct 25 2026 execution 2026-10-23 EDT — carries M02 distinction verbatim",
+        "m04_v1_preserved": "evidence/sources/M04-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 43164B md5 e7f51aba5405e584d9960b0764402e88",
+        "m04_crosswalk": "evidence/exports/M04-V1/M04-V1-objective-crosswalk.md — 8 Goals to sections/examples/KCs 41-48",
+        "m05_v1": "google_drive/M05-textbook-chapter-v1.txt — 44901B md5 b925774ce780efbde60fef19ef4eae3a V1 DRAFT Scheduled re-verification Oct 26 2026 execution 2026-10-23 EDT — Elder Abuse fresh research, not analogy, 8 Goals §§1-10, 5 Examples, KCs 51-58 (51-57 A-D, 58 two-option), References [M05-1]–[M05-16] classified",
+        "m05_v1_preserved": "evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 44901B md5 b925774ce780efbde60fef19ef4eae3a",
+        "m05_crosswalk": "evidence/exports/M05-V1/M05-V1-objective-crosswalk.md — 8 Goals → §§1-10, Examples 1-5, KCs 51-58; elder routes APS voluntary Art 9-B §473 / DOH / Justice Center vs child SCR distinction",
+        "m05_verification_in_export": "evidence/exports/M05-V1/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md — copy for inspector",
+        "exports_readme": "evidence/exports/README.md — updated index M02 V1.2 + M03 V1.1 + M04 V1 + M05 V1 with execution vs scheduled clarification, preserved V1s, diffs, verification, crosswalks",
+        "prior_state": "M01 Review pending, M02 V1.2 reported patched with emergency guidance pending verification, M03 V1.1 reported authored pending verification, M04 V1 reported authored pending verification, M05-M11 not established, canonical pending",
+        "updated_state": "M01 Review pending, M02 V1.2 reported patched with emergency guidance 911/988 verified distinct pending subject-matter verification, M03 V1.1 reported authored, M04 V1 reported authored carrying M02 distinction verified together, M05 V1 reported authored elder abuse researched afresh (community APS voluntary SSL Art 9-B §473 vs facility DOH/Justice Center/Ombudsman vs 911; not analogized from child 413/SCR), M06-M11 not established, canonical pending",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0019-m02-m04-distinct-pathways",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt V1.2 48546B §5B + KC27 + Recap vs google_drive/M04-textbook-chapter-v1.txt V1 43164B §§5-7 + Ex3-4 + KC44-47 + evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md 10225B 48b83dbe",
+            "observed_result": "Verified four pathways remain distinct in lessons/examples/assessments per handoff priority to examine M02+M04 together: 1) Emergency services 911 medical/law-enforcement immediate danger — 'ensure immediate safety first call 911 per agency emergency plan then notify ASAP, do not delay for supervisor if unavailable' in M02 §5B Harm+Recap+Ex4-5+KC27 B and M04 §7+Ex4+KC47 B; 2) Crisis support 988 suicide/self-harm crisis — M02 §5B 'call/text 988' + Recap + KC27 B with same emergency exception [M02-4][M02-8]; 3) Statutory reporting SCR 1-800-635-1522/3720 TDD 1-800-638-5163 + Call I.D. + LDSS-2221A 48h + SSL 413(1)(a) immediate make/cause + 413(1)(c) no prior approval condition + 413(1)(b) notify after + NYC ACS ensure filed named — M02 §5B statutory box + Ex5 + KC26 C + Recap vs M04 §5-6+Ex3+KC44-46 identical carry-forward; 4) Internal notification notify person in charge/supervisor after report/emergency — M02 'immediately notify after report was made [M02-5]' + KC26 then KC27 'then notify ASAP after 911/988' + M04 §5-6 then notify after + KC46-47 then contact supervisor ASAP — not gate before for statutory/emergency. No conflation in examples/assessments; emergency/crisis not gated by supervisor, statutory not delayed by handbook.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-m05-elder-fresh-research",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M05-textbook-chapter-v1.txt V1 44901B §§5-6 vs M02/M04 child SCR/413 — fresh sources [M05-1][M05-4][M05-5][M05-7][M05-8][M05-10] + nysenate.gov Art 9-B §473 vs §413 contrast",
+            "observed_result": "Verified M05 elder settings/reporting researched afresh not carried by analogy: §5 states No universal SCR for community elder abuse — child SSL §413 immediate without prior approval/then notify after [M02/M04] does not transpose; community impaired adults 18+ generally refer to APS via local county DSS under SSL Art 9-B §473 [M05-1][M05-5] generally voluntary referral (anyone may refer), requires adult consent/capacity — adults have right to make decisions [M05-5], no Call I.D./LDSS-2221A analog. Setting determines mandatory facility routes: nursing home/adult home → DOH Nursing Home Complaint 1-888-201-4563 [M05-7] + Justice Center 1-855-373-2122 where disability jurisdiction [M05-8]; OMH/OASAS/OPWDD programs → Justice Center/incident protocol per licensure [M05-7][M05-8]; Long-Term Care Ombudsman advocate [M05-10]; APS social-service assessment vs 911 crime/danger — both needed, neither replaces other [M05-4]. Examples 3-4 contrast child SCR (Maya) vs elder Mrs Chen nursing home DOH/Justice Center vs Mr Alvarez community APS/NY Connects 1-800-342-9871, explicitly not analogized.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-m05-objectives-scenarios-assessments",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M05-textbook-chapter-v1.txt Opening Situation Jamal/Mr Alvarez/Luis/Mrs Chen/Ms Washington + Learning Goals 8 + §§1-10 + 5 Examples full prose + Recap + KCs 51-58 + References [M05-1]–[M05-16] classified + evidence/exports/M05-V1/M05-V1-objective-crosswalk.md",
+            "observed_result": "Verified M05 has fresh objectives/scenarios/assessments/source identifiers for Elder Abuse (not M02/M04 duplicate): Opening Jamal/Mr Alvarez bruise/food insecurity/nephew money control vs Mrs Chen nursing home rough handling/skin tear vs Ms Washington debit card exploitation — distinct from M04 Maya/Sofia/Mr Ortiz; 8 Goals (recognize signs not diagnosis, risk/protective everyday, prevention autonomy/safe care/reduce isolation, why elder not child routes consent/capacity/setting, where to refer by setting community APS/DOH/Justice Center/Ombudsman/911, immediate safety/documentation/notify preserving autonomy, after APS/facility report ongoing role, find help where to check rules afresh); §§1 motivation, 2 what elder abuse plain language pattern vs proof, 3 risk/protective, 4 prevention autonomy, 5 why not child routes, 6 where to refer by setting A-E with official numbers, 7 immediate safety with emergency exception if unavailable then 911/APS+notify ASAP, 8 after APS/facility, 9 Finding Help jurisdiction official sites, 10 Examples 5; Recap; KCs 51-58 (51-57 A-D, 58 two-option) each explanatory linking to [M05-1]–[M05-10]; References [M05-1]–[M05-16] single system classified Official nysenate.gov/OCFS/NYSOFA/health.ny.gov/justicecenter.ny.gov vs nonprofit NYCEAC [M05-14] vs Cornell LII [M05-16]; every objective has teaching+practice+explanatory assessment per crosswalk.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-m05-execution-vs-scheduled-preservation",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M05-textbook-chapter-v1.txt header/footer Scheduled re-verification Oct26 + evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt 44901B b925774 + evidence/exports/README.md",
+            "observed_result": "Verified execution vs scheduled separation: M05 Scheduled re-verification Oct26 2026 with execution 2026-10-23 America/New_York EDT and note prospective marker per evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md; preserved V1 identical 44901B b925774 at evidence/sources/ + export copy; exports README updated with M05 package index (manuscript+preserved+verification+crosswalk) and execution vs scheduled clarification (M02 Oct24, M03/04 Oct25, M05 Oct26 filenames scheduled not completed).",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-preservation-no-drive-modify",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/ M02 V1 39148B + V1.1 46866B + M03 V1 39609B + M04 V1 43164B + M05 V1 44901B + Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi metadata preserved",
+            "observed_result": "No Drive originals modified — local manuscripts + preservation at evidence/sources/ + diffs + verification + exports; Drive folder originals retained (M01 docx 49038B extracted 38737B, video 23838B md5 650c422d). No Drive API modify_content/trash/delete; no merge/deploy; exports are local evidence copies for inspector. 1,582→ongoing checks control-record validation only.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs PASS + work_orders status-vocabulary + concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+            "observed_result": "Checks remain record-validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders vocabulary, references/evidence/canonical_state_impact/next_candidate) — not content accuracy/legal/comprehension/accessibility or canonical acceptance. M02/M04 emergency and elder routes verification is subject-matter review pending, not control-plane approval. release_authorized false; measured runtime pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0019-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Review pending, M02 V1.2 reported patched emergency pending verification, M03 V1.1 reported authored, M04 V1 reported authored, M05 not established + handoff prioritize M02+M04 + continue M05 afresh",
+            "observed_result": "State transition: M01 Review pending (14:30 arithmetic closed, timed read-through pending). M02 V1.2 reported patched with 911/988 emergency guidance — verified distinct pathways pending subject-matter review. M04 V1 reported authored carrying M02 statutory vs policy verbatim + emergency 911 exception — verified together with M02 per companion verification. M03 V1.1 reported labeled revision. M05 V1 reported authored — Elder Abuse researched afresh (community APS voluntary Art 9-B §473 with consent/capacity vs facility DOH/Justice Center/Ombudsman vs 911; not analogized from child 413/SCR). M06-M11 not established. Next: independent subject-matter verification of M02/M04 emergency/reporting + M05 elder settings/routes; then M06 drafting. Canonical acceptance and public release remain pending.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md 10225B 48b83dbe new + google_drive/M05-textbook-chapter-v1.txt V1 new 44901B b925774 + preserved evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt 44901B + export evidence/exports/M05-V1/ manuscript+preserved+verification+crosswalk M05-V1-objective-crosswalk.md + updated evidence/exports/README.md with M05 package + work_orders/WRASAL-0019.json; prior M02/M03/M04 artifacts preserved",
+        "drive_originals": "unchanged — local drafts/exports only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0020 — Independent inspection of M02 V1.2 + M04 V1 (emergency/reporting distinct pathways) + M05 V1 elder settings/routes (APS voluntary vs DOH/Justice Center vs 911); subject-matter/legal verification. Keep 11-chapter milestone: M06-M11 drafting with next module; handbook/registers pending."
+}
