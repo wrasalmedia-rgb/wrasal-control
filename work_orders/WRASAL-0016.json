@@ -1,0 +1,92 @@
+{
+    "work_order_id": "WRASAL-0016",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0016",
+    "recorded_on": "2026-10-25",
+    "recorded_by": "Arena external execution worker",
+    "objective": "M02 reviewer findings addendum — correct date-verification vs date-consistency and employer-policy vs statutory mandated-reporter distinctions per SSL 413/NYC ACS; plus M03 Cultural Competency, Inclusion and Respectful Communication V1 draft reusing M01 structure with fresh objectives/scenarios/assessments/sources.",
+    "success_condition": "Reviewer addendum evidence/M02-V1-reviewer-findings-addendum-2026-10-25.md authored: date reconciliation (4 Oct24 labels internal consistency only vs execution 2026-10-23T22:19:45Z EDT 18:19 America/New_York) referenced to evidence/M02-V1-date-reconciliation-2026-10-24.md; reporting-guidance open findings documented with citations (SSL 413(1)(c) 'shall impose no conditions including prior approval/prior notification' via nysenate.gov, NYC ACS 'immediately make report or cause report then immediately notify person in charge after report', simply notifying supervisor not equivalent); required M02 V1.1 corrections listed (separate statutory vs policy reporters, remove supervisor prerequisite, distinguish imminent-risk vs child-abuse domains, affected KC26-27 Example5 Section5B). M03 V1 google_drive/M03-textbook-chapter-v1.txt 39609 bytes md5 9fd2d71536e338d5d555ed6967195cc1 authored with M01 structure — Opening Situation Luis front-desk (Mx Rivera they/them Spanish interpreter cane, Mr Jackson Deaf ASL, Aisha hijab), 8 Learning Goals, 10 sections, 5 Examples, Knowledge Checks 31-38 with objective mapping, Glossary, Reviewer Notes, References M03-1..M03-16 with governmental vs nongovernmental vs professional classifications (nysenate.gov governmental, Georgetown NCCC university nongov). No Drive originals modified, no merge/deploy/publish, canonical pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m02_addendum": "evidence/M02-V1-reviewer-findings-addendum-2026-10-25.md — 9.5KB, 2 distinctions: date consistency not verification; employer policy not statutory status — SSL 413(1)(c) prior approval/notification prohibition via nysenate.gov, NYC ACS immediate report/cause report then notify after; KC26-27 Example5 Section5B remain open until V1.1",
+        "m02_date_reconciliation": "evidence/M02-V1-date-reconciliation-2026-10-24.md — 32 lines, 4 Oct24 labels internal consistency vs execution 2026-10-23T22:19:45Z (18:19 EDT America/New_York), Review date Oct24 as prospective re-verification marker",
+        "m02_review_prep": "evidence/M02-V1-review-preparation.md — 115 lines, 4-section verification including nysenate governmental correction and gift fictional labeling already applied f78d202",
+        "m02_manuscript": "google_drive/M02-textbook-chapter-v1.txt — 39148 bytes md5 4acc0908650818122675602b00b126af after f78d202 (nysenate + gift fixes); reporting guidance still open per addendum",
+        "m03_manuscript": "google_drive/M03-textbook-chapter-v1.txt — 39609 bytes md5 9fd2d71536e338d5d555ed6967195cc1 V1 DRAFT Oct25 2026 [M03-1]..[M03-16] classified",
+        "m03_bytes": "39609",
+        "m03_md5": "9fd2d71536e338d5d555ed6967195cc1",
+        "nysenate_vs_cornell": "M03-16 labels Official govinfo.gov + Official NYS Legislature nysenate.gov governmental vs Cornell LII nongovernmental reference; M03-4 Georgetown NCCC labeled university research nongovernmental",
+        "prior_state": "M01 Ready for review 14:30 arithmetic done measured runtime pending, M02 V1 review-prepared with addendum open findings, M03 not started, canonical pending",
+        "updated_state": "M01 Ready for review, M02 V1 review-prepared with reviewer findings addendum (reporting guidance remains open until V1.1), M03 V1 draft reported authored awaiting review, canonical pending",
+        "ssl_413_citation": "NYSenate.gov SOS 413(1)(c) No prior approval/prior notification conditions shall be imposed on mandated reporter — statutory reporters must immediately report/cause report and immediately notify person in charge after report per 413(1)(b)",
+        "nyc_acs_citation": "NYC ACS Mandated Reporters — immediately make report or cause report (e.g. ensuring supervisor makes report), simply notifying supervisor not equivalent, must ensure report made and named if multiple reporters with Call I.D.",
+        "control_plane_checks": "record validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders vocabulary) — not content accuracy/legal approval",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0016-reviewer-addendum-reporting_guidance",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "SSL 413 text via nysenate.gov + NYC ACS mandated-reporters.page + google_drive/M02-textbook-chapter-v1.txt lines 89-90, 172, 237, 243-246 Section 5B Example5 KC26-27",
+            "observed_result": "Addendum authored: Documents SSL 413(1)(c) prohibits employer imposing prior approval/prior notification conditions on statutory reporters; duty is immediately report/cause report then immediately notify person in charge after report per 413(1)(b); NYC ACS confirms simply notifying supervisor not equivalent — reporter must ensure report occurred (named, Call I.D.). Gap: M02 V1 lines 89-90 conflate statutory vs policy-based reporters without separation; Example5 and KC26 list 'call supervisor, and make report' implying supervisor before report; KC27/emergency guidance merges child-abuse reporting (must report directly) with imminent-risk safety (supervisor assessment appropriate per OMH). All remain open until M02 V1.1 separates statutory (listed in SSL 413(1)(a)) vs policy-based, removes supervisor prerequisite, clarifies cause-report as ensure-report-made, and distinguishes domains. No legal correctness beyond source fidelity claimed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0016-date-reconciliation-reference",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/M02-V1-date-reconciliation-2026-10-24.md + git log --pretty=fuller --date=iso AuthorDate 2026-10-23T22:19:45+00:00 + America/New_York EDT",
+            "observed_result": "Reconciliation file persisted: 4 Oct24 labels (lines 4 V1 header, 9 Review date Oct24, 156 Section9 footer, 299 References footer) verified as internal consistency only (same calendrical value, Oct 24 vs October 24 stylistic). Execution timestamps reconciled: 2026-10-23 22:19:45 UTC = 18:19:45 EDT America/New_York (UTC-4) — work occurred Oct23, Review date Oct24 is prospective re-verification marker before publication, not execution date. No claim work occurred Oct24.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0016-m03-v1-authoring",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M03-textbook-chapter-v1.txt 39609 bytes md5 9fd2d71536e338d5d555ed6967195cc1 — wc -c, md5sum, grep references/knowledge checks",
+            "observed_result": "M03 V1 authored per instruction on Cultural Competency, Inclusion and Respectful Communication (not confidentiality continuation) reusing M01/M02 teaching structure: Opening Situation Luis front-desk (Mx Rivera they/them Spanish+interpreter cane, Mr Jackson Deaf ASL, Aisha hijab food comment), 8 Learning Goals, Sections 1-10 everyday language, 5 Worked Examples, Chapter Recap, 8 Knowledge Checks 31-38 with objective mapping (31-37 A-D, 38 two-option), Glossary, Reviewer Notes, References M03-1..M03-16 single bracket system with classifications. Verified: 16 references with Official HHS.gov CLAS M03-1, Official NYC.gov CCHR M03-2, Official NYS DHR M03-3, University Georgetown NCCC M03-4 nongov, Official NYSED CR-S M03-5, Official LEP.gov/Title VI M03-6, Official ADA.gov M03-7, Official NYS OMH M03-8, plus DOH/DOHMH/JusticeCenter/EEOC/SAMHSA/OPWDD/govinfo-nysenate governmental vs Cornell LII nongov in M03-16. Fresh topic-appropriate sources, scenarios, checks confirmed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0016-preservation-no_drive_modify",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "git status, Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi metadata, local manuscript vs Drive original hashes (M01.docx 49038B, extracted 38737B md5 cf5ac4ae, derived 42682B md5 0ff247; M01 video package duplicate 23838B md5 650c422d)",
+            "observed_result": "No Drive originals modified: Drive folder originals retained with anyoneWithLink writer, created 2026-10-23T21:39:06Z modified 2026-10-23T21:43:23Z; M02 remains 39148 bytes md5 4acc090... after prior f78d202 fixes; M03 is new local draft file only. Preservation evidence/sources/M01-textbook-chapter-v8-extracted-original.txt retained. No Drive API modify_content/trash/delete performed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0016-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs output + concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md REALITY FIRST",
+            "observed_result": "Control-plane checks scoped to record validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders vocabulary) — they do NOT establish content accuracy, learning effectiveness, accessibility, or legal approval. M02 and M03 drafts reported authored but NOT approved for public release; legal review, comprehension testing, accessibility verification, measured runtime remain pending; canonical_acceptance remains pending for all manuscripts; drafting kept separate from legal approval/release; no merge/deploy/publish.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0016-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Ready for review 14:30 arithmetic closed 870s, M02 V1 review-prepared with targeted open findings, M03 not established + user direction for M03 Cultural Competency fresh objectives/scenarios/assessments",
+            "observed_result": "State transition: M01 Ready for review (14:30 arithmetic 50+90+90+80+75+120+75+75+40+175=870s, measured runtime pending). M02 V1 review-prepared with reviewer findings addendum — reporting guidance (KC26-27 Example5 Section5B emergency-response) remains open until V1.1 removes supervisor prerequisite per SSL413(1)(c)/NYC ACS and separates statutory vs policy reporters; date reconciliation complete. M03 V1 draft now reported authored on Cultural Competency/Inclusion/Respectful Communication reusing M01 structure with fresh topic-appropriate content — ready for subject-matter review (LEGAL REVIEW/COMPREHENSION/ACCESSIBILITY/RUNTIME PENDING). Canonical acceptance and release remain pending — drafting separate from approval.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "evidence/M02-V1-reviewer-findings-addendum-2026-10-25.md 9.5KB + evidence/M02-V1-date-reconciliation-2026-10-24.md 32 lines + google_drive/M03-textbook-chapter-v1.txt 39609 bytes md5 9fd2d71536e338d5d555ed6967195cc1 V1 DRAFT Oct25 2026 Cultural Competency with fresh objectives/scenarios/checks/sources; prior M01/M02 artifacts preserved; M02 manuscript unchanged 39148 bytes pending V1.1 reporting-guidance fix",
+        "drive_originals": "unchanged — local drafts only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0017 — Apply M02 V1.1 bounded reporting-guidance corrections (Section5B Example5 KC26-27 emergency-response) removing supervisor prerequisite and separating statutory vs policy per SSL413/NYC ACS with diff; plus M03 subject-matter review prep and comprehension/accessibility planning — legal review separate."
+}
