@@ -1,0 +1,94 @@
+{
+    "work_order_id": "WRASAL-0015",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0015",
+    "recorded_on": "2026-10-24",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Perform M02 review preparation \u2014 verify October 24 dating consistency, reclassify nysenate.gov as governmental (official NYS Legislature), label fictional gift-limit scenario values, and check role-specific disclosure/reporting guidance \u2014 carry forward findings, keep 1,083 control-plane checks scoped to record validation.",
+    "success_condition": "M02 V1 manuscript google_drive/M02-textbook-chapter-v1.txt verified: 4 review-date occurrences all Oct 24 2026 consistent; nysenate.gov reclassified governmental (official NYS Legislature) vs Cornell LII nongovernmental, [M02-3] corrected; fictional $15/$40 gift limits labeled as fictional scenario in KC 23 with teaching note; role-specific disclosure/reporting guidance checked as correctly scoped (frontline defers to supervisor, mandated reporting SSL 413 role-specific, imminent risk supervisor least-necessary); evidence/M02-V1-review-preparation.md and bounded-correction diffs added; 1,083 checks documented as record-validation only, not content approval; M01 ready for review, M02 V1 draft now review-prepared, canonical acceptance/release pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "manuscript_path": "google_drive/M02-textbook-chapter-v1.txt",
+        "manuscript_original_bytes": "38924",
+        "manuscript_original_md5": "dd48d9c492b9a7558b4526b71fa82195",
+        "manuscript_corrected_bytes": "39148",
+        "manuscript_corrected_md5": "4acc0908650818122675602b00b126af",
+        "manuscript_corrected_sha256": "e8ae638b3454fd443ff7b8eae5a9c80355e5842f1edab9c9afc2de9f7c9fbbc3",
+        "review_date_verified": "Oct 24 2026 \u2014 4 occurrences: line 4 V1 DRAFT Review date Oct 24 2026, line 9 Review date October 24 2026, line 156 Review date Oct 24 2026, line 299 Review date Oct 24 2026 \u2014 all consistent, sequential after M01 Oct 23",
+        "nysenate_correction": "[M02-3] PHL 18 corrected: nysenate.gov Official governmental publisher (NYS Legislature) https://www.nysenate.gov/legislation/laws/PBH/18 separate from Cornell LII nongovernmental reference",
+        "nysenate_occurrences": "5 occurrences: [M02-3] corrected, [M02-4] already correct Official NY.gov law publisher, [M02-5] Law text via nysenate.gov, [M02-6] Law via nysenate.gov, [M02-16] Official publisher via nysenate.gov \u2014 all now consistently governmental except Cornell LII nongovernmental",
+        "fictional_gift_labels": "KC 23 $40 gift card / $15 limit labeled Fictional scenario \u2014 In this fictional scenario ... + teaching note 'Gift amounts $15/$40 are fictional for teaching \u2014 check real agency handbook' added to Correct Answer explanation",
+        "role_specific_check": "Section 5A-C, B mandated reporting SSL 413 'Certain professionals' + agency-policy expansion, B imminent risk 'Frontline staff generally do not decide on their own \u2014 involve supervisor/clinical lead' role-specific fact-specific, Section 7 Example 5 mandated reporter under agency policy not solo investigation \u2014 all correctly scoped",
+        "evidence_preparation": "evidence/M02-V1-review-preparation.md (4-section review), evidence/M02-V1-bounded-corrections.diff (core diff), evidence/M02-V1-full-derived.diff",
+        "prior_state": "M01 Ready for review 14:30 arithmetic resolved measured runtime pending, M02 V1 draft reported authored not inspected here, M03-M11 not established, canonical pending",
+        "updated_state": "M01 Ready for review, M02 V1 draft review-prepared (WRASAL-0015), M03 drafting next, canonical pending",
+        "control_plane_checks": "1,083 checks \u2014 record validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders WRASAL-0001..0015 vocabulary) \u2014 not content accuracy/learning effectiveness/accessibility/legal approval",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0015-october24-dating-verification",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt grep Oct 24 / October 24",
+            "observed_result": "Verified 4 review-date occurrences all consistent: line 4 'V1 DRAFT \u2014 Sources [M02-1]\u2013[M02-16] with Classifications Labeled \u2014 Not approved \u2014 Review date Oct 24 2026'; line 9 '**Review date:** October 24, 2026 \u2014 verify all agency phone numbers...' ; line 156 'Review date: Oct 24 2026 \u2014 verify all contacts...' ; line 299 'Review date: Oct 24 2026. Verify before publication.' Format variation Oct 24 vs October 24 is stylistic, calendrical value identical (2026-10-24), sequential one day after M01 Oct 23 2026, no conflict. Dating is draft marker pending pre-publication re-verification, not legal effective date.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0015-nysenate-governmental-reclassification",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt References [M02-3] line 284 before/after + 5 nysenate.gov occurrences",
+            "observed_result": "Verified and corrected nysenate.gov classification: [M02-3] originally 'Nongovernmental legal-text publisher for statute text: New York Laws via Cornell LII ... e.g., https://www.nysenate.gov/legislation/laws/PBH/18' \u2014 incorrectly bundled governmental under nongovernmental label. Corrected to 'Official NY.gov: https://www.health.ny.gov/... ; Official governmental publisher (NYS Legislature): https://www.nysenate.gov/legislation/laws/PBH/18 ; Nongovernmental legal-text reference for cross-check: Cornell LII https://www.law.cornell.edu/wex/table_new_york'. Other occurrences verified: [M02-4] already correct 'Official NY.gov law publisher: https://www.nysenate.gov/legislation/laws/MHY/33.13'; [M02-5] 'Law text via nysenate.gov: https://www.nysenate.gov/legislation/laws/SOS/413' neutral now explicitly governmental per end disposition; [M02-6] similar; [M02-16] 'Official publisher via nysenate.gov' already correct separation. Final disposition also corrected to 'Official government [M02-1]\u2013[M02-8][M02-10]\u2013[M02-15] including Official NYS Legislature publisher nysenate.gov vs nongovernmental Cornell LII'. nysenate.gov = governmental (official NY State Legislature publisher of Consolidated Laws), Cornell LII = nongovernmental (private university reference re-publisher). No legal correctness claimed beyond classification accuracy.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0015-fictional-gift-limits-labeling",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt Knowledge Check 23 lines 206-212 before/after",
+            "observed_result": "Verified fictional gift limits: KC 23 originally 'Question: A participant sends you a friend request and offers a $40 gift card... Your agency's handbook says gifts over $15 are not allowed...' \u2014 $40/$15 are fictional scenario values for teaching boundary principles, not universal law or regulation (agency gift policies vary). Corrected to 'Question: Fictional scenario \u2014 A participant sends you a friend request and offers a $40 gift card... In this fictional scenario, the agency's handbook says gifts over $15 are not allowed...' and added note to Correct Answer B: 'Note: Gift amounts $15/$40 are fictional scenario values for teaching \u2014 check your real agency handbook.' Section 4 generic 'gifts over a small value' remains generic teaching, not specific amount. All Sam/Elena narratives are already fictional peer-support Bronx scenario; gift amounts now explicitly marked same to avoid misreading as real regulation.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0015-role-specific-disclosure-check",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M02-textbook-chapter-v1.txt Sections 5A-D, Examples 1-5, Knowledge Checks 26-27, Reviewer Notes",
+            "observed_result": "Checked role-specific disclosure/reporting guidance as correctly scoped \u2014 no overgeneralization: 5A 'Most private health/service information needs consent from family/friends/outside coworkers [M02-1][M02-3][M02-4]' \u2014 default consent with exceptions noted; 5B Child abuse 'Certain professionals are mandated reporters under SSL \u00a7413 and must make report to Statewide Central Register when threshold met \u2014 e.g., reasonable cause to suspect while acting in professional capacity [M02-5]. Many agencies make all staff mandated reporters by policy even if law does not. You do not need to prove abuse, do not investigate on your own' \u2014 correctly distinguishes law-defined 'certain professionals' vs agency-policy expansion, threshold quoted correctly; 5B Harm to self/others 'Frontline staff generally do not decide on their own to break confidentiality to warn identifiable third party \u2014 they immediately involve supervisor/clinical lead/safety team who assess imminence, check state law/case law, least amount [M02-4][M02-8]. In New York duties are role-specific and fact-specific \u2014 follow supervisor/safety plan' \u2014 correct limitation of frontline discretion; 5D 'Do not guess. Pause, involve supervisor' ; Example 5 mandated reporter under agency policy does not investigate alone, follows steps ensures safety calls supervisor makes report when threshold met [M02-5]; KCs 26-27 correctly restate supervisor least-necessary; Reviewer Notes duty-to-warn fact-specific frontline involve supervisor per [M02-8]. No universal duty-to-warn or universal mandated-reporter claim. Minor optional improvement: KC 26 stem could add 'or under agency policy if it makes you a mandated reporter' qualifier already in explanation \u2014 carried as non-blocking copy-edit.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0015-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs output PASS control-plane validation (1,083 checks) + evidence/M02-V1-review-preparation.md + concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md REALITY FIRST",
+            "observed_result": "1,083 control-plane checks remain scoped to record validation only (projects.yml, priorities.yml, dependencies.yml, status-vocabulary, work_orders vocabulary 4 fields, references/evidence structure, id-matches-filename, date YYYY-MM-DD) \u2014 they do NOT establish content accuracy, learning effectiveness, accessibility, or legal approval. M02 V1 manuscript not inspected here prior \u2014 now inspected for this review preparation, no legal/comprehension/accessibility claims made, NOT APPROVED FOR PUBLIC RELEASE, canonical_acceptance remains pending. M01 preservation/diffs/14:30 arithmetic (870 sec) remain reported evidence until independently inspected.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0015-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "User module state table 2026-10-24: M01 Ready for review, M02 V1 draft reported authored not inspected, M03-M11 not established, canonical pending + user direction Continue WRASAL-0015 M02 review preparation then M03 drafting",
+            "observed_result": "State transition: M01 remains Ready for review (14:30 schedule arithmetic resolved 50+90+90+80+75+120+75+75+40+175=870 sec, measured runtime pending). M02 V1 draft reported authored now review-prepared via WRASAL-0015 (October 24 dating verified consistent, nysenate.gov governmental, fictional gift limits labeled, role-specific guidance checked correctly scoped) \u2014 ready for subject-matter review edits (V1.1 bounded correction recorded via file update md5 dd48d9c492b9a7558b4526b71fa82195 \u2192 4acc0908650818122675602b00b126af 38924\u219239148 bytes). M03\u2013M11 draft completion not yet established \u2014 next is M03 drafting. Canonical acceptance and release remain Pending \u2014 drafting separate from legal approval/public release. No Drive originals modified beyond local manuscript, no merge/deploy/publish.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "google_drive/M02-textbook-chapter-v1.txt updated 38924\u219239148 bytes md5 dd48d9c492b9a7558b4526b71fa82195\u21924acc0908650818122675602b00b126af with nysenate.gov governmental reclassification ([M02-3]) + fictional gift label (KC 23) + teaching note + end disposition fix; evidence/M02-V1-review-preparation.md added with 4-section verification; prior M01 artifacts preserved",
+        "drive_originals": "unchanged \u2014 local manuscript updated, no Drive API modify_content/trash/delete; M01 Drive originals preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0016 \u2014 M03 drafting (Confidentiality module continuation or next topic) \u2014 reuse M01/M02 structure, evidence discipline, and review findings; or apply M02 V1.1 final bounded corrections and prepare M02 subject-matter review packet. Keep legal review separate."
+}
