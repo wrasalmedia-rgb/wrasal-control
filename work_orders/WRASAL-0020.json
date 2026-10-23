@@ -1,0 +1,122 @@
+{
+    "work_order_id": "WRASAL-0020",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0020",
+    "recorded_on": "2026-10-27",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Continue M06 Neglect, Exploitation and Inappropriate Conduct — distinguish concepts across settings, explain overlap with M04/M05 via cross-references rather than duplicating reporting instructions; keep two targeted findings open: confirm actual M02/M04 passages/assessments distinguish emergency/crisis/statutory/internal (not just verification table), and verify M05 each setting's reporting route separately (nursing vs adult homes contact) with consent/capacity without universal rule.",
+    "success_condition": "M06 V1 new 45213B 2f36ea1ce645ed50e29358d8949e8a39 at google_drive/M06-textbook-chapter-v1.txt with preserved at evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt, 9 Learning Goals, §§1-10, 5 Examples, KCs 61-68 (61-67 A-D, 68 two-option), References [M06-1]–[M06-16] classified; §2-4 define neglect/exploitation/inappropriate conduct + poverty vs neglect + genuine help vs secrecy; §5 overlap table child→M04 SCR vs community adult→M05 APS voluntary vs facility→DOH centralized 1-888-201-4563 / Justice Center 1-855-373-2122 per licensure + emergency 911; §8 cross-referenced steps (do not duplicate numbers — SCR/APS/DOH/Justice Center remain in M04 §6 / M05 §6 A-C); §7 consent/capacity least-restrictive no universal rule (children no consent M04 vs adults with capacity may decline M05 vs facility duty persists). Verification addendum evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md 4749B ea7dc8c2 verifies DOH centralized portal 1-888-201-4563 vs internal adult-care/nursing routing; M02/M04 actual passages finding kept open (table ≠ passages). Export evidence/exports/M06-V1/ with manuscript+preserved+addendum+crosswalk M06-V1-objective-crosswalk.md; README updated to report both findings open and review order. No Drive originals modified, no merge/deploy, canonical pending.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m02_v1_2": "google_drive/M02-textbook-chapter-v1.txt — 48546B md5 a8f16fafcc0f357fd7df924205bc00c2 V1.2 DRAFT Scheduled re-verification Oct 24 2026 execution 2026-10-23 EDT — finding open: actual passages vs verification table",
+        "m04_v1": "google_drive/M04-textbook-chapter-v1.txt — 43164B md5 e7f51aba5405e584d9960b0764402e88 V1 DRAFT Scheduled re-verification Oct 25 2026 execution 2026-10-23 EDT — finding open: actual passages together",
+        "m02_m04_verification_reported": "evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md — 10225B 48b83dbe — reported internal verification only, not inspected commit 2b9a4e4; actual passages to be inspected separately",
+        "m05_v1": "google_drive/M05-textbook-chapter-v1.txt — 44901B md5 b925774ce780efbde60fef19ef4eae3a V1 DRAFT Scheduled re-verification Oct 26 2026 execution 2026-10-23 EDT — finding open: grouped nursing+adult homes under one DOH contact before confirmed",
+        "m05_addendum": "evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md — 4749B md5 ea7dc8c22d6522d845ba31356837dcf9 — verifies M05 §6 B DOH centralized portal 1-888-201-4563 covers nursing home and adult care facilities via central intake with internal routing vs Justice Center 1-855-373-2122 per licensure; summary condensed but manuscript distinguishes — confirm before treating mapping correct; consent/capacity not universal",
+        "m06_v1": "google_drive/M06-textbook-chapter-v1.txt — 45213B md5 2f36ea1ce645ed50e29358d8949e8a39 V1 DRAFT Scheduled re-verification Oct 27 2026 execution 2026-10-23 EDT — Neglect/Exploitation/Inappropriate Conduct across settings, cross-references M04 §6 SCR and M05 §6 A-C APS/DOH/Justice Center/Ombudsman, not duplicate; emergency 911 same exception",
+        "m06_v1_preserved": "evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt — 45213B md5 2f36ea1ce645ed50e29358d8949e8a39",
+        "m06_crosswalk": "evidence/exports/M06-V1/M06-V1-objective-crosswalk.md — 9 Goals → §§1-10, Examples 1-5, KCs 61-68; §5 overlap table + §8 cross-reference discipline verified",
+        "exports_readme": "evidence/exports/README.md — updated index M02 V1.2 + M03 V1.1 + M04 V1 + M05 V1 + M06 V1 with execution vs scheduled clarification, both findings kept open, review order starting with verifications",
+        "prior_state": "M01 Review pending, M02 V1.2 reported patched, M03 V1.1 reported authored, M04 V1 reported authored, M05 V1 reported authored, M06-M11 not established, commit 2b9a4e4 not inspected, two findings open per 2026-10-26 handoff",
+        "updated_state": "M01 Review pending, M02 V1.2 reported internal verification with finding open (actual passages not just table), M03 V1.1 reported authored, M04 V1 same finding open, M05 V1 reported authored with finding open (nursing vs adult homes route verify separately, consent/capacity no universal rule — addendum 4749B records gap), M06 V1 reported authored distinguishing neglect/exploitation/inappropriate conduct across settings, overlap with M04/M05 via cross-references not duplication (§5 table, §8 routes to M04 §6 / M05 §6 A-C), M07-M11 not established, canonical pending",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0020-m02-m04-finding-kept-open",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "Handoff 2026-10-26: Five of eleven drafts now reported authored; commit 2b9a4e4 and exports not inspected, pathway audit remains reported internal verification, subject-matter review pending + evidence/M02-M04-emergency-reporting-distinct-pathways-verification-2026-10-25.md vs M02 §5B/Recap/KC26-27 and M04 §5-7/Ex3-4/KC44-47 actual passages",
+            "observed_result": "Finding kept open per instruction: M02/M04 distinguish emergency response 911, crisis support 988, statutory reporting SCR (1-800-635-1522/3720 Call I.D. SSL 413(1)(c)/(b) + NYC ACS verify), internal notification — verification table 10225B 48b83dbe was reported internal verification; inspector must confirm actual lessons (§5B/§5), examples (Ex5 vs Ex3-4), assessments (KC26 C vs KC44-46 B, KC27 B vs KC47 B) distinguish pathways — not just table. M06 respects this by referencing M02/M04 emergency exception via cross-reference (M06 §8/§9) without re-asserting table as proof. No claim of content approval; work order acknowledges commit 2b9a4e4 uninspected and 1,700 checks control-record only.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-m05-finding-kept-open-addendum",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "Handoff 2026-10-26 second finding: summary groups nursing+adult homes under one contact — verify each setting separately + evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md 4749B ea7dc8c2 vs google_drive/M05-textbook-chapter-v1.txt §6 B-C 44901B b925774",
+            "observed_result": "Finding kept open with addendum: Manuscript M05 §6 B correctly cites DOH centralized complaint 1-888-201-4563 (or via DOH intake) for nursing homes/adult homes with note 'Check facility — DOH vs Justice Center vs both depends on licensure' [M05-7][M05-8]; portal 1-888-201-4563 is published DOH Nursing Home Hotline routing to centralized intake including adult care per health.ny.gov/facilities/nursing and /adult_care; internal routing differs but portal same. Summary/crosswalk condensed to one line 'DOH 1-888-201-4563' for both — oversimplified vs manuscript distinction. Addendum 4749B verifies DOH portal vs internal routing + Justice Center 1-855-373-2122 [M05-8] where disability jurisdiction + APS/NY Connects 1-800-342-9871 [M05-4] distinct + Ombudsman [M05-10]; explains consent/capacity/protective interventions not universal (community APS voluntary with refusal if capacity vs facility licensure duty). No manuscript change; flags for inspection before treating mapping correct.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-m06-neglect-exploitation-conduct",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt V1 45213B 2f36ea1ce645ed50e29358d8949e8a39 §§2-4 vs M04 43164B / M05 44901B",
+            "observed_result": "Verified M06 distinguishes three concepts in plain language without diagnosis: §2 neglect as pattern of unmet essential needs where dependency/caregiver/program duty exists — care/supervision/developmental/self-neglect/facility neglect, with poverty/hardship/choice not auto neglect [M06-1][M06-2][M06-5][M06-8]; §3 exploitation as using resources/labor/vulnerability for gain — financial/labor/sexual-trafficking, distinguishing legitimate transparent help from secrecy/control [M06-6][M06-12]; §4 inappropriate conduct as power-boundary signals — gifts/money, secrecy, favoritism, off-record, harsh handling [M06-4]. Devon/16yo sibling, Ms Ortiz secret bills, coworker soiled-briefs+gift-card illustrate without conflating.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-m06-overlap-cross-reference",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt §5 overlap table + §8 cross-referenced steps + §9 finding help + evidence/exports/M06-V1/M06-V1-objective-crosswalk.md",
+            "observed_result": "Verified overlap explained and instructions not duplicated: §5 tables maps Person+setting → chapter+route: child→M04 §6 SCR [M06-5]; older community→M05 §6 A APS/NY Connects voluntary [M06-2][M06-6]; licensed facility (nursing/adult home, OMH/OASAS/OPWDD/ICF/group home)→M05 §6 B/C + facility DOH centralized 1-888-201-4563 portal per M05 verification + Justice Center 1-855-373-2122 where disability jurisdiction [M06-7] + Ombudsman [M06-10]; any immediate danger→911 then report/refer [M06-9] emergency vs crisis 988 vs statutory/facility vs internal distinct same as M02/M04/M05. §8 explicitly states 'This section is intentionally short — follow chapter that matches person/setting ... Numbers live there, not here' — M06 contains only 911 and general hotline 1-888-373-7888 trafficking [M06-12] / CFPB [M06-6]; SCR/APS/DOH/Justice Center numbers remain in M04 §6 / M05 §6 A-C (avoids transplant error). Crosswalk confirms each goal maps to §/example/KC without duplicate route definitions.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-m06-consent-capacity-no-universal",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt §7 consent/capacity + §6 prevention + KCs 61-68 vs M05 §5 addendum",
+            "observed_result": "Verified consent/capacity/protective explained without universal rule: §7 states children under 18 cannot consent to risk — report to SCR not requiring consent per M04 [M06-5]; adults with capacity presumed able to decide, offered services voluntary — APS seeks consent/refusal respected [M06-6][M06-10]; capacity-question → least-restrictive supports + impairment+unable to meet needs test, guardianship court-only, facility licensure duty persists [M06-2][M06-7][M06-10]. KCs 67 B and 68 illustrate. Ms Ortiz permission language and Devon child no-consent contrast modeled. Satisfies 'explain consent, capacity, possible protective interventions without suggesting one universal rule'.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-m06-objectives-assessments",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt Opening Alex/Devon/Ms Ortiz/coworker + Learning Goals 9 + §§1-10 + 5 Examples + Recap + KCs 61-68 + References [M06-1]–[M06-16] labeled + M06-V1-objective-crosswalk.md",
+            "observed_result": "Verified M06 has fresh objectives/scenarios/assessments/identifiers not M04/M05 duplicate: Opening Alex across after-school/home-visit/supported residence distinct from M04 Maya/Sofia/Jamal/Mr Ortiz and M05 Jamal/Mr Alvarez/Luis/Mrs Chen/Ms Washington; 9 Goals covering definitions, hardship vs neglect, help vs exploitation, boundary indicators, overlap with M4/M5, cross-referenced reporting, consent/capacity, prevention, find help; §§1 why distinguish by person/setting, 2 neglect plain language, 3 exploitation, 4 conduct boundaries, 5 overlap table, 6 prevention without takeover, 7 consent/least-restrictive, 8 cross-referenced steps + emergency exception, 9 finding help verify before acting, 10 Examples 5 + Recap scannable; KCs 61-68 full prose 61-67 A-D 68 two-option mapped; References single numbers [M06-1]–[M06-16] classified official nysenate.gov/OCFS/NYSOFA/DOH/Justice Center/CFPB/humantraffickinghotline vs nonprofit prevent vs professional NASW — per crosswalk every objective has teaching+practice+explanatory assessment.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-execution-vs-scheduled-preservation",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt header/footer Scheduled re-verification Oct27 + evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt 45213B 2f36ea1c + evidence/exports/README.md",
+            "observed_result": "Verified execution vs scheduled separation: M06 Scheduled re-verification Oct27 2026 with execution 2026-10-23 EDT and note prospective per evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md; preserved V1 identical 45213B 2f36ea1c at evidence/sources/ + export copy; README updated with M06 package and lists both findings kept open report-order (verifications then manuscripts). No claim work occurred Oct dates.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-preservation-no-drive-modify",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/ M02 V1 39148B + V1.1 46866B + M03 V1 39609B + M04 V1 43164B + M05 V1 44901B + M06 V1 45213B + Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved + M05 addendum 4749B",
+            "observed_result": "No Drive originals modified — local manuscripts/preserved at evidence/sources/ + verifications/addendum + exports; Drive folder originals retained (M01 docx 49038B extracted 38737B, video 23838B 650c422d). No Drive API modify_content/trash/delete; no merge/deploy; exports local copies for inspector. 1,700 checks prior control-record only; updated count to generate after push.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs PASS + work_orders status-vocabulary + WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+            "observed_result": "Checks remain record-validation only — not content accuracy/legal/comprehension/accessibility or canonical acceptance. M02/M04 reported internal verification and M05 grouped contact remain open findings per handoff; M06 verification reported not approval. release_authorized false; measured runtime pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0020-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Review pending, M02 V1.2 + M04 V1 reported with pathway audit uninspected 2b9a4e4, M05 V1 with grouped contact, M06 not established + handoff continue M06 distinguishing across settings with cross-references",
+            "observed_result": "State transition: M01 Review pending. M02 V1.2 + M04 V1 reported with pathway audit still reported internal verification with subject-matter review pending — finding open that actual passages/assessments (not just table) must be inspected. M03 V1.1 reported. M05 V1 reported with finding open that nursing vs adult homes grouped under one DOH contact (1-888-201-4563 portal vs internal routing) — addendum 4749B verifies separately, consent/capacity no universal rule. M06 V1 reported authored — Neglect/Exploitation/Inappropriate Conduct distinguished across settings, overlap with M04/M05 via table and cross-references rather than duplicating reporting instructions; §7 consent/capacity least-restrictive without universal rule. M07-M11 not established. Next: M07+ handbook milestone; keep findings open; independent inspection before canonical.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md 4749B ea7dc8c2 new addendum + google_drive/M06-textbook-chapter-v1.txt V1 new 45213B 2f36ea1c + preserved evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt 45213B + export evidence/exports/M06-V1/ manuscript+preserved+addendum+crosswalk M06-V1-objective-crosswalk.md + updated evidence/exports/README.md with M06 package and both findings open; prior M02-M05 artifacts preserved",
+        "drive_originals": "unchanged — local drafts/exports only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0021 — Independent inspection of M02 V1.2 + M04 V1 actual passages/assessments (emergency/crisis/statutory/internal) + M05 V1 each setting route separately (DOH portal vs Justice Center vs APS) + M06 V1 cross-reference discipline; then M07-M11 drafting toward 11 drafts + consolidated handbook + review registers. Keep findings open."
+}
