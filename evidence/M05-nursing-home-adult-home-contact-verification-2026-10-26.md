@@ -1,4 +1,7 @@
-# M05 Reporting Routes — Nursing Home vs Adult Home Contact — Targeted Verification Addendum
+# ⚠️ SUPERSEDED 2026-10-23 by contrary official evidence — DO NOT RELY ON SHARED-CONTACT CONCLUSION
+# See correction: evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md — Official DOH Profiles via profiles.health.ny.gov lists Nursing homes 1-888-201-4563 vs Adult care facilities 1-866-893-6772 separately. Preserved V1 at evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt 4749B ea7dc8c2.
+
+# M05 Reporting Routes — Nursing Home vs Adult Home Contact — Targeted Verification Addendum — SUPERSEDED
 
 **Execution:** 2026-10-23 America/New_York (EDT) — same execution as M05 manuscript; **Scheduled re-verification:** Oct 26 2026 prospective — see `evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md`.
 **Status:** NOT APPROVED FOR PUBLIC RELEASE — control-record validation only; subject-matter verification pending vs summary simplification.

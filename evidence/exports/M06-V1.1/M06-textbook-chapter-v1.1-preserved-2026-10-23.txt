@@ -1,0 +1,294 @@
+# M06 — Textbook Chapter V1 — Neglect, Exploitation and Inappropriate Conduct — DRAFT (cross-referenced to M04/M05, not duplicate)
+
+M06 — Neglect, Exploitation and Inappropriate Conduct
+V1.1 DRAFT — Sources [M06-1]–[M06-16] with M05 DOH correction applied ([M05-7a] 1-888-201-4563 vs [M05-7b] 1-866-893-6772) — Classifications Labeled — Not approved for public release — Scheduled re-verification date Oct 27 2026 (execution: 2026-10-23 EDT) — bounded M06 correction to reflect corrected M05 DOH numbers; V1 preserved evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt — see correction record
+M06 — Neglect, Exploitation and Inappropriate Conduct
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M06-1]–[M06-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1 — Initial draft reusing M01–M05 teaching structure and evidence discipline (Opening Situation, Learning Goals, sections 1–10, Worked Examples, Recap, Knowledge Checks with objective mapping, Glossary, Reviewer Notes, single consistent bracket system); fresh objectives, scenarios, assessments, and source identifiers for M06 on Neglect, Exploitation and Inappropriate Conduct; distinguishes concepts across settings, explains overlap with M04 Child Abuse and M05 Elder Abuse, uses cross-references rather than duplicating their reporting instructions; consent/capacity/protective interventions explained without universal rule. Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — Federal comparison where noted.
+**Scheduled re-verification date:** October 27, 2026 — verify all agency contacts, websites, laws, regulations, and agency guidance before publication — laws and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); Oct 27 is scheduled re-verification marker — see evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md and evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md.
+**Disclaimer:** General information only. Not legal or clinical advice. Your agency’s policies, licensure, and supervisor/agency counsel control day-to-day practice. When immediate danger exists, prioritize safety — call 911 and follow agency emergency plan. When in doubt, ask before acting. Adults with capacity generally have the right to make their own decisions, including to decline offered services — respect autonomy while ensuring safety.
+---
+
+Opening Situation
+Alex is a direct support professional who works across settings in one week:
+
+- At an after-school program, 9-year-old Devon says his 16-year-old brother watches him alone until midnight most nights while their parent works, and “we sometimes don’t have food — I’m really hungry.” Alex notices Devon’s clothes are unwashed and he missed school twice.
+- At a home visit with a partner agency, 79-year-old Ms. Ortiz, who lives alone with early dementia, tells Alex her new “friend” offered to “manage bills for free” and now her checks are late and her bank calls about unusual withdrawals. Ms. Ortiz is unsure what happened and does not want to upset this person.
+- At a supported residence for adults with intellectual disabilities, Alex overhears a coworker say, “He’s nonverbal and won’t remember — just leave him in soiled briefs until shift change, and borrow his gift card for lunch — he won’t notice.”
+
+Alex feels the three stories overlap but are not the same — is this neglect, exploitation, or inappropriate conduct? Where do the lines sit across child, older adult, and disability settings? How does this chapter relate to **M04 Child Abuse** and **M05 Elder Abuse** without pasting the same reporting numbers twice? And how should consent, capacity, and possible protective steps be explained without pretending one rule fits everyone?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Define neglect, exploitation, and inappropriate conduct in plain language across settings (home, school, facility, community) — and name what is not your job to decide.
+Distinguish neglect from intentional abuse, and distinguish everyday hardship from neglect — without minimizing patterns.
+Distinguish financial exploitation from legitimate help — and distinguish personal relationships from paid caregiving boundaries.
+Identify boundary and conduct indicators (power imbalance, secrecy, gifts, favoritism, isolation, misuse of access) that call for pause and consultation.
+Map overlap and differences with M04 Child Abuse and M05 Elder Abuse — including which chapter’s reporting route applies for which person/setting.
+Use cross-references (do not duplicate) to report/refer correctly: M04 child route (SCR) vs M05 elder/community vs facility/Justice Center routes; know where your agency policy and immediate-safety (911) steps fit.
+Explain consent, capacity, least-restrictive protective interventions without one universal rule — older and disabled adults retain rights while children do not consent.
+Describe prevention in your role: supervision adequacy, care planning, least-restrictive supports, documentation — without diagnosing or taking over decisions.
+Find official help by setting and know where to check current definitions and reporting contacts before acting.
+
+1. Why Distinguish These Three — Same Pattern Can Mean Different Things by Person and Setting
+Words shape response. “Neglect,” “exploitation,” and “inappropriate conduct” often appear together, but laws, agency policies, and rights differ by **who the person is and where you are**:
+
+- A hungry child left alone at night points toward child welfare definitions and reporting described in **M04 Chapter 6 (SCR)** — not elder/APS rules [M06-1][M06-5].
+- A late check for an older adult confused about a “helper” managing bills points toward elder exploitation and voluntary APS/financial protections described in **M05 Chapter 6 A/D** — capacity and consent matter [M06-2][M06-6].
+- A staff member deliberately leaving a resident in soiled briefs or using a gift card points toward facility neglect and staff misconduct/conduct boundaries described in facility licensure and Justice Center/DOH oversight [M06-3][M06-7] — not a community-voluntary model.
+
+Your job is to notice patterns, ensure immediate safety, consult early, and **route to the right chapter’s process** — not to decide the final legal label. This chapter defines each concept in plain language, then shows how they overlap with M04/M05 and how to cross-reference instead of copying numbers.
+
+2. What Neglect Means — Plain Language, Without Diagnosis
+Neglect centers on **unmet essential needs when someone depends on a caregiver or responsible adult or program for those needs**. What counts as “essential” and who is responsible depends on setting, age, licensure, and care plan [M06-1][M06-2][M06-8].
+
+Common forms in everyday words [M06-1][M06-2][M06-5]:
+- **Care or supervision neglect:** Inadequate food, clothing, shelter, hygiene, medications, medical appointments, school attendance, or supervision for age/needs; unsafe/unsanitary conditions.
+- **Developmental/educational neglect (children):** Persistent lack of support for basic development/education when caregiver can provide or access help [M06-5].
+- **Self-neglect (adults 18+ with impairment in community):** Adult’s own difficulty meeting essential needs due to physical/mental impairment — introduced in **M05 §2** [M06-2] — distinguished from facility neglect where staff/agency is responsible.
+- **Facility/institutional neglect:** Program or staff failure to provide agreed care (missed meals/meds, inadequate supervision, unsanitary living conditions, failure to seek care for injury/illness) — often a licensure/regulatory matter in addition to any individual report [M06-7].
+
+What neglect is not — without minimizing:
+- A single missed meal, one set of unwashed clothes, or a one-time late bill is not alone proof of neglect. Look for **pattern, severity, persistence, and caregiver capacity/access to help** — and always check context [M06-8].
+- Poverty alone is not neglect when caregiver seeks or would accept available help but help is insufficient [M06-1][M06-5][M06-11]. Document efforts and offers, not assumptions.
+- Choosing a different parenting or living style (food preferences, cultural practices) is not neglect unless it puts essential needs/health/safety at risk [M06-8].
+
+What is not your job: You do not decide “this legally is neglect,” do not assess medical capacity, and do not investigate — you document observable facts and ensure safety, then refer [M06-9].
+
+Devon example: “watched by 16-year-old sibling until midnight, sometimes no food, unwashed clothes, missed school” may suggest supervision/care neglect — pattern, not one evening — and points to **M04 route** for next steps (see §6), not an elder/APS route. Facility example “leave in soiled briefs until shift change” may suggest facility neglect by staff omission — points to facility/DOH/Justice Center route (see §6), not voluntary community APS as primary.
+
+3. What Exploitation Means — Plain Language, Without Diagnosis
+Exploitation centers on **using a person’s resources, labor, access, or vulnerability for personal gain** — often through trust, authority, or confusion [M06-2][M06-6][M06-12].
+
+Common forms in everyday words [M06-6][M06-7][M06-12]:
+- **Financial exploitation:** Misusing money/property — missing funds, unusual withdrawals, sudden changes in power of attorney or banking, unpaid bills despite adequate income [M06-6]; see M05 §2 financial exploitation details. In workplaces/facilities: staff borrowing or using client funds/gift cards, pressuring signatures, “managing money for free” without agreement [M06-7].
+- **Labor or service exploitation:** Forcing or pressuring a person (child or adult with disability) to work or provide services through threat, deception, or misuse of authority [M06-12].
+- **Sexual exploitation / trafficking indicators (not detailed):** If you suspect trafficking or sexual exploitation, ensure safety, do not confront, and follow immediate-safety and law-enforcement/facility steps per policy — see §6 and §9 for NYC/NYS human trafficking hotlines [M06-12].
+
+What exploitation is not:
+- Accepting a thank-you note is not exploitation; accepting ongoing expensive gifts, loans, or access to bank accounts usually is inappropriate and often prohibited by agency policy [M06-4].
+- A family member helping with bills with permission and transparency is not exploitation; a “new friend” with secrecy, control of documents, or pressure is a red flag [M06-6].
+
+Ms. Ortiz example — “new friend manages bills for free, now checks late, bank calls about unusual withdrawals”: possible financial exploitation — secrecy, new helper controlling finances, lack of understanding — warrants supportive conversation with consent/capacity awareness (see §7) and referral for assessment (see §6 M05 A/D), not confrontation of the friend alone.
+
+4. What Inappropriate Conduct and Boundary Violations Mean
+Many concerns are not yet “abuse/neglect/exploitation” in legal terms but still require immediate pause, consultation, and internal reporting because power imbalance exists [M06-4][M06-3].
+
+Everyday indicators that call for pause and supervisor consultation [M06-4][M06-8]:
+- **Power/role misuse:** Staff as friend, partner, or family — favoritism, special privileges, secrets, one-on-one time outside role, personal communications on private channels.
+- **Gifts, money, or favors:** Accepting or giving gifts/money/loans, borrowing client items, side errands for personal gain.
+- **Secrecy and isolation:** Encouraging person to hide contact, not tell family/supervisor, or isolating from other staff/services.
+- **Physical/emotional boundaries:** Unnecessary touching, comments on appearance, sharing personal problems, threatening or demeaning language, harsh physical handling during care.
+- **Documentation gaps:** Doing things off-record, asking not to chart, inconsistent explanations.
+
+Coworker example — “won’t remember — leave in soiled briefs, borrow gift card”: that language names both **facility neglect (omitted care)** and **exploitation/conduct violation (misuse of property + demeaning attitude)** — report through facility misconduct/financial impropriety route and ensure immediate care (see §6), not “wait until shift change.”
+
+Your role: You do not decide if conduct meets a criminal threshold; you ensure dignity/safety, document what you saw/heard in person’s own words, and notify per agency conduct/licensure route [M06-4].
+
+5. Overlap and Difference With M04 and M05 — Which Chapter Applies?
+Use this map — **do not carry one chapter’s numbers into another:**
+
+| Person + setting | Which chapter + reporting route | Threshold focus (plain language) |
+|---|---|---|
+| **Child under 18 in parent/guardian/program care — any setting** | **M04 Child Abuse** — see M04 §5-6: report child abuse/maltreatment via **SCR** [M06-5] (numbers and Call I.D. in M04, not here) | Child needs and safety; reasonable cause to suspect while acting in professional capacity [M06-5]; consent not required |
+| **Older adult (often 60-65+, but APS 18+ with impairment) living in community** | **M05 Elder Abuse** — see M05 §6 A: refer to **APS via local DSS / NY Connects** for voluntary assessment/services [M06-2]; if crime ongoing also consider law enforcement 911 per M05 §6 D/§7 | Impairment + inability to meet essential needs [M06-2]; **capacity/consent matter** — adult may decline if capacity [M06-6] |
+| **Resident/client in licensed facility (nursing home, adult home, OMH/OASAS/OPWDD residence, ICF, group home)** | **M05 §6 B + facility/DOH/Justice Center** — see M05 §6 B: nursing homes **1-888-201-4563 [M05-7a]**, adult care facilities / adult homes **1-866-893-6772 [M05-7b]** per official profiles.health.ny.gov (separate, not one portal), and/or **Justice Center 1-855-373-2122** where disability jurisdiction, plus facility incident conduct policy [M06-7] | Licensure duty + individual harm/omission; often **mandatory facility reporting** distinct from community voluntary model; check licensure (see corrected verification: nursing vs adult-care separate) |
+| **Any person in immediate danger** | **Emergency — 911 + agency emergency plan, then report/refer** — same emergency exception as M02 §5B / M04 §7 / M05 §7: if danger immediate or supervisor unavailable, do not delay — ensure safety/call 911 then notify/refer ASAP [M06-9] | Immediate risk overrides routing sequence; reporting still follows after |
+
+Overlap clarified:
+- **Neglect overlaps M04 and M05 and facility:** Child supervision/hunger (Devon) uses M04 lens; elder self-neglect or caregiver failure to provide care (M05 Ms. Ortiz/Mr. Alvarez) uses M05 lens; staff leaving resident soiled uses facility lens [M06-7] — same word “neglect,” different test and route.
+- **Exploitation overlaps M05 and M06 facility:** Older adult financial exploitation (Ms. Ortiz) maps to M05 §2/§6 A/D; staff misuse of gift card maps to facility financial impropriety/Justice Center/DOH [M06-7] — financial exploitation is the shared concept, reporting depends on setting.
+- **Inappropriate conduct → can become neglect/exploitation/abuse if continued:** Secrecy, gifts, favoritism are early boundaries requiring consultation even before a legal threshold is met [M06-4].
+
+**Do not duplicate reporting instructions here — cross-references control.** If you copy numbers, you risk applying child SCR prior-approval rules to voluntary APS, or APS consent assumptions to child/facility mandatory duties.
+
+6. Prevention — What You Can Do Without Diagnosing or Taking Over Decisions
+Prevention centers dignity, adequate care, and proportionate supports [M06-3][M06-8][M06-11]:
+
+- **Adequate care planning:** Ensure care plan matches needs — enough staff, supervision for age/needs, meals/meds on schedule, safe sleep/transfer, medical follow-up — and advocate when plan impossible with current resources [M06-7][M06-8].
+- **Reduce isolation and burden:** Friendly visitors, respite for caregivers, adult day, benefits help, concrete supports (food, housing, transportation) — poverty supports vs neglect prevention [M06-11].
+- **Money safeguards with permission:** Encourage transparent, documented money management (representative payee with accounting, limited power with safeguards, bank alerts) — only with consent/legal authority [M06-6]. For Ms. Ortiz: offer benefits counseling, bank fraud unit, legal services options; do not take over finances yourself.
+- **Boundaries training:** Keep paid caregiving distinct from personal relationships — decline gifts/loans, chart accurately, avoid one-on-one secrecy [M06-4].
+- **Supervision adequacy — the “16-year-old babysitter” nuance:** New York does not set a single babysitter age law; adequacy depends on child’s age/needs, duration, sibling maturity, emergency plan, and alternative care options — document concerns as pattern, not one-size threshold [M06-5]. Ask “What would adequate supervision look like for Devon at night given his age/needs?” and route to M04 for next steps, not personal judgment.
+
+If you sense judgment (“they’re just lazy”), pause — offer concrete-help framing: “What supports would make adequate care achievable for this family/person/staffing level?”
+
+7. Consent, Capacity, and Least-Restrictive Protective Interventions — Without One Universal Rule
+People have different rights by age, capacity, and setting. Explain interventions without pretending one rule (e.g., “always remove,” “always need permission,” “always APS/SCR”) fits all [M06-10]:
+
+- **Children under 18:** Generally cannot consent to risk/harm; protective steps do not require child or parent consent to report to SCR — see **M04 §5-7** [M06-5]. Do not apply elder “ask permission first” to child safety.
+- **Adults 18+ with capacity (including many older adults):** Presumed able to make their own decisions; offered services are typically voluntary — APS assessment often seeks consent, and refusal with capacity is respected [M06-6][M06-10]. For Ms. Ortiz, ask permission to refer/report and explain limits kindly: “I can’t keep this private if facility duty requires report, but I can advocate and help you choose next steps — APS, bank, law enforcement — would that help?”
+- **Adults 18+ where capacity is in question:** Do not decide capacity yourself — seek assessment via medical/legal process; in the meantime, prioritize safety, use least-restrictive options (more visits, trusted supported decision-making, benefits protections), and follow facility/APS escalation if eligible under impairment + inability to meet essential needs without willing caregiver [M06-2][M06-10]. Guardianship is court-only, not staff-decided.
+- **Licensed facility residents/clients:** Facility has duty to ensure care; protective steps (ensure immediate care, separate staff where required, preserve evidence, plan of correction) operate alongside individual-report routes via DOH/Justice Center — facility cannot rely on “resident refused, so no action” when licensure duty exists [M06-7].
+
+**Least-restrictive in practice:** Prefer options that protect health/safety with fewest limits on rights — e.g., Ms. Ortiz keeps accounts but adds bank alerts + benefits counseling + APS consultation; Devon’s family gets overnight childcare resources + food supports + follow-up, not automatic punishment; resident gets immediate care + independent advocacy (Ombudsman where nursing/adult home) + regulatory follow-up [M06-11].
+
+8. What To Do — Cross-Referenced Steps (Do Not Duplicate Chapter 4/5 Instructions)
+This section is **intentionally short** — follow the chapter that matches the person/setting, plus immediate-safety and agency policy [M06-9]:
+
+**Immediate safety first (all settings):** If medical emergency, injury, crime in progress, or imminent serious harm — stay if safe, follow agency emergency plan, **call 911**, then make the setting-matched report/referral without delay and notify supervisor ASAP. If supervisor unavailable, do not delay emergency — same exception as M02 §5B / M04 §7 / M05 §7.
+
+**Then route — see full instructions in those chapters:**
+
+- **Child (any setting):** See **M04 §6 How to Make a Report — SCR** for what helps (quoted words, observable pattern, where child is now, get Call I.D., verify if caused via supervisor, LDSS-2221A 48h) and **M04 §7 Immediate Safety + §5 statutory vs policy** for no-prior-approval/notify-after distinction. Numbers live there, not here — do not apply them to adults [M06-5].
+- **Community adult/older adult (18+ impaired, self-neglect or exploitation at home):** See **M05 §6 A** — refer to **APS via local county DSS / NY Connects 1-800-342-9871** [M06-2]; see **M05 §6 D** if crime/exploitation ongoing also consider law enforcement + bank/financial unit + legal services [M06-6]; explain consent/capacity, document stated preferences, do not decide for adult.
+- **Licensed facility (nursing home, adult home, OMH/OASAS/OPWDD/ICF/group home):** See **M05 §6 B** + facility policy: report to **DOH Nursing Home Complaint 1-888-201-4563 [M05-7a]** for nursing homes vs **DOH Adult Care Facility Complaint 1-866-893-6772 [M05-7b]** for adult care / adult homes per official profiles.health.ny.gov (separate numbers — do not interchange) and/or **Justice Center 1-855-373-2122** where disability jurisdiction applies [M06-7]; also ensure immediate care and preserve evidence; contact **Long-Term Care Ombudsman via NYSOFA/NY Connects** advocate where appropriate [M06-10]. See corrected verification `M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md` (supersedes `M05-nursing-home-adult-home-contact-verification-2026-10-26.md`) — two distinct DOH numbers, not one portal.
+- **Workplace/inappropriate conduct not yet facility abuse (gifts, borrowing, favoritism, secrecy):** See agency conduct policy + licensure code — typically immediate verbal to person in charge + written within timeframe (often 24h) [M06-4][M06-7]; consult before one-on-one intervention with alleged staff.
+
+**Documentation that protects everyone [M06-9]:** Date/time, location, role, observable facts (quotes own words, injuries/conditions, financial transactions seen), offers/consents/refusals, emergency steps, referrals made (type not numbers duplicated here — log “referred per M04 §6 / M05 §6 A-C”), who notified and reference/Case ID where given. Follow HIPAA/agency confidentiality — least necessary.
+
+9. Finding Help — Where to Check Current Rules Before Acting (by Setting, Not Universal)
+Rules depend on **person + setting** — child vs elder vs facility vs workplace — and your licensure. Cross-reference before acting:
+
+Child safety and reporting process: See **M04 §9** — OCFS SCR, nysmandatedreporter.org, nysenate.gov for SSL §413, NYC ACS [M06-5]
+Elder/community APS: **M05 §9** — APS via local DSS/OCFS https://ocfs.ny.gov/main/aps/ , NY Connects/NYSOFA 1-800-342-9871 https://aging.ny.gov/nystateofficefortheaging [M06-2]
+Facility residential/nursing/adult care/DOH and Justice Center: **M05 §6 B + §9** — NYS DOH nursing https://health.ny.gov/facilities/nursing/ (Nursing Home Complaint **1-888-201-4563 [M05-7a]** — https://profiles.health.ny.gov/nursing_home/); adult care https://health.ny.gov/facilities/adult_care/ (Adult Care Facility Complaint **1-866-893-6772 [M05-7b]** — https://profiles.health.ny.gov/adult_care/) — separate per official DOH Profiles; Justice Center 1-855-373-2122 https://justicecenter.ny.gov/ ; OMH https://omh.ny.gov/ ; OASAS https://oasas.ny.gov/ ; OPWDD https://opwdd.ny.gov/ [M06-7]
+Human trafficking/sexual exploitation — immediate safety + national hotline: **National Human Trafficking Hotline 1-888-373-7888 / humantraffickinghotline.org** , NYC Safe Horizon [M06-12]
+Financial exploitation — bank/fraud unit, APS, law enforcement: See **M05 §6 D** + https://consumerfinance.gov/older-americans [M06-6]
+Long-Term Care Ombudsman advocate: **M05 §9 / M05-10** via NYSOFA/NY Connects [M06-10]
+Federal community supports comparison: **ACL Eldercare Locator 1-800-677-1116 / eldercare.acl.gov** [M06-11]
+Review date: Oct 27 2026 — verify every contact, website, law. Laws, regulations, agency policies change — do not copy-paste from this chapter across settings.
+
+Your agency:
+Ask: “What setting am I in for this person — community child, community adult/older adult, or licensed facility? Which chapter’s route applies? What does our conduct/neglect policy require — who is person in charge? What is emergency plan if danger immediate/supervisor unreachable? Who is privacy officer?”
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Neglect pattern vs one hardship (Devon, after-school program). Alex notices Devon hungry, unwashed clothes, missed school twice, says 16-year-old brother watches until midnight while parent works. Not one late dinner — pattern of supervision/care gaps. Distinguish poverty from neglect: parent works nights, 16-year-old as caregiver may be inadequate for Devon’s age/needs and duration — New York has no single babysitter age law; adequacy depends on child needs, duration, plan [M06-5]. Alex does not diagnose; stays calm, reassures Devon, notes observable (Devon’s words, clothes, attendance pattern where allowed), ensures immediate safety/nutrition per program plan, consults supervisor, follows **M04 reporting route cross-reference (M04 §6 SCR — numbers live there)** respecting statutory vs policy lesson; documents offers of concrete supports (emergency childcare resources, food program referral) [M06-11].
+
+Example 2 — Exploitation — financial (Ms. Ortiz, community older adult). Ms. Ortiz says new “friend” manages bills for free, now checks late, bank calls about unusual withdrawals; unsure, doesn’t want to upset person. Indicators: new helper controlling finances, secrecy, impaired understanding, recent financial changes [M06-6]. Alex ensures private talk, explains limits kindly (“I can’t keep this completely private if facility/volunteer duty requires report, but I can connect you to choices”), asks permission — offers M05 cross-references: **APS via local DSS/NY Connects (M05 §6 A)** for voluntary assessment/support with capacity respect, bank fraud unit, law enforcement if ongoing theft, legal services — without taking over bills [M06-6]. Documents observable transactions reported + consent conversation, not accusations.
+
+Example 3 — Neglect + exploitation + inappropriate conduct — facility staff (supported residence). Alex hears coworker: “He’s nonverbal — leave him in soiled briefs until shift change, borrow gift card for lunch.” That is **facility neglect (omitted care)** + **exploitation/misuse of property** + **conduct boundary violation** (abuse of power, demeaning language) [M06-3][M06-7]. Alex must not wait; ensures immediate care for resident, preserves evidence (soiled briefs/condition, gift card statement), follows **M05 §6 B cross-reference: report to DOH Nursing Home Complaint 1-888-201-4563 for nursing homes vs DOH Adult Care Facility Complaint 1-866-893-6772 for adult care/adult homes [M05-7a][M05-7b] (separate per official profiles.health.ny.gov) and/or Justice Center where disability jurisdiction per facility policy + agency financial impropriety/conduct policy** — not community APS as primary — and notify person in charge per policy [M06-7]. Documents verbatim coworker statement, offers dignity and immediate care.
+
+Example 4 — Boundary prevention before threshold — gifts and secrecy. A staff member accepts regular pricey gifts from a family and asks Alex not to chart extra visits. Indicators: gifts/money, off-record activity, favoritism [M06-4]. Not yet financial exploitation, but inappropriate conduct requiring pause and consultation. Alex consults supervisor early, follows agency gift/boundary policy, charts observable (gift descriptions, requests for secrecy), redirects family to transparent thank-you, documents [M06-4]. Prevention avoids progression.
+
+Example 5 — After report/referral — least-restrictive ongoing support. After Alex follows M04 route for Devon (SCR process in M04) and M05 §6 A for Ms. Ortiz (APS referral with consent discussion), each triggers different systems: child protective assessment/education supports vs elder voluntary services/capacity-sensitive planning [M06-10]. Alex continues role per agency direction — provides food supports/childcare resources for Devon’s family, helps Ms. Ortiz with bank alerts/benefits options, reflects with supervisor on patterns recognized and what prevented escalation; for facility resident, regulatory follow-up occurs alongside person-centered care correction [M06-7][M06-11].
+
+Chapter Recap — Scannable
+Neglect: unmet essential needs — food/clothing/shelter/hygiene/meds/school/supervision/sanitary care — in dependency; distinguish pattern/severity/persistence from poverty/hardship; what counts depends on age/setting/licensure — see child M04 vs community adult M05 vs facility [M06-1][M06-2][M06-5][M06-7].
+Exploitation: using resources/labor/vulnerability for gain — financial misuse, labor, sexual/trafficking indicators; distinguish legitimate help with transparency from secrecy/control [M06-6][M06-12].
+Inappropriate conduct: power-boundary signals — gifts/money, secrecy, favoritism, off-record, harsh handling — consult/report per agency policy before legal threshold [M06-4].
+Overlap M04/M05: Same words, different tests and routes — use table in §5; **cross-reference, do not duplicate**: child M04 SCR [M06-5] vs elder M05 APS/DOH/Justice Center [M06-2][M06-7] vs emergency 911 [M06-9].
+Prevention: adequate care planning, reduced isolation/burden, money safeguards with permission, boundaries training; supervision adequacy no single babysitter age law [M06-5][M06-8].
+Consent/capacity/least-restrictive: children cannot consent to risk (M04 [M06-5]); adults with capacity retain decisions/ may decline services [M06-6][M06-10]; where capacity questioned, least-restrictive supports + impairment + inability to meet needs test govern; guardianship court-only; facility licensure duties persist.
+Steps: immediate safety 911 without delay if danger/supervisor unavailable (M02/M04/M05 exception [M06-9]), then setting-matched report/referral cross-referenced to M04/M05, document facts.
+Find help: See M04 §9, M05 §9, and §9 here by setting — verify before acting [M06-7][M06-9].
+
+Knowledge Checks — Complete Questions With Objective Mapping (M06: 61–68; 61-67 A-D, 68 Two-Option Valid)
+
+**61. Define neglect across settings (M06 objective 1-2)**
+Question: Alex sees Devon hungry, unwashed clothes, missed school twice, says 16-year-old brother watches until midnight. What is neglect framing?
+A) Poverty alone always equals neglect.
+B) Single missed meal proves neglect.
+C) Neglect is pattern of unmet essential needs (food/clothing/shelter/meds/school/supervision/sanitary care) where dependency exists — depends on person age/needs/licensure/setting — not your job to legally decide; document observable facts and route to right chapter (here **M04 child — see M04 §5-6**) vs hardship/choice; distinguish child vs older adult facility vs community adult self-neglect [M06-1][M06-2][M06-5].
+D) Ignore until physical injury.
+Correct Answer: C) Pattern of unmet essentials, setting determines chapter — hardships/poverty/choice not auto neglect [M06-8][M06-11].
+Objective: Define neglect without diagnosis, distinguish from hardship.
+
+**62. Define exploitation (M06 objective 3)**
+Question: Ms. Ortiz says new “friend” manages bills for free, now checks late/bank calls unusual withdrawals, doesn’t want to upset person. What is exploitation framing?
+A) All help managing money is exploitation.
+B) Thank-you note = exploitation.
+C) Possible financial exploitation — misuse for gain via trust/confusion — missing funds, unusual withdrawals, sudden document changes, unpaid bills despite income [M06-6][M06-2]; distinguish transparent permitted help from secrecy/control; assess via supportive talk with consent awareness — routes **M05 §6 A/D (APS, bank, law enforcement where appropriate)** — cross-referenced, not re-numbered here [M06-12].
+D) Confront friend alone aggressively.
+Correct Answer: C) Financial exploitation pattern, seek permission/offer referral options with capacity respect, document observable.
+Objective: Distinguish exploitation from legitimate help.
+
+**63. Identify inappropriate conduct indicators (M06 objective 4)**
+Question: Coworker: “Leave him in soiled briefs until shift change, borrow gift card — won’t remember.” What signals inappropriate conduct/neglect/exploitation overlap?
+A) Only neglect — ignore exploitation/conduct.
+B) Acceptable staffing shortcut.
+C) Both facility neglect (omitted care) [M06-7] + exploitation/misuse of property + power-boundary violation — gifts/money, off-record, secrecy, favoritism, harsh handling [M06-3][M06-4] — consult/report per agency conduct + facility/DOH/Justice Center policy (see M05 §6 B/C), ensure immediate dignified care, do not wait [M06-9].
+D) Private chat with coworker without record.
+Correct Answer: C) Multiple concepts; report via facility conduct/neglect/impropriety routes, preserve evidence.
+Objective: Identify boundary/conduct indicators.
+
+**64. Map overlap with M04/M05 — which reporting route (M06 objectives 5-6)**
+Question: Which route matches which person/setting — using cross-reference, not duplicate numbers?
+A) Use one universal hotline for all.
+B) Child Devon (11pm sibling watch/hunger) → see **M04 §6 SCR** for child abuse/maltreatment process [M06-5]; Older Ms. Ortiz community exploitation → see **M05 §6 A/D APS/bank/law enforcement** [M06-6]; Supported residence soiled briefs/gift card → see **M05 §6 B/C + facility DOH/Justice Center** [M06-7] per licensure — *cross-references, do not duplicate* numbers here to avoid misapplying child 413 prior-approval/not-consent rules to voluntary APS or vice versa.
+C) Adults need no consent ever.
+D) Facilities need no report if peer did it.
+Correct Answer: B) Setting-matched cross-reference; do not transpose chapter numbers.
+Objective: Map M04/M05 overlap, cross-reference vs duplicate.
+
+**65. Know emergency vs statutory vs facility vs internal notification remain distinct (M06 objective 6)**
+Question: Resident in immediate danger (e.g., serious fall with bleeding, staff refusing help). What is distinct-pathways order?
+A) Must get supervisor permission even if unavailable before emergency.
+B) Ensure immediate safety first — stay if safe, follow agency emergency plan, **call 911** without delay if immediate medical/crime danger or supervisor unavailable, then make setting-matched report/referral (M04 child SCR vs M05 community APS vs facility DOH/Justice Center) without delay, notify supervisor ASAP after [M06-9] — same emergency exception as M02 §5B / M04 §7 / M05 §7; crisis support 988 where mental-health crisis per M02/5B [M06-9]; statutory/facility report does not replace 911 and vice versa.
+C) 911 replaces reporting.
+D) Only internal notification needed.
+Correct Answer: B) 911 emergency vs crisis 988 vs statutory/facility vs internal notify remained distinct — emergency not gated.
+Objective: Distinct emergency/crisis/reporting/notification.
+
+**66. Prevention and supervision adequacy (M06 objective 8)**
+Question: What is prevention in your role without diagnosing/taking over?
+A) Decide capacity and move elder against will.
+B) Ensure adequate care plan (staffing, meals/meds schedule, supervision adequacy [M06-7][M06-8]), reduce isolation/burden with concrete supports — food, childcare resources, respite [M06-11], use money safeguards with permission (rep payee with accounting, bank alerts) [M06-6], keep caregiving distinct from personal gifts/loans [M06-4]; note no single NY babysitter age law — adequacy depends on child age/needs/duration/plan [M06-5].
+C) Diagnose and investigate alone.
+D) Do nothing.
+Correct Answer: B) Adequate planning, supports, boundaries, no single-age threshold.
+Objective: Prevention without takeover.
+
+**67. Consent, capacity, least-restrictive without universal rule (M06 objective 7)**
+Question: Explain consent/capacity/protective steps without one rule for all.
+A) Always need permission before any child report — and adults can be compelled like children.
+B) Children under 18 cannot consent to risk — report to SCR does not require child/parent consent per M04 [M06-5]; Adults with capacity may decline offered services — APS seeks consent, refusal respected if capacity [M06-6][M06-10]; where capacity in question, seek least-restrictive options (more visits, supported decision-making, benefits protections) and impairment + unable to meet essential needs without willing caregiver test [M06-2]; guardianship court-only, not staff-decided; facility licensure duty persists regardless of consent narrative [M06-7].
+C) Staff decide capacity.
+D) Facility residents have no rights.
+Correct Answer: B) Different rights/tests per person/setting; least-restrictive; no single rule.
+Objective: Consent/capacity without universal rule.
+
+**68. After referral and finding help (M06 objective 9)**
+Question: After you referred Devon per M04 and Ms. Ortiz per M05 and reported facility neglect per M05 B/C, what ongoing role and verification?
+A) You decide outcomes.
+B) Continue supportive role per direction, document offers/consents/refusals, reflect with supervisor; facility/APS triggers assessment/correction; verify contacts at M04 §9 (OCFS/nysmandatedreporter/nysenate.gov/NYC ACS), M05 §9 (OCFS APS/NY Connects/DOH/Justice Center/OMH/OASAS/OPWDD/ac aging), §9 here (human trafficking hotline 1-888-373-7888) plus agency policy [M06-5][M06-7][M06-9][M06-12] — Two-option valid (B vs A collapse).
+C) Assume failure if adult declined.
+D) Ignore.
+Correct Answer: B) Ongoing support per direction + verification at official sites — Two-option valid.
+
+Glossary — Plain Language
+**APS voluntary:** Community assessment/services for adults 18+ with impairment unable to meet needs without willing caregiver — typically seeks consent [M06-2][M06-6].
+**Capacity:** Adult presumed able to decide unless formally determined otherwise via medical/legal process [M06-10].
+**Conduct/boundary violation:** Misuse of power/access — gifts/loans, secrecy, favoritism, off-record, harsh handling — consultable even before legal threshold [M06-4].
+**DCJS/DOH/Justice Center:** Official agencies by setting — distinct from SCR/APS [M06-7].
+**Exploitation:** Using resources/labor/vulnerability for personal gain — financial, labor, sexual/trafficking [M06-6][M06-12].
+**Immediate safety:** First ensure protection (911 if needed) then refer/report — not conditional on supervisor [M06-9].
+**Inappropriate conduct:** Boundary-crossing behavior requiring policy review, not yet legal label [M06-4].
+**Least-restrictive:** Smallest limit on rights that still protects health/safety [M06-10][M06-11].
+**Neglect:** Pattern of unmet essential needs where dependency/caregiver/program duty exists [M06-1][M06-2][M06-7].
+**Ombudsman:** Advocate for nursing/adult home residents — distinguishes from enforcement [M06-10].
+**SCR statutory vs APS voluntary vs facility mandatory:** Three test families — do not interchange [M06-5][M06-2][M06-7].
+
+Reviewer Notes — Jargon Outside Learner Text
+Neglect definitions: NY child maltreatment includes neglect per Social Services Law/Family Court Act neglect vs abuse distinctions; adult APS eligibility under SSL 9-B §473 impairment + unable to meet essential needs; facility neglect under 10 NYCRR/licensure — each with distinct threshold/route [M06-1][M06-2][M06-7].
+Babysitter age: No single NY babysitter age law; inadequate guardianship/ supervision assessed case-by-case (child age/development, duration, plan) [M06-5].
+Poverty vs neglect: OCFS/Child Welfare guidance — provide concrete supports before neglect finding; document offers [M06-11].
+Trafficking indicators: Limited in M06 — refer to specialized hotline/protocol, do not investigate [M06-12].
+Cross-reference discipline: M06 intentionally contains numbers only for emergency (911) and general hotlines (trafficking, CFPB) — SCR/APS/DOH/Justice Center numbers remain in M04/M05 to prevent transplant errors [M06-5][M06-6][M06-7].
+
+References — Single Consistent Numbered System [M06-1]–[M06-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M06-1] OCFS / NYS Child Welfare definitions — neglect/abuse patterns, poverty vs neglect. Official OCFS: https://ocfs.ny.gov/main/cps/ ; Official NYC ACS: https://www.nyc.gov/acs/
+[M06-2] OCFS / Office for Aging — APS eligibility SSL 9-B §473 — adults 18+ impairment unable to meet essential needs, voluntary. Official OCFS: https://ocfs.ny.gov/main/aps/ ; Official Aging: https://aging.ny.gov/nystateofficefortheaging
+[M06-3] NYS OPWDD / OMH / OASAS / Justice Center — facility neglect/misconduct definitions, person-centered care, staff obligations. Official OPWDD https://opwdd.ny.gov/ ; OMH https://omh.ny.gov/ ; OASAS https://oasas.ny.gov/ ; Justice Center https://justicecenter.ny.gov/
+[M06-4] NASW / Professional Codes / Agency conduct policies — boundaries, gifts, dual relationships, power imbalance. Professional association NASW: https://www.socialworkers.org/ ; Official 10 NYCRR licensure
+[M06-5] SSL §413 / SSL §412 / Family Court Act neglect + M04 SCR process cross-reference — child threshold/route lives in M04 [M06-5]. Official nysenate.gov: https://www.nysenate.gov/legislation/laws/SOS/413
+[M06-6] Consumer Financial Protection Bureau (CFPB) + OCFS/APS financial exploitation — older adult money safeguards. Official CFPB: https://www.consumerfinance.gov/older-americans/ ; Official OCFS APS
+[M06-7] NYSDOH + Justice Center — facility reporting — DOH nursing https://health.ny.gov/facilities/nursing/ (Nursing Home Complaint 1-888-201-4563 per profiles.health.ny.gov/nursing_home) + adult care https://health.ny.gov/facilities/adult_care/ (Adult Care Complaint 1-866-893-6772 per profiles.health.ny.gov/adult_care) — separate numbers per official DOH Profiles guidance; Justice Center 1-855-373-2122 https://justicecenter.ny.gov/ — see corrected verification M05-CORRECTION 2026-10-23 (supersedes prior addendum)
+[M06-8] Child Welfare Information Gateway / Prevent Child Abuse NY — risk/protective, supervision adequacy. Official childwelfare.gov ; Nonprofit preventchildabuseny.org
+[M06-9] NYS OMH/NYC DOHMH/ NYC 988 + 911 — emergency/crisis vs reporting distinction, documentation/confidentiality. Official OMH https://omh.ny.gov/ ; NYC DOHMH https://www.nyc.gov/site/988/page/home ; Official 911/988
+[M06-10] Long-Term Care Ombudsman + decisional capacity/supported decision-making — least-restrictive, guardianship court-only. Official NYSOFA/NY Connects https://aging.ny.gov/nystateofficefortheaging ; Nonprofit supported decision-making resources
+[M06-11] Children’s Bureau / OOH / ACL — concrete supports, poverty-informed prevention. Official acl.gov + OCFS prevention: https://ocfs.ny.gov/main/prevention/
+[M06-12] National Human Trafficking Hotline / U.S. DOJ / NY DCJS — trafficking indicators, labor/sex exploitation. Official humantraffickinghotline.org 1-888-373-7888 ; Official ojp.gov/trafficking
+[M06-13] NYS Elder Justice / Prevent Elder Abuse frameworks — cross-reference to M05. Nonprofit nyselderabuse.org + Official aging.ny.gov
+[M06-14] NYS Education/Workforce — workplace conduct/harassment distinctions vs neglect/exploitation (brief). Official labor.ny.gov
+[M06-15] NICS / Cross-reference publisher table — official vs nongov — same as M02-M05 table (nysenate.gov official law publisher, Cornell LII nongov mirror)
+[M06-16] Cross-reference law publishers — Official nysenate.gov https://www.nysenate.gov/legislation ; govinfo.gov federal; nongov Cornell LII https://www.law.cornell.edu/wex/table_new_york
+
+M06 V1 → V1.1 bounded correction 2026-10-23: Updated cross-references to corrected M05 DOH numbers — Nursing Home Complaint 1-888-201-4563 [M05-7a] vs Adult Care Facility Complaint 1-866-893-6772 [M05-7b] separate per official profiles.health.ny.gov (previously combined as centralized portal); §5 table, §8 steps, §9 help, Example 3, [M06-7] updated.
+Scheduled re-verification date: Oct 27 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York (EDT); scheduled re-verification marker prospective; M06 distinguishes neglect/exploitation/inappropriate conduct across settings, overlaps with M04/M05 mapped in §5 table, cross-references reporting instructions rather than duplicating — corrected to reflect M05 DOH separation. V1 preserved at evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt (45213B). V1.1 correction applied.
+---
+M06 V1 → V1.1 bounded correction 2026-10-23: Cross-references updated to reflect corrected M05 DOH separation — Nursing Home 1-888-201-4563 vs Adult Care 1-866-893-6772 separate per profiles.health.ny.gov (not one portal); §5 table, §8, §9, Example 3, [M06-7] updated. V1 preserved 45213B.
+End of M06 Chapter Draft V1.1 — Single citation system [M06-1]–[M06-16] with source classifications (official government [M06-1][M06-2][M06-5]–[M06-10][M06-16] Official nysenate.gov vs nongov Cornell LII vs nonprofit/prevent vs professional NASW; includes corrected [M05-7a]/[M05-7b] per M05 V1.1), knowledge checks 61-67 A-D, 68 two-option mapped to objectives. Cross-reference discipline: SCR/APS/DOH (nursing vs adult-care distinct)/Justice Center numbers remain in M04/M05 §6/§9, not duplicated — see M04 §6, M05 §6 B (two distinct DOH numbers). NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1.1 DRAFT · REVIEW PENDING — legal, comprehension, accessibility, runtime pending. No external records changed. Originals preserved. Exports available evidence/exports/.

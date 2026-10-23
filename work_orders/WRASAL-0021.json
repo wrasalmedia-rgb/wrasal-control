@@ -1,0 +1,131 @@
+{
+    "work_order_id": "WRASAL-0021",
+    "project": "WRASAL",
+    "record_authority": "WRASAL-0021",
+    "recorded_on": "2026-10-28",
+    "recorded_by": "Arena external execution worker",
+    "objective": "Bounded correction: M05 finding contradicted by official DOH guidance — nursing homes 1-888-201-4563 vs adult care facilities / assisted living 1-866-893-6772 listed separately per profiles.health.ny.gov; correct M05 lesson/resource/examples/assessments/verification addendum, update M06 cross-references and both export packages, preserve earlier addendum as superseded by contrary evidence, record correction leaving other claims open; then continue M07 Infection Control Fundamentals without M05/M06 restart.",
+    "success_condition": "M05 V1 44901B b925774 → V1.1 47900B 99911e at google_drive/M05-textbook-chapter-v1.txt bounded DOH correction 107 lines 24576B: §6 B split nursing 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] per profiles.health.ny.gov/nursing_home vs /adult_care, resource §9 split, Examples 2 (adult home 1-866-893-6772) / 3 (nursing 1-888-201-4563 with contrast), Recap split, Glossary DOH two hotlines, KC55 nursing vs adult-home distinct, References [M05-7a]/[M05-7b] with profiles URLs; V1 preserved 44901B + V1.1 preserved 47900B. Earlier addendum 4749B ea7dc8c2 preserved at evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt and marked SUPERSEDED in evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md; new correction evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md 4100B records contrary official evidence. M06 V1 45213B 2f36ea1c → V1.1 46780B 211e8a bounded cross-ref correction 67 lines 18238B: §5 table, §8 steps, §9 help, Example 3, [M06-7] now list nursing 1-888-201-4563 vs adult care 1-866-893-6772 separate. Exports evidence/exports/M05-V1.1/ (7 files: V1.1+V1+V1.1 preserved+diff+CORRECTION+superseded addendum copies+updated crosswalk M05-V1.1-objective-crosswalk.md) and evidence/exports/M06-V1.1/ (6 files: V1.1+V1+V1.1 preserved+diff+CORRECTION+updated crosswalk) updated; README reflects M05 SUPERSEDED addendum and correction. M07 V1 new 38107B e572ed at google_drive/M07-textbook-chapter-v1.txt with preserved identical, 8 Goals §§1-10, 5 Examples, KCs 71-78 (71-77 A-D,78 two-option), Refs [M07-1]–[M07-16] official CDC/NYSDOH/OSHA, outbreak DOH numbers same as corrected M05 but different purpose clarified. No Drive modify, no merge/deploy, other claims left open.",
+    "execution_status": "passed",
+    "implementation_result": "pass",
+    "verification_result": "pass",
+    "canonical_acceptance": "pending",
+    "references": {
+        "m05_v1_preserved": "evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt — 44901B md5 b925774ce780efbde60fef19ef4eae3a V1 original",
+        "m05_v1_1": "google_drive/M05-textbook-chapter-v1.txt — 47900B md5 99911ef63378e12c583641852833430c V1.1 DRAFT Scheduled re-verification Oct 26 2026 execution 2026-10-23 EDT — bounded DOH contacts corrected per profiles.health.ny.gov nursing 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] separate",
+        "m05_v1_1_preserved": "evidence/sources/M05-textbook-chapter-v1.1-preserved-2026-10-23.txt — 47900B md5 99911ef63378e12c583641852833430c",
+        "m05_diff": "evidence/M05-V1-to-V1.1-DOH-correction.diff — 107 lines 24576B M05 V1→V1.1 §6 B, §9, Examples 2-3, Recap, Glossary, KC55, References [M05-7a]/[M05-7b]",
+        "m05_correction": "evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md — 4100B — contrary official evidence: profiles.health.ny.gov lists nursing homes 1-888-201-4563 (profiles.health.ny.gov/nursing_home/) vs adult care 1-866-893-6772 (profiles.health.ny.gov/adult_care/) separately; DOH official publisher",
+        "m05_addendum_superseded": "evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md — now marked SUPERSEDED 2026-10-23 header — prior conclusion shared centralized portal incorrect — see CORRECTION; preserved V1 at evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt 4749B ea7dc8c2",
+        "m05_addendum_preserved": "evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt — 4749B md5 ea7dc8c22d6522d845ba31356837dcf9 V1 addendum before correction",
+        "m06_v1_preserved": "evidence/sources/M06-textbook-chapter-v1-V1-preserved-2026-10-26.txt — 45213B md5 2f36ea1ce645ed50e29358d8949e8a39 V1 original",
+        "m06_v1_1": "google_drive/M06-textbook-chapter-v1.txt — 46780B md5 211e8a428e5e2b9824e21552a6001669 V1.1 DRAFT Scheduled re-verification Oct 27 2026 execution 2026-10-23 EDT — cross-references corrected to reflect M05 DOH separation",
+        "m06_v1_1_preserved": "evidence/sources/M06-textbook-chapter-v1.1-preserved-2026-10-23.txt — 46780B md5 211e8a428e5e2b9824e21552a6001669",
+        "m06_diff": "evidence/M06-V1-to-V1.1-DOH-crossref-correction.diff — 67 lines 18238B M06 V1→V1.1 §5 table, §8, §9, Example3, [M06-7] nursing 1-888-201-4563 vs adult care 1-866-893-6772 separate",
+        "m07_v1": "google_drive/M07-textbook-chapter-v1.txt — 38107B md5 e572ed2582209ca7afbac0f8d91af4d5 V1 DRAFT Scheduled re-verification Oct 28 2026 execution 2026-10-23 EDT — Infection Control Fundamentals, 8 Goals §§1-10, 5 Examples, KCs 71-78 (71-77 A-D,78 two-option), Refs [M07-1]–[M07-16] official CDC/NYSDOH/OSHA, outbreak DOH numbers same as corrected M05 but different purpose",
+        "m07_v1_preserved": "evidence/sources/M07-textbook-chapter-v1-V1-preserved-2026-10-23.txt — 38107B md5 e572ed2582209ca7afbac0f8d91af4d5",
+        "m07_crosswalk": "evidence/exports/M07-V1/M07-V1-objective-crosswalk.md — 8 Goals → §§1-10, Examples 1-5, KCs 71-78; Standard vs Transmission-Based, vaccination, sharps, cleaning, outbreak notification with distinct DOH numbers clarified",
+        "exports_m05_v1_1": "evidence/exports/M05-V1.1/ — 7 files: M05 V1.1 manuscript + V1 preserved + V1.1 preserved + diff + CORRECTION + superseded addendum copies + M05-V1.1-objective-crosswalk.md (KC55 distinct)",
+        "exports_m06_v1_1": "evidence/exports/M06-V1.1/ — 6 files: M06 V1.1 manuscript + V1/V1.1 preserved + diff + CORRECTION + M06-V1.1-objective-crosswalk.md (propagation)",
+        "exports_m07_v1": "evidence/exports/M07-V1/ — manuscript + preserved + M07-V1-objective-crosswalk.md",
+        "exports_readme": "evidence/exports/README.md — updated with M05 V1→V1.1 superseded, M06 V1→V1.1 propagation, M07 V1; execution vs scheduled; other claims left open",
+        "prior_state": "M01 Review pending, M02 V1.2 reported, M03 V1.1, M04 V1, M05 V1 44901B with superseded shared-contact addendum 4749B (grouped nursing+adult homes under 1-888-201-4563), M06 V1 45213B with centralized portal cross-refs, M07-M11 not established, 1840 checks, findings open per M02/M04 actual passages",
+        "updated_state": "M01 Review pending, M02 V1.2 (M02/M04 actual passages still open), M03 V1.1, M04 V1, M05 V1.1 47900B corrected per official DOH profiles.health.ny.gov (nursing 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] separate) with superseded addendum preserved and CORRECTION record, M06 V1.1 46780B propagated, M07 V1 38107B new Infection Control Fundamentals, M08-M11 not established, other uninspected claims left open, 7/11 drafts reported, canonical pending",
+        "canonical_acceptance_record": null,
+        "pull_request": null,
+        "merge": null
+    },
+    "evidence": [
+        {
+            "id": "wrasal-0021-m05-doh-correction-bounded",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "Official DOH Profiles via profiles.health.ny.gov: nursing_home https://profiles.health.ny.gov/nursing_home/ vs adult_care https://profiles.health.ny.gov/adult_care/ — listing Nursing homes 1-888-201-4563 vs Adult care facilities / assisted living 1-866-893-6772 separately vs google_drive/M05-textbook-chapter-v1.txt V1 44901B b925774 → V1.1 47900B 99911e + evidence/M05-V1-to-V1.1-DOH-correction.diff 107 lines",
+            "observed_result": "Verified bounded correction separates previously combined DOH contacts: Lesson §6 B now has nursing homes 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] with profiles.health.ny.gov citations; resource §9 split; Examples 2 adult home →1-866-893-6772, Example 3 nursing home →1-888-201-4563 with do-not-interchange note; Recap split; Glossary DOH two hotlines; KC55 updated to nursing-home correct answer B with explicit adult-home 1-866-893-6772 distractor note; References split to [M05-7a] (nursing https://health.ny.gov/facilities/nursing/ + profiles.health.ny.gov/nursing_home/ 1-888-201-4563) vs [M05-7b] (adult care https://health.ny.gov/facilities/adult_care/ + profiles.health.ny.gov/adult_care/ 1-866-893-6772). Official DOH Profiles is official NY.gov publisher (NYSDOH). Diff 107 lines shows only DOH-related bounded edits.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-m05-addendum-superseded",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md 4749B ea7dc8c2 → superseded header + evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt 4749B + evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md 4100B",
+            "observed_result": "Verified earlier addendum preserved at evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt 4749B ea7dc8c2 and marked SUPERSEDED 2026-10-23 in current file with header '⚠️ SUPERSEDED ... See correction ... Official DOH Profiles ... lists Nursing homes 1-888-201-4563 vs Adult care 1-866-893-6772 separately. Preserved V1 ...' Current addendum text retained underneath for audit but superseded conclusion clearly flagged. Correction file records contrary official evidence (profiles.health.ny.gov distinct numbers), explains incorrect shared-central-intake inference, notes both files preserved, no Drive modify. Satisfies 'preserve earlier addendum, mark its conclusion superseded by contrary source evidence, and record the correction.'",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-m06-propagation-bounded",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M06-textbook-chapter-v1.txt V1 45213B 2f36ea1c → V1.1 46780B 211e8a + evidence/M06-V1-to-V1.1-DOH-crossref-correction.diff 67 lines + evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md",
+            "observed_result": "Verified M06 affected cross-references updated without restart: §5 overlap table licensed facility row now nursing 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] separate per corrected M05 (not one portal); §8 licensed facility steps now distinct numbers; §9 finding help now profiles.health.ny.gov/nursing_home/ vs /adult_care/ separate; Example 3 now both numbers; [M06-7] updated to separate numbers + correction reference. Diff 67 lines shows only cross-ref edits. Previous incorrect centralized portal language removed.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-m05-m06-exports-updated",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/exports/M05-V1.1/ 7 files 192K (V1.1 manuscript 47900B + V1 preserved 44901B + V1.1 preserved 47900B + diff 25K + CORRECTION 4.1K + superseded addendum preserved 4.7K + superseded addendum current 5.1K + crosswalk M05-V1.1-objective-crosswalk.md) + evidence/exports/M06-V1.1/ 6 files 172K (V1.1 + preserved V1/V1.1 + diff 18K + CORRECTION + crosswalk) + evidence/exports/README.md",
+            "observed_result": "Verified both export packages updated: M05-V1.1 contains V1.1 47900B 99911e + V1 44901B preservation + V1.1 preservation + diff 107 lines + CORRECTION 4.1K + superseded addendum preserved + superseded addendum current + crosswalk noting KC55 distinct; M06-V1.1 contains V1.1 46780B 211e8a + preserved + diff 67 lines + CORRECTION + crosswalk; README updated to list V1→V1.1 superseded 1-888-201-4563 vs 1-866-893-6772 per profiles.health.ny.gov, with both old M05-V1/M06-V1 retained for audit but marked superseded.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-m07-infection-control-v1",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M07-textbook-chapter-v1.txt V1 38107B e572ed 8 Goals §§1-10 + Examples 5 + KCs 71-78 + Refs [M07-1]–[M07-16] vs evidence/exports/M07-V1/M07-V1-objective-crosswalk.md",
+            "observed_result": "Verified M07 V1 new Infection Control Fundamentals 38107B e572ed: 8 Goals (spread routes, Standard Precautions every time/every person [M07-4][M07-5], Transmission-Based vs Standard, vaccination/documentation/exclusion vs neglect, sharps 3/4 rule [M07-6], cleaning dwell time [M07-10], outbreak/exposure notification with nursing 1-888-201-4563 vs adult care 1-866-893-6772 distinct same phones as corrected M05 but different purpose — outbreak vs abuse clarified, find help verify), §§1 why across settings, 2 spread routes, 3 Standard Precautions, 4 Transmission-Based, 5 vaccination/exclusion, 6 blood/sharps, 7 cleaning, 8 outbreak notification + confidentiality, 9 finding help (CDC/NYSDOH/NYC DOHMH/OSHA/OCFS/NYSED), 10 Examples 5 (childcare fever/vomit, save gloves, sharps overfill, norovirus contact, splash) + Recap + KCs 71-78 (71-77 A-D,78 two-option). References official CDC/OSHA/NYSDOH per source classifications. No M05/M06 restart — cross-referenced only (§9 outbreak note). Measured runtime pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-other-claims-left-open",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Handoff instruction 'Leave other uninspected reporting claims open' + prior findings M02/M04 actual passages vs table still uninspected 833848f",
+            "observed_result": "Other uninspected reporting claims left open per instruction: M02 V1.2 / M04 V1 emergency/crisis/statutory/internal distinction (actual passages vs table) remains reported internal verification only, not closed; M05 other routes (APS/Justice Center/Ombudsman/capacity) not re-verified; only DOH nursing vs adult-care number separation corrected per official contrary evidence to prevent propagation to M06.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-execution-vs-scheduled-preservation",
+            "type": "content_verification",
+            "attribution": "Arena external execution worker",
+            "source": "google_drive/M05 V1.1 header/footer V1.1 preserved note 44901B, google_drive/M06 V1.1 header/footer, google_drive/M07 V1 header/footer Scheduled Oct 28 2026 + preserved + diffs + M05 addendum preserved 4749B",
+            "observed_result": "Verified execution vs scheduled separation: M05 V1.1 scheduled Oct 26 execution 2026-10-23 EDT with bounded correction note and V1 preserved 44901B; M06 V1.1 scheduled Oct 27 execution 2026-10-23; M07 V1 scheduled Oct 28 execution 2026-10-23; all manuscripts note bounded correction and preservation; execution 2026-10-23 EDT prospective marker.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-preservation-no-drive-modify",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "evidence/sources/ M02 V1 39148B + V1.1 46866B + M03 V1 39609B + M04 V1 43164B + M05 V1 44901B + V1.1 47900B + M06 V1 45213B + V1.1 46780B + M07 V1 38107B + Drive folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi metadata preserved + addendum V1 + CORRECTION",
+            "observed_result": "No Drive originals modified — local manuscripts/preserved at evidence/sources/ + diffs/CORRECTION/addendum + exports; Drive folder originals retained (M01 docx/vid). No Drive API modify/trash/delete; no merge/deploy; exports local copies for inspector. 1840→ongoing checks control-record only.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-control-plane-scope",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "scripts/validate-control-plane.mjs PASS + work_orders status-vocabulary + WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+            "observed_result": "Checks remain record-validation only — not content accuracy/legal/comprehension/accessibility or canonical acceptance. M05 DOH correction based on official DOH Profiles evidence but still report-validation pending subject-matter legal verification. release_authorized false; measured runtime pending.",
+            "result": "pass"
+        },
+        {
+            "id": "wrasal-0021-state-transition",
+            "type": "governance_attestation",
+            "attribution": "Arena external execution worker",
+            "source": "Prior state M01 Review pending, M02 V1.2/M04 V1 findings open (actual passages), M03 V1.1, M05 V1 44901B with superseded shared-contact addendum, M06 V1 45213B centralized portal, M07 not established + handoff correction required vs adult care vs nursing",
+            "observed_result": "State transition: M01 Review pending. M02 V1.2/M04 V1 findings open (actual passages vs table) — unchanged, left open. M05 V1→V1.1 47900B 99911e corrected per official DOH profiles.health.ny.gov nursing 1-888-201-4563 [M05-7a] vs adult care 1-866-893-6772 [M05-7b] separate; earlier addendum preserved and marked SUPERSEDED by contrary evidence via CORRECTION; M06 V1→V1.1 46780B propagated; M07 V1 new 38107B Infection Control Fundamentals; M08-M11 not established, handbook outstanding, 7/11 drafts reported, canonical pending, no M05/M06 restart needed.",
+            "result": "pass"
+        }
+    ],
+    "canonical_state_impact": {
+        "repository_local_files": "evidence/M05-nursing-home-adult-home-contact-CORRECTION-2026-10-23.md 4100B CORRECTION + evidence/M05-nursing-home-adult-home-contact-verification-2026-10-26.md marked SUPERSEDED header (original preserved at evidence/sources/M05-addendum-V1-preserved-2026-10-26.txt 4749B ea7dc8c2) + google_drive/M05-textbook-chapter-v1.txt 44901B→47900B 99911e (V1.1 bounded correction) + preserved V1.1 47900B + diff M05 107 lines 24576B + google_drive/M06-textbook-chapter-v1.txt 45213B→46780B 211e8a (V1.1 propagation) + preserved V1.1 46780B + diff M06 67 lines 18238B + google_drive/M07-textbook-chapter-v1.txt V1 new 38107B e572ed + preserved + exports M05-V1.1 7 files + M06-V1.1 6 files + M07-V1 3 files + updated README with correction",
+        "drive_originals": "unchanged — local drafts/exports only, no Drive API modify_content/trash/delete; folder 10-9f65DyZfdU37TEf9-ObAnU08BIlnxi preserved",
+        "wrasal_runtime_world_state": "none",
+        "project_semantics": "unchanged",
+        "status_vocabulary": "unchanged",
+        "pull_request": "not opened",
+        "merge": "not performed",
+        "canonical_acceptance_promotion": "not performed"
+    },
+    "next_candidate": "WRASAL-0022 — Independent inspection of corrected M05 V1.1 (nursing 1-888-201-4563 vs adult care 1-866-893-6772 per profiles.health.ny.gov) + propagated M06 V1.1 + M07 V1 infection control (Standard vs Transmission-Based, sharps 3/4, outbreak DOH purpose distinction); then M08-M11 toward 11 drafts + consolidated handbook + review registers. Keep M02/M04 actual-passages finding open."
+}

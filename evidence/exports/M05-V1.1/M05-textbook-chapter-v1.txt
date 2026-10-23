@@ -1,0 +1,309 @@
+# M05 — Textbook Chapter V1 — Elder Abuse Recognition, Prevention and Reporting — DRAFT (fresh research; not an analogy to child abuse)
+
+M05 — Elder Abuse Recognition, Prevention and Reporting
+V1.1 DRAFT — Sources [M05-1]–[M05-16] with [M05-7a]/[M05-7b] split — Classifications Labeled — Not approved for public release — Scheduled re-verification date Oct 26 2026 (execution: 2026-10-23 America/New_York) — bounded DOH correction 2026-10-23; V1 preserved evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt — see correction record
+M05 — Elder Abuse Recognition, Prevention and Reporting
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M05-1]–[M05-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1.1 — Bounded correction 2026-10-23 to V1 44901B b925774: DOH contacts clarified per official profiles.health.ny.gov guidance — Nursing Home Complaint 1-888-201-4563 [M05-7a] vs Adult Care Facility Complaint 1-866-893-6772 [M05-7b] are separate (previously combined as [M05-7]); lesson §6 B, resource §9, Examples 2-3, Recap, Glossary, KC55, and References updated with [M05-7a]/[M05-7b] and profiles.health.ny.gov sources; V1 preserved 44901B. Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — Federal Older Americans Act / Elder Justice Act for comparison.
+**Scheduled re-verification date:** October 26, 2026 — verify all agency phone numbers, websites, laws, regulations, and agency guidance before publication — laws and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); Oct 26 is scheduled re-verification marker — see evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md.
+**Disclaimer:** General information only. Not legal advice. Not clinical advice. Your agency's policies and your supervisor's guidance control day-to-day practice. When in danger, prioritize immediate safety — call 911 and follow your agency emergency plan. When in doubt, ask a supervisor or agency counsel before acting. Older adults with capacity have the right to make their own decisions, including to accept or decline services — respect autonomy while ensuring safety.
+---
+
+Opening Situation
+Jamal, a community health worker at the Bronx wellness center, works with older neighbors who live at home and with families. One week, three moments happen:
+
+First, 78-year-old Mr. Alvarez, who lives alone and has diabetes and mild memory changes, comes in with his nephew Luis. Mr. Alvarez has a bruise on his forearm and says, “I fell getting the mail — I’m fine.” The home health aide who visits twice weekly previously told Jamal privately, “He seems more confused, and there’s often no food in the kitchen. I offered help, but he said his nephew handles money and he doesn’t want trouble.” Jamal notices Mr. Alvarez is quieter, wears the same clothes as last visit, and Luis answers all money questions for him.
+
+Second, while visiting a partner nursing home for a health fair, Jamal hears a certified nursing assistant whisper, “Mrs. Chen was rough-handled during a transfer and now has a skin tear — we should report, but let’s wait for the evening supervisor.” Jamal knows the nursing home is a licensed facility with its own reporting rules.
+
+Third, 82-year-old Ms. Washington, a former client now in an adult home, tells Jamal on the phone, “My roommate took my debit card ‘to help pay bills’ and won’t give it back. I told the front desk, nothing happened.” She sounds worried about retaliation and asks Jamal not to tell her family.
+
+Jamal wants to protect older adults from harm, respect their right to make decisions, and follow the right reporting steps for each **setting** — and he worries about assuming, overstepping, or reporting to the wrong place. This chapter looks at: What might suggest elder abuse, neglect, or exploitation — and what is not your job to diagnose? What settings matter? Where do you refer or report in New York — and why community elder-abuse rules are not the same as child-abuse (M02/M04) rules?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Recognize possible signs that may suggest elder abuse, neglect, or financial exploitation — and explain why recognition is not diagnosis or proof.
+Describe common risk and protective factors for older adults in everyday language, including social isolation, caregiver stress, and cognitive changes.
+Explain prevention in your role: supporting autonomy, safe care planning, reducing isolation, and caregiver support — without making decisions for the adult.
+Explain why elder-abuse reporting routes are not the same as child-abuse reporting — and describe the role of consent and capacity for older adults.
+Describe where to refer or report for different settings: community-dwelling older adult (APS via local DSS), nursing home/adult care facility (DOH/Justice Center where applicable), mental-health/substance-use/developmental-disability facilities (Justice Center/OMH/OASAS/OPWDD), and when to contact the Long-Term Care Ombudsman.
+List steps for immediate safety, documentation, and respectful notification that preserves the older adult’s autonomy.
+Explain what happens after an APS referral or facility report and your ongoing supportive role.
+Find official help in New York and understand where to check current elder-abuse reporting rules before acting — researching afresh, not by analogy.
+
+1. Why Recognition, Prevention, and Reporting Matter for Older Adults
+Older adults deserve safety and dignity. When concerning patterns are noticed early and supportive options are offered — home-delivered meals, benefits help, caregiver respite, trusted visitors, benefits counseling — harm can be reduced and independence can be supported.
+
+Elder abuse takes a toll on health, finances, and trust. Yet older adults, unlike children, generally have the **right to make their own decisions** about living arrangements, money, and services if they have capacity [M05-1][M05-5]. Reporting is therefore more complex: some reports are referrals for voluntary assessment and support, not automatic investigations without consent.
+
+Important difference carried forward as contrast: Child-abuse reporting in New York uses a single Statewide Central Register (SCR) with statutory listed reporters who must immediately report without prior approval [M02/M04][M04-5]. **Elder-abuse routes are different and depend on setting** — do not apply child SCR/413 rules to elder situations by analogy. This chapter teaches elder routes afresh.
+
+2. What Elder Abuse, Neglect, and Exploitation Mean — Plain Language, Without Diagnosis
+New York uses several terms. Everyday work starts with recognizing patterns that may suggest an older adult needs help, not deciding legal outcomes.
+
+Common forms in plain language [M05-1][M05-2]:
+- Physical: injury where explanation does not fit pattern (frequent bruises, burns, fractures, especially with changing explanations; rough handling during care; medication withheld) [M05-1].
+- Emotional/psychological: threats, intimidation, isolation from family/friends, belittling that causes fear or withdrawal.
+- Neglect — including self-neglect: consistently inadequate food, clothing, shelter, medical care, medications, hygiene, or supervision for needs; unsafe/unsanitary conditions; failure of caregiver to provide needed care [M05-1][M05-2]. Self-neglect is an adult’s own inability to meet basic needs due to impairment [M05-5].
+- Financial exploitation: misuse of money/property — missing funds, sudden changes in banking or legal documents, new “helper” controlling finances, unpaid bills despite adequate income, pressure to sign documents [M05-2][M05-6].
+- Sexual: non-consensual sexual contact.
+- Abandonment: desertion of older adult by responsible caregiver.
+
+What is not your job: You do not diagnose abuse, determine capacity, or decide if it legally counts as abuse [M05-1][M05-5]. Your job is to notice patterns, support the older adult calmly, ensure immediate safety if needed, and **refer or report to the route that matches the setting** — let APS, DOH, Justice Center, or law enforcement assess.
+
+Signs are patterns, not single proof. One fall may be an accident. Combined pattern — Mr. Alvarez’s bruise + different explanations + food insecurity + nephew controlling money + withdrawn, same clothes — may together suggest need for referral, while respecting that Mr. Alvarez may choose to decline some help if he has capacity.
+
+3. Risk and Protective Factors — Why Context Matters
+Risk factors increase vulnerability; protective factors buffer stress. Knowing both helps you offer help without judgment — as with Mr. Alvarez’s possible self-neglect plus family involvement.
+
+Common risk factors in everyday language [M05-2][M05-3]:
+- Social isolation — lives alone, few visitors, limited transportation.
+- Cognitive impairment or dementia, physical frailty, multiple chronic conditions, depression.
+- Dependence on others for daily care, money management, or housing.
+- Caregiver stress, substance use, mental-health challenges, financial dependence on older adult.
+- Financial strain, unstable housing, food insecurity.
+- History of family conflict or domestic violence.
+
+Protective factors [M05-3][M05-6]:
+- Strong social connections — family, friends, faith, neighbor checks.
+- Person-centered care planning that honors preferences.
+- Caregiver support: respite, training, support groups, adult day services.
+- Concrete supports: home-delivered meals, benefits counseling, transportation, home modifications, money-management assistance.
+- Timely medical, behavioral health, and legal planning (advance directives, powers of attorney with safeguards).
+
+Your role: Reduce isolation (“Would a weekly visitor help?”), connect to concrete supports, support caregivers — not to make financial or living decisions for the adult.
+
+4. Prevention in Your Role — Autonomy, Safe Care Planning, Reducing Isolation
+Prevention centers autonomy. Support the older adult’s stated preferences and build safety together.
+
+Supporting autonomy and safe care planning:
+- Ask what the older adult wants: “What would help you feel safer at home? Who do you trust to help with bills or groceries?” Document stated preferences; do not decide for them if they have capacity [M05-5].
+- For Mr. Alvarez: Offer options without taking over — home-delivered meals, benefits review, trusted money-management program, medication organizer, more frequent aide visits — and ask permission before calling family or APS. If he declines, respect choice while reiterating options and safety plan.
+- For self-neglect: Offer assessment, not judgment — “I noticed there’s often no food, and you’ve missed medications — what would help?” Coordinate voluntary services via Office for the Aging/APS referral where appropriate [M05-1][M05-4].
+
+Reducing isolation and caregiver stress:
+- Encourage regular friendly visitor, senior center, faith group, family care conference where adult consents.
+- For family caregivers (like Luis or aides): normalize stress, offer respite, adult day, caregiver support group, training on safe transfers/medication management [M05-3].
+
+Stay within role: Do not manage money, hold legal documents, or provide personal care outside job; do not promise to keep exploitation secret — explain limits kindly early.
+
+If you sense judgment (“He should just leave his nephew”), pause — ask what supports would reduce dependence and increase choice.
+
+5. Why Elder-Abuse Routes Are Not Child-Abuse Routes — Consent, Capacity, and Setting
+This is the foundation — researched afresh, not by analogy:
+
+- **No universal SCR equivalent for community elder abuse.** Child abuse uses single Statewide Central Register with statutory list SSL §413 who must immediately report without prior approval then notify after [M02/M04]. Community elder abuse for adults 18+ in New York generally does **not** have that same statutory list imposing immediate report without prior approval via SSL 413. Instead, community concerns for impaired adults are typically referred to **Adult Protective Services (APS) via the local county Department of Social Services** under Social Services Law Article 9-B §473 — which provides voluntary assessment and services for adults with impairments who are unable to meet essential needs [M05-1][M05-5]. Reporting to APS in the community is **generally voluntary** (anyone may refer), not a statutory mandated-reporter duty like child SCR for most community workers [M05-1]. APS often requires the adult’s consent to services; if the adult has capacity and refuses, APS response is limited, unlike child protective where consent not required [M05-5].
+- **Capacity and consent matter for elders.** Unlike children, adults are presumed to have capacity to make decisions unless formally determined otherwise; APS seeks consent [M05-5]. Your role: explain options, honor stated choices, ensure safety, document — do not coerce.
+- **Setting determines mandated facility routes.** In **licensed facilities and state-operated programs**, different mandatory reporting applies: Nursing homes/adult homes → report to **NY Department of Health (DOH)** and, where applicable, **Justice Center for the Protection of People with Special Needs** for individuals with disabilities in NYS-operated/licensed facilities under their jurisdiction [M05-7][M05-8]; community mental health / substance use / developmental disability programs → report to **Justice Center / OMH / OASAS / OPWDD** per facility rules [M05-7][M05-8] — facility staff often have agency-specific mandatory reporting duties, distinct from child SCR 413. Check facility policy — mandatory reporters are defined by that setting, not by child law.
+- **Law enforcement vs APS:** APS is social-service assessment, not law enforcement; if crime is suspected (theft, assault, abandonment) or danger immediate, consider **law enforcement (911)** in addition to APS/facility report per agency plan [M05-4].
+- **Do not analogize:** Do not apply child SCR 1-800 numbers, Call I.D. concept, LDSS-2221A 48-hour rule, or §413(1)(c) prior-approval prohibition to elder APS referrals. APS intake, consent, and service model are different. Where facility mandatory reporting exists, follow that facility’s supervisor-notification rule — but as defined for that facility, not as transferred child rule.
+
+What Jamal’s coworker got wrong if analogized: “Don’t call SCR — wait for Friday like child case” mixes routes. Correct: For Mr. Alvarez (community), consider APS referral via local DSS with his input, respecting autonomy; no SCR exists for this adult. For Mrs. Chen in nursing home, facility reporter follows nursing home mandatory report to DOH (+ Justice Center if disability jurisdiction) per facility policy — not child SCR — and should not delay for evening supervisor if immediate care need exists.
+
+6. Where to Refer or Report in New York — By Setting (Everyday Steps)
+
+**A) Community-dwelling older adult (adults 18+ with impairment, including Mr. Alvarez) — APS via local DSS [M05-1][M05-4]:**
+- Find APS: contact county Department of Social Services — APS unit; statewide navigation via **NY State Office for the Aging (NYSOFA) / NY Connects 1-800-342-9871** or county DSS directory [M05-4].
+- You may call APS to discuss concern and make referral; provide what you observed (bruise, statements in own words, food insecurity, money control, confusion) — not diagnosis [M05-1].
+- Where possible, involve the older adult: ask permission to refer, explain APS is voluntary help (assessment, benefits, meals, home care, money-management options) — adults with capacity may decline [M05-5].
+- After referral, document facts (date/time/observable/quotes/who notified) [M05-9]; follow confidentiality per HIPAA/agency rules — share minimum necessary.
+
+**B) Nursing home / adult care facility residents — licensed facility routes with distinct DOH contacts per official DOH guidance [M05-2][M05-7a][M05-7b]:**
+- Nursing homes (e.g., Mrs. Chen rough handling/skin tear): Facility staff with mandated duties must report per facility policy — to **NYS DOH Nursing Home Complaint Hotline 1-888-201-4563** for nursing homes [M05-7a]; document and preserve evidence; ensure care need addressed immediately. [Source: official DOH Nursing Home Profile via profiles.health.ny.gov — listed separately from adult care.]
+- Adult care facilities / assisted living, including adult homes (e.g., Ms. Washington): For adult homes / assisted living, report per facility policy — to **NYS DOH Adult Care Facility Complaint Hotline 1-866-893-6772** for adult care facilities [M05-7b]; document and preserve evidence. [Source: official DOH Adult Care profile via profiles.health.ny.gov — 1-866-893-6772 listed separately from nursing-home hotline.]
+- If resident has qualifying disability in a Justice Center jurisdiction (e.g., certain ICFs, state-operated homes), also report to **Justice Center 1-855-373-2122** or via facility Justice Center protocol [M05-8]; Check facility — DOH (nursing vs adult-care number) vs Justice Center vs both depends on licensure and setting.
+- Do not wait for next shift supervisor to decide; follow facility urgent reporting timeframe (often immediate oral + written within 24h per policy) [M05-7a][M05-7b].
+
+**C) Mental-health / substance-use / developmental-disability licensed program (OMH/OASAS/OPWDD residential) [M05-7][M05-8]:**
+- Staff report via **Justice Center** where jurisdiction applies, otherwise via agency-specific incident reporting (OMH, OASAS, OPWDD incident management). Ask supervisor for “Are we a Justice Center reportable program? What is our incident number?” Provide observable + reporter role [M05-7][M05-8].
+
+**D) Immediate danger or crime regardless of setting (e.g., Ms. Washington debit card theft, assault, abandonment) [M05-4][M05-6]:**
+- Ensure immediate safety, stay if safe, **call 911 if medical emergency, crime in progress, or imminent danger**; financial exploitation with ongoing access may also need law enforcement report; APS/facility report still needed separately for safeguarding/advocacy — 911 does not replace APS/facility report and APS does not replace 911.
+- For financial exploitation in community: also consider APS referral plus bank/financial institution fraud unit and law enforcement; offer Office for the Aging HIICAP/benefits counseling, legal services [M05-6].
+
+**E) Long-Term Care Ombudsman — resident advocate regardless of reporter [M05-10]:**
+- For nursing home/adult home concerns, you or resident may also contact **Long-Term Care Ombudsman** via NYSOFA/NY Connects — advocate who can visit, mediate, inform about rights [M05-10].
+
+After refer/report: notify person in charge per **facility or APS-contact protocol** (community APS is voluntary referral, not statutory “notify after” like child 413(1)(b) — follow your agency handbook for who to tell after referral) [M05-1]; verify referral received (APS reference number where given), not Call I.D. SCR concept.
+
+Cultural humility: Use older adult’s stated language/names correctly; do not add opinions about age, culture, or disability as cause. Work with interpreter if needed [M05-9].
+
+7. Immediate Safety — Ensuring Protection Without Diagnosing
+If older adult may be in immediate danger, prioritize safety while respecting autonomy:
+
+- Stay with adult if safe and within role; do not confront suspected abuser in risky way.
+- If danger immediate (e.g., assault now, no heat/meds, fall with injury, exploitation with ongoing access) or supervisor cannot be reached promptly, **do not delay emergency response** — ensure immediate safety (call 911 for medical/law-enforcement, follow agency emergency plan), then make APS/facility referral without delay and contact supervisor ASAP [M05-4][M05-9] (same emergency exception principle as M02/M04, applied here to elder routes).
+- For Ms. Washington debit card taken, fear retaliation: Ensure safety, offer private conversation, ask permission to help report to facility administration + law enforcement/APS as appropriate, explain retaliation protections via Ombudsman/Justice Center advocacy [M05-7][M05-10]; do not promise secrecy if safety/facility duty requires report — explain limits.
+- For self-neglect: If Mr. Alvarez refuses APS, respect autonomy if he has capacity, offer safety planning (who to call, medical follow-up, food options), coordinate with willing family where adult consents, re-offer later [M05-5].
+
+You do not need to prove — APS, DOH, Justice Center, law enforcement assess.
+
+8. What Happens After an APS Referral or Facility Report — And Your Ongoing Role
+Referral triggers assessment/support, not automatic removal or arrest:
+
+- **APS (community):** APS worker contacts adult (often with consent), assesses safety, eligibility under SSL Article 9-B §473 (adult with physical/mental impairment unable to protect essential needs), offers voluntary services — home care, meals, benefits, money-management, housing, guardianship referral if lacks capacity and at risk [M05-1][M05-5]. If adult with capacity refuses, APS may close with re-offer. No court removal like child protective without legal process.
+- **Facility DOH/Justice Center:** Facility investigates, ensures care, reports to survey/health, may involve law enforcement, may result in plan of correction, staffing changes, or Family/Criminal Court [M05-7][M05-8].
+- You may be contacted for additional facts — share observable, not opinions, within confidentiality [M05-9].
+
+Your ongoing role:
+- Continue supportive relationship unless agency directs otherwise; avoid telling alleged person “I reported you” in way that endangers older adult — follow supervisor/agency guidance.
+- Keep documenting offers, referrals, adult’s stated choices, follow-up services.
+- Reflect with supervisor: What signs did you notice? What supports helped? What prevention for next older neighbor?
+
+9. Finding Help — Jurisdiction, Where to Check Official Rules Before Acting (fresh, not analogy)
+Rules depend on **setting** — community vs nursing home vs adult home vs OMH/OASAS/OPWDD facility vs hospital — and whether you are facility-mandated reporter per that program. Check official sources + agency handbook before acting.
+
+New York — where to start (official government unless noted):
+**APS via Local DSS — adults 18+ with impairment unable to meet essential needs [M05-1][M05-4]:** County DSS APS unit; statewide via **NY Connects / NYSOFA 1-800-342-9871** https://aging.ny.gov/nystateofficefortheaging ; find APS https://ocfs.ny.gov/main/aps/ (community APS directory via OCFS/DSS)
+**NYS DOH — Nursing Home complaints [M05-7a]:** 1-888-201-4563 https://health.ny.gov/facilities/nursing/ — https://profiles.health.ny.gov/nursing_home/ • **NYS DOH — Adult Care Facilities / assisted living including adult homes [M05-7b]:** 1-866-893-6772 https://health.ny.gov/facilities/adult_care/ — https://profiles.health.ny.gov/adult_care/ (official DOH lists nursing homes and adult care facilities separately; do not use nursing-home hotline for adult homes)
+**Justice Center for the Protection of People with Special Needs — state-facility abuse [M05-8]:** 1-855-373-2122 https://justicecenter.ny.gov/ (report abuse/neglect of individuals with disabilities/special needs in state-licensed/operated facilities)
+**OMH / OASAS / OPWDD — facility incident reporting where Justice Center not exclusive [M05-8]:** https://omh.ny.gov/omhweb/policy/ ; https://oasas.ny.gov/ ; https://opwdd.ny.gov/
+**Long-Term Care Ombudsman [M05-10]:** via NYSOFA/NY Connects — advocate for residents
+**NYC Adult Protective Services (NYC HRA APS) [M05-1]:** https://www.nyc.gov/site/hra/help/adult-protective-services.page — refers to NYC local DSS APS
+**NYC DOHMH / DFSS — aging services [M05-4]:** https://www.nyc.gov/aging
+Federal for comparison: **ACL Eldercare Locator 1-800-677-1116 / eldercare.acl.gov** [M05-4]; **Elder Justice Act / ACL** https://acl.gov/
+Review date: Oct 26 2026 — verify all contacts, websites, laws. Laws, regulations, agency policies change.
+
+Your agency:
+Ask: “What is our setting — community, nursing home, adult home, OMH/OASAS/OPWDD program? Are we Justice Center reportable? What is APS referral number for our county? What is DOH complaint hotline? Must we also notify facility supervisor? What is emergency plan if danger immediate/supervisor unavailable? Who is privacy officer?”
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Recognizing without diagnosing (Mr. Alvarez). Jamal notices bruise, Mr. Alvarez says “fell getting mail” (own words), aide reports food insecurity + confusion, nephew answers money questions, same clothes, withdrawn. Jamal does not diagnose abuse or capacity. Instead: stay calm, reassure, stay with adult if safe, note pattern (injury + inconsistent context + neglect signs + financial control + behavioral change), ask permission to help: “I’m concerned — would it help if we talked to APS or Office for the Aging about meals and benefits together? Would you like me to call your aide supervisor about food options?” Document observable quotes, refer as appropriate to setting: community-dwelling impaired older adult → APS via local DSS/NY Connects with adult’s input where possible [M05-1][M05-4]; if nephew exploitation suspected, APS + law enforcement discussion as adult consents; let APS assess capacity.
+
+Example 2 — Prevention help for financial exploitation concern in an adult home (Ms. Washington). Ms. Washington (adult-home resident) says roommate took debit card to “help pay bills” won’t return, fear retaliation, asked front desk no result. Prevention/support: thank for telling, ensure safety/private talk, explain you cannot keep exploitation secret if facility duty requires report, ask what she wants (“Would you like help reporting to facility administration and Ombudsman? Would you like APS or police for community option? May I contact a trusted family member you name?”) Offer concrete supports — safe storage for valuables, benefits counseling, legal services, Ombudsman advocacy [M05-6][M05-10]; document offer; do not decide for her if capacity, but escalate facility neglect (front desk inaction) per facility reporting to DOH adult-care route — **Adult Care Facility Complaint 1-866-893-6772 [M05-7b]** (not the nursing-home 1-888-201-4563) where required [M05-7b].
+
+Example 3 — Setting determines reporting route (contrast with child SCR analogy). Same concern — “rough handling during transfer” — but different settings, different routes (fresh research, not analogy): Maya the social worker at youth program who suspected child neglect called SCR with Call I.D. [M02/M04]. Jamal at **nursing home** with Mrs. Chen skin tear from rough handling does **not** call child SCR — he follows nursing-home route: ensure care need addressed, report to **DOH Nursing Home Complaint 1-888-201-4563 [M05-7a]** per facility policy, and if disability jurisdiction also Justice Center 1-855-373-2122 [M05-8]; Long-Term Care Ombudsman can also be offered. For contrast, Ms. Washington in an **adult home** would use the **distinct Adult Care Facility Complaint 1-866-893-6772 [M05-7b]** — do not interchange nursing-home vs adult-care numbers (see profiles.health.ny.gov). Same urgency, different statute/official publisher: nysenate.gov SSL §413 for children vs SSL Art 9-B §473/DOH (nursing vs adult-care separate)/Justice Center for adults/older adults — do not transpose numbers, thresholds, or Call I.D. concepts.
+
+Example 4 — Supervisor unavailable and danger immediate (elder community). Evening, aide calls Jamal: Mr. Alvarez is alone, confused, no heat, front door unlocked, nephew away. Regular supervisor at training, on-call not answering after two tries. Do not wait for Friday like coworkers suggested for child case. Ensure immediate safety — check if safe, call 911 if medical/hypothermia risk, follow agency emergency plan, then refer to APS via local DSS (even if elder may later decline — APS can still assess immediate risk), and document attempts/911/APS referral [M05-4][M05-9]. Contact supervisor ASAP after. “Contact supervisor” means notify after, not gate before — same emergency exception as M02/M04.
+
+Example 5 — After referral — ongoing role. After Jamal’s APS referral for Mr. Alvarez (reference number obtained where given, supervisor notified after per agency community protocol), APS visits, offers meals/home care/benefits review; Mr. Alvarez accepts meals but declines money-management help, which respected due to capacity. Jamal continues health worker support, documents offers, re-offers later, reflects with supervisor on signs recognized and supports for next neighbor. For Mrs. Chen, DOH complaint triggers facility review and care correction; Jamal notes advocacy via Ombudsman [M05-10].
+
+Chapter Recap — Scannable
+Recognize signs: patterns of physical injury with explanations that don’t fit, neglect/self-neglect of food/meds/shelter/hygiene, emotional, financial exploitation, sexual, abandonment — recognition not diagnosis/proof [M05-1][M05-2].
+Risk/protective: isolation, cognitive frailty, dependence, caregiver stress, financial strain raise risk; connections, person-centered planning, respite, concrete supports, legal planning protect [M05-2][M05-3].
+Prevention: support autonomy, ask what adult wants, safe care planning, reduce isolation, caregiver respite, stay within role [M05-3][M05-4].
+Not child analogy: Child SCR SSL §413 immediate without prior approval then notify after + verify filing [M02/M04] — **does not apply** to community elder APS; community APS is generally voluntary referral via local DSS under SSL Art 9-B §473, requires adult consent/capacity consideration, no SCR/Call I.D./LDSS-2221A analog [M05-1][M05-5].
+Where to refer/report by setting: Community (18+ impaired) → APS via local DSS / NY Connects 1-800-342-9871 [M05-1][M05-4]; **Nursing home → DOH Nursing Home Complaint 1-888-201-4563 [M05-7a] • Adult care facilities / assisted living including adult homes → DOH Adult Care Facility Complaint 1-866-893-6772 [M05-7b]** (separate per profiles.health.ny.gov; do not use one for the other); Justice Center 1-855-373-2122 where disability jurisdiction [M05-8]; OMH/OASAS/OPWDD program → Justice Center/incident protocol [M05-7a][M05-7b][M05-8]; Long-Term Care Ombudsman advocate [M05-10]; Immediate crime/danger → 911 in any setting + still make APS/facility referral [M05-4].
+Immediate safety: prioritize protection; if danger immediate/supervisor unavailable, ensure safety/call 911/988 per emergency plan without delay then refer/report + notify ASAP [M05-4][M05-9].
+After referral: APS voluntary assessment → services if consents; DOH/Justice Center investigates facility; you continue support per direction, document choices, reflect [M05-1][M05-5][M05-7].
+Find official rules at aging.ny.gov/NY Connects, health.ny.gov/nursing, justicecenter.ny.gov, omh.ny.gov, oasas.ny.gov, opwdd.ny.gov, nyc.gov/hra/aps, eldercare.acl.gov — verify before acting [M05-4][M05-7][M05-8].
+
+Knowledge Checks — Complete Questions With Objective Mapping (M05: 51–58; 51-57 A-D, 58 Two-Option Valid)
+
+**51. Recognizing vs diagnosing**
+Question: Mr. Alvarez, 78, diabetes, mild memory changes, lives alone; bruise forearm says “fell getting mail,” aide reports often no food + more confused, nephew handles money and answers for him, same clothes, withdrawn. What is your role?
+A) Diagnose elder abuse and declare nephew guilty.
+B) Ignore — one fall is always abuse.
+C) Recognize pattern that may suggest abuse/neglect/exploitation — do not diagnose/prove/capacity-determine, ensure immediate safety, refer/report via route matching setting (community APS via local DSS/NY Connects with adult’s input where possible) with observable quotes, let APS/DOH/Justice Center assess [M05-1][M05-5].
+D) Confront nephew aggressively.
+Correct Answer: C) Recognize pattern, ensure safety, route-matched referral with facts, no diagnosis [M05-1].
+Objective: Recognize possible signs without diagnosing/proving.
+
+**52. Risk and protective factors — everyday language**
+Question: Mr. Alvarez lives alone, mild cognitive changes, isolated, dependent on nephew for money. What helps without judgment?
+A) Shame him — he should manage better.
+B) Explain risk: isolation + cognitive frailty + dependence + lack of supports raise risk [M05-2]; ask what he wants; offer protective factors — friendly visitor, Office for Aging services, meals, benefits counseling, caregiver support, legal planning options [M05-3][M05-6]; assess referral need while supporting autonomy.
+C) Decide for him without asking.
+D) Do nothing.
+Correct Answer: B) Plain-language risk/protective + ask preference + concrete supports while respecting autonomy; assess threshold.
+Objective: Describe risk/protective factors.
+
+**53. Prevention — autonomy and safe care planning**
+Question: What is prevention in your role for older adults living at home?
+A) Take over finances without permission.
+B) Ask what adult wants (“What would help you feel safer at home?”), offer safe care planning options — home-delivered meals, medication organizer, more aide hours, money-management program, respite for caregiver — respect choice if capacity, document offer, stay within job [M05-3][M05-4][M05-5].
+C) Promise to keep exploitation secret even if facility duty requires report.
+D) Provide personal childcare outside policy.
+Correct Answer: B) Support autonomy, offer safe planning, respect capacity, stay in role.
+Objective: Explain prevention in your role.
+
+**54. Why elder routes are not child routes — consent/capacity**
+Question: Your coworker says “For elder abuse in the community, just call child SCR 1-800-635-1522 like child abuse — same statutory list, same prior-approval rule.” What is correct afresh?
+A) Follow that — SCR works for elders too.
+B) Community elder abuse routes are different: No universal SCR for community elders; child SSL §413 immediate without prior approval then notify after [M02/M04] does not transpose; community elder concerns for adults with impairment generally go to APS via local DSS under SSL Art 9-B §473 [M05-1][M05-5] — generally voluntary referral, requires adult consent/capacity consideration, no Call I.D./LDSS-2221A analog; consent/capacity matters for elders unlike children; consult setting-specific routes [M05-5].
+C) Only report if police tell you.
+D) Ignore elder abuse.
+Correct Answer: B) Not analogy — APS voluntary via DSS/NY Connects with capacity/consent, not child SCR/413.
+Objective: Explain why elder-abuse reporting not same as child-abuse and role of consent/capacity.
+
+**55. Where to refer/report by setting — community vs nursing-home vs adult-home facility (distinct DOH numbers)**
+Question: Mrs. Chen, nursing-home resident, skin tear after rough handling during transfer. What is correct setting-matched referral vs child SCR — and what is the distinct adult-home number to avoid interchanging?
+A) Call child SCR 1-800-635-1522 with Call I.D. — same as child.
+B) Follow facility mandatory route for **nursing home**: ensure care addressed, report to **DOH Nursing Home Complaint 1-888-201-4563 [M05-7a]** per facility policy; if disability jurisdiction also Justice Center 1-855-373-2122 [M05-8]; offer Ombudsman advocate [M05-10]; Do not delay for next-shift supervisor if urgent; For contrast, **adult care facilities / adult homes use distinct DOH Adult Care Facility Complaint 1-866-893-6772 [M05-7b] per profiles.health.ny.gov — do not interchange**; This is not child SCR — different official publishers (nysenate.gov child §413 vs health.ny.gov/justicecenter.ny.gov for elder/facility).
+C) Delay for evening supervisor to decide whether to report.
+D) Tell family first.
+Correct Answer: B) Nursing-home route DOH 1-888-201-4563 [M05-7a] (adult homes 1-866-893-6772 [M05-7b] distinct) / Justice Center where applicable / Ombudsman, not child SCR; timely per facility policy.
+Objective: Describe where to refer/report for different settings.
+
+**56. Immediate safety, documentation, respectful notification preserving autonomy**
+Question: After you have concern for Ms. Washington’s debit card exploitation and fear retaliation, what steps honor autonomy and duty?
+A) Promise “I won’t tell anyone” and do nothing.
+B) Ensure immediate safety/private talk, explain you cannot keep exploitation secret if facility duty requires, ask permission and offer reporting options — facility administration + Ombudsman + APS/law enforcement as appropriate, respect choice if capacity, document facts (date/time/quotes/observable/who notified/reference #) without opinions [M05-7][M05-9], follow confidentiality minimum necessary.
+C) Confront roommate aggressively alone.
+D) Post details on social media.
+Correct Answer: B) Safety + ask permission/offer options + setting-matched reporting + factual doc preserving autonomy.
+
+**57. Danger immediate or supervisor unavailable — emergency exception**
+Question: Evening, you learn Mr. Alvarez alone confused no heat door unlocked nephew away; supervisor at training, on-call not answering after two tries. What honors emergency guidance?
+A) Wait until supervisor reviews — must have permission even if danger immediate.
+B) If danger immediate or supervisor unavailable, do not delay emergency response — ensure immediate safety (check if safe, call 911 for medical/hypothermia risk per agency emergency plan), then refer to APS via local DSS/NY Connects even if elder may later decline, plus facility/law enforcement where setting requires, contact supervisor ASAP after and document attempts [M05-4][M05-9] — “contact supervisor” must not delay emergency (same principle as M02/M04).
+C) Handle alone never tell supervisor.
+D) Do nothing.
+Correct Answer: B) Immediate danger/unavailable → ensure safety/call 911 without waiting, then refer + notify ASAP — emergency exception to contact-supervisor routine.
+
+**58. After referral and finding help**
+Question: You made APS referral for Mr. Alvarez (reference # where given, supervisor notified per agency community protocol). What is ongoing role and where to verify?
+A) You decide outcome — APS acceptance means placement.
+B) APS worker contacts adult (if capacity, may decline services); you continue supportive relationship per direction, document ongoing offers, re-offer later, reflect with supervisor; facility reports go to DOH/Justice Center with possible plan of correction; verify at aging.ny.gov/NY Connects, ocfs.ny.gov/aps, health.ny.gov/nursing, justicecenter.ny.gov, eldercare.acl.gov, nyc.gov/hra/aps [M05-1][M05-4][M05-7][M05-8][M05-10] — Two-option valid (B vs A collapse).
+C) Assume you did wrong if adult declines.
+D) Ignore after referral.
+Correct Answer: B) Ongoing support per direction + reflect + verify at official aging/APS/DOH/Justice Center sites. Two-option valid.
+
+Glossary — Plain Language
+**APS (Adult Protective Services):** Local DSS program under SSL Art 9-B §473 that assesses impaired adults 18+ unable to meet essential needs and offers voluntary services [M05-1]. Not SCR.
+**Capacity/consent:** Adult presumed able to make decisions unless formally determined otherwise; APS seeks consent for services [M05-5].
+**DOH:** NY Department of Health — licenses nursing homes and adult care facilities; takes complaints via **separate hotlines: Nursing Home Complaint 1-888-201-4563 [M05-7a] vs Adult Care Facility Complaint 1-866-893-6772 [M05-7b]** — see profiles.health.ny.gov.
+**Elder abuse:** Harm to older adult — physical, emotional, neglect/self-neglect, financial exploitation, sexual, abandonment [M05-1][M05-2].
+**Exploitation:** Misuse of older adult’s money/property [M05-2][M05-6].
+**Justice Center:** NY Justice Center for Protection of People with Special Needs — reports abuse/neglect of people with disabilities in state-licensed programs 1-855-373-2122 [M05-8].
+**Long-Term Care Ombudsman:** Advocate for nursing home/adult home residents via NYSOFA/NY Connects [M05-10].
+**NYSenate.gov:** Official NYS Legislature publisher for SSL — nysenate.gov/legislation — use for law text; Cornell LII unofficial reference [M05-16].
+**Ombudsman ≠ APS:** Advocate vs protective services — distinct pathways.
+**Self-neglect:** Adult’s own inability to meet basic needs due to impairment [M05-5].
+**Statutory vs APS voluntary:** Child SCR statutory [M02/M04] vs community elder APS voluntary referral — not interchangeable [M05-5].
+
+Reviewer Notes — Jargon Outside Learner Text
+APS eligibility: SSL Art 9-B §473 — adult 18+ with physical/mental impairment unable to manage essential needs, no willing caregiver — voluntary services; differs from child SCR threshold reasonable cause [M05-1].
+Capacity presumption: Adults have right to refuse unless lack capacity determined via legal/medical process — honor autonomy while ensuring safety offer [M05-5].
+Facility jurisdiction: DOH for nursing/adult homes; Justice Center for state-operated/licensed disability/mental-health facilities — check licensure; some programs report to OMH/OASAS/OPWDD incident system where Justice Center not exclusive [M05-8].
+Mandatory vs voluntary: Facility staff often have mandatory facility-reporting duty (DOH/Justice Center) per regulation/policy — distinct from community voluntary APS referral — do not blend with child 413 list [M05-7].
+Financial exploitation: APS + law enforcement + bank; consider Guardianship only through court if lacks capacity [M05-6].
+Elder Justice Act: Federal coordination — not NYS APS [M05-4].
+
+References — Single Consistent Numbered System [M05-1]–[M05-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M05-1] NYS OCFS / Office for the Aging — Adult Protective Services (APS) — adults 18+ with impairment unable to meet essential needs, voluntary assessment/services under SSL Art 9-B §473. Official OCFS.gov: https://ocfs.ny.gov/main/aps/ ; Official Aging: https://aging.ny.gov/nystateofficefortheaging
+[M05-2] NYS OCFS / Prevent Elder Abuse — Recognizing elder abuse/neglect/exploitation patterns. Official OCFS: https://ocfs.ny.gov/main/prevention/ ; Nonprofit reference: https://www.nyselderabuse.org/ (NYCEAC)
+[M05-3] NYSED / NYS Office for the Aging — Risk/protective factors, mandated reporter training context for elder programs. Official NYSED: https://www.nysed.gov/ ; Official NYSOFA: https://aging.ny.gov/
+[M05-4] NY Connects / NYSOFA / ACL Eldercare Locator — Finding help statewide, APS via local DSS, federal OAA/EJA. Official NYSOFA: https://aging.ny.gov/nystateofficefortheaging ; Official ACL Eldercare Locator: https://eldercare.acl.gov/ (1-800-677-1116)
+[M05-5] Social Services Law Article 9-B §473 + SSL §413 contrast — APS vs SCR — Community APS voluntary with capacity/consent, child SCR statutory mandatory without consent. Official nysenate.gov Official publisher: https://www.nysenate.gov/legislation/laws/SOS/473 ; Contrast https://www.nysenate.gov/legislation/laws/SOS/413 (child, not analogy)
+[M05-6] OCFS / NYC HRA Adult Protective Services / Legal Aid — Financial exploitation, concrete supports. Official NYC.gov: https://www.nyc.gov/site/hra/help/adult-protective-services.page
+[M05-7a] NYS Department of Health — Nursing Home complaints, licensed facility reporting. Official NYSDOH: https://health.ny.gov/facilities/nursing/ ; https://profiles.health.ny.gov/nursing_home/ ; Complaint **1-888-201-4563** (nursing homes)
+[M05-7b] NYS Department of Health — Adult Care Facilities / assisted living including adult homes. Official NYSDOH: https://health.ny.gov/facilities/adult_care/ ; https://profiles.health.ny.gov/adult_care/ ; Complaint **1-866-893-6772** (adult care facilities — separate from nursing-home hotline per official DOH Profiles guidance)
+[M05-7] superseded: previously combined 1-888-201-4563 for both — see [M05-7a]/[M05-7b] correction 2026-10-23; profiles.health.ny.gov lists separately
+[M05-8] NY Justice Center for Protection of People with Special Needs — abuse/neglect of individuals with disabilities/special needs in state-licensed/operated facilities. Official NY.gov: https://justicecenter.ny.gov/ (1-855-373-2122) ; OMH https://omh.ny.gov/ ; OASAS https://oasas.ny.gov/ ; OPWDD https://opwdd.ny.gov/
+[M05-9] NYS OMH + NYC DOHMH — Community program privacy, documentation, respectful communication. Official OMH: https://omh.ny.gov/omhweb/policy/ ; Official NYC.gov: https://www.nyc.gov/site/doh/health/health-topics/mental-health.page
+[M05-10] Long-Term Care Ombudsman via NYSOFA — resident advocate. Official NYSOFA/NY Connects: https://aging.ny.gov/nystateofficefortheaging ; National Long-Term Care Ombudsman Resource Center https://ltcombudsman.org/ (nonprofit reference)
+[M05-11] Administration for Community Living (ACL) / Older Americans Act — Community supports, caregiver supports. Official ACL: https://acl.gov/
+[M05-12] U.S. DOJ / NCALL — Legal protections for older adults. Official justice.gov
+[M05-13] NY Justice Center / Elder Justice — Federal Elder Justice Act coordination. Official justicecenter.ny.gov + acl.gov
+[M05-14] Prevent Elder Abuse / NYCEAC — Frameworks. Nonprofit (nongovernmental): https://preventchildabuseny.org/ → elder abuse section
+[M05-15] NYS Office for People With Developmental Disabilities (OPWDD) — Disability-specific elder supports. Official opwdd.ny.gov
+[M05-16] Cross-reference law publishers — Official nysenate.gov for NY law: https://www.nysenate.gov/legislation ; Official govinfo.gov for federal; Nongovernmental reference Cornell LII https://www.law.cornell.edu/wex/table_new_york
+
+Scheduled re-verification date: Oct 26 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York; scheduled re-verification marker is prospective; elder routes researched afresh — not an analogy to child abuse; V1 preserved at evidence/sources/M05-textbook-chapter-v1-V1-preserved-2026-10-25.txt.
+---
+M05 V1 → V1.1 bounded correction 2026-10-23: **DOH contacts clarified per official profiles.health.ny.gov — Nursing Home Complaint 1-888-201-4563 [M05-7a] vs Adult Care Facility Complaint 1-866-893-6772 [M05-7b] are separate; previously combined as [M05-7] — see evidence/M05-V1-to-V1.1-DOH-correction.diff + verification correction. V1 preserved 44901B b925774.**
+End of M05 Chapter Draft V1.1 — Single citation system [M05-1]–[M05-16] (with [M05-7a]/[M05-7b] split) with source classifications labeled (official government [M05-1][M05-4]–[M05-10][M05-16] Official NYS Legislature nysenate.gov vs nongovernmental Cornell LII vs nonprofit NYCEAC [M05-14]), knowledge checks mapped to objectives (51-57 A-D, 58 two-option). Not child analogy — APS voluntary vs SCR statutory, capacity/consent distinct, setting determines nursing-home vs adult-care DOH/Justice Center/Ombudsman — corrected. NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1.1 DRAFT · REVIEW PENDING — legal review, comprehension testing, accessibility verification, measured runtime pending. No external records changed. Originals preserved. Exports available evidence/exports/.

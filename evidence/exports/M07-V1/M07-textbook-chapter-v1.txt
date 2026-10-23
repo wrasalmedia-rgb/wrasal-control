@@ -1,0 +1,267 @@
+# M07 — Textbook Chapter V1 — Infection Control Fundamentals — DRAFT (cross-referenced to M04/M05, standalone)
+
+M07 — Infection Control Fundamentals
+V1 DRAFT — Sources [M07-1]–[M07-16] with Classifications Labeled (official government, nongovernmental nonprofit, professional association) — Not approved for public release — Scheduled re-verification date Oct 28 2026 (execution: 2026-10-23 America/New_York) — see preservation record
+M07 — Infection Control Fundamentals
+Public Education Textbook Chapter — V1 DRAFT FOR SUBJECT-MATTER REVIEW — Sources [M07-1]–[M07-16] Classified (see References for official vs nongovernmental vs professional association)
+**Status:** V1 — Initial draft reusing M01–M06 teaching structure and evidence discipline (Opening Situation, Learning Goals, sections 1–10, Worked Examples, Recap, Knowledge Checks with objective mapping, Glossary, Reviewer Notes, single consistent bracket system); fresh objectives, scenarios, assessments, and source identifiers for M07 Infection Control Fundamentals; distinguishes concepts across settings (childcare, school, community home, nursing/adult care, group home), explains standard vs transmission-based precautions, vaccination and exclusion without prescribing, and safe response to exposures; cross-references M04/M05 only for reporting route context where relevant — reporting instructions live in those chapters. Subject-matter/legal review, comprehension testing, accessibility verification, and measured runtime remain pending. NOT APPROVED FOR PUBLIC RELEASE.
+**Jurisdiction:** New York State and New York City — Federal CDC/OSHA comparison.
+**Scheduled re-verification date:** October 28, 2026 — verify all agency contacts, websites, laws, regulations, and agency guidance before publication — laws, regulations, and policies change. **Execution:** Manuscript prepared 2026-10-23 America/New_York (EDT); Oct 28 is scheduled re-verification marker — see evidence/M02-M03-execution-vs-scheduled-reverification-2026-10-25.md + correction record M05 CORRECTION 2026-10-23.
+**Disclaimer:** General information only. Not medical, legal, or clinical advice. Follow agency infection-control plan, manufacturer directions, and supervisor/agency nurse/infection preventionist guidance. When exposure or outbreak is suspected, act per policy promptly — do not delay for “ideal” information. When in doubt, ask occupational health / infection prevention before acting.
+---
+
+Opening Situation
+Jordan is a new community aide who splits time among an after-school program (including Devon from M06), a senior center where Mr. Alvarez visits, and an adult care residence where Ms. Washington lives:
+
+- At the after-school program, a child has fever, vomiting, and diarrhea. Another staff member says, “Just give him water and keep him here — parents are working.” Jordan wonders about exclusion, cleaning, and hand hygiene.
+- At the senior center, Mr. Alvarez has a worsening cough, missed his flu vaccine last year, and shares a bathroom with another older adult on oxygen. A volunteer offers to “save gloves” by reusing them between people.
+- At the adult care residence, Jordan is helping a resident with diabetes who needs fingerstick glucose checks; a sharps container is overfull, and a coworker suggests recapping a used lancet “just this once.”
+
+Jordan worries about protecting children, older adults, and themselves without overstepping — what is standard in every setting vs what changes by setting, and when does infection control overlap with neglect/exploitation or prior abuse-reporting routes without duplicating them?
+
+Learning Goals — Short, Scannable
+After reading this chapter, you will be able to:
+Describe how infections spread in plain language (contact, droplet, airborne, bloodborne, fecal-oral) and why age, frailty, and crowding affect risk.
+Apply Standard Precautions every time for every person — hand hygiene, gloves/gowns/masks/eye protection as needed, respiratory hygiene, safe handling of linens and waste, environmental cleaning/disinfection.
+Distinguish Standard Precautions from Transmission-Based Precautions (contact, droplet, airborne) and give examples of additional steps without overstepping role.
+Explain vaccination promotion, documentation, and exclusion/support concepts in your role — without prescribing medical advice — and how they differ from neglect or reporting thresholds.
+Demonstrate safe handling of blood, sharps, and body fluids — no recapping, proper containers, exposure response steps.
+Describe cleaning, disinfection, and laundry steps appropriate to setting and product — and what requires facilities services vs personal effort.
+Explain outbreak and exposure response: what to do, whom to notify (per agency/Occupational Health/Infection Prevention), and confidentiality basics.
+Find official guidance by setting (CDC, NYSDOH, NYC DOHMH, OSHA) and know where to check current recommendations before acting.
+
+1. Why Infection Control Matters Across Child, Older Adult, and Disability Settings
+Young children in congregate care, older adults with chronic conditions, and people in group living share traits that raise transmission: close contact, shared bathrooms/toys, assistance with toileting/feeding, cognitive changes that affect hygiene, and chronic diseases that worsen outcomes [M07-1][M07-2][M07-3]. Outbreaks (norovirus, influenza, RSV, COVID-19, scabies) and bloodborne exposures (HBV, HCV, HIV) are preventable with consistent, setting-appropriate control — not extraordinary effort [M07-4][M07-5].
+
+Infection control also connects to prior chapters without replacing them:
+- Inadequate hygiene, missed medications, or unsafe sharps can look like or contribute to **neglect** (M06 §2) — but infection control steps are about *preventing* harm, not *labeling* harm [M07-2].
+- Financial or boundary issues do not replace infection duties — glove reuse “to save money” is both unsafe and improper conduct (M06 §4) [M07-4].
+- Reporting a childcare outbreak to health authorities, or a nursing-home infection cluster to DOH, is **not** the same system as child-abuse SCR [M04] or adult APS [M05] — different laws, different numbers (see §9).
+
+Your job: prevent transmission with reliable everyday measures, know when added precautions apply, and notify per agency plan without diagnosing.
+
+2. How Infections Spread — Plain Language
+Think in routes, not names [M07-2][M07-3][M07-5]:
+- **Contact (direct/indirect):** Touching person, contaminated hands/gloves, toys, doorknobs, bed linens — e.g., norovirus, MRSA, scabies. Hand hygiene + gloves + cleaning interrupt.
+- **Droplet:** Large respiratory particles from coughing/sneezing within close distance (often ~3-6 feet) — e.g., influenza. Mask + distance + respiratory hygiene help [M07-5].
+- **Airborne:** Small particles that linger and travel — e.g., tuberculosis, measles. Requires ventilation/N95/fit testing per facility and occupational health — not improvised cloth solutions [M07-2][M07-6].
+- **Bloodborne:** Blood and certain body fluids — e.g., HBV, HCV, HIV — via sharps, splashes to mucous membranes. No-touch, gloves, no recapping, proper sharps containers [M07-6].
+- **Fecal-oral:** Germs from stool to mouth via hands/food/water/surfaces — e.g., norovirus, rotavirus. Hand hygiene with soap/water, diapering/toileting procedures, food safety [M07-4][M07-8].
+
+Age and setting affect risk: infants/toddlers mouth toys and need diapering [M07-8]; older adults have thinner skin and chronic lung/immune conditions [M07-3]; group living adds shared air and bathrooms — but **routes are the same**, precautions adapt to setting, not invented per person [M07-1].
+
+3. Standard Precautions — Every Time, Every Person
+Standard Precautions assume **any** person’s blood, body fluids (except sweat), non-intact skin, and mucous membranes may carry infection [M07-4][M07-5]. Apply with everyone, known or unknown status — not only when someone “looks sick.”
+
+Everyday steps [M07-2][M07-4][M07-5]:
+- **Hand hygiene:** Soap and water for visibly soiled hands, after toileting/diapering, before food prep/eating, after glove removal. Alcohol-based hand sanitizer (≥60% alcohol) when hands not visibly soiled **except** for stool/vomiting organisms like norovirus/C. difficile — then soap/water required [M07-4]. Do not rely on gloves instead of hand hygiene.
+- **PPE based on risk, not routine:** Gloves for touching blood/body fluids/non-intact skin/mucous membranes and for cleaning. Gown if soiling expected. Mask + eye protection if splash/spray likely. **Change gloves between people/tasks, do not wash/reuse** — Jordan’s “save gloves” idea is unsafe [M07-4].
+- **Respiratory hygiene / cough etiquette:** Offer tissue and mask where appropriate, distance, encourage covering cough, prompt hand hygiene after [M07-5].
+- **Safe handling of linens, waste, food:** Bag linens without shaking; handle waste per agency plan; keep food prep surfaces separate from diapering/toileting [M07-8][M07-10].
+- **Injection and point-of-care safety:** Single-use devices — lancets, needles, fingerstick devices — used once per person per time, disposed immediately without recapping or bending [M07-6]; see §6 for overfull container response.
+
+What is not your job: You do not decide diagnosis, isolation type alone, or clearance to return — you follow agency plan + occupational health / infection prevention and document actions taken [M07-6][M07-10].
+
+Senior center example: Mr. Alvarez cough + shared bathroom + oxygen user nearby → Standard Precautions always (hand hygiene before/after contact, mask offer for cough, clean shared surfaces per plan) plus check whether Transmission-Based added precautions are indicated (see §4) — without diagnosing cause [M07-5].
+
+4. Transmission-Based Precautions — Added When Risk Is Higher
+When infection-control or public-health assessment indicates, **add** to Standard Precautions — typically in facilities or when agency plan specifies — do not implement alone [M07-2][M07-5][M07-6]:
+
+- **Contact Precautions:** Known/suspected highly transmissible via contact (e.g., active norovirus vomiting/diarrhea, known MRSA wound drainage uncontrolled by dressing, scabies) — gloves + gown for room/entry, dedicated equipment where possible, limit shared activities, reinforce cleaning [M07-4]. For childcare: exclude/ cohort per health guidance; increase toy/surface cleaning [M07-8].
+- **Droplet Precautions:** Known/suspected droplet illness (e.g., influenza, RSV) — surgical mask within close distance, private room or spacing where possible, limit movement [M07-5]. Vaccination (see §5) is key prevention alongside.
+- **Airborne Precautions:** Known/suspected airborne (e.g., active TB) — negative-pressure room, N95/respirator with fit test, occupational health management — **do not improvise**; follow facility/occupational health immediately and avoid exposure if not fit-tested [M07-6].
+
+After-school example: child with fever/vomiting/diarrhea → isolate per agency plan (separate area, mask not appropriate for vomiting child — focus on contact/fecal-oral precautions: gloves, cleaning, hand hygiene, notify family for pickup, document), following health department exclusion guidance [M07-8][M07-9].
+
+Your role: recognize triggers (“fever plus rash,” “persistent cough with weight loss,” “sudden vomiting cluster”), don Standard Precautions, separate per agency plan, and **notify supervisor / school nurse / infection preventionist / OCC Health promptly** — they decide precaution type and return criteria [M07-6].
+
+5. Vaccination, Documentation, and Exclusion — Support, Not Prescription
+Vaccination is among the most effective prevention for many serious infections (e.g., influenza, COVID-19, measles, varicella, pneumococcal, RSV where indicated) especially for children in congregate care and older adults [M07-7][M07-3]. In your role you do not prescribe — you promote, support access, document, and follow exclusion/support per agency/public health guidance [M07-7][M07-9]:
+
+- **Promote:** Share official vaccine information in person’s language, address access (clinic hours, transportation, consent process), reduce misinformation with empathy — document offer and questions referred [M07-7].
+- **Document:** Keep vaccination records per setting (school/OCFS childcare immunization requirements [M07-8][M07-9]; nursing home/ACF staff/occupational health records [M07-2]); maintain roster for outbreak response (who is immunized/authorized).
+- **Exclusion/support:** When to stay home or move to alternate staffing/activity is **not** personal judgment — follow OCFS/DOH/DOHMH/CDC exclusion guidance and facility policy (e.g., fever thresholds, vomiting/diarrhea 24h, contagious period for pertussis/COVID/influenza, return criteria) [M07-8][M07-9]. Support with food delivery, makeup work, or remote check-ins where allowed — distinguishing exclusion (public-health protection) from **neglect** (failure to meet needs when help available, M06 §2) — do not threaten families with “neglect” for following exclusion guidance [M07-8].
+
+Mr. Alvarez example: missed flu vaccine last year → offer current-season vaccine information, transportation to pharmacy/clinic, document conversation and consent pathway, follow agency plan for seasonal vaccination promotion [M07-7][M07-3] — without pressuring or diagnosing risk alone.
+
+6. Blood, Sharps, and Body Fluids — Safe Every Time
+Bloodborne risk is low with precautions, high if shortcuts are taken [M07-6]:
+
+- **Sharps:** Never recap, bend, or remove used needles/lancets. Dispose immediately at point of use into puncture-resistant, labeled sharps container. Replace when **~3/4 full** — do not push to overfill. Adult residence example: overfull sharps container → stop use, secure area, notify supervisor/facilities to replace immediately; do not “make room” by pushing sharps down [M07-6][M07-10].
+- **Glucose monitoring:** Fingerstick devices and lancets single-person single-use; clean/ disinfect meter per manufacturer only between persons where approved — otherwise dedicated devices [M07-6].
+- **Splashes/spills:** Wear gloves +/- gown/mask/eye protection based on splash risk; clean then disinfect per product directions (dwell time matters); handle laundry per plan [M07-4][M07-10].
+- **Exposure response:** If needlestick, bite breaking skin, blood in eyes/mouth/open wound — **wash/flush immediately** (soap/water for skin, saline/water for mucous membranes — do not scrub/bleach wound), **report immediately** to supervisor/occupational health/infection prevention for risk assessment and possible post-exposure prophylaxis per CDC/OSHA agency protocol [M07-6][M07-6]. Timeliness matters (hours, not days).
+
+7. Cleaning, Disinfection, Laundry, and Food — Setting-Specific, Product-Specific
+Cleaning **removes** germs; disinfection **kills** remaining germs — both needed, in order, with correct product and **contact time** [M07-10][M07-4]:
+
+- **High-touch surfaces:** Doorknobs, faucets, toys, shared bathroom fixtures — clean/disinfect per schedule and when visibly soiled or after illness; follow label dwell time (not “spray and wipe”) [M07-10].
+- **Toys/childcare:** Mouthed toys cleaned after each use; cots/mats disinfected between children; diapering surface disinfected after each diaper per OCFS/DOH procedure [M07-8][M07-10].
+- **Laundry:** Handle with gloves, bag without shaking/hugging to avoid dispersing particles, wash with detergent + appropriate temperature/dryer per policy; treat as potentially infectious if soiled with blood/body fluids [M07-10].
+- **Food:** Separate food prep from diapering/toileting; hand hygiene before food handling; exclude ill food handlers per food-code/agency policy [M07-8].
+- **What requires facilities services:** Bloodborne spill beyond small spot, outbreak deep clean, HVAC/negative-pressure, pest issues — escalate rather than improvising [M07-10].
+
+8. Outbreaks and Exposures — What to Do, Whom to Notify, Confidentiality
+Early notification limits spread [M07-2][M07-6][M07-9]:
+
+- **Childcare/school:** Notify director/supervisor and families (de-identified — “a classroom exposure”) per agency + OCFS + local health department guidance; maintain attendance/illness log [M07-8][M07-9].
+- **Senior/nursing/adult care/group home:** Notify supervisor + infection preventionist + supervisor’s supervisor / facility nurse manager per policy; facility may notify DOH (nursing homes 1-888-201-4563 [M07-2]/ adult care 1-866-893-6772) for reportable outbreaks — **do not confuse with abuse-reporting numbers — same phone but different purpose** (see §9 vs M05) [M07-3][M07-7a][M07-7b].
+- **Occupational health for sharps/exposure:** Notify supervisor + occupational health immediately for risk assessment/testing/prophylaxis [M07-6].
+- **Confidentiality:** Share only minimum necessary (date, setting, symptoms, attendance, actions taken) — do not name ill children/adults to unnecessary groups; follow FERPA/agency privacy where applicable [M07-9].
+
+After-action: reflect with supervisor on hand-hygiene adherence, PPE availability, staffing adequacy, vaccine promotion barriers, and cleaning schedule [M07-10].
+
+9. Finding Help — Where to Check Current Recommendations Before Acting (by Setting)
+Guidance changes by season and outbreak — verify current source before acting; do not copy-paste from this chapter as policy:
+
+Childcare/OCFS: **OCFS childcare regulations + NYS DOH childcare health & safety + CDC childcare** https://ocfs.ny.gov/programs/childcare/ ; https://health.ny.gov/prevention/ ; https://www.cdc.gov/orr/school-preparedness/ [M07-8]
+Schools: **NYSED + CDC school health + NYC DOHMH school health** https://www.nysed.gov/student-support-services/school-health-services ; https://www.cdc.gov/healthywater/hygiene/childcare/ [M07-9]
+Nursing homes/adult care: **CDC nursing-home infection control + NYS DOH nursing home / adult care** https://www.cdc.gov/healthcare-associated-infections/ ; NYS DOH nursing https://health.ny.gov/facilities/nursing/ (Complaint 1-888-201-4563 [M07-2]) ; NYS DOH adult care https://health.ny.gov/facilities/adult_care/ (Complaint 1-866-893-6772 [M07-7b]) ; https://profiles.health.ny.gov/nursing_home/ / adult_care/ [M07-3]
+General Standard Precautions / Hand hygiene / Cleaning: **CDC Standard Precautions** https://www.cdc.gov/infection-control/hcp/basics-standard-precautions.html ; https://www.cdc.gov/handwashing/ [M07-4]
+Vaccines: **CDC vaccines / NYS DOH immunization / NYC DOHMH vaccines** https://www.cdc.gov/vaccines/ ; https://health.ny.gov/prevention/immunization/ ; https://www.nyc.gov/site/doh/health/health-topics/immunization.page [M07-7]
+Respiratory (flu, RSV, COVID-19, TB): **CDC respiratory / NYC DOHMH** https://www.cdc.gov/ncird/ [M07-5]
+Bloodborne / Sharps / OSHA: **CDC NIOSH / OSHA Bloodborne Pathogens Standard** https://www.cdc.gov/niosh/ ; https://www.osha.gov/bloodborne-pathogens [M07-6]; **OSHA PPE** https://www.osha.gov/personal-protective-equipment [M07-10]
+Outbreak reporting: **Local health department + NYS DOH outbreak reporting** — see agency emergency/exposure plan and facility infection preventionist; do not use child SCR or APS numbers for infection reporting (M04/M05) [M07-9]
+Review date: Oct 28 2026 — verify all contacts, websites, laws. Guidance and policies change.
+
+Your agency:
+Ask: “What is our infection-control plan for this setting — hand hygiene stations, PPE supply, cleaning schedule, sharps containers, exclusion criteria? Who is infection preventionist / school nurse / OCC Health? What is outbreak notification chain? Who is privacy officer?”
+
+10. Worked Examples, Recap, Knowledge Checks — Full Prose
+Worked Examples in Full Sentences
+
+Example 1 — Childcare symptom + exclusion vs neglect confusion. Child has fever, vomiting, diarrhea; staff says keep him because parents work. Jordan: applies Standard Precautions (hand hygiene before/after, gloves for fluids, immediate cleaning per label dwell time), separates child per agency isolation area (not punishment), notifies director/supervisor and family for pickup per exclusion guidance, documents symptoms/time/actions/notifications without diagnosing (e.g., “10:15 a.m. vomit, temp 101.2, hand hygiene after, parent contacted 10:20”) [M07-8][M07-9]. Distinguishes exclusion (protects group) from neglect (M06) — support family with pickup resources, not threat.
+
+Example 2 — PPE conservation pressure — “save gloves.” Volunteer suggests reusing gloves between people at senior center to save money. Jordan: declines, explains gloves change between people/tasks (do not wash/reuse) [M07-4]; selects PPE by splash risk (gloves for contact with body fluids, plus gown/mask/eye where indicated); models hand hygiene before/after glove use; secures supply via supervisor rather than improvising. Prevents both infection (cross-contamination) and improper conduct (M06 §4) [M07-10].
+
+Example 3 — Bloodborne — overfull sharps container + recap request. Adult residence glucose checks: sharps container 3/4+ full, coworker suggests recapping lancet “just this once.” Jordan: refuses recapping (OSHA/CDC prohibits) [M07-6], stops procedure, secures area, requests immediate container replacement, uses new lancet/device per person per time, disposes directly at point of use; reports near-miss per incident system. Models exposure-response steps if stick occurred (wash, report to OCC Health immediately for prophylaxis window) [M07-6].
+
+Example 4 — Contact precautions addition. Facility has cluster of vomiting/diarrhea in a unit. Jordan (with supervisor/infection preventionist): adds Contact Precautions to Standard Precautions per guidance — gloves+gown on entry, dedicated equipment, limit movement, enhanced cleaning of shared bathrooms, staff cohort where possible, hand hygiene with soap/water for norovirus (sanitizer insufficient alone) [M07-4]; supports residents with fluids and monitoring, documents, maintains confidentiality.
+
+Example 5 — Exposure notification done right. After a resident’s blood splashes Jordan’s eye during care, Jordan flushes with water per eyewash protocol, reports immediately to supervisor/OCC Health for HBV/HCV/HIV risk assessment [M07-6], completes incident report with observable facts, follows confidentiality and follow-up testing/prophylaxis per occupational health — not workplace gossip. Reflects with supervisor on PPE availability and positioning.
+
+Chapter Recap — Scannable
+How it spreads: contact, droplet, airborne, bloodborne, fecal-oral — age/crowding increase risk but routes same [M07-2][M07-5].
+Standard Precautions every time/every person: hand hygiene (soap/water vs sanitizer [M07-4]), PPE changed between people/tasks not reused, respiratory hygiene, linens/waste/food handling, no recapping [M07-6].
+Transmission-Based added: contact/droplet/airborne — triggered by infection prevention/BH assessment, not personal judgment [M07-2].
+Vaccination/exclusion: promote access, document, follow OCFS/DOH/CDC exclusion criteria — exclusion protects group, not neglect [M07-7][M07-8].
+Sharps/blood: no recap, 3/4 container rule, single-use devices, immediate report/flush for exposure [M07-6].
+Cleaning: clean then disinfect with correct product + dwell time; launder without shaking [M07-10].
+Outbreak/exposure: notify per chain (director, infection preventionist, OCC Health, local health/DOH per setting where required), share minimum necessary [M07-9].
+Find help: CDC/OCFS/NYSDOH/NYC DOHMH/OSHA current guidance — verify before acting [M07-7][M07-9].
+
+Knowledge Checks — Complete Questions With Objective Mapping (M07: 71–78; 71-77 A-D, 78 Two-Option Valid)
+
+**71. How infections spread — why setting matters but route same**
+Question: Childcare toys mouthed, shared bathrooms, older adults thin skin/chronic conditions, group living. What model is correct?
+A) Each age needs invented route.
+B) Only visibly sick spread.
+C) Contact/droplet/airborne/bloodborne/fecal-oral routes apply to all [M07-2][M07-5]; age/crowding/frailty raise vulnerability and setting choice — cleaning, PPE, supervision adapt, not routes [M07-1][M07-3].
+D) Air is never a factor.
+Correct Answer: C) Same routes, risk higher with age/crowding — precautions adapt to setting [M07-4].
+Objective: Describe spread.
+
+**72. Standard Precautions — every time/every person**
+Question: Volunteer wants to reuse gloves between people to save supply — hands not visibly soiled so sanitizer vs soap/water?
+A) Reuse gloves and wash them.
+B) Hand hygiene optional with gloves.
+C) Apply Standard Precautions every time/every person: hand hygiene before/after contact + before eating/food prep + after toileting/diapering + after glove removal; use sanitizer (≥60%) when not visibly soiled except norovirus/C.diff — then soap/water required [M07-4]; wear gloves for blood/body fluids/non-intact skin, gown/mask/eye where splash expected; **change gloves between people/tasks, do not reuse/wash** [M07-4]; respiratory hygiene — offer tissue/mask where appropriate [M07-5].
+D) Gloves replace hand hygiene.
+Correct Answer: C) Every time/every person with correct hand hygiene + glove change.
+Objective: Apply Standard Precautions.
+
+**73. Transmission-Based Precautions vs Standard — not personal judgment**
+Question: Unit has sudden vomiting/diarrhea cluster. What addition is correct?
+A) Decide airborne precautions for vomiting.
+B) Standard Precautions enough — no notify.
+C) Continue Standard Precautions and — **only per agency/infection prevention/BH assessment** — add Contact Precautions for norovirus-contact risk: gloves+gown on entry, dedicated equipment, limit movement, enhanced cleaning, hand hygiene with **soap/water (sanitizer insufficient)** [M07-4]; notify supervisor/infection preventionist promptly; do not improvise isolation type alone [M07-2].
+D) Treat with personal medication.
+Correct Answer: C) Add only per guidance, Contact for norovirus cluster with soap/water [M07-4].
+Objective: Distinguish Standard vs Transmission-Based.
+
+**74. Vaccination, documentation, and exclusion — support not prescription**
+Question: Mr. Alvarez missed flu vaccine last year; what promotes access without prescribing?
+A) Order vaccine yourself.
+B) Shame for missing.
+C) Share official CDC/DOH immunization information in preferred language, offer access (clinic/pharmacy hours, transportation, consent process), document offer/questions referred [M07-7]; keep vaccination records per setting (school/OCFS childcare requirements [M07-8]; nursing home/ACF occupational health [M07-2]); follow exclusion guidance when ill — exclusion protects group, not neglect (M06) [M07-8].
+D) Vaccinate without consent.
+Correct Answer: C) Promote with official info, document, follow exclusion criteria.
+Objective: Vaccination/documentation/exclusion support role.
+
+**75. Sharps safety — no recapping, container rule**
+Question: Adult residence sharps container overfull; coworker suggests recapping used lancet “just this once” for glucose check.
+A) Recap and push sharps down.
+B) Delay replacement.
+C) Never recap/bend/remove used sharps; dispose directly at point of use into puncture-resistant container; replace when ~3/4 full — do not overfill [M07-6][M07-10]; fingerstick lancets single-person single-use; report overfill as near-miss per incident system; if exposure, wash/flush and report to OCC Health immediately for prophylaxis window [M07-6].
+D) Reuse lancet for same person later.
+Correct Answer: C) No recapping, 3/4 rule, single-use — exposure report if occurs.
+Objective: Safe sharps/body fluids.
+
+**76. Cleaning, disinfection, laundry — product-specific**
+Question: Shared bathroom and toys after vomiting — spray and immediately wipe.
+A) Clean only, no disinfect.
+B) Spray-and-wipe is enough.
+C) Clean to **remove** germs then disinfect to **kill** with correct product + **dwell/contact time** per label [M07-10][M07-4]; clean/disinfect high-touch surfaces after illness and when visibly soiled; diapering surface disinfected after each diaper per OCFS [M07-8]; launder with gloves, bag without shaking [M07-10]; escalate bloodborne large spill/beyond scope to facilities services [M07-4].
+D) Share mouthed toys without cleaning.
+Correct Answer: C) Clean then disinfect with dwell time + proper laundry [M07-10].
+Objective: Cleaning/disinfection/laundry steps.
+
+**77. Outbreak/exposure response — whom to notify, confidentiality**
+Question: Facility has influenza-like cluster — who do you tell and how?
+A) Diagnose and announce names publicly.
+B) Keep cluster private.
+C) Notify per agency plan promptly — childcare: director + local health + families de-identified per OCFS/DOH; nursing/adult care/group home: supervisor + infection preventionist + facility nurse manager per policy; DOH outbreak reporting where required — **1-888-201-4563 nursing homes [M07-2] vs 1-866-893-6772 adult care [M07-7b]** — **same phones as M05 but different purpose** (outbreak, not abuse) [M07-3]; occupational health for sharps/blood exposures immediately [M07-6]; share minimum necessary; follow FERPA/agency privacy [M07-9].
+D) Only tell coworkers.
+Correct Answer: C) Agency chain + infection prevention/OCC Health + DOH outbreak where required with distinct numbers, minimum necessary [M07-9].
+Objective: Outbreak/exposure response.
+
+**78. After exposure and finding current guidance**
+Question: After blood splash to eye, what is ongoing role and where to verify?
+A) Rinse with bleach, delay report.
+B) Flush with water/saline per eyewash, report immediately to supervisor/OCC Health for risk assessment/testing/prophylaxis [M07-6]; complete incident report with observable facts; keep confidentiality; verify current recommendations at CDC Standard Precautions https://www.cdc.gov/infection-control/hcp/basics-standard-precautions.html, CDC handwashing, CDC vaccines, NYSDOH https://health.ny.gov/prevention/immunization/ + facilities nursing/adult care + OCFS childcare + OSHA Bloodborne Pathogens — Two-option valid (B vs A collapse).
+C) Ignore if resident looks healthy.
+D) Tell family details publicly.
+Correct Answer: B) Immediate flush + OCC Health + official CDC/DOH/OSHA verification — Two-option valid.
+
+Glossary — Plain Language
+**Airborne Precautions:** Small particles linger — requires facility engineering + fit-tested N95 — not cloth improvisation [M07-6].
+**Contact Precautions:** Added gloves/gown/equipment steps for contact-spread illness on top of Standard Precautions [M07-4].
+**Droplet Precautions:** Mask within close distance for droplet illness on top of Standard Precautions [M07-5].
+**Dwell/Contact Time:** Label-required wet time for disinfectant to kill — not spray-wipe [M07-10].
+**Exposure:** Needlestick, sharps injury, blood/body fluid splash to mucous membranes/broken skin — report immediately [M07-6].
+**Exclusion:** Public-health decision to keep ill person from group per criteria — protection, not neglect [M07-8][M07-9].
+**Hand Hygiene:** Soap/water or ≥60% sanitizer (with exceptions) before/after contact, toileting/diapering, food, glove removal [M07-4].
+**Outbreak:** Two+ linked cases beyond expected — notify per chain [M07-2][M07-9].
+**PPE:** Gloves, gowns, masks, eye protection — selected by splash/contact risk, changed between people [M07-4].
+**Sharps Container 3/4 Rule:** Replace puncture-resistant container when ~3/4 full — prevent overfill injuries [M07-6].
+**Standard Precautions:** Baseline for every person every time — any blood/body fluid/non-intact skin may carry infection [M07-5].
+
+Reviewer Notes — Jargon Outside Learner Text
+Childcare exclusion: OCFS 18 NYCRR child day care regs + DOH childcare health/safety communicable disease guidance — exclusion criteria, immunization, illness logs [M07-8].
+Vaccination: ACIP/CDC adult/child schedules — offer/support, not prescribe; document offers [M07-7].
+Bloodborne: OSHA 29 CFR 1910.1030 Bloodborne Pathogens Standard — no recapping, engineering controls, exposure control plan, post-exposure follow-up [M07-6].
+Airborne: OSHA respiratory protection 1910.134 + CDC/DOH TB guidance — N95 fit testing required [M07-6].
+Outbreak reporting: NYCRR reporting to local health/Bureau of Communicable Disease Control for reportable clusters — not M05 abuse numbers though phones overlap; clarify purpose in teaching [M07-9].
+Norovirus: soap/water not sanitizer alone [M07-4].
+
+References — Single Consistent Numbered System [M07-1]–[M07-16] — Source Classifications Labeled — No Duplicate Footnote List
+[M07-1] NYS OCFS / OTDA / Aging network — congregate risk across child and elder settings. Official OCFS https://ocfs.ny.gov/main/cps/ ; Official aging https://aging.ny.gov/
+[M07-2] NYS DOH — Nursing Home infection control / outbreak response. Official NYSDOH https://health.ny.gov/facilities/nursing/ (Complaint 1-888-201-4563 — same phone but outbreak purpose per facility infection-control plan — see profiles.health.ny.gov/nursing_home) — [M07-2] [Official government]
+[M07-3] CDC — COVID-19, influenza, RSV, and elder health resources for adult care. Official CDC https://www.cdc.gov/aging/ ; https://www.cdc.gov/ncird/ [Official government]
+[M07-4] CDC — Standard Precautions / Hand Hygiene / Norovirus / Cleaning basics. Official CDC https://www.cdc.gov/infection-control/hcp/basics-standard-precautions.html ; https://www.cdc.gov/handwashing/ ; https://www.cdc.gov/norovirus/ ; https://www.cdc.gov/infection-control/ [Official government]
+[M07-5] CDC — Respiratory hygiene, droplet precautions, cough etiquette. Official CDC https://www.cdc.gov/ncird/ ; https://www.cdc.gov/infection-control/hcp/basics-transmission-based-precautions.html [Official government]
+[M07-6] CDC NIOSH + OSHA — Sharps safety, Bloodborne Pathogens Standard (29 CFR 1910.1030), PPE, exposure/post-exposure. Official CDC NIOSH https://www.cdc.gov/niosh/ ; Official OSHA https://www.osha.gov/bloodborne-pathogens ; https://www.osha.gov/personal-protective-equipment [Official government]
+[M07-7] CDC Vaccines + NYS DOH Immunization + NYC DOHMH Vaccines — promotion/documentation. Official CDC https://www.cdc.gov/vaccines/ ; Official NYSDOH https://health.ny.gov/prevention/immunization/ ; https://www.nyc.gov/site/doh/health/health-topics/immunization.page [Official government]
+[M07-8] OCFS Child Day Care Regulations (18 NYCRR) + NYS DOH Childcare Health & Safety + CDC childcare — exclusion, immunization, diapering, illness logs. Official OCFS https://ocfs.ny.gov/programs/childcare/ ; Official NYS DOH https://health.ny.gov/prevention/ ; Official CDC https://www.cdc.gov/childcare/ [Official government]
+[M07-9] NYSED School Health Services + CDC school health + NYC DOHMH school health — exclusion, logs, FERPA/privacy. Official NYSED https://www.nysed.gov/student-support-services/school-health-services ; Official CDC school health; Official NYC https://www.nyc.gov/site/doh/health/health-topics/school-health.page [Official government]
+[M07-10] CDC / EPA / OSHA — Cleaning/disinfection dwell time, EPA List N, laundry, facilities services. Official CDC https://www.cdc.gov/cleaning/ ; Official EPA https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants ; Official OSHA cleaning guidance [Official government]
+[M07-11] OSHA General Industry + Healthcare / Direct Support Professional scope — role-appropriate precautions. Official OSHA https://www.osha.gov/healthcare ; https://www.osha.gov/workers [Official government]
+[M07-12] NYS DOH Communicable Disease Reporting / Outbreak reporting to local health — not M05 abuse route (same phone, different purpose) — see agency outbreak plan. Official NYSDOH https://health.ny.gov/diseases/communicable/ [Official government]
+[M07-13] APIC / SHEA — Professional infection-prevention frameworks (advisory, not regulator). Professional association https://apic.org/ ; https://shea-online.org/ [Professional association]
+[M07-14] Prevent Child Abuse / National Child Welfare — secondary context for childcare health & safety (advisory). Nonprofit https://preventchildabuseny.org/ [Nongovernmental nonprofit]
+[M07-15] NYS Office for People With Developmental Disabilities / OMH / OASAS — group home/OMH infection-control expectations (facility-specific). Official OPWDD https://opwdd.ny.gov/ ; OMH https://omh.ny.gov/ ; OASAS https://oasas.ny.gov/ [Official government]
+[M07-16] Cross-reference publishers — Official nysenate.gov https://www.nysenate.gov/legislation ; govinfo.gov ; nongov Cornell LII https://www.law.cornell.edu/ [Official vs nongov distinction]
+
+Scheduled re-verification date: Oct 28 2026 — verify before publication. Execution: manuscript prepared 2026-10-23 America/New_York (EDT); scheduled re-verification marker is prospective; M07 is standalone infection-control fundamentals with official government CDC/OSHA/NYSDOH sources; reporting routes cross-referenced to M04/M05 only where noted. V1 preserved at evidence/sources/M07-textbook-chapter-v1-V1-preserved-2026-10-23.txt.
+---
+End of M07 Chapter Draft V1 — Single citation system [M07-1]–[M07-16] with source classifications labeled (official government [M07-1]–[M07-12][M07-15][M07-16] Official CDC/NYSDOH/NYC DOHMH/OSHA vs professional APIC/SHEA vs nonprofit Prevent), knowledge checks mapped to objectives (71-77 A-D, 78 two-option) with dwell-time, no-recapping, 3/4 container rule. Reporting overlap clarified: outbreak reporting via DOH same phones as M05 but different purpose (M05 abuse vs M07 outbreak — see M05 CORRECTION). NOT APPROVED FOR PUBLIC RELEASE. Disposition: V1 DRAFT · REVIEW PENDING — legal review, comprehension testing, accessibility verification, measured runtime pending. No external records changed. Originals preserved. Exports available evidence/exports/.
