@@ -1,0 +1,154 @@
+{
+  "validator": "wrasal-shotlist-validator",
+  "root": "/home/user/wrasal-control/missions/WO-WRASAL-BOTBC-GM-001",
+  "result": "pass",
+  "summary": {
+    "total": 28,
+    "passed": 28,
+    "failed": 0,
+    "checks": [
+      {
+        "id": "T01",
+        "result": "PASS",
+        "detail": "All 34 IDs SH001–SH034 present"
+      },
+      {
+        "id": "T02",
+        "result": "PASS",
+        "detail": "Total 105s (sum 105)"
+      },
+      {
+        "id": "T03",
+        "result": "PASS",
+        "detail": "No gaps/overlaps — timecode continuous"
+      },
+      {
+        "id": "T04",
+        "result": "PASS",
+        "detail": "All 27 required fields present ×34"
+      },
+      {
+        "id": "T05",
+        "result": "PASS",
+        "detail": "All 25 prop IDs prefixed P_ and resolved"
+      },
+      {
+        "id": "T06",
+        "result": "PASS",
+        "detail": "White-shirt: no red before SH019; red only SH019+"
+      },
+      {
+        "id": "T07",
+        "result": "PASS",
+        "detail": "Genre progression Tragicomedy→Mystery→Gothic→Attribution preserved"
+      },
+      {
+        "id": "T08",
+        "result": "PASS",
+        "detail": "SH007/SH031 declared same FOURTH_VOICE stem (hash to verify in mix)"
+      },
+      {
+        "id": "T08-detail",
+        "result": "PASS",
+        "detail": "Both SH007 and SH031 reference FOURTH_VOICE stem"
+      },
+      {
+        "id": "T09",
+        "result": "PASS",
+        "detail": "SH020 (idx 19) precedes SH030 attribution (idx 29)"
+      },
+      {
+        "id": "T10",
+        "result": "PASS",
+        "detail": "Red thread labeled FICTIONAL storyworld invention"
+      },
+      {
+        "id": "T11",
+        "result": "PASS",
+        "detail": "No real-family biography promotion detected in shot list (stewardship note separates)"
+      },
+      {
+        "id": "T12",
+        "result": "PASS",
+        "detail": "6 independent continuity dimensions preserved"
+      },
+      {
+        "id": "T13",
+        "result": "PASS",
+        "detail": "Master XLSX, Work Order DOCX, Storyboard PPTX all present"
+      },
+      {
+        "id": "T13-DNA",
+        "result": "PASS",
+        "detail": "Visual DNA DOCX present"
+      },
+      {
+        "id": "T13-TR",
+        "result": "PASS",
+        "detail": "Treatment DOCX present"
+      },
+      {
+        "id": "T14",
+        "result": "PASS",
+        "detail": "All 5 reusable templates contain expected structure (XLSX+DOCX+PPTX)"
+      },
+      {
+        "id": "T14-legend",
+        "result": "PASS",
+        "detail": "Legend & Reusable Fields sheets present (by generation spec)"
+      },
+      {
+        "id": "T15",
+        "result": "PASS",
+        "detail": "No unauthorized remote merge — work remains on mission branch (pending PR)"
+      },
+      {
+        "id": "T16",
+        "result": "PASS",
+        "detail": "Evidence + uncertainty registers present"
+      },
+      {
+        "id": "T17",
+        "result": "PASS",
+        "detail": "Implementation claims verified against actual files (no fabricated evidence)"
+      },
+      {
+        "id": "T18",
+        "result": "PASS",
+        "detail": "Human approval status pending — no canonization performed (verified by absence of decision record)"
+      },
+      {
+        "id": "T13-golden-SH001",
+        "result": "PASS",
+        "detail": "Golden spec SH001 present"
+      },
+      {
+        "id": "T13-golden-SH007",
+        "result": "PASS",
+        "detail": "Golden spec SH007 present"
+      },
+      {
+        "id": "T13-golden-SH014",
+        "result": "PASS",
+        "detail": "Golden spec SH014 present"
+      },
+      {
+        "id": "T13-golden-SH020",
+        "result": "PASS",
+        "detail": "Golden spec SH020 present"
+      },
+      {
+        "id": "T13-golden-SH030",
+        "result": "PASS",
+        "detail": "Golden spec SH030 present"
+      },
+      {
+        "id": "T13-golden-SH031",
+        "result": "PASS",
+        "detail": "Golden spec SH031 present"
+      }
+    ]
+  },
+  "timestamp": "2026-10-24T00:05:38.679Z",
+  "version": "1.0"
+}
