@@ -2,8 +2,8 @@
   "case_id": "FOR3NSIC-ALIEN-001",
   "subject_alias": "ALIEN",
   "case_title": "FOLLOW THE MONEY",
-  "version": "0.1.1",
-  "phase": "Phase 0 Gate A Verification \u2014 Conditional Approval Remediated",
+  "version": "0.1.2",
+  "phase": "Gate A Closeout & Phase 1 Hold \u2014 Frozen Baseline v0.1.1 + evidence_class separation",
   "issued": "2026-10-25T00:00:00Z",
   "created_utc": "2026-10-25T18:00:00Z",
   "generated_in_session": "2026-10-25T17:30:31Z",
@@ -79,7 +79,7 @@
   },
   "evidence_register": {
     "file": "cases/ALIEN-001/ALIEN-001_evidence_register.csv",
-    "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
+    "sha256": "8b9d4de7e5b3a3dffda06a1c1bda195a30ca9396659f7f624efed108fb512ffd",
     "rows": 33,
     "including_header": true,
     "data_rows": 32,
@@ -97,7 +97,11 @@
         "status": "received"
       }
     ],
-    "missing_detail": "EV-003 through EV-032 (30 categories) all MISSING \u2014 see evidence_register.csv"
+    "missing_detail": "EV-003 through EV-032 (30 categories) all MISSING \u2014 see evidence_register.csv",
+    "version": "0.1.2",
+    "evidence_class_added": "2026-10-25 closeout: administrative 2, financial 24, supporting_communications 6; narrative_premise 6 in timeline",
+    "frozen_baseline_hash": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973 (v0.1.1 frozen manifest)",
+    "current_hash": "8b9d4de7e5b3a3dffda06a1c1bda195a30ca9396659f7f624efed108fb512ffd"
   },
   "artifacts": [
     {
@@ -158,11 +162,11 @@
     {
       "filename": "ALIEN-001_event_timeline.csv",
       "path": "cases/ALIEN-001/ALIEN-001_event_timeline.csv",
-      "sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
-      "bytes": 2328,
-      "version": "0.1.1",
+      "sha256": "c78223d4d97bba2f2c05146477e8b1e9badb90c4bd283d2cf3e65323c8d259ec",
+      "bytes": 2464,
+      "version": "0.1.2",
       "created_utc": "2026-10-25T17:30:00Z",
-      "status": "phase0_6_events_2_intake_4_unverified_boundaries",
+      "status": "v0.1.2_with_narrative_premise_class",
       "records": 6,
       "updated_utc": "2026-10-25T18:00:00Z"
     },
@@ -229,6 +233,28 @@
       "created_utc": "2026-10-25T18:00:00Z",
       "status": "gate_a_verification_new",
       "records": 1
+    },
+    {
+      "filename": "ALIEN-001_frozen_manifest_v0_1_1.json",
+      "path": "cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json",
+      "sha256": "59f654939f39835263dd2633520e55d7384a886a99f361cae798e6c379ce56e5",
+      "bytes": 14137,
+      "version": "0.1.2",
+      "created_utc": "2026-10-25T19:00:00Z",
+      "status": "gate_a_closeout_new",
+      "records": 1,
+      "evidence_class": "administrative"
+    },
+    {
+      "filename": "ALIEN-001_gate_a_closeout_and_phase1_hold.md",
+      "path": "cases/ALIEN-001/ALIEN-001_gate_a_closeout_and_phase1_hold.md",
+      "sha256": "8f3a6eb123474d88ff6208533ffe95c4e747d085999149197f22b3aeed17d2cf",
+      "bytes": 34322,
+      "version": "0.1.2",
+      "created_utc": "2026-10-25T19:00:00Z",
+      "status": "gate_a_closeout_new",
+      "records": 1,
+      "evidence_class": "administrative"
     }
   ],
   "acceptance_tests": {
@@ -296,7 +322,7 @@
   "gates": {
     "Gate_A_Intake": {
       "name": "Intake approval",
-      "status": "CONDITIONALLY_APPROVED_PENDING_VERIFICATION_RE-REVIEW",
+      "status": "PROVISIONALLY_ACCEPTED_THEN_CLOSED_AS_FROZEN_BASELINE",
       "requested_from": "Human case owner",
       "requested_on": "2026-10-25T17:30:00Z",
       "verdict": null,
@@ -310,7 +336,8 @@
         "5. Custody/access/redaction documented \u2014 DOCUMENTED (chain_of_custody.md + receipt \u00a74)",
         "6. Fictional vs authenticated distinction \u2014 PRESERVED (receipt \u00a75, custody doc \u00a77)",
         "7. AT PASS qualified Phase-0-only \u2014 QUALIFIED (receipt \u00a76, forensic_report \u00a712, this provenance acceptance_tests[*].qualification)"
-      ]
+      ],
+      "closeout": "Frozen v0.1.1; framework ready, history unestablished"
     },
     "Gate_P0": {
       "name": "Phase 0 \u2014 source inventory and coverage gaps documented",
@@ -344,6 +371,18 @@
       "file": "cases/ALIEN-001/ALIEN-001_gate_a_verification_receipt.md",
       "date": "2026-10-25T18:00:00Z",
       "readiness_decision": "READY with boundary \u2014 pipeline validated, extraction gated on authentic records (receipt \u00a77: intake system ready to receive first bank statement, financial reconstruction remains BLOCKED until Tier 1 supplied)"
+    },
+    "Gate_A_Closeout": {
+      "status": "Frozen v0.1.1 as reported intake baseline (frozen_manifest bb09bc1 hashes immutable); evidence_class separation implemented",
+      "frozen_at": "2026-10-25T18:30:00Z",
+      "frozen_manifest": "cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json",
+      "evidence_class_implemented": "administrative:2 financial:24 supporting_communications:6 narrative_premise:6 timeline"
+    },
+    "Phase1_Hold": {
+      "status": "Hold \u2014 Do not begin reconstruction based on narrative alone; next trigger human authentic financial document \u2192 Phase 1 Evidence Admission Receipt \u2192 human accept/reject",
+      "next_trigger": "Human submission of authentic financial source document (financial class: bank statement EV-003..032) \u2192 append-only custody \u2192 validate authenticity/coverage before promotion",
+      "next_human_decision": "Accept or reject that source for forensic ingestion",
+      "hold_directive": "Maintain all financial conclusions as UNRESOLVED until supported by source records; preserve 40 potential as estimate not expectation"
     }
   },
   "completion_contract": {
@@ -446,7 +485,7 @@
     "Every material finding links to specific evidence ID and source location per Work Order Section 5.",
     "Human approval required before final case certification per AT-10 and Gates A-D."
   ],
-  "next_candidate": "Upon Gate A approval + Tier 1 evidence: 1) Re-hash new originals 2) Extract Master Ledger per Phase 1 3) Reconcile per Phase 2 Gate P2 4) Trace Jamaica payments per Phase 3 5) Reconstruct check/overdraft timelines per Phase 4 6) Reconstruct closure/reopening per Phase 5 7) Build communication chronology per Phase 6 8) Independent Challenge review per Phase 7 9) Gates B-D approvals + versioned artifact publication",
+  "next_candidate": "HUMAN_TRIGGER: Submit first authentic bank statement/transaction export (financial class) \u2192 Arena returns Phase 1 Evidence Admission Receipt for accept/reject; no infrastructure validation round needed until then",
   "final_execution_instruction": "Follow the receipts. Follow the ledger. Follow the reversals. Follow the correspondence. Follow each payment to the last independently evidenced event. Do not manufacture the missing link.",
   "verification_receipt": "cases/ALIEN-001/ALIEN-001_gate_a_verification_receipt.md",
   "chain_of_custody": "cases/ALIEN-001/ALIEN-001_chain_of_custody.md",
@@ -463,5 +502,30 @@
     "distinction": "Preserved per Gate A #6: fictional premises (story boundaries from EV-001 narrative, marked unverified in timeline) vs missing authenticated records (EV-003..032 MISSING) vs authenticated financial records (none yet, future with hashes) vs findings (require evidence ID+hash+arithmetic)",
     "handling": "Timeline events EVT-ACCOUNT-OPEN-001 etc. sourced to EV-001 work order narrative, marked unverified; report \u00a74/17 and custody doc \u00a77 table; no premise promoted to verified finding",
     "gate_a_item": "Required correction #6"
-  }
+  },
+  "frozen_manifest": "cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json",
+  "frozen_manifest_sha256": "59f654939f39835263dd2633520e55d7384a886a99f361cae798e6c379ce56e5",
+  "closeout_document": "cases/ALIEN-001/ALIEN-001_gate_a_closeout_and_phase1_hold.md",
+  "closeout_sha256": "8f3a6eb123474d88ff6208533ffe95c4e747d085999149197f22b3aeed17d2cf",
+  "evidence_classification": {
+    "policy": "Separate authorities: administrative (work orders/commits/manifests/tests) never corroborate financial; narrative premises (story boundaries) unverified until financial evidence; financial (bank statements/records) only supporting ledger/reconciliation; supporting_communications correlate but not prove settlement",
+    "implementation": "ALIEN-001_evidence_register.csv now has evidence_class column: administrative:2 (EV-001/002), financial:24 (EV-003..020,027..032), supporting_communications:6 (EV-021..026); event_timeline.csv has narrative_premise:6 + administrative:2",
+    "counts": {
+      "administrative": 2,
+      "financial": 24,
+      "supporting_communications": 6,
+      "narrative_premise_timeline": 6,
+      "total_register": 32
+    },
+    "rule": "Verified repository commit must never be treated as corroboration of financial transaction"
+  },
+  "append_only_custody": {
+    "protocol": "Record any future evidence acquisition as new append-only custody event: new EV-033+ row + CUST-017+ log row + SHA-256 on original bytes before extraction; never overwrite frozen baseline",
+    "log_file": "cases/ALIEN-001/ALIEN-001_custody_log.csv (to be created on first authentic document)",
+    "preservation_rule": "Preserve original source bytes and compute SHA-256 before extraction (Work Order Phase 0 step 4)",
+    "validation_before_promotion": "Validate document authenticity (source/originality/period/consistency/redaction) and account/date coverage (alias, date range, gap/overlap, deduplication) before promoting extracted entries into master ledger \u2014 see closeout \u00a75; human accept/reject required"
+  },
+  "financial_conclusions_hold": "All UNRESOLVED until supported by source records (ledger header-only, reconciliation 0 periods, remittance all UNRESOLVED, exceptions PENDING) \u2014 closeout \u00a76; 40 potential remains estimate of calendar coverage, not expectation of exactly 40 statements",
+  "next_trigger": "Human submission of authentic financial source document (financial class: bank statement EV-003..032) \u2192 append-only custody \u2192 validation (\u00a75) \u2192 Phase 1 Evidence Admission Receipt (closeout \u00a77 template) \u2192 human accept/reject for forensic ingestion",
+  "closeout_timestamp": "2026-10-25T19:00:00Z"
 }

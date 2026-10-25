@@ -1,0 +1,342 @@
+{
+  "freeze_id": "ALIEN-001-FRZ-v0_1_1",
+  "case_id": "FOR3NSIC-ALIEN-001",
+  "subject": "ALIEN",
+  "title": "FOLLOW THE MONEY \u2014 Phase 0 Frozen Intake Baseline",
+  "version_frozen": "0.1.1",
+  "frozen_at_utc": "2026-10-25T18:30:00Z",
+  "branch": "arena/bce16055-wrasal-control",
+  "commits": {
+    "baseline": "af529b54e14974eec42e1f4dd200f06c61175f15",
+    "phase0_v010": "ec404b9ff25487f8c2fc6b26ddb75983b607a89e",
+    "verification_v011": "bb09bc12f3a52a2b528bc942aa1c24c56fd839f0",
+    "frozen_manifest_commit": "this_file_will_be_committed_next"
+  },
+  "classification": "Confidential Financial Evidence \u2014 Read-Only",
+  "gate_status": {
+    "Gate_A": "Conditionally approved 2026-10-25 \u2014 corrections accepted provisionally, verification pending human independent inspection",
+    "Gate_A_verification": "Submitted bb09bc1, provisionally accepted",
+    "Gate_A_closeout": "Frozen v0.1.1 as reported intake baseline \u2014 this manifest",
+    "P0": "Reported complete, verification pending",
+    "Phase1": "Blocked pending authentic records",
+    "Phase2": "Blocked",
+    "Phase3": "Blocked",
+    "B": "Not requested",
+    "C": "Not requested",
+    "D": "Not requested"
+  },
+  "calendar_coverage_frozen": {
+    "account_one_potential": 17,
+    "account_two_potential": 23,
+    "total_potential_statements": 40,
+    "total_calendar_months_inclusive": 42,
+    "gap_months": 2,
+    "note": "Calendar-month ceiling \u2014 estimate of coverage, not expectation that exactly 40 statements must exist. Actual issued statements depend on opening/closing dates within month and statement cycle day \u2014 see verification receipt \u00a71.3."
+  },
+  "artifacts_frozen": [
+    {
+      "filename": "ALIEN-001_evidence_register.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_evidence_register.csv",
+      "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
+      "bytes": 13038,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_evidence_register.csv",
+      "path": "ALIEN-001_evidence_register.csv",
+      "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
+      "bytes": 13038,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_master_ledger.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_master_ledger.csv",
+      "sha256": "9141e7662a71a4b17f2a4a70dbb7f30ffaa3ce332a00a33b9a7d14e9666e0cd4",
+      "bytes": 1264,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_master_ledger.csv",
+      "path": "ALIEN-001_master_ledger.csv",
+      "sha256": "9141e7662a71a4b17f2a4a70dbb7f30ffaa3ce332a00a33b9a7d14e9666e0cd4",
+      "bytes": 1264,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_balance_reconciliation.xlsx",
+      "path": "cases/ALIEN-001/ALIEN-001_balance_reconciliation.xlsx",
+      "sha256": "2dcb521f8de7d1950635b75d79dc6d07ba87ae09ef5f2381dd7acd1e5ebe1722",
+      "bytes": 9477,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_balance_reconciliation.xlsx",
+      "path": "ALIEN-001_balance_reconciliation.xlsx",
+      "sha256": "2dcb521f8de7d1950635b75d79dc6d07ba87ae09ef5f2381dd7acd1e5ebe1722",
+      "bytes": 9477,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_remittance_trace.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_remittance_trace.csv",
+      "sha256": "09fd356cfa68ac3252f04aaba4506709431872855c615e3f21de182057377b9c",
+      "bytes": 1314,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_remittance_trace.csv",
+      "path": "ALIEN-001_remittance_trace.csv",
+      "sha256": "09fd356cfa68ac3252f04aaba4506709431872855c615e3f21de182057377b9c",
+      "bytes": 1314,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_deposit_return_analysis.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_deposit_return_analysis.csv",
+      "sha256": "cf3c3c8628ad89d063749c18260b79fc13b74a8135d3a901f7cb00998a12942a",
+      "bytes": 1175,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_deposit_return_analysis.csv",
+      "path": "ALIEN-001_deposit_return_analysis.csv",
+      "sha256": "cf3c3c8628ad89d063749c18260b79fc13b74a8135d3a901f7cb00998a12942a",
+      "bytes": 1175,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_event_timeline.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_event_timeline.csv",
+      "sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
+      "bytes": 2328,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_event_timeline.csv",
+      "path": "ALIEN-001_event_timeline.csv",
+      "sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
+      "bytes": 2328,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_exception_register.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_exception_register.csv",
+      "sha256": "65508b846c0433fa5dde38d7a12dfd5c91a83d95dee6778cb1c36b761dd9f604",
+      "bytes": 8882,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_exception_register.csv",
+      "path": "ALIEN-001_exception_register.csv",
+      "sha256": "65508b846c0433fa5dde38d7a12dfd5c91a83d95dee6778cb1c36b761dd9f604",
+      "bytes": 8882,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_missing_evidence.md",
+      "path": "cases/ALIEN-001/ALIEN-001_missing_evidence.md",
+      "sha256": "8bcb781ffced843a42cbf02497a96be13479cc0cba73fa0f0d5e881565bac54b",
+      "bytes": 22816,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_missing_evidence.md",
+      "path": "ALIEN-001_missing_evidence.md",
+      "sha256": "8bcb781ffced843a42cbf02497a96be13479cc0cba73fa0f0d5e881565bac54b",
+      "bytes": 22816,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_forensic_report.md",
+      "path": "cases/ALIEN-001/ALIEN-001_forensic_report.md",
+      "sha256": "a8be546ce5030b2ceb0eacf08be73261e80d5fdf8fa85da80772f56fa0f1bcb5",
+      "bytes": 46424,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_forensic_report.md",
+      "path": "ALIEN-001_forensic_report.md",
+      "sha256": "a8be546ce5030b2ceb0eacf08be73261e80d5fdf8fa85da80772f56fa0f1bcb5",
+      "bytes": 46424,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_provenance.json",
+      "path": "cases/ALIEN-001/ALIEN-001_provenance.json",
+      "sha256": "d697be2a014d0da51bb27f71fa0d15121c2e86476a73d31c58994fb2a448eb87",
+      "bytes": 24963,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_provenance.json",
+      "path": "ALIEN-001_provenance.json",
+      "sha256": "d697be2a014d0da51bb27f71fa0d15121c2e86476a73d31c58994fb2a448eb87",
+      "bytes": 24963,
+      "version": "0.1.1",
+      "frozen": true,
+      "mirror": "root"
+    },
+    {
+      "filename": "ALIEN-001_chain_of_custody.md",
+      "path": "cases/ALIEN-001/ALIEN-001_chain_of_custody.md",
+      "sha256": "5ec2981096537a60662df81cb790abbc552aab8075bcd713431a247c8d6a68cd",
+      "bytes": 23574,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "ALIEN-001_gate_a_verification_receipt.md",
+      "path": "cases/ALIEN-001/ALIEN-001_gate_a_verification_receipt.md",
+      "sha256": "c04af3decb4bae9910f6d04be7d2bbf1a92e4e465fae0d98765b0b76c4eb4235",
+      "bytes": 45300,
+      "version": "0.1.1",
+      "frozen": true
+    },
+    {
+      "filename": "FOR3NSIC-ALIEN-001_work_order.md",
+      "path": "cases/ALIEN-001/originals/FOR3NSIC-ALIEN-001_work_order.md",
+      "sha256": "5a08e681da88d4f4dc59db36de69c9f8dad3a48d2377b00338876cc20f71e769",
+      "bytes": 3351,
+      "version": "0.1.1",
+      "frozen": true,
+      "class": "original_preservation"
+    },
+    {
+      "filename": "repo_manifest.json",
+      "path": "cases/ALIEN-001/originals/repo_manifest.json",
+      "sha256": "b54b295b205a0f4def35011bd99f66cd17d863c8dd5e39e40c5491db4fc3984a",
+      "bytes": 1325,
+      "version": "0.1.1",
+      "frozen": true,
+      "class": "original_preservation"
+    },
+    {
+      "filename": "README.md",
+      "path": "README.md",
+      "sha256": "5ea9a578c3cf3d885f89cc4e7913898f25f650199efeccc5d654fc727431e134",
+      "bytes": 2017,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "projects.yml",
+      "path": "projects.yml",
+      "sha256": "5452ab3a7629bc18f4cc72de02d331773ab90558395665e279904c8346696dbe",
+      "bytes": 318,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "dependencies.yml",
+      "path": "dependencies.yml",
+      "sha256": "568c092a1d4f28424e3df8d8aa2d2fc738e14c32d8854f970d69bb480e476afd",
+      "bytes": 17,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "priorities.yml",
+      "path": "priorities.yml",
+      "sha256": "e08cccd07f03581ea350e22122a6dcf712d15e0f3845a17f6776e4b3dde8d228",
+      "bytes": 15,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+      "path": "concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+      "sha256": "2ed6b4af97d145528e3b2f0dc2a138b058e81b5b2d1e83a92d186b347842a7a5",
+      "bytes": 8112,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "status-vocabulary.json",
+      "path": "work_orders/status-vocabulary.json",
+      "sha256": "4a9a0d60639969bfe74c578f8953d06226004b60697629b80bc76d33a507f006",
+      "bytes": 1138,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    },
+    {
+      "filename": "WRASAL-0005-validation.json",
+      "path": "evidence/WRASAL-0005-validation.json",
+      "sha256": "c93895b3c668d0b4867286e0141c3285efa22cfefa20e514aab8b4073263b089",
+      "bytes": 74535,
+      "version": "baseline",
+      "frozen": true,
+      "class": "scaffold"
+    }
+  ],
+  "evidence_classification_policy": {
+    "administrative": "Work orders, repository commits, manifests, tests, chain-of-custody records \u2014 verify intake system integrity; NEVER treated as corroboration of a financial transaction",
+    "narrative_premise": "Story boundaries from work order narrative (e.g., Account opened May 2023) \u2014 marked unverified story premise sourced to EV-001, not bank-verified",
+    "financial": "Bank statements, deposit records, transaction exports, opening/closing balances, closure notices, check images, wire confirmations, FX disclosures, recipient acknowledgments, Jamaican debt statements/creditor receipts \u2014 only these can support ledger entries and reconciliation",
+    "supporting_communications": "Bank emails, auth notices, fraud/restriction notices, payment screenshots, browser error logs, phishing samples \u2014 correlate with financial events but do not prove transaction settlement; hypotheses remain",
+    "rule": "A verified repository commit (administrative) must never be treated as corroboration of a financial transaction. Financial conclusions remain UNRESOLVED until authenticated financial evidence (financial class) supports them."
+  },
+  "validation_frozen": {
+    "control_plane_validator": "PASS 567/567 checks (reproducible via npm ci && npm run validate:control-plane) \u2014 scope is WRASAL portfolio-control scaffold, not forensic controls; forensic AT-01..10 qualified Phase-0-only",
+    "validator_self_tests": "PASS (invalid fixtures correctly rejected)",
+    "evidence_report": "evidence/WRASAL-0005-validation.json",
+    "checked_files_at_freeze": [
+      "dependencies.yml",
+      "priorities.yml",
+      "projects.yml",
+      "work_orders",
+      "work_orders/WRASAL-0001.json",
+      "work_orders/WRASAL-0003.json",
+      "work_orders/WRASAL-0004.json",
+      "work_orders/WRASAL-0005.json",
+      "work_orders/WRASAL-0006.json",
+      "work_orders/WRASAL-0010.json",
+      "work_orders/status-vocabulary.json"
+    ]
+  },
+  "chain_of_custody_frozen": {
+    "originals_dir": "cases/ALIEN-001/originals/",
+    "hashes_before_extraction": "SHA-256 computed on original source bytes before any extraction/redaction (Work Order Phase 0 step 4)",
+    "append_only_future": "Any future evidence acquisition recorded as new append-only custody event with new evidence ID, SHA-256, and timestamp \u2014 never overwrite frozen baseline",
+    "access_controls": "Branch ACL wrasalmedia-rgb admin, E2B ephemeral sandbox, read-only originals (git immutable), no autonomous financial actions per Gate A boundary"
+  },
+  "financial_conclusions_status": "All UNRESOLVED \u2014 no ledger entries promoted, no balance arithmetic, no payment dispositions confirmed",
+  "next_authorized_trigger": "Human submission of authentic financial source document \u2192 append-only custody event \u2192 validation of authenticity/account/date coverage before promotion to master ledger \u2192 Phase 1 Evidence Admission Receipt",
+  "next_human_decision": "Accept or reject that source for forensic ingestion",
+  "doctrine": "REALITY FIRST. TECHNOLOGY SECOND. No evidence \u2192 no authority \u2192 no state change. Do not begin reconstruction based on narrative alone.",
+  "frozen_by": "Arena Intake Agent (bb09bc1 verification pass) \u2014 to be committed as next commit",
+  "human_provisional_acceptance": "Gate A documentation accepted provisionally 2026-10-25; human has not independently inspected repository or rerun verification \u2014 this freeze preserves reported state for independent inspection"
+}
