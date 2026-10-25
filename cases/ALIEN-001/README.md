@@ -1,19 +1,19 @@
 # FOR3NSIC-ALIEN-001 — FOLLOW THE MONEY — Case Folder
 
 **Subject:** ALIEN (fictional) — May 2023 through Oct 25, 2026
-**Phase:** Gate A Closeout & Phase 1 Hold (v0.1.2 — frozen v0.1.1 → evidence-class separation)
+**Phase:** Phase 1 Hold (v0.1.3 reconciliation — v0.1.1 frozen; current timeline and custody wording corrected)
 **Date:** 2026-10-25
 **Branch:** arena/bce16055-wrasal-control
 **Baseline Commit:** af529b54e14974eec42e1f4dd200f06c61175f15
 **Phase 0 Commit:** ec404b9ff25487f8c2fc6b26ddb75983b607a89e
 **Verification Commit:** bb09bc12f3a52a2b528bc942aa1c24c56fd839f0
-**Closeout Commit:** next (v0.1.2 — this folder)
+**Closeout Commit:** 933662f; correction commit: pending
 
 ## Contents
 
 This folder implements read-only forensic reconstruction per Work Order FOR3NSIC-ALIEN-001 v1.0.
 
-### Generated artifacts (v0.1.1 frozen → v0.1.2 closeout)
+### Generated artifacts (v0.1.1 frozen → v0.1.2 closeout → v0.1.3 reconciliation)
 
 | File | Purpose | Status |
 |---|---|---|
@@ -22,15 +22,15 @@ This folder implements read-only forensic reconstruction per Work Order FOR3NSIC
 | ALIEN-001_balance_reconciliation.xlsx | Monthly reconciliation (Opening+credits−debits=expected close) — 3 sheets README_Phase0/Reconciliation/Exception_Map (corrected 40 potential, 42 total) | PLACEHOLDER — 0 periods (v0.1.1) |
 | ALIEN-001_remittance_trace.csv | Jamaica payment chain (Intention→...→Obligation credited, 8 dispositions, AT-04 enforced) | PLACEHOLDER — 0 chains, all UNRESOLVED |
 | ALIEN-001_deposit_return_analysis.csv | Check/hold/return/overdraft sequences (5-step per Work Order Phase 4) | PLACEHOLDER — 0 sequences |
-| ALIEN-001_event_timeline.csv | Chronology (2 intake + 4 narrative premises as story premises per EV-001) + evidence_class (administrative 2, narrative_premise 6) | 8 events (6 + comment) — v0.1.2 |
+| ALIEN-001_event_timeline.csv | Valid CSV, 13 columns, 7 data rows (2 administrative + 5 narrative_premise); timeline counts and classifications reconciled | v0.1.3, 8 lines including header; SHA-256 de93bd48… |
 | ALIEN-001_exception_register.csv | Exceptions with competing explanations, confidence, next actions | 8 global exceptions (all PENDING, qualified Phase-0-only) |
 | ALIEN-001_missing_evidence.md | Full 30-category missing evidence report + Tier 1-4 prioritized request + checklist + erratum 40/42 calendar vs issued distinction | PHASE 0 COMPLETE (v0.1.1) |
 | ALIEN-001_forensic_report.md | Human-readable Phase 0 report (v0.1.1 erratum, 42/40 corrected, qualified AT PASS Phase-0-only, Gates A conditional→verification) | PHASE 0 COMPLETE → Verification Receipt (v0.1.1) |
-| ALIEN-001_provenance.json | Machine-readable provenance v0.1.2 (42 months, 40 potential, 567-control-plane not forensic, custody controls, qualified ATs, frozen manifest) | PHASE 0 COMPLETE → Closeout (v0.1.2) |
+| ALIEN-001_provenance.json | Machine-readable provenance v0.1.3 (frozen baseline, corrected timeline count, distinct custody/issuer-assurance statuses, Phase 1 hold) | PHASE 1 HOLD — current state |
 | ALIEN-001_chain_of_custody.md | Chain of custody & evidence controls (acquisition, custody transfers, Git limitations, redaction workflow, fictional vs authenticated distinction) | NEW — Gate A required correction #5 (v0.1.1) |
 | ALIEN-001_gate_a_verification_receipt.md | Gate A Verification Receipt (6 sections: corrected coverage, artifact manifest/hashes, reproducible validation 567→scope, custody assessment, blockers, readiness decision) | NEW — Gate A required return (v0.1.1) |
 | ALIEN-001_frozen_manifest_v0_1_1.json | Frozen intake baseline manifest v0.1.1 (12 artifacts with hashes at bb09bc1, 40 potential = 17+23, 42 calendar months, evidence-class policy) | NEW — Gate A Closeout freeze (v0.1.2 closeout) |
-| ALIEN-001_gate_a_closeout_and_phase1_hold.md | Gate A Closeout & Phase 1 Hold (7 directives: freeze baseline, separate evidence classes, append-only custody, preserve bytes+SHA before extraction, validate authenticity/coverage before promotion, hold UNRESOLVED, Phase 1 receipt template) | NEW — Gate A Closeout (v0.1.2) |
+| ALIEN-001_gate_a_closeout_and_phase1_hold.md | Gate A Closeout & Phase 1 Hold, with v0.1.3 erratum on timeline count and hash/authenticity distinction | Active closeout and hold record |
 | originals/FOR3NSIC-ALIEN-001_work_order.md | Work order authority document (EV-001) | Preserved read-only (hash 5a08e68…) |
 | originals/repo_manifest.json | Repo scaffold hashes at baseline commit (EV-002) | Preserved read-only (hashes of README/projects.yml etc.) |
 
@@ -47,9 +47,11 @@ No transaction classified as fraudulent, stolen, delivered, or lost without evid
 | Class | Definition | Count | Applies to |
 |---|---|---|---|
 | **administrative** | Work orders, repository commits, manifests, tests, chain-of-custody records — verify intake system integrity only; NEVER financial corroboration | 2 (EV-001/002) + derived manifests/provenance/chain-of-custody docs | Verify system, not money movement |
-| **financial** | Bank statements, deposit records, transaction exports, opening/closing balances, check images, wire confirmations, FX disclosures, recipient acknowledgments, Jamaican debt statements/creditor receipts | 24 (EV-003..020,027..032) — all MISSING (UNRESOLVED) | Only class that can support ledger entries and reconciliation; conclusions remain UNRESOLVED until this supplied |
-| **narrative_premise** | Story boundaries from work order narrative (Account opened May 2023, closed Sep 2024, gap, second account Dec 2024) — marked unverified | 6 timeline events (EVT-ACCOUNT-* + EVT-GAP-001) | Scope only — not financial proof |
+| **financial** | Bank statements, deposit records, transaction exports, opening/closing balances, check images, wire confirmations, FX disclosures, recipient acknowledgments, Jamaican debt statements/creditor receipts | 24 (EV-003..020,027..032) — all MISSING (UNRESOLVED) | Only admitted source records can support ledger entries/reconciliation; file hashes do not establish issuer authenticity |
+| **narrative_premise** | Work-order boundaries and cutoff (opening/closure premises, gap, second account, period cutoff) — unverified | 5 timeline rows | Scope only — not financial proof |
 | **supporting_communications** | Bank emails, auth notices, fraud/restriction notices, payment screenshots, browser error logs, phishing samples — correlate but do not prove settlement | 6 (EV-021..026) — all MISSING | Supports investigation; hypotheses remain possibilities |
+
+Storage separation: administrative originals are in `originals/`; future financial source originals go in `financial_originals/`; narrative premises remain in the timeline. No financial originals are currently present. A hash is an integrity check, not issuer authentication.
 
 Rule: *A verified repository commit must never be treated as corroboration of a financial transaction.* See evidence_register.csv evidence_class column and gate_a_closeout_and_phase1_hold.md §2.
 
@@ -57,7 +59,7 @@ Rule: *A verified repository commit must never be treated as corroboration of a 
 
 - Gate P0: **Reported complete, verification pending** — source inventory documented (frozen v0.1.1 manifest; 40 potential calendar-month estimate not expectation)
 - Gate A: **Conditionally approved 2026-10-25 → Verified bb09bc1 (567 checks reproducible, 17/23/40/42 corrected, custody documented, ATs qualified) → Closeout frozen v0.1.1 as reported baseline (ALIEN-001_frozen_manifest_v0_1_1.json, 12 artifacts hashed) → Phase 1 Hold (evidence-class separation implemented)**
-- Gate A Closeout: **Complete 2026-10-25T19:00Z — Frozen manifest bb09bc1 hashes immutable; evidence_class added (administrative 2, financial 24, supporting_communications 6, narrative_premise 6 timeline); verified repo commit ≠ financial corroboration enforced; append-only custody protocol documented; preservation-before-extraction + validation-before-promotion required; all financial conclusions held UNRESOLVED**
+- Gate A Closeout: **Complete 2026-10-25T19:00Z — Frozen manifest bb09bc1 hashes immutable; evidence_class added (administrative 2, financial 24, supporting_communications 6, narrative_premise 5 timeline); verified repo commit ≠ financial corroboration enforced; append-only custody protocol documented; preservation-before-extraction + validation-before-promotion required; all financial conclusions held UNRESOLVED**
 - Phase 1 Hold: **Do not begin reconstruction based on narrative alone — next authorized trigger is human submission of authentic financial source document (financial class) → Phase 1 Evidence Admission Receipt (closeout §7 template, with authenticity/coverage checks) → human accept/reject**
 - Gates B-D: Not requested (blocked until financial evidence validated and ingested)
 
@@ -71,11 +73,11 @@ Rule: *A verified repository commit must never be treated as corroboration of a 
 
 ## Next steps (upon human authentic document)
 
-**Next authorized trigger:** Human submission of authentic financial source document (financial evidence_class: e.g., `Statement_Account1_2023-05.pdf` for EV-003).
+**Next authorized trigger:** Receipt of the earliest available Account One financial source document, preferably the statement covering May 2023. Its status as issuer-authenticated is evaluated separately and must not be assumed from its hash or appearance. Its receipt does not presume an opening balance or any transaction; these are recorded only if shown by the source.
 
 **Arena will return:** `ALIEN-001_phase1_admission_receipt_EV-033.md` with:
 - Received timestamp, evidence_id EV-033+, SHA-256 on original bytes before extraction, custody event CUST-017+ (append-only)
-- Authenticity checks (source/originality/period/consistency/redaction) + coverage validation (account alias/date range/gap/dedup)
+- Source provenance, apparent-authenticity observations, file-integrity hash, issuer-verification status, and coverage validation (account alias/date range/gap/dedup)
 - Admission decision: ACCEPTED / REJECTED / CONDITIONAL (with exception ID if needed)
 - Extraction result (new ledger rows with source_evidence_id) — still UNRESOLVED overall until sufficient coverage
 - Human decision block: Accept or reject that source for forensic ingestion
@@ -93,6 +95,6 @@ Opening/closing balance records + closure notice (EV-007 Sep 2024)
 
 *v0.1.1 Erratum (Gate A): Coverage corrected 16/22/38→17/23/40 (42 total calendar months inclusive, 40 potential statements = 17+23+2 gap); calendar-month ceiling ≠ issued statement count.*
 
-*v0.1.2 Closeout (Gate A): Evidence-class separation implemented; frozen manifest v0.1.1 (c053ac… etc.) preserved as immutable baseline; current register v0.1.2 (8b9d4de…) adds evidence_class; narrative premises (6 timeline events) separated from financial.*
+*v0.1.2 Closeout / v0.1.3 reconciliation: Evidence-class separation implemented; timeline is 7 rows (2 administrative + 5 narrative premises); SHA-256 establishes byte integrity relative to the hashed copy, not bank issuance; provenance, apparent authenticity, and independently verified issuer authenticity are distinct; frozen manifest v0.1.1 (c053ac… etc.) preserved as immutable baseline; current register v0.1.2 (8b9d4de…) adds evidence_class; narrative premises (5 timeline rows) separated from financial.*
 
 *Do not manufacture the missing link. Follow the receipts.*

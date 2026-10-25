@@ -2,8 +2,8 @@
   "case_id": "FOR3NSIC-ALIEN-001",
   "subject_alias": "ALIEN",
   "case_title": "FOLLOW THE MONEY",
-  "version": "0.1.2",
-  "phase": "Gate A Closeout & Phase 1 Hold \u2014 Frozen Baseline v0.1.1 + evidence_class separation",
+  "version": "0.1.3",
+  "phase": "Phase 1 Hold \u2014 v0.1.1 baseline frozen; v0.1.2 closeout provisionally accepted; timeline and custody assurance reconciled v0.1.3",
   "issued": "2026-10-25T00:00:00Z",
   "created_utc": "2026-10-25T18:00:00Z",
   "generated_in_session": "2026-10-25T17:30:31Z",
@@ -99,7 +99,7 @@
     ],
     "missing_detail": "EV-003 through EV-032 (30 categories) all MISSING \u2014 see evidence_register.csv",
     "version": "0.1.2",
-    "evidence_class_added": "2026-10-25 closeout: administrative 2, financial 24, supporting_communications 6; narrative_premise 6 in timeline",
+    "evidence_class_added": "2026-10-25 closeout: administrative 2, financial 24, supporting_communications 6; timeline separately has 7 rows (administrative 2, narrative_premise 5)",
     "frozen_baseline_hash": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973 (v0.1.1 frozen manifest)",
     "current_hash": "8b9d4de7e5b3a3dffda06a1c1bda195a30ca9396659f7f624efed108fb512ffd"
   },
@@ -107,11 +107,11 @@
     {
       "filename": "ALIEN-001_evidence_register.csv",
       "path": "cases/ALIEN-001/ALIEN-001_evidence_register.csv",
-      "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
-      "bytes": 13038,
-      "version": "0.1.1",
+      "sha256": "8b9d4de7e5b3a3dffda06a1c1bda195a30ca9396659f7f624efed108fb512ffd",
+      "bytes": 19876,
+      "version": "0.1.2",
       "created_utc": "2026-10-25T17:30:00Z",
-      "status": "phase0_complete_32_rows_2_received_30_missing",
+      "status": "current_evidence_class_register",
       "records": 32,
       "updated_utc": "2026-10-25T18:00:00Z"
     },
@@ -162,13 +162,19 @@
     {
       "filename": "ALIEN-001_event_timeline.csv",
       "path": "cases/ALIEN-001/ALIEN-001_event_timeline.csv",
-      "sha256": "c78223d4d97bba2f2c05146477e8b1e9badb90c4bd283d2cf3e65323c8d259ec",
-      "bytes": 2464,
-      "version": "0.1.2",
+      "sha256": "de93bd48bcde1c3df655d4cc224d66ca8c665fe3d39dd6ae9cc8e66ff0ab6193",
+      "bytes": 2324,
+      "version": "0.1.3",
       "created_utc": "2026-10-25T17:30:00Z",
-      "status": "v0.1.2_with_narrative_premise_class",
-      "records": 6,
-      "updated_utc": "2026-10-25T18:00:00Z"
+      "status": "current_clean_csv_timeline_reconciled",
+      "records": 7,
+      "updated_utc": "2026-10-25T20:00:00Z",
+      "classification_counts": {
+        "administrative": 2,
+        "narrative_premise": 5
+      },
+      "frozen_baseline_sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
+      "previous_active_sha256": "c78223d4d97bba2f2c05146477e8b1e9badb90c4bd283d2cf3e65323c8d259ec"
     },
     {
       "filename": "ALIEN-001_exception_register.csv",
@@ -376,13 +382,14 @@
       "status": "Frozen v0.1.1 as reported intake baseline (frozen_manifest bb09bc1 hashes immutable); evidence_class separation implemented",
       "frozen_at": "2026-10-25T18:30:00Z",
       "frozen_manifest": "cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json",
-      "evidence_class_implemented": "administrative:2 financial:24 supporting_communications:6 narrative_premise:6 timeline"
+      "evidence_class_implemented": "administrative:2 financial:24 supporting_communications:6 in register; timeline: 7 data rows (administrative:2, narrative_premise:5)"
     },
     "Phase1_Hold": {
-      "status": "Hold \u2014 Do not begin reconstruction based on narrative alone; next trigger human authentic financial document \u2192 Phase 1 Evidence Admission Receipt \u2192 human accept/reject",
-      "next_trigger": "Human submission of authentic financial source document (financial class: bank statement EV-003..032) \u2192 append-only custody \u2192 validate authenticity/coverage before promotion",
+      "status": "PROVISIONAL ACCEPTANCE \u2014 HOLD CONTINUES; no reconstruction before receipt and evaluation of financial source evidence",
+      "next_trigger": "Receipt of the earliest available Account One financial source document, ideally the statement covering May 2023; preserve, document provenance, assess apparent authenticity and issuer-verification status separately, then request human approval.",
       "next_human_decision": "Accept or reject that source for forensic ingestion",
-      "hold_directive": "Maintain all financial conclusions as UNRESOLVED until supported by source records; preserve 40 potential as estimate not expectation"
+      "hold_directive": "Maintain all financial conclusions as UNRESOLVED until supported by source records; preserve 40 potential as estimate not expectation",
+      "issuer_verification": "not_attempted; do not describe any received source as independently bank-authenticated unless issuer authenticity is actually independently verified."
     }
   },
   "completion_contract": {
@@ -490,42 +497,89 @@
   "verification_receipt": "cases/ALIEN-001/ALIEN-001_gate_a_verification_receipt.md",
   "chain_of_custody": "cases/ALIEN-001/ALIEN-001_chain_of_custody.md",
   "chain_of_custody_assessment": {
-    "summary": "Documented per Gate A #5 in dedicated chain_of_custody.md + receipt \u00a74: source acquisition (EV-001/002 hashed), custody transfers (Git log af529b5\u2192ec404b9\u2192next), access controls (branch ACL, E2B isolation, read-only originals, no autonomous financial actions), Git limitations acknowledged (hash proves integrity not custody), redaction workflow (last4 preservation) documented for future financial intake",
+    "summary": "Documented acquisition and handling controls; Git/hash support integrity and traceability but do not establish source identity or issuer authenticity. Future provenance, apparent authenticity, and independent issuer verification are recorded separately.",
     "source_acquisition_verified": true,
     "custody_transfers_verified": true,
     "access_controls_documented": true,
     "redaction_procedures_documented": true,
     "git_hash_alone_insufficient_remediated": true,
-    "gate_a_item": "Required correction #5"
+    "gate_a_item": "Required correction #5",
+    "sha256_limitation": "Hash proves byte-level integrity relative to hashed copy only; it does not prove the file was issued by a bank."
   },
   "fictional_vs_authenticated": {
-    "distinction": "Preserved per Gate A #6: fictional premises (story boundaries from EV-001 narrative, marked unverified in timeline) vs missing authenticated records (EV-003..032 MISSING) vs authenticated financial records (none yet, future with hashes) vs findings (require evidence ID+hash+arithmetic)",
+    "distinction": "Narrative premises sourced to EV-001 remain unverified; EV-003..032 financial source categories remain missing; no independently verified bank-issued financial record has been received. Hashes are integrity checks, not issuer authentication.",
     "handling": "Timeline events EVT-ACCOUNT-OPEN-001 etc. sourced to EV-001 work order narrative, marked unverified; report \u00a74/17 and custody doc \u00a77 table; no premise promoted to verified finding",
     "gate_a_item": "Required correction #6"
   },
   "frozen_manifest": "cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json",
   "frozen_manifest_sha256": "59f654939f39835263dd2633520e55d7384a886a99f361cae798e6c379ce56e5",
   "closeout_document": "cases/ALIEN-001/ALIEN-001_gate_a_closeout_and_phase1_hold.md",
-  "closeout_sha256": "8f3a6eb123474d88ff6208533ffe95c4e747d085999149197f22b3aeed17d2cf",
+  "closeout_sha256": "5d1890739de01f7342e83a164c70fb3f01076481c9ed4a64ea9a18c2b161fa75",
   "evidence_classification": {
     "policy": "Separate authorities: administrative (work orders/commits/manifests/tests) never corroborate financial; narrative premises (story boundaries) unverified until financial evidence; financial (bank statements/records) only supporting ledger/reconciliation; supporting_communications correlate but not prove settlement",
-    "implementation": "ALIEN-001_evidence_register.csv now has evidence_class column: administrative:2 (EV-001/002), financial:24 (EV-003..020,027..032), supporting_communications:6 (EV-021..026); event_timeline.csv has narrative_premise:6 + administrative:2",
+    "implementation": "ALIEN-001_evidence_register.csv: administrative 2 (EV-001/002), financial 24 (EV-003..020,027..032), supporting_communications 6 (EV-021..026); separate event_timeline.csv: 7 data rows classified administrative 2 + narrative_premise 5.",
     "counts": {
       "administrative": 2,
       "financial": 24,
       "supporting_communications": 6,
-      "narrative_premise_timeline": 6,
-      "total_register": 32
+      "narrative_premise_timeline": 5,
+      "total_register": 32,
+      "timeline_data_rows": 7,
+      "timeline_administrative": 2,
+      "financial_sources_received": 0,
+      "transactions_inferred": 0,
+      "unsupported_monetary_findings": 0
     },
-    "rule": "Verified repository commit must never be treated as corroboration of financial transaction"
+    "rule": "A verified repository commit must never be treated as corroboration of a financial transaction. SHA-256 establishes byte-level integrity relative to the hashed copy, not source identity or bank issuance.",
+    "financial_source_authentication": "The register classifies the source type requested; it does not assert a missing document is authentic. Record file integrity, document provenance, apparent authenticity, and independently verified issuer authenticity separately."
   },
   "append_only_custody": {
     "protocol": "Record any future evidence acquisition as new append-only custody event: new EV-033+ row + CUST-017+ log row + SHA-256 on original bytes before extraction; never overwrite frozen baseline",
     "log_file": "cases/ALIEN-001/ALIEN-001_custody_log.csv (to be created on first authentic document)",
     "preservation_rule": "Preserve original source bytes and compute SHA-256 before extraction (Work Order Phase 0 step 4)",
-    "validation_before_promotion": "Validate document authenticity (source/originality/period/consistency/redaction) and account/date coverage (alias, date range, gap/overlap, deduplication) before promoting extracted entries into master ledger \u2014 see closeout \u00a75; human accept/reject required"
+    "validation_before_promotion": "Record file integrity (SHA-256), document provenance, apparent-authenticity observations, account/date coverage, and issuer-verification status separately before a human admission decision; a hash alone is not issuer verification.",
+    "financial_originals_dir": "cases/ALIEN-001/financial_originals/ (future-only; create on first financial source; administrative originals remain in originals/)",
+    "separation_rule": "Keep financial source originals physically separate from administrative originals; narrative premises remain only in the timeline. No financial originals or new directory currently exist."
   },
-  "financial_conclusions_hold": "All UNRESOLVED until supported by source records (ledger header-only, reconciliation 0 periods, remittance all UNRESOLVED, exceptions PENDING) \u2014 closeout \u00a76; 40 potential remains estimate of calendar coverage, not expectation of exactly 40 statements",
-  "next_trigger": "Human submission of authentic financial source document (financial class: bank statement EV-003..032) \u2192 append-only custody \u2192 validation (\u00a75) \u2192 Phase 1 Evidence Admission Receipt (closeout \u00a77 template) \u2192 human accept/reject for forensic ingestion",
-  "closeout_timestamp": "2026-10-25T19:00:00Z"
+  "financial_conclusions_hold": "UNDETERMINED / UNRESOLVED \u2014 no financial source records received; zero inferred transactions and zero unsupported monetary findings.",
+  "next_trigger": "Receipt of the earliest available Account One financial source document, ideally the May 2023 statement; do not infer account balance or transactions before the source is preserved, evaluated, and admitted.",
+  "closeout_timestamp": "2026-10-25T19:00:00Z",
+  "timeline_reconciliation": {
+    "version": "0.1.3",
+    "file": "cases/ALIEN-001/ALIEN-001_event_timeline.csv",
+    "sha256": "de93bd48bcde1c3df655d4cc224d66ca8c665fe3d39dd6ae9cc8e66ff0ab6193",
+    "bytes": 2324,
+    "csv_data_rows": 7,
+    "line_count_including_header": 8,
+    "comment_rows": 0,
+    "classification_counts": {
+      "administrative": 2,
+      "narrative_premise": 5
+    },
+    "event_ids": [
+      "EVT-INTAKE-001",
+      "EVT-INTAKE-002",
+      "EVT-ACCOUNT-OPEN-001",
+      "EVT-ACCOUNT-CLOSE-001",
+      "EVT-GAP-001",
+      "EVT-ACCOUNT-OPEN-002",
+      "EVT-PERIOD-END-001"
+    ],
+    "frozen_baseline_sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
+    "frozen_baseline_note": "The v0.1.1 frozen file is unchanged. Historical receipt text described six events; the frozen blob itself has seven event-ID rows. Current v0.1.3 file is valid 13-column CSV; no frozen hash was rewritten.",
+    "previous_active_v0_1_2_sha256": "c78223d4d97bba2f2c05146477e8b1e9badb90c4bd283d2cf3e65323c8d259ec",
+    "erratum": "Prior narrative timeline count of six was incorrect. Current row count is 7 (2 administrative + 5 narrative_premise)."
+  },
+  "custody_integrity_model": {
+    "file_integrity": "SHA-256 shows whether the preserved bytes match the bytes hashed; does not identify author, supplier, issuer, or truth.",
+    "document_provenance": "Record supplier, time, handoff channel, and handling path with gaps explicitly marked.",
+    "apparent_authenticity": "Record visible indicators and internal consistency as observations only; these can be imitated and are not issuer confirmation.",
+    "independently_verified_issuer_authenticity": "Claim only where the issuer has actually been independently verified through a reliable channel; external contact requires explicit human authorization.",
+    "financial_evidence_current_status": "No financial source documents received; assessments not performed."
+  },
+  "issuer_verification_status": "not_attempted \u2014 no financial documents received and no issuer verification performed; do not describe any file as independently bank-authenticated.",
+  "timeline_reconciliation_document": "cases/ALIEN-001/ALIEN-001_hold_reconciliation_and_custody_refinement.md",
+  "timeline_reconciliation_sha256": "d9ac4220e59cf06f6c2cd99d0560635f96357450a55dbf3023ea42203e1fc76b",
+  "active_preparation_version": "0.1.3",
+  "hold_disposition": "PROVISIONAL ACCEPTANCE \u2014 HOLD CONTINUES; no financial reconstruction; next trigger is receipt of the first financial source document."
 }

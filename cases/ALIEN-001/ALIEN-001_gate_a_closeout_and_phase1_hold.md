@@ -52,7 +52,7 @@ This manifest is an **immutable snapshot** of the 12 artifacts at commit `bb09bc
 | 3m | `ALIEN-001_balance_reconciliation.xlsx` | same `2dcb52…` | 9477 | 0.1.1 | mirror |
 | 4 | `cases/ALIEN-001/ALIEN-001_remittance_trace.csv` | `09fd356cfa68ac3252f04aaba4506709431872855c615e3f21de182057377b9c` | 1314 | 0.1.1 | header-only, 0 chains |
 | 5 | `cases/ALIEN-001/ALIEN-001_deposit_return_analysis.csv` | `cf3c3c8628ad89d063749c18260b79fc13b74a8135d3a901f7cb00998a12942a` | 1175 | 0.1.1 | header-only |
-| 6 | `cases/ALIEN-001/ALIEN-001_event_timeline.csv` | `dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89` | 2328 | 0.1.1 | 6 events (2 intake + 4 narrative premises unverified) |
+| 6 | `cases/ALIEN-001/ALIEN-001_event_timeline.csv` | `dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89` | 2328 | 0.1.1 | Frozen historical file: 7 event-ID rows (2 intake + 5 boundary/cutoff premises); v0.1.1 receipt text misstated count as 6 — see current erratum |
 | 7 | `cases/ALIEN-001/ALIEN-001_exception_register.csv` | `65508b846c0433fa5dde38d7a12dfd5c91a83d95dee6778cb1c36b761dd9f604` | 8882 | 0.1.1 | 8 globals |
 | 8 | `cases/ALIEN-001/ALIEN-001_missing_evidence.md` | `8bcb781ffced843a42cbf02497a96be13479cc0cba73fa0f0d5e881565bac54b` | 22816 | 0.1.1 | 40 potential /42 total corrected |
 | 9 | `cases/ALIEN-001/ALIEN-001_forensic_report.md` | `a8be546ce5030b2ceb0eacf08be73261e80d5fdf8fa85da80772f56fa0f1bcb5` | 46424 | 0.1.1 | v0.1.1 erratum + qualified ATs |
@@ -125,11 +125,11 @@ EVT-PERIOD-END-001,cutoff,...,narrative_premise
 | `evidence_class` | Definition | Examples (current register) | What it proves / does not prove | Human-readable note added to register row |
 |---|---|---|---|---|
 | **administrative** | Case administration evidence: work orders, repository commits, manifests, tests, chain-of-custody records — verify *intake system integrity* | EV-001 work order, EV-002 repo scaffold; also frozen manifest itself, provenance, chain-of-custody, verification receipt, `evidence/WRASAL-0005-validation.json` | Proves repository state at a commit is intact (hash matches), validator 567 checks pass, custody log is consistent. **Never proves a dollar moved.** | `CLASS administrative: work order/repo chain-of-custody — verify intake system integrity only; NEVER financial corroboration.` |
-| **narrative_premise** | Story boundaries from work order narrative, not bank-verified | Timeline EVT-ACCOUNT-OPEN-001 (May 2023 first account opened), EVT-ACCOUNT-CLOSE-001 (Sep 2024 closed reason unknown), EVT-GAP-001 (Oct–Nov 2024 gap), EVT-ACCOUNT-OPEN-002 (Dec 2024 second account) — all sourced to EV-001 work order text | Provides investigation *scope* (what period to look for). **Must not be promoted to financial finding** without authenticated financial evidence. | Timeline `notes`: “Story premise per Work Order Section 2 (no statement supplied)… Do not infer…” + column `narrative_premise` |
-| **financial** | Authenticated financial evidence: bank statements, opening/closing balances, transaction exports CSV/OFX/QFX, deposit receipts, check images, hold/return notices, wire instructions/confirmation numbers/tracking refs, FX/fee disclosures, cancellation notices, recipient acknowledgments + receiving-bank records, Jamaican debt statements/creditor receipts/bill confirmations/recipient credits, gap-period funding records | EV-003..020, EV-027..032 (24 IDs) — all currently MISSING (100% gap) | **Only class that can support ledger entries, balance reconciliation, payment dispositions.** Requires original-preserved + SHA-256 before extraction; authenticity and coverage validated before promotion (see §5). | `CLASS financial: bank statement/deposit record/transaction confirmation/creditor receipt — only this can support ledger entries and reconciliation; financial conclusions remain UNRESOLVED until supplied.` |
+| **narrative_premise** | Story boundaries and cutoff from work-order narrative, not independently verified | Timeline EVT-ACCOUNT-OPEN-001 (May 2023), EVT-ACCOUNT-CLOSE-001 (Sep 2024), EVT-GAP-001 (Oct–Nov 2024), EVT-ACCOUNT-OPEN-002 (Dec 2024), EVT-PERIOD-END-001 (Oct 25 2026 cutoff) — five rows sourced to EV-001 | Provides investigation *scope* only. **Must not be promoted to financial finding** without financial source evidence. | Timeline `notes` identify work-order premise and missing statements; column `narrative_premise` |
+| **financial** | Financial-source records sought: bank statements, opening/closing balances, transaction exports, deposit receipts, check images, transfer records, creditor records, and related financial records. Class describes intended source type, not a finding of authenticity. | EV-003..020, EV-027..032 (24 IDs) — all currently MISSING | **Only admitted source records can support ledger/reconciliation entries.** Preserve originals and hash before extraction; assess provenance, apparent authenticity, coverage, and any independent issuer verification separately (§5). | `CLASS financial: source record sought; hash establishes file integrity only, not issuer authenticity; conclusions remain UNRESOLVED until supported.` |
 | **supporting_communications** | Bank communications supporting correlation (not settlement proof) | EV-021 bank emails/secure messages, EV-022 auth notices, EV-023 fraud/restriction, EV-024 payment screenshots, EV-025 browser error logs (Safari/Chrome/pop-up), EV-026 phishing samples | Helps explain *why* (e.g., restriction caused hold, screenshot shows processing status) but **does not prove transaction settled.** Hypotheses (Safari/Chrome/phishing/restriction) remain possibilities until correlated with financial evidence. | `CLASS supporting_communications: bank email/auth notice/payment screenshot/browser log — supports correlation but does not prove settlement; hypothesis remains.` |
 
-**Counts in v0.1.2 register (32 IDs):** `administrative: 2` (EV-001/002), `financial: 24` (EV-003..020 + EV-027..032), `supporting_communications: 6` (EV-021..026), `narrative_premise: 0` *in register* but **6 timeline events** carry `narrative_premise` class. (Counts verifiable via `python3 -c "import csv; from collections import Counter; print(Counter(r['evidence_class'] for r in csv.DictReader(open('cases/ALIEN-001/ALIEN-001_evidence_register.csv'))))"` → `{'financial':24, 'supporting_communications':6, 'administrative':2}`)
+**Counts in v0.1.2 register (32 IDs):** `administrative: 2` (EV-001/002), `financial: 24` (EV-003..020 + EV-027..032), and `supporting_communications: 6` (EV-021..026). Timeline is a separate file with **7 data rows: 2 administrative + 5 narrative_premise**; the evidence register has no narrative-premise rows. (Counts verifiable via `python3 -c "import csv; from collections import Counter; print(Counter(r['evidence_class'] for r in csv.DictReader(open('cases/ALIEN-001/ALIEN-001_evidence_register.csv'))))"` → `{'financial':24, 'supporting_communications':6, 'administrative':2}`)
 
 ### 2.3 Enforcement — never conflate authorities
 
@@ -140,7 +140,7 @@ EVT-PERIOD-END-001,cutoff,...,narrative_premise
 | “No financial records supplied → therefore misconduct” | **Missing financial** is not proof of misconduct (doctrine: uncertainty must remain visible). Exception EXC-P0-001 states missing ≠ misconduct. |
 | “40 potential is expectation” | **Calendar coverage estimate** (frozen manifest `total_potential_statements: 40`) is planning estimate, not **expectation** that exactly 40 must exist → see §6. |
 
-Implementation: register row `evidence_class` + timeline `evidence_class` + provenance `evidence_classification_policy.rule` all state: *“A verified repository commit must never be treated as corroboration of a financial transaction.”*
+Implementation: register row `evidence_class` + timeline `evidence_class` + provenance `evidence_classification.rule` all state: *“A verified repository commit must never be treated as corroboration of a financial transaction.”*
 
 ---
 
@@ -158,13 +158,13 @@ Step 1 — Acquisition (append, not overwrite)
   Intake Agent records: acquisition_timestamp_utc, custodian (human → Arena), handoff method, original filename
 
 Step 2 — Preservation (before any processing)
-  Save original bytes verbatim to cases/ALIEN-001/originals/EV-033_Statement_Account1_2023-05_original.pdf
-  Compute SHA-256: sha256sum originals/EV-033_*
+  Save original bytes verbatim to cases/ALIEN-001/financial_originals/EV-033_Statement_Account1_2023-05_original.pdf
+  Compute SHA-256: sha256sum financial_originals/EV-033_*
   Record in evidence_register.csv as NEW ROW (never edit frozen v0.1.1 rows):
     evidence_id=EV-033, category=A_BANK_RECORDS, evidence_class=financial,
     filename_or_description="Account One statement 2023-05 (original)", format=PDF, custodian=Human (acquisition) → Arena (preservation),
-    source_location="originals/EV-033_...", date_received=<utc>, date_range_covered="2023-05-01 to 2023-05-31" (from header),
-    sha256=<computed>, original_preserved_location="cases/ALIEN-001/originals/EV-033...", redacted_copy_location="cases/ALIEN-001/redacted/EV-033..._redacted.pdf" (if PII redaction needed),
+    source_location="financial_originals/EV-033_...", date_received=<utc>, date_range_covered="2023-05-01 to 2023-05-31" (from header),
+    sha256=<computed>, original_preserved_location="cases/ALIEN-001/financial_originals/EV-033...", redacted_copy_location="cases/ALIEN-001/redacted/EV-033..._redacted.pdf" (if PII redaction needed),
     extraction_status=received, reconciliation_status=unresolved
   Append custody event to cases/ALIEN-001/ALIEN-001_custody_log.csv (new append-only log — see 3.2):
     event_id=CUST-001, timestamp_utc, evidence_id=EV-033, action=acquired_and_preserved, actor=Arena Intake Agent, sha256, branch, commit_parent=bb09bc1
@@ -218,27 +218,31 @@ CUST-001,2026-10-25T18:30:00Z,EV-001,WORK_ORDER,administrative,acquired_and_pres
 ```
 For ANY new financial file (EV-033+):
   1. Save original bytes verbatim — no open/save that changes PDF metadata
-  2. Immediately: sha256sum originals/EV-033_* → record in register column sha256 + original_preserved_location
+  2. Immediately: sha256sum financial_originals/EV-033_* → record in register column sha256 + original_preserved_location
   3. Only then: generate redacted copy (if needed) → hash redacted separately
   4. Only then: validate authenticity (§5) → extract to ledger
   5. Never: extract from memory without preserving original first
 ```
 
-**Verification:** Human can recompute `sha256sum cases/ALIEN-001/originals/EV-033_*` and compare to `evidence_register.csv` sha256 column + custody log sha256 — must match (integrity check independent of Arena-reported hashes).
+**What the hash means:** A matching SHA-256 supports byte-level integrity of the preserved copy relative to the bytes hashed. It does **not** establish who created/supplied the document, that a bank issued it, or that its contents are accurate. Provenance and issuer authentication are assessed and reported separately.
+
+**Verification:** Human can recompute `sha256sum cases/ALIEN-001/financial_originals/EV-033_*` and compare to `evidence_register.csv` sha256 column + custody log sha256 — must match (integrity check independent of Arena-reported hashes).
 
 ---
 
 ## 5. Validation Before Promotion — Authenticity & Coverage Checks
 
-**Directive:** “Validate document authenticity and account/date coverage before promoting extracted entries into the master ledger.”
+**Directive:** “Validate document authenticity and account/date coverage before promoting extracted entries into the master ledger.” For this protocol, file integrity, document provenance, apparent authenticity, and independently verified issuer authenticity are separately recorded; SHA-256 alone does not establish bank issuance.
 
-### 5.1 Authenticity checks (required before `extraction_status` → `validated` → ledger promotion)
+### 5.1 Provenance and apparent-authenticity assessment (required before proposed extraction)
+
+These checks assess the supplied file and its apparent consistency; they do not independently verify bank issuance. Record source provenance (who supplied it, when, and by what channel) separately from apparent-authenticity observations. A SHA-256 hash is file-integrity evidence only. **Issuer verification is a separate status** (`not_attempted`, `verified`, or `unable_to_verify`); do not call a document independently bank-authenticated unless the issuer was actually verified through a reliable independent channel. External issuer contact requires explicit human authorization.
 
 For each candidate financial file (EV-033+):
 
 | Check | Authority | Pass → validated, fail → exception |
 |---|---|---|
-| **Source authority** | Is document bank-issued (bank letterhead, statement header with bank name, account alias last 4 matching known alias, contact info consistent with other statements)? Or is it human-generated summary (inadmissible as direct ledger source)? | Bank-issued → continue; human summary → flag EXC-PH1-xxx, require corroborating bank record |
+| **Source and apparent indicators** | Record who supplied the file and the handoff channel. Note observable features (claimed bank name, account alias, statement period, page sequence, contact details) and whether they are internally consistent. These indicators can be imitated and do not prove issuer identity. | Record observations and limitations; an unverified source or human-generated summary receives an exception and is not described as bank-authenticated. |
 | **Originality** | Is file original export (PDF with selectable text / OFX/QFX / CSV from bank portal) vs screenshot/photocopy of screen (may be edited, incomplete)? Prefer original export; screenshots flagged as `extraction_status: partial` | Original → continue; screenshot → mark limited, require full statement |
 | **Period authenticity** | Does statement header show statement date / period (e.g., “Statement period: May 1–31, 2023”) with page numbers “1 of 3” matching actual page count? Any missing pages? | Complete pages → continue; missing pages → exception, request rescan |
 | **Running consistency** | Do hashes of sequential statements chain (prior closing balance = current opening balance)? Any unexplained gaps? | Consistent → continue; gap → exception, note as missing period |
@@ -256,7 +260,7 @@ For each candidate financial file (EV-033+):
 **Promotion rule:**
 
 ```
-IF authenticity ALL PASS and coverage period within bounds and not duplicate
+IF required provenance, apparent-authenticity, and coverage checks are documented, no blocking exception remains, and human accepts source for provisional ingestion (issuer-verification status reported separately)
 THEN extraction_status = validated → promote transactions to ALIEN-001_master_ledger.csv with source_evidence_id = EV-033 + posting_date/amount preserved
 ELSE extraction_status = disputed/unreadable → create exception EXC-PH1-xxx with missing evidence + proposed action + human_review_status = PENDING, do NOT promote until resolved
 ```
@@ -306,11 +310,11 @@ Frozen manifest `calendar_coverage_frozen.note` already states: *“Calendar-mon
 
 **Next authorized trigger per Gate A Closeout:** *Human submission of an authentic financial source document* (any of EV-003..032 class `financial` or `supporting_communications` that is actually financial-related, e.g., bank statement PDF for Account One May 2023, transaction export QFX, deposit slip, creditor receipt).
 
-Currently: **0 financial files received** (evidence_register shows 2 administrative `reviewed`, 30 financial/supporting `MISSING` → `not_extracted`/`unresolved`).
+Currently: **0 financial files received** (evidence_register shows 2 administrative `reviewed`, 30 financial/supporting `MISSING` → `not_extracted`/`unresolved`). `financial_originals/` is a future destination only; no directory or infrastructure is created while the hold remains active.
 
 ### 7.2 Receipt contents (template, to be populated)
 
-File to be created: `cases/ALIEN-001/ALIEN-001_phase1_admission_receipt_EV-033.md` (and `.json` machine-readable provenance, plus update to `evidence_register.csv`, `custody_log.csv`, `frozen_manifest` supplement)
+File to be created: `cases/ALIEN-001/ALIEN-001_phase1_admission_receipt_EV-033.md` (plus append-only updates to the current evidence register and custody log; never edit the frozen v0.1.1 manifest)
 
 Required fields per directives 3–6:
 
@@ -320,12 +324,14 @@ Required fields per directives 3–6:
 | `received_at_utc` | Timestamp of human handoff |
 | `evidence_id` | e.g., EV-033 (next sequential after EV-032) |
 | `category` / `evidence_class` | e.g., A_BANK_RECORDS / financial |
-| `filename_original` | e.g., `Statement_Account1_2023-05.pdf` (preserved as `originals/EV-033_Statement_Account1_2023-05_original.pdf`) |
-| `sha256_original` | `sha256sum originals/EV-033_*` output (preserved before extraction) |
+| `filename_original` | e.g., `Statement_Account1_2023-05.pdf` (preserved as `financial_originals/EV-033_Statement_Account1_2023-05_original.pdf`) |
+| `sha256_original` | `sha256sum financial_originals/EV-033_*` output (preserved before extraction) |
 | `sha256_redacted` | if applicable (e.g., masked `****1234`) |
-| `source_acquisition` | human → secure handoff method |
+| `source_provenance` | Supplier identity as represented, receipt time, handoff method/channel, and any provenance gaps; do not infer issuer identity from supplier |
 | `custody_event` | new `CUST-017` append-only entry (never edit frozen manifest) |
-| `authenticity_checks` | 5 checks from §5.1 (source/originality/period/consistency/redaction) — PASS/FAIL per check with notes |
+| `file_integrity` | Original-byte SHA-256, recomputation result, and preserved location; hash is not source or issuer authentication |
+| `apparent_authenticity` | Observable indicators and internal consistency checks from §5.1, with PASS/FAIL/NOT_ASSESSED and limitations |
+| `issuer_verification_status` | `not_attempted` / `verified` / `unable_to_verify`; if verified, state method/source. Do not claim independent bank authentication unless actually performed |
 | `coverage_validation` | Account alias match, date range within May2023–Oct2026, gap/overlap vs current map (40 potential estimate, actual issued TBD), duplication check |
 | `admission_decision` | `ACCEPTED_FOR_EXTRACTION` / `REJECTED` / `CONDITIONAL` (e.g., partial pages) — **requires human accept/reject** (next human decision per Closeout) |
 | `extraction_result_if_accepted` | Number of transactions promoted to `ALIEN-001_master_ledger.csv` (appended rows with `source_evidence_id=EV-033`), `extraction_status` → `extracted`/`validated`, `reconciliation_status` → `unresolved` until Phase 2 |
@@ -337,8 +343,8 @@ Required fields per directives 3–6:
 **Human decision block in receipt:**
 
 ```
-[ ] ACCEPT this authentic statement for forensic ingestion (validated authenticity/coverage)
-[ ] REJECT this source (reason: inauthentic / out-of-scope / duplicate / unverifiable)
+[ ] ACCEPT this source for provisional forensic ingestion (provenance, integrity, apparent-authenticity, and coverage assessed; issuer status separately recorded)
+[ ] REJECT this source (reason and evidence/limitations recorded)
 [ ] CONDITIONAL (e.g., accept as partial, request rescan of missing pages)
 
 Human signature/date: ________________ 2026-10-__  Remarks: ________________
@@ -357,7 +363,7 @@ Human signature/date: ________________ 2026-10-__  Remarks: ________________
 This closeout preserves that conclusion:
 
 - **Framework ready:** intake pipeline validated (10 artifacts + custody doc + receipt + frozen manifest, 567 control-plane checks PASS, hashes recomputed, evidence classes separated, append-only protocol documented)
-- **History unestablished:** 0 financial transactions extracted, 0 periods reconciled, 0 payments dispositions confirmed — all `UNRESOLVED` until authenticated financial evidence (financial class) is submitted, validated (§5), and extracted (§4)
+- **History unestablished:** 0 financial transactions extracted, 0 periods reconciled, 0 payments dispositions confirmed — all `UNRESOLVED` until financial source evidence is submitted, evaluated (§5), and admitted; issuer verification is reported separately
 
 ---
 
@@ -366,7 +372,7 @@ This closeout preserves that conclusion:
 | To verify… | Command / file |
 |---|---|
 | **Freeze baseline** | `cat cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json | python3 -m json.tool` — shows 12 frozen artifacts at `bb09bc1` with hashes matching `sha256sum` in verification receipt §2.1 |
-| **Evidence classes** | `grep evidence_class cases/ALIEN-001/ALIEN-001_evidence_register.csv | cut -d, -f3 | sort | uniq -c` → administrative:2 financial:24 supporting_communications:6; `grep narrative_premise cases/ALIEN-001/ALIEN-001_event_timeline.csv` → 6 events |
+| **Evidence classes** | Register: administrative:2, financial:24, supporting_communications:6; timeline: 7 data rows (administrative:2, narrative_premise:5) — see reconciliation memo §1 and the Python CSV check below. |
 | **Preservation before extraction** | `sha256sum cases/ALIEN-001/originals/*` vs `evidence_register.csv` sha256 column — must match (original bytes hashed before extraction) |
 | **Append-only future** | Future `cases/ALIEN-001/ALIEN-001_custody_log.csv` should show `CUST-017+` new rows, never deletions from frozen manifest; `git log --oneline` should show `bb09bc1 → this closeout commit` with message “Gate A Closeout & Phase 1 Hold” |
 | **Estimate not expectation** | `grep -n "40 potential" cases/ALIEN-001/ALIEN-001_frozen_manifest_v0_1_1.json` + `grep -n "estimate of coverage" cases/ALIEN-001/ALIEN-001_provenance.json` — both state calendar ceiling is estimate, not required count |
@@ -379,14 +385,18 @@ This closeout preserves that conclusion:
 > **Gate A Closeout and Phase 1 Hold acknowledged:**
 >
 > - Phase 0 v0.1.1 artifact manifest frozen as immutable baseline (`ALIEN-001_frozen_manifest_v0_1_1.json` at `bb09bc1`, 12 artifacts with hashes).
-> - Evidence classes separated: administrative (work orders/commits/manifests) ≠ financial (bank statements/records) ≠ narrative premises (story boundaries) — a verified repository commit is never financial corroboration; enforced via `evidence_class` column in register and timeline.
+> - Evidence classes separated: administrative (work orders/commits/manifests) ≠ financial source records ≠ narrative premises (story boundaries); a verified repository commit is never financial corroboration. Timeline count: 7 data rows (2 administrative + 5 narrative_premise), current corrected CSV hash recorded in provenance.
 > - Future acquisition defined as append-only custody events (new EV-033+ rows, new CUST-017+ log rows, SHA-256 on original bytes before extraction, no overwrite of frozen baseline).
-> - Pre-promotion validation documented (§5) for authenticity (source/originality/period/consistency/redaction) and coverage (account alias/date range/gap/dup); financial conclusions held UNRESOLVED (§6) until supported.
+> - Pre-promotion validation documented (§5): source provenance, apparent-authenticity observations, coverage, and issuer-verification status are distinct; a hash establishes file integrity only, not bank issuance. Financial conclusions held UNRESOLVED (§6) until supported.
 > - 40 potential remains estimate of calendar coverage, not expectation of exact count.
 > - Next authorized trigger is human submission of authentic financial source document → Phase 1 Evidence Admission Receipt (template §7) → human accept/reject decision.
 >
-> **No financial reconstruction begun on narrative alone — hold maintained until evidence arrives. Framework is ready; history unestablished until then.**
+> **No financial reconstruction begun on narrative alone — hold maintained until evidence arrives. Current financial finding: UNDETERMINED; history unestablished until then.**
 
-*Prepared for branch `arena/bce16055-wrasal-control` — pending closeout commit hash.*  
+*Prepared for branch `arena/bce16055-wrasal-control` — closeout commit `933662f`.*
 *2026-10-25T19:00:00Z — Arena Intake Agent — REALITY FIRST. TECHNOLOGY SECOND. Do not manufacture the missing link.*
 
+
+## Timeline and custody erratum (v0.1.3)
+
+Current timeline: 7 data rows (2 administrative + 5 narrative_premise); frozen manifest unchanged. A SHA-256 establishes file integrity relative to the hashed copy, not bank issuance. Provenance, apparent authenticity, and independent issuer verification are separate; no document is called bank-authenticated without actual issuer verification.
