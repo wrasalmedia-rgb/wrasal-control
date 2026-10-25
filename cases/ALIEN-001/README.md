@@ -98,3 +98,7 @@ Opening/closing balance records + closure notice (EV-007 Sep 2024)
 *v0.1.2 Closeout / v0.1.3 reconciliation: Evidence-class separation implemented; timeline is 7 rows (2 administrative + 5 narrative premises); SHA-256 establishes byte integrity relative to the hashed copy, not bank issuance; provenance, apparent authenticity, and independently verified issuer authenticity are distinct; frozen manifest v0.1.1 (c053ac… etc.) preserved as immutable baseline; current register v0.1.2 (8b9d4de…) adds evidence_class; narrative premises (5 timeline rows) separated from financial.*
 
 *Do not manufacture the missing link. Follow the receipts.*
+
+## Unified Jamaican Financial Investigation — planning only
+
+A separate read-only workstream has been prepared for TAJ tax records, SLB loan records, and U.S.-to-Jamaica remittance tracing, with credit-report evidence as supporting context. Its six deliverables are indexed at [`jamaica_investigation/README.md`](jamaica_investigation/README.md). The TAJ and SLB requests are drafts only and have **not** been sent. No private accounts were accessed; there are **zero** new financial source documents, transactions, or monetary findings. The Phase 1 hold remains active. Identity is represented only by the user-provided masked reference; no full TRN is stored.
