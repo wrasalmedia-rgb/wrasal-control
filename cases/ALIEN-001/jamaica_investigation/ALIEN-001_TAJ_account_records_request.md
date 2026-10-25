@@ -1,14 +1,14 @@
 # Draft — Tax Administration Jamaica (TAJ) Account Records Request
 
-**Status:** Prepared only; **not sent**. User must review, complete and submit through an official channel.  
-**Case:** FOR3NSIC-ALIEN-001 — read-only evidence discovery  
+**Status:** Prepared only; **not sent**. User must review, complete and submit through an official channel.
+**Case:** FOR3NSIC-ALIEN-001 — read-only evidence discovery
 **Identity reference in case copy:** user-declared, unverified; `TRN •••••7932`. The full identifier is intentionally not present in this file.
 
 > **Privacy handling:** TAJ’s published terms warn that email may not be secure for confidential information. Do not paste the full TRN, identity documents, passwords, or account credentials into this repository or ordinary email. Prefer the authenticated TAJ Portal or first contact TAJ through a verified official route to ask how to submit an identity-verified records request securely. The taxpayer completes identity fields privately.
 
 ## Draft request (taxpayer to submit)
 
-**To:** Tax Administration Jamaica — Taxpayer/Customer Services  
+**To:** Tax Administration Jamaica — Taxpayer/Customer Services
 **Subject:** Request for my taxpayer-account records and transaction history
 
 Dear Tax Administration Jamaica,
@@ -29,16 +29,16 @@ For each tax type/account that is associated with me, please provide, where avai
 8. Refund claims and outcomes, tax-compliance notices, payment arrangements or account adjustments, where applicable.
 9. A written statement identifying missing periods, unavailable records, retention limitations, and the correct process to request any record not available through the portal.
 
-**Periods requested:** [list exact tax years/periods; or “all periods available”]  
-**Tax types requested:** [identify if known; otherwise “all taxpayer accounts associated with my verified identity, with each tax type listed separately”]  
-**Preferred response method:** [authenticated portal / secure method TAJ specifies]  
-**Taxpayer name and secure contact details:** [complete privately before submission]  
+**Periods requested:** [list exact tax years/periods; or “all periods available”]
+**Tax types requested:** [identify if known; otherwise “all taxpayer accounts associated with my verified identity, with each tax type listed separately”]
+**Preferred response method:** [authenticated portal / secure method TAJ specifies]
+**Taxpayer name and secure contact details:** [complete privately before submission]
 **Identity verification:** [complete directly in TAJ’s official secure process; do not place the full identifier in this repository copy]
 
 Please provide a reference number for this request and identify any additional form, fee, or proof of identity required. If records cannot be provided, please identify the unavailable record types and the appropriate next step.
 
-Sincerely,  
-[Taxpayer name — complete privately]  
+Sincerely,
+[Taxpayer name — complete privately]
 [Date]
 
 ## Submission route and handling notes

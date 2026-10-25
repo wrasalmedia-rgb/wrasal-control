@@ -1,7 +1,7 @@
 # Draft — Students’ Loan Bureau (SLB) Historical Ledger & Data Request
 
-**Status:** Prepared only; **not sent**. No SLB portal was accessed and no institution was contacted.  
-**Identity reference in case copy:** user-declared, unverified; `TRN •••••7932`. Full identifier omitted.  
+**Status:** Prepared only; **not sent**. No SLB portal was accessed and no institution was contacted.
+**Identity reference in case copy:** user-declared, unverified; `TRN •••••7932`. Full identifier omitted.
 **Priority suggested by work order:** Request the earliest available historical statement, ideally the first statement covering the loan’s initial period, alongside the full ledger. **No loan, balance, arrears, payment, or eligibility is assumed.**
 
 ## Safe submission route
@@ -12,7 +12,7 @@ The SLB’s contact page asks account-information requesters to include full nam
 
 ## Draft request (borrower to submit)
 
-**To:** Students’ Loan Bureau — Customer Service / Loan Servicing / Data Subject Request  
+**To:** Students’ Loan Bureau — Customer Service / Loan Servicing / Data Subject Request
 **Subject:** Request for complete historical loan account records, payment allocations and account status
 
 Dear Students’ Loan Bureau,
@@ -36,15 +36,15 @@ For **each loan account** associated with my verified identity, please provide, 
 11. A data-subject report of personal information held about me and the source/correction route for records that I believe are inaccurate or incomplete.
 12. Any periods, transaction categories, or source systems not included in the response; retention limits; and the procedure for obtaining missing records or certified account-history copies.
 
-**Date range:** [from inception / specify if known] through [request date].  
-**Loan number(s):** [provide privately through verified channel; if unknown, ask SLB to locate accounts after identity verification].  
-**Borrower name and secure contact details:** [complete privately].  
+**Date range:** [from inception / specify if known] through [request date].
+**Loan number(s):** [provide privately through verified channel; if unknown, ask SLB to locate accounts after identity verification].
+**Borrower name and secure contact details:** [complete privately].
 **Preferred response:** [SLB secure portal or other verified delivery route].
 
 Please acknowledge receipt and provide a case/reference number. If some requested records are not available, please list what is unavailable, the applicable date range, the reason if known, and any alternative record that supports the stated balance or transaction history.
 
-Sincerely,  
-[Borrower name — complete privately]  
+Sincerely,
+[Borrower name — complete privately]
 [Date]
 
 ## Debt Reset: written clarification to request, not an application

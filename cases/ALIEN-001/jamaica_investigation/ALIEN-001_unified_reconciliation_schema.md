@@ -1,6 +1,6 @@
 # Unified Reconciliation Schema — Jamaica Tax, SLB Debt & U.S.-Origin Payments
 
-**Status:** Empty schema only; no financial rows are populated.  
+**Status:** Empty schema only; no financial rows are populated.
 **Rule:** One row represents one source-evidenced event at one link in the chain. Do not compress intent, debit, provider processing, payout, recipient receipt and creditor allocation into one presumed “payment” row. Rows may share a `chain_id` only when source references/corroboration support the connection.
 
 ## Tracks

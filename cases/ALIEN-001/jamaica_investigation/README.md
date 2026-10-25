@@ -1,9 +1,9 @@
 # FOR3NSIC-ALIEN-001 — Unified Jamaican Financial Investigation
 
-**Active authority:** Read-only public-source research, evidence discovery, and document-request preparation.  
-**Phase 1 evidence hold:** ACTIVE — not lifted by this preparation.  
-**Investigation date:** 2026-10-25.  
-**Identity reference:** user-declared, not independently verified; masked form only (`TRN •••••7932`). Full identifier is not stored in this repository.  
+**Active authority:** Read-only public-source research, evidence discovery, and document-request preparation.
+**Phase 1 evidence hold:** ACTIVE — not lifted by this preparation.
+**Investigation date:** 2026-10-25.
+**Identity reference:** user-declared, not independently verified; masked form only (`TRN •••••7932`). Full identifier is not stored in this repository.
 **Financial source files received for this initiative:** 0. **Private accounts accessed / institutions contacted:** 0.
 
 ## Deliverables

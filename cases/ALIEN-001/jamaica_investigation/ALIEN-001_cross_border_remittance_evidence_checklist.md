@@ -1,7 +1,7 @@
 # Cross-Border Remittance Evidence Checklist — United States to Jamaica
 
-**Status:** Evidence-request checklist only; no transfer has been alleged or verified.  
-**Purpose:** Trace each individually identified payment without inferring a link from similar amounts or dates.  
+**Status:** Evidence-request checklist only; no transfer has been alleged or verified.
+**Purpose:** Trace each individually identified payment without inferring a link from similar amounts or dates.
 **Identity rule:** Do not use the TRN as a public search key. Use provider/bank/creditor references and masked account aliases; disclose identity details only through the user’s verified official account channel when necessary.
 
 ## Per-payment chain

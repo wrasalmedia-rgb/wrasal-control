@@ -1,8 +1,8 @@
 # Jamaica Evidence Acquisition Matrix
 
-**Case:** FOR3NSIC-ALIEN-001 — Unified Jamaican Financial Investigation  
-**Prepared:** 2026-10-25  
-**Authority:** Read-only public-source research and request preparation only  
+**Case:** FOR3NSIC-ALIEN-001 — Unified Jamaican Financial Investigation
+**Prepared:** 2026-10-25
+**Authority:** Read-only public-source research and request preparation only
 **State:** Planning matrix; no requests sent; no private records received.
 
 > This matrix identifies evidence to request and public contact routes. It does not establish that any tax, loan, debt, or payment exists. The masked TRN is user-declared and not independently verified.

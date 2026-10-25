@@ -1,11 +1,11 @@
 # Phase 1 Hold Status Report — Unified Jamaican Financial Investigation
 
-**Case:** FOR3NSIC-ALIEN-001  
-**Report date:** 2026-10-25  
-**Branch:** `arena/bce16055-wrasal-control` (active)  
-**Phase 1 evidence hold:** **ACTIVE — NOT LIFTED**  
-**Execution authority:** Public-source research, evidence discovery, request preparation only  
-**Identity reference:** `TRN •••••7932`, user-declared / not independently verified; full identifier intentionally excluded  
+**Case:** FOR3NSIC-ALIEN-001
+**Report date:** 2026-10-25
+**Branch:** `arena/bce16055-wrasal-control` (active)
+**Phase 1 evidence hold:** **ACTIVE — NOT LIFTED**
+**Execution authority:** Public-source research, evidence discovery, request preparation only
+**Identity reference:** `TRN •••••7932`, user-declared / not independently verified; full identifier intentionally excluded
 
 ## Decision and current finding
 
