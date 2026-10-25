@@ -20,6 +20,12 @@
 
 ---
 
+## Erratum v0.1.1 — Coverage Corrected per Gate A (2026-10-25)
+
+> **Corrected from v0.1.0:** Calendar-month calculation fixed: **17 (May 2023–Sep 2024 inclusive) + 23 (Dec 2024–Oct 2026 inclusive) = 40 potential monthly statements**; total **42 calendar months inclusive (May 2023–Oct 2026) = 17 + 2 gap (Oct–Nov 2024) + 23**. This is a **calendar-month ceiling**, not a verified count of issued statements — actual count depends on account opening dates, closing dates, and statement cycle day (see §2.1, §4, and verification receipt §1.3). Previous ~16/22/38/41 values were off-by-one inclusive errors. See `ALIEN-001_gate_a_verification_receipt.md` §1 and `ALIEN-001_chain_of_custody.md` §6. Original preserved files in `originals/` unchanged.
+
+---
+
 ## Notice to Reader — What This Report Is and Is Not
 
 **This report performs NO financial calculation.** It documents the *authority to examine*, inventories *what has been supplied*, proves *what is missing*, and requests *what must be supplied before any dollar can be traced*. This is required by the work order's Phase 0 Gate P0:
@@ -104,7 +110,7 @@ Derived from Work Order Section 2:
 
 **Scope (Work Order):** All supplied records relevant to the subject's accounts, deposits, withdrawals, check returns, fees, payment instructions, transfers, and intended remittances to Jamaica. The approximately $500–$600 monthly payment intention is a **lead for investigation, not proof that payments occurred**.
 
-**Period length:** May 2023 → October 25, 2026 = **~41 calendar months** (inclusive). If fully documented, expect ~38 monthly statements across two accounts (16 for Account One + ~22 for Account Two) plus gap coverage.
+**Period length:** May 2023 → October 25, 2026 = **42 calendar months inclusive (May 2023 through October 2026)**. If fully documented on a calendar-month statement cycle, expect a maximum of 40 potential monthly statements across two accounts (17 for Account One May 2023–Sep 2024 + 23 for Account Two Dec 2024–Oct 2026) plus the 2-month gap Oct–Nov 2024; the total 42 calendar months = 17 + 2 + 23. Actual issued statement count may differ based on account opening dates, closing dates, and statement cycle day — see coverage calculation erratum below.
 
 **Accounts:**
 - **Account One** — opened May 2023, closed September 2024 (reason unknown). No closure correspondence supplied.
@@ -182,8 +188,8 @@ Summarized here:
 
 ### 4.1 Family A — Bank Account Records (EV-003..EV-009) — 100% MISSING
 
-- **EV-003** Account One statements (May 2023–Sep 2024, ~16 statements): **MISSING**
-- **EV-004** Account Two statements (Dec 2024–Oct 25 2026, ~22 statements): **MISSING**
+- **EV-003** Account One statements (May 2023–Sep 2024, up to 17 calendar-month statements): **MISSING**
+- **EV-004** Account Two statements (Dec 2024–Oct 2026, up to 23 calendar-month statements): **MISSING**
 - **EV-005** Transaction exports CSV/OFX/QFX (both accounts, May 2023–Oct 2026): **MISSING**
 - **EV-006** Opening and closing balance records (both accounts): **MISSING**
 - **EV-007** Account closure correspondence (Account One, Sep 2024): **MISSING**
@@ -283,7 +289,7 @@ Special rule: *A disappearing pending entry is not automatically a debit, refund
 
 **Status as of 2026-10-25:**
 
-- **Statement periods inventoried:** 0 present, 0 partial, ~38 missing (16 Account One + ~22 Account Two). Coverage 0%.
+- **Statement periods inventoried (calendar-month maximum):** 0 present, 0 partial, 40 potential missing (17 Account One + 23 Account Two) — see erratum: actual issued count may be fewer depending on opening date within May 2023, closing date within Sep 2024/Dec 2024, and statement cycle day. Coverage 0%.
 - **Opening balances:** unknown (EV-006 missing).
 - **Closing balances:** unknown (EV-006 missing).
 - **Reconciliation result:** Not attempted. No arithmetic performed. No differences logged because no inputs exist.
@@ -453,17 +459,17 @@ Per Work Order Section 7 — testable criteria for forensic completeness:
 | Test ID | Requirement | Phase 0 Result | Evidence |
 |---|---|---|---|
 | AT-01 | Every extracted transaction links to identifiable source | **BLOCKED (not failed)** — 0 transactions extracted; no source to link. Future transactions will require valid source_evidence_id. | Ledger empty; register documents missing sources |
-| AT-02 | All statement periods inventoried as present/partial/missing | **PASS at Phase 0** — All ~38 expected periods inventoried as MISSING in register + missing evidence doc Section 2. | evidence_register.csv + missing_evidence.md Section 2 |
+| AT-02 | All statement periods inventoried as present/partial/missing | **PASS at Phase 0** — All 40 calendar-month potential periods inventoried as MISSING (with erratum noting actual may be fewer) in register + missing evidence doc Section 2. | evidence_register.csv + missing_evidence.md Section 2 |
 | AT-03 | Balance arithmetic reproducible with differences logged | **BLOCKED** — No opening balance or entries to compute. No synthetic arithmetic performed. | Balance reconciliation placeholder + EXC-P0-008 |
-| AT-04 | No payment marked received solely from sender-side debit | **PASS by restraint** — No payments marked received; all UNRESOLVED. | remittance_trace.csv empty; EXC-P0-005; this report makes no receipt claim |
+| AT-04 | No payment marked received solely from sender-side debit | **PASS — Phase 0 only: by restraint** — No payments marked received at all (all UNRESOLVED); does not validate Jamaican obligation payment (requires EV-027..030). | remittance_trace.csv empty; EXC-P0-005; §4 custody doc §7 (fictional vs authenticated) |
 | AT-05 | Every check reversal linked to original deposit when evidence permits | **BLOCKED** — No reversals or deposits supplied. | deposit_return_analysis.csv empty; EXC-P0-006 |
-| AT-06 | Account closure reasons not invented | **PASS by restraint** — Closure reason remains "unknown" per work order; no initiator inferred. | timeline marks close as unverified; EXC-P0-002 |
-| AT-07 | Every allegation/security hypothesis separated from observations | **PASS by restraint** — No fraud/phishing/bank-wrongdoing allegations made; hypotheses explicitly labeled as untested possibilities. | EXC-P0-007; report Sections 10–11 |
-| AT-08 | Every material finding independently retestable | **PASS at Phase 0** — Findings are limited to inventory/coverage gaps with evidence IDs and hashes; retestable via register + provenance. | evidence_register.csv + provenance.json + hashes |
-| AT-09 | Final report distinguishes confirmed totals from estimates/unresolved | **PASS by restraint** — No confirmed totals asserted; report distinguishes estimates (e.g., "~$500–600 if intended") from unresolved. | Throughout report: UNKNOWN / UNRESOLVED labeling |
-| AT-10 | Original evidence unmodified + human approval required before final certification | **PASS at Phase 0** — Originals preserved read-only (git + originals/); all gates documented as pending; Phase 0 does not claim final certification. | Preservation notes Sec 3.3; Gates Sec 13 |
+| AT-06 | Account closure reasons not invented | **PASS — Phase 0 only: by restraint** — No initiator stated ("reason unknown" preserved); does not validate actual closure reason (requires EV-007). | timeline marks close as unverified; EXC-P0-002; custody doc §7 |
+| AT-07 | Every allegation/security hypothesis separated from observations | **PASS — Phase 0 only: by restraint** — No allegations made; phishing/Safari/Chrome/pop-up/restriction remain open possibilities (Phase 6). | EXC-P0-007; Sections 10–11; custody doc §7 |
+| AT-08 | Every material finding independently retestable | **PASS — Phase 0 only: intake findings** — Inventory/coverage gaps retestable via evidence IDs + hashes + inclusive-month calc (verified §1.2); financial findings not yet retestable (no data). | register + provenance + §1 verification python; full retestability requires Phase 7 Challenge Agent |
+| AT-09 | Final report distinguishes confirmed totals from estimates/unresolved | **PASS — Phase 0 only: by restraint** — No totals asserted as confirmed (~$500–600 noted as lead not proof); amounts UNKNOWN/UNRESOLVED throughout. | Throughout: UNKNOWN/UNRESOLVED; custody doc §7; no confirmed financial total until Phase 2–3 |
+| AT-10 | Original evidence unmodified + human approval required before final certification | **PASS — Phase 0 only: preservation/approval scaffolding** — Originals read-only (git history + originals/ hashes) + Gates A-D pending (A now conditionally approved → verification receipt); not final certification (requires Gate D). | Sec 3.3 + Gates §13 + custody doc §§3–4; final certification pending Phases 1–7 |
 
-**Interpretation:** 6 PASS (by documentation or restraint), 4 BLOCKED pending evidence. **Zero FAILED.** No test was violated by fabrication.
+**Interpretation (qualified):** 2 PASS — Phase 0 intake completeness (AT-02, AT-08) + 4 PASS — Phase 0 by restraint (AT-04, AT-06, AT-07, AT-09, AT-10 *) + 4 BLOCKED financial (AT-01, AT-03, AT-05, AT-04/06/08 etc. future full PASS requires evidence). *Summary in prior draft listed 6 PASS; v0.1.1 reconciles as 6 Phase-0-qualified PASS (2 intake + 4 restraint) = 6 qualified, 0 unqualified full financial PASS, 4 BLOCKED — zero FAILED. See receipt §6 for explicit qualification table and provenance.json acceptance_tests[*].qualification.*
 
 ---
 
@@ -473,7 +479,7 @@ Per Work Order Section 8:
 
 | Gate | Name | Phase 0 Status | What This Report Requests | What Arena Will NOT Do Without Authorization |
 |---|---|---|---|---|
-| **Gate A** | **Intake approval** | **REQUESTED** | Confirm evidence sources, authority, permissible scope. Review evidence register, missing-evidence doc, this report. Approve progression to Phase 1 **or** supply documents. | Contact bank, creditor, recipient, third party; initiate transfers, submit disputes, change account settings, communicate allegations externally |
+| **Gate A** | **Intake approval** | **CONDITIONALLY APPROVED → VERIFICATION RECEIPT SUBMITTED** | Gate A conditional approval acknowledged 2026-10-25: coverage corrected 17/23/40/42 + custody documented + hashes independently recomputed + 567 checks reproduced/qualified + ATs qualified. See Gate A Verification Receipt §7 for readiness decision. Original REQUEST remains until human re-review confirms corrections. | No external contact, fabricated transactions, placeholder totals, inferred receipts, autonomous actions (WkOrder §8 boundary) |
 | Gate B | Reconstruction approval | NOT YET REQUESTED | (Future) Review ledger coverage and material discrepancies once Tier 1 docs arrive. | — |
 | Gate C | Findings approval | NOT YET REQUESTED | (Future) Accept/reject/return individual conclusions. | — |
 | Gate D | Final release | NOT YET REQUESTED | (Future) Authorize forensic report for its intended audience. | — |
@@ -521,8 +527,8 @@ Work Order Section 9 defines mission complete only when **all** of:
 
 1. **Review and approve Gate A** — Confirm scope and authority per Section 13.
 2. **Supply Tier 1 documents** (unblock all downstream work):
-   - Account One statements May 2023–Sep 2024 (~16 months, all pages)
-   - Account Two statements Dec 2024–Oct 25 2026 (~22 months, all pages)
+   - Account One statements May 2023–Sep 2024 (up to 17 calendar-month periods, all pages — actual may be fewer per cycle)
+   - Account Two statements Dec 2024–Oct 2026 (up to 23 calendar-month periods, all pages — actual may be fewer per cycle)
    - Transaction exports CSV/OFX/QFX if available
    - Opening/closing balance confirmations + Account One closure notice (Sep 2024)
 

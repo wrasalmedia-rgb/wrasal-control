@@ -54,17 +54,19 @@ This document catalogs each missing category, explains why it matters, and propo
 | Period | Account or Event | Initial Status | Evidence Present? | Coverage |
 |---|---|---|---|---|
 | May 2023 | First account opened | Story premise | No | 0% — EV-003 missing |
-| May 2023 – Sep 2024 | Deposits, checks, overdrafts, payments (Account One) | Reconstruction required | No | 0% — 16 statement months missing + exports |
+| May 2023 – Sep 2024 | Deposits, checks, overdrafts, payments (Account One) | Reconstruction required | No | 0% — up to 17 calendar-month periods missing + exports* |
 | Sep 2024 | First account closed | Reason unknown | No | 0% — EV-007 missing |
 | Oct – Nov 2024 | Gap between accounts | Funding and obligations unresolved | No | 0% — EV-032 gap |
 | Dec 2024 | Second account opened | Story premise | No | 0% — EV-004 missing |
-| Dec 2024 – Oct 25, 2026 | Continued financial activity (Account Two) | Reconstruction required | No | 0% — ~22 statement months missing + exports |
-| **TOTAL** | **May 2023 – Oct 25, 2026** | **~41 months** | **No** | **0% coverage** |
+| Dec 2024 – Oct 25, 2026 | Continued financial activity (Account Two) | Reconstruction required | No | 0% — up to 23 calendar-month periods missing + exports* |
+| **TOTAL** | **May 2023 – Oct 25, 2026** | **42 calendar months inclusive** | **No** | **0% coverage — up to 40 potential statements (17+23) + 2-month gap = 42 calendar months** |
 
 **Key boundary conditions that must not be inferred:**
 - Account One and Account Two were **not** continuously active (Work Order Section 5: Do not infer that the two accounts were continuously active).
 - Closure reason (customer vs bank-initiated) is **unknown** and must remain unstated until EV-007 supplies a closure notice (AT-06).
 - Gap funding source is **unknown** (EV-032).
+
+> **Erratum — Corrected coverage calculation (Gate A review 2026-10-25):** Previous draft stated ~16/22/38. Corrected inclusive calendar-month maximum is **17 (May 2023–Sep 2024) + 23 (Dec 2024–Oct 2026) = 40 potential monthly statements**; total calendar months May 2023–Oct 2026 inclusive = **42 (17 + 2 gap + 23)**. This is a **calendar-month ceiling**, not a verified count of issued statements. Actual number of statements issued depends on: (a) account opening date within May 2023 (partial first cycle), (b) closing date within Sep 2024/Dec 2024, (c) bank statement cycle day (calendar vs 15th-15th etc.), and (d) whether closing statement is combined/partial. Statement cycles must be established from actual bank records when supplied — see exception register EXC-P0-001 footnote.
 
 ---
 
@@ -74,8 +76,8 @@ This document catalogs each missing category, explains why it matters, and propo
 
 | Evidence ID | Document | Date Range / Quantity Est. | Priority | Why Required (Work Order Phase) |
 |---|---|---|---|---|
-| EV-003 | **Monthly statements — Account One** | May 2023–Sep 2024 (~16 statements: 2023-05 .. 2024-09) | **P1 — CRITICAL** | Phase 1 Master Ledger source + Phase 2 balance reconciliation (Opening + credits − debits = expected closing). AT-02 requires every period inventoried as present/partial/missing. AT-03 requires reproducible arithmetic. Without these, no balance can be confirmed. |
-| EV-004 | **Monthly statements — Account Two** | Dec 2024–Oct 25, 2026 (~22 statements: 2024-12 .. 2026-10) | **P1 — CRITICAL** | Same as above for Account Two. Also required for Phase 5 closure/reopening: first posted deposit and initial funding source. |
+| EV-003 | **Monthly statements — Account One** | May 2023–Sep 2024 (up to 17 calendar-month periods: 2023-05 .. 2024-09)* | **P1 — CRITICAL** | Phase 1 Master Ledger source + Phase 2 balance reconciliation (Opening + credits − debits = expected closing). AT-02 requires every period inventoried as present/partial/missing. AT-03 requires reproducible arithmetic. Without these, no balance can be confirmed. |
+| EV-004 | **Monthly statements — Account Two** | Dec 2024–Oct 25, 2026 (up to 23 calendar-month periods: 2024-12 .. 2026-10)* | **P1 — CRITICAL** | Same as above for Account Two. Also required for Phase 5 closure/reopening: first posted deposit and initial funding source. |
 | EV-005 | **Transaction exports CSV/OFX/QFX** | May 2023–Oct 2026 (both accounts) | P1 — CRITICAL | Phase 1 extraction source if statements are PDF-scanned. Preserves original transaction wording, posting date, amount, running balance, transaction_reference. Must retain source meaning without alteration. |
 | EV-006 | **Opening and closing balance records** | Both accounts, all periods | P1 — CRITICAL | Phase 2 reconciliation anchor + Phase 5 closure: last posted transaction, documented closing balance, final disbursement trace, initial funding source identification. |
 | EV-007 | **Account closure correspondence** | Sep 2024 (Account One) | P1 — CRITICAL | Phase 5: locate closure notice, determine documented closing balance, trace final disbursement, establish closure initiator **only if records support it** (AT-06 prohibits invention). |
