@@ -1,0 +1,8 @@
+deposit_id,check_id,account_alias,deposit_date,provisional_credit_date,availability_date,return_date,reversal_date,original_amount,currency,held_amount,reversed_amount,fee_amount,net_impact,linkage_status,original_deposit_evidence_id,reversal_evidence_id,notes
+# PHASE 0 INTAKE ONLY — NO CHECK/HOLD SEQUENCES IDENTIFIED
+# Phase 4 requires each deposited check sequence: 1) Entered 2) Provisional credit 3) Became available 4) Returned/reversed 5) Generated debits/fees
+# Separately account for pending authorizations deposit holds provisional check credits returned checks overdraft fees reversals corrections transfers between accounts
+# Each reversal must link to original deposit when evidence permits (AT-05)
+# Apparent shortages: must establish whether resulting from posted spending delayed availability returned items fees or other documented activity with separate timeline per significant overdraft episode
+# STATUS: NO EVIDENCE RECEIVED — all sequences unresolved pending EV-010 through EV-014
+# A disappearing pending entry is not automatically a debit refund or loss — must identify corresponding posted transaction expiration reversal or unresolved status

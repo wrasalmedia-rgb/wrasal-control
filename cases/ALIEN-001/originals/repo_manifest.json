@@ -1,0 +1,43 @@
+{
+  "preservation_date": "2026-10-25T17:30:00Z",
+  "baseline_commit": "af529b54e14974eec42e1f4dd200f06c61175f15",
+  "branch": "arena/bce16055-wrasal-control",
+  "repo": "wrasalmedia-rgb/wrasal-control",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5ea9a578c3cf3d885f89cc4e7913898f25f650199efeccc5d654fc727431e134",
+      "bytes": 2017
+    },
+    {
+      "path": "projects.yml",
+      "sha256": "5452ab3a7629bc18f4cc72de02d331773ab90558395665e279904c8346696dbe",
+      "bytes": 318
+    },
+    {
+      "path": "dependencies.yml",
+      "sha256": "568c092a1d4f28424e3df8d8aa2d2fc738e14c32d8854f970d69bb480e476afd",
+      "bytes": 17
+    },
+    {
+      "path": "priorities.yml",
+      "sha256": "e08cccd07f03581ea350e22122a6dcf712d15e0f3845a17f6776e4b3dde8d228",
+      "bytes": 15
+    },
+    {
+      "path": "concepts/WRASAL-CAMPAIGN-EXEC-METHOD-001.md",
+      "sha256": "2ed6b4af97d145528e3b2f0dc2a138b058e81b5b2d1e83a92d186b347842a7a5",
+      "bytes": 8112
+    },
+    {
+      "path": "work_orders/status-vocabulary.json",
+      "sha256": "4a9a0d60639969bfe74c578f8953d06226004b60697629b80bc76d33a507f006",
+      "bytes": 1138
+    },
+    {
+      "path": "evidence/WRASAL-0005-validation.json",
+      "sha256": "500c609d1382c4cceff82d4e1b937c7f2efcca803ab283ddb8bbb31099059348",
+      "bytes": 47861
+    }
+  ]
+}

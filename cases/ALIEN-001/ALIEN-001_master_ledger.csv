@@ -1,0 +1,8 @@
+event_id,account_alias,event_date,posting_date,authorization_date,settlement_date,description,amount,currency,running_balance,available_balance,transaction_reference,source_evidence_id,extraction_status,reconciliation_status,notes
+# PHASE 0 INTAKE ONLY — NO TRANSACTIONS EXTRACTED
+# This file contains header row only. No financial entries have been extracted because no bank statements CSV/OFX/PDF source documents have been supplied as of 2026-10-25.
+# Required fields per Work Order FOR3NSIC-ALIEN-001 Section 4 Phase 1: event_id account_alias event_date posting_date description amount currency running_balance available_balance transaction_reference source_evidence_id extraction_status reconciliation_status
+# Governing doctrine applied: REALITY FIRST. TECHNOLOGY SECOND. Recording is not verification. No evidence → no authority → no state change.
+# Gate P0: NOT PASSED — source inventory and coverage gaps documented but no extractable transactions present.
+# Next action: Await intake of evidence listed in ALIEN-001_evidence_register.csv (EV-003 through EV-032) then re-run extraction preserving difference between transaction date posting date authorization date settlement date.
+# Do NOT create missing transactions to make balances reconcile.

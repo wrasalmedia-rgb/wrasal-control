@@ -1,0 +1,8 @@
+payment_chain_id,intended_date,instruction_date,authorization_date,debit_date,processing_date,settlement_date,recipient_credit_date,obligation_credited_date,intended_recipient,amount_intended,amount_debited_usd,fees_usd,amount_received_foreign,foreign_currency,exchange_rate,transfer_provider,confirmation_number,tracking_reference,disposition,source_evidence_ids,notes
+# PHASE 0 INTAKE ONLY — NO REMITTANCE CHAINS CONSTRUCTED
+# Each intended remittance requires full chain: Intention → Instruction → Authorization → Debit → Processing → Settlement → Recipient credit → Obligation credited
+# ~$500-$600 monthly payment intention is investigative lead not proof of payment per Work Order Section 2 and 3C
+# Disposition must be one of: CONFIRMED_RECEIVED CONFIRMED_RETURNED CONFIRMED_CANCELLED CONFIRMED_REJECTED CONFIRMED_NOT_INITIATED DEBIT_CONFIRMED_RECEIPT_UNVERIFIED INSTRUCTION_FOUND_DEBIT_UNVERIFIED UNRESOLVED
+# Governing rule AT-04: No payment marked received solely from sender-side debit. Must confirm creditor applied funds via Jamaican debt statements creditor receipts recipient account credits.
+# STATUS: NO EVIDENCE RECEIVED — all chains remain UNRESOLVED pending EV-015 through EV-020 and EV-027 through EV-031
+# Do not infer Jamaican debt was paid because US account was debited.

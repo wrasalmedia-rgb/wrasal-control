@@ -1,0 +1,376 @@
+{
+  "case_id": "FOR3NSIC-ALIEN-001",
+  "subject_alias": "ALIEN",
+  "case_title": "FOLLOW THE MONEY",
+  "version": "0.1.0",
+  "phase": "Phase 0 \u2014 Authority and Evidence Intake Only",
+  "issued": "2026-10-25T00:00:00Z",
+  "created_utc": "2026-10-25T17:30:00Z",
+  "generated_in_session": "2026-10-25T17:30:31Z",
+  "classification": "Confidential Financial Evidence \u2014 Read-Only",
+  "execution_mode": "read-only forensic reconstruction",
+  "repository": "wrasalmedia-rgb/wrasal-control",
+  "branch": "arena/bce16055-wrasal-control",
+  "baseline_commit": "af529b54e14974eec42e1f4dd200f06c61175f15",
+  "baseline_commit_short": "af529b5",
+  "tool": {
+    "name": "Arena.ai Agent Mode",
+    "validator": "wrasal-control-plane-validator (repository-pinned, npm run validate:control-plane)",
+    "validator_version": "0.0.0 (js-yaml 4.3.2)",
+    "python": "3.11.2 + openpyxl 3.1.5",
+    "execution_framework": "WRASAL-CAMPAIGN-EXEC-METHOD-001 v1.0.0 PROPOSED + FOR3NSIC-ALIEN-001 Work Order v1.0"
+  },
+  "governing_doctrine": [
+    "REALITY FIRST. TECHNOLOGY SECOND.",
+    "Recording is not verification.",
+    "Authorization is not settlement.",
+    "Debit is not proof of recipient receipt.",
+    "Missing evidence is not proof of misconduct.",
+    "Uncertainty must remain visible.",
+    "No evidence \u2192 no authority \u2192 no state change."
+  ],
+  "case_boundaries": {
+    "period_start": "2023-05-01",
+    "period_end": "2026-10-25",
+    "calendar_months_approx": 41,
+    "accounts": [
+      {
+        "alias": "Account One",
+        "opened": "2023-05-01",
+        "closed": "2024-09-01",
+        "status": "closed_reason_unknown",
+        "evidence": "EV-003/EV-007 missing"
+      },
+      {
+        "alias": "Account Two",
+        "opened": "2024-12-01",
+        "closed": null,
+        "status": "active_through_cutoff",
+        "evidence": "EV-004/EV-006 missing"
+      },
+      {
+        "alias": "Gap Oct-Nov 2024",
+        "period": "2024-10-01 to 2024-11-30",
+        "status": "funding_obligations_unresolved",
+        "evidence": "EV-032 missing"
+      }
+    ],
+    "remittance_lead": "~$500-$600 monthly to Jamaica \u2014 investigative lead not proof (Work Order Section 2)"
+  },
+  "evidence_inventory_summary": {
+    "total_evidence_ids": 32,
+    "received": 2,
+    "missing_financial_categories": 30,
+    "coverage_percent": 0,
+    "statement_periods_present": 0,
+    "statement_periods_missing_approx": 38,
+    "gate_p0_passed": false,
+    "gate_p0_reason": "No financial source documents received; inventory and coverage gaps documented per Gate P0 requirement, but no extractable data exists."
+  },
+  "evidence_register": {
+    "file": "cases/ALIEN-001/ALIEN-001_evidence_register.csv",
+    "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
+    "rows": 33,
+    "including_header": true,
+    "data_rows": 32,
+    "received_detail": [
+      {
+        "evidence_id": "EV-001",
+        "filename": "FOR3NSIC-ALIEN-001 Work Order v1.0",
+        "sha256": "preserved_in_originals",
+        "status": "received"
+      },
+      {
+        "evidence_id": "EV-002",
+        "filename": "wrasal-control scaffold af529b5",
+        "commit": "af529b54e14974eec42e1f4dd200f06c61175f15",
+        "status": "received"
+      }
+    ],
+    "missing_detail": "EV-003 through EV-032 (30 categories) all MISSING \u2014 see evidence_register.csv"
+  },
+  "artifacts": [
+    {
+      "filename": "ALIEN-001_evidence_register.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_evidence_register.csv",
+      "sha256": "c053ac71b6c2acdc008ea5848ad4a18d3af097c809ec18af39e281c7e3a47973",
+      "bytes": 13038,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_complete_32_rows_2_received_30_missing",
+      "records": 32
+    },
+    {
+      "filename": "ALIEN-001_master_ledger.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_master_ledger.csv",
+      "sha256": "9141e7662a71a4b17f2a4a70dbb7f30ffaa3ce332a00a33b9a7d14e9666e0cd4",
+      "bytes": 1264,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_placeholder_header_only_0_transactions",
+      "records": 0
+    },
+    {
+      "filename": "ALIEN-001_balance_reconciliation.xlsx",
+      "path": "cases/ALIEN-001/ALIEN-001_balance_reconciliation.xlsx",
+      "sha256": "1ac72cbe785308cf00c237cc6a45632ad7450f65bfc55e8dd6b4f693a502d2a9",
+      "bytes": 9302,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_placeholder_workbook_0_periods_reconciled",
+      "records": 0
+    },
+    {
+      "filename": "ALIEN-001_remittance_trace.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_remittance_trace.csv",
+      "sha256": "09fd356cfa68ac3252f04aaba4506709431872855c615e3f21de182057377b9c",
+      "bytes": 1314,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_placeholder_header_only_0_chains_all_unresolved",
+      "records": 0
+    },
+    {
+      "filename": "ALIEN-001_deposit_return_analysis.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_deposit_return_analysis.csv",
+      "sha256": "cf3c3c8628ad89d063749c18260b79fc13b74a8135d3a901f7cb00998a12942a",
+      "bytes": 1175,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_placeholder_header_only_0_sequences",
+      "records": 0
+    },
+    {
+      "filename": "ALIEN-001_event_timeline.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_event_timeline.csv",
+      "sha256": "dbbe22c79b8347a3b89fc31ab239d45b53bd55d2e82af16a204116b9d39e3b89",
+      "bytes": 2328,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_6_events_2_intake_4_unverified_boundaries",
+      "records": 6
+    },
+    {
+      "filename": "ALIEN-001_exception_register.csv",
+      "path": "cases/ALIEN-001/ALIEN-001_exception_register.csv",
+      "sha256": "65508b846c0433fa5dde38d7a12dfd5c91a83d95dee6778cb1c36b761dd9f604",
+      "bytes": 8882,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_8_global_exceptions_all_pending",
+      "records": 8
+    },
+    {
+      "filename": "ALIEN-001_missing_evidence.md",
+      "path": "cases/ALIEN-001/ALIEN-001_missing_evidence.md",
+      "sha256": "74a928251d0712af52c88f465b5f379ef41b75371092052437fef94e75fa7bfc",
+      "bytes": 21859,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_complete_30_categories_requested",
+      "records": 30
+    },
+    {
+      "filename": "ALIEN-001_forensic_report.md",
+      "path": "cases/ALIEN-001/ALIEN-001_forensic_report.md",
+      "sha256": "996b3cf18abf0e5ec0aaa6f5739e28f8a945eafb26d04e2268f6dfcc8126eb9c",
+      "bytes": 43830,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "phase0_complete_intake_report_gate_a_requested",
+      "records": 1
+    },
+    {
+      "filename": "ALIEN-001_provenance.json",
+      "path": "cases/ALIEN-001/ALIEN-001_provenance.json",
+      "sha256": "d9e640c6c8e2b49859cdbe21506db45bd6f921367143f07e34faf0a75381d369",
+      "bytes": 16890,
+      "version": "0.1.0",
+      "created_utc": "2026-10-25T17:30:00Z",
+      "status": "missing",
+      "records": 0
+    }
+  ],
+  "acceptance_tests": {
+    "AT-01": {
+      "requirement": "Every extracted transaction links to identifiable source",
+      "result": "blocked",
+      "reason": "0 transactions extracted \u2014 no sources to link"
+    },
+    "AT-02": {
+      "requirement": "All statement periods inventoried as present/partial/missing",
+      "result": "pass_phase0",
+      "evidence": "All ~38 periods inventoried as MISSING in register + missing_evidence.md Section 2"
+    },
+    "AT-03": {
+      "requirement": "Balance arithmetic reproducible with differences logged",
+      "result": "blocked",
+      "reason": "No opening balances or posted entries \u2014 no arithmetic to test"
+    },
+    "AT-04": {
+      "requirement": "No payment marked received solely from sender-side debit",
+      "result": "pass_by_restraint",
+      "reason": "No payments marked received \u2014 all UNRESOLVED"
+    },
+    "AT-05": {
+      "requirement": "Every check reversal linked to original deposit when evidence permits",
+      "result": "blocked",
+      "reason": "No reversals/deposits supplied"
+    },
+    "AT-06": {
+      "requirement": "Account closure reasons not invented",
+      "result": "pass_by_restraint",
+      "reason": "Closure reason remains unknown per work order"
+    },
+    "AT-07": {
+      "requirement": "Allegations/security hypotheses separated from observations",
+      "result": "pass_by_restraint",
+      "reason": "No allegations made; hypotheses labeled untested possibilities"
+    },
+    "AT-08": {
+      "requirement": "Every material finding independently retestable",
+      "result": "pass_phase0",
+      "reason": "Findings limited to inventory/coverage gaps with evidence IDs and hashes \u2014 retestable via register + provenance"
+    },
+    "AT-09": {
+      "requirement": "Confirmed totals distinguished from estimates/unresolved",
+      "result": "pass_by_restraint",
+      "reason": "No totals asserted as confirmed"
+    },
+    "AT-10": {
+      "requirement": "Original evidence unmodified + human approval required",
+      "result": "pass_phase0",
+      "reason": "Originals preserved read-only; Gates A-D documented pending"
+    }
+  },
+  "gates": {
+    "Gate_A_Intake": {
+      "name": "Intake approval",
+      "status": "REQUESTED",
+      "requested_from": "Human case owner",
+      "requested_on": "2026-10-25T17:30:00Z",
+      "verdict": null,
+      "next": "Review evidence register + missing_evidence.md + this forensic report; confirm scope/authority; supply Tier 1 documents or authorize progression"
+    },
+    "Gate_P0": {
+      "name": "Phase 0 \u2014 source inventory and coverage gaps documented",
+      "status": "documented_no_data",
+      "verdict": "NOT PASSED as reconstruction completeness \u2014 correctly documented as intake-only with 0% financial coverage",
+      "next": "Requires Gate A approval + Tier 1 evidence before Phase 1 ledger extraction"
+    },
+    "Gate_P2": {
+      "name": "Every unexplained difference receives exception ID",
+      "status": "phase0_global_exception_logged",
+      "verdict": "EXC-P0-008 covers global inability to reconcile; per-period IDs will be added after evidence",
+      "next": "Intake statements then run Phase 2 reconciliation"
+    },
+    "Gate_B_Reconstruction": {
+      "name": "Reconstruction approval",
+      "status": "not_yet_requested",
+      "next": "Review ledger coverage and material discrepancies after Phase 1-2"
+    },
+    "Gate_C_Findings": {
+      "name": "Findings approval",
+      "status": "not_yet_requested",
+      "next": "Accept/reject/return individual conclusions"
+    },
+    "Gate_D_FinalRelease": {
+      "name": "Final release",
+      "status": "not_yet_requested",
+      "next": "Authorize forensic report for intended audience"
+    }
+  },
+  "completion_contract": {
+    "required_8": [
+      {
+        "criterion": "All supplied source documents inventoried",
+        "status": "phase0_partial",
+        "detail": "2/2 supplied docs inventoried (EV-001 EV-002); 30 unsupplied categories still MISSING \u2014 overall incomplete"
+      },
+      {
+        "criterion": "All extractable transactions captured",
+        "status": "blocked",
+        "detail": "0 captured \u2014 no statements/exports supplied"
+      },
+      {
+        "criterion": "Reconciliation attempted for every covered statement period",
+        "status": "blocked",
+        "detail": "0 periods \u2014 no statements present"
+      },
+      {
+        "criterion": "Every identifiable Jamaica payment has evidence-backed status",
+        "status": "blocked",
+        "detail": "0 payments \u2014 all UNRESOLVED pending EV-015..EV-020 + EV-027..EV-031"
+      },
+      {
+        "criterion": "Every unexplained financial difference in exception register",
+        "status": "pass_phase0",
+        "detail": "EXC-P0-008 global + 7 other exceptions document all current differences"
+      },
+      {
+        "criterion": "Every material conclusion traceable to source evidence",
+        "status": "pass_phase0",
+        "detail": "All conclusions (inventory gaps) trace to EV-001/EV-002 via evidence IDs"
+      },
+      {
+        "criterion": "Independent challenge review completed",
+        "status": "not_yet",
+        "detail": "Challenge Agent tested Phase 0 acceptance tests for invention violations \u2014 0 violations found; full challenge awaits Phase 7"
+      },
+      {
+        "criterion": "Human case owner approved final findings",
+        "status": "not_yet",
+        "detail": "Gate A requested now; Gates B-D not yet"
+      }
+    ],
+    "mission_complete": false,
+    "reason": "Missing documents prevent definitive answer \u2014 reported not concealed per Section 9 doctrine"
+  },
+  "agent_matrix": {
+    "Intake_Agent": "Executed Phase 0 \u2014 inventory hash classify preserve (32 IDs); Gate A requested (this provenance)",
+    "Ledger_Agent": "Blocked \u2014 0 transactions; placeholder delivered (AT-01)",
+    "Reconciliation_Agent": "Blocked \u2014 0 periods; placeholder + EXC-P0-008 (AT-03/AT-05)",
+    "Remittance_Agent": "Blocked \u2014 0 chains; placeholder + EXC-P0-005 (AT-04)",
+    "Correspondence_Agent": "Blocked \u2014 0 messages; intake events + unverified boundaries + EXC-P0-007 (Phase 6)",
+    "Challenge_Agent": "Executed Phase 0 check \u2014 0 invention violations; full independent test deferred to Phase 7",
+    "Report_Agent": "Executed \u2014 forensic report + missing evidence doc + exception register"
+  },
+  "hashes": {
+    "baseline_commit": "af529b54e14974eec42e1f4dd200f06c61175f15",
+    "projects_yml": "5452ab3a7629bc18f4cc72de02d331773ab90558395665e279904c8346696dbe",
+    "concepts_WRASAL_CAMPAIGN_EXEC_METHOD_001": "2ed6b4af97d145528e3b2f0dc2a138b058e81b5b2d1e83a92d186b347842a7a5",
+    "README_md": "5ea9a578c3cf3d885f89cc4e7913898f25f650199efeccc5d654fc727431e134",
+    "status_vocabulary_json": "4a9a0d60639969bfe74c578f8953d06226004b60697629b80bc76d33a507f006"
+  },
+  "validation": {
+    "control_plane_validator": "PASS (364 checks)",
+    "validator_self_tests": "PASS (invalid fixtures correctly rejected)",
+    "validation_report": "evidence/WRASAL-0005-validation.json",
+    "command": "npm ci && npm test",
+    "result": "pass"
+  },
+  "preservation": {
+    "originals_dir": "cases/ALIEN-001/originals/",
+    "working_copies_dir": "cases/ALIEN-001/",
+    "redacted_dir": "cases/ALIEN-001/redacted/ (future \u2014 not yet needed; originals contain no PII)",
+    "read_only_mechanism": "git history (immutable objects) + originals/ directory; SHA-256 hashes computed before any redaction",
+    "redaction_policy": "Full account numbers \u2192 last 4 kept for alias; identity docs \u2192 initials if required; credentials/secrets \u2192 never stored; amounts/dates/descriptions/running balances preserved verbatim"
+  },
+  "external_contact_policy": {
+    "arena_may_prepare": "Recommendations and evidence requests without authorization to contact bank/creditor/recipient/third party",
+    "arena_must_not_without_authorization": "Initiate transfers, submit disputes, change account settings, communicate allegations externally",
+    "current_session_external_contact": "NONE \u2014 no external contact initiated"
+  },
+  "disclaimers": [
+    "This provenance file describes Phase 0 intake only. No financial conclusions are asserted.",
+    "No transaction is classified as fraudulent stolen successfully delivered or permanently lost.",
+    "No money lost or received total is provided \u2014 no source data supports such calculation.",
+    "The approximately $500\u2013$600 monthly payment intention is a lead not proof (Work Order Section 2).",
+    "Account closure reason (Sep 2024) remains unknown and unstated (AT-06).",
+    "Missing evidence is not proof of misconduct \u2014 uncertainty remains visible per doctrine.",
+    "Every material finding links to specific evidence ID and source location per Work Order Section 5.",
+    "Human approval required before final case certification per AT-10 and Gates A-D."
+  ],
+  "next_candidate": "Upon Gate A approval + Tier 1 evidence: 1) Re-hash new originals 2) Extract Master Ledger per Phase 1 3) Reconcile per Phase 2 Gate P2 4) Trace Jamaica payments per Phase 3 5) Reconstruct check/overdraft timelines per Phase 4 6) Reconstruct closure/reopening per Phase 5 7) Build communication chronology per Phase 6 8) Independent Challenge review per Phase 7 9) Gates B-D approvals + versioned artifact publication",
+  "final_execution_instruction": "Follow the receipts. Follow the ledger. Follow the reversals. Follow the correspondence. Follow each payment to the last independently evidenced event. Do not manufacture the missing link."
+}
