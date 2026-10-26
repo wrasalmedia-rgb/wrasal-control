@@ -59,6 +59,15 @@
       "observed_result": "The branch arena/7c7845f4-wrasal-control was pushed to origin (https://github.com/wrasalmedia-rgb/wrasal-control.git); the remote reference refs/heads/arena/7c7845f4-wrasal-control was independently verified via git ls-remote at 5bf0901d65e38ed91bfd121f35004ffd46687b4f. No pull request was merged and canonical acceptance remains pending.",
       "reference": "refs/heads/arena/7c7845f4-wrasal-control",
       "result": "pass"
+    },
+    {
+      "id": "wrasal-0011-review-only-pr",
+      "type": "github_pr_creation",
+      "attribution": "Arena external execution worker",
+      "source": "gh pr create --base main --head arena/7c7845f4-wrasal-control",
+      "observed_result": "Review-only pull request #6 (https://github.com/wrasalmedia-rgb/wrasal-control/pull/6) opened from arena/7c7845f4-wrasal-control into main. The PR was not merged, no approval was claimed, and canonical acceptance remains pending.",
+      "reference": "https://github.com/wrasalmedia-rgb/wrasal-control/pull/6",
+      "result": "pass"
     }
   ],
   "canonical_state_impact": {
