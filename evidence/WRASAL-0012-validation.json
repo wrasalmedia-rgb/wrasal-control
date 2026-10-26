@@ -7,8 +7,8 @@
   },
   "result": "pass",
   "summary": {
-    "checks": 731,
-    "passed": 731,
+    "checks": 761,
+    "passed": 761,
     "failed": 0
   },
   "checked_files": [
@@ -3674,6 +3674,156 @@
     },
     {
       "name": "work_order.evidence.1.result.vocabulary",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.schema",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.allowed_keys",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.id",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.type",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.attribution",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.source",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.observed_result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.reference",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.2.result.vocabulary",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.schema",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.allowed_keys",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.id",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.type",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.attribution",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.source",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.observed_result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.reference",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.3.result.vocabulary",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.schema",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.allowed_keys",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.id",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.type",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.attribution",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.source",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.observed_result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.result",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.reference",
+      "file": "work_orders/WRASAL-0012.json",
+      "result": "pass"
+    },
+    {
+      "name": "work_order.evidence.4.result.vocabulary",
       "file": "work_orders/WRASAL-0012.json",
       "result": "pass"
     },

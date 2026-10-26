@@ -15,11 +15,11 @@
     "concept_record": "concepts/GLOBAL-VISUAL-STANDARD-v001.md",
     "validation_report": "evidence/WRASAL-0012-validation.json",
     "branch": "arena/7c7845f4-wrasal-control",
-    "commit": null,
-    "remote_branch": null,
-    "remote_ref": null,
-    "remote_commit": null,
-    "pull_request": null,
+    "commit": "94ac9ebf268ca41ce193e5ff542783f0f99bd30b",
+    "remote_branch": "arena/7c7845f4-wrasal-control",
+    "remote_ref": "refs/heads/arena/7c7845f4-wrasal-control",
+    "remote_commit": "94ac9ebf268ca41ce193e5ff542783f0f99bd30b",
+    "pull_request": "https://github.com/wrasalmedia-rgb/wrasal-control/pull/6",
     "merge": null,
     "canonical_acceptance_record": null
   },
@@ -38,8 +38,35 @@
       "type": "validator_run",
       "attribution": "Arena external execution worker",
       "source": "npm ci && npm run validate:control-plane -- --report evidence/WRASAL-0012-validation.json",
-      "observed_result": "Repository-pinned control-plane validator passed with 731 checks against the updated control-plane records (projects, status vocabulary, all work-order JSON records including WRASAL-0012), validator self-tests passed (npm test), and machine-readable validation evidence was written to evidence/WRASAL-0012-validation.json.",
+      "observed_result": "Repository-pinned control-plane validator passed with 761 checks against the updated control-plane records (projects, status vocabulary, all work-order JSON records including WRASAL-0012 with 5 evidence entries), validator self-tests passed (npm test), and machine-readable validation evidence was written to evidence/WRASAL-0012-validation.json.",
       "reference": "evidence/WRASAL-0012-validation.json",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-git-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "git commit on branch arena/7c7845f4-wrasal-control",
+      "observed_result": "Commit 94ac9ebf268ca41ce193e5ff542783f0f99bd30b anchors the WRASAL-0012 supplemental records (evidence/GLOBAL-VISUAL-STANDARD-v001-01-HERO.webp, evidence/WRASAL-0012-validation.json, work_orders/WRASAL-0012.json) in local Git history, supplementing WRASAL-0011 without modifying canonical acceptance.",
+      "reference": "94ac9ebf268ca41ce193e5ff542783f0f99bd30b",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-remote-push",
+      "type": "git_remote_push",
+      "attribution": "Arena external execution worker",
+      "source": "git push origin arena/7c7845f4-wrasal-control and git ls-remote origin",
+      "observed_result": "The branch arena/7c7845f4-wrasal-control was pushed to origin (https://github.com/wrasalmedia-rgb/wrasal-control.git); the remote reference refs/heads/arena/7c7845f4-wrasal-control was independently verified via git ls-remote at 94ac9ebf268ca41ce193e5ff542783f0f99bd30b. No pull request was merged and canonical acceptance remains pending.",
+      "reference": "refs/heads/arena/7c7845f4-wrasal-control",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-review-only-pr",
+      "type": "github_pr_creation",
+      "attribution": "Arena external execution worker",
+      "source": "gh pr view 6 and gh api repos/wrasalmedia-rgb/wrasal-control/pulls/6",
+      "observed_result": "Review-only pull request #6 (https://github.com/wrasalmedia-rgb/wrasal-control/pull/6) remains OPEN from arena/7c7845f4-wrasal-control into main and now includes WRASAL-0012 (HEAD 94ac9ebf268ca41ce193e5ff542783f0f99bd30b). The PR was not merged, no approval was claimed, and canonical acceptance remains pending.",
+      "reference": "https://github.com/wrasalmedia-rgb/wrasal-control/pull/6",
       "result": "pass"
     }
   ],
