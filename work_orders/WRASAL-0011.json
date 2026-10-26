@@ -15,7 +15,7 @@
     "concept_record": "concepts/GLOBAL-VISUAL-STANDARD-v001.md",
     "validation_report": "evidence/WRASAL-0011-validation.json",
     "branch": "arena/7c7845f4-wrasal-control",
-    "commit": null,
+    "commit": "775843d3694c2397648c55c8af78f1043d40e1eb",
     "pull_request": null,
     "merge": null,
     "canonical_acceptance_record": null
@@ -37,6 +37,15 @@
       "source": "npm ci && npm run validate:control-plane -- --report evidence/WRASAL-0011-validation.json",
       "observed_result": "Repository-pinned control-plane validator passed with 631 checks against the updated control-plane records (projects, status vocabulary, all work-order JSON records including WRASAL-0011), validator self-tests passed (npm test), and machine-readable validation evidence was written to evidence/WRASAL-0011-validation.json.",
       "reference": "evidence/WRASAL-0011-validation.json",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0011-git-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "git commit on branch arena/7c7845f4-wrasal-control",
+      "observed_result": "Commit 775843d3694c2397648c55c8af78f1043d40e1eb anchors the WRASAL-0011 control-plane records (concepts/GLOBAL-VISUAL-STANDARD-v001.md, evidence/GLOBAL-VISUAL-STANDARD-v001.html, evidence/WRASAL-0011-validation.json, work_orders/WRASAL-0011.json) in local Git history.",
+      "reference": "775843d3694c2397648c55c8af78f1043d40e1eb",
       "result": "pass"
     }
   ],
