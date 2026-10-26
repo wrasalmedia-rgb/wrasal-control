@@ -1,7 +1,7 @@
 # WRASAL Image-Prompt Audit 001 — Positive-Only Lock, Corrected
 
 Registry ID: WRASAL-IMAGE-PROMPT-AUDIT-001
-Version: 1.1.0
+Version: 1.1.1
 Lifecycle status: PROPOSED / PENDING REVIEW
 Date: 2026-10-26
 
@@ -232,7 +232,13 @@ both sentences in one prompt.
 - Repository: wrasalmedia-rgb/wrasal-control
 - Branch (working): arena/9ac81b8d-wrasal-control
 - File path: concepts/WRASAL-IMAGE-PROMPT-AUDIT-001.md
-- Source artifact: user-supplied `IMG_6329.webp` (1536 × 1536), inspected 2026-10-26
+- Source artifact: user-supplied `IMG_6329.webp` (1536 × 1536), inspected 2026-10-26;
+  re-supplied unchanged later the same day and archived byte-identical as
+  `images/user-supplied-IMG_6329.webp`,
+  sha256 `8a542d49ce8acfd4e3add43601d0fc4cd600725a4565f84b41082e1f088ab0c3`.
+  The re-supply carried no new prompt, image, or claim, so no verdict in
+  §2/§7 changes; it closes the provenance gap left when the original file
+  was inspected but not archived.
 - Evidence: `images/wrasal-positive-lock-test-001.jpg`,
   `images/wrasal-positive-lock-test-002.jpg` (this repository, same commit);
   addendum: `images/user-supplied-865358043.webp`,
