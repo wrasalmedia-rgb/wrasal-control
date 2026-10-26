@@ -1,0 +1,52 @@
+{
+  "work_order_id": "WRASAL-0012",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-0012",
+  "recorded_on": "2026-10-26",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Record the rendered 01 HERO HALF-PORTRAIT image (supplemental visual evidence for GLOBAL VISUAL STANDARD v001) as inspectable control-plane evidence, without granting canonical acceptance.",
+  "success_condition": "The repository contains (a) the HERO portrait image stored as inspectable evidence at evidence/GLOBAL-VISUAL-STANDARD-v001-01-HERO.webp, linked to concept concepts/GLOBAL-VISUAL-STANDARD-v001.md Card 01, (b) a passing control-plane validator run recorded as machine-readable evidence at evidence/WRASAL-0012-validation.json, and (c) canonical_acceptance remains pending.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "source_image": "evidence/GLOBAL-VISUAL-STANDARD-v001-01-HERO.webp",
+    "concept_record": "concepts/GLOBAL-VISUAL-STANDARD-v001.md",
+    "validation_report": "evidence/WRASAL-0012-validation.json",
+    "branch": "arena/7c7845f4-wrasal-control",
+    "commit": null,
+    "remote_branch": null,
+    "remote_ref": null,
+    "remote_commit": null,
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0012-source-image-intake",
+      "type": "source_artifact",
+      "attribution": "Arena external execution worker",
+      "source": "uploaded image \"IMG_6329.webp\" received in conversation and stored at evidence/GLOBAL-VISUAL-STANDARD-v001-01-HERO.webp",
+      "observed_result": "The image is a 1536x1536 WEBP rendering (1.7 MB, sha256 8a542d49ce8acfd4e3add43601d0fc4cd600725a4565f84b41082e1f088ab0c3) of the GLOBAL VISUAL STANDARD v001 Card 01 HERO HALF-PORTRAIT: centered half-body portrait, shirtless with black knit beanie and thin chain, intense direct gaze, half face in deep shadow, warm orange-red prism flares and lens refractions across chest, high-contrast directional lighting, raw skin texture, deep shadows, cinematic grain, black basalt volcanic wasteland background with glowing fissures and smoke. The visual matches the transcribed Card 01 prompts (Midjourney centered half-body portrait --ar 4:5 --style raw --chaos 5 --v 6.1; Flux Pro 85mm shot on ARRI; Sora static close-up push-in) and the global anchor style suffix (dark desolate volcanic wasteland, black basalt spires, high contrast directional lighting with warm orange-red prism flares, grainy filmic, shot on ARRI Alexa) stored as inspectable evidence without modifying the PROPOSED concept record.",
+      "reference": "evidence/GLOBAL-VISUAL-STANDARD-v001-01-HERO.webp",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-validator-run",
+      "type": "validator_run",
+      "attribution": "Arena external execution worker",
+      "source": "npm ci && npm run validate:control-plane -- --report evidence/WRASAL-0012-validation.json",
+      "observed_result": "Repository-pinned control-plane validator passed with 731 checks against the updated control-plane records (projects, status vocabulary, all work-order JSON records including WRASAL-0012), validator self-tests passed (npm test), and machine-readable validation evidence was written to evidence/WRASAL-0012-validation.json.",
+      "reference": "evidence/WRASAL-0012-validation.json",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_control_records": "changed in working tree under WRASAL-0012 authority",
+    "wrasal_runtime_world_state": "none",
+    "canonical_acceptance_promotion": "not performed"
+  },
+  "next_candidate": "If authorized, human reviewers ratify the GLOBAL VISUAL STANDARD v001 concept record (including this HERO visual evidence) and decide in a separate S5 decision whether it becomes recognized WRASAL canon; canonical acceptance remains pending."
+}
