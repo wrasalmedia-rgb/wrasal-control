@@ -16,6 +16,9 @@
     "validation_report": "evidence/WRASAL-0011-validation.json",
     "branch": "arena/7c7845f4-wrasal-control",
     "commit": "775843d3694c2397648c55c8af78f1043d40e1eb",
+    "remote_branch": "arena/7c7845f4-wrasal-control",
+    "remote_ref": "refs/heads/arena/7c7845f4-wrasal-control",
+    "remote_commit": "5bf0901d65e38ed91bfd121f35004ffd46687b4f",
     "pull_request": null,
     "merge": null,
     "canonical_acceptance_record": null
@@ -46,6 +49,15 @@
       "source": "git commit on branch arena/7c7845f4-wrasal-control",
       "observed_result": "Commit 775843d3694c2397648c55c8af78f1043d40e1eb anchors the WRASAL-0011 control-plane records (concepts/GLOBAL-VISUAL-STANDARD-v001.md, evidence/GLOBAL-VISUAL-STANDARD-v001.html, evidence/WRASAL-0011-validation.json, work_orders/WRASAL-0011.json) in local Git history.",
       "reference": "775843d3694c2397648c55c8af78f1043d40e1eb",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0011-remote-push",
+      "type": "git_remote_push",
+      "attribution": "Arena external execution worker",
+      "source": "git push origin arena/7c7845f4-wrasal-control and git ls-remote origin",
+      "observed_result": "The branch arena/7c7845f4-wrasal-control was pushed to origin (https://github.com/wrasalmedia-rgb/wrasal-control.git); the remote reference refs/heads/arena/7c7845f4-wrasal-control was independently verified via git ls-remote at 5bf0901d65e38ed91bfd121f35004ffd46687b4f. No pull request was merged and canonical acceptance remains pending.",
+      "reference": "refs/heads/arena/7c7845f4-wrasal-control",
       "result": "pass"
     }
   ],
