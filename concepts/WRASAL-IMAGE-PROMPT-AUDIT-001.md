@@ -1,7 +1,7 @@
 # WRASAL Image-Prompt Audit 001 — Positive-Only Lock, Corrected
 
 Registry ID: WRASAL-IMAGE-PROMPT-AUDIT-001
-Version: 1.3.0
+Version: 1.4.0
 Lifecycle status: PROPOSED / PENDING REVIEW
 Date: 2026-10-26
 
@@ -331,6 +331,32 @@ Status: PROPOSED / PENDING REVIEW. No relight pass was run in this addendum;
 the broader-than-hairline cyan edge in the three-quarter frame is recorded as
 a residual, available for a future edit pass if the user requests it.
 
+## 10. Addendum (2026-10-26): direct-gaze rope-twist variant, with full prompt supplied
+
+File inspected and archived byte-identical: `images/user-supplied-864147803.webp`
+— 1600 × 1600, JPEG-encoded despite the `.webp` name, 173,340 bytes, sha256
+`97fd759feb40cd500c6112d72d59150480bcee8cfa9c179844faa127ceb7d5f9`.
+This time a complete prompt (positive lock + `--ar 1:1 --style raw --v 6.1 --no …`)
+was supplied with the image — the first fully attributed pair in this audit —
+though platform/job/seed remain unrecorded, so prompt→file causation stays a
+user claim, verified here only for prompt-vs-pixels consistency.
+
+| Prompt asks | Pixels show | Verdict |
+|---|---|---|
+| Head level, eyes locked into lens, direct eye contact | Head level, direct eye contact, neutral intense expression, closed lips | **Held** — notable: this is the §7.5 one-line gaze swap executed cleanly; everything else from the locs lock survived the change, confirming gaze should be stated once and swapped, never duplicated |
+| Long voluminous thick rope-twisted dreadlocks, brown-tipped ends, heavy rope texture | Exactly that, past shoulders onto chest | Held |
+| Bare shoulders/upper chest, thin gold chain | Present | Held |
+| Deep crimson-red overwhelming; cyan-teal hairline edge on jaw/neck/shoulders | Red dominant; cyan traces jaw, neck, shoulders and hair edges — slightly beyond a strict hairline on the shoulders | Held with the standing residual (§5/§8/§9) |
+| Solid matte black backdrop | Uniform black | Held |
+| Chest-up framing ending at mid-chest | Frame runs past mid-chest to upper abdomen, arms visible to below the elbow | **Contradicted (mild)** — the model keeps choosing half-body for this subject; if mid-chest crop is mandatory, state it twice (framing clause + closing crop clause) or crop in post |
+| `--ar 1:1` | File is 1600 × 1600 | **Supported** — first parameter in this series verified against dimensions (contrast §7.3, `--ar 4:5` vs 1:1 files) |
+| `--style raw --v 6.1` | Not determinable from pixels or file metadata | Unresolved — parameters are claims until a job record exists |
+| `--no` list (hands, clothing, beanie, smoke, flare, text, …) | None of the listed items appear | Consistent, not proof of causation |
+
+Cross-frame note: hair, chain, and lighting design match the §9 pair, making
+this a coherent direct-gaze companion frame; facial identity with §9 remains
+plausible-but-unproven (§7.4.2). Status: PROPOSED / PENDING REVIEW.
+
 ## Publication and audit fields
 
 - Repository: wrasalmedia-rgb/wrasal-control
@@ -350,5 +376,5 @@ a residual, available for a future edit pass if the user requests it.
   user-supplied files, SHA-256 in §7);
   `images/wrasal-rasta-reimagine-001.jpg` (§8, SHA-256 there);
   `images/user-supplied-866852437.webp`, `images/user-supplied-867730787.webp`
-  (§9, SHA-256 there)
+  (§9, SHA-256 there); `images/user-supplied-864147803.webp` (§10)
 - Review status: PROPOSED / PENDING REVIEW
