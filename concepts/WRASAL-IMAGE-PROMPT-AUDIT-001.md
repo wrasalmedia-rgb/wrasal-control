@@ -1,7 +1,7 @@
 # WRASAL Image-Prompt Audit 001 — Positive-Only Lock, Corrected
 
 Registry ID: WRASAL-IMAGE-PROMPT-AUDIT-001
-Version: 1.2.0
+Version: 1.3.0
 Lifecycle status: PROPOSED / PENDING REVIEW
 Date: 2026-10-26
 
@@ -247,6 +247,90 @@ consistent with §7.4.2: **facial identity drifts slightly** from the reference
 eliminate it. Status remains PROPOSED / PENDING REVIEW; recording the
 generation is evidence it was produced, not approval of it.
 
+## 9. Addendum 001A corrected (2026-10-26): rope-twist locs pair — draft rejected, re-derived
+
+A pasted draft addendum ("001A") arrived with two new images. It was **not**
+recorded as written, for four evidence failures:
+
+1. **Its file does not exist here.** It cites `gallery/image_20261026_043051.webp`
+   (1600×1600, 331,580 bytes, sha256 `e6cee520…8154`). No `gallery/` directory
+   or such file was supplied or exists in this workspace; neither actual
+   attachment matches those bytes or that hash.
+2. **Its provenance paths are unverifiable.** `/mnt/data/image_5ADD057A….jpeg`,
+   `/mnt/data/image_B1E6764A….jpeg`, and `gallery/image_20261021_022453.webp`
+   (identity sources / hair reference) are absent from this environment and
+   are recorded as *unresolved claims*, not sources.
+3. **It misidentifies the images as "the dreadlocks candidate generated in the
+   last turn."** The §8 generation is `wrasal-rasta-reimagine-001.jpg`
+   (2048×2048, thinner uniform locs, sha256 `57ac6713…e051`). These two files
+   show a different, thicker rope-twist hairstyle and are new user-supplied
+   artifacts, not that generation.
+4. **Its §2 table and §3 prompt bodies are empty** — headings with no content.
+   The corrected table and prompts are supplied below.
+
+### 9.1 Files actually inspected (archived byte-identical)
+
+- `images/user-supplied-866852437.webp` — 1600 × 1600, JPEG-encoded despite the
+  `.webp` name, 146,455 bytes, sha256
+  `5e474f2e352236162394ee2fb5e1968744752915fd556c418e3eddae3c07ad68`.
+  Frontal view, gaze down.
+- `images/user-supplied-867730787.webp` — 1600 × 1600, JPEG-encoded despite the
+  `.webp` name, 148,143 bytes, sha256
+  `2b8f1ccbf504d725cbe6c853abff1b7dace6153b0179cbca9e30d5e3fd134246`.
+  Three-quarter view, gaze down-right.
+
+### 9.2 Observed in both
+
+Same archetype as §7/§8: athletic shirtless man, thin gold chain, solid black
+backdrop, deep shadows, dominant crimson-red light, cyan edge light, no
+hands/text/props. The hair is now **long, thick, rope-twisted locs with
+lighter brown tips**, falling past the shoulders onto the chest — materially
+different from both the §4a afro and the §8 thinner locs, so §4a verbatim
+cannot reproduce these files (the draft's one sound conclusion). Framing in
+both runs to the elbows, i.e. half-body, wider than the "chest-up" claimed.
+Identity across the pair is consistent in hair, chain, and lighting design;
+facial sameness with §7/§8 remains plausible-but-unproven, per §7.4.2.
+
+### 9.3 Corrected claim table (draft's missing §2)
+
+| Lock element | §4a lock | These files | Verdict |
+|---|---|---|---|
+| Hair | Short tight curly afro | Long thick rope-twisted locs, brown tips | Changed — new positive spec required (9.4) |
+| Gaze | Downward | Downward in both | Held |
+| Wardrobe/jewellery | Bare chest, thin gold chain | Same | Held |
+| Lighting | Dominant red, cyan edge | Dominant red; cyan edge visible on shoulders/jaw, broader than hairline in the three-quarter frame | Held with residual (as §5/§8) |
+| Background | Solid matte black | Solid black in both | Held |
+| Crop | Chest-up, hands excluded by crop | Half-body to elbows; hands still out of frame | Wider than claimed; exclusion still achieved |
+
+### 9.4 Corrected prompts for this hairstyle (draft's missing §3)
+
+Positive-only, single-string models:
+
+```text
+premium studio portrait, centered half-body of a solitary athletic adult Black
+Caribbean man with long thick rope-twisted dreadlocks falling past his
+shoulders onto his chest, individual twists defined, lighter brown tips, head
+bowed, gaze directed downward, introspective intense expression, closed lips,
+bare shoulders chest and upper arms, thin delicate gold chain on his
+collarbone, deep crimson-red gel light wrapping his face neck chest and arms as
+the overwhelming illumination, electric cyan-teal light tracing a hairline edge
+along his jaw shoulders and arms, solid matte black studio backdrop filling the
+entire background, powerful raw authentic presence, real tactile skin texture
+with visible pores, deep shadows, high contrast, timeless cinematic still,
+photorealistic
+```
+
+Midjourney/SDXL: use the above, plus `--ar 4:5 --style raw` and
+`--no short hair, afro, fade haircut, beanie, hat, hands, phone, watch, clothing, shirt, smoke, haze, landscape, props, text, logo, watermark, glasses, lens flare, blur, cartoon, illustration`
+(Midjourney) or the same list in SDXL's negative field. Note the draft was
+right about one mechanic: for the locs intent, `afro / fade` must live only in
+the negative channel — naming both hairstyles in the main prompt re-casts the
+hair every run.
+
+Status: PROPOSED / PENDING REVIEW. No relight pass was run in this addendum;
+the broader-than-hairline cyan edge in the three-quarter frame is recorded as
+a residual, available for a future edit pass if the user requests it.
+
 ## Publication and audit fields
 
 - Repository: wrasalmedia-rgb/wrasal-control
@@ -264,5 +348,7 @@ generation is evidence it was produced, not approval of it.
   addendum: `images/user-supplied-865358043.webp`,
   `images/user-supplied-IMG_6331.webp` (byte-identical archives of the
   user-supplied files, SHA-256 in §7);
-  `images/wrasal-rasta-reimagine-001.jpg` (§8, SHA-256 there)
+  `images/wrasal-rasta-reimagine-001.jpg` (§8, SHA-256 there);
+  `images/user-supplied-866852437.webp`, `images/user-supplied-867730787.webp`
+  (§9, SHA-256 there)
 - Review status: PROPOSED / PENDING REVIEW
