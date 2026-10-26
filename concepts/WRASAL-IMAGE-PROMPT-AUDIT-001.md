@@ -1,7 +1,7 @@
 # WRASAL Image-Prompt Audit 001 — Positive-Only Lock, Corrected
 
 Registry ID: WRASAL-IMAGE-PROMPT-AUDIT-001
-Version: 1.1.1
+Version: 1.2.0
 Lifecycle status: PROPOSED / PENDING REVIEW
 Date: 2026-10-26
 
@@ -227,6 +227,26 @@ the intent, change only `head bowed, gaze directed downward` →
 `head level, eyes locked into the lens` and keep everything else; do not run
 both sentences in one prompt.
 
+## 8. Addendum (2026-10-26): Rastafari-hairstyle reimagination of the §7 frontal subject
+
+At the user's request, the frontal §7 subject (`IMG_6331.webp`) was reimagined
+with a Rastafari hairstyle via a reference-image edit: keep face, bowed head,
+downward gaze, bare chest/arms, thin gold chain, dominant crimson gel with
+cyan edge light, black backdrop and framing; change **only** the hair to long
+dark-brown dreadlocks falling past the shoulders.
+
+Result: `images/wrasal-rasta-reimagine-001.jpg` — 2048 × 2048 JPEG,
+sha256 `57ac67133a781b85889223eddcfae1a5f81653bf02246e656af96de37499e051`
+(the user selected option 2 of 2 candidates presented).
+
+Observed against the brief: hairstyle change landed as specified (long locs
+framing the face, several resting on the chest/shoulders, matte texture);
+gaze, pose, chain, lighting balance, and backdrop retained. Honest residual,
+consistent with §7.4.2: **facial identity drifts slightly** from the reference
+(cheek/jaw rendering) — a reference edit narrows identity drift, it does not
+eliminate it. Status remains PROPOSED / PENDING REVIEW; recording the
+generation is evidence it was produced, not approval of it.
+
 ## Publication and audit fields
 
 - Repository: wrasalmedia-rgb/wrasal-control
@@ -243,5 +263,6 @@ both sentences in one prompt.
   `images/wrasal-positive-lock-test-002.jpg` (this repository, same commit);
   addendum: `images/user-supplied-865358043.webp`,
   `images/user-supplied-IMG_6331.webp` (byte-identical archives of the
-  user-supplied files, SHA-256 in §7)
+  user-supplied files, SHA-256 in §7);
+  `images/wrasal-rasta-reimagine-001.jpg` (§8, SHA-256 there)
 - Review status: PROPOSED / PENDING REVIEW
