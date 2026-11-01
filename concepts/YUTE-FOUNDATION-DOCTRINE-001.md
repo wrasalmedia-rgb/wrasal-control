@@ -2,20 +2,22 @@
 
 Registry ID: YUTE-FOUNDATION-DOCTRINE-001
 
-Version: v002 (1.1.0 — Constitutional Engineering Revision)
+Version: v002.3 (1.3.0 — YUTE-ARCH-GOV-002 Governance Reconciliation)
 
 Creation Date: 2026-10-31
 
-Lifecycle status: PROPOSED / PENDING REVIEW
+Lifecycle status: PROPOSED / DRAFT PR #8 UNDER REVIEW
 
-Mission Control Classification: ARCHITECTURAL FOUNDATION ESTABLISHED IN SPECIFICATION. RUNTIME ASSURANCE NOT YET VERIFIED.
+Mission Control Classification: YUTE-ARCH-GOV-002 — DOCTRINE, FIREWALL & YIE CONTRACT SPECIFIED; PG 16.4 DDL VERIFIED; RUBY/YIE RUNTIME ASSURANCE NOT VERIFIED (S5 PENDING)
 
 Parent Ecosystem: WRASAL™
 
-Target System: YUTE OS (Human Agency, Informed Consent & Digital Rights Operating System)
+Target System: YUTE OS™ (Human Agency OS) governing YIE™ (YUTE Identity Engine, proposed under YIY™ / Your Inner Eye)
 
-Related Work Orders:
-- `WO-YUTE-AGENCY-001` (`missions/WO-YUTE-AGENCY-001/` — P0 General YUTE OS Agency Foundation)
+Related Governance & Work Orders:
+- `decisions/YUTE-ADR-0010.md` (*Controlled Advancement to Agency Runtime Verification — Human Ratification Required*)
+- `decisions/YUTE-ADR-0011.md` (*YIY/YIE Identity Services Integration With YUTE Human Agency Governance — Proposed*)
+- `WO-YUTE-AGENCY-001` (`missions/WO-YUTE-AGENCY-001/` — P0 YUTE OS Agency Foundation & `YUTE × YIE` Contract `v001`)
 - `WO-YUTE-LUTA-DARRON-001` (`missions/WO-YUTE-LUTA-DARRON-001/` — Digital Human Pilot, `HOLD-RIGHTS-001` Active)
 
 ---
@@ -191,21 +193,40 @@ Per `decisions/YUTE-ADR-0010.md`, **Tier 1 Limited Engineering Authorization** (
 - PR URL: `https://github.com/wrasalmedia-rgb/wrasal-control/pull/8` *(Draft PR)*
 - Review status: `PROPOSED / DRAFT PR #8 UNDER REVIEW` (`canonical_acceptance: pending`)
 - Evidence locations:
+- **Data-minimization audit:** `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
   - `decisions/YUTE-ADR-0010.md`
+  - `decisions/YUTE-ADR-0011.md`
   - `evidence/WO-YUTE-AGENCY-001-validation.json`
   - `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`
   - `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
   - `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
-  - `missions/WO-YUTE-AGENCY-001/migrations/003_verify_pg16_invariants.sql`
-  - `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
+  - `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql`
+  - `missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql`
+  - `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
   - `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature`
   - `missions/WO-YUTE-LUTA-DARRON-001/YUTE_MVP_ARCHITECTURE.md`
 
+---
+
+## 8. Reconciled System Hierarchy & Foundational Law (`YUTE-ARCH-GOV-002`)
+
+Extending (never replacing) *The Child We Were. The Human We Become.*, `YUTE-ARCH-GOV-002` (`decisions/YUTE-ADR-0011.md`) establishes the boundary between **`YUTE OS™`** (authority) and **`YIE™`** (*YUTE Identity Engine*, proposed under **`YIY™`** / *Your Inner Eye*):
+
+- **`YIE™` supplies identity-processing capabilities. `YUTE OS™` governs whether those capabilities may be used.**
+- **`YIE™` cannot authorize itself to create, modify, or distribute a person's likeness.** Before processing any identity asset, `YIE™` must obtain an operation-specific `YieAuthorizationEnvelope` (`YIE-AUTH-ENV-v001`) from `Yute::AgencyFirewall` identifying subject, operation, approved assets, named purpose, expiration (`<= 60s`), and constitutional restrictions (`INV-00`, `@AC-13`..`@AC-16`, `YUTE-AGENCY-INV-001`, `YUTE-AGENCY-INV-002`). Missing or invalid authorization means **`DENY`**.
+- **Proposed Organizational Boundary:** `YIY™` / `YIE™` organizational designation remains strictly `PROPOSED` and separate from verified corporate formation.
+- **Uncompromising Builder Symmetry:** Administrative or developer privilege **never** confers permission to access, reproduce, or commercialize another person's likeness; conversely, the founder's and builders' own authorized AI likenesses receive the exact same safeguards as every other person's.
+
+> **WRASAL™ | FOUNDATIONAL LAW:**
+> **YUTE protects the person's authority. YIE preserves the person's authorized representation. YIY provides the proposed technology ecosystem. WRASAL governs integration across its creative systems.**
+> **THE HUMAN DEFINES THE REPRESENTATION. THE REPRESENTATION NEVER DEFINES THE HUMAN.**
+
 ## Changelog
 
+- `v002.3 / 1.3.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-ARCH-GOV-002` Governance Reconciliation—reconciled `WRASAL™` / `YUTE OS™` / `YIY™` (proposed) / `YIE™` hierarchy, 7-rule Constitutional Inheritance, Founder/Admin symmetry, Foundational Law, `decisions/YUTE-ADR-0011.md`, and `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001` (`003_yute_yie_authorization_contract.sql`, `17/17` PG 16.4 invariants PASS).
 - `v002.2 / 1.2.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-PR8-REVIEW-001` (`Engineering Audit 001`)—added `YUTE-AGENCY-INV-002` (forbidding cross-subject/asset/purpose transfer by DB association), 5-stage Consent Process Model (`PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED`), `EGRESS-FENCE-v001` Point of Irrevocable Egress, standalone `.sql` migrations verified against `PostgreSQL 16.4`, `TEST-06`, and public-repo privacy minimization (`YUTE-PRIVACY-AUDIT-001`).
 - `v002.1 / 1.1.1` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Engineering Authorization Assessment (`YUTE-ADR-0010`)—reconciled Oct 20 `Frozen / Concept` portfolio baseline via Tier 1 vs. Tier 2 split; anchored Product Zero on `YUTE GUARD™` (*Know Before You Agree*); enforced Forensic Refinements `3.A` (hash != consent) and `3.B` (4-axis revocation != universal erasure); aligned `v003` on `AGENCY FIREWALL PROOF` + Five Adversarial Runtime Tests.
 - `v002 / 1.1.0` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Constitutional Engineering Review—repositioned informed-consent/agency infrastructure (`WO-YUTE-AGENCY-001`) as primary YUTE product foundation ahead of avatar reconstruction; added Three-Tier Adulthood Transition, Revocation Propagation Policy (`RPP-v001`), indirect-valuation ban, Platform Self-Sovereignty Covenant, `YUTE-AGENCY-INV-001`, and `v002 → v005` release ladder.

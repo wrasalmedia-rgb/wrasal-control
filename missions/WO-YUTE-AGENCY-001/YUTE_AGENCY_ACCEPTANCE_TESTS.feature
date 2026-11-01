@@ -148,3 +148,38 @@ Feature: YUTE Guard, Five-Stage Consent Process, Cross-Subject Integrity & Agenc
     When an analytics logger or classifier emits human-worth proxy metric "castability_index"
     Then "Yute::TelemetrySanitizer" raises "Yute::IndirectValuationProxyError"
     And YUTE draft platform terms "AGR-YUTE-PLATFORM-TOS-v001" fail CI if any "AI_TRAINING_CAPTURE", "UNRESTRICTED_SUBLICENSING", or "PERPETUAL_DURATION" license-back clause exists
+
+  # ============================================================================
+  # YIE-PROOF-001: CAPABLE IMAGE ENGINE REFUSES UNAUTHORIZED IDENTITY GENERATION
+  # ============================================================================
+  @YIE-PROOF-001 @YUTE-ADR-0011 @yie-authorization-contract @fail-closed
+  Scenario: YIE refuses an unauthorized identity-generation request even when the image-generation engine is capable of fulfilling it
+    Given YIE image-generation engine health is "ENGINE_CAPABILITY_READY = TRUE"
+    And fictional performer "SUBJ-FICT-ZURI-BENNETT-001" has encrypted reference asset "DRP-FICT-ZURI-STILL-001" in "YUTE Vault"
+    When a caller submits "GENERATE_IDENTITY_FRAME" to "YIE" for "SUBJ-FICT-ZURI-BENNETT-001" without a valid "YieAuthorizationEnvelope" from "Yute::AgencyFirewall"
+    Then "YIE" returns "REFUSED_FAIL_CLOSED" with reason "MISSING_OR_DENIED_YUTE_AUTHORIZATION"
+    And "identity_bytes_decrypted" is "0" and "generated_frames_emitted" is "0"
+    And attempting to record "EXECUTED_WITHIN_ENVELOPE" with "envelope_id = NULL" fails PostgreSQL constraint "yie_execution_requires_valid_envelope"
+
+  # ============================================================================
+  # YIE-NEG-01..04: NO SELF-AUTH, <=60s TTL, CROSS-SUBJECT & @AC-16 SPEC CURRENCY
+  # ============================================================================
+  @YIE-NEG-01 @YIE-NEG-02 @YIE-NEG-03 @YIE-NEG-04 @YUTE-AGENCY-INV-002 @AC-16
+  Scenario: Reject YIE self-authorization, expired >60s envelopes, cross-subject lease splices, and superseded likeness specifications
+    Given "SUBJ-FICT-ZURI-BENNETT-001" and "SUBJ-FICT-MARCUS-VALE-001" are distinct subjects and Zuri's prior spec "SPEC-ZURI-v001" is "SUPERSEDED" by "SPEC-ZURI-v002"
+    When adversarial envelopes are evaluated at the "Yute::AgencyFirewall" to "YIE" boundary
+    Then an envelope with "issuer_authority = YIE_INTERNAL_SELF_AUTH" fails "issuer_must_be_yute_firewall" with SQLSTATE "23514"
+    And an envelope with TTL exceeding 60 seconds fails "yie_envelope_max_ttl_60s" with SQLSTATE "23514"
+    And splicing "SUBJ-FICT-MARCUS-VALE-001" lease onto "SUBJ-FICT-ZURI-BENNETT-001" envelope fails composite FK "fk_yie_envelope_lease_scope" with SQLSTATE "23503"
+    And referencing superseded spec "SPEC-ZURI-v001" fails trigger "trg_yie_likeness_spec_currency" with SQLSTATE "23514"
+
+  # ============================================================================
+  # YIE-NEG-05..07: ADMIN-OVERRIDE BAN, FOUNDER PARITY & SINGLE-USE REPLAY BLOCK
+  # ============================================================================
+  @YIE-NEG-05 @YIE-NEG-06 @YIE-NEG-07 @founder-builder-parity @no-admin-bypass
+  Scenario: Enforce admin-override prohibition, identical safeguards for Founder/Builder likenesses, and single-use envelope non-replay
+    Given fictional founder/builder steward "SUBJ-FICT-FOUNDER-STEWARD-001" ("is_builder_steward = TRUE") holds scoped keynote likeness spec "SPEC-FOUNDER-KEYNOTE-v001"
+    When a privileged platform administrator ("admin_override_attempted = TRUE") requests unauthorized likeness generation for either "SUBJ-FICT-ZURI-BENNETT-001" or "SUBJ-FICT-FOUNDER-STEWARD-001"
+    Then "YIE" refuses both requests identically with "ADMIN_PRIVILEGE_CANNOT_AUTHORIZE_LIKENESS" and SQLSTATE "23514"
+    And replaying an already-consumed "YieAuthorizationEnvelope" fails single-use nonce consumption with "ENVELOPE_REPLAY_DETECTED"
+

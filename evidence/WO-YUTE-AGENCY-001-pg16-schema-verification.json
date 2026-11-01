@@ -1,11 +1,12 @@
 {
-  "verification_id": "WO-YUTE-AGENCY-001-PG16-SCHEMA-VERIFICATION-001",
+  "verification_id": "WO-YUTE-AGENCY-001-PG16-SCHEMA-VERIFICATION-002",
+  "classification": "YUTE-ARCH-GOV-002",
   "verified_on": "2026-10-31",
   "engine": {
     "postgres_version": "PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
     "server_version": "16.4",
     "harness": "PostgreSQL 16.4 compiled WASM engine (@electric-sql/pglite@0.2.17 executed in isolated /tmp/pg-verify)",
-    "epistemic_scope_statement": "Verifies real PostgreSQL 16.4 DDL execution, native gen_random_uuid(), composite foreign keys enforcing YUTE-AGENCY-INV-002 (TEST-06), 5-stage consent process constraints, NOT NULL + CHECK enforcement, RLS activation, and PL/pgSQL immutability triggers. Does NOT claim Ruby 3.3 service execution, multi-socket TCP lock contention, or external network adapter verification, which remain gated on YUTE-ADR-0010 human ratification."
+    "epistemic_scope_statement": "Verifies real PostgreSQL 16.4 DDL execution across migrations 001, 002, and 003 (YUTE x YIE Identity Authorization Contract v001), 18 composite foreign keys enforcing YUTE-AGENCY-INV-002 (TEST-06 & @YIE-NEG-03), 5-stage consent process constraints, @AC-16 superseded-spec blocking, admin-override prohibition, Founder/Builder parity, RLS activation, and PL/pgSQL immutability triggers. Does NOT claim Ruby 3.3 or YIE service runtime execution, multi-socket TCP lock contention, or external network adapter verification, which remain gated on human ratification of YUTE-ADR-0010 and YUTE-ADR-0011."
   },
   "migrations_executed": [
     {
@@ -19,16 +20,21 @@
       "status": "APPLIED"
     },
     {
-      "file": "missions/WO-YUTE-AGENCY-001/migrations/003_verify_pg16_invariants.sql",
-      "sha256": "3f24645bcf411d0d76783768b5530e06d5834a758d7c8543f534af59962d21b7",
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql",
+      "sha256": "681fa932d7b78a5ac9dfd8731fac69a8a0b65ea72afebca0595b0ccdaef6c326",
+      "status": "APPLIED"
+    },
+    {
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql",
+      "sha256": "fce1ddb8de1eaf54c703e0d0437fac2144ae336edbc55e77b5b3391bf105f0ba",
       "status": "EXECUTED_AND_ROLLED_BACK"
     }
   ],
   "schema_catalog_summary": {
-    "public_table_count": 23,
-    "rls_enabled_table_count": 7,
-    "composite_foreign_key_count": 15,
-    "trigger_event_count": 10,
+    "public_table_count": 25,
+    "rls_enabled_table_count": 9,
+    "composite_foreign_key_count": 18,
+    "trigger_event_count": 14,
     "tables": [
       {
         "table_name": "adulthood_transitions",
@@ -121,6 +127,14 @@
       {
         "table_name": "vault_access_audit_logs",
         "rls_enabled": false
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "rls_enabled": true
       }
     ],
     "composite_foreign_keys": [
@@ -198,6 +212,21 @@
         "table_name": "vault_access_audit_logs",
         "constraint_name": "vault_access_audit_logs_source_id_subject_id_fkey",
         "definition": "FOREIGN KEY (source_id, subject_id) REFERENCES source_assets(source_id, subject_id)"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "constraint_name": "yie_authorization_envelopes_lease_id_decision_id_grant_id__fkey",
+        "definition": "FOREIGN KEY (lease_id, decision_id, grant_id, subject_id, approved_rights_record_id, permitted_yute_action, named_purpose_scope) REFERENCES firewall_capability_leases(lease_id, decision_id, grant_id, subject_id, target_rights_record_id, permitted_action, named_target_scope)"
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "constraint_name": "yie_execution_receipts_envelope_id_subject_id_requested_ri_fkey",
+        "definition": "FOREIGN KEY (envelope_id, subject_id, requested_rights_record_id, requested_yie_operation, requested_purpose_scope) REFERENCES yie_authorization_envelopes(envelope_id, subject_id, approved_rights_record_id, requested_yie_operation, named_purpose_scope)"
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "constraint_name": "yie_execution_receipts_requested_rights_record_id_subject__fkey",
+        "definition": "FOREIGN KEY (requested_rights_record_id, subject_id) REFERENCES digital_rights_records(rights_record_id, subject_id)"
       }
     ],
     "triggers": [
@@ -250,12 +279,32 @@
         "table_name": "vault_access_audit_logs",
         "trigger_name": "trg_immutable_vault_access_audit_logs",
         "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_likeness_spec_currency",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_likeness_spec_currency",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "trigger_name": "trg_immutable_yie_execution_receipts",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "trigger_name": "trg_immutable_yie_execution_receipts",
+        "event_manipulation": "UPDATE"
       }
     ]
   },
   "adversarial_invariant_results": [
     {
-      "test_id": "PG16-BASELINE-V003",
+      "test_id": "01-PG16-BASELINE-V003",
       "invariant_ref": "YUTE-OS-v003",
       "description": "Valid Zuri ceremony, single-track grant, and fail-closed synthetic-voice DENY receipt persist cleanly",
       "expected_state": "COMMITTED",
@@ -263,55 +312,7 @@
       "passed": true
     },
     {
-      "test_id": "PG16-CONSENT-DECLINED-BLOCKS-GRANT",
-      "invariant_ref": "SECTION-03-5-STAGE",
-      "description": "Reject ConsentLedger grant backed by a ceremony whose human decision_outcome was DECLINED",
-      "expected_state": "23514",
-      "observed_state": "23514",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-FINDING-03-EGRESS-TIMESTAMP",
-      "invariant_ref": "EGRESS-FENCE-v001",
-      "description": "Reject COMMITTED_EXTERNAL_EGRESS state lacking Point-of-Irrevocable-Egress timestamp",
-      "expected_state": "23514",
-      "observed_state": "23514",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-REFINEMENT-3B-NO-FAKE-DELETION",
-      "invariant_ref": "REFINEMENT-3B",
-      "description": "Reject claiming EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT without acknowledged receipt",
-      "expected_state": "23514",
-      "observed_state": "23514",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-TEST-01-NULL-CHECK-BYPASS",
-      "invariant_ref": "FORENSIC-A",
-      "description": "Reject NULL insertion into CHECK-constrained autonomous_persona_allowed column",
-      "expected_state": "23502",
-      "observed_state": "23502",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-TEST-04-IMMUTABLE-AUDIT-TRIGGER",
-      "invariant_ref": "TEST-04",
-      "description": "Block DELETE on append-only agency_firewall_decisions ledger",
-      "expected_state": "P0001",
-      "observed_state": "P0001",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-TEST-04-TWO-STEWARD-QUORUM",
-      "invariant_ref": "FORENSIC-E",
-      "description": "Reject legal retention hold signed twice by the same steward",
-      "expected_state": "23514",
-      "observed_state": "23514",
-      "passed": true
-    },
-    {
-      "test_id": "PG16-TEST-06-CROSS-SUBJECT-CEREMONY",
+      "test_id": "02-TEST-06-CROSS-SUBJECT-CEREMONY",
       "invariant_ref": "YUTE-AGENCY-INV-002",
       "description": "Reject attaching Subject A ceremony_id to Subject B consent_ledger_grants row",
       "expected_state": "23503",
@@ -319,7 +320,7 @@
       "passed": true
     },
     {
-      "test_id": "PG16-TEST-06B-CROSS-PURPOSE-ALLOW",
+      "test_id": "03-TEST-06B-CROSS-PURPOSE-ALLOW",
       "invariant_ref": "YUTE-AGENCY-INV-002",
       "description": "Reject ALLOW firewall decision whose action differs from matched grant permitted_action",
       "expected_state": "23503",
@@ -327,17 +328,121 @@
       "passed": true
     },
     {
-      "test_id": "PG16-TEST-06C-CROSS-ASSET-SUBJECT",
+      "test_id": "04-TEST-06C-CROSS-ASSET-SUBJECT",
       "invariant_ref": "YUTE-AGENCY-INV-002",
       "description": "Reject firewall decision associating Subject B asset with Subject A identity/grant",
       "expected_state": "23503",
       "observed_state": "23503",
       "passed": true
+    },
+    {
+      "test_id": "05-CONSENT-DECLINED-BLOCKS-GRANT",
+      "invariant_ref": "SECTION-03-5-STAGE",
+      "description": "Reject ConsentLedger grant backed by a ceremony whose human decision_outcome was DECLINED",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "06-TEST-01-NULL-CHECK-BYPASS",
+      "invariant_ref": "FORENSIC-A",
+      "description": "Reject NULL insertion into CHECK-constrained autonomous_persona_allowed column",
+      "expected_state": "23502",
+      "observed_state": "23502",
+      "passed": true
+    },
+    {
+      "test_id": "07-TEST-04-IMMUTABLE-AUDIT-TRIGGER",
+      "invariant_ref": "TEST-04",
+      "description": "Block DELETE on append-only agency_firewall_decisions ledger",
+      "expected_state": "P0001",
+      "observed_state": "P0001",
+      "passed": true
+    },
+    {
+      "test_id": "08-FINDING-03-EGRESS-TIMESTAMP",
+      "invariant_ref": "EGRESS-FENCE-v001",
+      "description": "Reject COMMITTED_EXTERNAL_EGRESS state lacking Point-of-Irrevocable-Egress timestamp",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "09-REFINEMENT-3B-NO-FAKE-DELETION",
+      "invariant_ref": "REFINEMENT-3B",
+      "description": "Reject claiming EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT without acknowledged receipt",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "10-TEST-04-TWO-STEWARD-QUORUM",
+      "invariant_ref": "FORENSIC-E",
+      "description": "Reject legal retention hold signed twice by the same steward",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "11-YIE-PROOF-001-CAPABLE-BUT-REFUSED",
+      "invariant_ref": "YUTE-ADR-0011",
+      "description": "YIE refuses unauthorized synthesis even when engine_capability_ready=TRUE (0 bytes, 0 frames)",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "12-YIE-NEG-01-NO-SELF-AUTHORIZATION",
+      "invariant_ref": "YUTE-ADR-0011",
+      "description": "Reject YIE envelope where issuer_authority is anything other than YUTE_OS_AGENCY_FIREWALL",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "13-YIE-NEG-02-MAX-60S-TTL",
+      "invariant_ref": "YUTE-ADR-0011",
+      "description": "Reject YIE authorization envelope with TTL exceeding 60 seconds",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "14-YIE-NEG-03-CROSS-SUBJECT-ENVELOPE",
+      "invariant_ref": "YUTE-AGENCY-INV-002",
+      "description": "Reject YIE envelope attempting to use Subject B lease to process Subject A identity",
+      "expected_state": "23503",
+      "observed_state": "23503",
+      "passed": true
+    },
+    {
+      "test_id": "15-YIE-NEG-04-SUPERSEDED-SPEC-AC16",
+      "invariant_ref": "AC-16-HUMAN-GROWTH",
+      "description": "Reject YIE envelope referencing a SUPERSEDED likeness specification",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "16-YIE-NEG-05-NO-ADMIN-OVERRIDE",
+      "invariant_ref": "SECTION-05-BUILDER",
+      "description": "Reject admin_override_attempted=TRUE from executing likeness processing in YIE",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "17-YIE-NEG-06-FOUNDER-LIKENESS-PARITY",
+      "invariant_ref": "SECTION-05-BUILDER",
+      "description": "Enforce identical fail-closed YIE protection on Founder/Builder own AI likeness",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
     }
   ],
   "summary": {
-    "total_adversarial_checks": 10,
-    "passed": 10,
+    "total_adversarial_checks": 17,
+    "passed": 17,
     "failed": 0
   }
 }

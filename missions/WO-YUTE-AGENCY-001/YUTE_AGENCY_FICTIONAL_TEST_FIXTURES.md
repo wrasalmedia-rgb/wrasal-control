@@ -69,3 +69,14 @@ Section 3. Zero Model Training. Producer shall not use Performer's reference mat
 - **Tests:**
   1. Guardian attempt to enable `voice_cloning_permitted = TRUE` or `advertising_permitted = TRUE` → rejected by PostgreSQL `minor_cannot_grant_commercial_or_synthetic`.
   2. Simulated 18th-birthday transition with two-steward statutory hold `HOLD-TAX-001` → `processing_restricted = TRUE` blocks 100% of operational access, eligible media is crypto-shredded, and `HOLD-TAX-001` is transparently disclosed (`PARTIAL_DELETED_WITH_DECLARED_LEGAL_HOLD`).
+
+---
+
+## Fixture 5: `SUBJ-FICT-FOUNDER-STEWARD-001` (Founder / Builder Inclusion & Admin-Override Prohibition Test — `YUTE-ARCH-GOV-002`)
+
+- **Fictional Subject:** `SUBJ-FICT-FOUNDER-STEWARD-001` (*Avery Clarke*, fictional platform founder/steward, `is_builder_steward = TRUE`)
+- **Synthetic Agreement (`AGR-FICT-FOUNDER-KEYNOTE-001`):** Scoped single-event product-keynote demonstration grant (`KEYNOTE-DEMO-2026`), expressly excluding commercial advertising (`ADVERTISING`), autonomous persona agents, and model training.
+- **Two-Way Symmetry Tests (`@YIE-NEG-05`, `@YIE-NEG-06`):**
+  1. **No Admin Privilege Over Others:** `SUBJ-FICT-FOUNDER-STEWARD-001` (or a system root operator) sets `admin_override_attempted = TRUE` to process `SUBJ-FICT-ZURI-BENNETT-001`'s likeness without Zuri's `YieAuthorizationEnvelope` → rejected fail-closed (`SQLSTATE 23514`, `ADMIN_PRIVILEGE_CANNOT_AUTHORIZE_LIKENESS`, `0` bytes decrypted).
+  2. **Equal Protection for the Builder:** An internal workflow attempts to generate `SUBJ-FICT-FOUNDER-STEWARD-001`'s own likeness for an unauthorized commercial ad outside `KEYNOTE-DEMO-2026` → `Yute::AgencyFirewall` and `YIE` refuse identically (`SQLSTATE 23514`, `MISSING_OR_DENIED_YUTE_AUTHORIZATION`, `0` frames emitted).
+

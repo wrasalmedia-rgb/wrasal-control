@@ -3,12 +3,12 @@
 - **Document ID:** `WO_YUTE_AGENCY_001_WORK_ORDER`
 - **Work Order ID:** `WO-YUTE-AGENCY-001`
 - **Product Zero UX:** **`YUTE GUARD™ — KNOW BEFORE YOU AGREE.`**
-- **Next Runtime Milestone:** `YUTE-OS-v003 | AGENCY FIREWALL PROOF`
-- **Governing ADR:** `decisions/YUTE-ADR-0010.md` (*Conditional Approval — Fictional-Data Engineering Only; Human Ratification Required*)
+- **Next Runtime Milestone:** `YUTE-OS-v003 | AGENCY FIREWALL PROOF` + `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001` (`@YIE-PROOF-001`)
+- **Governing ADRs:** `decisions/YUTE-ADR-0010.md` & `decisions/YUTE-ADR-0011.md` (*Conditional Approval — Fictional-Data Engineering Only; Human Ratification Required; `YIY™`/`YIE™` Organizational Status Proposed*)
 - **Priority:** `P0` *(Controlled Exception to Oct 20 Portfolio Freeze — Independent of `WO-YUTE-LUTA-DARRON-001` / `HOLD-RIGHTS-001`)*
-- **Constitutional Doctrine:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002`)
-- **Version:** `v001.2` (`2026-10-31` — Incorporates `YUTE-PR8-REVIEW-001`: Standalone PG 16.4 Migrations, `YUTE-AGENCY-INV-002` / `TEST-06`, `EGRESS-FENCE-v001`, 5-Stage Consent Process, & Public-Repo Privacy Minimization)
-- **Current Classification:** `PG 16.4 DDL & CONSTRAINTS VERIFIED; RUBY 3.3 SERVICE & MULTI-SOCKET CONCURRENCY ASSURANCE PENDING YUTE-ADR-0010 RATIFICATION.`
+- **Constitutional Doctrine:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002.3`)
+- **Version:** `v001.3` (`2026-10-31` — Incorporates `YUTE-ARCH-GOV-002`: `YUTE-ADR-0011`, `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001`, Founder/Builder Inclusion, Standalone PG 16.4 Migrations `001`..`004` [`17/17` PASS], `YUTE-AGENCY-INV-002` / `TEST-06`, `EGRESS-FENCE-v001`, 5-Stage Consent Process, & Public-Repo Privacy Minimization)
+- **Current Classification:** `PG 16.4 DDL & CONSTRAINTS VERIFIED (17/17 PASS); RUBY 3.3 & YIE SERVICE ASSURANCE NOT VERIFIED (PENDING YUTE-ADR-0010 & YUTE-ADR-0011 RATIFICATION).`
 - **Canonical Acceptance:** `pending`
 
 ---
@@ -143,21 +143,24 @@ Tracked in `YUTE_AGENCY_TASK_BACKLOG.csv` (`AGY-T001`–`AGY-T014`).
 ## 16. DELIVERABLES (`missions/WO-YUTE-AGENCY-001/` + `decisions/`)
 
 1. `decisions/YUTE-ADR-0010.md`
-2. `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
-3. `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
-4. `missions/WO-YUTE-AGENCY-001/migrations/003_verify_pg16_invariants.sql`
-5. `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`
-6. `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
-7. `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` (`v001.2`)
-8. `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
-9. `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` (`v001.2`)
-10. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` (`v001.2`)
-11. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` (`v001.2`)
-12. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` (`v001.1`)
-13. `evidence/WO-YUTE-AGENCY-001-validation.json`
+2. `decisions/YUTE-ADR-0011.md`
+3. `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md`
+4. `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
+5. `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
+6. `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql`
+7. `missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql`
+8. `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`
+9. `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
+10. `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` (`v001.3`)
+11. `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
+12. `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` (`v001.3`)
+13. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` (`v001.3`)
+14. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` (`v001.3`)
+15. `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` (`v001.2`)
+16. `evidence/WO-YUTE-AGENCY-001-validation.json`
 
 ---
 
 ## 17. NEXT AUTHORIZED HUMAN ACTION (`AGY-T003` — `READY`)
 
-Inspect the live **Draft PR** on `wrasalmedia-rgb/wrasal-control` and ratify **`decisions/YUTE-ADR-0010.md`** to unlock provisioning the private `wrasalmedia-rgb/yute` repository for `YUTE-OS-v003 | AGENCY FIREWALL PROOF`.
+Inspect **Draft PR #8** on `wrasalmedia-rgb/wrasal-control` and ratify **`decisions/YUTE-ADR-0010.md`** and **`decisions/YUTE-ADR-0011.md`** to unlock provisioning the private `wrasalmedia-rgb/yute` repository for `YUTE-OS-v003 | AGENCY FIREWALL PROOF` and `@YIE-PROOF-001`.
