@@ -162,6 +162,6 @@ Tracked in `YUTE_AGENCY_TASK_BACKLOG.csv` (`AGY-T001`–`AGY-T014`).
 
 ---
 
-## 17. NEXT AUTHORIZED HUMAN ACTION (`AGY-T003` — `READY`)
+## 17. NEXT AUTHORIZED HUMAN ACTION (`AGY-T004` — `AUTHORIZED_READY` PER `decisions/YUTE-EXEC-AUTH-001.md`)
 
-Inspect **Draft PR #8** on `wrasalmedia-rgb/wrasal-control` and ratify **`decisions/YUTE-ADR-0010.md`** and **`decisions/YUTE-ADR-0011.md`** (*Conditional Engineering Go, Not Production Approval*) to unlock provisioning the private `wrasalmedia-rgb/yute` repository for **`YUTE-OS-v003 | THE AUTHORITY PROOF`**. *(No human approval is issued or implied by Audit 002.)*
+`AGY-T003` was ratified by **WRAY** (`wrasalmedia-rgb`) on `2026-11-01T05:04:17Z` (`https://github.com/wrasalmedia-rgb/wrasal-control/pull/8#issuecomment-6553707263`, recorded in `decisions/YUTE-EXEC-AUTH-001.md` against immutable reviewed baseline `193e5a1c28dcbdc8dd1e13fc14c590ed1bf0e024`). Issue separate command **`PROCEED AGY-T004`** to begin private `wrasalmedia-rgb/yute` provisioning for **`YUTE-OS-v003 | THE AUTHORITY PROOF`**. (`HOLD-RIGHTS-001 = ACTIVE`; `S5 canonical_acceptance = PENDING`; `Production = 🔴 NO GO`.)

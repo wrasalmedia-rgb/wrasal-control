@@ -6,7 +6,7 @@
 - **Project:** `yute` (`WRASAL™ | YUTE OS`)
 - **Related Work Orders:** `WO-YUTE-AGENCY-001` (*P0 Agency Infrastructure*), `WO-YUTE-LUTA-DARRON-001` (*Frozen under `HOLD-RIGHTS-001`*)
 - **Recommended Status:** `CONDITIONAL APPROVAL`
-- **Ratification State:** `HUMAN RATIFICATION REQUIRED (S5 canonical_acceptance: pending)`
+- **Ratification State:** `RATIFIED FOR TIER 1 FICTIONAL-DATA ENGINEERING ONLY (per YUTE-EXEC-AUTH-001 / PR #8 #issuecomment-6553707263 on 2026-11-01T05:04:17Z — S5 canonical_acceptance: pending; Tier 2 / Production: NO GO)`
 - **Authorization Scope:** `Fictional-data engineering only`
 
 ---
@@ -105,5 +105,5 @@ Before S5 canonical acceptance (`pending` → `accepted`) may be granted, human 
 ## 7. Ratification Sign-Off Block
 
 - **Proposed By:** Arena Coding Agent (on behalf of Mission Control Assessment, `2026-10-31`)
-- **S5 Human Authority (`WRAY`):** `PENDING SIGNATURE`
+- **S5 Human Authority (`WRAY`):** `RATIFIED FOR TIER 1 FICTIONAL-DATA ENGINEERING ONLY — 2026-11-01T05:04:17Z (wrasalmedia-rgb, https://github.com/wrasalmedia-rgb/wrasal-control/pull/8#issuecomment-6553707263; recorded in decisions/YUTE-EXEC-AUTH-001.md; S5 canonical_acceptance remains PENDING)`
 - **Effective Upon Signature:** Authorizes Tier 1 (`wrasalmedia-rgb/yute` private repository bootstrap & `YUTE-OS-v003` fictional-data verification only); Tier 2 remains **FROZEN (`NO GO`)**.

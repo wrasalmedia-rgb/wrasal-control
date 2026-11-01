@@ -2,47 +2,48 @@
 
 WORK_ORDER_ID: WO-YUTE-AGENCY-001
 
-MILESTONE: YUTE-OS-v003 | THE AUTHORITY PROOF (under YUTE-ADR-0010, YUTE-ADR-0011 & YUTE-ARCH-GOV-003)
+MILESTONE: YUTE-OS-v003 | THE AUTHORITY PROOF (under YUTE-EXEC-AUTH-001, YUTE-ADR-0010 & YUTE-ADR-0011)
 
 PRIORITY: P0
 
-VERSION: v001.4
+VERSION: v001.5
 
 CREATED_ON: 2026-10-31
 
-STATUS: SPECIFICATION VERIFIED IN PART — PG 16.4 WASM ENGINE MIGRATIONS (001..005, 27/27 CHECKS) VERIFIED ON DRAFT PR #8 / AWAITING HUMAN RATIFICATION OF YUTE-ADR-0010 & YUTE-ADR-0011 FOR NETWORKED PG 16 & RUBY 3.3 RUNTIME (canonical_acceptance: pending; production: NO GO)
+STATUS: AGY-T003 RATIFIED BY WRAY (YUTE-EXEC-AUTH-001) FOR TIER 1 FICTIONAL-DATA PILOT ONLY / AGY-T004 AUTHORIZED_READY (canonical_acceptance: pending; HOLD-RIGHTS-001: ACTIVE; production: NO GO)
 
 PROJECT: yute (YUTE — Know Before You Agree. Control What You Authorize. Preserve The Evidence.)
 
-OBJECTIVE: Remediate Mission Control Engineering Audit 002 (YUTE-ARCH-GOV-003) across Findings A..D and Section 04 by adding migration 004_yute_authority_proof_hardening.sql (Ed25519 verify-only key registry & deterministic signing preimage SHA-256, row-locking atomic single-use envelope claim, live current-state authority re-evaluation at both pre-processing claim and receipt finalization boundaries, observable one-shot isolated worker disposal telemetry without overclaiming RAM erasure, and non-superuser NOBYPASSRLS service roles with FORCE ROW LEVEL SECURITY), verifying 27/27 SQLSTATE & RLS invariants on PostgreSQL 16.4, and specifying YUTE-OS-v003 | THE AUTHORITY PROOF (10 outcomes + 7 inspectable receipts) while preserving HOLD-RIGHTS-001 and human ratification gates.
+OBJECTIVE: Record WRAY's authenticated human authorization YUTE-EXEC-AUTH-001 (#issuecomment-6553707263 on immutable reviewed baseline 193e5a1c28dcbdc8dd1e13fc14c590ed1bf0e024) establishing YUTE-HUMAN-AUTH-001 (WHO / WHAT / WHY / WHEN / WHERE), ratifying YUTE-ADR-0010 and YUTE-ADR-0011 exclusively for Tier 1 private fictional-data runtime engineering (AGY-T004: wrasalmedia-rgb/yute), while preserving HOLD-RIGHTS-001, S5 pending status, and Production NO GO.
 
-SUCCESS_CONDITION: decisions/YUTE-ADR-0010.md, decisions/YUTE-ADR-0011.md, YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md (v001.1), standalone PostgreSQL 16 migrations 001..005 (27/27 PG 16.4 checks PASS), and evidence/WO-YUTE-AGENCY-001-validation.json pass all 567 control-plane checks with zero unauthorized media in the diff, and Draft PR #8 remains open in Draft mode on wrasalmedia-rgb/wrasal-control for independent human audit.
+SUCCESS_CONDITION: decisions/YUTE-EXEC-AUTH-001.md, ratified YUTE-ADR-0010.md & YUTE-ADR-0011.md, standalone PostgreSQL 16 migrations 001..005 (27/27 PG 16.4 checks PASS), and evidence/WO-YUTE-AGENCY-001-validation.json pass all 567 control-plane checks while keeping HOLD-RIGHTS-001 ACTIVE, S5 canonical_acceptance pending, and Production NO GO.
 
 AUTHORITATIVE_INPUTS:
-- decisions/YUTE-ADR-0010.md (Controlled Advancement to Agency Runtime Verification)
-- decisions/YUTE-ADR-0011.md (YIY/YIE Identity Services Integration With YUTE Human Agency Governance)
-- concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002.4)
+- decisions/YUTE-EXEC-AUTH-001.md (Official Human Authorization Record — #issuecomment-6553707263)
+- decisions/YUTE-ADR-0010.md (Ratified for Tier 1 Fictional-Data Engineering Only)
+- decisions/YUTE-ADR-0011.md (Ratified for YUTE/YIE Integration Testing Only)
+- concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002.5 — incl. YUTE-HUMAN-AUTH-001)
 - projects.yml
 - work_orders/status-vocabulary.json
 
 DEPENDENCIES:
-- AGY-T003: Human audit of GitHub Draft PR #8 diff and signature ratification of YUTE-ADR-0010 and YUTE-ADR-0011 before provisioning private repository wrasalmedia-rgb/yute (READY — no human approval implied by Audit 002)
-- Independent of WO-YUTE-LUTA-DARRON-001 (remains strictly frozen under HOLD-RIGHTS-001; real performer data, commercial deployment, and public launch are BLOCKED / NO GO)
+- AGY-T003: APPROVED by WRAY (wrasalmedia-rgb) at 2026-11-01T05:04:17Z (https://github.com/wrasalmedia-rgb/wrasal-control/pull/8#issuecomment-6553707263)
+- Independent of WO-YUTE-LUTA-DARRON-001 (remains strictly frozen under HOLD-RIGHTS-001; real performer data, commercial deployment, and public launch are PROHIBITED / NO GO)
 
-CURRENT_TASK: AGY-T003 — Human Ratification of YUTE-ADR-0010, YUTE-ADR-0011 & Draft PR #8 Review
+CURRENT_TASK: AGY-T004 — Provision Private Isolated wrasalmedia-rgb/yute Repository (AUTHORIZED_READY upon separate PROCEED AGY-T004 command)
 
 ACCEPTANCE:
+- decisions/YUTE-EXEC-AUTH-001.md (5-fact YUTE-HUMAN-AUTH-001 record + verbatim GitHub approval #issuecomment-6553707263 + dual-SHA preservation)
 - missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql (27/27 PG 16.4 SQLSTATE & RLS checks PASS across migrations 001..004)
 - missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md (v001.1 — Findings A..D, Section 04 DB Roles, & 7-artifact Authority Proof)
-- missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature (@AUTH-PROOF-01..@AUTH-PROOF-10, @YIE-PROOF-001, @YIE-NEG-01..07, @TEST-01..06)
 - Control-plane validation: npm test PASS (567/567 checks)
 
 DECISIONS:
-- Audit 002 Finding A separated cleanly: PostgreSQL 16 enforces deterministic signing preimage SHA-256, 64-byte hex structure, active signing-key status, and fail-closed receipt verification status, while elliptic-curve Ed25519 signature verification math is explicitly tracked as a Ruby 3.3 Yie::AuthorizationGate runtime obligation (@AUTH-PROOF-03).
-- Audit 002 Findings B & C enforced in 004_yute_authority_proof_hardening.sql: yie_claim_single_use_envelope() acquires FOR UPDATE row lock and blocks replay (23505), while yie_assert_live_authority_currency() re-evaluates live upstream spec/grant/subject/asset/lease/key currency at both pre-processing claim and receipt finalization boundaries (23514).
-- Audit 002 Finding D & Section 04 enforced: replaced overbroad memory-erasure assumptions with one-shot isolated subprocess/microVM termination telemetry (PROCESS_ISOLATION_TELEMETRY_ONLY_NOT_RAM_PROOF), and restricted yie_capability_service via NOBYPASSRLS, FORCE ROW LEVEL SECURITY, 0 source_assets privileges, and 0 envelope INSERT privileges (42501).
+- YUTE-EXEC-AUTH-001 recorded: WRAY (wrasalmedia-rgb) ratified YUTE-ADR-0010 and YUTE-ADR-0011 at 2026-11-01T05:04:17Z against immutable reviewed baseline 193e5a1c28dcbdc8dd1e13fc14c590ed1bf0e024 for Tier 1 fictional-data engineering only, and subsequently explicitly authorized recording YUTE-EXEC-AUTH-001 and merging PR #8 into main without granting S5 acceptance or production approval.
+- YUTE-HUMAN-AUTH-001 codified: every material authorization must establish WHO, WHAT, WHY, WHEN, and WHERE.
 
 EVIDENCE:
+- decisions/YUTE-EXEC-AUTH-001.md
 - decisions/YUTE-ADR-0010.md
 - decisions/YUTE-ADR-0011.md
 - concepts/YUTE-FOUNDATION-DOCTRINE-001.md

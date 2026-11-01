@@ -30,22 +30,23 @@
 
 | # | Path | Description | SHA-256 |
 |---|---|---|---|
-| 1 | `decisions/YUTE-ADR-0010.md` | ADR: Controlled Advancement to Agency Runtime Verification (Human Ratification Required) | `e91cca14dfcc5c3c2c013e2211059e8b7d3f8da053f33a4a864e40979f2fea45` |
-| 2 | `decisions/YUTE-ADR-0011.md` | ADR: YIY/YIE Identity Services Integration With YUTE Human Agency Governance (Proposed) | `2991d8a2ff930b3cb431eee9976c643cfe720b6d48501165b3c5d0b25493b4fc` |
-| 3 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | WRASAL | YUTE OS Foundation Doctrine (v002.4 / YUTE-ARCH-GOV-003) | `940916f11ba2df819f270baa666a22cd0de0faf8db8b237aaf83be957b6f96e7` |
-| 4 | `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md` | YUTE x YIE Identity Authorization Contract & Authority Proof Spec (v001.1) | `70a6fade5d086f1f62c1c0f850958cbf887b7091e9e22a617a6b26b22e101d56` |
-| 5 | `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql` | Standalone PostgreSQL 16 Core Agency & Composite Identity Chain DDL | `e52b37c88e6875cbd50ec9037b2ffebd3e111283fbf872f74e5af2189b35c5db` |
-| 6 | `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql` | Standalone PostgreSQL 16 Agency Firewall, 5-Stage Consent & EGRESS-FENCE-v001 DDL | `d26be64a6cd1e0454f4d044165007dbcf96fd89abaa147ec4161206772916d68` |
-| 7 | `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql` | Standalone PostgreSQL 16 YUTE x YIE Authorization Envelopes & Refusal Receipts DDL | `681fa932d7b78a5ac9dfd8731fac69a8a0b65ea72afebca0595b0ccdaef6c326` |
-| 8 | `missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql` | Audit 002 Hardening: Ed25519 Preimage/Keys, Atomic Single-Use Claim, Live Currency, Worker Isolation & FORCE RLS Roles | `ae6b9afabe06a6dfe3c562f43d0bc9001cd33c6a500146a4d87467118c1cd002` |
-| 9 | `missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql` | Adversarial PostgreSQL 16.4 Verification Suite (27/27 SQLSTATE & FORCE RLS Invariants) | `3d485a15bf1e5d843cab57052de6f7f67475794964c0a35c9f19ec2c2cd8df0a` |
-| 10 | `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` | Live PostgreSQL 16.4 WASM Engine DDL, Trigger & Role/RLS Verification Receipt (27/27 PASS) | `ab9ca743fe326ec47f7b628f3e63148656df0f0ba58b7c2d76aa1fcb6222df99` |
-| 11 | `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md` | Public-Repo Personal Data Minimization Audit (YUTE-PRIVACY-AUDIT-001) | `a678052acb21f840936f4a8a836ee897dea766e3b926d6e6aa7d22fed81a3b4a` |
-| 12 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` | Consolidated Agency Foundation Specification (v001.4) | `eb5c6212200c889e1dfe037743a372f5e52e7f87f3443644a99dfe3782572260` |
-| 13 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md` | YUTE-OS-v003 | THE AUTHORITY PROOF (10 Scenarios & 7 Inspectable Artifacts) | `fa5d95d429acd5f1d4f4b5f3d2452b403bcb89e3b94f65925c8d0fcb31ee9fb1` |
-| 14 | `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` | 17-Section Master Work Order (WO-YUTE-AGENCY-001 v001.4) | `a954e25c637693448fdcb449d16b1c0b19ef0e7221be3f57cfadd3921708acbc` |
-| 15 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` | Executable Gherkin Acceptance Scenarios (v001.4 — 13 Scenarios incl. @AUTH-PROOF-01..10) | `ce22305e7f2b233dfbdd26b3c1f8c4d063e4750f9ef4e5e950360a74bb228efa` |
-| 16 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` | Engineering Backlog (AGY-T001 through AGY-T014, v001.4) | `fd64321f4b48f5e582f4a87b7c167af306970db27622d1d236f16ca8bea88a36` |
-| 17 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` | 100% Synthetic Test Fixtures (v001.2 — incl. Founder/Builder Fixture SUBJ-FICT-FOUNDER-STEWARD-001) | `05bba0de704a648f2efed428bff03cd7ff495ecf42ed986a5e7906700aa5d4f6` |
-| 18 | `work_orders/WO-YUTE-AGENCY-001.md` | Canonical Control-Plane Work Order Record (v001.4) | `7653f39bcf3b0af0dc5c3623e288685edd0af5a39a8f9beda50a47eb816f87f2` |
-| 19 | `evidence/WO-YUTE-AGENCY-001-validation.json` | Control-Plane S3 Validation Evidence Receipt (567/567 PASS) | `c93895b3c668d0b4867286e0141c3285efa22cfefa20e514aab8b4073263b089` |
+| 1 | `decisions/YUTE-EXEC-AUTH-001.md` | Official Human Authorization Record by WRAY (#issuecomment-6553707263 on 193e5a1) | `daea20a31e2380da852eb003aa5e67ed0c08a5cac97b3443aa278192536defff` |
+| 2 | `decisions/YUTE-ADR-0010.md` | ADR: Controlled Advancement to Agency Runtime Verification (Ratified for Tier 1 Only) | `0da5d24a1e109b826c5cab8b61488f69ccdb142334bc67fff7a6bd30f748bf35` |
+| 3 | `decisions/YUTE-ADR-0011.md` | ADR: YIY/YIE Identity Services Integration (Ratified for Integration Testing Only) | `26b429fda4ae9e04648ffb56bc055ad6f6ed8cfce1bffed8f75e1fd277dd4ad5` |
+| 4 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | WRASAL | YUTE OS Foundation Doctrine (v002.5 — incl. YUTE-HUMAN-AUTH-001) | `a1609aa2819ffa9f128fded4a90d062e7c2a5926892ab310758b9ebaceb711d8` |
+| 5 | `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md` | YUTE x YIE Identity Authorization Contract & Authority Proof Spec (v001.1) | `70a6fade5d086f1f62c1c0f850958cbf887b7091e9e22a617a6b26b22e101d56` |
+| 6 | `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql` | Standalone PostgreSQL 16 Core Agency & Composite Identity Chain DDL | `e52b37c88e6875cbd50ec9037b2ffebd3e111283fbf872f74e5af2189b35c5db` |
+| 7 | `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql` | Standalone PostgreSQL 16 Agency Firewall, 5-Stage Consent & EGRESS-FENCE-v001 DDL | `d26be64a6cd1e0454f4d044165007dbcf96fd89abaa147ec4161206772916d68` |
+| 8 | `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql` | Standalone PostgreSQL 16 YUTE x YIE Authorization Envelopes & Refusal Receipts DDL | `681fa932d7b78a5ac9dfd8731fac69a8a0b65ea72afebca0595b0ccdaef6c326` |
+| 9 | `missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql` | Audit 002 Hardening: Ed25519 Preimage/Keys, Atomic Single-Use Claim, Live Currency, Worker Isolation & FORCE RLS Roles | `ae6b9afabe06a6dfe3c562f43d0bc9001cd33c6a500146a4d87467118c1cd002` |
+| 10 | `missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql` | Adversarial PostgreSQL 16.4 Verification Suite (27/27 SQLSTATE & FORCE RLS Invariants) | `3d485a15bf1e5d843cab57052de6f7f67475794964c0a35c9f19ec2c2cd8df0a` |
+| 11 | `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` | Live PostgreSQL 16.4 WASM Engine DDL, Trigger & Role/RLS Verification Receipt (27/27 PASS) | `ab9ca743fe326ec47f7b628f3e63148656df0f0ba58b7c2d76aa1fcb6222df99` |
+| 12 | `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md` | Public-Repo Personal Data Minimization Audit (YUTE-PRIVACY-AUDIT-001) | `a678052acb21f840936f4a8a836ee897dea766e3b926d6e6aa7d22fed81a3b4a` |
+| 13 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` | Consolidated Agency Foundation Specification (v001.4) | `eb5c6212200c889e1dfe037743a372f5e52e7f87f3443644a99dfe3782572260` |
+| 14 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md` | YUTE-OS-v003 | THE AUTHORITY PROOF (10 Scenarios & 7 Inspectable Artifacts) | `fa5d95d429acd5f1d4f4b5f3d2452b403bcb89e3b94f65925c8d0fcb31ee9fb1` |
+| 15 | `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` | 17-Section Master Work Order (WO-YUTE-AGENCY-001 v001.5) | `0a60d521db0881be302ecbe6cf153df6ed13d14f705c9f7404803e18f8d163be` |
+| 16 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` | Executable Gherkin Acceptance Scenarios (v001.4 — 13 Scenarios incl. @AUTH-PROOF-01..10) | `ce22305e7f2b233dfbdd26b3c1f8c4d063e4750f9ef4e5e950360a74bb228efa` |
+| 17 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` | Engineering Backlog (AGY-T001 through AGY-T014, v001.5 — AGY-T003 APPROVED) | `c99bf4f72510fd20bbc9305305c1861466f62f1f49be17d69bbbcec4bd94f932` |
+| 18 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` | 100% Synthetic Test Fixtures (v001.2 — incl. Founder/Builder Fixture SUBJ-FICT-FOUNDER-STEWARD-001) | `05bba0de704a648f2efed428bff03cd7ff495ecf42ed986a5e7906700aa5d4f6` |
+| 19 | `work_orders/WO-YUTE-AGENCY-001.md` | Canonical Control-Plane Work Order Record (v001.5) | `ec71b537784959d2c2b1999cc82d42164eed4dec52fbd8f1306dbad3724a2c82` |
+| 20 | `evidence/WO-YUTE-AGENCY-001-validation.json` | Control-Plane S3 Validation Evidence Receipt (567/567 PASS) | `c93895b3c668d0b4867286e0141c3285efa22cfefa20e514aab8b4073263b089` |

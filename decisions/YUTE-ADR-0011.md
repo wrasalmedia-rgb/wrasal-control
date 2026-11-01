@@ -6,7 +6,7 @@
 - **Date Recorded:** `2026-10-31` *(Updated `2026-11-01` per `YUTE-ARCH-GOV-003`)*
 - **Companion ADR:** `decisions/YUTE-ADR-0010.md` (*Controlled Advancement to Agency Runtime Verification*)
 - **Related Work Orders:** `WO-YUTE-AGENCY-001` (*P0 Agency Foundation*), `WO-YUTE-LUTA-DARRON-001` (*Rights Hold Active — `HOLD-RIGHTS-001`*)
-- **Recommended Disposition:** `CONDITIONAL ENGINEERING GO, NOT PRODUCTION APPROVAL — AWAITING HUMAN RATIFICATION (S5 canonical_acceptance: pending; no human approval implied by Audit 002)`
+- **Recommended Disposition:** `RATIFIED FOR TIER 1 YUTE/YIE INTEGRATION TESTING ONLY (per YUTE-EXEC-AUTH-001 / PR #8 #issuecomment-6553707263 on 2026-11-01T05:04:17Z — S5 canonical_acceptance: pending; Production: NO GO)`
 - **Organizational Status of `YIY™` / `YIE™`:** `PROPOSED` *(Separate from verified corporate formation; `projects.yml` intentionally left unchanged until human governance records verified entity facts)*
 
 > **WRASAL™ | FOUNDATIONAL LAW:**
@@ -126,4 +126,4 @@ The following are **mandatory implementation requirements** for `YIE™` (record
 
 - **Decision Record:** `YUTE-ADR-0011` (paired with `decisions/YUTE-ADR-0010.md`)
 - **Immediate Technical Proof Upon Ratification:** **`YUTE-OS-v003 | THE AUTHORITY PROOF`** (`@AUTH-PROOF-01`..`@AUTH-PROOF-10` + `7` inspectable evidence artifacts including `06_signature_verification_receipt.json` and `07_authorization_consumption_receipt.json`).
-- **S5 Human Authority (`WRAY`):** `PENDING SIGNATURE` *(No human approval is issued or implied by Engineering Audit 002)*
+- **S5 Human Authority (`WRAY`):** `RATIFIED FOR TIER 1 YUTE/YIE INTEGRATION TESTING ONLY — 2026-11-01T05:04:17Z (wrasalmedia-rgb, https://github.com/wrasalmedia-rgb/wrasal-control/pull/8#issuecomment-6553707263; recorded in decisions/YUTE-EXEC-AUTH-001.md; S5 canonical_acceptance remains PENDING)`

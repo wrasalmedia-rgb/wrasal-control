@@ -15,9 +15,10 @@ Parent Ecosystem: WRASAL™
 Target System: YUTE OS™ (Human Agency OS) governing YIE™ (YUTE Identity Engine, proposed under YIY™ / Your Inner Eye)
 
 Related Governance & Work Orders:
-- `decisions/YUTE-ADR-0010.md` (*Controlled Advancement to Agency Runtime Verification — Human Ratification Required*)
-- `decisions/YUTE-ADR-0011.md` (*YIY/YIE Identity Services Integration With YUTE Human Agency Governance — Proposed*)
-- `WO-YUTE-AGENCY-001` (`missions/WO-YUTE-AGENCY-001/` — P0 YUTE OS Agency Foundation & `YUTE × YIE` Contract `v001`)
+- `decisions/YUTE-ADR-0010.md` (*Controlled Advancement to Agency Runtime Verification — Ratified for Tier 1 Only*)
+- `decisions/YUTE-ADR-0011.md` (*YIY/YIE Identity Services Integration With YUTE Human Agency Governance — Ratified for Integration Testing Only*)
+- `decisions/YUTE-EXEC-AUTH-001.md` (*Official Human Authorization Record `AGY-T003 → AGY-T004`, `#issuecomment-6553707263`*)
+- `WO-YUTE-AGENCY-001` (`missions/WO-YUTE-AGENCY-001/` — P0 YUTE OS Agency Foundation & `YUTE × YIE` Contract `v001.1`)
 - `WO-YUTE-LUTA-DARRON-001` (`missions/WO-YUTE-LUTA-DARRON-001/` — Digital Human Pilot, `HOLD-RIGHTS-001` Active)
 
 ---
@@ -228,8 +229,17 @@ Extending (never replacing) *The Child We Were. The Human We Become.*, `YUTE-ARC
 > **WRASAL™ | YUTE CONSTITUTION:**
 > **THE HUMAN IS THE AUTHORITY. THE CONTRACT DEFINES THE PERMISSION. YUTE VERIFIES THE AUTHORIZATION. YIE EXECUTES ONLY WHAT IS PERMITTED. MY AGENCY IS NON-NEGOTIABLE.**
 
+### 8.1 Five-Fact Constitutional Rule (`YUTE-HUMAN-AUTH-001`)
+Every material authorization across YUTE governance, contract execution, and identity-processing workflows must establish five verifiable facts—and reject any record that fails to establish them:
+1. **`WHO`** authorized the action;
+2. **`WHAT`** was authorized;
+3. **`WHY`** the authorization was granted;
+4. **`WHEN`** the authorization became effective;
+5. **`WHERE`** its boundaries and supporting evidence are recorded.
+
 ## Changelog
 
+- `v002.5 / 1.5.0` (`2026-11-01`, `TIER 1 GOVERNANCE RATIFIED / S5 PENDING`): Recorded `decisions/YUTE-EXEC-AUTH-001.md` (`#issuecomment-6553707263` by `wrasalmedia-rgb` on `193e5a1c28dcbdc8dd1e13fc14c590ed1bf0e024`) and codified `YUTE-HUMAN-AUTH-001` (`WHO / WHAT / WHY / WHEN / WHERE`). `HOLD-RIGHTS-001` remains `ACTIVE`; `S5 canonical_acceptance` remains `PENDING`; Production remains `NO GO`.
 - `v002.4 / 1.4.0` (`2026-11-01`, `PROPOSED`): Incorporated `YUTE-ARCH-GOV-003` (`Engineering Audit 002`)—added `WRASAL™ | YUTE CONSTITUTION`, `004_yute_authority_proof_hardening.sql` + `005_verify_pg16_invariants.sql` (`27/27` PG 16.4 WASM-engine checks PASS across deterministic Ed25519 signing preimages, atomic single-use claims, live current-state checks, one-shot isolated worker disposal telemetry, non-superuser `NOBYPASSRLS` DB roles, and `FORCE ROW LEVEL SECURITY`), and defined `YUTE-OS-v003 | THE AUTHORITY PROOF` (`7` artifacts).
 - `v002.3 / 1.3.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-ARCH-GOV-002` Governance Reconciliation—reconciled `WRASAL™` / `YUTE OS™` / `YIY™` (proposed) / `YIE™` hierarchy, 7-rule Constitutional Inheritance, Founder/Admin symmetry, Foundational Law, `decisions/YUTE-ADR-0011.md`, and `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001` (`003_yute_yie_authorization_contract.sql`, `17/17` PG 16.4 invariants PASS).
 - `v002.2 / 1.2.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-PR8-REVIEW-001` (`Engineering Audit 001`)—added `YUTE-AGENCY-INV-002` (forbidding cross-subject/asset/purpose transfer by DB association), 5-stage Consent Process Model (`PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED`), `EGRESS-FENCE-v001` Point of Irrevocable Egress, standalone `.sql` migrations verified against `PostgreSQL 16.4`, `TEST-06`, and public-repo privacy minimization (`YUTE-PRIVACY-AUDIT-001`).
