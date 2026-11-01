@@ -1,46 +1,51 @@
 # YUTE™ OS — Consolidated Agency Foundation Specification (`YUTE-OS-AGENCY-FOUNDATION-v001`)
 
 - **Document ID:** `YUTE_OS_AGENCY_FOUNDATION_v001`
-- **Work Order:** `WO-YUTE-AGENCY-001` (*YUTE Contract Shield + Digital Rights Passport*)
-- **Priority:** `P0` *(General YUTE OS Foundation — Independent of `WO-YUTE-LUTA-DARRON-001` / `HOLD-RIGHTS-001`)*
+- **Work Order:** `WO-YUTE-AGENCY-001` (*YUTE Guard™ / Contract Shield + Digital Rights Passport*)
+- **Governance Disposition:** `decisions/YUTE-ADR-0010.md` (*Conditional Approval — Fictional-Data Engineering Only; Human Ratification Required*)
+- **Priority:** `P0` *(Controlled Exception to Oct 20 Portfolio Freeze — Independent of `WO-YUTE-LUTA-DARRON-001` / `HOLD-RIGHTS-001`)*
 - **Constitutional Authority:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002`)
-- **Version:** `v001`
-- **Creation Date:** `2026-10-31`
-- **Target Runtime Repository:** `wrasalmedia-rgb/yute` *(Proposed — Ruby 3.3+ / PostgreSQL 16+; zero Python, Express, or Next.js)*
+- **Spec Revision:** `v001.1` (`2026-10-31` — Incorporates `YUTE-ADR-0010`, `YUTE GUARD™` Product Zero UX, Signer-Attribution Ceremony `3.A`, & 4-Axis Revocation Accounting `3.B`)
+- **Target Runtime Repository:** `wrasalmedia-rgb/yute` *(Private Isolated Dev Repo — Ruby 3.3+ / PostgreSQL 16+; zero Python, Express, or Next.js)*
 - **Current Classification:** `ARCHITECTURAL FOUNDATION ESTABLISHED IN SPECIFICATION. RUNTIME ASSURANCE NOT YET VERIFIED.`
 - **Canonical Acceptance:** `pending`
 
-> **CENTRAL OPERATIONAL PROMISE:**
-> **YOUR IDENTITY IS YOURS TO REPRESENT.**
-> **YOUR AGREEMENTS SHOULD BE YOURS TO UNDERSTAND.**
-> **YOUR DIGITAL FUTURE SHOULD NOT BE DECIDED WITHOUT YOU.**
+> **THE CONSTITUTION IS THE CONSTRAINT. THE HUMAN IS THE AUTHORITY.**
+> **MY AGENCY IS NON-NEGOTIABLE.**
 > **YUTE™ | Human Agency by Design.**
 
 ---
 
-## 1. Strategic & Architectural Repositioning
+## 1. Product Zero Experience: `YUTE GUARD™` (*Know Before You Agree*)
 
-### 1.1 Informed Consent & Agency Infrastructure as Product Zero
-`WO-YUTE-LUTA-DARRON-001` explored digital-human reconstruction under strict hold gates. Mission Control review (`v002`) establishes a more fundamental architectural truth:
+### 1.1 Preventing Governance Bloat — Keep the Entry Experience Human & Simple
+Constitutional infrastructure must never turn into an intimidating bureaucracy without a usable product. **Product Zero** is **`YUTE GUARD™`** (**`KNOW BEFORE YOU AGREE.`**):
 
-**YUTE's first commercial and civic responsibility is informed-consent, contract-comprehension, and digital-rights infrastructure—not avatar generation.**
-
-Digital-human reconstruction (`Yute::ReconstructionAdapter`) becomes **one downstream client** of the **YUTE Agency Firewall** (`Yute::AgencyFirewall`), rather than defining separate, competing consent logic.
+1. **Open & Upload:** A person opens `YUTE GUARD™` and uploads an agreement (zero avatar creation, zero biometric photos, and zero complex ledger configuration required).
+2. **Highlight Consequential Clauses:** `Yute::ContractShield` extracts and cites the exact clauses affecting voice, likeness, copyright, AI/ML training, exclusivity, duration, territory, or sublicensing.
+3. **Plain-Language Meaning:** Explains what each flagged clause may authorize in clear, non-jargon language.
+4. **Surface Uncertainties & Questions:** Explicitly flags ambiguous wording, missing protections, and concrete questions worth raising with the counterparty or legal counsel before signing.
+5. **Human Authority Decides:** The person makes their own decision—decline, negotiate, or authorize.
+6. **Preserve With Permission:** Only when the user explicitly opts in does YUTE record the verified authorization ceremony and artifacts into `Consent Ledger`, `Digital Rights Passport`, and `Evidence Vault` behind the scenes.
 
 ### 1.2 Standalone Value for People Who Never Create an Avatar
 
-| User Persona | Real-World Vulnerability | How `YUTE-OS-AGENCY-FOUNDATION-v001` Serves Them (Zero Avatar Required) |
+| User Persona | Real-World Vulnerability | How `YUTE GUARD™` + Agency Infrastructure Serves Them |
 |---|---|---|
-| **Musician / Recording Artist** | Label or distribution contract buries broad vocal-cloning, stem-training, or perpetual Master/Name-and-Likeness sublicensing clauses in boilerplate. | **Contract Shield** flags exact clauses with verbatim section/span citations; **Consent Ledger** records narrow approved studio uses; **Agency Firewall** blocks unconsented vocal-AI or ad requests (`YUTE-AGENCY-INV-001`). |
-| **Young Performer & Family** | Modeling or talent release seeks perpetual, irrevocable digital-double or social-syndication rights over a minor before they can choose their own future. | **Contract Shield** highlights juvenile perpetuity/sublicensing risks; **WelfareGuard** blocks commercial synthetic likeness grants even with guardian consent; **Adulthood Transition** preserves reauthorization, processing restriction, and eligible deletion at majority. |
-| **Photographer / Visual Creator** | Clients or platforms ingest copyrighted shoots into generative training sets or strip creator attribution beyond the licensed campaign scope. | **Digital Rights Passport** distinguishes `COPYRIGHT_OWNED` vs. `CAMPAIGN_LICENSED_OUT` vs. `AI_TRAINING_PROHIBITED`; **Evidence Vault** anchors SHA-256 master provenance and license terms. |
-| **Everyday Individual** | Unclear which platforms, apps, or employers hold permissions over personal photos, voice recordings, or creative uploads. | **Digital Rights Passport** maintains an honest ledger distinguishing `KNOWN_GRANTED`, `REVOKED_NOTICE_SENT`, and `UNKNOWN` external platform permissions without fabricating certainty. |
+| **Young Recording Artist / Musician** | Single-track distribution or label deal hides synthetic vocal-generation, stem-training, or perpetual sublicensing clauses. | **`YUTE GUARD™`** flags exact clauses & missing vocal-AI exclusions; **`Consent Ledger`** records verified authorization for *one musical performance only*; **`Agency Firewall`** denies unauthorized synthetic-voice requests (`YUTE-OS-v003`). |
+| **Young Performer & Family** | Modeling or talent release seeks perpetual digital-double or commercial syndication rights over a minor. | **`YUTE GUARD™`** highlights juvenile encumbrance risks; **`WelfareGuard`** blocks minor commercial/synthetic grants even with guardian signature; **`Adulthood Transition`** enforces reauthorization, processing restriction, and eligible deletion at majority. |
+| **Photographer / Visual Creator** | Clients or platforms ingest copyrighted shoots into generative training sets beyond campaign license terms. | **`Digital Rights Passport`** distinguishes `OWNED_BY_SUBJECT` vs. `LICENSED_OUT_SCOPED` vs. `AI_TRAINING_PROHIBITED`; **`Evidence Vault`** anchors SHA-256 master provenance. |
+| **Everyday Individual** | Unclear which platforms or counterparties hold permissions over personal media or creative uploads. | **`Digital Rights Passport`** maintains an honest inventory distinguishing verified permissions from `UNKNOWN` historical terms without fabricating certainty. |
 
 ---
 
 ## 2. The Four Executable Foundations & Five Core Components
 
 ```text
+   [ USER EXPERIENCE: YUTE GUARD™ — "KNOW BEFORE YOU AGREE." ]
+   Upload Agreement -> Cited Clause Risks & Questions -> Human Decision -> Preserve With Permission
+             │
+             ▼
 ┌──────────────────────────┐    ┌──────────────────────────┐    ┌──────────────────────────┐    ┌──────────────────────────┐
 │ 1. CONTRACT COMPREHENSION│───►│   2. INFORMED CONSENT    │───►│   3. RIGHTS GOVERNANCE   │───►│   4. AUTHORIZED ACTION   │
 │   Yute::ContractShield   │    │   Yute::ConsentLedger    │    │Yute::DigitalRightsPassprt│    │   Yute::AgencyFirewall   │
@@ -50,136 +55,132 @@ Digital-human reconstruction (`Yute::ReconstructionAdapter`) becomes **one downs
                                                              ▼
                                             ┌──────────────────────────────────┐
                                             │       Yute::EvidenceVault        │
-                                            │ (Immutable Versions, SHA-256,    │
-                                            │  Audit Chain & Propagation Logs) │
+                                            │ (Immutable Versions, Ceremonies, │
+                                            │  4-Axis Revocation & Audit Logs) │
                                             └────────────────┬─────────────────┘
                                                              │
                          ┌───────────────────────────────────┼───────────────────────────────────┐
                          ▼                                   ▼                                   ▼
-           [Non-Avatar Contract & Asset APIs]   [YUTE Digital Human Engine]        [External Licensee Webhooks / CRL]
-                                                (Consumes AgencyFirewall —
-                                                 Zero Private Consent Logic)
+           [YUTE GUARD™ User Exports]         [YUTE Digital Human Engine]        [Downstream Notification / CRL]
+                                              (Consumes AgencyFirewall —          (Never Reports External Deletion
+                                               Zero Private Consent Logic)         Complete Without Confirmation)
 ```
 
-### Component 1: `Yute::ContractShield` (*Contract Comprehension*)
-- **Responsibility:** Ingest agreement text/PDFs (`EvidenceVault` versioned), parse clause structure, and surface consequential terms affecting likeness, voice, AI/ML training, copyright assignment, moral rights, exclusivity, territory, duration, juvenile/guardian scope, compensation, and sublicensing.
-- **Primary Acceptance Condition (Strict Anti-Hallucination Rule):** **Every finding must cite the exact `agreement_document_id`, `version_sha256`, `clause_identifier`, character byte/line span (`start_offset..end_offset`), and `verbatim_excerpt`.** Findings lacking a verified substring match against the stored agreement text are hard-rejected by `Yute::ContractShield::CitationVerifier`.
-- **Risk & Clarity Boundary:** Outputs carry an explicit notice that `Contract Shield` provides structured contractual comprehension and risk highlighting—**not** legal representation—and flags ambiguous language as `REQUIRES_HUMAN_COUNSEL_REVIEW` rather than guessing legal enforceability.
-
-### Component 2: `Yute::ConsentLedger` (*Informed Consent*)
-- **Responsibility:** Translates reviewed, countersigned authorizations into structured, machine-evaluatable `PermissionGrant` and `ExplicitProhibition` records scoped by `subject_id`, `action_code`, `asset_scope`, `named_production_or_purpose`, `territory`, `valid_from..valid_until`, and `sublicensable: false`.
-- **Primary Acceptance Condition:** **Every active grant links via `NOT NULL` foreign key to a verifiable authorization artifact in `EvidenceVault` (`signed_artifact_id` + `sha256`).** Unlinked or implied permissions cannot exist.
-
-### Component 3: `Yute::DigitalRightsPassport` (*Rights Governance*)
-- **Responsibility:** Subject-owned registry of personal identity references, creative works (photographs, audio masters, scripts, performances), outbound/inbound licenses, and known external platform data relationships.
-- **Primary Acceptance Condition:** **Strictly distinguishes `OWNED_BY_SUBJECT`, `CO_OWNED`, `LICENSED_IN`, `LICENSED_OUT_SCOPED`, `RESTRICTED_HOLD`, and `UNKNOWN`.** Absence of evidence is always recorded as `UNKNOWN`, never silently upgraded to `CLEARED`.
-
-### Component 4: `Yute::AgencyFirewall` (*Authorized Action — Unified PDP/PEP*)
-- **Responsibility:** Single mandatory policy-decision and enforcement engine (`evaluate_and_lease!`) sitting in front of **all** operations touching protected identity records, creative assets, or synthetic representations.
-- **Primary Acceptance Condition (`YUTE-AGENCY-INV-001`):** **Unauthorized, out-of-scope, expired, revoked, or welfare-violating operations fail closed before a single asset byte or identity embedding is decrypted or transmitted.** Returns structured `FirewallDenialReceipt` enumerating exact missing permissions and writes an immutable audit row to `EvidenceVault`.
-- **Elimination of Competing Consent Engines:** `Yute::ConsentAuthority` and `Yute::LicenseManager` from the Darron pilot (`WO-YUTE-LUTA-DARRON-001`) are unified beneath `Yute::AgencyFirewall` + `Yute::ConsentLedger`, ensuring the Digital Human Engine and non-avatar workflows evaluate the **exact same authorization truth**.
-
-### Component 5: `Yute::EvidenceVault` (*Provenance & Audit Integrity*)
-- **Responsibility:** Append-only, hash-chained custody of agreement versions, clause-citation snapshots, signed consent instruments, firewall allow/deny receipts, and revocation-propagation status records.
-- **Primary Acceptance Condition:** Significant records carry verified `SHA-256` digests, `NOT NULL` attribution metadata, and PostgreSQL immutability triggers blocking `UPDATE`/`DELETE`.
+1. **`Yute::ContractShield` (*Contract Comprehension — Powers `YUTE GUARD™`*):** Normalizes ingested text to canonical **`Unicode NFC` + `LF` (`\n`)** while preserving the original upload's raw bytes and SHA-256. Every finding must pass `Yute::ContractShield::CitationVerifier` against both UTF-8 byte offsets and Unicode codepoint spans (`TEST-03`), surface plain-language consequences + open questions, and carry a clear non-legal-advice disclosure.
+2. **`Yute::ConsentLedger` (*Informed Consent — Verified Attribution & Ceremony*):** Records machine-evaluatable grants **only** when backed by verified signer attribution, `YUTE GUARD™` comprehension-ceremony evidence (`clauses_presented_at <= signed_at`), explicit contractual scope, and valid effective dates (Forensic Refinement `3.A`).
+3. **`Yute::DigitalRightsPassport` (*Rights Governance*):** Strictly separates `OWNED_BY_SUBJECT`, `CO_OWNED`, `LICENSED_IN_SCOPED`, `LICENSED_OUT_SCOPED`, `RESTRICTED_HOLD`, and `UNKNOWN`.
+4. **`Yute::AgencyFirewall` (*Authorized Action — Unified PDP/PEP*):** Single fail-closed enforcement point across API, CLI, background workers, admin tools, and rendering/synthesis adapters (`TEST-01`, `TEST-02`, `TEST-05`). Issues single-use, short-TTL (`<= 60s`) `FirewallCapabilityLease` tokens and re-verifies active authorization at the **final commit/egress boundary**.
+5. **`Yute::EvidenceVault` (*Provenance & Audit Integrity*):** Append-only custody of canonical/raw agreements, authorization ceremonies, firewall allow/deny receipts, legal retention holds (`TEST-04`), and 4-axis revocation ledgers (Forensic Refinement `3.B`).
 
 ---
 
-## 3. Forensic Engineering Remediations (Closing Findings A–E)
+## 3. Forensic Engineering Remediations (Findings A–E + `YUTE-ADR-0010` Refinements `3.A` & `3.B`)
 
-### 3.1 Remediation A — SQL Nullability Hardening, Multi-Boundary Enforcement & Honest Scope Limits
-1. **Zero Nullable `CHECK` Loopholes:** In PostgreSQL, `CHECK (col = FALSE)` evaluates to `UNKNOWN` (and therefore **passes**!) if `col` is `NULL`. In `002_yute_agency_foundation.sql` (Section 4 below), **every single boolean, enum, and invariant column carrying a `CHECK` constraint is declared `NOT NULL`** (also remediating `likeness_specifications.body_measurement_source` to `TEXT NOT NULL DEFAULT 'UNMEASURED'`).
-2. **Enforcement Across Every Execution Boundary (Not Just UI/HTTP):**
-   - **HTTP / Roda API Boundary:** Middleware requires a scoped request context evaluated by `Yute::AgencyFirewall`.
-   - **Vault Decryption Boundary (`Yute::SourceAssetVault#open_plaintext_stream`):** Cannot be called with a bare `source_id`; its Ruby method signature **requires an unforgeable, short-TTL (`<= 60s`), single-use `FirewallCapabilityLease` signed by `AgencyFirewall`** whose HMAC/Ed25519 payload binds `(lease_id, subject_id, asset_id, action_code, target_production_id, expires_at)`. Thus a rogue background job, CLI script, or admin console command bypassing HTTP **still fails closed at decryption and adapter egress**!
-   - **Database Boundary:** PostgreSQL Row-Level Security (`RLS`) policies restrict table reads/writes by session role (`yute_api_role`, `yute_worker_role`, `yute_auditor_role`).
-3. **Honest Technical Boundary Statement:** Prohibiting `autonomous_persona_allowed` and blocking unauthorized Vault egress prevents impersonation **from any system or asset under YUTE custody**. It cannot physically stop an external bad actor from misusing publicly scraped web images outside YUTE; for external environments, YUTE provides cryptographic `C2PA` positive provenance (proving whether an asset actually came from an authorized YUTE workflow) and `EvidenceVault` legal proof.
+### 3.1 Remediation A — SQL Nullability, Multi-Boundary Leases & Off-Platform Honesty (`TEST-01`)
+- **Zero Nullable `CHECK` Loopholes:** Every column participating in a PostgreSQL `CHECK` constraint in `001_yute_mvp_core.sql` and `002_yute_agency_foundation.sql` is explicitly `NOT NULL`.
+- **Every Execution Boundary Enforced:** `Yute::SourceAssetVault#open_plaintext_stream` and all synthesis/render adapters require a cryptographically signed `FirewallCapabilityLease` verified against live `ConsentLedger` state—blocking direct background-worker, CLI, or admin bypasses.
+- **Honest Authority Boundary:** YUTE enforces hard technical prevention over assets and adapters within its custody, while using `C2PA` provenance and `EvidenceVault` audit proofs to support legal enforcement externally.
 
-### 3.2 Remediation B — Three-Tier Adulthood Transition (`INNOCENCE` Refined)
-Replaces an oversimplified "unconditional purge" promise with three legally accurate, enforceable states when a `MINOR_PROTECTED` subject reaches majority (or exercises mature minor rights where applicable):
+### 3.2 Refinement `3.A` — An Agreement Hash Is Not Proof of Consent (`Yute::ConsentLedger`)
+A `SHA-256` digest proves only that specific bytes existed—it does **not** prove who signed, whether they saw the consequential terms, or whether they had authority to grant the permission. `002_yute_agency_foundation.sql` therefore separates `agreement_documents` from `authorization_ceremonies` and `consent_ledger_grants`:
+1. **Verified Signer Attribution:** Records `verified_signer_actor_id`, `signer_authority_basis` (`SELF_ADULT_SUBJECT` vs. `VERIFIED_FIDUCIARY_REPRESENTATIVE`), `signer_verification_method` (`PASSKEY_WEBAUTHN_ATTESTED`, `QUALIFIED_ESIGN_PROVIDER`, `COUNSEL_WITNESSED_ATTESTATION`), and enforces `signer_subject_match_verified = TRUE`.
+2. **Evidence of the Authorization Process:** Requires a linked `authorization_ceremonies` record proving `YUTE GUARD™` presented the cited clause analysis (`analysis_snapshot_sha256`) **before** execution (`clauses_presented_at <= signed_at`) and that uncertainties/questions were surfaced (`uncertainties_presented = TRUE`).
+3. **Explicit Contractual Scope & Applicable Dates:** Binds `permitted_action`, `named_target_scope` (e.g., one named track or production), `authorized_territory`, `valid_from`, `valid_until`, and explicit boolean prohibitions (`voice_cloning_permitted = FALSE`, `advertising_permitted = FALSE`, `sublicensing_permitted = FALSE`).
 
-| Mechanism | Operational Effect in YUTE OS | Lawful Exception Handling |
-|---|---|---|
-| **1. `ADULTHOOD_REAUTHORIZATION`** | Guardian-granted archival records transition automatically to `AWAITING_ADULT_REAUTHORIZATION` on the maturity date; guardian authority terminates prospectively. | Zero silent rollover of childhood permissions into adult commercial life. |
-| **2. `PROCESSING_RESTRICTION`** | `processing_restricted = TRUE NOT NULL` immediately blocks all reads, exports, or downstream leases in `AgencyFirewall`. | Applies **100% unconditionally** to all operational/commercial processing—even if a record is subject to a legal hold! |
-| **3. `ELIGIBLE_DATA_DELETION`** | Deletes/crypto-shreds all eligible personal media, vaults, and metadata upon request. | Checks `legal_retention_holds` (`STATUTORY_TAX_ACCOUNTING`, `ACTIVE_LITIGATION_HOLD`, `SECURITY_INCIDENT_EVIDENCE`, `MINIMAL_HASH_RECEIPT`). Any retained non-biometric record remains frozen under `PROCESSING_RESTRICTION` and produces a transparent `RetentionExceptionDisclosure` stating exact legal basis and expiry date. |
+### 3.3 Refinement `3.B` & Remediation C — Revocation Races & Non-Universal Erasure (`TEST-02`)
+1. **Concurrent Revocation Race Protection at Final Commit Boundary (`TEST-02`):** Issuing a capability lease at job start is insufficient if the subject revokes consent 200ms before the worker finishes. Both `AgencyFirewall.commit_authorized_action!` and `EvidenceVault` acquire a row-level lock (`SELECT grant_status FROM consent_ledger_grants WHERE grant_id = $1 FOR SHARE`) inside the final commit transaction: if the grant was revoked concurrently, the lease is marked `INVALIDATED_AT_COMMIT_BOUNDARY`, in-memory outputs are zeroed/discarded, and zero bytes are released.
+2. **Four Separate Revocation Statuses (Never Falsely Claiming Universal Erasure):**
+   Revoking YUTE access does **not** magically erase files already distributed to third parties or external backups. `revocation_status_ledgers` tracks four distinct axes:
+   - **`authorization_termination_status`:** `TERMINATED_PROSPECTIVELY` (permission ended in `ConsentLedger`).
+   - **`internal_processing_cessation_status`:** `HALTING_IN_PROGRESS` → `CONFIRMED_INTERNAL_HALTED` (all YUTE leases invalidated, concurrent workers killed at commit boundary, subject KMS DEK disabled).
+   - **`downstream_notification_status`:** `NOT_APPLICABLE_NO_PRIOR_RELEASE` | `PENDING_DISPATCH` | `DISPATCHED_UNCONFIRMED` | `RECEIPT_ACKNOWLEDGED` | `UNACKNOWLEDGED_ESCALATED`.
+   - **`confirmed_deletion_status`:** `INTERNAL_ELIGIBLE_DELETED_ONLY` | `INTERNAL_RETENTION_HOLD_DECLARED` | `EXTERNAL_DELETION_UNCONFIRMED` | `EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT`.
+   - **Hard Rule:** PostgreSQL `CHECK` constraint `never_claim_unconfirmed_external_deletion` makes it structurally impossible to record `EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT` without both `downstream_notification_status = 'RECEIPT_ACKNOWLEDGED'` and a non-null `external_deletion_receipt_sha256`.
 
-### 3.3 Remediation C — End-to-End Revocation Propagation Policy (`RPP-v001`)
-A database `COMMIT` setting `consent_status = 'REVOKED'` is **Step 1 of 5**, never the end of revocation verification:
+### 3.4 Remediation B — Three-Tier Adulthood Transition & Retention Integrity (`TEST-04`)
+Separates **`ADULTHOOD_REAUTHORIZATION`**, unconditional **`PROCESSING_RESTRICTION`** (`processing_restricted = TRUE`), and **`ELIGIBLE_DATA_DELETION`** checked against `legal_retention_holds` (`STATUTORY_TAX_ACCOUNTING`, `ACTIVE_LITIGATION_HOLD`, `SECURITY_INCIDENT_INVESTIGATION`, `TAMPER_EVIDENT_AUDIT_HASH_ONLY`) with full user disclosure.
 
-```text
-[Revocation Triggered]
-   ├──► Layer 1 (Sync ACID <50ms): ConsentLedger grant -> REVOKED; active CapabilityLeases invalidated
-   ├──► Layer 2 (In-Flight Jobs): Cancellation signal sent + MANDATORY Pre-Commit Lease Re-Check kills output write
-   ├──► Layer 3 (Caches & Keys): Ephemeral worker cache purge + Subject KMS DEK key-version rotation/disable
-   ├──► Layer 4 (Internal Exports): Unreleased staging assets -> QUARANTINED; released masters -> CONTRACT_REVIEW
-   └──► Layer 5 (Downstream Licensees): Signed revocation webhook + CRL status endpoint -> tracks ACK / ESCALATION
-```
-
-- **Crucial Guarantee Against Mid-Flight Races (Layer 2):** Even if an isolated rendering worker was 95% finished when revocation committed, `EvidenceVault` and staging storage require **a second synchronous `AgencyFirewall.verify_lease_still_active!(lease_id)` check at output-write time**. Revoked mid-flight outputs are discarded in memory and never persisted or exported.
-- **Honest Downstream Tracking (Layer 5):** External third-party licensees are tracked in `revocation_propagation_targets` with explicit states (`DISPATCHED_WEBHOOK`, `ACKNOWLEDGED_HALTED`, `RETRYING_UNCONFIRMED`, `CONTRACTUAL_CURE_WINDOW`, `ESCALATED_NONCOMPLIANT`). YUTE never reports downstream revocation as `COMPLETE` until target acknowledgments or cure dispositions are evidenced.
-
-### 3.4 Remediation D — Direct & Indirect Human Valuation Ban
-`Yute::TelemetrySanitizer` enforces `NO_HUMAN_VALUATION_SCORING` across four surfaces beyond SQL columns:
-1. **Database Schemas:** Zero columns for attractiveness, commercial worth, clout, or profitability scoring of persons.
-2. **Structured Application Logs & Analytics:** Redacts/rejects prohibited ranking/scoring keys before log emission.
-3. **Internal AI / Prompt / Classifier Outputs:** Prohibits running aesthetic-beauty scorers, "castability" rankers, or engagement-worth predictors on `HumanSubject` assets.
-4. **External Integrations:** Outbound webhooks and API responses expose binary/scoped authorization states (`ALLOW` / `DENY`), never comparative human-value metrics.
-
-### 3.5 Remediation E — Operationalizing Builder Protection & Escalation (*"Pastor pickney christen fuss"*)
-1. **Enforceable RBAC Separation:**
-   - `SUBJECT_OWNER` (the human represented—including founders/builders registered under `is_builder_steward = TRUE`)
-   - `STEWARD_PRIMARY` & `STEWARD_CO_CUSTODIAN` (interchangeable operational stewards; rotation schedule prevents 24/7 single-person duty)
-   - `LEGAL_COUNSEL_REVIEWER` (approves contract templates & statutory retention holds)
-   - `SECURITY_AUDITOR` (read-only audit verification; zero Vault plaintext decrypt right)
-2. **Two-Person Integrity & Escalation:** High-impact actions (releasing a legal hold, rotating root KMS policy, onboarding a production adapter) require **two distinct human stewards** (`approver_a != approver_b`), and unacknowledged high-priority revocations automatically escalate from `STEWARD_PRIMARY` to `STEWARD_CO_CUSTODIAN` after `15 minutes`.
+### 3.5 Remediations D, E & Self-Sovereignty
+- **Indirect Valuation Ban:** `Yute::TelemetrySanitizer` blocks direct and proxy human-worth metrics across DBs, logs, prompts/models, and webhooks.
+- **Co-Steward Integrity:** Two distinct human stewards (`STEWARD_PRIMARY != STEWARD_CO_CUSTODIAN`) required for sensitive hold changes; 15-minute escalation SLA; Founder Passport inclusion.
+- **Platform Self-Sovereignty:** YUTE's own user terms (`is_yute_platform_terms = TRUE`) must pass `Contract Shield` with zero AI-training capture, unrestricted sublicensing, or perpetual license-backs (`@SELF-GOV-01`).
 
 ---
 
 ## 4. Hardened PostgreSQL 16 Schema (`db/migrations/002_yute_agency_foundation.sql`)
 
-All columns referenced in `CHECK` constraints carry explicit `NOT NULL` constraints (closing Forensic Finding A):
+Every `CHECK`-constrained column is declared `NOT NULL`:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
--- 1. AGREEMENTS & CONTRACT SHIELD CLAUSE CITATIONS (ZERO UNCITED FINDINGS)
+-- 1. AGREEMENTS & UNICODE-CANONICALIZED CONTRACT SHIELD CITATIONS (TEST-03)
 CREATE TABLE agreement_documents (
   agreement_id              TEXT PRIMARY KEY CHECK (agreement_id ~ '^AGR-[A-Z0-9-]+$'),
   subject_id                TEXT NOT NULL REFERENCES human_subjects(subject_id),
   counterparty_name         TEXT NOT NULL,
   document_title            TEXT NOT NULL,
-  is_yute_platform_terms    BOOLEAN NOT NULL DEFAULT FALSE, -- Self-sovereignty audit flag
-  raw_text_utf8             TEXT NOT NULL CHECK (length(raw_text_utf8) > 0),
-  document_sha256           TEXT NOT NULL CHECK (document_sha256 ~ '^[0-9a-f]{64}$'),
+  is_yute_platform_terms    BOOLEAN NOT NULL DEFAULT FALSE,
+  original_upload_sha256    TEXT NOT NULL CHECK (original_upload_sha256 ~ '^[0-9a-f]{64}$'),
+  canonical_normalization   TEXT NOT NULL DEFAULT 'UNICODE_NFC_LF'
+    CHECK (canonical_normalization = 'UNICODE_NFC_LF'),
+  canonical_text_utf8       TEXT NOT NULL CHECK (length(canonical_text_utf8) > 0),
+  canonical_text_sha256     TEXT NOT NULL CHECK (canonical_text_sha256 ~ '^[0-9a-f]{64}$'),
   ingested_at               TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE contract_shield_findings (
   finding_id                UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   agreement_id              TEXT NOT NULL REFERENCES agreement_documents(agreement_id),
-  agreement_sha256          TEXT NOT NULL CHECK (agreement_sha256 ~ '^[0-9a-f]{64}$'),
+  canonical_text_sha256     TEXT NOT NULL CHECK (canonical_text_sha256 ~ '^[0-9a-f]{64}$'),
   clause_reference          TEXT NOT NULL CHECK (length(trim(clause_reference)) > 0),
-  char_start_offset         INTEGER NOT NULL CHECK (char_start_offset >= 0),
-  char_end_offset           INTEGER NOT NULL CHECK (char_end_offset > char_start_offset),
-  verbatim_excerpt          TEXT NOT NULL CHECK (length(trim(verbatim_excerpt)) > 0),
+  utf8_byte_start           INTEGER NOT NULL CHECK (utf8_byte_start >= 0),
+  utf8_byte_end             INTEGER NOT NULL CHECK (utf8_byte_end > utf8_byte_start),
+  codepoint_start           INTEGER NOT NULL CHECK (codepoint_start >= 0),
+  codepoint_end             INTEGER NOT NULL CHECK (codepoint_end > codepoint_start),
+  verbatim_excerpt_nfc      TEXT NOT NULL CHECK (length(trim(verbatim_excerpt_nfc)) > 0),
   consequence_category      TEXT NOT NULL CHECK (consequence_category IN (
-    'SYNTHETIC_LIKENESS_GRANT', 'VOICE_CLONING_GRANT', 'AI_TRAINING_CAPTURE',
-    'PERPETUAL_DURATION', 'UNRESTRICTED_SUBLICENSING', 'MORAL_RIGHTS_WAIVER',
-    'MINOR_FUTURE_ENCUMBRANCE', 'UNCOMPENSATED_DERIVATIVES', 'AMBIGUOUS_SCOPE_COUNSEL_NEEDED'
+    'PERFORMANCE_DISTRIBUTION_SCOPE', 'SYNTHETIC_LIKENESS_GRANT', 'VOICE_CLONING_GRANT',
+    'AI_TRAINING_CAPTURE', 'PERPETUAL_DURATION', 'UNRESTRICTED_SUBLICENSING',
+    'MORAL_RIGHTS_WAIVER', 'MINOR_FUTURE_ENCUMBRANCE', 'UNCOMPENSATED_DERIVATIVES',
+    'OMITTED_SYNTHETIC_VOICE_EXCLUSION', 'AMBIGUOUS_SCOPE_COUNSEL_NEEDED'
   )),
-  plain_language_summary    TEXT NOT NULL CHECK (length(trim(plain_language_summary)) > 0),
+  plain_language_explanation TEXT NOT NULL CHECK (length(trim(plain_language_explanation)) > 0),
+  questions_worth_raising   JSONB NOT NULL DEFAULT '[]'::jsonb,
   counsel_review_recommended BOOLEAN NOT NULL DEFAULT TRUE,
   created_at                TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- 2. DIGITAL RIGHTS PASSPORT ASSET & PERMISSION REGISTRY (NON-AVATAR + AVATAR UNIFIED)
+-- 2. VERIFIED SIGNER ATTRIBUTION & COMPREHENSION CEREMONY (REFINEMENT 3.A: HASH != CONSENT)
+CREATE TABLE authorization_ceremonies (
+  ceremony_id                   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  subject_id                    TEXT NOT NULL REFERENCES human_subjects(subject_id),
+  agreement_id                  TEXT NOT NULL REFERENCES agreement_documents(agreement_id),
+  canonical_text_sha256         TEXT NOT NULL CHECK (canonical_text_sha256 ~ '^[0-9a-f]{64}$'),
+  guard_analysis_snapshot_sha256 TEXT NOT NULL CHECK (guard_analysis_snapshot_sha256 ~ '^[0-9a-f]{64}$'),
+  verified_signer_actor_id      TEXT NOT NULL CHECK (length(trim(verified_signer_actor_id)) > 0),
+  signer_authority_basis        TEXT NOT NULL CHECK (signer_authority_basis IN (
+    'SELF_ADULT_SUBJECT', 'VERIFIED_FIDUCIARY_REPRESENTATIVE'
+  )),
+  signer_verification_method    TEXT NOT NULL CHECK (signer_verification_method IN (
+    'PASSKEY_WEBAUTHN_ATTESTED', 'QUALIFIED_ESIGN_PROVIDER', 'COUNSEL_WITNESSED_ATTESTATION'
+  )),
+  signer_subject_match_verified BOOLEAN NOT NULL CHECK (signer_subject_match_verified = TRUE),
+  uncertainties_presented       BOOLEAN NOT NULL CHECK (uncertainties_presented = TRUE),
+  record_preservation_permitted BOOLEAN NOT NULL CHECK (record_preservation_permitted = TRUE),
+  clauses_presented_at          TIMESTAMPTZ NOT NULL,
+  signed_at                     TIMESTAMPTZ NOT NULL,
+  ceremony_receipt_sha256       TEXT NOT NULL UNIQUE CHECK (ceremony_receipt_sha256 ~ '^[0-9a-f]{64}$'),
+  CONSTRAINT comprehension_must_precede_signature CHECK (signed_at >= clauses_presented_at)
+);
+
+-- 3. DIGITAL RIGHTS PASSPORT ASSET & PERMISSION REGISTRY
 CREATE TABLE digital_rights_records (
   rights_record_id          TEXT PRIMARY KEY CHECK (rights_record_id ~ '^DRP-[A-Z0-9-]+$'),
   subject_id                TEXT NOT NULL REFERENCES human_subjects(subject_id),
   asset_or_data_category    TEXT NOT NULL CHECK (asset_or_data_category IN (
     'VISUAL_LIKENESS', 'VOICE_IDENTITY', 'PHOTOGRAPHIC_WORK',
-    'MUSICAL_RECORDING', 'DRAMATIC_PERFORMANCE', 'PLATFORM_PERSONAL_DATA'
+    'MUSICAL_PERFORMANCE_MASTER', 'DRAMATIC_PERFORMANCE', 'PLATFORM_PERSONAL_DATA'
   )),
   external_platform_or_holder TEXT NOT NULL,
   rights_posture            TEXT NOT NULL CHECK (rights_posture IN (
@@ -196,20 +197,23 @@ CREATE TABLE digital_rights_records (
   )
 );
 
--- 3. CONSENT LEDGER SCOPED GRANTS (EVERY GRANT LINKED TO VERIFIED AUTHORIZATION)
+-- 4. CONSENT LEDGER SCOPED GRANTS (REQUIRES VERIFIED CEREMONY + SCOPE + DATES)
 CREATE TABLE consent_ledger_grants (
   grant_id                  UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   subject_id                TEXT NOT NULL REFERENCES human_subjects(subject_id),
   agreement_id              TEXT NOT NULL REFERENCES agreement_documents(agreement_id),
-  signed_artifact_sha256    TEXT NOT NULL CHECK (signed_artifact_sha256 ~ '^[0-9a-f]{64}$'),
+  ceremony_id               UUID NOT NULL REFERENCES authorization_ceremonies(ceremony_id),
   subject_age_class         TEXT NOT NULL CHECK (subject_age_class IN (
     'UNVERIFIED_AGE_HOLD', 'MINOR_PROTECTED', 'VULNERABLE_PROTECTED', 'ADULT_VERIFIED'
   )),
   permitted_action          TEXT NOT NULL CHECK (permitted_action IN (
     'CONTRACT_ANALYSIS_ONLY', 'VAULT_ARCHIVAL_CUSTODY',
+    'PERFORMANCE_DISTRIBUTION_NAMED_TRACK',
     'VISUAL_LIKENESS_NAMED_PRODUCTION', 'PHOTO_CAMPAIGN_DISPLAY'
   )),
-  named_production_scope    TEXT NOT NULL CHECK (length(trim(named_production_scope)) > 0),
+  named_target_scope        TEXT NOT NULL CHECK (length(trim(named_target_scope)) > 0),
+  authorized_territory      TEXT NOT NULL CHECK (length(trim(authorized_territory)) > 0),
+  contractual_scope_json    JSONB NOT NULL,
   voice_cloning_permitted   BOOLEAN NOT NULL DEFAULT FALSE,
   advertising_permitted     BOOLEAN NOT NULL DEFAULT FALSE,
   sublicensing_permitted    BOOLEAN NOT NULL DEFAULT FALSE,
@@ -232,7 +236,7 @@ CREATE TABLE consent_ledger_grants (
   )
 );
 
--- 4. AGENCY FIREWALL EVALUATION LOG & SHORT-TTL CAPABILITY LEASES
+-- 5. AGENCY FIREWALL EVALUATION LOG & SHORT-TTL CAPABILITY LEASES (TEST-01, TEST-02, TEST-05)
 CREATE TABLE agency_firewall_decisions (
   decision_id               UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   subject_id                TEXT NOT NULL REFERENCES human_subjects(subject_id),
@@ -241,7 +245,7 @@ CREATE TABLE agency_firewall_decisions (
     'HTTP_API', 'BACKGROUND_WORKER', 'CLI_COMMAND', 'ADMIN_OPERATION', 'RENDER_ADAPTER'
   )),
   requested_action          TEXT NOT NULL,
-  requested_production      TEXT NOT NULL,
+  requested_target_scope    TEXT NOT NULL,
   requires_voice_synthesis  BOOLEAN NOT NULL DEFAULT FALSE,
   requires_advertising_use  BOOLEAN NOT NULL DEFAULT FALSE,
   requires_sublicensing     BOOLEAN NOT NULL DEFAULT FALSE,
@@ -249,11 +253,12 @@ CREATE TABLE agency_firewall_decisions (
   outcome                   TEXT NOT NULL CHECK (outcome IN ('ALLOW', 'DENY')),
   denial_reason_code        TEXT,
   missing_permissions       JSONB NOT NULL DEFAULT '[]'::jsonb,
-  identity_assets_transmitted BOOLEAN NOT NULL DEFAULT FALSE,
+  protected_assets_released BOOLEAN NOT NULL DEFAULT FALSE,
+  audit_receipt_sha256      TEXT NOT NULL UNIQUE CHECK (audit_receipt_sha256 ~ '^[0-9a-f]{64}$'),
   decided_at                TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-  CONSTRAINT deny_transmits_zero_assets CHECK (
+  CONSTRAINT deny_releases_zero_assets CHECK (
     outcome = 'ALLOW' OR (
-      identity_assets_transmitted = FALSE
+      protected_assets_released = FALSE
       AND denial_reason_code IS NOT NULL
       AND jsonb_array_length(missing_permissions) > 0
     )
@@ -265,13 +270,15 @@ CREATE TABLE firewall_capability_leases (
   decision_id               UUID NOT NULL REFERENCES agency_firewall_decisions(decision_id),
   grant_id                  UUID NOT NULL REFERENCES consent_ledger_grants(grant_id),
   lease_token_sha256        TEXT NOT NULL UNIQUE CHECK (lease_token_sha256 ~ '^[0-9a-f]{64}$'),
-  lease_state               TEXT NOT NULL DEFAULT 'ISSUED'
-    CHECK (lease_state IN ('ISSUED', 'CONSUMED', 'INVALIDATED_ON_REVOCATION', 'EXPIRED')),
+  lease_state               TEXT NOT NULL DEFAULT 'ISSUED' CHECK (lease_state IN (
+    'ISSUED', 'COMMITTED', 'INVALIDATED_ON_REVOCATION',
+    'INVALIDATED_AT_COMMIT_BOUNDARY', 'EXPIRED'
+  )),
   expires_at                TIMESTAMPTZ NOT NULL,
   created_at                TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- 5. THREE-TIER ADULTHOOD TRANSITION & LAWFUL RETENTION HOLDS (FINDING B)
+-- 6. THREE-TIER ADULTHOOD TRANSITION & LAWFUL RETENTION HOLDS (TEST-04)
 CREATE TABLE legal_retention_holds (
   hold_id                   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   subject_id                TEXT NOT NULL REFERENCES human_subjects(subject_id),
@@ -281,9 +288,11 @@ CREATE TABLE legal_retention_holds (
     'SECURITY_INCIDENT_INVESTIGATION', 'TAMPER_EVIDENT_AUDIT_HASH_ONLY'
   )),
   legal_citation_basis      TEXT NOT NULL,
-  approved_by_counsel       TEXT NOT NULL,
+  approved_by_steward_a     TEXT NOT NULL,
+  approved_by_steward_b     TEXT NOT NULL,
   expires_or_reviews_at     TIMESTAMPTZ NOT NULL,
-  active                    BOOLEAN NOT NULL DEFAULT TRUE
+  active                    BOOLEAN NOT NULL DEFAULT TRUE,
+  CONSTRAINT two_steward_integrity_on_holds CHECK (approved_by_steward_a <> approved_by_steward_b)
 );
 
 CREATE TABLE adulthood_transitions (
@@ -301,30 +310,44 @@ CREATE TABLE adulthood_transitions (
   transitioned_at           TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- 6. END-TO-END REVOCATION PROPAGATION TRACKING BEYOND THE DATABASE (FINDING C)
-CREATE TABLE revocation_propagation_targets (
-  propagation_target_id     UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  revocation_id             UUID NOT NULL REFERENCES revocation_events(revocation_id),
-  target_layer              TEXT NOT NULL CHECK (target_layer IN (
-    'IN_FLIGHT_WORKER_LEASE', 'EPHEMERAL_CACHE_PURGE',
-    'KMS_SUBJECT_DEK_DISABLE', 'STAGING_EXPORT_QUARANTINE',
-    'EXTERNAL_LICENSEE_WEBHOOK'
-  )),
-  target_identifier         TEXT NOT NULL,
-  propagation_status        TEXT NOT NULL DEFAULT 'PENDING_DISPATCH' CHECK (propagation_status IN (
-    'PENDING_DISPATCH', 'DISPATCHED_AWAITING_ACK',
-    'CONFIRMED_HALTED', 'CONTRACTUAL_CURE_WINDOW', 'ESCALATED_NONCOMPLIANT'
-  )),
-  acknowledged_at           TIMESTAMPTZ,
-  evidence_receipt_sha256   TEXT
+-- 7. FOUR-AXIS REVOCATION ACCOUNTING (REFINEMENT 3.B: REVOCATION != UNIVERSAL ERASURE)
+CREATE TABLE revocation_status_ledgers (
+  revocation_ledger_id                 UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  revocation_id                        UUID NOT NULL REFERENCES revocation_events(revocation_id),
+  grant_id                             UUID NOT NULL REFERENCES consent_ledger_grants(grant_id),
+  had_prior_external_distribution      BOOLEAN NOT NULL DEFAULT FALSE,
+  -- Axis 1: Authorization Termination
+  authorization_termination_status     TEXT NOT NULL DEFAULT 'TERMINATED_PROSPECTIVELY'
+    CHECK (authorization_termination_status IN ('TERMINATED_PROSPECTIVELY', 'DISPUTED_UNDER_REVIEW')),
+  -- Axis 2: Internal Processing Cessation (YUTE Custody)
+  internal_processing_cessation_status TEXT NOT NULL DEFAULT 'HALTING_IN_PROGRESS'
+    CHECK (internal_processing_cessation_status IN ('HALTING_IN_PROGRESS', 'CONFIRMED_INTERNAL_HALTED')),
+  -- Axis 3: Downstream Notification (Third-Party Recipients)
+  downstream_notification_status       TEXT NOT NULL DEFAULT 'PENDING_DISPATCH'
+    CHECK (downstream_notification_status IN (
+      'NOT_APPLICABLE_NO_PRIOR_RELEASE', 'PENDING_DISPATCH',
+      'DISPATCHED_UNCONFIRMED', 'RECEIPT_ACKNOWLEDGED', 'UNACKNOWLEDGED_ESCALATED'
+    )),
+  -- Axis 4: Confirmed Deletion (Never Claim External Deletion Without Confirmation)
+  confirmed_deletion_status            TEXT NOT NULL DEFAULT 'EXTERNAL_DELETION_UNCONFIRMED'
+    CHECK (confirmed_deletion_status IN (
+      'INTERNAL_ELIGIBLE_DELETED_ONLY', 'INTERNAL_RETENTION_HOLD_DECLARED',
+      'EXTERNAL_DELETION_UNCONFIRMED', 'EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT'
+    )),
+  external_deletion_receipt_sha256     TEXT CHECK (
+    external_deletion_receipt_sha256 IS NULL OR external_deletion_receipt_sha256 ~ '^[0-9a-f]{64}$'
+  ),
+  updated_at                           TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  CONSTRAINT never_claim_unconfirmed_external_deletion CHECK (
+    confirmed_deletion_status <> 'EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT'
+    OR (
+      downstream_notification_status = 'RECEIPT_ACKNOWLEDGED'
+      AND external_deletion_receipt_sha256 IS NOT NULL
+    )
+  ),
+  CONSTRAINT prior_external_distribution_forbids_na_notice CHECK (
+    had_prior_external_distribution = FALSE
+    OR downstream_notification_status <> 'NOT_APPLICABLE_NO_PRIOR_RELEASE'
+  )
 );
 ```
-
----
-
-## 5. Platform Self-Sovereignty Controls (`YUTE_SELF_GOVERNANCE`)
-
-To enforce Section 06 of Mission Control's review (*"The protector must be subject to the same principles it claims to uphold"*):
-1. **Mandatory Self-Dogfooding Gate:** YUTE's own user terms (`is_yute_platform_terms = TRUE` in `agreement_documents`) must run through `Yute::ContractShield` in CI. If `Contract Shield` detects any `AI_TRAINING_CAPTURE`, `UNRESTRICTED_SUBLICENSING`, `MORAL_RIGHTS_WAIVER`, or `PERPETUAL_DURATION` license-back in YUTE's own terms, CI **fails the release build** (`@SELF-GOV-01`).
-2. **Tier-Proportional Data Minimization:** Using `Contract Shield` or `Digital Rights Passport` requires **zero** biometric photographs, voice samples, or government ID uploads.
-3. **Complete Subject Portability (`Yute::EvidenceVault.export_subject_bundle`):** Any user can export a deterministic, SHA-256-signed archive of every contract finding, consent grant, firewall allow/deny log, and retention record YUTE holds for them.

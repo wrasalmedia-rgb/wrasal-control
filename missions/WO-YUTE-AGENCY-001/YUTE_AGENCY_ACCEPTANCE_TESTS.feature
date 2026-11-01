@@ -1,129 +1,132 @@
 # Deliverable: YUTE_AGENCY_ACCEPTANCE_TESTS.feature
-# Work Order: WO-YUTE-AGENCY-001 (YUTE Contract Shield + Digital Rights Passport)
-# Milestone: YUTE-OS-AGENCY-FOUNDATION-v001
+# Work Order: WO-YUTE-AGENCY-001 (YUTE Guard / Contract Shield + Digital Rights Passport)
+# Governing ADR: decisions/YUTE-ADR-0010.md (Conditional Approval — Fictional-Data Engineering Only)
+# Milestone: YUTE-OS-v003 | AGENCY FIREWALL PROOF
 # Constitutional Doctrine: concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002)
-# Version: v001
+# Version: v001.1
 # Created: 2026-10-31
-# Target Runner: Cucumber-Ruby (cucumber >= 9.0) against YUTE OS Ruby Services (v003/v004)
+# Target Runner: Cucumber-Ruby (cucumber >= 9.0) against YUTE OS Ruby 3.3 / PostgreSQL 16 (v003)
 # Data Policy: Uses 100% fictional test agreements & synthetic subjects (Zero real personal data)
-# Status: SPECIFICATION ESTABLISHED / RUNTIME EXECUTION PENDING (v003)
+# Status: SPECIFICATION ESTABLISHED / RUNTIME EXECUTION PENDING HUMAN RATIFICATION OF YUTE-ADR-0010
 
-Feature: YUTE Agency Foundation — Contract Shield, Digital Rights Passport & Agency Firewall
-  As a human being using YUTE OS to understand agreements and govern my digital rights
-  I need enforceable contract comprehension, scoped consent recording, and fail-closed authorization across every execution boundary
-  So that my identity, creative work, and digital future are never processed beyond my established permissions.
+Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall Proof
+  As a human being using YUTE GUARD ("KNOW BEFORE YOU AGREE.")
+  I need verified clause citations, signer-attributed consent ceremonies, honest revocation accounting, and fail-closed authorization
+  So that my agency remains non-negotiable wherever YUTE has technical and legal authority.
 
   Background:
-    Given YUTE OS enforces constitutional invariant "YUTE-AGENCY-INV-001"
+    Given YUTE OS enforces constitutional invariant "YUTE-AGENCY-INV-001" under "YUTE-ADR-0010"
     And all evaluation paths traverse "Yute::WelfareGuard" and "Yute::AgencyFirewall" before any asset decryption or egress
     And test scenarios use strictly fictional agreements and synthetic subjects
 
   # ============================================================================
-  # CONSTITUTIONAL ACCEPTANCE TEST: YUTE-AGENCY-INV-001
+  # FIRST RUNTIME DEMONSTRATION: YUTE-OS-v003 | AGENCY FIREWALL PROOF (TEST-05)
   # ============================================================================
-  @YUTE-AGENCY-INV-001 @p0 @agency-firewall @constitutional
+  @YUTE-OS-v003-PROOF @TEST-05 @p0 @agency-firewall
+  Scenario: Young recording artist authorizes single performance distribution and Agency Firewall denies synthetic voice generation with five proof artifacts
+    Given fictional emerging recording artist "SUBJ-FICT-ZURI-BENNETT-001" uploads agreement "AGR-FICT-SINGLE-DIST-001" to "YUTE GUARD"
+    When "Yute::ContractShield" analyzes "AGR-FICT-SINGLE-DIST-001"
+    Then "01_contract_analysis.json" cites Clause "1.1" authorizing distribution of single track "TRACK-FICT-KINGSTON-RAIN-001" and Clause "2.2" reserving synthetic voice rights
+    When "SUBJ-FICT-ZURI-BENNETT-001" reviews the analysis and completes verified ceremony "CEREMONY-ZURI-001" with "clauses_presented_at" preceding "signed_at"
+    Then "Yute::ConsentLedger" registers "GRANT-ZURI-001" and emits "02_consent_record.json" with "voice_cloning_permitted" set to "false"
+    When fictional producer "actor:producer_vance_keller" submits "03_generation_request.json" ("REQ-SYNTH-VOICE-001") requesting "GENERATE_SYNTHETIC_VOICE_PERFORMANCE"
+    Then "Yute::AgencyFirewall" denies the operation and emits "04_firewall_decision.json" with outcome "DENY" and missing permission "VOICE_CLONING_NOT_AUTHORIZED"
+    And "Yute::EvidenceVault" emits "05_audit_receipt.json" recording "protected_assets_released: false" and "vault_bytes_decrypted: 0"
+
+  # ============================================================================
+  # CONSTITUTIONAL INVARIANT TEST: YUTE-AGENCY-INV-001 (TEST-05)
+  # ============================================================================
+  @YUTE-AGENCY-INV-001 @TEST-05 @p0 @constitutional
   Scenario: Deny synthetic-voice advertisement when performer contract authorizes only visual likeness in one named production
-    Given fictional adult performer "SUBJ-FICT-NIA-CLARKE-001" signs agreement "AGR-FICT-HARBOR-LIGHT-001"
-    And "AGR-FICT-HARBOR-LIGHT-001" authorizes "VISUAL_LIKENESS_NAMED_PRODUCTION" solely for named production "PROD-FICT-HARBOR-LIGHT"
-    And "AGR-FICT-HARBOR-LIGHT-001" does not authorize voice cloning, commercial advertising, or sublicensing
-    And "Yute::ConsentLedger" records grant "GRANT-NIA-001" linked to "AGR-FICT-HARBOR-LIGHT-001" SHA-256 with:
-      | permitted_action                 | VISUAL_LIKENESS_NAMED_PRODUCTION |
-      | named_production_scope           | PROD-FICT-HARBOR-LIGHT           |
-      | voice_cloning_permitted          | false                            |
-      | advertising_permitted            | false                            |
-      | sublicensing_permitted           | false                            |
+    Given fictional adult performer "SUBJ-FICT-NIA-CLARKE-001" completes verified ceremony "CEREMONY-NIA-001" for "AGR-FICT-HARBOR-LIGHT-001"
+    And "Yute::ConsentLedger" records grant "GRANT-NIA-001" with:
+      | permitted_action          | VISUAL_LIKENESS_NAMED_PRODUCTION |
+      | named_target_scope        | PROD-FICT-HARBOR-LIGHT           |
+      | voice_cloning_permitted   | false                            |
+      | advertising_permitted     | false                            |
+      | sublicensing_permitted    | false                            |
     When production user "actor:ad_campaign_producer" requests action "GENERATE_SYNTHETIC_VOICE_AD" for "SUBJ-FICT-NIA-CLARKE-001" under campaign "AD-BRAND-SOLAR-COLA"
     Then "Yute::AgencyFirewall" returns outcome "DENY" with reason code "OUT_OF_AUTHORIZED_SCOPE"
     And the denial receipt enumerates missing permissions:
-      | missing_permission                                |
-      | VOICE_CLONING_NOT_AUTHORIZED                      |
-      | ADVERTISING_USE_NOT_AUTHORIZED                    |
-      | PRODUCTION_OUTSIDE_NAMED_SCOPE:PROD-FICT-HARBOR-LIGHT |
-    And "Yute::EvidenceVault" records "identity_assets_transmitted" as "false"
-    And zero identity, audio, or visual assets are decrypted or transmitted to any rendering or synthesis provider
+      | missing_permission                                      |
+      | VOICE_CLONING_NOT_AUTHORIZED                            |
+      | ADVERTISING_USE_NOT_AUTHORIZED                          |
+      | TARGET_OUTSIDE_NAMED_SCOPE:PROD-FICT-HARBOR-LIGHT       |
+    And "Yute::EvidenceVault" records "protected_assets_released" as "false"
+    And zero identity, audio, or visual assets reach any rendering provider
 
   # ============================================================================
-  # COMPONENT 1: CONTRACT SHIELD (CLAUSE-CITED COMPREHENSION FOR NON-AVATAR USERS)
+  # TEST-01 & FORENSIC-A: AUTHORIZATION BYPASS ACROSS ALL BOUNDARIES
   # ============================================================================
-  @SHIELD-01 @contract-shield @non-avatar
-  Scenario: Musician contract review cites exact agreement sections and rejects uncited findings
-    Given fictional musician "SUBJ-FICT-MARCUS-VALE-001" uploads recording agreement "AGR-FICT-LABEL-DEAL-001" without uploading any biometric photos
-    When "Yute::ContractShield" analyzes "AGR-FICT-LABEL-DEAL-001"
-    Then consequential clauses for "VOICE_CLONING_GRANT", "AI_TRAINING_CAPTURE", and "PERPETUAL_DURATION" are flagged
-    And every finding contains non-null "agreement_sha256", "clause_reference", "char_start_offset", "char_end_offset", and a "verbatim_excerpt" matching the exact substring in "AGR-FICT-LABEL-DEAL-001"
-    And any candidate finding whose excerpt does not match the stored agreement text is rejected with "Yute::UncitedFindingError"
-    And the output displays an explicit notice that findings provide contractual comprehension and recommend human legal counsel where scope is ambiguous
-
-  # ============================================================================
-  # COMPONENT 3: DIGITAL RIGHTS PASSPORT (OWNERSHIP VS LICENSE VS UNKNOWN)
-  # ============================================================================
-  @PASSPORT-01 @digital-rights-passport @non-avatar
-  Scenario: Photographer and individual records strictly distinguish ownership, scoped license, and UNKNOWN platform rights
-    Given fictional photographer "SUBJ-FICT-DEVON-REID-001" registers portrait series "DRP-FICT-COASTAL-SERIES-001"
-    And registers a 12-month editorial display license "AGR-FICT-MAGAZINE-001" prohibiting AI dataset training
-    And registers an external social platform upload "DRP-FICT-SOCIAL-UPLOAD-002" whose historic terms were not archived
-    When "Yute::DigitalRightsPassport" compiles the subject's rights summary
-    Then "DRP-FICT-COASTAL-SERIES-001" displays rights_posture "OWNED_BY_SUBJECT" and "LICENSED_OUT_SCOPED" with AI training marked prohibited
-    And "DRP-FICT-SOCIAL-UPLOAD-002" displays evidence_status "UNKNOWN" without assuming permission or erasure
-
-  # ============================================================================
-  # FORENSIC FINDING A: SQL NULLABILITY & MULTI-BOUNDARY ENFORCEMENT
-  # ============================================================================
-  @FORENSIC-A @sql-nullability @boundary-enforcement
-  Scenario Outline: Block NULL constraint bypasses and block non-HTTP worker/CLI/admin bypasses lacking a CapabilityLease
-    Given protected asset "CAP-FICT-NIA-001" is stored in encrypted custody
+  @TEST-01 @FORENSIC-A @boundary-enforcement
+  Scenario Outline: Block NULL SQL bypasses and block API, CLI, worker, and adapter access without a valid capability lease
+    Given protected vocal master "DRP-FICT-ZURI-VOCAL-MASTER-001" is stored in encrypted custody
     When an operation at boundary "<boundary>" attempts to "<attempt>" without a valid active "FirewallCapabilityLease"
     Then the operation fails closed with "<expected_error>"
     And zero plaintext bytes leave custody
 
     Examples:
-      | boundary          | attempt                                                     | expected_error                      |
-      | DATABASE_SQL      | INSERT NULL into autonomous_persona_allowed                 | PG::NotNullViolation                |
-      | BACKGROUND_WORKER | open_plaintext_stream directly from background job          | Yute::MissingCapabilityLeaseError   |
-      | CLI_COMMAND       | export asset via administrative CLI without Firewall lease  | Yute::MissingCapabilityLeaseError   |
-      | RENDER_ADAPTER    | dispatch external synthesis call with expired 60s lease     | Yute::ExpiredCapabilityLeaseError   |
+      | boundary          | attempt                                                      | expected_error                      |
+      | DATABASE_SQL      | INSERT NULL into autonomous_persona_allowed                  | PG::NotNullViolation                |
+      | HTTP_API          | fetch protected master stream without capability lease       | Yute::MissingCapabilityLeaseError   |
+      | CLI_COMMAND       | export asset via CLI bypassing HTTP middleware               | Yute::MissingCapabilityLeaseError   |
+      | BACKGROUND_WORKER | call SourceAssetVault#open_plaintext_stream directly         | Yute::MissingCapabilityLeaseError   |
+      | RENDER_ADAPTER    | dispatch external synthesis call with expired or forged lease | Yute::InvalidOrExpiredLeaseError   |
 
   # ============================================================================
-  # FORENSIC FINDING B: THREE-TIER ADULTHOOD TRANSITION & LAWFUL RETENTION HOLDS
+  # REFINEMENT 3.A: AN AGREEMENT HASH IS NOT PROOF OF CONSENT
   # ============================================================================
-  @FORENSIC-B @adulthood-transition @child-protection
-  Scenario: Enforce Adulthood Reauthorization, Processing Restriction, and Honest Retention-Hold Accounting
-    Given fictional minor subject "SUBJ-FICT-KAI-001" had non-commercial archival record "DRP-FICT-KAI-ARCHIVE-001"
-    And counsel-approved statutory tax record "HOLD-TAX-001" applies solely to a non-biometric payment ledger receipt
-    When "SUBJ-FICT-KAI-001" reaches legal adulthood and requests processing restriction and data deletion without reauthorizing
-    Then guardian-era permissions transition to "DECLINED_TERMINATED"
-    And "processing_restricted" is set to "true" blocking 100 percent of operational reads and leases
-    And all eligible personal media and vault objects are cryptographically deleted
-    And "adulthood_transitions" records "PARTIAL_DELETED_WITH_DECLARED_LEGAL_HOLD" disclosing the exact statutory basis and expiration date of "HOLD-TAX-001"
+  @REFINEMENT-3A @consent-attribution
+  Scenario: Reject ConsentLedger grant registration backed only by a document SHA-256 without verified signer attribution and comprehension ceremony
+    Given agreement "AGR-FICT-SINGLE-DIST-001" is stored with valid SHA-256 digest
+    When a caller attempts to register a "ConsentLedger" grant using only "canonical_text_sha256" without a verified "authorization_ceremonies" record or where "signed_at" precedes "clauses_presented_at"
+    Then registration fails closed and no active permission grant is created
 
   # ============================================================================
-  # FORENSIC FINDING C: REVOCATION PROPAGATION BEYOND THE DATABASE
+  # TEST-02, REFINEMENT 3.B & FORENSIC-C: CONCURRENT REVOCATION RACE & 4-AXIS STATUS
   # ============================================================================
-  @FORENSIC-C @revocation-propagation
-  Scenario: Propagate revocation across in-flight rendering jobs, KMS caches, staging exports, and external licensees
-    Given grant "GRANT-NIA-001" has an in-flight authorized background job "JOB-INFLIGHT-099" holding lease "LEASE-099"
-    And external licensee "LICENSEE-STREAMING-PARTNER" holds a registered webhook endpoint
-    When "SUBJ-FICT-NIA-CLARKE-001" submits a signed revocation notice
-    Then "GRANT-NIA-001" transitions to "REVOKED" and "LEASE-099" transitions to "INVALIDATED_ON_REVOCATION"
-    When "JOB-INFLIGHT-099" finishes computing and attempts to persist or export its output
-    Then the pre-commit lease re-check rejects the write and discards the in-flight output in memory
-    And "revocation_propagation_targets" tracks separate verification states for "IN_FLIGHT_WORKER_LEASE", "EPHEMERAL_CACHE_PURGE", "KMS_SUBJECT_DEK_DISABLE", "STAGING_EXPORT_QUARANTINE", and "EXTERNAL_LICENSEE_WEBHOOK"
-    And overall revocation propagation is not marked globally complete while "EXTERNAL_LICENSEE_WEBHOOK" remains "DISPATCHED_AWAITING_ACK"
+  @TEST-02 @REFINEMENT-3B @FORENSIC-C @revocation-race
+  Scenario: Prevent concurrent commit after mid-flight revocation and never claim universal external deletion without confirmation
+    Given worker thread A holds valid lease "LEASE-RACE-01" on "GRANT-ZURI-001" and pauses immediately before the final commit boundary
+    And "GRANT-ZURI-001" had a prior external streaming copy distributed to "LICENSEE-STREAMING-PARTNER"
+    When concurrent thread B commits a signed revocation from "SUBJ-FICT-ZURI-BENNETT-001"
+    And worker thread A resumes and attempts to commit or release output at the final boundary
+    Then the final commit re-check rejects thread A, marks "LEASE-RACE-01" as "INVALIDATED_AT_COMMIT_BOUNDARY", and releases zero bytes
+    And "revocation_status_ledgers" records four separate axes:
+      | axis                                 | expected_status            |
+      | authorization_termination_status     | TERMINATED_PROSPECTIVELY   |
+      | internal_processing_cessation_status | CONFIRMED_INTERNAL_HALTED  |
+      | downstream_notification_status       | DISPATCHED_UNCONFIRMED     |
+      | confirmed_deletion_status            | EXTERNAL_DELETION_UNCONFIRMED |
+    And attempting to set "confirmed_deletion_status" to "EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT" without an acknowledged receipt fails PostgreSQL constraint "never_claim_unconfirmed_external_deletion"
 
   # ============================================================================
-  # FORENSIC FINDING D: DIRECT & INDIRECT HUMAN VALUATION PROHIBITION
+  # TEST-03 & SHIELD-01: CONTRACT CITATION INTEGRITY & UNICODE NORMALIZATION
   # ============================================================================
-  @FORENSIC-D @non-valuation @telemetry
-  Scenario: Block indirect human-worth proxy scores across logs, model outputs, and external integrations
-    When an internal classifier, analytics logger, or webhook serializer emits proxy metric "castability_index" or "engagement_worth_percentile" for a human subject
-    Then "Yute::TelemetrySanitizer" blocks emission and raises "Yute::IndirectValuationProxyError"
+  @TEST-03 @SHIELD-01 @contract-shield @unicode-integrity
+  Scenario: Verify exact clause quotations across NFD/NFC accents, curly quotes, and CRLF line endings while rejecting altered quotes
+    Given "AGR-FICT-SINGLE-DIST-001" is uploaded with Windows CRLF line endings, decomposed UTF-8 "B\u0065\u0301nnett", and curly quotes
+    When "Yute::ContractShield" normalizes the text to "UNICODE_NFC_LF" and extracts findings
+    Then every finding's "utf8_byte_start..utf8_byte_end" and "codepoint_start..codepoint_end" match "verbatim_excerpt_nfc" identically
+    And injecting a 1-character mutated quotation raises "Yute::UncitedFindingError"
 
   # ============================================================================
-  # FORENSIC FINDING E & SECTION 06: BUILDER CO-STEWARD ESCALATION & SELF-SOVEREIGNTY
+  # TEST-04, FORENSIC-B & PASSPORT-01: PRESERVATION, DELETION, HOLDS & POSTURES
   # ============================================================================
-  @FORENSIC-E @SELF-GOV-01 @self-sovereignty @builder-stewardship
-  Scenario: Audit YUTE's own platform terms through Contract Shield and require two-steward integrity on sensitive holds
-    Given YUTE OS draft platform terms "AGR-YUTE-PLATFORM-TOS-v001" are marked "is_yute_platform_terms = true"
-    When "Yute::ContractShield" audits "AGR-YUTE-PLATFORM-TOS-v001" during release verification
-    Then zero clauses of type "AI_TRAINING_CAPTURE", "UNRESTRICTED_SUBLICENSING", or "PERPETUAL_DURATION" license-back are permitted
-    And releasing any legal hold requires two distinct human stewards ("STEWARD_PRIMARY" != "STEWARD_CO_CUSTODIAN")
+  @TEST-04 @FORENSIC-B @PASSPORT-01 @evidence-retention
+  Scenario: Preserve audit immutability while executing eligible deletion, enforcing two-steward statutory holds, and preserving UNKNOWN rights posture
+    Given fictional minor subject "SUBJ-FICT-KAI-001" reaches adulthood with a two-steward statutory tax hold "HOLD-TAX-001" ("steward_a" != "steward_b") on a non-biometric receipt
+    And fictional photographer "SUBJ-FICT-DEVON-REID-001" holds owned master "DRP-FICT-COASTAL-SERIES-001" and unarchived upload "DRP-FICT-SOCIAL-UPLOAD-002"
+    When "SUBJ-FICT-KAI-001" requests processing restriction and data deletion and an operator attempts to mutate prior audit rows
+    Then PostgreSQL blocks any UPDATE or DELETE on immutable audit logs
+    And "SUBJ-FICT-KAI-001" personal media is deleted, "processing_restricted" is "true", and "HOLD-TAX-001" is disclosed with legal citation and expiry
+    And "DRP-FICT-SOCIAL-UPLOAD-002" remains strictly "UNKNOWN" without fabricating clearance
+
+  # ============================================================================
+  # FORENSIC-D, FORENSIC-E & SELF-GOV-01: NON-VALUATION & SELF-SOVEREIGNTY
+  # ============================================================================
+  @FORENSIC-D @FORENSIC-E @SELF-GOV-01 @self-sovereignty
+  Scenario: Block indirect human-worth proxy scores and audit YUTE's own platform terms through Contract Shield
+    When an analytics logger or classifier emits human-worth proxy metric "castability_index"
+    Then "Yute::TelemetrySanitizer" raises "Yute::IndirectValuationProxyError"
+    And YUTE draft platform terms "AGR-YUTE-PLATFORM-TOS-v001" fail CI if any "AI_TRAINING_CAPTURE", "UNRESTRICTED_SUBLICENSING", or "PERPETUAL_DURATION" license-back clause exists

@@ -148,19 +148,26 @@ YUTE OS binds WRASAL / YUTE as platform operator to the exact standards `Contrac
 
 > **`YUTE-AGENCY-INV-001`:**
 > **No person's digital identity, creative assets, or synthetic representation may be processed beyond the scope of authorization established for the requested action.**
+>
+> **THE CONSTITUTION IS THE CONSTRAINT. THE HUMAN IS THE AUTHORITY.**
+> **MY AGENCY IS NON-NEGOTIABLE.**
 
-Every subsystem—starting with `Contract Shield` + `Agency Firewall` (`WO-YUTE-AGENCY-001`) and extending to the Digital Human Engine (`WO-YUTE-LUTA-DARRON-001`)—must prove compliance with `YUTE-AGENCY-INV-001` across database, service, background-worker, and rendering-adapter boundaries before production eligibility.
+Every subsystem—starting with Product Zero **`YUTE GUARD™` (*"KNOW BEFORE YOU AGREE."*)** + **`Agency Firewall`** (`WO-YUTE-AGENCY-001`) and extending to the Digital Human Engine (`WO-YUTE-LUTA-DARRON-001`)—must prove compliance with `YUTE-AGENCY-INV-001` across database, service, background-worker, CLI, and rendering-adapter boundaries before production eligibility. Under Forensic Refinements `3.A` and `3.B` (`decisions/YUTE-ADR-0010.md`):
+- **An agreement hash is not proof of consent (`3.A`):** `ConsentLedger` grants require verified signer attribution, comprehension-ceremony evidence (`clauses_presented_at <= signed_at`), contractual scope, and effective dates.
+- **A successful revocation is not universal erasure (`3.B`):** Revocation tracks four separate axes (*authorization termination*, *internal processing cessation*, *downstream notification*, and *confirmed deletion*) and **never** reports external completion without verified confirmation.
 
 ---
 
-## 7. Proposed Engineering Release Ladder (Non-Binding Proposals; Not Runtime Claims)
+## 7. Proposed Engineering Release Ladder & `YUTE-ADR-0010` Freeze Reconciliation
+
+Per `decisions/YUTE-ADR-0010.md`, **Tier 1 Limited Engineering Authorization** (fictional-data consent/firewall verification) is strictly separated from **Tier 2 Full Product Reactivation** (which remains **FROZEN / NO GO** under the October 20 portfolio baseline and `HOLD-RIGHTS-001`):
 
 | Proposed Milestone | Scope | Current Evidence State (`2026-10-31`) |
 |---|---|---|
-| **`v002` — Specification Advanced** | Welfare doctrine, forensic constraint refinements, `WO-YUTE-LUTA-DARRON-001` (`HOLD-RIGHTS-001`), and `WO-YUTE-AGENCY-001` (`YUTE-OS-AGENCY-FOUNDATION-v001`) specified; `wrasal-control` S3 checks passing. | **ESTABLISHED IN SPECIFICATION** (`canonical_acceptance: pending`) |
-| **`v003` — Runtime Verification** | Execute real PostgreSQL 16 migrations (`NOT NULL` + `CHECK` + triggers), boundary-enforcement unit/integration suites, negative-path tests, and revocation-propagation drills in `wrasalmedia-rgb/yute` using 100% fictional fixtures. | **PROPOSED / NOT YET EXECUTED** |
-| **`v004` — Agency Infrastructure** | Deliver working Ruby/PostgreSQL `Contract Shield`, `Consent Ledger`, `Digital Rights Passport`, `Agency Firewall`, and `Evidence Vault` (`YUTE-AGENCY-INV-001` end-to-end verified). | **PROPOSED / NOT YET EXECUTED** |
-| **`v005` — Controlled Human Pilot** | Legally reviewed agreements, independent security review, and human-authorized pilot execution (unlocking `WO-YUTE-LUTA-DARRON-001` only if `HOLD-RIGHTS-001` clears). | **BLOCKED ON `v003`–`v004` & HUMAN LEGAL/CONSENT GATES** |
+| **`v002` — Specification & Draft PR** | Welfare doctrine, `YUTE-ADR-0010` freeze reconciliation, Refinements `3.A`/`3.B`, `WO-YUTE-LUTA-DARRON-001` (`HOLD-RIGHTS-001`), and `WO-YUTE-AGENCY-001` specified; Draft PR opened on `wrasal-control`; `567/567` S3 checks passing. | **ESTABLISHED IN SPECIFICATION** (`canonical_acceptance: pending`) |
+| **`v003` — Agency Firewall Proof** | Upon human ratification of `YUTE-ADR-0010`, provision private `wrasalmedia-rgb/yute` (Ruby 3.3 + PG 16), pass Five Adversarial Runtime Tests (`TEST-01`..`TEST-05`), and emit the 5 `YUTE-OS-v003` fictional young recording artist proof artifacts. | **CONDITIONAL GO (PENDING HUMAN RATIFICATION OF `YUTE-ADR-0010`)** |
+| **`v004` — `YUTE GUARD™` & Passport** | Deliver usable `YUTE GUARD™` (*Know Before You Agree*), `Consent Ledger`, `Digital Rights Passport`, `Agency Firewall`, and self-sovereign YUTE ToS gate on fictional fixtures. | **PROPOSED / NOT YET EXECUTED** |
+| **`v005` — S5 Review & Separate Tier 2 Gate** | Verify all 7 S5 Review Criteria (`YUTE-ADR-0010`); any real-person onboarding or commercial deployment remains **NO GO** unless Tier 2 portfolio re-entry and `HOLD-RIGHTS-001` are separately cleared by S5 human authority. | **BLOCKED ON `v003`–`v004`, S5 REVIEW & TIER 2 GOVERNANCE** |
 
 ---
 
@@ -172,15 +179,19 @@ Every subsystem—starting with `Contract Shield` + `Agency Firewall` (`WO-YUTE-
 - Author: WRASAL / YUTE Human Founder & Mission Control (structured via Arena execution worker)
 - Date created: `2026-10-31`
 - Commit SHA: *(see branch Git log)*
-- PR URL: `null` *(not opened unless authorized)*
-- Review status: `PROPOSED / PENDING REVIEW` (`canonical_acceptance: pending`)
+- PR URL: *(Draft PR on `wrasalmedia-rgb/wrasal-control` per `YUTE-ADR-0010`)*
+- Review status: `PROPOSED / DRAFT PR OPEN FOR REVIEW` (`canonical_acceptance: pending`)
 - Evidence locations:
+  - `decisions/YUTE-ADR-0010.md`
+  - `evidence/WO-YUTE-AGENCY-001-validation.json`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md`
+  - `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
   - `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature`
   - `missions/WO-YUTE-LUTA-DARRON-001/YUTE_MVP_ARCHITECTURE.md`
 
 ## Changelog
 
+- `v002.1 / 1.1.1` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Engineering Authorization Assessment (`YUTE-ADR-0010`)—reconciled Oct 20 `Frozen / Concept` portfolio baseline via Tier 1 vs. Tier 2 split; anchored Product Zero on `YUTE GUARD™` (*Know Before You Agree*); enforced Forensic Refinements `3.A` (hash != consent) and `3.B` (4-axis revocation != universal erasure); aligned `v003` on `AGENCY FIREWALL PROOF` + Five Adversarial Runtime Tests.
 - `v002 / 1.1.0` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Constitutional Engineering Review—repositioned informed-consent/agency infrastructure (`WO-YUTE-AGENCY-001`) as primary YUTE product foundation ahead of avatar reconstruction; added Three-Tier Adulthood Transition, Revocation Propagation Policy (`RPP-v001`), indirect-valuation ban, Platform Self-Sovereignty Covenant, `YUTE-AGENCY-INV-001`, and `v002 → v005` release ladder.
 - `v001 / 1.0.0` (`2026-10-31`, `PROPOSED`): Initial recording of YUTE Foundation Doctrine 001.

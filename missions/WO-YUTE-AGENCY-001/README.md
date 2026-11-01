@@ -1,16 +1,15 @@
-# WO-YUTE-AGENCY-001 — YUTE™ Contract Shield + Digital Rights Passport (`YUTE-OS-AGENCY-FOUNDATION-v001`)
+# WO-YUTE-AGENCY-001 — YUTE GUARD™ + Agency Firewall (`YUTE-OS-AGENCY-FOUNDATION-v001`)
 
 - **Work Order:** `WO-YUTE-AGENCY-001` (`P0`)
-- **Milestone:** `YUTE-OS-AGENCY-FOUNDATION-v001`
-- **Constitutional Doctrine:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002`)
-- **Executable Foundations:** `CONTRACT COMPREHENSION → INFORMED CONSENT → RIGHTS GOVERNANCE → AUTHORIZED ACTION`
+- **Product Zero UX:** **`YUTE GUARD™ — KNOW BEFORE YOU AGREE.`**
+- **Next Runtime Proof:** `YUTE-OS-v003 | AGENCY FIREWALL PROOF`
+- **Governing ADR:** `decisions/YUTE-ADR-0010.md` (*Conditional Approval — Fictional-Data Engineering Only; Human Ratification Required*)
 - **Current Classification:** `ARCHITECTURAL FOUNDATION ESTABLISHED IN SPECIFICATION. RUNTIME ASSURANCE NOT YET VERIFIED.`
 - **Canonical Acceptance:** `pending`
 - **Updated:** `2026-10-31`
 
-> **YOUR IDENTITY IS YOURS TO REPRESENT.**
-> **YOUR AGREEMENTS SHOULD BE YOURS TO UNDERSTAND.**
-> **YOUR DIGITAL FUTURE SHOULD NOT BE DECIDED WITHOUT YOU.**
+> **THE CONSTITUTION IS THE CONSTRAINT. THE HUMAN IS THE AUTHORITY.**
+> **MY AGENCY IS NON-NEGOTIABLE.**
 > **YUTE™ | Human Agency by Design.**
 
 ---
@@ -19,10 +18,13 @@
 
 | # | File | Role | SHA-256 Digest |
 |---|---|---|---|
-| 1 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | Constitutional Doctrine (v002 — 1.1.0) | `fb6b7742370f53b13823ccf752df02fa27f5f025a5ead8e0cb310fe5e5154b5b` |
-| 2 | `work_orders/WO-YUTE-AGENCY-001.md` | S2 Control-Plane Intake Record | `6903cf497956474e226907cfe54923ddcbf44b333f7b8bd50964a8bf1b89f9bd` |
-| 3 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` | Consolidated Agency Foundation Spec & PG 16 DDL | `fed0ae33de13b939c4f467740a104e20ba9ffad3e4db62e1942071860ef687ba` |
-| 4 | `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` | P0 Master Work Order (v002 -> v005 Gates) | `5f3113b7d24361aa3f001824f74bf8a091c4a14c276091b9b8ce99b6294a85db` |
-| 5 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` | Executable Gherkin Suite (@YUTE-AGENCY-INV-001 + Forensic A-E) | `de8b1ac7185d5bd430df797c7e271ba14be300a3b99fd4fffd2f016e1c591a2e` |
-| 6 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` | 14-Task RFC-4180 Backlog (AGY-T001..AGY-T014) | `af96184d17648140c4939d6274a5108b819f1bf227c7566420c15f0528de7593` |
-| 7 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` | 100% Fictional Test Contracts & Personas | `a591aabcf8165a8a49e00e4fdf4201f8e89e358ef7971c4566b03bc78d96c4ca` |
+| 1 | `decisions/YUTE-ADR-0010.md` | ADR-0010: Freeze Reconciliation, Auth Matrix & S5 Criteria | `77a7042346ea395b8d6321735b9ff4ef40e5d2cd519e75326e40be91ea7255b5` |
+| 2 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | Constitutional Doctrine (v002.1 — 1.1.1) | `f5f2edb4d131e0c1e5cd5d35d3e6a81af632083a7ec9684600b991e98b8764ba` |
+| 3 | `work_orders/WO-YUTE-AGENCY-001.md` | S2 Control-Plane Intake Record (v001.1) | `cf9ed3120c8b1241532864418e789a52e38e7fd3b6e8d4da1f1e443c41f2487a` |
+| 4 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md` | Consolidated Spec: YUTE GUARD, Refinements 3.A/3.B & PG 16 DDL | `87f9207d739e15b55e2acc65e97de8db5ef68d5da7feae82e5e478175082140d` |
+| 5 | `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md` | YUTE-OS-v003 Agency Firewall Proof & TEST-01..TEST-05 Spec | `3df861024c1809a0ac48f121a2903eeaef8f55ccb15316d311030b61b286675c` |
+| 6 | `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md` | P0 Master Work Order (v001.1) | `cdb1b5abd318a6aec87745219ae62be634feb979d426c9c8d490823e4e6b9d6a` |
+| 7 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature` | Executable Gherkin Suite (@YUTE-OS-v003-PROOF + @TEST-01..05) | `51b61100ddd1cad4d7c92f5dfcee1772eec728612b8d1439631a71669451a946` |
+| 8 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_TASK_BACKLOG.csv` | 14-Task RFC-4180 Backlog (AGY-T001..AGY-T014) | `5489dd7d565786303ce015d020c65edec511a124b4ac91dd1577b762affe05d2` |
+| 9 | `missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_FICTIONAL_TEST_FIXTURES.md` | 100% Fictional Test Contracts & Personas (incl. Zuri Bennett) | `03fcf1bd9db36f578f4f1f520840ecff3e41879bc643cc32b91e7f865932ec37` |
+| 10 | `evidence/WO-YUTE-AGENCY-001-validation.json` | Reproducible S3 Control-Plane Validation Receipt (567 checks) | `c93895b3c668d0b4867286e0141c3285efa22cfefa20e514aab8b4073263b089` |
