@@ -37,7 +37,7 @@ ACCEPTANCE:
 
 DECISIONS:
 - HOLD-RIGHTS-001 active: Zero dataset construction, embedding extraction, voice cloning, or likeness model training authorized during discovery.
-- Prefer commissioned first-party calibrated studio capture (MCPRS-v001) once consented over multi-party editorial portfolio scraping, due to third-party photographer copyrights, co-subjects (SRC-002, SRC-016), watermarks (SRC-002), editorial white face/beard paint (SRC-009..011), and personal shoulder/arm tattoos (SRC-016).
+- Prefer commissioned first-party calibrated studio capture (MCPRS-v001) once consented over multi-party editorial portfolio scraping, due to third-party photographer copyrights, co-subjects (SRC-002, SRC-016), watermarks (SRC-002), editorial white face/beard paint (SRC-009..011), and personal body markings (SRC-016).
 - Execution stack locked to Ruby 3.3+ and PostgreSQL 16+ (no Python, Express, or Next.js).
 
 EVIDENCE:

@@ -39,7 +39,7 @@ LUTA requires seamless visual and narrative continuity across **three strictly d
 - **Human Identity Visibility:** **100% Visible (Unmasked).** Full craniofacial architecture, warm medium-deep brown skin tone, natural dermal texture, Type-4 coil hair crop/taper, and full sculpted beard of `REP-YUTE-DARRON-v001` are clearly visible.
 - **Normalization Constraints:**
   - Exclude all portfolio editorial artifacts (no white midline forehead/beard paint from `SRC-009`–`SRC-011`).
-  - Mask personal right-shoulder/scapula/tricep tattoos (`SRC-016`) whenever shoulders/back are exposed unless separately cleared and canonically approved.
+  - Mask personal personal upper-body tattoos (anatomical detail minimized in public repo) (`SRC-016`) whenever shoulders/back are exposed unless separately cleared and canonically approved.
 - **Expression & Performance Envelope:** Grounded stillness, contemplative gravitas, controlled micro-expression authority (`EXP-00`, `EXP-01`, `EXP-08`).
 - **Wardrobe Coupling:** Paired with authorized State A human-realm / Dream-Realm underlayer attire (heavy black woven underlayers and charcoal neck scarf where specified by scene continuity).
 

@@ -67,7 +67,7 @@ In alignment with `YUTE-PILOT-001`, this pipeline **rejects** premature construc
 ### Stage 03 — `REFERENCE NORMALIZATION`
 - **Colorimetric Alignment:** Uses Slate Frame `#001` (`ColorChecker Passport Photo 2`) to transform RAW captures into scene-referred linear `ACEScg` (`AP1`), neutralizing mixed ambient color casts (`3200K` tungsten vs. `5600K` tropical daylight) without altering melanin luminance or undertone ratios.
 - **Camera & Perspective Tagging:** Annotates lens focal length, sensor size, and subject distance so focal-perspective differences are compensated mathematically rather than misread as facial-shape changes.
-- **Non-Destructive Segmentation:** Generates alpha mattes isolating studio backgrounds, wardrobe edges, and—where character state requires—personal shoulder/arm tattoos (`SRC-016`), while strictly forbidding dermal smoothing, pore erasure, or craniofacial warping.
+- **Non-Destructive Segmentation:** Generates alpha mattes isolating studio backgrounds, wardrobe edges, and—where character state requires—personal body markings (`SRC-016`), while strictly forbidding dermal smoothing, pore erasure, or craniofacial warping.
 
 ### Stage 04 — `CONTROLLED DIGITAL RECONSTRUCTION`
 Evaluates two candidate technical tracks, prioritizing Track A for `YUTE-PILOT-001`:

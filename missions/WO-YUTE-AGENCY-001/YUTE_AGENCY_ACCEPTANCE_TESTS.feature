@@ -1,22 +1,23 @@
 # Deliverable: YUTE_AGENCY_ACCEPTANCE_TESTS.feature
-# Work Order: WO-YUTE-AGENCY-001 (YUTE Guard / Contract Shield + Digital Rights Passport)
-# Governing ADR: decisions/YUTE-ADR-0010.md (Conditional Approval — Fictional-Data Engineering Only)
+# Work Order: WO-YUTE-AGENCY-001 (YUTE Guard + Agency Firewall + Evidence Vault)
+# Governing ADR & Review: decisions/YUTE-ADR-0010.md & YUTE-PR8-REVIEW-001
 # Milestone: YUTE-OS-v003 | AGENCY FIREWALL PROOF
-# Constitutional Doctrine: concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002)
-# Version: v001.1
+# Constitutional Doctrine: concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002.2)
+# Standalone Migrations: missions/WO-YUTE-AGENCY-001/migrations/001..003_*.sql
+# Version: v001.2
 # Created: 2026-10-31
 # Target Runner: Cucumber-Ruby (cucumber >= 9.0) against YUTE OS Ruby 3.3 / PostgreSQL 16 (v003)
 # Data Policy: Uses 100% fictional test agreements & synthetic subjects (Zero real personal data)
-# Status: SPECIFICATION ESTABLISHED / RUNTIME EXECUTION PENDING HUMAN RATIFICATION OF YUTE-ADR-0010
+# Status: PG 16.4 DDL & SQL INVARIANTS VERIFIED / RUBY 3.3 RUNTIME PENDING YUTE-ADR-0010 RATIFICATION
 
-Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall Proof
-  As a human being using YUTE GUARD ("KNOW BEFORE YOU AGREE.")
-  I need verified clause citations, signer-attributed consent ceremonies, honest revocation accounting, and fail-closed authorization
+Feature: YUTE Guard, Five-Stage Consent Process, Cross-Subject Integrity & Agency Firewall Proof
+  As a human being using YUTE ("KNOW BEFORE YOU AGREE. CONTROL WHAT YOU AUTHORIZE. PRESERVE THE EVIDENCE.")
+  I need verified clause citations, honest 5-stage consent process evidence, composite cross-subject integrity, and fail-closed authorization
   So that my agency remains non-negotiable wherever YUTE has technical and legal authority.
 
   Background:
-    Given YUTE OS enforces constitutional invariant "YUTE-AGENCY-INV-001" under "YUTE-ADR-0010"
-    And all evaluation paths traverse "Yute::WelfareGuard" and "Yute::AgencyFirewall" before any asset decryption or egress
+    Given YUTE OS enforces constitutional invariants "YUTE-AGENCY-INV-001" and "YUTE-AGENCY-INV-002"
+    And standalone migrations "001_yute_mvp_core.sql" and "002_yute_agency_foundation.sql" are applied on PostgreSQL 16
     And test scenarios use strictly fictional agreements and synthetic subjects
 
   # ============================================================================
@@ -27,8 +28,8 @@ Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall
     Given fictional emerging recording artist "SUBJ-FICT-ZURI-BENNETT-001" uploads agreement "AGR-FICT-SINGLE-DIST-001" to "YUTE GUARD"
     When "Yute::ContractShield" analyzes "AGR-FICT-SINGLE-DIST-001"
     Then "01_contract_analysis.json" cites Clause "1.1" authorizing distribution of single track "TRACK-FICT-KINGSTON-RAIN-001" and Clause "2.2" reserving synthetic voice rights
-    When "SUBJ-FICT-ZURI-BENNETT-001" reviews the analysis and completes verified ceremony "CEREMONY-ZURI-001" with "clauses_presented_at" preceding "signed_at"
-    Then "Yute::ConsentLedger" registers "GRANT-ZURI-001" and emits "02_consent_record.json" with "voice_cloning_permitted" set to "false"
+    When "SUBJ-FICT-ZURI-BENNETT-001" completes the five-stage ceremony "CEREMONY-ZURI-001" in order "PRESENTED -> ACKNOWLEDGED -> EXPLAINED -> DECIDED -> AUTHORIZED"
+    Then "Yute::ConsentLedger" registers "GRANT-ZURI-001" and emits "02_consent_record.json" with "voice_cloning_permitted" set to "false" and "comprehension_epistemic_status" set to "PROCESS_EVIDENCE_ONLY_NOT_MIND_PROOF"
     When fictional producer "actor:producer_vance_keller" submits "03_generation_request.json" ("REQ-SYNTH-VOICE-001") requesting "GENERATE_SYNTHETIC_VOICE_PERFORMANCE"
     Then "Yute::AgencyFirewall" denies the operation and emits "04_firewall_decision.json" with outcome "DENY" and missing permission "VOICE_CLONING_NOT_AUTHORIZED"
     And "Yute::EvidenceVault" emits "05_audit_receipt.json" recording "protected_assets_released: false" and "vault_bytes_decrypted: 0"
@@ -38,8 +39,8 @@ Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall
   # ============================================================================
   @YUTE-AGENCY-INV-001 @TEST-05 @p0 @constitutional
   Scenario: Deny synthetic-voice advertisement when performer contract authorizes only visual likeness in one named production
-    Given fictional adult performer "SUBJ-FICT-NIA-CLARKE-001" completes verified ceremony "CEREMONY-NIA-001" for "AGR-FICT-HARBOR-LIGHT-001"
-    And "Yute::ConsentLedger" records grant "GRANT-NIA-001" with:
+    Given fictional adult performer "SUBJ-FICT-NIA-CLARKE-001" completes five-stage ceremony "CEREMONY-NIA-001" for "AGR-FICT-HARBOR-LIGHT-001"
+    And "Yute::ConsentLedger" records grant "GRANT-NIA-001" for asset "DRP-FICT-NIA-STILLS-001" with:
       | permitted_action          | VISUAL_LIKENESS_NAMED_PRODUCTION |
       | named_target_scope        | PROD-FICT-HARBOR-LIGHT           |
       | voice_cloning_permitted   | false                            |
@@ -56,6 +57,23 @@ Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall
     And zero identity, audio, or visual assets reach any rendering provider
 
   # ============================================================================
+  # TEST-06 & YUTE-AGENCY-INV-002: CROSS-SUBJECT & CROSS-PURPOSE AUTHORITY CHAIN
+  # ============================================================================
+  @TEST-06 @YUTE-AGENCY-INV-002 @p0 @cross-subject-integrity
+  Scenario Outline: Reject transferring ceremonies, agreements, assets, or grants across subjects or purposes via DB association
+    Given valid five-stage ceremony "CEREMONY-ZURI-001" and grant "GRANT-ZURI-001" exist for Subject A "SUBJ-FICT-ZURI-BENNETT-001"
+    And valid agreement "AGR-FICT-HARBOR-LIGHT-001" and asset "DRP-FICT-NIA-STILLS-001" exist for Subject B "SUBJ-FICT-NIA-CLARKE-001"
+    When a caller attempts "<cross_association_attempt>"
+    Then both "Yute::AgencyFirewall" and PostgreSQL 16 reject the operation fail-closed with "<expected_rejection>"
+    And no cross-subject or cross-purpose permission or capability lease is created
+
+    Examples:
+      | cross_association_attempt                                                             | expected_rejection                        |
+      | attach Subject A ceremony CEREMONY-ZURI-001 to Subject B grant on Nia Clarke          | DENY / PG::ForeignKeyViolation (23503)    |
+      | attach Subject B asset DRP-FICT-NIA-STILLS-001 to Subject A firewall ALLOW decision   | DENY / PG::ForeignKeyViolation (23503)    |
+      | bind Zuri track-distribution grant to a synthetic-voice ALLOW firewall decision       | DENY / PG::ForeignKeyViolation (23503)    |
+
+  # ============================================================================
   # TEST-01 & FORENSIC-A: AUTHORIZATION BYPASS ACROSS ALL BOUNDARIES
   # ============================================================================
   @TEST-01 @FORENSIC-A @boundary-enforcement
@@ -67,36 +85,36 @@ Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall
 
     Examples:
       | boundary          | attempt                                                      | expected_error                      |
-      | DATABASE_SQL      | INSERT NULL into autonomous_persona_allowed                  | PG::NotNullViolation                |
+      | DATABASE_SQL      | INSERT NULL into autonomous_persona_allowed                  | PG::NotNullViolation (23502)        |
       | HTTP_API          | fetch protected master stream without capability lease       | Yute::MissingCapabilityLeaseError   |
       | CLI_COMMAND       | export asset via CLI bypassing HTTP middleware               | Yute::MissingCapabilityLeaseError   |
       | BACKGROUND_WORKER | call SourceAssetVault#open_plaintext_stream directly         | Yute::MissingCapabilityLeaseError   |
       | RENDER_ADAPTER    | dispatch external synthesis call with expired or forged lease | Yute::InvalidOrExpiredLeaseError   |
 
   # ============================================================================
-  # REFINEMENT 3.A: AN AGREEMENT HASH IS NOT PROOF OF CONSENT
+  # SECTION 03 & REFINEMENT 3.A: FIVE-STAGE CONSENT PROCESS (HASH != CONSENT)
   # ============================================================================
-  @REFINEMENT-3A @consent-attribution
-  Scenario: Reject ConsentLedger grant registration backed only by a document SHA-256 without verified signer attribution and comprehension ceremony
-    Given agreement "AGR-FICT-SINGLE-DIST-001" is stored with valid SHA-256 digest
-    When a caller attempts to register a "ConsentLedger" grant using only "canonical_text_sha256" without a verified "authorization_ceremonies" record or where "signed_at" precedes "clauses_presented_at"
-    Then registration fails closed and no active permission grant is created
+  @REFINEMENT-3A @SECTION-03 @consent-process
+  Scenario: Enforce PRESENTED -> ACKNOWLEDGED -> EXPLAINED -> DECIDED -> AUTHORIZED order and block grants from DECLINED ceremonies
+    Given agreement "AGR-FICT-HARBOR-LIGHT-001" is presented to "SUBJ-FICT-NIA-CLARKE-001"
+    When "SUBJ-FICT-NIA-CLARKE-001" completes presentation, acknowledgment, and explanation and chooses "DECLINED"
+    Then the "DECLINED" ceremony receipt is preserved with "authorized_at" as null
+    And attempting to register a "ConsentLedger" grant from that "DECLINED" ceremony fails closed with SQLSTATE "23514"
+    And the system records "comprehension_epistemic_status" strictly as "PROCESS_EVIDENCE_ONLY_NOT_MIND_PROOF"
 
   # ============================================================================
-  # TEST-02, REFINEMENT 3.B & FORENSIC-C: CONCURRENT REVOCATION RACE & 4-AXIS STATUS
+  # TEST-02, FINDING 03 & REFINEMENT 3.B: EGRESS ORDERING & 4-AXIS REVOCATION
   # ============================================================================
-  @TEST-02 @REFINEMENT-3B @FORENSIC-C @revocation-race
-  Scenario: Prevent concurrent commit after mid-flight revocation and never claim universal external deletion without confirmation
-    Given worker thread A holds valid lease "LEASE-RACE-01" on "GRANT-ZURI-001" and pauses immediately before the final commit boundary
-    And "GRANT-ZURI-001" had a prior external streaming copy distributed to "LICENSEE-STREAMING-PARTNER"
-    When concurrent thread B commits a signed revocation from "SUBJ-FICT-ZURI-BENNETT-001"
-    And worker thread A resumes and attempts to commit or release output at the final boundary
-    Then the final commit re-check rejects thread A, marks "LEASE-RACE-01" as "INVALIDATED_AT_COMMIT_BOUNDARY", and releases zero bytes
-    And "revocation_status_ledgers" records four separate axes:
-      | axis                                 | expected_status            |
-      | authorization_termination_status     | TERMINATED_PROSPECTIVELY   |
-      | internal_processing_cessation_status | CONFIRMED_INTERNAL_HALTED  |
-      | downstream_notification_status       | DISPATCHED_UNCONFIRMED     |
+  @TEST-02 @EGRESS-FENCE-v001 @REFINEMENT-3B @FORENSIC-C @revocation-race
+  Scenario: Enforce Point of Irrevocable Egress ordering under concurrent revocation and forbid unconfirmed external deletion claims
+    Given worker thread A holds lease "LEASE-RACE-01" on "GRANT-ZURI-001" and approaches "T2_CLAIM" ("SELECT ... FOR UPDATE") before socket flush
+    When concurrent thread B commits a signed revocation from "SUBJ-FICT-ZURI-BENNETT-001" prior to "first_payload_byte_flushed_at"
+    Then "T2_CLAIM" or pre-socket abort marks "LEASE-RACE-01" as "INVALIDATED_AT_COMMIT_BOUNDARY" or "ABORTED_PRE_SOCKET_ZERO_BYTES" and transmits zero bytes
+    And if a separate prior transmission had already passed "first_payload_byte_flushed_at", YUTE settles it truthfully as "REVOKED_POST_IRREVOCABLE_EGRESS" with:
+      | axis                                 | expected_status               |
+      | authorization_termination_status     | TERMINATED_PROSPECTIVELY      |
+      | internal_processing_cessation_status | CONFIRMED_INTERNAL_HALTED     |
+      | downstream_notification_status       | DISPATCHED_UNCONFIRMED        |
       | confirmed_deletion_status            | EXTERNAL_DELETION_UNCONFIRMED |
     And attempting to set "confirmed_deletion_status" to "EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT" without an acknowledged receipt fails PostgreSQL constraint "never_claim_unconfirmed_external_deletion"
 
@@ -118,7 +136,7 @@ Feature: YUTE Guard, Consent Attribution, Four-Axis Revocation & Agency Firewall
     Given fictional minor subject "SUBJ-FICT-KAI-001" reaches adulthood with a two-steward statutory tax hold "HOLD-TAX-001" ("steward_a" != "steward_b") on a non-biometric receipt
     And fictional photographer "SUBJ-FICT-DEVON-REID-001" holds owned master "DRP-FICT-COASTAL-SERIES-001" and unarchived upload "DRP-FICT-SOCIAL-UPLOAD-002"
     When "SUBJ-FICT-KAI-001" requests processing restriction and data deletion and an operator attempts to mutate prior audit rows
-    Then PostgreSQL blocks any UPDATE or DELETE on immutable audit logs
+    Then PostgreSQL blocks any UPDATE or DELETE on immutable audit logs with SQLSTATE "P0001"
     And "SUBJ-FICT-KAI-001" personal media is deleted, "processing_restricted" is "true", and "HOLD-TAX-001" is disclosed with legal citation and expiry
     And "DRP-FICT-SOCIAL-UPLOAD-002" remains strictly "UNKNOWN" without fabricating clearance
 

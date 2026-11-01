@@ -1,0 +1,343 @@
+{
+  "verification_id": "WO-YUTE-AGENCY-001-PG16-SCHEMA-VERIFICATION-001",
+  "verified_on": "2026-10-31",
+  "engine": {
+    "postgres_version": "PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "server_version": "16.4",
+    "harness": "PostgreSQL 16.4 compiled WASM engine (@electric-sql/pglite@0.2.17 executed in isolated /tmp/pg-verify)",
+    "epistemic_scope_statement": "Verifies real PostgreSQL 16.4 DDL execution, native gen_random_uuid(), composite foreign keys enforcing YUTE-AGENCY-INV-002 (TEST-06), 5-stage consent process constraints, NOT NULL + CHECK enforcement, RLS activation, and PL/pgSQL immutability triggers. Does NOT claim Ruby 3.3 service execution, multi-socket TCP lock contention, or external network adapter verification, which remain gated on YUTE-ADR-0010 human ratification."
+  },
+  "migrations_executed": [
+    {
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql",
+      "sha256": "e52b37c88e6875cbd50ec9037b2ffebd3e111283fbf872f74e5af2189b35c5db",
+      "status": "APPLIED"
+    },
+    {
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql",
+      "sha256": "d26be64a6cd1e0454f4d044165007dbcf96fd89abaa147ec4161206772916d68",
+      "status": "APPLIED"
+    },
+    {
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/003_verify_pg16_invariants.sql",
+      "sha256": "3f24645bcf411d0d76783768b5530e06d5834a758d7c8543f534af59962d21b7",
+      "status": "EXECUTED_AND_ROLLED_BACK"
+    }
+  ],
+  "schema_catalog_summary": {
+    "public_table_count": 23,
+    "rls_enabled_table_count": 7,
+    "composite_foreign_key_count": 15,
+    "trigger_event_count": 10,
+    "tables": [
+      {
+        "table_name": "adulthood_transitions",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "agency_firewall_decisions",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "agreement_documents",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "approval_ledger_entries",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "authorization_ceremonies",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "character_casting_bindings",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "character_identities",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "clarity_disclosure_manifests",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "consent_ledger_grants",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "contract_shield_findings",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "costume_identities",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "digital_rights_records",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "firewall_capability_leases",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "human_subjects",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "identity_passports",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "legal_retention_holds",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "likeness_specifications",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "revocation_events",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "revocation_status_ledgers",
+        "rls_enabled": true
+      },
+      {
+        "table_name": "source_assets",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "subject_context_corrections",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "validation_runs",
+        "rls_enabled": false
+      },
+      {
+        "table_name": "vault_access_audit_logs",
+        "rls_enabled": false
+      }
+    ],
+    "composite_foreign_keys": [
+      {
+        "table_name": "agency_firewall_decisions",
+        "constraint_name": "agency_firewall_decisions_matched_grant_id_subject_id_requ_fkey",
+        "definition": "FOREIGN KEY (matched_grant_id, subject_id, requested_rights_record_id, requested_action, requested_target_scope) REFERENCES consent_ledger_grants(grant_id, subject_id, scoped_rights_record_id, permitted_action, named_target_scope)"
+      },
+      {
+        "table_name": "agency_firewall_decisions",
+        "constraint_name": "agency_firewall_decisions_requested_rights_record_id_subje_fkey",
+        "definition": "FOREIGN KEY (requested_rights_record_id, subject_id) REFERENCES digital_rights_records(rights_record_id, subject_id)"
+      },
+      {
+        "table_name": "authorization_ceremonies",
+        "constraint_name": "authorization_ceremonies_agreement_id_subject_id_canonical_fkey",
+        "definition": "FOREIGN KEY (agreement_id, subject_id, canonical_text_sha256) REFERENCES agreement_documents(agreement_id, subject_id, canonical_text_sha256)"
+      },
+      {
+        "table_name": "character_casting_bindings",
+        "constraint_name": "character_casting_bindings_costume_id_character_id_fkey",
+        "definition": "FOREIGN KEY (costume_id, character_id) REFERENCES costume_identities(costume_id, character_id)"
+      },
+      {
+        "table_name": "character_casting_bindings",
+        "constraint_name": "character_casting_bindings_likeness_spec_id_subject_id_pas_fkey",
+        "definition": "FOREIGN KEY (likeness_spec_id, subject_id, passport_id) REFERENCES likeness_specifications(likeness_spec_id, subject_id, passport_id)"
+      },
+      {
+        "table_name": "consent_ledger_grants",
+        "constraint_name": "consent_ledger_grants_ceremony_id_subject_id_agreement_id_fkey",
+        "definition": "FOREIGN KEY (ceremony_id, subject_id, agreement_id) REFERENCES authorization_ceremonies(ceremony_id, subject_id, agreement_id)"
+      },
+      {
+        "table_name": "consent_ledger_grants",
+        "constraint_name": "consent_ledger_grants_scoped_rights_record_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (scoped_rights_record_id, subject_id) REFERENCES digital_rights_records(rights_record_id, subject_id)"
+      },
+      {
+        "table_name": "contract_shield_findings",
+        "constraint_name": "contract_shield_findings_agreement_id_canonical_text_sha25_fkey",
+        "definition": "FOREIGN KEY (agreement_id, canonical_text_sha256) REFERENCES agreement_documents(agreement_id, canonical_text_sha256)"
+      },
+      {
+        "table_name": "digital_rights_records",
+        "constraint_name": "digital_rights_records_evidence_agreement_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (evidence_agreement_id, subject_id) REFERENCES agreement_documents(agreement_id, subject_id)"
+      },
+      {
+        "table_name": "firewall_capability_leases",
+        "constraint_name": "firewall_capability_leases_decision_id_grant_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (decision_id, grant_id, subject_id, target_rights_record_id, permitted_action, named_target_scope) REFERENCES agency_firewall_decisions(decision_id, matched_grant_id, subject_id, requested_rights_record_id, requested_action, requested_target_scope)"
+      },
+      {
+        "table_name": "likeness_specifications",
+        "constraint_name": "likeness_specifications_passport_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (passport_id, subject_id) REFERENCES identity_passports(passport_id, subject_id)"
+      },
+      {
+        "table_name": "revocation_events",
+        "constraint_name": "revocation_events_passport_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (passport_id, subject_id) REFERENCES identity_passports(passport_id, subject_id)"
+      },
+      {
+        "table_name": "revocation_status_ledgers",
+        "constraint_name": "revocation_status_ledgers_grant_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (grant_id, subject_id) REFERENCES consent_ledger_grants(grant_id, subject_id)"
+      },
+      {
+        "table_name": "revocation_status_ledgers",
+        "constraint_name": "revocation_status_ledgers_revocation_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (revocation_id, subject_id) REFERENCES revocation_events(revocation_id, subject_id)"
+      },
+      {
+        "table_name": "vault_access_audit_logs",
+        "constraint_name": "vault_access_audit_logs_source_id_subject_id_fkey",
+        "definition": "FOREIGN KEY (source_id, subject_id) REFERENCES source_assets(source_id, subject_id)"
+      }
+    ],
+    "triggers": [
+      {
+        "table_name": "agency_firewall_decisions",
+        "trigger_name": "trg_immutable_agency_firewall_decisions",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "agency_firewall_decisions",
+        "trigger_name": "trg_immutable_agency_firewall_decisions",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "approval_ledger_entries",
+        "trigger_name": "trg_immutable_approval_ledger_entries",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "approval_ledger_entries",
+        "trigger_name": "trg_immutable_approval_ledger_entries",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "authorization_ceremonies",
+        "trigger_name": "trg_immutable_authorization_ceremonies",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "authorization_ceremonies",
+        "trigger_name": "trg_immutable_authorization_ceremonies",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "consent_ledger_grants",
+        "trigger_name": "trg_grant_requires_decided_to_authorize",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "table_name": "consent_ledger_grants",
+        "trigger_name": "trg_grant_requires_decided_to_authorize",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "vault_access_audit_logs",
+        "trigger_name": "trg_immutable_vault_access_audit_logs",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "vault_access_audit_logs",
+        "trigger_name": "trg_immutable_vault_access_audit_logs",
+        "event_manipulation": "UPDATE"
+      }
+    ]
+  },
+  "adversarial_invariant_results": [
+    {
+      "test_id": "PG16-BASELINE-V003",
+      "invariant_ref": "YUTE-OS-v003",
+      "description": "Valid Zuri ceremony, single-track grant, and fail-closed synthetic-voice DENY receipt persist cleanly",
+      "expected_state": "COMMITTED",
+      "observed_state": "COMMITTED",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-CONSENT-DECLINED-BLOCKS-GRANT",
+      "invariant_ref": "SECTION-03-5-STAGE",
+      "description": "Reject ConsentLedger grant backed by a ceremony whose human decision_outcome was DECLINED",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-FINDING-03-EGRESS-TIMESTAMP",
+      "invariant_ref": "EGRESS-FENCE-v001",
+      "description": "Reject COMMITTED_EXTERNAL_EGRESS state lacking Point-of-Irrevocable-Egress timestamp",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-REFINEMENT-3B-NO-FAKE-DELETION",
+      "invariant_ref": "REFINEMENT-3B",
+      "description": "Reject claiming EXTERNAL_DELETION_CONFIRMED_WITH_RECEIPT without acknowledged receipt",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-01-NULL-CHECK-BYPASS",
+      "invariant_ref": "FORENSIC-A",
+      "description": "Reject NULL insertion into CHECK-constrained autonomous_persona_allowed column",
+      "expected_state": "23502",
+      "observed_state": "23502",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-04-IMMUTABLE-AUDIT-TRIGGER",
+      "invariant_ref": "TEST-04",
+      "description": "Block DELETE on append-only agency_firewall_decisions ledger",
+      "expected_state": "P0001",
+      "observed_state": "P0001",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-04-TWO-STEWARD-QUORUM",
+      "invariant_ref": "FORENSIC-E",
+      "description": "Reject legal retention hold signed twice by the same steward",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-06-CROSS-SUBJECT-CEREMONY",
+      "invariant_ref": "YUTE-AGENCY-INV-002",
+      "description": "Reject attaching Subject A ceremony_id to Subject B consent_ledger_grants row",
+      "expected_state": "23503",
+      "observed_state": "23503",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-06B-CROSS-PURPOSE-ALLOW",
+      "invariant_ref": "YUTE-AGENCY-INV-002",
+      "description": "Reject ALLOW firewall decision whose action differs from matched grant permitted_action",
+      "expected_state": "23503",
+      "observed_state": "23503",
+      "passed": true
+    },
+    {
+      "test_id": "PG16-TEST-06C-CROSS-ASSET-SUBJECT",
+      "invariant_ref": "YUTE-AGENCY-INV-002",
+      "description": "Reject firewall decision associating Subject B asset with Subject A identity/grant",
+      "expected_state": "23503",
+      "observed_state": "23503",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total_adversarial_checks": 10,
+    "passed": 10,
+    "failed": 0
+  }
+}

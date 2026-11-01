@@ -71,12 +71,20 @@ Upon human ratification of `YUTE-ADR-0010`, the isolated Ruby 3.3 / PostgreSQL 1
 
 > **Acceptance Condition:** *"A working YUTE service demonstrably prevents an unauthorized digital-representation operation while preserving the evidence explaining its decision."*
 
-Specifically, `YUTE-OS-v003` must execute the **Fictional Young Recording Artist Proof** (`AGR-FICT-SINGLE-DIST-001`: single musical performance distribution authorized; synthetic voice generation not authorized → producer synthetic-voice request **denied** fail-closed) and emit five independently inspectable artifacts (`01_contract_analysis.json`, `02_consent_record.json`, `03_generation_request.json`, `04_firewall_decision.json`, `05_audit_receipt.json`), alongside passing evidence for all **Five Adversarial Runtime Tests**:
+Specifically, `YUTE-OS-v003` must execute the **Fictional Young Recording Artist Proof** (`AGR-FICT-SINGLE-DIST-001`: Zuri Bénnett single musical performance distribution authorized; synthetic voice generation not authorized → producer synthetic-voice request **denied** fail-closed) and emit five independently inspectable artifacts (`01_contract_analysis.json`, `02_consent_record.json`, `03_generation_request.json`, `04_firewall_decision.json`, `05_audit_receipt.json`), alongside passing evidence for all **Six Adversarial Runtime Tests** (`YUTE-PR8-REVIEW-001`):
 1. `TEST-01`: Authorization bypass across API, CLI, workers, and rendering adapters.
-2. `TEST-02`: Concurrent consent revocation race at the final commit boundary.
+2. `TEST-02`: Concurrent consent revocation race across lock, transaction, and socket egress boundaries (`EGRESS-FENCE-v001`).
 3. `TEST-03`: Contract citation integrity across Unicode normalization (`NFC`/`NFD`), smart punctuation, and CRLF/LF cases.
-4. `TEST-04`: Evidence preservation vs. eligible deletion and lawful retention holds.
+4. `TEST-04`: Evidence preservation vs. eligible deletion and two-steward lawful retention holds.
 5. `TEST-05`: Synthetic identity misuse blocked before any asset reaches a rendering provider.
+6. `TEST-06`: **Cross-subject authorization integrity (`YUTE-AGENCY-INV-002`)** — attempting to attach a valid consent ceremony, agreement, or grant from Subject A to Subject B (or across mismatched assets/purposes) fails closed (`DENY` / `SQLSTATE 23503`).
+
+### 5.1 Pre-Provisioning Forensic Remediations Recorded on Draft PR #8 (`YUTE-PR8-REVIEW-001`)
+1. **Standalone Migrations Verified on `PostgreSQL 16.4` (`Finding 01`):** Extracted `migrations/001_yute_mvp_core.sql`, `migrations/002_yute_agency_foundation.sql`, and `migrations/003_verify_pg16_invariants.sql` and verified execution + 10/10 SQLSTATE constraint assertions (`evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`). *(Note: Multi-socket Ruby 3.3 + native PG 16 server concurrency verification remains pending `wrasalmedia-rgb/yute` bootstrap.)*
+2. **Composite Foreign Key Chain (`Finding 02` / `YUTE-AGENCY-INV-002`):** Enforced 15 composite foreign keys across `001` and `002` binding `(subject_id, agreement_id, ceremony_id, rights_record_id, permitted_action, named_target_scope)`.
+3. **Irrevocable Egress Ordering (`Finding 03` / `EGRESS-FENCE-v001`):** Defined `first_payload_byte_flushed_at` as the exact Point of Irrevocable Egress, gated by pre-socket `SELECT ... FOR UPDATE` claim and truthful post-flush 4-axis revocation accounting.
+4. **Five-Stage Consent Process Evidence (`Section 03`):** Separated `PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED` (`PROCESS_EVIDENCE_ONLY_NOT_MIND_PROOF`).
+5. **Public Repo Privacy Minimization (`Section 04`):** Executed `YUTE-PRIVACY-AUDIT-001` across `missions/WO-YUTE-LUTA-DARRON-001/` redacting direct personal email and granular personal body-marking motifs from public `wrasal-control` while keeping `HOLD-RIGHTS-001` strictly active.
 
 ---
 

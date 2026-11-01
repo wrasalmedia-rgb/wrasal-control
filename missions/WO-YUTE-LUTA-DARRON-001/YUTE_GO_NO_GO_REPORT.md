@@ -19,7 +19,7 @@
 | Program Phase / Activity Class | Gate Verdict (`2026-11-01`) | Governing Condition |
 |---|---|---|
 | **1. Phase 01–09 Read-Only Discovery, Rights Audit & Work Order Specification** | **COMPLETE (EVIDENCED)** | All 12 Final Output Package deliverables (+ 2 companion phase records) authored and verified in `missions/WO-YUTE-LUTA-DARRON-001/`; zero unlicensed media copied into datasets. |
-| **2. Human Legal Review & Respectful Talent Outreach (`YUTE-T005` → `YUTE-T006`)** | **GO (RECOMMENDED NEXT STEP)** | Official direct contact `darronrayd@gmail.com` verified on `darronray.com` (`SRC-001`). Proceed once WRASAL Executive Producer & Legal Counsel sign off on outreach brief. |
+| **2. Human Legal Review & Respectful Talent Outreach (`YUTE-T005` → `YUTE-T006`)** | **GO (RECOMMENDED NEXT STEP)** | Official direct contact `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` verified on `darronray.com` (`SRC-001`). Proceed once WRASAL Executive Producer & Legal Counsel sign off on outreach brief. |
 | **3. Clean-Room Ruby/PostgreSQL Welfare & Governance Spine (`YUTE-PILOT-001A`: `YUTE-T009`–`T010`, `T017`)** | **CONDITIONAL GO (UPON REPO UNFREEZE)** | May build `Yute::WelfareGuard` (Gate 00), `IdentityRegistry`, `ConsentAuthority` (`child_protection_hard_shield`), `SourceAssetVault`, `ApprovalLedger`, `RevocationControl`, and Founder/Builder Passport Parity in `wrasalmedia-rgb/yute` using **synthetic non-human test fixtures only**. |
 | **4. Source Media Vault Ingestion, Biometric Capture & Likeness Reconstruction (`YUTE-T011`–`T016`)** | **NO-GO / MANDATORY HOLD (`HOLD-RIGHTS-001`)** | **STRICTLY BLOCKED** until Darron-Ray Donaldson executes a written **YUTE Identity Passport™** agreement **and** source-image copyrights are cleared (via first-party `MCPRS-v001` studio capture and/or signed photographer licenses). |
 | **5. Voice Cloning / Synthetic Speech** | **NO-GO / EXCLUDED** | Explicitly out of scope for `WO-YUTE-LUTA-DARRON-001`; prohibited by default in `identity_passports.voice_synthesis_allowed = FALSE`. |
@@ -33,12 +33,12 @@
 2. **Real-World Rights Complexity Proves YUTE's Value Proposition:** Unlike toy AI avatar demos that scrape public images indiscriminately, `darronray.com` immediately surfaces real industry governance requirements:
    - Six distinct named/unnamed photographic copyright streams;
    - Commercial music-video/film master copyrights (`Sevana`, `Stalk Ashley`, `Tommy Lee Sparta / VEVO`, `UNICEF Jamaica`) plus a restricted private video (`Simalexia – Love U Bad`);
-   - Editorial white midline forehead/beard paint (`SRC-009`–`SRC-011`) and personal shoulder/arm tattoos (`SRC-016`) that require human-vs-presentation-vs-character separation;
+   - Editorial white midline forehead/beard paint (`SRC-009`–`SRC-011`) and personal body markings (`SRC-016`) that require human-vs-presentation-vs-character separation;
    - Co-subjects and watermarks (`SRC-002`, `SRC-016`) requiring automated Vault quarantine.
 3. **Three-State Character Validation (`LUTA`):** *THE UNDERTAKERS* requires LUTA in **State A (Human)**, **State B (Concealed Undertaker Bird Mask)**, and **State C (Revealed King in Canonical Costume)**—providing a rigorous, concrete testbed for proving that YUTE keeps `HUMAN_IDENTITY`, `LIKENESS_REPRESENTATION`, `CHARACTER_IDENTITY`, and `COSTUME_IDENTITY` decoupled across state transitions.
 
 ### 2.2 Why Production Must Remain on Hold Today
-- **Zero Performer Consent Currently Exists:** Public portfolio publication is an invitation for professional booking inquiries (`darronrayd@gmail.com`), **not** consent for AI likeness synthesis.
+- **Zero Performer Consent Currently Exists:** Public portfolio publication is an invitation for professional booking inquiries (`[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]`), **not** consent for AI likeness synthesis.
 - **Zero Photographer Licenses Currently Exist:** All 16 portfolio photographs on `darronray.com` are copyright-protected (`ALL RIGHTS RESERVED`).
 - **Repository Runtime Maturity Is Pre-Bootstrap:** `wrasalmedia-rgb/wrasal-control` is an operational S2/S3 coordination plane (`567/567` checks passing), while `wrasalmedia-rgb/yute` does not yet exist on GitHub.
 
@@ -59,5 +59,5 @@ Production tasks `YUTE-T011` through `YUTE-T016` may transition from `BLOCKED` t
 ## 4. Recommended Immediate Decision for WRASAL Leadership
 
 1. **APPROVE** `WO-YUTE-LUTA-DARRON-001` in S2/S3 discovery status (`DISCOVERY COMPLETE / PRODUCTION AUTHORIZATION PENDING`).
-2. **AUTHORIZE `YUTE-T005` & `YUTE-T006`:** Direct WRASAL Legal Counsel and Producer to review the YUTE Identity Passport™ draft terms and initiate respectful human outreach to Darron-Ray Donaldson at `darronrayd@gmail.com`, proposing a compensated first-party calibrated capture & LUTA digital-casting pilot.
+2. **AUTHORIZE `YUTE-T005` & `YUTE-T006`:** Direct WRASAL Legal Counsel and Producer to review the YUTE Identity Passport™ draft terms and initiate respectful human outreach to Darron-Ray Donaldson at `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]`, proposing a compensated first-party calibrated capture & LUTA digital-casting pilot.
 3. **EVALUATE `YUTE-T009`:** Decide whether to unfreeze `wrasalmedia-rgb/yute` solely for the clean-room Ruby 3.3 + PostgreSQL 16 Passport/Vault governance spine using synthetic test fixtures while talent outreach proceeds in parallel.

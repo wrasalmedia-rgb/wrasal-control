@@ -9,6 +9,7 @@
 - **Subject (Human Person):** Darron-Ray Donaldson (`SUBJ-DARRON-RAY-DONALDSON`)
 - **Authorization Scope:** Read-Only Public Preview Observation Only (`NO DATASET INGESTION`)
 - **Lifecycle Status:** `DISCOVERY COMPLETE / PRODUCTION AUTHORIZATION PENDING`
+- **Public Repository Privacy Notice (`YUTE-PR8-REVIEW-001`):** Because `wrasal-control` is a public control-plane repository, direct personal contact addresses and granular personal body-marking motifs have been minimized (`[REDACTED_FOR_PUBLIC_REPO]`). Subject-specific talent research records should migrate to a private, access-controlled research repository prior to any wider distribution or commercialization. `HOLD-RIGHTS-001` remains strictly active.
 
 ---
 
@@ -39,7 +40,7 @@ Visual inspection of the public previews uncovered **three major identity-contam
 1. **Transient Editorial Face & Beard Paint (`SRC-009`, `SRC-010`, `SRC-011`):**
    In all three *Tribe Nine x Wharf* images, a vertical stripe of opaque **white/silver editorial body paint** is applied down the center midline of Darron-Ray Donaldson's forehead (from frontal hairline to glabella) and vertically down the center of his chin beard (`SRC-009`, `SRC-010`). This stripe is **completely absent** in `SRC-002` and `SRC-016`. Any uncurated model training on `SRC-009`–`SRC-011` would falsely encode midline leukoderma/poliosis into his baseline human identity.
 2. **Personal Body Tattoos (`SRC-016` vs. `SRC-009`–`SRC-011`):**
-   - **Posterior/Lateral Right Shoulder & Arm (`SRC-016`):** Clearly visible dark-ink tattoos comprising (a) a circular geometric/mandala-like medallion motif over the upper right scapula/posterior deltoid border, (b) dark ornamental/shaded ink across the lateral right deltoid, and (c) multi-line vertical script/lettering along the posterior right upper arm/tricep.
+   - **Posterior/Lateral Right Shoulder & Arm (`SRC-016`):** Personal ink body markings observed in SRC-016 (granular motif and anatomical placement details withheld from public control-plane repository per YUTE-PR8-REVIEW-001 data minimization; retained only for restricted post-consent governance if authorized).
    - **Anterior Torso (`SRC-009`, `SRC-010`, `SRC-011`):** Bare anterior chest (pectorals, sternum, clavicles) and central abdominal wall show **no visible ink tattoos** in observed frames.
    - **Governance Impact:** Tattoos belong to `HUMAN_IDENTITY` (and carry separate tattoo-artist copyright questions under IP law) and **must not bleed** into fictional `CHARACTER_IDENTITY` (`LUTA`) unless explicitly cleared and creatively intended.
 3. **Co-Subjects & Watermark Overlays (`SRC-002`, `SRC-016`):**

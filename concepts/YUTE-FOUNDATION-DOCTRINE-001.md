@@ -144,17 +144,26 @@ YUTE OS binds WRASAL / YUTE as platform operator to the exact standards `Contrac
 
 ---
 
-## 6. Constitutional Acceptance Invariant (`YUTE-AGENCY-INV-001`)
+## 6. Constitutional Acceptance Invariants (`YUTE-AGENCY-INV-001` & `YUTE-AGENCY-INV-002`)
 
+> **YUTE™**
+> **KNOW BEFORE YOU AGREE.**
+> **CONTROL WHAT YOU AUTHORIZE.**
+> **PRESERVE THE EVIDENCE.**
+>
 > **`YUTE-AGENCY-INV-001`:**
 > **No person's digital identity, creative assets, or synthetic representation may be processed beyond the scope of authorization established for the requested action.**
+>
+> **`YUTE-AGENCY-INV-002`:**
+> **NO AUTHORIZATION MAY BE TRANSFERRED BETWEEN HUMAN SUBJECTS, ASSETS, OR PURPOSES THROUGH DATABASE ASSOCIATION ALONE.**
 >
 > **THE CONSTITUTION IS THE CONSTRAINT. THE HUMAN IS THE AUTHORITY.**
 > **MY AGENCY IS NON-NEGOTIABLE.**
 
-Every subsystem—starting with Product Zero **`YUTE GUARD™` (*"KNOW BEFORE YOU AGREE."*)** + **`Agency Firewall`** (`WO-YUTE-AGENCY-001`) and extending to the Digital Human Engine (`WO-YUTE-LUTA-DARRON-001`)—must prove compliance with `YUTE-AGENCY-INV-001` across database, service, background-worker, CLI, and rendering-adapter boundaries before production eligibility. Under Forensic Refinements `3.A` and `3.B` (`decisions/YUTE-ADR-0010.md`):
-- **An agreement hash is not proof of consent (`3.A`):** `ConsentLedger` grants require verified signer attribution, comprehension-ceremony evidence (`clauses_presented_at <= signed_at`), contractual scope, and effective dates.
-- **A successful revocation is not universal erasure (`3.B`):** Revocation tracks four separate axes (*authorization termination*, *internal processing cessation*, *downstream notification*, and *confirmed deletion*) and **never** reports external completion without verified confirmation.
+Every subsystem—starting with Product Zero **`YUTE GUARD™` (*"KNOW BEFORE YOU AGREE."*)** + **`Agency Firewall`** (`WO-YUTE-AGENCY-001`) and extending to the Digital Human Engine (`WO-YUTE-LUTA-DARRON-001`)—must prove compliance with `YUTE-AGENCY-INV-001` and `YUTE-AGENCY-INV-002` across database, service, background-worker, CLI, and rendering-adapter boundaries before production eligibility. Under `decisions/YUTE-ADR-0010.md` and `YUTE-PR8-REVIEW-001`:
+- **Five-Stage Consent Process Evidence (Not Manufactured Comprehension):** YUTE distinguishes **`PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED`**. Informed consent is the human objective; verifiable evidence of the consent process (`PROCESS_EVIDENCE_ONLY_NOT_MIND_PROOF`) is what software can honestly preserve—never manufacturing false certainty about a person's internal mental state.
+- **Coherent Chain of Authority (`YUTE-AGENCY-INV-002`):** Composite database foreign keys and fail-closed application checks bind `(subject_id, agreement_id, ceremony_id, asset_id, permitted_action, named_target_scope)` end-to-end so Subject A's ceremony or grant can never authorize Subject B's identity, another asset, or another purpose (`TEST-06`).
+- **Defined Point of Irrevocable Egress & Four-Axis Revocation (`EGRESS-FENCE-v001`):** YUTE defines the exact commit/socket boundary (`first_payload_byte_flushed_at`) at which external transmission becomes physically irrevocable, serializes pre-egress checks via row locks, and tracks four separate revocation axes (*authorization termination*, *internal processing cessation*, *downstream notification*, and *confirmed deletion*) without ever claiming external completion lacking confirmation.
 
 ---
 
@@ -179,11 +188,16 @@ Per `decisions/YUTE-ADR-0010.md`, **Tier 1 Limited Engineering Authorization** (
 - Author: WRASAL / YUTE Human Founder & Mission Control (structured via Arena execution worker)
 - Date created: `2026-10-31`
 - Commit SHA: *(see branch Git log)*
-- PR URL: *(Draft PR on `wrasalmedia-rgb/wrasal-control` per `YUTE-ADR-0010`)*
-- Review status: `PROPOSED / DRAFT PR OPEN FOR REVIEW` (`canonical_acceptance: pending`)
+- PR URL: `https://github.com/wrasalmedia-rgb/wrasal-control/pull/8` *(Draft PR)*
+- Review status: `PROPOSED / DRAFT PR #8 UNDER REVIEW` (`canonical_acceptance: pending`)
 - Evidence locations:
   - `decisions/YUTE-ADR-0010.md`
   - `evidence/WO-YUTE-AGENCY-001-validation.json`
+  - `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`
+  - `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
+  - `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
+  - `missions/WO-YUTE-AGENCY-001/migrations/003_verify_pg16_invariants.sql`
+  - `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
   - `missions/WO-YUTE-AGENCY-001/WO_YUTE_AGENCY_001_WORK_ORDER.md`
@@ -192,6 +206,7 @@ Per `decisions/YUTE-ADR-0010.md`, **Tier 1 Limited Engineering Authorization** (
 
 ## Changelog
 
+- `v002.2 / 1.2.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-PR8-REVIEW-001` (`Engineering Audit 001`)—added `YUTE-AGENCY-INV-002` (forbidding cross-subject/asset/purpose transfer by DB association), 5-stage Consent Process Model (`PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED`), `EGRESS-FENCE-v001` Point of Irrevocable Egress, standalone `.sql` migrations verified against `PostgreSQL 16.4`, `TEST-06`, and public-repo privacy minimization (`YUTE-PRIVACY-AUDIT-001`).
 - `v002.1 / 1.1.1` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Engineering Authorization Assessment (`YUTE-ADR-0010`)—reconciled Oct 20 `Frozen / Concept` portfolio baseline via Tier 1 vs. Tier 2 split; anchored Product Zero on `YUTE GUARD™` (*Know Before You Agree*); enforced Forensic Refinements `3.A` (hash != consent) and `3.B` (4-axis revocation != universal erasure); aligned `v003` on `AGENCY FIREWALL PROOF` + Five Adversarial Runtime Tests.
 - `v002 / 1.1.0` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Constitutional Engineering Review—repositioned informed-consent/agency infrastructure (`WO-YUTE-AGENCY-001`) as primary YUTE product foundation ahead of avatar reconstruction; added Three-Tier Adulthood Transition, Revocation Propagation Policy (`RPP-v001`), indirect-valuation ban, Platform Self-Sovereignty Covenant, `YUTE-AGENCY-INV-001`, and `v002 → v005` release ladder.
 - `v001 / 1.0.0` (`2026-10-31`, `PROPOSED`): Initial recording of YUTE Foundation Doctrine 001.

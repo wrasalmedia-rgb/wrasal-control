@@ -34,7 +34,7 @@ Feature: YUTE OS Human-First Digital Identity Preservation & LUTA Governance Acc
     Given public discovery inspects "https://darronray.com/"
     When the source discovery record "SRC-001" is evaluated
     Then the subject is identified as "Darron-Ray Donaldson", a Jamaica-based Actor, Model, and Talent
-    And the official direct contact channel "darronrayd@gmail.com" is recorded
+    And the official direct contact channel "[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]" is recorded
     And subject verification_status is set to "UNVERIFIED_DISCOVERY_ONLY"
     And zero government identity documents or biometric face vectors are stored
 
@@ -112,7 +112,7 @@ Feature: YUTE OS Human-First Digital Identity Preservation & LUTA Governance Acc
   Scenario: Enforce canonical three-state LUTA visual rules and reject prohibited fantasy alterations
     Given character casting binding "CAST-BIND-UNDERTAKERS-LUTA-001" links "REP-YUTE-DARRON-v001" to "CHAR-UNDERTAKERS-LUTA"
     When candidate renders for "STATE_A_HUMAN", "STATE_B_UNDERTAKER", and "STATE_C_REVEALED_KING" are validated against "COSTUME-LUTA-CANON-v001"
-    Then "STATE_A_HUMAN" displays the approved unmasked human face with personal shoulder/arm tattoos masked
+    Then "STATE_A_HUMAN" displays the approved unmasked human face with personal body markings masked
     And "STATE_B_UNDERTAKER" completely conceals the human face beneath the elongated weathered birdlike mask with deep recessed eye openings
     And "STATE_C_REVEALED_KING" removes the birdlike mask to reveal the approved human face while preserving the dark botanical leaf-feather mantle, expansive grounded shoulder silhouette, charcoal woven neck scarf, antique bronze and oxidized silver beadwork, heavy black underlayers, and full-length cascading cloak
     And any candidate containing a crown, armor, or weapon fails validation immediately

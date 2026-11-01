@@ -57,7 +57,7 @@
 - **Vocation & Base:** Commercial actor, model, and dramatic screen talent based in Jamaica (`https://darronray.com/`).
 - **Published Credits (`darronray.com`):** Commercial/music collaborations with Stephen Marley, Shenseea, MasterCard, Digicel, and Jamaica National General Insurance; music videos for Sevana (*Justice*), Simalexia (*Love U Bad*), Stalk Ashley (*Young*), and Tommy Lee Sparta (*Monster*); short film *Spotlight Shorts JA: Absolute Power* (UNICEF Jamaica, `2021-12-11`).
 - **Corroborated External Screen Credits (`imdb.com` / `lightreelfilm.com`):** *Exit Wounds* (2023 drama short, Dir. Jamar Cleary, role: Noel), *Behind Closed Doors (A Jamaican Story 2021)* (2024 feature, Dir. Mark Anthony Dean, role: Dr. Omar), *From Yard - Sun to City* (TV mini-series, role: Trevor).
-- **Verified Contact Channel:** `darronrayd@gmail.com` (`SRC-001`) and Instagram `@darron_d` (`SRC-026`).
+- **Verified Contact Channel:** `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` (`SRC-001`) and Instagram `@darron_d` (`SRC-026`).
 
 ### 3.2 Current Rights & Consent Status (`2026-11-01`)
 - **Performer Likeness & Digital-Replica Consent:** **`NONE OBTAINED` (`PENDING_INITIAL_OUTREACH`).**
@@ -114,7 +114,7 @@ Full specification in `YUTE_MVP_ARCHITECTURE.md` (`v002`, governed by `concepts/
 | Phase | Milestone / Gate | Scope | Status (`2026-11-01`) |
 |---|---|---|---|
 | **Phase A** | **Discovery & Qualification (`WO-YUTE-LUTA-DARRON-001`)** | Read-only portfolio audit, visual study, rights matrix, Identity Lock & LUTA specs, Ruby/PG MVP architecture, Gherkin suite (`YUTE-T001`–`T004`). | **`COMPLETE`** *(S3/S5 human acceptance pending)* |
-| **Phase B** | **Human Legal Review & Talent Outreach (`Gate G1–G3`)** | Counsel review of Identity Passport terms (`YUTE-T005`), respectful human outreach to `darronrayd@gmail.com` (`YUTE-T006`), execution of Performer Passport (`YUTE-T007`) & capture/photographer clearance (`YUTE-T008`). | **`READY` (`YUTE-T005`) / `BLOCKED` (`YUTE-T007`–`T008`)** |
+| **Phase B** | **Human Legal Review & Talent Outreach (`Gate G1–G3`)** | Counsel review of Identity Passport terms (`YUTE-T005`), respectful human outreach to `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` (`YUTE-T006`), execution of Performer Passport (`YUTE-T007`) & capture/photographer clearance (`YUTE-T008`). | **`READY` (`YUTE-T005`) / `BLOCKED` (`YUTE-T007`–`T008`)** |
 | **Phase C** | **Clean-Room Governance Spine (`YUTE-PILOT-001A`)** | Provision `wrasalmedia-rgb/yute` Ruby 3.3 + PG 16 schema and governance modules tested purely on synthetic non-human fixtures (`YUTE-T009`–`T010`). | **`PROPOSED`** *(Contingent on repo-unfreeze decision)* |
 | **Phase D** | **Authorized Capture & Vault Preservation (`YUTE-PILOT-001B`)** | Commissioned 32-frame `MCPRS-v001` studio shoot + verified `BODY_LOCK` measurements (`YUTE-T011`); encrypted Vault ingestion & signed `YUTE-IDLOCK-DARRON-v001` (`YUTE-T012`). | **`BLOCKED` (`HOLD-RIGHTS-001`)** |
 | **Phase E** | **Controlled LUTA Still Consistency Proof (`YUTE-PILOT-002`)** | Track A isolated still-frame proof for LUTA States A, B, C (`YUTE-T013`), technical validation (`YUTE-T014`), mandatory Darron-Ray Donaldson ledger sign-off (`YUTE-T015`), and C2PA provenance packaging (`YUTE-T016`). | **`BLOCKED` (`HOLD-RIGHTS-001`)** |
@@ -216,10 +216,10 @@ All 16 tasks match `YUTE_TASK_BACKLOG.csv` verbatim and use strictly the permitt
 - **EVIDENCE_REQUIRED:** Signed human review decision record in `wrasal-control` `decisions/` or PR review approval
 
 ### `YUTE-T006` — Authorized Human Outreach to Darron-Ray Donaldson
-- **DESCRIPTION:** Initiate respectful, transparent human contact via `darronrayd@gmail.com` introducing WRASAL, *THE UNDERTAKERS* (`LUTA`), and the YUTE Identity Passport governance model; ascertain interest and legal/agency representation.
+- **DESCRIPTION:** Initiate respectful, transparent human contact via `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` introducing WRASAL, *THE UNDERTAKERS* (`LUTA`), and the YUTE Identity Passport governance model; ascertain interest and legal/agency representation.
 - **OWNER_ROLE:** WRASAL Producer / Talent Relations
 - **DEPENDENCIES:** `YUTE-T005`
-- **INPUTS:** Approved Outreach Brief; contact `darronrayd@gmail.com` from `SRC-001`
+- **INPUTS:** Approved Outreach Brief; contact `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` from `SRC-001`
 - **OUTPUTS:** Outreach Correspondence Log & Representation Confirmation
 - **ACCEPTANCE_CRITERIA:** Written response from Darron-Ray Donaldson (or designated representative) confirming receipt and willingness to enter rights/capture discussions; if declined, close work order cleanly.
 - **STATUS:** `PROPOSED`
@@ -381,7 +381,7 @@ All 16 tasks match `YUTE_TASK_BACKLOG.csv` verbatim and use strictly the permitt
 Summary of top program risks (complete 12-item analysis in `YUTE_RISK_REGISTER.md`):
 - **`RSK-002` (CRITICAL):** Ingesting third-party portfolio images without separate photographer copyright licenses → Mitigated by PostgreSQL `vault_requires_dual_clearance` constraint and prioritizing first-party studio shoot `MCPRS-v001`.
 - **`RSK-009` (CRITICAL):** Generative skin-lightening, pore-smoothing, or craniofacial homogenization on melanin-rich skin and Type-4 coils → Mitigated by `ACEScg` ColorChecker calibration, `@AC-07` material checks, and Performer rejection veto (`@AC-09`).
-- **`RSK-003` / `RSK-004` / `RSK-005` (HIGH):** Editorial white forehead/beard paint (`SRC-009`–`011`), co-subjects/watermarks (`SRC-002`, `SRC-016`), and personal shoulder/arm tattoos (`SRC-016`) contaminating human or LUTA renders → Mitigated by Vault contamination flags and `mask_personal_tattoos = TRUE`.
+- **`RSK-003` / `RSK-004` / `RSK-005` (HIGH):** Editorial white forehead/beard paint (`SRC-009`–`011`), co-subjects/watermarks (`SRC-002`, `SRC-016`), and personal body markings (`SRC-016`) contaminating human or LUTA renders → Mitigated by Vault contamination flags and `mask_personal_tattoos = TRUE`.
 - **`RSK-010` (HIGH):** Hallucinated crowns, armor, or weapons breaking LUTA Undertaker costume canon → Mitigated by `COSTUME-LUTA-CANON-v001` positive/negative locks (`@AC-08`).
 
 ---
@@ -423,4 +423,4 @@ All deliverables generated under `missions/WO-YUTE-LUTA-DARRON-001/`:
 ## 17. NEXT AUTHORIZED ACTION
 
 **Execute `YUTE-T005` (`READY`):**
-WRASAL Executive Producer and Entertainment/IP Legal Counsel review `YUTE_DARRON_RIGHTS_MATRIX.md` and `YUTE_GO_NO_GO_REPORT.md`, finalize the **YUTE Identity Passport™ Outreach Brief & Term Sheet**, and—upon written internal sign-off—authorize human talent outreach (`YUTE-T006`) to **Darron-Ray Donaldson** via `darronrayd@gmail.com`. **All dataset ingestion, biometric measurement, and likeness reconstruction activities remain strictly frozen under `HOLD-RIGHTS-001` until countersigned human authorizations are recorded.**
+WRASAL Executive Producer and Entertainment/IP Legal Counsel review `YUTE_DARRON_RIGHTS_MATRIX.md` and `YUTE_GO_NO_GO_REPORT.md`, finalize the **YUTE Identity Passport™ Outreach Brief & Term Sheet**, and—upon written internal sign-off—authorize human talent outreach (`YUTE-T006`) to **Darron-Ray Donaldson** via `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]`. **All dataset ingestion, biometric measurement, and likeness reconstruction activities remain strictly frozen under `HOLD-RIGHTS-001` until countersigned human authorizations are recorded.**

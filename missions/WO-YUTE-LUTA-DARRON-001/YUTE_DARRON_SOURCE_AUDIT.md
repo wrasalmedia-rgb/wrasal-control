@@ -23,7 +23,7 @@ On `2026-11-01`, the YUTE Digital Human Preservation Research Agent conducted a 
 - **Published Biographical Claims on `darronray.com`:** States that Darron-Ray Donaldson has several years of industry experience working with recording artists including **Stephen Marley** and **Shenseea**, and commercial brands including **MasterCard**, **Digicel**, and **Jamaica National General Insurance**.
 - **Corroborated Screen Credits (`[VERIFIED EVIDENCE]`):** Public filmography registries (`imdb.com`, `lightreelfilm.com`, `youtube.com/@UNICEFJamaica`) independently confirm dramatic acting credits including *Spotlight Shorts JA: Absolute Power* (UNICEF Jamaica, 2021), *Exit Wounds* (Dir. Jamar Cleary, 2023, role: Noel), *Behind Closed Doors (A Jamaican Story 2021)* (Dir. Mark Anthony Dean, 2024, role: Dr. Omar), and *From Yard - Sun to City* (role: Trevor).
 - **Official Contact Channels (`[VERIFIED EVIDENCE]`):**
-  - Direct Email: `darronrayd@gmail.com` (published on `https://darronray.com/` explicitly for creative project inquiries).
+  - Direct Email: `[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]` (published on `https://darronray.com/` explicitly for creative project inquiries).
   - Official Social Link: `https://www.instagram.com/darron_d/` (`@darron_d`).
   - Representation / Talent Agency: `UNKNOWN` (no talent agent or management company is listed on `darronray.com`; outreach begins via direct email to establish whether talent counsel or an agency represents him).
 
@@ -56,7 +56,7 @@ Every single photograph and video showcased on `darronray.com` involves **layere
 
 `darronray.com` organizes Darron-Ray Donaldson's visual portfolio into seven distinct sections:
 
-1. **Biography & Contact Header:** Professional summary, commercial/music client list (Stephen Marley, Shenseea, MasterCard, Digicel, Jamaica National General Insurance), direct email (`darronrayd@gmail.com`), and Instagram (`@darron_d`).
+1. **Biography & Contact Header:** Professional summary, commercial/music client list (Stephen Marley, Shenseea, MasterCard, Digicel, Jamaica National General Insurance), direct email (`[PUBLISHED_BOOKING_EMAIL_ON_SRC_001_REDACTED_FOR_PUBLIC_REPO]`), and Instagram (`@darron_d`).
 2. **Lexon Art (`www.lexonphotography.com` — Confirmed Live):** 3 editorial photographs (`Quarantine.jpg`, `Magnifi.jpg`, `perf-altered-web.jpg`) credited to Jamaican fine-art and portrait photographer **Adrian McDonald** (`@lexonstories` / `@lexonart`).
 3. **Vogue (`www.vogue.it` — PhotoVogue *"Bloom"*):** 3 editorial photographs (`image0.jpeg`, `VOGUE-ITALY-BLOOM-IG-SIZE..jpg`, `IMG_3906.jpg`) credited to photographer **Gerald Gordon** (rendered twice in responsive HTML markup; deduplicated to 3 unique assets `SRC-005`–`SRC-007` plus external link `SRC-008`).
 4. **Tribe Nine Studio (`www.tribeninestudios.co`):** 3 commercial lifestyle lookbook photographs (`Photo-from-Darron-Ray-Donaldson1.jpg`, `Photo-from-Darron-Ray-Donaldson.jpg`, `Photo-from-Darron-Ray-Donaldson2.jpg`, titled *Tribe Nine x Wharf 1–3*). Brand credited as **Tribe Nine Studios**; **individual photographer is uncredited (`UNKNOWN`)** on the portfolio page.
