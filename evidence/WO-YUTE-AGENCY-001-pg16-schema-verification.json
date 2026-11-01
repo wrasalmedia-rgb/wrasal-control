@@ -1,12 +1,12 @@
 {
-  "verification_id": "WO-YUTE-AGENCY-001-PG16-SCHEMA-VERIFICATION-002",
-  "classification": "YUTE-ARCH-GOV-002",
-  "verified_on": "2026-10-31",
+  "verification_id": "WO-YUTE-AGENCY-001-PG16-SCHEMA-VERIFICATION-003",
+  "classification": "YUTE-ARCH-GOV-003",
+  "verified_on": "2026-11-01",
   "engine": {
     "postgres_version": "PostgreSQL 16.4 on x86_64-pc-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
     "server_version": "16.4",
     "harness": "PostgreSQL 16.4 compiled WASM engine (@electric-sql/pglite@0.2.17 executed in isolated /tmp/pg-verify)",
-    "epistemic_scope_statement": "Verifies real PostgreSQL 16.4 DDL execution across migrations 001, 002, and 003 (YUTE x YIE Identity Authorization Contract v001), 18 composite foreign keys enforcing YUTE-AGENCY-INV-002 (TEST-06 & @YIE-NEG-03), 5-stage consent process constraints, @AC-16 superseded-spec blocking, admin-override prohibition, Founder/Builder parity, RLS activation, and PL/pgSQL immutability triggers. Does NOT claim Ruby 3.3 or YIE service runtime execution, multi-socket TCP lock contention, or external network adapter verification, which remain gated on human ratification of YUTE-ADR-0010 and YUTE-ADR-0011."
+    "epistemic_scope_statement": "Verifies real PostgreSQL 16.4 single-process DDL, PL/pgSQL functions/triggers, 18 composite foreign keys (YUTE-AGENCY-INV-002), deterministic Ed25519 signing preimage SHA-256 enforcement, atomic single-use envelope claim serialization & anti-replay (Finding B), live current-state authority re-evaluation at both pre-processing claim and receipt finalization boundaries (Finding C), observable worker-isolation telemetry rules (Finding D), and non-superuser NOBYPASSRLS service roles with FORCE ROW LEVEL SECURITY + subject-scoped policies (Section 04). Does NOT establish networked PostgreSQL server administration, multi-socket parallel worker lock contention, live Ruby 3.3 Yie::AuthorizationGate curve25519 signature verification math, or OS-level hardware RAM zeroization, all of which remain gated on human ratification of YUTE-ADR-0010 and YUTE-ADR-0011."
   },
   "migrations_executed": [
     {
@@ -25,116 +25,312 @@
       "status": "APPLIED"
     },
     {
-      "file": "missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql",
-      "sha256": "fce1ddb8de1eaf54c703e0d0437fac2144ae336edbc55e77b5b3391bf105f0ba",
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql",
+      "sha256": "ae6b9afabe06a6dfe3c562f43d0bc9001cd33c6a500146a4d87467118c1cd002",
+      "status": "APPLIED"
+    },
+    {
+      "file": "missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql",
+      "sha256": "3d485a15bf1e5d843cab57052de6f7f67475794964c0a35c9f19ec2c2cd8df0a",
       "status": "EXECUTED_AND_ROLLED_BACK"
     }
   ],
   "schema_catalog_summary": {
-    "public_table_count": 25,
-    "rls_enabled_table_count": 9,
+    "public_table_count": 26,
+    "rls_enabled_table_count": 16,
+    "force_rls_enabled_table_count": 16,
+    "service_role_count": 3,
+    "rls_policy_count": 16,
     "composite_foreign_key_count": 18,
-    "trigger_event_count": 14,
+    "trigger_event_count": 19,
+    "service_roles": [
+      {
+        "rolname": "yie_capability_service",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false
+      },
+      {
+        "rolname": "yute_auditor_readonly",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false
+      },
+      {
+        "rolname": "yute_firewall_service",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false
+      }
+    ],
+    "rls_policies": [
+      {
+        "tablename": "adulthood_transitions",
+        "policyname": "rls_yie_subject_scope_adulthood",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "consent_ledger_grants",
+        "policyname": "rls_yie_subject_scope_grants",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "digital_rights_records",
+        "policyname": "rls_yie_subject_scope_rights",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "firewall_capability_leases",
+        "policyname": "rls_yie_subject_scope_leases",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "human_subjects",
+        "policyname": "rls_yie_subject_scope_subjects",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "likeness_specifications",
+        "policyname": "rls_yie_subject_scope_specs",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "revocation_events",
+        "policyname": "rls_yie_subject_scope_rev_events",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "revocation_status_ledgers",
+        "policyname": "rls_yie_subject_scope_rev_ledgers",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "yie_authorization_envelopes",
+        "policyname": "rls_auditor_envelopes_read",
+        "cmd": "SELECT",
+        "roles": [
+          "yute_auditor_readonly"
+        ]
+      },
+      {
+        "tablename": "yie_authorization_envelopes",
+        "policyname": "rls_firewall_envelopes_all",
+        "cmd": "ALL",
+        "roles": [
+          "yute_firewall_service"
+        ]
+      },
+      {
+        "tablename": "yie_authorization_envelopes",
+        "policyname": "rls_yie_envelopes_claim_update",
+        "cmd": "UPDATE",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "yie_authorization_envelopes",
+        "policyname": "rls_yie_envelopes_select",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "yie_execution_receipts",
+        "policyname": "rls_auditor_receipts_read",
+        "cmd": "SELECT",
+        "roles": [
+          "yute_auditor_readonly"
+        ]
+      },
+      {
+        "tablename": "yie_execution_receipts",
+        "policyname": "rls_yie_receipts_insert",
+        "cmd": "INSERT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "yie_execution_receipts",
+        "policyname": "rls_yie_receipts_select",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service"
+        ]
+      },
+      {
+        "tablename": "yute_firewall_signing_keys",
+        "policyname": "rls_yie_keys_read",
+        "cmd": "SELECT",
+        "roles": [
+          "yie_capability_service",
+          "yute_auditor_readonly",
+          "yute_firewall_service"
+        ]
+      }
+    ],
     "tables": [
       {
         "table_name": "adulthood_transitions",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "agency_firewall_decisions",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "agreement_documents",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "approval_ledger_entries",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "authorization_ceremonies",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "character_casting_bindings",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "character_identities",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "clarity_disclosure_manifests",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "consent_ledger_grants",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "contract_shield_findings",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "costume_identities",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "digital_rights_records",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "firewall_capability_leases",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "human_subjects",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "identity_passports",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "legal_retention_holds",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "likeness_specifications",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "revocation_events",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "revocation_status_ledgers",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "source_assets",
-        "rls_enabled": false
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "subject_context_corrections",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "validation_runs",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "vault_access_audit_logs",
-        "rls_enabled": false
+        "rls_enabled": false,
+        "force_rls_enabled": false
       },
       {
         "table_name": "yie_authorization_envelopes",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
       },
       {
         "table_name": "yie_execution_receipts",
-        "rls_enabled": true
+        "rls_enabled": true,
+        "force_rls_enabled": true
+      },
+      {
+        "table_name": "yute_firewall_signing_keys",
+        "rls_enabled": true,
+        "force_rls_enabled": true
       }
     ],
     "composite_foreign_keys": [
@@ -282,6 +478,26 @@
       },
       {
         "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_envelope_authority_immutability",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_envelope_authority_immutability",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_envelope_key_and_preimage",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
+        "trigger_name": "trg_yie_envelope_key_and_preimage",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "yie_authorization_envelopes",
         "trigger_name": "trg_yie_likeness_spec_currency",
         "event_manipulation": "INSERT"
       },
@@ -299,6 +515,11 @@
         "table_name": "yie_execution_receipts",
         "trigger_name": "trg_immutable_yie_execution_receipts",
         "event_manipulation": "UPDATE"
+      },
+      {
+        "table_name": "yie_execution_receipts",
+        "trigger_name": "trg_yie_finalize_execution_receipt_gate",
+        "event_manipulation": "INSERT"
       }
     ]
   },
@@ -438,11 +659,91 @@
       "expected_state": "23514",
       "observed_state": "23514",
       "passed": true
+    },
+    {
+      "test_id": "18-AUTH-PROOF-10-AUTHORIZED-EXECUTION",
+      "invariant_ref": "YUTE-ARCH-GOV-003",
+      "description": "Valid signed fictional envelope is claimed once, verified live, and transitions to CONSUMED_SINGLE_USE",
+      "expected_state": "CONSUMED_SINGLE_USE",
+      "observed_state": "CONSUMED_SINGLE_USE",
+      "passed": true
+    },
+    {
+      "test_id": "19-FINDING-A-SIGNING-PREIMAGE-TAMPER",
+      "invariant_ref": "AUDIT-002-FINDING-A",
+      "description": "Reject envelope whose canonical_signing_payload_sha256 does not match deterministic preimage",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "20-FINDING-A-FORGED-SIG-BLOCKS-EXEC",
+      "invariant_ref": "AUDIT-002-FINDING-A",
+      "description": "Reject EXECUTED_EPHEMERAL_GOVERNED when signature_verification_status is FAILED_FORGED_SIGNATURE",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "21-FINDING-B-SINGLE-USE-REPLAY-BLOCK",
+      "invariant_ref": "AUDIT-002-FINDING-B",
+      "description": "Block second worker from claiming an already claimed/consumed single-use envelope",
+      "expected_state": "23505",
+      "observed_state": "23505",
+      "passed": true
+    },
+    {
+      "test_id": "22-FINDING-C-POST-ISSUE-SPEC-SUPERSEDED",
+      "invariant_ref": "AUDIT-002-FINDING-C",
+      "description": "Reject previously valid envelope when likeness spec becomes SUPERSEDED before execution",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "23-FINDING-C-FINALIZATION-REVOKED-GRANT",
+      "invariant_ref": "AUDIT-002-FINDING-C",
+      "description": "Reject receipt finalization when upstream grant was revoked after claim",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "24-FINDING-D-WORKER-ISOLATION-REQUIRED",
+      "invariant_ref": "AUDIT-002-FINDING-D",
+      "description": "Reject execution receipt when isolated one-shot worker termination is FALSE",
+      "expected_state": "23514",
+      "observed_state": "23514",
+      "passed": true
+    },
+    {
+      "test_id": "25-SEC04-YIE-ROLE-CANNOT-MINT-ENVELOPE",
+      "invariant_ref": "AUDIT-002-SEC-04",
+      "description": "Deny yie_capability_service DB role INSERT privilege on yie_authorization_envelopes",
+      "expected_state": "42501",
+      "observed_state": "42501",
+      "passed": true
+    },
+    {
+      "test_id": "26-SEC04-YIE-ROLE-ZERO-VAULT-ACCESS",
+      "invariant_ref": "AUDIT-002-SEC-04",
+      "description": "Deny yie_capability_service DB role SELECT privilege on YUTE Vault source_assets",
+      "expected_state": "42501",
+      "observed_state": "42501",
+      "passed": true
+    },
+    {
+      "test_id": "27-SEC04-YIE-RLS-SUBJECT-ISOLATION",
+      "invariant_ref": "AUDIT-002-SEC-04",
+      "description": "Enforce RLS subject isolation for yie_capability_service (0 cross-subject rows visible)",
+      "expected_state": "0_CROSS_3_OWN",
+      "observed_state": "0_CROSS_3_OWN",
+      "passed": true
     }
   ],
   "summary": {
-    "total_adversarial_checks": 17,
-    "passed": 17,
+    "total_adversarial_checks": 27,
+    "passed": 27,
     "failed": 0
   }
 }

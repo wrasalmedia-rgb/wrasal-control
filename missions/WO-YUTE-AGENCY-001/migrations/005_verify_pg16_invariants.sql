@@ -1,12 +1,16 @@
 -- =============================================================================
--- Verification Suite: 004_verify_pg16_invariants.sql
+-- Verification Suite: 005_verify_pg16_invariants.sql
 -- Program:            WRASAL(TM) | YUTE OS x YIE(TM)
--- Work Order:         WO-YUTE-AGENCY-001 (YUTE-PR8-REVIEW-001 + YUTE-ARCH-GOV-002)
+-- Milestone:          YUTE-OS-v003 | THE AUTHORITY PROOF (YUTE-ARCH-GOV-003)
 -- Target DB:          PostgreSQL 16+
--- Purpose:            Executes 17 adversarial SQL invariant checks across
---                     migrations 001, 002, and 003 (including @YIE-PROOF-001,
---                     @YIE-NEG-01..06, TEST-01..06, 5-stage consent, EGRESS-FENCE,
---                     and Founder/Builder protection parity). Rolls back cleanly.
+-- Purpose:            Executes 27 adversarial & positive authority-proof checks
+--                     across migrations 001..004, including:
+--                       * Checks 01..10: YUTE-PR8-REVIEW-001 (TEST-01..06, EGRESS-FENCE)
+--                       * Checks 11..17: YUTE-ARCH-GOV-002 (@YIE-PROOF-001, @YIE-NEG-01..06)
+--                       * Checks 18..27: YUTE-ARCH-GOV-003 (Audit 002 Findings A, B, C, D,
+--                         Section 04 Least-Privilege DB Roles + FORCE RLS Subject Isolation,
+--                         and Section 05 Authorized Fictional Execution + Replay/Revocation)
+--                     Rolls back cleanly after emitting verification table.
 -- =============================================================================
 
 BEGIN;
@@ -22,22 +26,38 @@ CREATE TEMP TABLE pg16_invariant_results (
 
 DO $$
 DECLARE
-  v_zuri_ceremony_id UUID;
-  v_nia_ceremony_id UUID;
-  v_founder_ceremony_id UUID;
+  v_zuri_ceremony_id     UUID;
+  v_nia_ceremony_id      UUID;
+  v_founder_ceremony_id  UUID;
   v_declined_ceremony_id UUID;
-  v_zuri_grant_id UUID;
-  v_nia_grant_id UUID;
-  v_founder_grant_id UUID;
-  v_allow_decision_id UUID;
+  v_zuri_grant_id        UUID;
+  v_nia_grant_id         UUID;
+  v_nia_grant_rev_id     UUID;
   v_nia_allow_decision_id UUID;
-  v_deny_decision_id UUID;
-  v_zuri_lease_id UUID;
-  v_nia_lease_id UUID;
-  v_nia_passport_id UUID;
-  v_revocation_id UUID;
-  v_sqlstate TEXT;
+  v_nia_allow_dec_2_id   UUID;
+  v_nia_allow_dec_3_id   UUID;
+  v_deny_decision_id     UUID;
+  v_nia_lease_id         UUID;
+  v_nia_lease_2_id       UUID;
+  v_nia_lease_3_id       UUID;
+  v_nia_passport_id      UUID;
+  v_revocation_id        UUID;
+  v_nia_revocation_id    UUID;
+  v_valid_env_id         UUID := '11111111-2222-4333-8444-555555555501';
+  v_supersede_env_id     UUID := '11111111-2222-4333-8444-555555555502';
+  v_revoke_env_id        UUID := '11111111-2222-4333-8444-555555555503';
+  v_test_env_id          UUID := '11111111-2222-4333-8444-555555555599';
+  v_preimage_sha         TEXT;
+  v_claim_token_1        UUID;
+  v_claim_token_rev      UUID;
+  v_visible_nia_rows     INTEGER;
+  v_visible_own_rows     INTEGER;
+  v_sqlstate             TEXT;
 BEGIN
+  -- Seed YUTE Firewall Ed25519 verify-only public key (Finding A)
+  INSERT INTO yute_firewall_signing_keys (signing_key_id, ed25519_public_key_hex, key_status)
+  VALUES ('YUTE-FW-ED25519-PRIMARY-001', repeat('9', 64), 'ACTIVE');
+
   -- Seed fictional subjects: Zuri Bennett, Nia Clarke, and Founder/Builder Steward
   INSERT INTO human_subjects (subject_id, legal_or_stage_name, jurisdiction_country, age_protection_class, is_builder_steward, status)
   VALUES
@@ -90,7 +110,7 @@ BEGIN
       'OWNED_BY_SUBJECT', 'AGR-FICT-FOUNDER-KEYNOTE-001', 'VERIFIED_EVIDENCE'
     );
 
-  -- Seed 5-stage ceremonies (PRESENTED -> ACKNOWLEDGED -> EXPLAINED -> DECIDED -> AUTHORIZED)
+  -- Seed 5-stage ceremonies
   INSERT INTO authorization_ceremonies (
     subject_id, agreement_id, canonical_text_sha256, guard_analysis_snapshot_sha256,
     verified_signer_actor_id, signer_authority_basis, signer_verification_method,
@@ -166,7 +186,7 @@ BEGIN
   );
 
   -- =========================================================================
-  -- CHECKS 02-04: TEST-06 / YUTE-AGENCY-INV-002 CROSS-SUBJECT & PURPOSE SPLICES
+  -- CHECKS 02-10: YUTE-PR8-REVIEW-001 INVARIANTS
   -- =========================================================================
   v_sqlstate := 'NO_ERROR';
   BEGIN
@@ -230,9 +250,6 @@ BEGIN
     '23503', v_sqlstate, v_sqlstate = '23503'
   );
 
-  -- =========================================================================
-  -- CHECKS 05-10: 5-STAGE CONSENT, NULL BYPASS, IMMUTABILITY, EGRESS, 4-AXIS, QUORUM
-  -- =========================================================================
   INSERT INTO authorization_ceremonies (
     subject_id, agreement_id, canonical_text_sha256, guard_analysis_snapshot_sha256,
     verified_signer_actor_id, signer_authority_basis, signer_verification_method,
@@ -301,7 +318,6 @@ BEGIN
     'P0001', v_sqlstate, v_sqlstate = 'P0001'
   );
 
-  -- Create valid ALLOW + Capability Lease for Nia's authorized production PROD-FICT-HARBOR-LIGHT
   INSERT INTO agency_firewall_decisions (
     subject_id, requested_rights_record_id, requested_by_actor, execution_boundary,
     requested_action, requested_target_scope, matched_grant_id, outcome, audit_receipt_sha256
@@ -320,7 +336,7 @@ BEGIN
     v_nia_allow_decision_id, v_nia_grant_id, 'SUBJ-FICT-NIA-CLARKE-001',
     'DRP-FICT-NIA-STILLS-001', 'VISUAL_LIKENESS_NAMED_PRODUCTION',
     'PROD-FICT-HARBOR-LIGHT', repeat('8', 64),
-    'ISSUED', '2026-11-01T12:00:45Z'
+    'ISSUED', '2026-11-01T12:00:55Z'
   ) RETURNING lease_id INTO v_nia_lease_id;
 
   v_sqlstate := 'NO_ERROR';
@@ -391,9 +407,6 @@ BEGIN
   -- =========================================================================
   -- CHECKS 11-17: YUTE x YIE IDENTITY AUTHORIZATION CONTRACT v001 (ADR-0011)
   -- =========================================================================
-
-  -- Check 11 (@YIE-PROOF-001): Engine is capable (engine_capability_ready=TRUE),
-  -- but request lacks envelope -> YIE cannot execute and MUST record REFUSED_FAIL_CLOSED!
   v_sqlstate := 'NO_ERROR';
   BEGIN
     INSERT INTO yie_execution_receipts (
@@ -411,7 +424,6 @@ BEGIN
     GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
   END;
 
-  -- Also verify the valid fail-closed refusal receipt persists cleanly with engine_capability_ready=TRUE!
   INSERT INTO yie_execution_receipts (
     subject_id, requested_rights_record_id, requested_yie_operation,
     requested_purpose_scope, invoked_by_actor, engine_capability_ready,
@@ -430,18 +442,27 @@ BEGIN
     '23514', v_sqlstate, v_sqlstate = '23514'
   );
 
-  -- Check 12 (@YIE-NEG-01): YIE attempts to self-authorize (issuer_authority = YIE_INTERNAL)
+  -- Check 12 (@YIE-NEG-01): YIE attempts to self-authorize
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_test_env_id, 'YIE_INTERNAL_SELF_AUTH', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', NULL,
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
   v_sqlstate := 'NO_ERROR';
   BEGIN
     INSERT INTO yie_authorization_envelopes (
-      issuer_authority, lease_id, decision_id, grant_id, subject_id, subject_age_class,
+      envelope_id, issuer_authority, signing_key_id, canonical_signing_payload_sha256,
+      lease_id, decision_id, grant_id, subject_id, subject_age_class,
       approved_rights_record_id, permitted_yute_action, requested_yie_operation,
       named_purpose_scope, firewall_ed25519_signature, issued_at, expires_at
     ) VALUES (
-      'YIE_INTERNAL_SELF_AUTH', v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+      v_test_env_id, 'YIE_INTERNAL_SELF_AUTH', 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
+      v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
       'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
       'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
-      'PROD-FICT-HARBOR-LIGHT', 'sig:forged', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+      'PROD-FICT-HARBOR-LIGHT', repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
     );
   EXCEPTION WHEN OTHERS THEN
     GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
@@ -453,17 +474,26 @@ BEGIN
   );
 
   -- Check 13 (@YIE-NEG-02): Envelope TTL exceeds 60 seconds
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_test_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', NULL,
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:05:00Z'
+  );
   v_sqlstate := 'NO_ERROR';
   BEGIN
     INSERT INTO yie_authorization_envelopes (
+      envelope_id, signing_key_id, canonical_signing_payload_sha256,
       lease_id, decision_id, grant_id, subject_id, subject_age_class,
       approved_rights_record_id, permitted_yute_action, requested_yie_operation,
       named_purpose_scope, firewall_ed25519_signature, issued_at, expires_at
     ) VALUES (
+      v_test_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
       v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
       'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
       'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
-      'PROD-FICT-HARBOR-LIGHT', 'sig:valid_fmt', '2026-11-01T12:00:00Z', '2026-11-01T12:05:00Z'
+      'PROD-FICT-HARBOR-LIGHT', repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:05:00Z'
     );
   EXCEPTION WHEN OTHERS THEN
     GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
@@ -474,18 +504,27 @@ BEGIN
     '23514', v_sqlstate, v_sqlstate = '23514'
   );
 
-  -- Check 14 (@YIE-NEG-03): Cross-subject YIE envelope splice (Nia lease -> Zuri subject/asset)
+  -- Check 14 (@YIE-NEG-03): Cross-subject YIE envelope splice
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_test_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-ZURI-BENNETT-001', 'DRP-FICT-ZURI-VOCAL-MASTER-001', NULL,
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
   v_sqlstate := 'NO_ERROR';
   BEGIN
     INSERT INTO yie_authorization_envelopes (
+      envelope_id, signing_key_id, canonical_signing_payload_sha256,
       lease_id, decision_id, grant_id, subject_id, subject_age_class,
       approved_rights_record_id, permitted_yute_action, requested_yie_operation,
       named_purpose_scope, firewall_ed25519_signature, issued_at, expires_at
     ) VALUES (
+      v_test_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
       v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
       'SUBJ-FICT-ZURI-BENNETT-001', 'ADULT_VERIFIED', 'DRP-FICT-ZURI-VOCAL-MASTER-001',
       'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
-      'PROD-FICT-HARBOR-LIGHT', 'sig:valid_fmt', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+      'PROD-FICT-HARBOR-LIGHT', repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
     );
   EXCEPTION WHEN OTHERS THEN
     GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
@@ -496,7 +535,7 @@ BEGIN
     '23503', v_sqlstate, v_sqlstate = '23503'
   );
 
-  -- Check 15 (@YIE-NEG-04 / @AC-16): Reject YIE envelope referencing a SUPERSEDED likeness_specification
+  -- Seed Nia passport + both SUPERSEDED and PERFORMER_APPROVED likeness specs
   INSERT INTO identity_passports (
     subject_id, subject_age_class_snapshot, consent_version, consent_status,
     revocation_procedure, human_approver_name, signed_document_sha256, valid_until
@@ -508,24 +547,34 @@ BEGIN
   INSERT INTO likeness_specifications (
     likeness_spec_id, subject_id, passport_id, spec_version,
     identity_lock_payload, expression_map_payload, manifest_sha256, status
-  ) VALUES (
-    'SPEC-FICT-NIA-OLD-v000', 'SUBJ-FICT-NIA-CLARKE-001', v_nia_passport_id, 'v000',
-    '{}'::jsonb, '{}'::jsonb, repeat('e', 64), 'SUPERSEDED'
-  );
+  ) VALUES
+    ('SPEC-FICT-NIA-OLD-v000',    'SUBJ-FICT-NIA-CLARKE-001', v_nia_passport_id, 'v000', '{}'::jsonb, '{}'::jsonb, repeat('e', 64), 'SUPERSEDED'),
+    ('SPEC-FICT-NIA-ACTIVE-v001', 'SUBJ-FICT-NIA-CLARKE-001', v_nia_passport_id, 'v001', '{}'::jsonb, '{}'::jsonb, repeat('1', 64), 'PERFORMER_APPROVED'),
+    ('SPEC-FICT-NIA-MUTABLE-v002','SUBJ-FICT-NIA-CLARKE-001', v_nia_passport_id, 'v002', '{}'::jsonb, '{}'::jsonb, repeat('2', 64), 'PERFORMER_APPROVED');
 
+  -- Check 15 (@YIE-NEG-04 / @AC-16): Reject YIE envelope referencing a SUPERSEDED likeness_specification at issuance
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_test_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', 'SPEC-FICT-NIA-OLD-v000',
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
   v_sqlstate := 'NO_ERROR';
   BEGIN
     INSERT INTO yie_authorization_envelopes (
+      envelope_id, signing_key_id, canonical_signing_payload_sha256,
       lease_id, decision_id, grant_id, subject_id, subject_age_class,
       approved_rights_record_id, active_likeness_spec_id, permitted_yute_action,
       requested_yie_operation, named_purpose_scope, firewall_ed25519_signature,
       issued_at, expires_at
     ) VALUES (
+      v_test_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
       v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
       'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
       'SPEC-FICT-NIA-OLD-v000', 'VISUAL_LIKENESS_NAMED_PRODUCTION',
       'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION', 'PROD-FICT-HARBOR-LIGHT',
-      'sig:valid_fmt', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+      repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
     );
   EXCEPTION WHEN OTHERS THEN
     GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
@@ -579,6 +628,380 @@ BEGIN
     '17-YIE-NEG-06-FOUNDER-LIKENESS-PARITY', 'SECTION-05-BUILDER',
     'Enforce identical fail-closed YIE protection on Founder/Builder own AI likeness',
     '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- =========================================================================
+  -- CHECKS 18-27: YUTE-ARCH-GOV-003 (AUDIT 002 AUTHORITY PROOF HARDENING)
+  -- =========================================================================
+
+  -- Check 18 (@AUTH-PROOF-10): Valid signed fictional envelope claimed atomically & executed once
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_valid_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', 'SPEC-FICT-NIA-ACTIVE-v001',
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  INSERT INTO yie_authorization_envelopes (
+    envelope_id, signing_key_id, canonical_signing_payload_sha256,
+    lease_id, decision_id, grant_id, subject_id, subject_age_class,
+    approved_rights_record_id, active_likeness_spec_id, permitted_yute_action,
+    requested_yie_operation, named_purpose_scope, firewall_ed25519_signature,
+    issued_at, expires_at
+  ) VALUES (
+    v_valid_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
+    v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
+    'SPEC-FICT-NIA-ACTIVE-v001', 'VISUAL_LIKENESS_NAMED_PRODUCTION',
+    'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION', 'PROD-FICT-HARBOR-LIGHT',
+    repeat('b', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  v_claim_token_1 := yie_claim_single_use_envelope(
+    v_valid_env_id, 'yie-worker-ephemeral-01', '2026-11-01T12:00:10Z'
+  );
+
+  INSERT INTO yie_execution_receipts (
+    subject_id, requested_rights_record_id, requested_yie_operation,
+    requested_purpose_scope, invoked_by_actor, engine_capability_ready,
+    envelope_id, consumed_claim_token, signature_verification_status,
+    verified_signing_key_id, execution_outcome, identity_bytes_decrypted,
+    generated_frames_emitted, worker_isolation_mode, buffer_disposal_method,
+    isolated_worker_terminated, receipt_sha256, recorded_at
+  ) VALUES (
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+    'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION', 'PROD-FICT-HARBOR-LIGHT',
+    'actor:harbor_light_vfx', TRUE,
+    v_valid_env_id, v_claim_token_1, 'VERIFIED_ED25519_OK',
+    'YUTE-FW-ED25519-PRIMARY-001', 'EXECUTED_EPHEMERAL_GOVERNED', 4096,
+    1, 'ONE_SHOT_SUBPROCESS_ISOLATED', 'SODIUM_MEMZERO_BEST_EFFORT_PLUS_PROCESS_EXIT',
+    TRUE, repeat('0', 64), '2026-11-01T12:00:12Z'
+  );
+
+  INSERT INTO pg16_invariant_results VALUES (
+    '18-AUTH-PROOF-10-AUTHORIZED-EXECUTION', 'YUTE-ARCH-GOV-003',
+    'Valid signed fictional envelope is claimed once, verified live, and transitions to CONSUMED_SINGLE_USE',
+    'CONSUMED_SINGLE_USE',
+    (SELECT envelope_status FROM yie_authorization_envelopes WHERE envelope_id = v_valid_env_id),
+    (SELECT envelope_status = 'CONSUMED_SINGLE_USE' FROM yie_authorization_envelopes WHERE envelope_id = v_valid_env_id)
+  );
+
+  -- Check 19 (Finding A): Tampered signing preimage digest or non-64-byte signature fails closed
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    INSERT INTO yie_authorization_envelopes (
+      envelope_id, signing_key_id, canonical_signing_payload_sha256,
+      lease_id, decision_id, grant_id, subject_id, subject_age_class,
+      approved_rights_record_id, permitted_yute_action, requested_yie_operation,
+      named_purpose_scope, firewall_ed25519_signature, issued_at, expires_at
+    ) VALUES (
+      v_test_env_id, 'YUTE-FW-ED25519-PRIMARY-001', repeat('0', 64),
+      v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+      'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
+      'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+      'PROD-FICT-HARBOR-LIGHT', repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '19-FINDING-A-SIGNING-PREIMAGE-TAMPER', 'AUDIT-002-FINDING-A',
+    'Reject envelope whose canonical_signing_payload_sha256 does not match deterministic preimage',
+    '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- Check 20 (Finding A / @AUTH-PROOF-03): Forged signature status cannot execute
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    INSERT INTO yie_execution_receipts (
+      subject_id, requested_rights_record_id, requested_yie_operation,
+      requested_purpose_scope, invoked_by_actor, engine_capability_ready,
+      envelope_id, consumed_claim_token, signature_verification_status,
+      verified_signing_key_id, execution_outcome, identity_bytes_decrypted,
+      generated_frames_emitted, worker_isolation_mode, buffer_disposal_method,
+      isolated_worker_terminated, receipt_sha256
+    ) VALUES (
+      'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+      'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION', 'PROD-FICT-HARBOR-LIGHT',
+      'actor:forged_caller', TRUE,
+      v_valid_env_id, gen_random_uuid(), 'FAILED_FORGED_SIGNATURE',
+      'YUTE-FW-ED25519-PRIMARY-001', 'EXECUTED_EPHEMERAL_GOVERNED', 512,
+      1, 'ONE_SHOT_SUBPROCESS_ISOLATED', 'SODIUM_MEMZERO_BEST_EFFORT_PLUS_PROCESS_EXIT',
+      TRUE, repeat('d', 64)
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '20-FINDING-A-FORGED-SIG-BLOCKS-EXEC', 'AUDIT-002-FINDING-A',
+    'Reject EXECUTED_EPHEMERAL_GOVERNED when signature_verification_status is FAILED_FORGED_SIGNATURE',
+    '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- Check 21 (Finding B / @AUTH-PROOF-05): Atomic single-use claim blocks second worker / replay
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    PERFORM yie_claim_single_use_envelope(
+      v_valid_env_id, 'yie-worker-concurrent-02', '2026-11-01T12:00:15Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '21-FINDING-B-SINGLE-USE-REPLAY-BLOCK', 'AUDIT-002-FINDING-B',
+    'Block second worker from claiming an already claimed/consumed single-use envelope',
+    '23505', v_sqlstate, v_sqlstate = '23505'
+  );
+
+  -- Check 22 (Finding C / @AUTH-PROOF-07): Envelope issued while spec PERFORMER_APPROVED,
+  -- then spec transitions to SUPERSEDED before claim -> rejected at live execution gate!
+  INSERT INTO agency_firewall_decisions (
+    subject_id, requested_rights_record_id, requested_by_actor, execution_boundary,
+    requested_action, requested_target_scope, matched_grant_id, outcome, audit_receipt_sha256
+  ) VALUES (
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+    'actor:harbor_light_vfx', 'RENDER_ADAPTER',
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'PROD-FICT-HARBOR-LIGHT',
+    v_nia_grant_id, 'ALLOW', md5('dec2') || md5('dec2b')
+  ) RETURNING decision_id INTO v_nia_allow_dec_2_id;
+
+  INSERT INTO firewall_capability_leases (
+    decision_id, grant_id, subject_id, target_rights_record_id,
+    permitted_action, named_target_scope, lease_token_sha256,
+    lease_state, expires_at
+  ) VALUES (
+    v_nia_allow_dec_2_id, v_nia_grant_id, 'SUBJ-FICT-NIA-CLARKE-001',
+    'DRP-FICT-NIA-STILLS-001', 'VISUAL_LIKENESS_NAMED_PRODUCTION',
+    'PROD-FICT-HARBOR-LIGHT', md5('lease2') || md5('lease2b'),
+    'ISSUED', '2026-11-01T12:00:55Z'
+  ) RETURNING lease_id INTO v_nia_lease_2_id;
+
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_supersede_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_2_id, v_nia_allow_dec_2_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', 'SPEC-FICT-NIA-MUTABLE-v002',
+    'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+    'PROD-FICT-HARBOR-LIGHT', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  INSERT INTO yie_authorization_envelopes (
+    envelope_id, signing_key_id, canonical_signing_payload_sha256,
+    lease_id, decision_id, grant_id, subject_id, subject_age_class,
+    approved_rights_record_id, active_likeness_spec_id, permitted_yute_action,
+    requested_yie_operation, named_purpose_scope, firewall_ed25519_signature,
+    issued_at, expires_at
+  ) VALUES (
+    v_supersede_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
+    v_nia_lease_2_id, v_nia_allow_dec_2_id, v_nia_grant_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
+    'SPEC-FICT-NIA-MUTABLE-v002', 'VISUAL_LIKENESS_NAMED_PRODUCTION',
+    'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION', 'PROD-FICT-HARBOR-LIGHT',
+    repeat('c', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  -- Post-issuance mutation: performer supersedes SPEC-FICT-NIA-MUTABLE-v002!
+  UPDATE likeness_specifications
+  SET status = 'SUPERSEDED'
+  WHERE likeness_spec_id = 'SPEC-FICT-NIA-MUTABLE-v002';
+
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    PERFORM yie_claim_single_use_envelope(
+      v_supersede_env_id, 'yie-worker-03', '2026-11-01T12:00:20Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '22-FINDING-C-POST-ISSUE-SPEC-SUPERSEDED', 'AUDIT-002-FINDING-C',
+    'Reject previously valid envelope when likeness spec becomes SUPERSEDED before execution',
+    '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- Check 23 (Finding C / @AUTH-PROOF-08): Envelope claimed while grant ACTIVE, then grant
+  -- is REVOKED mid-flight -> receipt finalization boundary rejects commit fail-closed!
+  INSERT INTO consent_ledger_grants (
+    subject_id, agreement_id, ceremony_id, scoped_rights_record_id,
+    subject_age_class, permitted_action, named_target_scope, authorized_territory,
+    contractual_scope_json, voice_cloning_permitted, valid_from, valid_until
+  ) VALUES (
+    'SUBJ-FICT-NIA-CLARKE-001', 'AGR-FICT-HARBOR-LIGHT-001', v_nia_ceremony_id,
+    'DRP-FICT-NIA-STILLS-001', 'ADULT_VERIFIED',
+    'PHOTO_CAMPAIGN_DISPLAY', 'CAMPAIGN-HARBOR-POSTER', 'WORLDWIDE',
+    '{"poster_only": true}'::jsonb, FALSE,
+    '2026-11-01T00:00:00Z', '2028-11-01T00:00:00Z'
+  ) RETURNING grant_id INTO v_nia_grant_rev_id;
+
+  INSERT INTO agency_firewall_decisions (
+    subject_id, requested_rights_record_id, requested_by_actor, execution_boundary,
+    requested_action, requested_target_scope, matched_grant_id, outcome, audit_receipt_sha256
+  ) VALUES (
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+    'actor:harbor_light_vfx', 'RENDER_ADAPTER',
+    'PHOTO_CAMPAIGN_DISPLAY', 'CAMPAIGN-HARBOR-POSTER',
+    v_nia_grant_rev_id, 'ALLOW', md5('dec3') || md5('dec3b')
+  ) RETURNING decision_id INTO v_nia_allow_dec_3_id;
+
+  INSERT INTO firewall_capability_leases (
+    decision_id, grant_id, subject_id, target_rights_record_id,
+    permitted_action, named_target_scope, lease_token_sha256,
+    lease_state, expires_at
+  ) VALUES (
+    v_nia_allow_dec_3_id, v_nia_grant_rev_id, 'SUBJ-FICT-NIA-CLARKE-001',
+    'DRP-FICT-NIA-STILLS-001', 'PHOTO_CAMPAIGN_DISPLAY',
+    'CAMPAIGN-HARBOR-POSTER', md5('lease3') || md5('lease3b'),
+    'ISSUED', '2026-11-01T12:00:55Z'
+  ) RETURNING lease_id INTO v_nia_lease_3_id;
+
+  v_preimage_sha := yute_canonical_envelope_signing_sha256(
+    v_revoke_env_id, 'YUTE_OS_AGENCY_FIREWALL', 'YUTE-FW-ED25519-PRIMARY-001',
+    v_nia_lease_3_id, v_nia_allow_dec_3_id, v_nia_grant_rev_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001', 'SPEC-FICT-NIA-ACTIVE-v001',
+    'PHOTO_CAMPAIGN_DISPLAY', 'YIE_PACKAGE_CLARITY_PROVENANCE',
+    'CAMPAIGN-HARBOR-POSTER', '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  INSERT INTO yie_authorization_envelopes (
+    envelope_id, signing_key_id, canonical_signing_payload_sha256,
+    lease_id, decision_id, grant_id, subject_id, subject_age_class,
+    approved_rights_record_id, active_likeness_spec_id, permitted_yute_action,
+    requested_yie_operation, named_purpose_scope, firewall_ed25519_signature,
+    issued_at, expires_at
+  ) VALUES (
+    v_revoke_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
+    v_nia_lease_3_id, v_nia_allow_dec_3_id, v_nia_grant_rev_id,
+    'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
+    'SPEC-FICT-NIA-ACTIVE-v001', 'PHOTO_CAMPAIGN_DISPLAY',
+    'YIE_PACKAGE_CLARITY_PROVENANCE', 'CAMPAIGN-HARBOR-POSTER',
+    repeat('d', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+  );
+
+  -- Claim succeeds at T=10s while grant is still ACTIVE:
+  v_claim_token_rev := yie_claim_single_use_envelope(
+    v_revoke_env_id, 'yie-worker-04', '2026-11-01T12:00:10Z'
+  );
+
+  -- At T=18s, Nia revokes the grant BEFORE worker finalizes execution receipt!
+  UPDATE consent_ledger_grants SET grant_status = 'REVOKED' WHERE grant_id = v_nia_grant_rev_id;
+
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    INSERT INTO yie_execution_receipts (
+      subject_id, requested_rights_record_id, requested_yie_operation,
+      requested_purpose_scope, invoked_by_actor, engine_capability_ready,
+      envelope_id, consumed_claim_token, signature_verification_status,
+      verified_signing_key_id, execution_outcome, identity_bytes_decrypted,
+      generated_frames_emitted, worker_isolation_mode, buffer_disposal_method,
+      isolated_worker_terminated, receipt_sha256, recorded_at
+    ) VALUES (
+      'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+      'YIE_PACKAGE_CLARITY_PROVENANCE', 'CAMPAIGN-HARBOR-POSTER',
+      'actor:harbor_light_vfx', TRUE,
+      v_revoke_env_id, v_claim_token_rev, 'VERIFIED_ED25519_OK',
+      'YUTE-FW-ED25519-PRIMARY-001', 'EXECUTED_EPHEMERAL_GOVERNED', 1024,
+      1, 'ONE_SHOT_SUBPROCESS_ISOLATED', 'SODIUM_MEMZERO_BEST_EFFORT_PLUS_PROCESS_EXIT',
+      TRUE, md5('rec_rev') || md5('rec_rev_b'), '2026-11-01T12:00:20Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '23-FINDING-C-FINALIZATION-REVOKED-GRANT', 'AUDIT-002-FINDING-C',
+    'Reject receipt finalization when upstream grant was revoked after claim',
+    '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- Check 24 (Finding D): Reject execution receipt lacking isolated one-shot worker termination
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    INSERT INTO yie_execution_receipts (
+      subject_id, requested_rights_record_id, requested_yie_operation,
+      requested_purpose_scope, invoked_by_actor, engine_capability_ready,
+      envelope_id, consumed_claim_token, signature_verification_status,
+      verified_signing_key_id, execution_outcome, identity_bytes_decrypted,
+      generated_frames_emitted, worker_isolation_mode, buffer_disposal_method,
+      isolated_worker_terminated, receipt_sha256, recorded_at
+    ) VALUES (
+      'SUBJ-FICT-NIA-CLARKE-001', 'DRP-FICT-NIA-STILLS-001',
+      'YIE_PACKAGE_CLARITY_PROVENANCE', 'CAMPAIGN-HARBOR-POSTER',
+      'actor:harbor_light_vfx', TRUE,
+      v_revoke_env_id, v_claim_token_rev, 'VERIFIED_ED25519_OK',
+      'YUTE-FW-ED25519-PRIMARY-001', 'EXECUTED_EPHEMERAL_GOVERNED', 1024,
+      1, 'ONE_SHOT_SUBPROCESS_ISOLATED', 'SODIUM_MEMZERO_BEST_EFFORT_PLUS_PROCESS_EXIT',
+      FALSE, md5('rec_iso') || md5('rec_iso_b'), '2026-11-01T12:00:20Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  INSERT INTO pg16_invariant_results VALUES (
+    '24-FINDING-D-WORKER-ISOLATION-REQUIRED', 'AUDIT-002-FINDING-D',
+    'Reject execution receipt when isolated one-shot worker termination is FALSE',
+    '23514', v_sqlstate, v_sqlstate = '23514'
+  );
+
+  -- Check 25 (Section 04 DB Role ACL): yie_capability_service CANNOT INSERT envelopes (42501)
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    SET LOCAL ROLE yie_capability_service;
+    INSERT INTO yie_authorization_envelopes (
+      envelope_id, signing_key_id, canonical_signing_payload_sha256,
+      lease_id, decision_id, grant_id, subject_id, subject_age_class,
+      approved_rights_record_id, permitted_yute_action, requested_yie_operation,
+      named_purpose_scope, firewall_ed25519_signature, issued_at, expires_at
+    ) VALUES (
+      v_test_env_id, 'YUTE-FW-ED25519-PRIMARY-001', v_preimage_sha,
+      v_nia_lease_id, v_nia_allow_decision_id, v_nia_grant_id,
+      'SUBJ-FICT-NIA-CLARKE-001', 'ADULT_VERIFIED', 'DRP-FICT-NIA-STILLS-001',
+      'VISUAL_LIKENESS_NAMED_PRODUCTION', 'YIE_SYNTHESIZE_GOVERNED_REPRESENTATION',
+      'PROD-FICT-HARBOR-LIGHT', repeat('a', 128), '2026-11-01T12:00:00Z', '2026-11-01T12:00:45Z'
+    );
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  RESET ROLE;
+  INSERT INTO pg16_invariant_results VALUES (
+    '25-SEC04-YIE-ROLE-CANNOT-MINT-ENVELOPE', 'AUDIT-002-SEC-04',
+    'Deny yie_capability_service DB role INSERT privilege on yie_authorization_envelopes',
+    '42501', v_sqlstate, v_sqlstate = '42501'
+  );
+
+  -- Check 26 (Section 04 DB Role Vault Fence): yie_capability_service has ZERO access to source_assets
+  v_sqlstate := 'NO_ERROR';
+  BEGIN
+    SET LOCAL ROLE yie_capability_service;
+    PERFORM count(*) FROM source_assets;
+  EXCEPTION WHEN OTHERS THEN
+    GET STACKED DIAGNOSTICS v_sqlstate = RETURNED_SQLSTATE;
+  END;
+  RESET ROLE;
+  INSERT INTO pg16_invariant_results VALUES (
+    '26-SEC04-YIE-ROLE-ZERO-VAULT-ACCESS', 'AUDIT-002-SEC-04',
+    'Deny yie_capability_service DB role SELECT privilege on YUTE Vault source_assets',
+    '42501', v_sqlstate, v_sqlstate = '42501'
+  );
+
+  -- Check 27 (Section 04 RLS Subject Isolation): yie_capability_service bound to Zuri sees 0 Nia rows
+  PERFORM set_config('app.current_subject_id', 'SUBJ-FICT-ZURI-BENNETT-001', true);
+  SET LOCAL ROLE yie_capability_service;
+  SELECT count(*) INTO v_visible_nia_rows
+  FROM yie_authorization_envelopes
+  WHERE subject_id = 'SUBJ-FICT-NIA-CLARKE-001';
+  RESET ROLE;
+
+  PERFORM set_config('app.current_subject_id', 'SUBJ-FICT-NIA-CLARKE-001', true);
+  SET LOCAL ROLE yie_capability_service;
+  SELECT count(*) INTO v_visible_own_rows
+  FROM yie_authorization_envelopes
+  WHERE subject_id = 'SUBJ-FICT-NIA-CLARKE-001';
+  RESET ROLE;
+
+  INSERT INTO pg16_invariant_results VALUES (
+    '27-SEC04-YIE-RLS-SUBJECT-ISOLATION', 'AUDIT-002-SEC-04',
+    'Enforce RLS subject isolation for yie_capability_service (0 cross-subject rows visible)',
+    '0_CROSS_3_OWN',
+    v_visible_nia_rows::text || '_CROSS_' || v_visible_own_rows::text || '_OWN',
+    (v_visible_nia_rows = 0 AND v_visible_own_rows = 3)
   );
 END;
 $$;

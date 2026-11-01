@@ -176,10 +176,35 @@ Feature: YUTE Guard, Five-Stage Consent Process, Cross-Subject Integrity & Agenc
   # ============================================================================
   # YIE-NEG-05..07: ADMIN-OVERRIDE BAN, FOUNDER PARITY & SINGLE-USE REPLAY BLOCK
   # ============================================================================
-  @YIE-NEG-05 @YIE-NEG-06 @YIE-NEG-07 @founder-builder-parity @no-admin-bypass
+  @YIE-NEG-05 @YIE-NEG-06 @YIE-NEG-07 @AUTH-PROOF-09 @founder-builder-parity @no-admin-bypass
   Scenario: Enforce admin-override prohibition, identical safeguards for Founder/Builder likenesses, and single-use envelope non-replay
     Given fictional founder/builder steward "SUBJ-FICT-FOUNDER-STEWARD-001" ("is_builder_steward = TRUE") holds scoped keynote likeness spec "SPEC-FOUNDER-KEYNOTE-v001"
     When a privileged platform administrator ("admin_override_attempted = TRUE") requests unauthorized likeness generation for either "SUBJ-FICT-ZURI-BENNETT-001" or "SUBJ-FICT-FOUNDER-STEWARD-001"
     Then "YIE" refuses both requests identically with "ADMIN_PRIVILEGE_CANNOT_AUTHORIZE_LIKENESS" and SQLSTATE "23514"
     And replaying an already-consumed "YieAuthorizationEnvelope" fails single-use nonce consumption with "ENVELOPE_REPLAY_DETECTED"
+
+  # ============================================================================
+  # YUTE-OS-v003 | THE AUTHORITY PROOF (AUDIT 002 / YUTE-ARCH-GOV-003)
+  # ============================================================================
+  @AUTH-PROOF-01 @AUTH-PROOF-02 @AUTH-PROOF-03 @AUTH-PROOF-10 @YUTE-ARCH-GOV-003 @ed25519-signature
+  Scenario: Verify authentic Ed25519 signature for authorized fictional execution while rejecting missing or forged signatures before vault access
+    Given "Yute::AgencyFirewall" holds the Ed25519 signing private key for "YUTE-FW-ED25519-PRIMARY-001" and "Yie::AuthorizationGate" holds only its 32-byte public verification key
+    When a structurally complete "YieAuthorizationEnvelope" for "SUBJ-FICT-NIA-CLARKE-001" arrives with a 1-bit mutated forged signature
+    Then "Yie::AuthorizationGate" rejects the forged signature with "FAILED_FORGED_SIGNATURE" before calling "yie_claim_single_use_envelope" and decrypts "0" bytes
+    And a validly signed fictional envelope for "PROD-FICT-HARBOR-LIGHT" executes within an isolated one-shot worker ("isolated_worker_terminated = TRUE") and emits artifacts "01_contract_analysis.json" through "07_authorization_consumption_receipt.json"
+
+  @AUTH-PROOF-04 @AUTH-PROOF-05 @AUTH-PROOF-07 @AUTH-PROOF-08 @YUTE-ARCH-GOV-003 @concurrency-and-live-state
+  Scenario: Enforce atomic single-use envelope consumption across concurrent workers and block post-issuance superseded specs or revoked grants
+    Given a valid signed "YieAuthorizationEnvelope" has been minted for "SUBJ-FICT-NIA-CLARKE-001"
+    When two concurrent "YIE" workers submit the same "envelope_id" simultaneously at a barrier
+    Then exactly one worker acquires "yie_claim_single_use_envelope" while the second worker fails with SQLSTATE "23505" ("YIE_SINGLE_USE_REPLAY_DETECTED")
+    And if the referenced likeness specification becomes "SUPERSEDED" or the upstream grant becomes "REVOKED" after issuance, "yie_assert_live_authority_currency" rejects execution and finalization with SQLSTATE "23514"
+
+  @AUTH-PROOF-06 @SEC-04-DB-ROLES @YUTE-ARCH-GOV-003 @least-privilege-rls
+  Scenario: Restrict yie_capability_service database role from minting envelopes, reading raw vault assets, or viewing cross-subject rows under FORCE RLS
+    Given PostgreSQL session role is set to non-superuser "NOBYPASSRLS" credential "yie_capability_service" with "app.current_subject_id = SUBJ-FICT-ZURI-BENNETT-001"
+    When "yie_capability_service" attempts to "INSERT" into "yie_authorization_envelopes" or "SELECT" from "source_assets"
+    Then PostgreSQL denies both operations with SQLSTATE "42501" ("insufficient_privilege")
+    And querying "yie_authorization_envelopes" returns "0" rows belonging to "SUBJ-FICT-NIA-CLARKE-001" under "FORCE ROW LEVEL SECURITY"
+
 

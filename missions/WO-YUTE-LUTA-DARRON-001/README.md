@@ -17,7 +17,7 @@
 
 | # | File | Phase / Role | SHA-256 Digest |
 |---|---|---|---|
-| 0 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | Foundation Doctrine 001 (v002.2) | `7b0b56654300e25ca67feccd88527b647936a6b166302553069853cc2d86aff8` |
+| 0 | `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` | Foundation Doctrine 001 (v002.2) | `940916f11ba2df819f270baa666a22cd0de0faf8db8b237aaf83be957b6f96e7` |
 | 1 | `YUTE_DARRON_MASTER_WORK_ORDER.md` | Phase 09 (v002 — Data-Minimized) | `6d2505e5d159556936cd720e2d96707fc6fdaf0c84534a895e12c0d1ac539186` |
 | 2 | `YUTE_DARRON_SOURCE_MANIFEST.csv` | Phase 01 (v001 — Data-Minimized) | `22e77d66e51ab10db8ac8df2d1450c7c0970621714eca519a43d0a8611676a45` |
 | 3 | `YUTE_DARRON_VISUAL_IDENTITY_STUDY.md` | Phase 02 (v001 — Data-Minimized) | `941f886c74d723fec4e2083fa0759839be004ba8060fc9f4ec0bfd6c58fa752f` |

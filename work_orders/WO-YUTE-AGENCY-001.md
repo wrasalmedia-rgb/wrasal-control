@@ -2,45 +2,45 @@
 
 WORK_ORDER_ID: WO-YUTE-AGENCY-001
 
-MILESTONE: YUTE-OS-v003 | AGENCY FIREWALL PROOF + YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001 (under YUTE-ADR-0010 & YUTE-ADR-0011)
+MILESTONE: YUTE-OS-v003 | THE AUTHORITY PROOF (under YUTE-ADR-0010, YUTE-ADR-0011 & YUTE-ARCH-GOV-003)
 
 PRIORITY: P0
 
-VERSION: v001.3
+VERSION: v001.4
 
 CREATED_ON: 2026-10-31
 
-STATUS: YUTE-ARCH-GOV-002 RECONCILED & PG 16.4 MIGRATIONS (001..004, 17/17 CHECKS) VERIFIED ON DRAFT PR #8 / AWAITING HUMAN RATIFICATION OF YUTE-ADR-0010 & YUTE-ADR-0011 (canonical_acceptance: pending)
+STATUS: SPECIFICATION VERIFIED IN PART — PG 16.4 WASM ENGINE MIGRATIONS (001..005, 27/27 CHECKS) VERIFIED ON DRAFT PR #8 / AWAITING HUMAN RATIFICATION OF YUTE-ADR-0010 & YUTE-ADR-0011 FOR NETWORKED PG 16 & RUBY 3.3 RUNTIME (canonical_acceptance: pending; production: NO GO)
 
 PROJECT: yute (YUTE — Know Before You Agree. Control What You Authorize. Preserve The Evidence.)
 
-OBJECTIVE: Reconcile WRASAL / YUTE OS / YIY (Proposed) / YIE governance boundaries under YUTE-ADR-0011, specify YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001 (including Founder/Builder protection symmetry, admin-override prohibition, and @YIE-PROOF-001 showing a capable image engine refuses unauthorized identity generation), and verify standalone PostgreSQL 16 migrations (001..004) across 17 adversarial SQLSTATE invariants on PostgreSQL 16.4 while preserving HOLD-RIGHTS-001 and public-repo privacy minimization.
+OBJECTIVE: Remediate Mission Control Engineering Audit 002 (YUTE-ARCH-GOV-003) across Findings A..D and Section 04 by adding migration 004_yute_authority_proof_hardening.sql (Ed25519 verify-only key registry & deterministic signing preimage SHA-256, row-locking atomic single-use envelope claim, live current-state authority re-evaluation at both pre-processing claim and receipt finalization boundaries, observable one-shot isolated worker disposal telemetry without overclaiming RAM erasure, and non-superuser NOBYPASSRLS service roles with FORCE ROW LEVEL SECURITY), verifying 27/27 SQLSTATE & RLS invariants on PostgreSQL 16.4, and specifying YUTE-OS-v003 | THE AUTHORITY PROOF (10 outcomes + 7 inspectable receipts) while preserving HOLD-RIGHTS-001 and human ratification gates.
 
-SUCCESS_CONDITION: decisions/YUTE-ADR-0010.md, decisions/YUTE-ADR-0011.md, YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md, standalone PostgreSQL 16 migrations 001..004 (17/17 PG 16.4 invariants PASS), and evidence/WO-YUTE-AGENCY-001-validation.json pass all 567 control-plane checks with zero unauthorized media in the diff, and Draft PR #8 remains open in Draft mode on wrasalmedia-rgb/wrasal-control for independent human audit.
+SUCCESS_CONDITION: decisions/YUTE-ADR-0010.md, decisions/YUTE-ADR-0011.md, YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md (v001.1), standalone PostgreSQL 16 migrations 001..005 (27/27 PG 16.4 checks PASS), and evidence/WO-YUTE-AGENCY-001-validation.json pass all 567 control-plane checks with zero unauthorized media in the diff, and Draft PR #8 remains open in Draft mode on wrasalmedia-rgb/wrasal-control for independent human audit.
 
 AUTHORITATIVE_INPUTS:
 - decisions/YUTE-ADR-0010.md (Controlled Advancement to Agency Runtime Verification)
 - decisions/YUTE-ADR-0011.md (YIY/YIE Identity Services Integration With YUTE Human Agency Governance)
-- concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002.3)
+- concepts/YUTE-FOUNDATION-DOCTRINE-001.md (v002.4)
 - projects.yml
 - work_orders/status-vocabulary.json
 
 DEPENDENCIES:
-- AGY-T003: Human audit of GitHub Draft PR #8 diff and signature ratification of YUTE-ADR-0010 and YUTE-ADR-0011 before provisioning private repository wrasalmedia-rgb/yute (READY)
-- Independent of WO-YUTE-LUTA-DARRON-001 (remains strictly frozen under HOLD-RIGHTS-001; real performer data and synthetic human reconstruction are NO GO)
+- AGY-T003: Human audit of GitHub Draft PR #8 diff and signature ratification of YUTE-ADR-0010 and YUTE-ADR-0011 before provisioning private repository wrasalmedia-rgb/yute (READY — no human approval implied by Audit 002)
+- Independent of WO-YUTE-LUTA-DARRON-001 (remains strictly frozen under HOLD-RIGHTS-001; real performer data, commercial deployment, and public launch are BLOCKED / NO GO)
 
 CURRENT_TASK: AGY-T003 — Human Ratification of YUTE-ADR-0010, YUTE-ADR-0011 & Draft PR #8 Review
 
 ACCEPTANCE:
-- missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql (17/17 PG 16.4 SQLSTATE invariants PASS, incl. @YIE-PROOF-001 & @YIE-NEG-01..06)
-- missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md (YIE-AUTH-ENV-v001, non-self-authorization, <=60s TTL, Founder/Builder parity)
-- missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature (@YUTE-OS-v003-PROOF, @YIE-PROOF-001, @YIE-NEG-01..@YIE-NEG-07, @TEST-01..@TEST-06)
+- missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql (27/27 PG 16.4 SQLSTATE & RLS checks PASS across migrations 001..004)
+- missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md (v001.1 — Findings A..D, Section 04 DB Roles, & 7-artifact Authority Proof)
+- missions/WO-YUTE-AGENCY-001/YUTE_AGENCY_ACCEPTANCE_TESTS.feature (@AUTH-PROOF-01..@AUTH-PROOF-10, @YIE-PROOF-001, @YIE-NEG-01..07, @TEST-01..06)
 - Control-plane validation: npm test PASS (567/567 checks)
 
 DECISIONS:
-- YUTE-ADR-0011 recorded: YIE supplies identity-processing capabilities while YUTE governs whether they may be used; YIE cannot self-authorize; YIY/YIE corporate relationship remains Proposed and distinct from verified legal formation.
-- Founder & Builder Inclusion enforced: administrative privilege never confers permission to access, reproduce, or commercialize another person's likeness; the founder's and builders' own authorized AI likenesses receive identical fail-closed safeguards.
-- YUTE-AGENCY-INV-002 enforced via 18 composite foreign keys across migrations 001..003 (incl. 7-column lease-to-envelope FK fk_yie_envelope_lease_scope); @YIE-PROOF-001 verified on PostgreSQL 16.4 (engine_capability_ready=TRUE + missing envelope -> 23514 / 0 bytes decrypted / 0 frames emitted).
+- Audit 002 Finding A separated cleanly: PostgreSQL 16 enforces deterministic signing preimage SHA-256, 64-byte hex structure, active signing-key status, and fail-closed receipt verification status, while elliptic-curve Ed25519 signature verification math is explicitly tracked as a Ruby 3.3 Yie::AuthorizationGate runtime obligation (@AUTH-PROOF-03).
+- Audit 002 Findings B & C enforced in 004_yute_authority_proof_hardening.sql: yie_claim_single_use_envelope() acquires FOR UPDATE row lock and blocks replay (23505), while yie_assert_live_authority_currency() re-evaluates live upstream spec/grant/subject/asset/lease/key currency at both pre-processing claim and receipt finalization boundaries (23514).
+- Audit 002 Finding D & Section 04 enforced: replaced overbroad memory-erasure assumptions with one-shot isolated subprocess/microVM termination telemetry (PROCESS_ISOLATION_TELEMETRY_ONLY_NOT_RAM_PROOF), and restricted yie_capability_service via NOBYPASSRLS, FORCE ROW LEVEL SECURITY, 0 source_assets privileges, and 0 envelope INSERT privileges (42501).
 
 EVIDENCE:
 - decisions/YUTE-ADR-0010.md
@@ -52,7 +52,8 @@ EVIDENCE:
 - missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql
 - missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql
 - missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql
-- missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql
+- missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql
+- missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql
 - missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md
 - missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md
 - missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md

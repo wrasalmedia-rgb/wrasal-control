@@ -2,13 +2,13 @@
 
 Registry ID: YUTE-FOUNDATION-DOCTRINE-001
 
-Version: v002.3 (1.3.0 — YUTE-ARCH-GOV-002 Governance Reconciliation)
+Version: v002.4 (1.4.0 — YUTE-ARCH-GOV-003 Authority Proof & Audit 002 Reconciliation)
 
 Creation Date: 2026-10-31
 
 Lifecycle status: PROPOSED / DRAFT PR #8 UNDER REVIEW
 
-Mission Control Classification: YUTE-ARCH-GOV-002 — DOCTRINE, FIREWALL & YIE CONTRACT SPECIFIED; PG 16.4 DDL VERIFIED; RUBY/YIE RUNTIME ASSURANCE NOT VERIFIED (S5 PENDING)
+Mission Control Classification: YUTE-ARCH-GOV-003 — SPECIFICATION VERIFIED IN PART (PG 16.4 WASM ENGINE 27/27 PASS; NETWORKED PG 16 & RUBY/YIE SERVICE RUNTIME NOT VERIFIED; S5 PENDING; PRODUCTION: NO GO)
 
 Parent Ecosystem: WRASAL™
 
@@ -201,7 +201,8 @@ Per `decisions/YUTE-ADR-0010.md`, **Tier 1 Limited Engineering Authorization** (
   - `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
   - `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
   - `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql`
-  - `missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql`
+  - `missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql`
+  - `missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql`
   - `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_AGENCY_FOUNDATION_v001.md`
   - `missions/WO-YUTE-AGENCY-001/YUTE_OS_v003_FIREWALL_PROOF_SPEC.md`
@@ -224,8 +225,12 @@ Extending (never replacing) *The Child We Were. The Human We Become.*, `YUTE-ARC
 > **YUTE protects the person's authority. YIE preserves the person's authorized representation. YIY provides the proposed technology ecosystem. WRASAL governs integration across its creative systems.**
 > **THE HUMAN DEFINES THE REPRESENTATION. THE REPRESENTATION NEVER DEFINES THE HUMAN.**
 
+> **WRASAL™ | YUTE CONSTITUTION:**
+> **THE HUMAN IS THE AUTHORITY. THE CONTRACT DEFINES THE PERMISSION. YUTE VERIFIES THE AUTHORIZATION. YIE EXECUTES ONLY WHAT IS PERMITTED. MY AGENCY IS NON-NEGOTIABLE.**
+
 ## Changelog
 
+- `v002.4 / 1.4.0` (`2026-11-01`, `PROPOSED`): Incorporated `YUTE-ARCH-GOV-003` (`Engineering Audit 002`)—added `WRASAL™ | YUTE CONSTITUTION`, `004_yute_authority_proof_hardening.sql` + `005_verify_pg16_invariants.sql` (`27/27` PG 16.4 WASM-engine checks PASS across deterministic Ed25519 signing preimages, atomic single-use claims, live current-state checks, one-shot isolated worker disposal telemetry, non-superuser `NOBYPASSRLS` DB roles, and `FORCE ROW LEVEL SECURITY`), and defined `YUTE-OS-v003 | THE AUTHORITY PROOF` (`7` artifacts).
 - `v002.3 / 1.3.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-ARCH-GOV-002` Governance Reconciliation—reconciled `WRASAL™` / `YUTE OS™` / `YIY™` (proposed) / `YIE™` hierarchy, 7-rule Constitutional Inheritance, Founder/Admin symmetry, Foundational Law, `decisions/YUTE-ADR-0011.md`, and `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001` (`003_yute_yie_authorization_contract.sql`, `17/17` PG 16.4 invariants PASS).
 - `v002.2 / 1.2.0` (`2026-10-31`, `PROPOSED`): Incorporated `YUTE-PR8-REVIEW-001` (`Engineering Audit 001`)—added `YUTE-AGENCY-INV-002` (forbidding cross-subject/asset/purpose transfer by DB association), 5-stage Consent Process Model (`PRESENTED → ACKNOWLEDGED → EXPLAINED → DECIDED → AUTHORIZED`), `EGRESS-FENCE-v001` Point of Irrevocable Egress, standalone `.sql` migrations verified against `PostgreSQL 16.4`, `TEST-06`, and public-repo privacy minimization (`YUTE-PRIVACY-AUDIT-001`).
 - `v002.1 / 1.1.1` (`2026-10-31`, `PROPOSED`): Incorporated Mission Control Engineering Authorization Assessment (`YUTE-ADR-0010`)—reconciled Oct 20 `Frozen / Concept` portfolio baseline via Tier 1 vs. Tier 2 split; anchored Product Zero on `YUTE GUARD™` (*Know Before You Agree*); enforced Forensic Refinements `3.A` (hash != consent) and `3.B` (4-axis revocation != universal erasure); aligned `v003` on `AGENCY FIREWALL PROOF` + Five Adversarial Runtime Tests.

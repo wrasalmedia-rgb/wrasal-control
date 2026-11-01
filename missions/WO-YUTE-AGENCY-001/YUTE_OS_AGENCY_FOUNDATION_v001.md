@@ -2,13 +2,13 @@
 
 - **Document ID:** `YUTE_OS_AGENCY_FOUNDATION_v001`
 - **Work Order:** `WO-YUTE-AGENCY-001` (*YUTE Guard™ + Agency Firewall + Evidence Vault*)
-- **Governance Disposition:** `decisions/YUTE-ADR-0010.md`, `decisions/YUTE-ADR-0011.md`, & `YUTE-ARCH-GOV-002` (*Conditional Approval — Fictional-Data Engineering Only; Human Ratification Required; `YIY™`/`YIE™` Proposed*)
+- **Governance Disposition:** `decisions/YUTE-ADR-0010.md`, `decisions/YUTE-ADR-0011.md`, & `YUTE-ARCH-GOV-003` (*Conditional Engineering Go, Not Production Approval — Human Ratification Required; `YIY™`/`YIE™` Proposed*)
 - **Priority:** `P0` *(Controlled Exception to Oct 20 Portfolio Freeze — Independent of `WO-YUTE-LUTA-DARRON-001` / `HOLD-RIGHTS-001`)*
-- **Constitutional Authority:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002.3`)
-- **Spec Revision:** `v001.3` (`2026-10-31` — Incorporates `YUTE-ARCH-GOV-002`: `YUTE × YIE | IDENTITY AUTHORIZATION CONTRACT v001`, `YUTE-ADR-0011`, Founder/Builder Inclusion, Standalone PG 16.4 Migrations `001`..`004`, `YUTE-AGENCY-INV-002` `18` Composite FKs, `EGRESS-FENCE-v001`, & 5-Stage Consent Process Evidence)
-- **Standalone Executable Migrations:** `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`, `002_yute_agency_foundation.sql`, `003_yute_yie_authorization_contract.sql`, `004_verify_pg16_invariants.sql`
-- **Schema Verification Evidence:** `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` (`PostgreSQL 16.4` — `17/17` adversarial SQL invariants PASS)
-- **Runtime Classification:** `PG 16.4 DDL & CONSTRAINTS VERIFIED (17/17); RUBY 3.3 & YIE SERVICE ASSURANCE NOT VERIFIED (PENDING YUTE-ADR-0010 & YUTE-ADR-0011 RATIFICATION).`
+- **Constitutional Authority:** `concepts/YUTE-FOUNDATION-DOCTRINE-001.md` (`v002.4`)
+- **Spec Revision:** `v001.4` (`2026-11-01` — Incorporates `YUTE-ARCH-GOV-003` / Engineering Audit 002: `YUTE-OS-v003 | THE AUTHORITY PROOF`, Ed25519 Preimage & Key Registry, Atomic Single-Use Claim, Live Current-State Authority Gate, One-Shot Isolated Worker Disposal Telemetry, Non-Superuser DB Roles + `FORCE RLS`, Standalone PG 16.4 Migrations `001`..`005`)
+- **Standalone Executable Migrations:** `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`, `002_yute_agency_foundation.sql`, `003_yute_yie_authorization_contract.sql`, `004_yute_authority_proof_hardening.sql`, `005_verify_pg16_invariants.sql`
+- **Schema Verification Evidence:** `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` (`PostgreSQL 16.4` WASM engine — `27/27` adversarial SQL & RLS invariants PASS)
+- **Runtime Classification:** `SPECIFICATION VERIFIED IN PART — PG 16.4 DDL, TRIGGERS & ROLE/RLS GATES VERIFIED (27/27); NETWORKED PG 16 CONCURRENCY & RUBY 3.3 / YIE ED25519 SERVICE ASSURANCE NOT VERIFIED (PENDING YUTE-ADR-0010 & YUTE-ADR-0011 RATIFICATION; PRODUCTION: NO GO).`
 - **Canonical Acceptance:** `pending`
 
 > **YUTE™**
@@ -29,8 +29,8 @@ To prevent governance complexity from obscuring human utility, YUTE's product id
 
 ## 2. Constitutional Invariants & `YUTE-PR8-REVIEW-001` Forensic Resolutions
 
-### 2.1 Resolution of P0 Finding 01 & `YUTE × YIE` Boundary — Standalone Executable PostgreSQL 16 Migrations
-All DDL is extracted as standalone, ordered `.sql` files in `missions/WO-YUTE-AGENCY-001/migrations/` (`001_yute_mvp_core.sql`, `002_yute_agency_foundation.sql`, `003_yute_yie_authorization_contract.sql`, and adversarial test script `004_verify_pg16_invariants.sql`) using native `pg_catalog.gen_random_uuid()` (eliminating unnecessary superuser extension friction). Executed against real **`PostgreSQL 16.4`** (`evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`), verifying `25` tables, `18` composite foreign keys, `14` immutability/validation triggers, `9` RLS-enabled agency/YIE tables, and `17/17` SQLSTATE constraint rejections (including `@YIE-PROOF-001` and `@YIE-NEG-01`..`@YIE-NEG-06`).
+### 2.1 Resolution of P0 Finding 01 & Audit 002 (`YUTE-ARCH-GOV-003`) — Standalone Executable PostgreSQL 16 Migrations
+All DDL is extracted as standalone, ordered `.sql` files in `missions/WO-YUTE-AGENCY-001/migrations/` (`001_yute_mvp_core.sql`, `002_yute_agency_foundation.sql`, `003_yute_yie_authorization_contract.sql`, `004_yute_authority_proof_hardening.sql`, and adversarial test script `005_verify_pg16_invariants.sql`) using native `pg_catalog.gen_random_uuid()` and `pg_catalog.sha256()`. Executed against real **`PostgreSQL 16.4`** (`evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json`), verifying `26` tables, `18` composite foreign keys, `19` immutability/live-currency triggers, `16` `FORCE ROW LEVEL SECURITY` tables, `16` RLS policies, `3` non-superuser `NOBYPASSRLS` service roles, and `27/27` SQLSTATE & RLS assertions.
 
 ### 2.2 Resolution of P0 Finding 02 — `YUTE-AGENCY-INV-002` Cross-Record & Cross-Subject Integrity (`TEST-06`)
 > **`YUTE-AGENCY-INV-002`:** **`NO AUTHORIZATION MAY BE TRANSFERRED BETWEEN HUMAN SUBJECTS, ASSETS, OR PURPOSES THROUGH DATABASE ASSOCIATION ALONE.`**
@@ -74,12 +74,13 @@ Recorded in `missions/WO-YUTE-AGENCY-001/YUTE_PRIVACY_MINIMIZATION_AUDIT_001.md`
 
 ---
 
-## 3. Executable Migration Reference (`migrations/001`..`004`)
+## 3. Executable Migration Reference (`migrations/001`..`005`)
 
 The authoritative standalone SQL files reside at:
 - `missions/WO-YUTE-AGENCY-001/migrations/001_yute_mvp_core.sql`
 - `missions/WO-YUTE-AGENCY-001/migrations/002_yute_agency_foundation.sql`
 - `missions/WO-YUTE-AGENCY-001/migrations/003_yute_yie_authorization_contract.sql`
-- `missions/WO-YUTE-AGENCY-001/migrations/004_verify_pg16_invariants.sql`
+- `missions/WO-YUTE-AGENCY-001/migrations/004_yute_authority_proof_hardening.sql`
+- `missions/WO-YUTE-AGENCY-001/migrations/005_verify_pg16_invariants.sql`
 
-*(See `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md` and `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` for the complete `17/17` verified DDL invariants.)*
+*(See `missions/WO-YUTE-AGENCY-001/YUTE_YIE_IDENTITY_AUTHORIZATION_CONTRACT_v001.md` and `evidence/WO-YUTE-AGENCY-001-pg16-schema-verification.json` for the complete `27/27` verified DDL, live-currency, and DB-role/RLS invariants.)*
