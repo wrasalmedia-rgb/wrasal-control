@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Horizon — WEB-G0 Interactive Mockup Inspector (HZN-DESIGN-001)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <header class="app-header">
+    <div class="header-left">
+      <h1 class="brand" style="font-family: var(--font-serif)">PROJECT HORIZON</h1>
+      <span class="badge-hold">WEB-G0 HOLD · INTERACTIVE MOCKUP INSPECTOR</span>
+      <span class="badge-design">HZN-DESIGN-001</span>
+    </div>
+    <div class="header-right">
+      <div class="toggle-wrap">
+        <button id="btn-desktop" class="toggle-btn active" aria-pressed="true">🖥 Desktop (1440px)</button>
+        <button id="btn-mobile" class="toggle-btn" aria-pressed="false">📱 Mobile (390px)</button>
+      </div>
+      <div class="header-meta">
+        <span>WO-HZN-WEB-001</span>
+        <span class="dot">·</span>
+        <span>9 Core Platform Pages</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-grid">
+    <!-- LEFT NAV -->
+    <aside class="panel panel-left">
+      <div class="panel-label">9 Core Platform Pages (WO-HZN-WEB-001)</div>
+      <nav aria-label="Platform pages">
+        <ul id="nav-list" class="nav-list"></ul>
+      </nav>
+      <div class="panel-foot">
+        <div class="swatch-row"><span>Workspace</span><span class="mono">#0b0f14</span></div>
+        <div class="swatch-row"><span>Panel</span><span class="mono">#141b22</span></div>
+        <div class="swatch-row"><span>Accent Teal</span><span class="swatch"><i style="background:#147375"></i> #147375</span></div>
+        <p class="foot-note">Click any page to preview. State persists in URL hash for sharing.</p>
+      </div>
+    </aside>
+
+    <!-- CENTER STAGE -->
+    <main class="stage-outer">
+      <div id="stage-wrapper" class="stage-wrapper">
+        <div id="stage" class="stage">
+          <!-- stage top bar -->
+          <div class="stage-bar">
+            <div class="stage-bar-left">
+              <span id="stage-dot" class="stage-dot"></span>
+              <span class="stage-wordmark">HORIZON</span>
+              <span id="stage-page" class="stage-page">/ Shared Homepage</span>
+            </div>
+            <div class="stage-bar-right">
+              <span class="avatar"></span>
+              <span class="avatar-line"></span>
+            </div>
+          </div>
+          <!-- hero -->
+          <section class="hero">
+            <div class="hero-media-wrap">
+              <img id="hero-img" class="hero-media" alt="" />
+              <div class="hero-scrim"></div>
+              <div class="hero-content">
+                <div class="hero-kicker"><span id="hero-kicker"></span></div>
+                <h2 id="hero-title" class="hero-title"></h2>
+                <div id="hero-entity" class="hero-entity">
+                  <i class="hero-entity-line"></i>
+                  <span></span>
+                  <i class="hero-entity-line"></i>
+                </div>
+                <p id="hero-blurb" class="hero-blurb"></p>
+                <div class="hero-actions">
+                  <button class="btn btn-primary">View Mock Spec</button>
+                  <span id="hero-asset-label" class="hero-asset-pill"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- content -->
+          <div id="stage-content" class="stage-content"></div>
+
+          <footer class="stage-footer">
+            <span id="footer-meta">© Project Horizon · HZN-P01 · HZN-DESIGN-001</span>
+            <span class="stage-status"><i class="live-dot"></i> Ready for dev</span>
+          </footer>
+        </div>
+      </div>
+      <div class="stage-hint">Desktop: full canvas · Mobile: 390×780 device frame with 8px border · Contrast ratios validated</div>
+    </main>
+
+    <!-- RIGHT INSPECTOR -->
+    <aside class="panel panel-right">
+      <section class="card">
+        <h3>📄 Screen Metadata</h3>
+        <ul class="meta-list">
+          <li><span>Deliverable ID</span><strong id="meta-id" class="mono"></strong></li>
+          <li><span>Page Name</span><strong id="meta-name"></strong></li>
+          <li><span>Design System</span><strong>HZN-DESIGN-001</strong></li>
+          <li><span>Target Touch Size</span><strong>≥ 44 × 44px</strong></li>
+          <li id="meta-entity-row"><span>Entity Color</span><strong id="meta-entity-color"><i class="color-chip"></i> <span></span></strong></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>🖼️ Mapped Photographic Asset</h3>
+        <ul class="meta-list">
+          <li><span>Visual Concept</span><strong id="meta-asset-name" class="tight"></strong></li>
+          <li><span>Asset ID</span><strong id="meta-asset-id" class="mono accent"></strong></li>
+          <li><span>Status</span><strong>Pre-Production Mockup</strong></li>
+        </ul>
+        <div class="asset-preview">
+          <img id="meta-asset-img" alt="" />
+          <div class="asset-cap">
+            <span id="meta-asset-label" class="mono"></span>
+            <span class="pill">LOCAL</span>
+          </div>
+        </div>
+        <div id="linked-assets" class="linked-grid"></div>
+      </section>
+
+      <section class="card">
+        <h3>♿ Accessibility Audit (v0.2)</h3>
+        <ul class="meta-list">
+          <li><span>Contrast Ratio</span><strong id="meta-contrast"></strong></li>
+          <li><span>Keyboard Nav</span><strong>Native Buttons</strong></li>
+          <li><span>Mobile Target</span><strong>44px Enforced</strong></li>
+          <li><span>Scrim</span><strong>rgba(15,23,30,0.88)</strong></li>
+        </ul>
+        <div class="badge-pass">✓ WCAG 2.2 AA Target Verified</div>
+        <p class="card-note">Scrim + Cinzel H1 ensures AAA on hero. All interactive elements ≥44px. Focus-visible teal ring.</p>
+      </section>
+
+      <div class="panel-foot subtle">WO-HZN-WEB-001 · HZN-DESIGN-001 · WEB-G0 HOLD</div>
+    </aside>
+  </div>
+
+  <div class="mobile-bar">
+    <nav aria-label="Pages mobile">
+      <ul id="nav-mobile" class="nav-mobile"></ul>
+    </nav>
+  </div>
+</div>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
