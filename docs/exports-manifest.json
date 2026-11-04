@@ -1,0 +1,106 @@
+{
+  "viewport": "1440x900",
+  "deviceScaleFactor": 2,
+  "frames": [
+    {
+      "frame": 1,
+      "pageRef": "HZN-P01",
+      "page": "Home",
+      "viewport": "1440x900",
+      "alias": "image_8.png",
+      "asset": "IMG-HERO-01.webp",
+      "scrim": "rgba(15,23,30,0.88)",
+      "color": "Dual",
+      "objective": "Validate dual-entity landing gate & entity selection"
+    },
+    {
+      "frame": 2,
+      "pageRef": "HZN-P02",
+      "page": "About",
+      "viewport": "1440x900",
+      "alias": "image_9.png",
+      "asset": "IMG-ABT-01.webp",
+      "scrim": "rgba(15,23,30,0.85)",
+      "color": "Hybrid",
+      "objective": "Present governance, 501(c)(3) status & corporate separation"
+    },
+    {
+      "frame": 3,
+      "pageRef": "HZN-P03",
+      "page": "Non-Profit",
+      "viewport": "1440x900",
+      "alias": "image_6.png",
+      "asset": "IMG-NP-HERO.webp",
+      "scrim": "#0A4D4E Deep Teal",
+      "color": "Deep Teal",
+      "objective": "Feature community housing, reentry support & learning atrium"
+    },
+    {
+      "frame": 4,
+      "pageRef": "HZN-P04",
+      "page": "Clinical",
+      "viewport": "1440x900",
+      "alias": "image_5.png",
+      "asset": "IMG-FP-HERO.webp",
+      "scrim": "#8C4A27 Warm Copper",
+      "color": "Warm Copper",
+      "objective": "Highlight outpatient clinical suites, therapy & health services"
+    },
+    {
+      "frame": 5,
+      "pageRef": "HZN-P05",
+      "page": "Programs",
+      "viewport": "1440x900",
+      "alias": "image_6.png",
+      "asset": "IMG-DIR-CAT01.webp",
+      "scrim": "Neutral / Structured Grid",
+      "color": "Neutral",
+      "objective": "Full 7-program cross-entity directory preview"
+    },
+    {
+      "frame": 6,
+      "pageRef": "HZN-P06",
+      "page": "Leadership",
+      "viewport": "1440x900",
+      "alias": "image_3.png",
+      "asset": "IMG-LEAD-01.webp",
+      "scrim": "rgba(15,23,30,0.85)",
+      "color": "Dark",
+      "objective": "Executive directory layout & board governance slots"
+    },
+    {
+      "frame": 7,
+      "pageRef": "HZN-P07",
+      "page": "Careers",
+      "viewport": "1440x900",
+      "alias": "image_7.png",
+      "asset": "IMG-CAR-01.webp",
+      "scrim": "Dual Entity Accent",
+      "color": "Dual Accent",
+      "objective": "Present recruitment workflow & sample vacancy templates"
+    },
+    {
+      "frame": 8,
+      "pageRef": "HZN-P08",
+      "page": "Contact",
+      "viewport": "1440x900",
+      "alias": "Dynamic Form",
+      "asset": "IMG-ABT-01.webp (fallback)",
+      "scrim": "Non-Profit / For-Profit Radio",
+      "color": "Teal/Copper chips",
+      "objective": "General routing form with PHI privacy notices"
+    },
+    {
+      "frame": 9,
+      "pageRef": "HZN-P09",
+      "page": "Privacy",
+      "viewport": "1440x900",
+      "alias": "Text-focused",
+      "asset": "IMG-HERO-01.webp (desaturated)",
+      "scrim": "Standard Neutral Slate",
+      "color": "Slate #3b4a5a",
+      "objective": "Website data-handling & regulatory compliance baseline"
+    }
+  ],
+  "exportNote": "All 1440px, @2x 2880px PNG via fullPage capture, scrim verified WCAG AAA/AA"
+}
