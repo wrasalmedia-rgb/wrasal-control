@@ -1,4 +1,15 @@
 :root{--plaster:#faf7f2;--plaster-2:#f2ede6;--ink:#0F171E;--ink-soft:#4b5e6b;--stone:#8b9bb0;--line:#e8ecef;--teal:#0A4D4E;--teal-wash:#e6f3f2;--copper:#8C4A27;--copper-wash:#fdf0e8;--scrim:rgba(15,23,30,0.88);--safe-area-inset-top: env(safe-area-inset-top,0px)}
+.wrasal-preview-banner{background:#0F171E;color:#fff;border-bottom:3px solid #E6A57E;padding:14px 24px;text-align:center;position:sticky;top:0;z-index:60}
+.wrasal-preview-banner .banner-inner{max-width:1440px;margin:0 auto}
+.wrasal-preview-banner .banner-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#7DD4C8;line-height:1.4}
+.wrasal-preview-banner .banner-title{font-family:"Cinzel",Georgia,serif;font-size:15px;font-weight:600;letter-spacing:.02em;margin:6px 0;color:#fff;line-height:1.3}
+.wrasal-preview-banner p{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.75);max-width:760px;margin:6px auto 0}
+.concept-note{font-size:11px;color:var(--stone);font-style:italic;line-height:1.5}
+.concept-disclaimer{background:#fffbeb;border:1px solid #f59e0b;border-radius:12px;padding:12px 16px;font-size:12.5px;line-height:1.6;color:#92400e;margin:16px 0}
+.concept-disclaimer strong{color:#92400e}
+.concept-pill{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;background:#fef3c7;border:1px solid #f59e0b;color:#92400e;font-size:10px;font-weight:700;letter-spacing:.06em;margin-left:8px;vertical-align:middle}
+.concept-job{opacity:.92}
+@media(max-width:640px){.wrasal-preview-banner{padding:12px 16px}.wrasal-preview-banner .banner-title{font-size:13px}.wrasal-preview-banner p{font-size:11.5px}}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--plaster);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
 a{color:inherit;text-decoration:none}
