@@ -1,0 +1,1323 @@
+mission: WO-WRASAL-BOTBC-GM-001 / WO-BOTBC-TR001-SHOTLIST-001
+project: BROTHERS OF THE BLOOD CLOTH — THE INVOCATION
+version: '1.0'
+date: '2026-10-23'
+aspect_ratio: 2.39:1
+total_runtime_seconds: 105
+total_shots: 34
+schema_version: wrasal-shot-spec-v1
+governance:
+  reality_first: true
+  camera_as_witness: true
+  genre_changes_when_understanding_changes: true
+shots:
+- identifier: SH001
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:00–00:00:06 (6s)
+  timecode_in: 00:00:00
+  timecode_out: 00:00:06
+  duration_seconds: 6
+  elapsed_start_seconds: 0
+  elapsed_end_seconds: 6
+  narrative_function: Invocation — elegy frames film as memory; plants transgressive communal joke
+  genre_state: Tragicomedy
+  required_content: Black screen; Matthew delivers opening line
+  subject: Subject_001
+  character_ids:
+  - MATTHEW
+  prop_ids: []
+  camera: 'Alexa Mini LF (audio) '
+  lens: N/A (black screen)
+  framing: Black 2.39:1
+  angle: N/A
+  movement: Locked
+  lighting: N/A (black)
+  blocking: Matthew at pulpit, still, forward lean; congregation off-screen seated
+  performance: MATTHEW affectionate, not crude — half-smile in voice; forward lean; speaks from memory not paper
+  dialogue: 'MATTHEW (V.O./on-mic): "Hi nice lady, can I get a sex out of your tight vagina?" — [verbatim open, affection
+    in voice]'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Black screen; Matthew delivers opening line
+- identifier: SH002
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:06–00:00:09 (3s)
+  timecode_in: 00:00:06
+  timecode_out: 00:00:09
+  duration_seconds: 3
+  elapsed_start_seconds: 6
+  elapsed_end_seconds: 9
+  narrative_function: Establishment — reveals mourning space; casket/pulpit geography
+  genre_state: Tragicomedy
+  required_content: Church master shot, casket and pulpit
+  subject: Subject_002
+  character_ids:
+  - MATTHEW
+  - IONE
+  - YVONNE
+  - MARCIA
+  - MARK
+  - LUKE
+  - JOHN
+  - DESMOND_CASKET
+  prop_ids:
+  - P_CASKET
+  - P_PULPIT
+  - P_EULOGY_PAPERS
+  camera: Alexa Mini LF on sticks A-cam
+  lens: 24mm Cooke Panchro T2.8
+  framing: Wide master church, casket FG, pulpit BG
+  angle: Eye level, center aisle
+  movement: Locked
+  lighting: Window daylight soft camera-right + bounce
+  blocking: Casket FG center, pulpit BG, congregation rows, aisle; Matthew at pulpit
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — room ambient, congregation settling
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, IONE, YVONNE, MARCIA, MARK, LUKE, JOHN, DESMOND_CASKET, P_CASKET, P_PULPIT, P_EULOGY_PAPERS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Church master shot, casket and pulpit
+- identifier: SH003
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:09–00:00:11 (2s)
+  timecode_in: 00:00:09
+  timecode_out: 00:00:11
+  duration_seconds: 2
+  elapsed_start_seconds: 9
+  elapsed_end_seconds: 11
+  narrative_function: Eulogist as witness — Matthew watches response
+  genre_state: Tragicomedy
+  required_content: Matthew observes congregation
+  subject: Subject_003
+  character_ids:
+  - MATTHEW
+  prop_ids:
+  - P_EULOGY_PAPERS
+  camera: A-cam LF
+  lens: 50mm Cooke Panchro T2.0
+  framing: Medium close Matthew
+  angle: Slight low, eye level
+  movement: Locked
+  lighting: Window + pulpit practical
+  blocking: Matthew at pulpit looks to congregation; papers before him
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Matthew observes
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, P_EULOGY_PAPERS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Matthew observes congregation
+- identifier: SH004
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:11–00:00:13 (2s)
+  timecode_in: 00:00:11
+  timecode_out: 00:00:13
+  duration_seconds: 2
+  elapsed_start_seconds: 11
+  elapsed_end_seconds: 13
+  narrative_function: Recognition — Yvonne recognizes line, communal authorship
+  genre_state: Tragicomedy
+  required_content: Yvonne recognizes joke
+  subject: Subject_004
+  character_ids:
+  - YVONNE
+  prop_ids:
+  - P_CHURCH_PEWS
+  camera: B-cam LF
+  lens: 85mm Cooke Panchro T2.0
+  framing: Close Yvonne
+  angle: Eye level
+  movement: Locked
+  lighting: Window soft camera-right
+  blocking: Yvonne in pew, head tilt recognition, then laugh
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Yvonne recognition (non-verbal laughter)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: YVONNE, P_CHURCH_PEWS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Yvonne recognizes joke
+- identifier: SH005
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:13–00:00:15 (2s)
+  timecode_in: 00:00:13
+  timecode_out: 00:00:15
+  duration_seconds: 2
+  elapsed_start_seconds: 13
+  elapsed_end_seconds: 15
+  narrative_function: Recognition — Ione recognizes; her deeper knowledge (shirt) begins
+  genre_state: Tragicomedy
+  required_content: Ione laughs
+  subject: Subject_005
+  character_ids:
+  - IONE
+  prop_ids:
+  - P_CHURCH_PEWS
+  camera: B-cam LF
+  lens: 85mm T2.0
+  framing: Close Ione
+  angle: Eye level
+  movement: Locked
+  lighting: Same church window
+  blocking: Ione in pew, surprise + warmth laugh, glances to Yvonne
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Ione laughter
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, P_CHURCH_PEWS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Ione laughs
+- identifier: SH006
+  act: I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:15–00:00:17 (2s)
+  timecode_in: 00:00:15
+  timecode_out: 00:00:17
+  duration_seconds: 2
+  elapsed_start_seconds: 15
+  elapsed_end_seconds: 17
+  narrative_function: Recognition — Marcia recognizes; communal laughter completed
+  genre_state: Tragicomedy
+  required_content: Marcia laughs
+  subject: Subject_006
+  character_ids:
+  - MARCIA
+  prop_ids:
+  - P_CHURCH_PEWS
+  camera: B-cam LF
+  lens: 85mm T2.0
+  framing: Close Marcia
+  angle: Eye level
+  movement: Locked
+  lighting: Same church window
+  blocking: Marcia in pew, communal laugh
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Marcia laughter
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MARCIA, P_CHURCH_PEWS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Marcia laughs
+- identifier: SH007
+  act: I→II
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:17–00:00:20 (3s)
+  timecode_in: 00:00:17
+  timecode_out: 00:00:20
+  duration_seconds: 3
+  elapsed_start_seconds: 17
+  elapsed_end_seconds: 20
+  narrative_function: Auditory clue masked — fourth laugh concealed; audience's first unnoticed excess
+  genre_state: Tragicomedy→Mystery
+  required_content: Congregation laughter conceals fourth voice
+  subject: Subject_007
+  character_ids:
+  - IONE
+  - YVONNE
+  - MARCIA
+  - MATTHEW
+  - CONGREGATION
+  prop_ids:
+  - P_CHURCH_PEWS
+  camera: A-cam LF on sticks
+  lens: 32mm Cooke Panchro T4.0
+  framing: Mid-wide congregation, pulpit soft BG
+  angle: Eye level center
+  movement: Subtle push 2% or locked
+  lighting: Window soft camera-right, bounce fill 1.5:1
+  blocking: Congregation rows mid-wide, pulpit soft BG; 10-15 laughing; no extra is 'fourth laugher' (sound only)
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — communal laughter (fourth laugh concealed in mix)
+  sound: Congregation laughter (10-15 voices, church IR) + FOURTH_VOICE stem (same file as SH031, -18 LUFS masked, 10-15°
+    off-axis, longer pre-delay)
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, YVONNE, MARCIA, MATTHEW, CONGREGATION, P_CHURCH_PEWS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Congregation laughter conceals fourth voice
+- identifier: SH008
+  act: II
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:00:20–00:00:23 (3s)
+  timecode_in: 00:00:20
+  timecode_out: 00:00:23
+  duration_seconds: 3
+  elapsed_start_seconds: 20
+  elapsed_end_seconds: 23
+  narrative_function: Bridge — Matthew contextualizes story as father's love; 1980s transition
+  genre_state: Domestic Mystery
+  required_content: 'Matthew: ''Daddy used to love that story'''
+  subject: Subject_008
+  character_ids:
+  - MATTHEW
+  prop_ids:
+  - P_PULPIT
+  camera: A-cam LF
+  lens: 50mm T2.0
+  framing: Medium Matthew at pulpit
+  angle: Eye level
+  movement: Locked
+  lighting: Same church, warm
+  blocking: Matthew at pulpit, center, warm
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'MATTHEW: "Daddy used to love that story."'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, P_PULPIT'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: 'Matthew: ''Daddy used to love that story'''
+- identifier: SH009
+  act: II
+  scene: Ione & Desmond Home
+  time_period: 1980s
+  timecode: 00:00:23–00:00:26 (3s)
+  timecode_in: 00:00:23
+  timecode_out: 00:00:26
+  duration_seconds: 3
+  elapsed_start_seconds: 23
+  elapsed_end_seconds: 26
+  narrative_function: 1980s anchor — Desmond embodied as young man, before shirt's biography
+  genre_state: Domestic Mystery
+  required_content: Young Desmond dressing, historical period
+  subject: Subject_009
+  character_ids:
+  - DESMOND
+  prop_ids:
+  - P_WHITE_SHIRT_1980S_YOUNG
+  - P_TROUSERS_1980S
+  - P_WARDROBE_1980S
+  camera: LF on sticks
+  lens: 35mm T2.8
+  framing: Medium Desmond dressing, mirror FG
+  angle: Eye level, slight profile
+  movement: Locked
+  lighting: 1980s warm window daylight + tungsten practical
+  blocking: Desmond at dresser, putting on white shirt, mirror foreground, window light
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Desmond dressing (room ambient, radio faint 1980s)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: DESMOND, P_WHITE_SHIRT_1980S_YOUNG, P_TROUSERS_1980S, P_WARDROBE_1980S'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Young Desmond dressing, historical period
+- identifier: SH010
+  act: II
+  scene: Ione & Desmond Home
+  time_period: 1980s
+  timecode: 00:00:26–00:00:29 (3s)
+  timecode_in: 00:00:26
+  timecode_out: 00:00:29
+  duration_seconds: 3
+  elapsed_start_seconds: 26
+  elapsed_end_seconds: 29
+  narrative_function: Domestic investigation primer — woman examines pockets (evidence habit)
+  genre_state: Domestic Mystery
+  required_content: Woman examines trousers pockets
+  subject: Subject_010
+  character_ids:
+  - IONE
+  - DESMOND
+  prop_ids:
+  - P_TROUSERS_1980S
+  - P_WHITE_SHIRT_1980S_YOUNG
+  camera: LF
+  lens: 50mm T2.8
+  framing: Insert hands in pockets
+  angle: 45° down
+  movement: Locked
+  lighting: Same warm domestic
+  blocking: Ione hands examine trousers pockets, Desmond off or background dressing
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — fabric/pocket sounds
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, DESMOND, P_TROUSERS_1980S, P_WHITE_SHIRT_1980S_YOUNG'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Woman examines trousers pockets
+- identifier: SH011
+  act: II
+  scene: Family Portrait
+  time_period: 1980s
+  timecode: 00:00:29–00:00:32 (3s)
+  timecode_in: 00:00:29
+  timecode_out: 00:00:32
+  duration_seconds: 3
+  elapsed_start_seconds: 29
+  elapsed_end_seconds: 32
+  narrative_function: Kinship image — four brothers as photograph; Luke anchoring composition
+  genre_state: Domestic Mystery
+  required_content: Four brothers photographed together
+  subject: Subject_011
+  character_ids:
+  - MATTHEW
+  - MARK
+  - LUKE
+  - JOHN
+  prop_ids:
+  - P_PHOTOGRAPH_FOUR_BROTHERS
+  - P_CAMERA_PROP_1980S
+  camera: LF on sticks
+  lens: 35mm T2.8
+  framing: Group portrait four brothers
+  angle: Eye level
+  movement: Locked (photograph pose)
+  lighting: 1980s portrait window + fill
+  blocking: Four brothers in line, Luke center holding print edge (composition anchor), photographer camera foreground implied
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: (Camera shutter) — no dialogue; photograph creation
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, MARK, LUKE, JOHN, P_PHOTOGRAPH_FOUR_BROTHERS, P_CAMERA_PROP_1980S'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Four brothers photographed together
+- identifier: SH012
+  act: II
+  scene: Family Portrait
+  time_period: 2026/1980s
+  timecode: 00:00:32–00:00:35 (3s)
+  timecode_in: 00:00:32
+  timecode_out: 00:00:35
+  duration_seconds: 3
+  elapsed_start_seconds: 32
+  elapsed_end_seconds: 35
+  narrative_function: Kinship humor — brothers' joke about family size; Luke's comic contribution
+  genre_state: Domestic Mystery
+  required_content: Brothers exchange joke about family size
+  subject: Subject_012
+  character_ids:
+  - MATTHEW
+  - MARK
+  - LUKE
+  - JOHN
+  prop_ids:
+  - P_PHOTOGRAPH_FOUR_BROTHERS
+  camera: LF
+  lens: 40mm T2.8
+  framing: Medium group joke
+  angle: Eye level
+  movement: Handheld drift 5% (energy)
+  lighting: Portrait warm
+  blocking: Four brothers loose semi-circle, Luke delivers comic beat
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'BROTHERS: Joke about family size — PROVISIONAL: MARK: "Four boys? Daddy did have range." LUKE (beat): "Range?
+    Daddy had coverage." (PROPOSED — writer lock pending)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, MARK, LUKE, JOHN, P_PHOTOGRAPH_FOUR_BROTHERS'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Brothers exchange joke about family size
+- identifier: SH013
+  act: II
+  scene: Domestic Repair
+  time_period: 1980s
+  timecode: 00:00:35–00:00:39 (4s)
+  timecode_in: 00:00:35
+  timecode_out: 00:00:39
+  duration_seconds: 4
+  elapsed_start_seconds: 35
+  elapsed_end_seconds: 39
+  narrative_function: Care — Ione's blue-thread repair (original significance)
+  genre_state: Domestic Mystery
+  required_content: Ione's original blue-thread stitching
+  subject: Subject_013
+  character_ids:
+  - IONE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_1980S
+  - P_BLUE_THREAD
+  - P_NEEDLE
+  camera: LF + macro
+  lens: 100mm Macro T4.0
+  framing: ECU hem blue stitching
+  angle: 45° overhead
+  movement: Locked micro
+  lighting: Raking window + hard accent for thread texture
+  blocking: Ione hands ECU, blue thread stitching hem 12cm section
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Ione stitching (craft focus)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, P_WHITE_SHIRT_HERO_1980S, P_BLUE_THREAD, P_NEEDLE'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Ione's original blue-thread stitching
+- identifier: SH014
+  act: II
+  scene: Domestic Repair
+  time_period: 1980s
+  timecode: 00:00:39–00:00:42 (3s)
+  timecode_in: 00:00:39
+  timecode_out: 00:00:42
+  duration_seconds: 3
+  elapsed_start_seconds: 39
+  elapsed_end_seconds: 42
+  narrative_function: Evidence — white over blue discovered (suspicion, not proof)
+  genre_state: Domestic Mystery
+  required_content: White repair discovered over blue stitching
+  subject: Subject_014
+  character_ids:
+  - IONE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_1980S
+  - P_BLUE_THREAD
+  - P_WHITE_THREAD
+  camera: LF + macro on sticks
+  lens: 60mm Macro T5.6 (true macro 1:1)
+  framing: ECU hem white over blue
+  angle: 45° overhead
+  movement: Manual focus rack blue→white
+  lighting: Same raking warm domestic
+  blocking: Same hem as SH013; fingers trace blue then encounter white; rack focus blue→white; hold 0.9s read
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — fabric rustle; Ione discovery breath
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, P_WHITE_SHIRT_HERO_1980S, P_BLUE_THREAD, P_WHITE_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: White repair discovered over blue stitching
+- identifier: SH015
+  act: II
+  scene: Domestic Inquiry
+  time_period: 1980s
+  timecode: 00:00:42–00:00:45 (3s)
+  timecode_in: 00:00:42
+  timecode_out: 00:00:45
+  duration_seconds: 3
+  elapsed_start_seconds: 42
+  elapsed_end_seconds: 45
+  narrative_function: Inquiry — Ione questions repair
+  genre_state: Domestic Mystery
+  required_content: Ione questions the repair
+  subject: Subject_015
+  character_ids:
+  - IONE
+  - DESMOND
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_1980S
+  camera: LF
+  lens: 50mm T2.2
+  framing: Medium Ione questioning
+  angle: Eye level
+  movement: Locked
+  lighting: Warm domestic, window soft
+  blocking: Ione medium, holding shirt, questioning Desmond off-frame
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'IONE: "Weh yuh get dis shirt fix?" / "Where did you get this shirt repaired?" (patwah + English; actress choice)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, DESMOND, P_WHITE_SHIRT_HERO_1980S'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Ione questions the repair
+- identifier: SH016
+  act: II
+  scene: Domestic Inquiry
+  time_period: 1980s
+  timecode: 00:00:45–00:00:48 (3s)
+  timecode_in: 00:00:45
+  timecode_out: 00:00:48
+  duration_seconds: 3
+  elapsed_start_seconds: 45
+  elapsed_end_seconds: 48
+  narrative_function: Evasion — Desmond vague explanation (mystery, not resolution)
+  genre_state: Domestic Mystery
+  required_content: Desmond gives vague explanation
+  subject: Subject_016
+  character_ids:
+  - DESMOND
+  - IONE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_1980S
+  camera: LF
+  lens: 50mm T2.2
+  framing: Medium Desmond vague explanation
+  angle: Eye level slight low
+  movement: Locked
+  lighting: Same domestic
+  blocking: Desmond medium, vague, not meeting Ione eyeline fully
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'DESMOND: Vague — "A woman at work... she did help with a hem." (PROVISIONAL — writer lock pending)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: DESMOND, IONE, P_WHITE_SHIRT_HERO_1980S'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Desmond gives vague explanation
+- identifier: SH017
+  act: II
+  scene: Domestic Inquiry
+  time_period: 1980s
+  timecode: 00:00:48–00:00:51 (3s)
+  timecode_in: 00:00:48
+  timecode_out: 00:00:51
+  duration_seconds: 3
+  elapsed_start_seconds: 48
+  elapsed_end_seconds: 51
+  narrative_function: Inquiry — where was shirt repaired? (geography, not just who)
+  genre_state: Domestic Mystery
+  required_content: Ione questions where shirt was repaired
+  subject: Subject_017
+  character_ids:
+  - IONE
+  - DESMOND
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_1980S
+  camera: LF
+  lens: 50mm T2.2
+  framing: Two-shot Ione/Desmond
+  angle: Eye level 3/4
+  movement: Locked
+  lighting: Same domestic, cooler fill for tension
+  blocking: Two-shot, Ione pressing where, Desmond evading geography
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'IONE: "Which woman? Where was this fixed?" — repeats inquiry on location'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, DESMOND, P_WHITE_SHIRT_HERO_1980S'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Ione questions where shirt was repaired
+- identifier: SH018
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:00:51–00:00:54 (3s)
+  timecode_in: 00:00:51
+  timecode_out: 00:00:54
+  duration_seconds: 3
+  elapsed_start_seconds: 51
+  elapsed_end_seconds: 54
+  narrative_function: Present re-encounter — Yvonne handles aged shirt
+  genre_state: Gothic Horror
+  required_content: Present-day Yvonne handles white shirt
+  subject: Subject_018
+  character_ids:
+  - YVONNE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_WHITE_THREAD
+  - P_BLUE_THREAD
+  camera: LF on sticks
+  lens: 60mm Macro T4.0
+  framing: ECU Yvonne hands + shirt aged
+  angle: 45° overhead
+  movement: Hands handle fabric
+  lighting: 2026 neutral daylight soft window
+  blocking: Yvonne hands ECU, aged shirt, yellowed fabric, handling
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Yvonne handling shirt (fabric sounds)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: YVONNE, P_WHITE_SHIRT_HERO_2026_AGED, P_WHITE_THREAD, P_BLUE_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Present-day Yvonne handles white shirt
+- identifier: SH019
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:00:54–00:00:57 (3s)
+  timecode_in: 00:00:54
+  timecode_out: 00:00:57
+  duration_seconds: 3
+  elapsed_start_seconds: 54
+  elapsed_end_seconds: 57
+  narrative_function: Uncanny reveal — red thread beneath repairs
+  genre_state: Gothic Horror
+  required_content: Red thread revealed beneath older repairs
+  subject: Subject_019
+  character_ids:
+  - YVONNE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_RED_THREAD
+  - P_WHITE_THREAD
+  - P_BLUE_THREAD
+  camera: LF + macro
+  lens: 60mm Macro T5.6
+  framing: ECU red thread revealed
+  angle: 45° overhead
+  movement: Locked
+  lighting: Neutral + 1×2 LED 5200K 15% thread accent
+  blocking: Same hands, red thread revealed beneath — static then breath
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — reveal (breath, fabric)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: YVONNE, P_WHITE_SHIRT_HERO_2026_AGED, P_RED_THREAD, P_WHITE_THREAD, P_BLUE_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Red thread revealed beneath older repairs
+- identifier: SH020
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:00:57–00:01:00 (3s)
+  timecode_in: 00:00:57
+  timecode_out: 00:01:00
+  duration_seconds: 3
+  elapsed_start_seconds: 57
+  elapsed_end_seconds: 60
+  narrative_function: First supernatural visual — red thread retracts impossibly (epistemological rupture)
+  genre_state: Gothic Horror
+  required_content: Red thread retracts impossibly
+  subject: Subject_020
+  character_ids:
+  - YVONNE
+  - RED_THREAD
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_RED_THREAD
+  - P_WHITE_THREAD
+  - P_BLUE_THREAD
+  camera: LF locked overhead on sticks (absolutely stable)
+  lens: 60mm Macro T5.6-8.0 1:1 macro
+  framing: ECU red thread retracts
+  angle: 90° overhead
+  movement: Absolutely locked
+  lighting: Neutral window + 1×2 LED thread specular
+  blocking: Shirt hem flat held taut between Yvonne thumbs, red thread retracts 1.5cm in 1.2s — hands OFF thread
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — thread retraction (soft fabric whisper, no stinger)
+  sound: Thread retracts 1.5cm in 1.2s (practical monofilament or CG); soft fabric whisper -22 LUFS; no stinger; hands OFF
+    thread >2cm gap preserved
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: YVONNE, RED_THREAD, P_WHITE_SHIRT_HERO_2026_AGED, P_RED_THREAD, P_WHITE_THREAD, P_BLUE_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Red thread retracts impossibly
+- identifier: SH021
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:00–00:01:03 (3s)
+  timecode_in: 00:01:00
+  timecode_out: 00:01:03
+  duration_seconds: 3
+  elapsed_start_seconds: 60
+  elapsed_end_seconds: 63
+  narrative_function: Human consequence — Yvonne reacts; body registers impossibility
+  genre_state: Gothic Horror
+  required_content: Yvonne reacts to unexplained movement
+  subject: Subject_021
+  character_ids:
+  - YVONNE
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_RED_THREAD
+  camera: LF
+  lens: 85mm T2.0
+  framing: Close Yvonne reaction
+  angle: Eye level
+  movement: Locked
+  lighting: Neutral, subtle shadow deeper
+  blocking: Yvonne close, recoil/micro stillness, eyes on thread, breath catch
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'YVONNE: Tiny catch-breath — non-verbal reaction'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: YVONNE, P_WHITE_SHIRT_HERO_2026_AGED, P_RED_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Yvonne reacts to unexplained movement
+- identifier: SH022
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:03–00:01:05 (2s)
+  timecode_in: 00:01:03
+  timecode_out: 00:01:05
+  duration_seconds: 2
+  elapsed_start_seconds: 63
+  elapsed_end_seconds: 65
+  narrative_function: Acoustic uncanny — empty bathroom, familiar throat clearing (off-screen presence)
+  genre_state: Gothic Horror
+  required_content: Empty bathroom; familiar throat clearing
+  subject: Subject_022
+  character_ids:
+  - DESMOND_VOICE
+  prop_ids:
+  - P_BATHROOM_SINK
+  - P_MIRROR
+  camera: LF
+  lens: 28mm T4.0
+  framing: Wide empty bathroom, mirror
+  angle: Eye level
+  movement: Locked, hold 2s
+  lighting: Bathroom practical tungsten + window gap
+  blocking: Empty bathroom, still, throat clearing off/mid
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: DESMOND'S THROAT CLEARING (familiar, off-screen) — no visible source
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: DESMOND_VOICE, P_BATHROOM_SINK, P_MIRROR'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Empty bathroom; familiar throat clearing
+- identifier: SH023
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:05–00:01:08 (3s)
+  timecode_in: 00:01:05
+  timecode_out: 00:01:08
+  duration_seconds: 3
+  elapsed_start_seconds: 65
+  elapsed_end_seconds: 68
+  narrative_function: Acoustic uncanny — Mark hears recorded voice resembling father (tape vs presence)
+  genre_state: Gothic Horror
+  required_content: Mark hears recorded voice resembling father
+  subject: Subject_023
+  character_ids:
+  - MARK
+  - DESMOND_VOICE
+  prop_ids:
+  - P_CASSETTE_PLAYER
+  - P_TAPE_DESMOND_VOICE
+  camera: LF
+  lens: 40mm T2.8
+  framing: Medium Mark + cassette player
+  angle: Eye level
+  movement: Locked
+  lighting: Neutral interior, desk lamp
+  blocking: Mark at table with cassette player, hears tape, head tilt
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'TAPE: Desmond voice — "Hi nice lady..." (archival quality) — MARK hears'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MARK, DESMOND_VOICE, P_CASSETTE_PLAYER, P_TAPE_DESMOND_VOICE'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Mark hears recorded voice resembling father
+- identifier: SH024
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:08–00:01:11 (3s)
+  timecode_in: 00:01:08
+  timecode_out: 00:01:11
+  duration_seconds: 3
+  elapsed_start_seconds: 68
+  elapsed_end_seconds: 71
+  narrative_function: Acoustic uncanny — John hears father's voice beyond bedroom door
+  genre_state: Gothic Horror
+  required_content: John hears father's voice beyond bedroom door
+  subject: Subject_024
+  character_ids:
+  - JOHN
+  - DESMOND_VOICE
+  prop_ids:
+  - P_BEDROOM_DOOR
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  camera: LF
+  lens: 35mm T2.8
+  framing: Medium John at bedroom door
+  angle: Eye level
+  movement: Locked
+  lighting: Corridor neutral window + door separation edge
+  blocking: John at bedroom door, listening, door closed
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: VOICE beyond door — "John..." or throat clearing — JOHN hears
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: JOHN, DESMOND_VOICE, P_BEDROOM_DOOR, P_WHITE_SHIRT_HERO_2026_AGED'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: John hears father's voice beyond bedroom door
+- identifier: SH025
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:11–00:01:14 (3s)
+  timecode_in: 00:01:11
+  timecode_out: 00:01:14
+  duration_seconds: 3
+  elapsed_start_seconds: 71
+  elapsed_end_seconds: 74
+  narrative_function: Arrival of investigator — Reader Man enters (no automatic authority)
+  genre_state: Gothic Horror
+  required_content: Reader Man enters family house
+  subject: Subject_025
+  character_ids:
+  - READER_MAN
+  - IONE
+  - YVONNE
+  - MARCIA
+  prop_ids:
+  - P_DOOR_HOUSE_ENTRANCE
+  - P_READER_BAG
+  camera: LF on sticks
+  lens: 35mm T4.0
+  framing: Medium Reader Man entering doorway
+  angle: Eye level, slight low
+  movement: Reader walks in 1.5s, hold
+  lighting: 2026 neutral doorway window
+  blocking: Reader Man steps through doorway, women midground with shirt
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — Reader Man entrance (footsteps, room hush)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: READER_MAN, IONE, YVONNE, MARCIA, P_DOOR_HOUSE_ENTRANCE, P_READER_BAG'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Reader Man enters family house
+- identifier: SH026
+  act: III
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:14–00:01:17 (3s)
+  timecode_in: 00:01:14
+  timecode_out: 00:01:17
+  duration_seconds: 3
+  elapsed_start_seconds: 74
+  elapsed_end_seconds: 77
+  narrative_function: Collective examination — women examine shirt together
+  genre_state: Gothic Horror
+  required_content: Women examine shirt together
+  subject: Subject_026
+  character_ids:
+  - IONE
+  - YVONNE
+  - MARCIA
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_RED_THREAD
+  camera: LF
+  lens: 35mm T4.0
+  framing: Medium three women + shirt
+  angle: Eye level
+  movement: Locked
+  lighting: Neutral window camera-left, bounce
+  blocking: Three women around table, shirt between, examining together
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — women examining shirt (soft patwah murmurs, unscripted)
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: IONE, YVONNE, MARCIA, P_WHITE_SHIRT_HERO_2026_AGED, P_RED_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Women examine shirt together
+- identifier: SH027
+  act: IV
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:17–00:01:21 (4s)
+  timecode_in: 00:01:17
+  timecode_out: 00:01:21
+  duration_seconds: 4
+  elapsed_start_seconds: 77
+  elapsed_end_seconds: 81
+  narrative_function: Inquiry — Reader Man questions red stitching (evidence, not attribution)
+  genre_state: Attribution Crisis
+  required_content: Reader Man questions red stitching
+  subject: Subject_027
+  character_ids:
+  - READER_MAN
+  - IONE
+  - YVONNE
+  - MARCIA
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_RED_THREAD
+  camera: LF
+  lens: 40mm T4.0
+  framing: Medium Reader Man examining shirt with women
+  angle: Eye level 3/4
+  movement: Locked
+  lighting: Neutral + corridor edge
+  blocking: Reader Man with women, examining shirt, questioning red
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'READER MAN: "When you first see the red? Was it here before Desmond pass?" (PROVISIONAL — writer lock)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: READER_MAN, IONE, YVONNE, MARCIA, P_WHITE_SHIRT_HERO_2026_AGED, P_RED_THREAD'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Reader Man questions red stitching
+- identifier: SH028
+  act: IV
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:21–00:01:24 (3s)
+  timecode_in: 00:01:21
+  timecode_out: 00:01:24
+  duration_seconds: 3
+  elapsed_start_seconds: 81
+  elapsed_end_seconds: 84
+  narrative_function: Threshold — bedroom door footsteps (acoustic uncanny)
+  genre_state: Attribution Crisis
+  required_content: Bedroom door; approaching footsteps
+  subject: Subject_028
+  character_ids:
+  - MARK
+  - JOHN
+  - DESMOND_PRESENCE
+  prop_ids:
+  - P_BEDROOM_DOOR
+  camera: LF
+  lens: 35mm T4.0
+  framing: Medium bedroom door, corridor
+  angle: Eye level
+  movement: Locked, hold for footsteps
+  lighting: Neutral corridor, door edge light
+  blocking: Bedroom door closed, corridor, footsteps approaching off
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: FOOTSTEPS beyond bedroom door — no dialogue
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MARK, JOHN, DESMOND_PRESENCE, P_BEDROOM_DOOR'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Bedroom door; approaching footsteps
+- identifier: SH029
+  act: IV
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:24–00:01:27 (3s)
+  timecode_in: 00:01:24
+  timecode_out: 00:01:27
+  duration_seconds: 3
+  elapsed_start_seconds: 84
+  elapsed_end_seconds: 87
+  narrative_function: Attribution crisis — Mark says father dead; voice responds (dialogue uncanny)
+  genre_state: Attribution Crisis
+  required_content: Mark says father is dead; voice responds
+  subject: Subject_029
+  character_ids:
+  - MARK
+  - DESMOND_VOICE
+  prop_ids:
+  - P_BEDROOM_DOOR
+  camera: LF
+  lens: 40mm T2.8
+  framing: Close Mark vs door
+  angle: Eye level slight low
+  movement: Locked
+  lighting: Neutral, practical door light
+  blocking: Mark at door, says father dead; voice responds beyond
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'MARK: "Mi father dead. ... You nuh dead?" — VOICE (off): "I... am here." / responds (PROVISIONAL)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MARK, DESMOND_VOICE, P_BEDROOM_DOOR'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Mark says father is dead; voice responds
+- identifier: SH030
+  act: IV
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:27–00:01:30 (3s)
+  timecode_in: 00:01:27
+  timecode_out: 00:01:30
+  duration_seconds: 3
+  elapsed_start_seconds: 87
+  elapsed_end_seconds: 90
+  narrative_function: Attribution restraint — Reader Man questions attribution to Desmond (structure's doubt)
+  genre_state: Attribution Crisis
+  required_content: Reader Man questions attribution to Desmond
+  subject: Subject_030
+  character_ids:
+  - READER_MAN
+  - IONE
+  - YVONNE
+  - MARCIA
+  - MARK
+  prop_ids:
+  - P_WHITE_SHIRT_HERO_2026_AGED
+  - P_BEDROOM_DOOR
+  camera: LF on sticks
+  lens: 35mm T4.0
+  framing: Medium two-shot Reader Man FG door BG women mid
+  angle: Eye level slight low 10°
+  movement: Locked
+  lighting: Neutral window + corridor edge
+  blocking: Reader Man FG, door deep, women mid, Mark off — questions attribution
+  performance: READER MAN restrained, questioning not declaring; no ritual gesture; uncertainty as structure
+  dialogue: 'READER MAN: "You think a Desmond do this? It don''t have to be him." (PROVISIONAL — questioning attribution)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: READER_MAN, IONE, YVONNE, MARCIA, MARK, P_WHITE_SHIRT_HERO_2026_AGED, P_BEDROOM_DOOR'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Reader Man questions attribution to Desmond
+- identifier: SH031
+  act: IV→I
+  scene: Funeral
+  time_period: '2026'
+  timecode: 00:01:30–00:01:34 (4s)
+  timecode_in: 00:01:30
+  timecode_out: 00:01:34
+  duration_seconds: 4
+  elapsed_start_seconds: 90
+  elapsed_end_seconds: 94
+  narrative_function: Recontextualization — return to funeral, fourth laugh isolated (same file as SH007)
+  genre_state: Attribution Crisis→Tragicomedy
+  required_content: Return to funeral; fourth laugh isolated
+  subject: Subject_031
+  character_ids:
+  - MATTHEW
+  - IONE
+  - YVONNE
+  - MARCIA
+  - CONGREGATION
+  prop_ids:
+  - P_CHURCH_PEWS
+  - P_PULPIT
+  camera: LF on sticks, 40mm T2.8
+  lens: 40mm Cooke Panchro T2.8
+  framing: Medium close congregation row isolated
+  angle: Eye level same as SH007
+  movement: Slow drift 0.5in toward row
+  lighting: Same church but fill -0.5 stop vs SH007 (subliminal cooler)
+  blocking: Congregation row medium close, thinned laughter, one not laughing; pulpit BG; fourth voice isolated
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: Isolated fourth laugh (same file as SH007) — thinned communal laughter
+  sound: Thinned communal laughter (-10dB + LPF) + FOURTH_VOICE same file as SH007 at -12 LUFS isolated (recognizable timbre)
+    — T08 enforcement
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: MATTHEW, IONE, YVONNE, MARCIA, CONGREGATION, P_CHURCH_PEWS, P_PULPIT'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Return to funeral; fourth laugh isolated
+- identifier: SH032
+  act: —
+  scene: GFX
+  time_period: GFX
+  timecode: 00:01:34–00:01:38 (4s)
+  timecode_in: 00:01:34
+  timecode_out: 00:01:38
+  duration_seconds: 4
+  elapsed_start_seconds: 94
+  elapsed_end_seconds: 98
+  narrative_function: 'Kinship statement — typography: Four brothers, three mothers, one father'
+  genre_state: —
+  required_content: Four brothers, three mothers, one father typography
+  subject: Subject_032
+  character_ids: []
+  prop_ids:
+  - P_TYPOGRAPHY_CARD_4B3M1F
+  camera: GFX — typography
+  lens: N/A
+  framing: Center typography 2.39:1
+  angle: N/A
+  movement: Static card 4s
+  lighting: N/A — white on black with red thread motif glow
+  blocking: 'Typography centered: ''Four brothers, three mothers, one father'' — white on black, red thread accent'
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — typography only
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: P_TYPOGRAPHY_CARD_4B3M1F'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Four brothers, three mothers, one father typography
+- identifier: SH033
+  act: —
+  scene: GFX
+  time_period: GFX
+  timecode: 00:01:38–00:01:41 (3s)
+  timecode_in: 00:01:38
+  timecode_out: 00:01:41
+  duration_seconds: 3
+  elapsed_start_seconds: 98
+  elapsed_end_seconds: 101
+  narrative_function: Title — film title + red-thread motif (visual identity)
+  genre_state: —
+  required_content: Film title; red-thread visual motif
+  subject: Subject_033
+  character_ids: []
+  prop_ids:
+  - P_TITLE_CARD_BOTBC
+  - P_RED_THREAD_MOTIF
+  camera: GFX — title
+  lens: N/A
+  framing: Title + red thread motif
+  angle: N/A
+  movement: Static with subtle red thread pulse (GFX)
+  lighting: N/A — grade
+  blocking: 'Title: BROTHERS OF THE BLOOD CLOTH + red-thread motif animation'
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: No dialogue — title + motif; score holds
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: P_TITLE_CARD_BOTBC, P_RED_THREAD_MOTIF'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Film title; red-thread visual motif
+- identifier: SH034
+  act: IV
+  scene: House Present
+  time_period: '2026'
+  timecode: 00:01:41–00:01:45 (4s)
+  timecode_in: 00:01:41
+  timecode_out: 00:01:45
+  duration_seconds: 4
+  elapsed_start_seconds: 101
+  elapsed_end_seconds: 105
+  narrative_function: Stinger — black screen voice stinger (shirt-related)
+  genre_state: Attribution Crisis
+  required_content: Black screen; final shirt-related voice stinger
+  subject: Subject_034
+  character_ids:
+  - DESMOND_VOICE
+  prop_ids: []
+  camera: LF (audio) on sticks
+  lens: N/A (black)
+  framing: Black 2.39:1 + voice stinger
+  angle: N/A
+  movement: Locked
+  lighting: N/A
+  blocking: Black screen; voice stinger; no image
+  performance: 'See golden spec if applicable; otherwise: naturalistic, period-appropriate, patwah as cast'
+  dialogue: 'VOICE STINGER: Shirt-related — "Ione?" or throat clear or thread whisper — [final uncanny] (PROVISIONAL — sound
+    lock)'
+  sound: See per-shot sound design; T08 applies to SH007/SH031; T09 applies to SH020
+  editorial_transition_in: Cut from previous; see shot spec for rhythm note
+  editorial_transition_out: Cut to next; see shot spec
+  continuity: 'Requires: DESMOND_VOICE'
+  source_reference: Mission Directive §5 Baseline Inventory — Wrasal God Mode v1.0
+  assumptions: See Phase 01 reconciled brief — assumptions flagged PROPOSED/UNVERIFIED
+  verification_status: PENDING — requires Phase 07 deterministic validation
+  revisable: true
+  original_state_preserved: Black screen; final shirt-related voice stinger
+white_shirt_provenance:
+  hero_shirt_1980s: white cotton poplin, blue cotton repair (hand) then white polyester over blue
+  hero_shirt_2026: same garment aged 40y (yellowing at collar/cuffs, fold lines) + red waxed thread beneath repairs
+  red_thread: 'waxed linen Fil au Chinois #1143 blood-red — fictional storyworld invention, not folklore'
+sound_provenance:
+  SH007_FOURTH_VOICE: single stem, recorded same church same mic rotated 15° off-axis; also used as SH031_FOURTH_VOICE (same
+    file hash)
+  SH020_thread: practical monofilament pull OR CG — recorded as practical first; VFX clean only as backup
+validation:
+  T01_all_shots: must be 34
+  T02_total_105s: true
+  T08_same_audio_SH007_SH031: same stem file reference
+  T09_SH020_precedes_attribution: true

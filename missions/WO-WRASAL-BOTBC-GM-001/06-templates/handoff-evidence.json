@@ -1,0 +1,59 @@
+{
+  "mission": "WO-WRASAL-BOTBC-GM-001",
+  "status": "REFERENCE_READY",
+  "templates": [
+    {
+      "template_name": "WRASAL Cinematic Master Shot List",
+      "file": "06-templates/WRASAL-Cinematic-Master-Shot-List.xlsx",
+      "file_size_kb": 17,
+      "sheets": ["MASTER SHOT LIST", "LEGEND & REUSABLE FIELDS"],
+      "validation": "T14 PASS",
+      "template_id": null,
+      "gallery_url": null,
+      "saved_at": null,
+      "evidence": null
+    },
+    {
+      "template_name": "WRASAL Cinematic Work Order",
+      "file": "06-templates/WRASAL-Cinematic-Work-Order.docx",
+      "file_size_kb": 41,
+      "validation": "T13/T14 PASS",
+      "template_id": null,
+      "gallery_url": null,
+      "saved_at": null,
+      "evidence": null
+    },
+    {
+      "template_name": "WRASAL Cinematic Storyboard",
+      "file": "06-templates/WRASAL-Cinematic-Storyboard.pptx",
+      "file_size_kb": 47,
+      "slides": 8,
+      "validation": "T13/T14 PASS",
+      "template_id": null,
+      "gallery_url": null,
+      "saved_at": null,
+      "evidence": null
+    },
+    {
+      "template_name": "WRASAL Visual DNA and Continuity Sheet",
+      "file": "06-templates/WRASAL-Visual-DNA-and-Continuity-Sheet.docx",
+      "file_size_kb": 42,
+      "validation": "T13/T14 PASS",
+      "template_id": null,
+      "gallery_url": null,
+      "saved_at": null,
+      "evidence": null
+    },
+    {
+      "template_name": "WRASAL Cinematic Treatment",
+      "file": "06-templates/WRASAL-Cinematic-Treatment.docx",
+      "file_size_kb": 42,
+      "validation": "T13/T14 PASS",
+      "template_id": null,
+      "gallery_url": null,
+      "saved_at": null,
+      "evidence": null
+    }
+  ],
+  "note": "Set status to TEMPLATE_PACKAGED when ChatGPT Template Creator packaging completed in ChatGPT environment; to TEMPLATE_SAVED when Gallery entry verified with screenshot + URL. Never fabricate template_id or gallery_url. Current status REFERENCE_READY is honest — Class D blocker (Creator not callable from Arena) documented in handoff-package.md."
+}
