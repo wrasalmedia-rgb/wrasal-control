@@ -1,0 +1,50 @@
+{
+  "work_order_id": "WRASAL-0014",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / sandbox-to-deployment directive",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Execute SHOT-C five-second AI generation through the production console using an authorized video provider (directive phase 04), then human cinematic review (phase 05) and release approval (phase 10).",
+  "success_condition": "A provider-backed job reaches succeeded with real AI-generated footage; panel scores it against the rubric at G2 thresholds; human records creative review; release candidate approved or rejected by a named human.",
+  "execution_status": "blocked",
+  "implementation_result": "blocked",
+  "verification_result": "unknown",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "c4a03cb513966ed883ae7c0e4d3a03fdc3f40230",
+    "validation_evidence": null,
+    "deployment_record": "missions/WRASAL-ARENA-CIN-001/deployment/SANDBOX-DEPLOY-001.md",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0014-blocker-tooling",
+      "type": "tooling_probe",
+      "attribution": "Arena external execution worker",
+      "source": "Arena list_connector_tools probes 2026-11-06: runway, sora, openai, luma; session toolset inventory; data/capability_matrix.json evidence_log",
+      "observed_result": "All four connector probes returned unsupported; the session toolset exposes no image-to-video or text-to-video generation. The console's external-provider adapter exists and is contract-documented but has no endpoint or credentials in this environment.",
+      "result": "blocked"
+    },
+    {
+      "id": "wrasal-0014-blocked-job-behavior",
+      "type": "failure_handling",
+      "attribution": "Arena external execution worker",
+      "source": "smoke check blocked.provider_unconfigured (.runtime/smoke-report.json)",
+      "observed_result": "Submission to external-provider without credentials yields status=blocked with error.code PROVIDER_UNCONFIGURED, a concrete exit path, and source_preserved=true; no simulated success anywhere.",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "unchanged",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed"
+  },
+  "next_candidate": "Unblock via either: (a) set ARENA_CIN_PROVIDER_URL / ARENA_CIN_PROVIDER_KEY / ARENA_CIN_PROVIDER_MODEL in the deployment environment per SANDBOX-DEPLOY-001 section 4 and restart the console; or (b) connect an Arena video-generation connector if one becomes available; or (c) human-executed external batch using lookdev/SHOT-C-LOOKDEV-001 run sheet with outputs+metadata returned for ingest. Then re-run smoke and proceed to G2 review."
+}

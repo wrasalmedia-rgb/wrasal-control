@@ -1,0 +1,92 @@
+{
+  "work_order_id": "WRASAL-0013",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / sandbox-to-deployment directive",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Build, test, verify and deploy the WRASAL-ARENA-CIN-001 production sandbox (phases 01-03, 06-09 of the directive): repository verification; executable environment with reproducible encoder provisioning; asset verification with live checksums and rights status; automated pipeline (ingest, job runner, monitor, review, export); five-function production console; staging deployment; deployment smoke tests with real jobs and real failure handling.",
+  "success_condition": "A running console accepts a SHOT-C submission, executes a real encode job producing playable MP4 bytes with metadata, records a QC decision through the interface, exports a checksummed manifest, handles an unconfigured provider as a blocked job with exit path and preserved sources, and passes the automated smoke suite; deployment record documents targets, env contract, and rollback. AI generation and human release approval explicitly out of scope for this record (WRASAL-0014, gates).",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "c4a03cb513966ed883ae7c0e4d3a03fdc3f40230",
+    "validation_evidence": "evidence/WRASAL-0013-validation.json",
+    "deployment_record": "missions/WRASAL-ARENA-CIN-001/deployment/SANDBOX-DEPLOY-001.md",
+    "smoke_report": ".runtime/smoke-report.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0013-repo-verification",
+      "type": "validator_run",
+      "attribution": "Arena external execution worker",
+      "source": "npm test; git log; package.json",
+      "observed_result": "Control-plane tests PASS; commits e472655..b4ea023 present on arena/abe9e5ac-wrasal-control; dependencies pinned (js-yaml 4.3.2); node v22.22.3.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-encoder-provisioning",
+      "type": "environment_setup",
+      "attribution": "Arena external execution worker",
+      "source": "scripts/setup-encoder.sh; tools/pylibs/av 18.1.0 with libx264",
+      "observed_result": "Reproducible, idempotent provisioning into git-ignored tools/pylibs; server degrades to blocked+exit path when absent (Rule 5).",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-asset-verification",
+      "type": "checksum_verification",
+      "attribution": "Arena external execution worker",
+      "source": "GET /api/workspace live sha256 vs data/manifest.json",
+      "observed_result": "Source grid and clean SHOT-C derivative verify live in the running app (bea6ed1c..., d39a1cb3...); rights surfaced as REF-ONLY with G4/QC-111 pending, not misrepresented as cleared.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-real-job-execution",
+      "type": "job_execution",
+      "attribution": "Arena external execution worker",
+      "source": "job job-mw4psw1m-702f7f (.runtime/jobs/.../out.mp4, metadata.json)",
+      "observed_result": "Real 5.0 s / 120 frame 960x412 H.264 MP4 (7,729,366 bytes, ftyp magic verified) produced by plate-render-techviz-v1 adapter labeled NOT AI generation; metadata carries plate sha256, prompt hash, command argv.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-smoke-suite",
+      "type": "test_run",
+      "attribution": "Arena external execution worker",
+      "source": "node scripts/smoke-app.mjs -> .runtime/smoke-report.json",
+      "observed_result": "SMOKE PASS 19/19 including QC recording via API, export manifest checksums, blocked-provider failure handling with exit path and source_preserved=true, and post-job source integrity.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-deployment-live",
+      "type": "deployment",
+      "attribution": "Arena external execution worker",
+      "source": "start_process log: console listening on 0.0.0.0:8787; Arena live-preview proxy",
+      "observed_result": "Staging application accessible via sandbox live preview; interface operates against real job state only.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-implementation-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "local git commit on arena/abe9e5ac-wrasal-control",
+      "observed_result": "Console, adapters, scripts, deployment record committed as c4a03cb513966ed883ae7c0e4d3a03fdc3f40230.",
+      "reference": "c4a03cb513966ed883ae7c0e4d3a03fdc3f40230",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "production sandbox deployed as mission-scoped tooling; control plane unchanged",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; release approval and creative gates remain human"
+  },
+  "next_candidate": "WRASAL-0014 (blocked): SHOT-C AI generation via authorized provider. Then human G1/G2 review of candidates and release approval of v0.1.0-rc1 per SANDBOX-DEPLOY-001 sections 5-6."
+}
