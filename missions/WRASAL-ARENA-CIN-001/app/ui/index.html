@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WRASAL-ARENA-CIN-001 · Production Console</title>
+<style>
+:root{--bg:#0d0b0a;--panel:#171310;--panel2:#1f1915;--ink:#f0e6da;--dim:#a8968a;--acc:#c4573f;--acc2:#e5b9a0;--ok:#7fae7f;--warn:#d9a441;--bad:#c05050;--line:#332a24}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+header{display:flex;gap:16px;align-items:baseline;padding:14px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{font-size:15px;margin:0;letter-spacing:.08em}header .sub{color:var(--dim);font-size:12px}
+.badge{padding:2px 8px;border:1px solid var(--line);border-radius:3px;font-size:11px;color:var(--acc2)}
+.badge.warn{color:var(--warn);border-color:var(--warn)}
+nav{display:flex;gap:4px;padding:10px 20px 0;border-bottom:1px solid var(--line)}
+nav button{background:none;border:1px solid transparent;border-bottom:none;color:var(--dim);padding:8px 14px;cursor:pointer;font:inherit;border-radius:6px 6px 0 0}
+nav button.on{background:var(--panel);color:var(--ink);border-color:var(--line)}
+main{padding:20px;max-width:1280px;margin:0 auto}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:16px}
+.panel h2{margin:0 0 10px;font-size:13px;letter-spacing:.06em;color:var(--acc2)}
+.grid{display:grid;gap:16px}.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--dim);font-weight:normal}
+.chip{display:inline-block;padding:1px 7px;border-radius:9px;font-size:11px;border:1px solid var(--line)}
+.chip.succeeded{color:var(--ok);border-color:var(--ok)}.chip.failed,.chip.blocked{color:var(--bad);border-color:var(--bad)}
+.chip.running,.chip.queued{color:var(--warn);border-color:var(--warn)}
+button.act{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:6px 12px;cursor:pointer;font:inherit}
+button.act:hover{border-color:var(--acc)}button.act.primary{background:var(--acc);border-color:var(--acc);color:#140a08;font-weight:bold}
+input,select,textarea{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:6px 8px;font:inherit;width:100%}
+label{display:block;color:var(--dim);font-size:11px;margin:8px 0 3px}
+.swatch{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px;border:1px solid #0006}
+video,img.plate{width:100%;border:1px solid var(--line);border-radius:6px;background:#000}
+.note{color:var(--dim);font-size:12px}.err{color:var(--bad);font-size:12px}.ok{color:var(--ok);font-size:12px}
+.kv{font-size:12px}.kv b{color:var(--acc2);font-weight:normal}
+footer{padding:14px 20px;color:var(--dim);font-size:11px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <h1>WRASAL // ARENA-CIN-001 · PRODUCTION CONSOLE</h1>
+  <span class="sub" id="ver"></span>
+  <span class="badge warn" id="g0"></span>
+  <span class="badge" id="rights"></span>
+</header>
+<nav>
+  <button data-t="ws" class="on">Workspace</button>
+  <button data-t="gen">Generate</button>
+  <button data-t="jobs">Jobs</button>
+  <button data-t="rev">Review</button>
+  <button data-t="exp">Export</button>
+</nav>
+<main>
+  <section id="t-ws"></section>
+  <section id="t-gen" hidden></section>
+  <section id="t-jobs" hidden></section>
+  <section id="t-rev" hidden></section>
+  <section id="t-exp" hidden></section>
+</main>
+<footer>Executor tooling. Creative acceptance, source permissions and technical verification remain separate (Rule 3). Tech-viz renders are pipeline proofs, NOT AI generation and NOT creative approval.</footer>
+<script>
+const $=s=>document.querySelector(s);const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+let WS=null,JOBS=[],CUR_JOB=null;
+const api=(p,o)=>fetch(p,o).then(r=>{if(!r.ok)return r.json().then(j=>{throw new Error(j.error||r.status)});return r.json()});
+async function loadWS(){WS=await api('/api/workspace');$('#ver').textContent='v'+WS.version.version+' · '+WS.version.release_state;
+ $('#g0').textContent='G0: '+(WS.g0_status||'pending');$('#rights').textContent='REF-ONLY assets';renderWS();renderGen();}
+function renderWS(){const s=$('#t-ws');s.innerHTML='';
+ const env=el('div','panel','<h2>TECHNICAL ENVELOPE</h2>');const e=WS.technical_envelope;
+ env.appendChild(el('div','kv',`<b>aspect</b> ${e.aspect_ratio} · <b>fps</b> ${e.fps} · <b>shutter</b> ${e.shutter} · <b>finish</b> ${e.finish_primary} / ${e.finish_alternate}<br><b>grain</b> ${e.grain.class} ${e.grain.strength} · <b>halation</b> ${e.halation.edge} ≤${e.halation.max_radius_pct_frame_h}% · <b>burned-in text</b> forbidden`));
+ env.appendChild(el('div','note','Strategy: '+WS.test_strategy));s.appendChild(env);
+ const p=el('div','panel','<h2>PALETTE (sampled from reference)</h2>');const tb=el('table');tb.innerHTML='<tr><th>id</th><th>name</th><th>hex</th><th>role</th></tr>';
+ WS.palette.forEach(x=>{const tr=el('tr');tr.innerHTML=`<td>${x.id}</td><td><span class="swatch" style="background:${x.hex}"></span>${x.name}</td><td>${x.hex}</td><td class="note">${x.role}</td>`;tb.appendChild(tr)});p.appendChild(tb);s.appendChild(p);
+ const sh=el('div','panel','<h2>SHOTS &amp; PLATES</h2>');const g=el('div','grid c2');
+ WS.shots.forEach(shx=>{const pl=WS.plates.find(q=>q.path.includes('shot-'+shx.shot_id.slice(-1)))||WS.plates.find(q=>q.path.includes('prep')&&shx.shot_id==='SHOT-C'&&q.status==='DERIVED');
+  const card=el('div','panel');card.style.background='var(--panel2)';
+  card.innerHTML=`<h2>${shx.shot_id} · ${shx.title}</h2><img class="plate" src="/api/plates/${shx.plate.includes('prep')?'plates/prep/':'plates/'}${shx.plate.split('/').pop()}" alt="${shx.shot_id} plate">
+  <div class="kv" style="margin-top:8px"><b>frame</b> ${JSON.stringify(shx.frame.size)} ${shx.frame.lens_mm}mm T${shx.frame.t_stop} · <b>dur</b> ${shx.duration_s}s<br><b>function</b> ${shx.narrative_function}<br><b>plate</b> <span class="note">${shx.plate}</span></div>`;
+  g.appendChild(card)});
+ sh.appendChild(g);s.appendChild(sh);
+ const pr=el('div','panel','<h2>PROVIDERS &amp; ENCODER</h2>');const tb2=el('table');tb2.innerHTML='<tr><th>provider</th><th>class</th><th>configured</th><th>exit path if not</th></tr>';
+ WS.providers.forEach(x=>{const tr=el('tr');tr.innerHTML=`<td>${x.id}</td><td class="note">${x.klass}</td><td><span class="chip ${x.configured?'succeeded':'blocked'}">${x.configured?'yes':'no'}</span></td><td class="note">${x.exit_if_missing}</td>`;tb2.appendChild(tr)});
+ pr.appendChild(tb2);s.appendChild(pr);
+ const cp=el('div','panel','<h2>CAPABILITY MATRIX (governance)</h2>');const tb3=el('table');tb3.innerHTML='<tr><th>cap</th><th>capability</th><th>status</th></tr>';
+ WS.capabilities.forEach(x=>{const tr=el('tr');tr.innerHTML=`<td>${x.id}</td><td class="note">${x.capability}</td><td><span class="chip ${x.status==='VERIFIED'?'succeeded':'blocked'}">${x.status}</span></td>`;tb3.appendChild(tr)});
+ cp.appendChild(tb3);
+ if(WS.capability_evidence_log&&WS.capability_evidence_log.length){const lg=el('div','note','<b>evidence log:</b><br>'+WS.capability_evidence_log.map(x=>`• ${x.date} ${x.cap||x.type}: ${x.event}`).join('<br>'));cp.appendChild(lg)}
+ s.appendChild(cp);}
+function renderGen(){const s=$('#t-gen');s.innerHTML='';const p=el('div','panel','<h2>SUBMIT GENERATION JOB</h2>');
+ p.innerHTML+=`<div class="grid c3"><div><label>shot</label><select id="g-shot">${WS.shots.map(x=>`<option ${x.shot_id==='SHOT-C'?'selected':''}>${x.shot_id}</option>`).join('')}</select></div>
+ <div><label>duration (s)</label><input id="g-dur" type="number" value="5" step="0.5"></div>
+ <div><label>fps</label><input id="g-fps" type="number" value="24"></div></div>
+ <label>provider</label><div id="g-provs">${WS.providers.map(x=>`<div style="margin:4px 0"><label style="display:inline;margin:0"><input type="radio" name="prov" value="${x.id}" style="width:auto" ${x.id==='plate-render-techviz-v1'?'checked':''}> <b>${x.id}</b> — <span class="note">${x.klass}</span> <span class="chip ${x.configured?'succeeded':'blocked'}">${x.configured?'configured':'not configured'}</span></label>${x.configured?'':`<div class="note">exit: ${x.exit_if_missing}</div>`}</div>`).join('')}</div>
+ <label>prompt (from data/prompts.json; editable)</label><textarea id="g-prompt" rows="7"></textarea>
+ <div class="note" style="margin:8px 0">SHOT-C uses the subtitle-free clean plate; 5.0 s test override per G0-REC-001. Tech-viz provider renders a real camera-move test video — it is NOT AI generation.</div>
+ <button class="act primary" id="g-submit">Submit job</button> <span id="g-msg"></span>`;
+ s.appendChild(p);
+ const fill=()=>{const id=$('#g-shot').value;const iv=WS.prompts.i2v.find(x=>x.shot_id===id);$('#g-prompt').value=iv?iv.prompt_text:'';};
+ $('#g-shot').onchange=fill;fill();
+ $('#g-submit').onclick=async()=>{const msg=$('#g-msg');msg.textContent='';try{
+  const job=await api('/api/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({shot_id:$('#g-shot').value,provider_id:document.querySelector('input[name=prov]:checked').value,duration_s:Number($('#g-dur').value),fps:Number($('#g-fps').value),prompt_text:$('#g-prompt').value})});
+  msg.innerHTML=`<span class="ok">submitted ${job.id}</span>`;switchTab('jobs');}catch(e){msg.innerHTML=`<span class="err">${e.message}</span>`}};}
+async function loadJobs(){JOBS=await api('/api/jobs');const s=$('#t-jobs');s.innerHTML='';const p=el('div','panel','<h2>JOB MONITOR</h2>');
+ const tb=el('table');tb.innerHTML='<tr><th>id</th><th>shot</th><th>provider</th><th>status</th><th>created</th><th>error / exit</th><th></th></tr>';
+ JOBS.forEach(j=>{const tr=el('tr');tr.innerHTML=`<td>${j.id}</td><td>${j.shot_id}</td><td class="note">${j.provider_id}</td><td><span class="chip ${j.status}">${j.status}</span>${j.review?' · <span class="chip succeeded">qc recorded</span>':''}</td><td class="note">${j.created_at.slice(11,19)}</td><td class="err">${j.error?(j.error.code+': '+(j.error.exit||j.error.message||'')).slice(0,140):''}</td><td><button class="act" data-r="${j.id}">review</button> <button class="act" data-m="${j.id}">manifest</button></td>`;tb.appendChild(tr)});
+ p.appendChild(tb);s.appendChild(p);
+ s.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{CUR_JOB=b.dataset.r;switchTab('rev')});
+ s.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{CUR_JOB=b.dataset.m;switchTab('exp')});}
+async function loadRev(){const s=$('#t-rev');s.innerHTML='';if(!CUR_JOB&&JOBS.length)CUR_JOB=(JOBS.find(j=>j.status==='succeeded')||JOBS[0]).id;
+ if(!CUR_JOB){s.appendChild(el('div','panel','<h2>REVIEW STATION</h2><div class="note">No jobs yet.</div>'));return}
+ const j=await api('/api/jobs/'+CUR_JOB);const p=el('div','panel',`<h2>REVIEW · ${j.id} · ${j.shot_id}</h2>`);
+ const media=j.has_media?`<video controls loop src="/api/jobs/${j.id}/media"></video>`:`<div class="err">no media (status ${j.status})</div>`;
+ p.innerHTML+=`<div class="grid c2"><div>${media}<div class="note">candidate (job output)</div></div><div><img class="plate" src="/api/plates/${j.plate.split('/').slice(-2).join('/')}" alt="reference"><div class="note">conditioning reference · ${j.plate}</div></div></div>
+ <div class="kv" style="margin-top:10px"><b>prompt hash</b> ${j.prompt_hash.slice(0,16)}… · <b>params</b> ${JSON.stringify(j.params)}</div>`;
+ const rub=el('div','panel','<h2>RUBRIC SCORES (1–5) · G2 thresholds: weighted ≥70, C6≥3, C7≥3</h2>');
+ const W={C1:15,C2:20,C3:15,C4:10,C5:15,C6:10,C7:10,C8:5};
+ rub.innerHTML+=`<div class="grid c3">${Object.keys(W).map(c=>`<div><label>${c} (w${W[c]})</label><select id="sc-${c}">${[1,2,3,4,5].map(v=>`<option ${v===4?'selected':''}>${v}</option>`).join('')}</select></div>`).join('')}</div><div class="kv" style="margin-top:8px">weighted: <b id="wsum">–</b></div>`;
+ const qc=el('div','panel','<h2>QC CHECKS (SHOT-C subset)</h2>');
+ const checks=['QC-002 no glyph/subtitle any frame','QC-106 scream anatomy at 100% zoom','QC-107 hair vector 270°, no strand across face','QC-205 halation only, no streaks','QC-206 frontal plane stays near-black','QC-108 pore-level skin, no smoothing'];
+ qc.innerHTML+=checks.map((c,i)=>`<div style="margin:4px 0"><label style="display:inline;margin:0"><input type="checkbox" style="width:auto" checked data-qc="${i}"> ${c}</label></div>`).join('');
+ qc.innerHTML+=`<label style="margin-top:8px"><input type="checkbox" style="width:auto" id="hs"> hard-stop attestation: zero instances of R-08/R-14/R-15/R-18 observed</label>
+ <label>disposition</label><select id="disp"><option>advance</option><option>remediate</option><option>reject</option></select>
+ <div style="margin-top:10px"><button class="act primary" id="save-qc">Record QC decision</button> <span id="qc-msg"></span></div>
+ <div class="note">Recording a QC decision is executor evidence; creative acceptance remains a human gate (G1/G2).</div>`;
+ s.appendChild(p);s.appendChild(rub);s.appendChild(qc);
+ const calc=()=>{let t=0;Object.keys(W).forEach(c=>{t+=W[c]*Number($('#sc-'+c).value)});$('#wsum').textContent=(t/5).toFixed(1)+' / 100'};
+ Object.keys(W).forEach(c=>$('#sc-'+c).onchange=calc);calc();
+ $('#save-qc').onclick=async()=>{const scores={};Object.keys(W).forEach(c=>scores[c]=Number($('#sc-'+c).value));let t=0;Object.keys(W).forEach(c=>t+=W[c]*scores[c]);
+  const payload={shot_id:j.shot_id,scores,weighted:Number((t/5).toFixed(1)),checks:checks.map((c,i)=>({id:c.split(' ')[0],text:c,pass:document.querySelector(`[data-qc="${i}"]`).checked})),hard_stop_zero:$('#hs').checked,disposition:$('#disp').value,provider_id:j.provider_id,candidate_class:j.provider_id==='plate-render-techviz-v1'?'tech-viz camera test (NOT AI generation)':'generation'};
+  try{await api(`/api/jobs/${j.id}/qc`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});$('#qc-msg').innerHTML='<span class="ok">recorded</span>';loadJobs()}catch(e){$('#qc-msg').innerHTML=`<span class="err">${e.message}</span>`}};}
+async function loadExp(){const s=$('#t-exp');s.innerHTML='';if(!CUR_JOB&&JOBS.length)CUR_JOB=(JOBS.find(j=>j.status==='succeeded')||JOBS[0]).id;
+ if(!CUR_JOB){s.appendChild(el('div','panel','<h2>EXPORT</h2><div class="note">No jobs yet.</div>'));return}
+ const m=await api('/api/jobs/'+CUR_JOB+'/manifest');const p=el('div','panel',`<h2>EXPORT · ${m.manifest_id}</h2>`);
+ p.innerHTML+=`<div class="kv"><b>job</b> ${m.job.id} · ${m.job.shot_id} · ${m.job.status}<br><b>plate</b> ${m.plate.path} <span class="note">${m.plate.sha256.slice(0,16)}…</span><br><b>rights</b> <span class="note">${m.rights}</span></div>`;
+ const tb=el('table');tb.innerHTML='<tr><th>file</th><th>bytes</th><th>sha256</th><th></th></tr>';
+ m.outputs.forEach(o=>{const tr=el('tr');tr.innerHTML=`<td>${o.file}</td><td>${o.bytes}</td><td class="note">${o.sha256.slice(0,20)}…</td><td><a class="act" style="text-decoration:none" href="/api/jobs/${CUR_JOB}/${o.file==='out.mp4'?'media':o.file==='metadata.json'?'metadata':'qc'}" download="${CUR_JOB}-${o.file}">download</a></td>`;tb.appendChild(tr)});
+ p.appendChild(tb);
+ p.appendChild(el('div','note','Full manifest JSON: <a href="/api/jobs/'+CUR_JOB+'/manifest" download="'+CUR_JOB+'-manifest.json">download</a>'));
+ s.appendChild(p);}
+function switchTab(t){document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));
+ ['ws','gen','jobs','rev','exp'].forEach(x=>$('#t-'+x).hidden=x!==t);
+ if(t==='jobs')loadJobs();if(t==='rev')loadRev();if(t==='exp')loadExp();}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>switchTab(b.dataset.t));
+loadWS();setInterval(()=>{if(!$('#t-jobs').hidden)loadJobs()},2000);
+</script>
+</body>
+</html>

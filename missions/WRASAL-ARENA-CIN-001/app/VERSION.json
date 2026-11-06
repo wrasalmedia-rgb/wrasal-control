@@ -1,0 +1,7 @@
+{
+  "app": "wrasal-arena-cin-production-console",
+  "version": "0.1.0-rc1",
+  "release_state": "CANDIDATE — human release approval pending (Rule 3)",
+  "branch": "arena/abe9e5ac-wrasal-control",
+  "rollback": "redeploy previous release commit and restart process; procedure in missions/WRASAL-ARENA-CIN-001/deployment/SANDBOX-DEPLOY-001.md §Rollback"
+}
