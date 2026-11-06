@@ -1,0 +1,38 @@
+{
+  "schema": "wrasal-evaluation-rubric/v1",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "criteria": [
+    {"id": "C1", "name": "Photoreal texture & grain", "weight": 15, "measures": "pore/fabric/sand detail; grain and halation per scene DNA 3.1; no smoothing (R-18)"},
+    {"id": "C2", "name": "Anatomy & performance truth", "weight": 20, "measures": "faces, hands, teeth, gaits, micro-beats per 09; identity vs lock still"},
+    {"id": "C3", "name": "Physical plausibility", "weight": 15, "measures": "gravity, contact, archery/equine/fire/smoke physics per 08 8.4-8.5 and 13"},
+    {"id": "C4", "name": "Lens & camera grammar", "weight": 10, "measures": "focal/stop feel, DoF, flare character, move per 08"},
+    {"id": "C5", "name": "Light & color continuity", "weight": 15, "measures": "palette family, ratios, kelvin story, value escalation per 03"},
+    {"id": "C6", "name": "Temporal stability", "weight": 10, "measures": "no flicker/boil/warp across duration; HOLD elements hold"},
+    {"id": "C7", "name": "Motion quality & cadence", "weight": 10, "measures": "1/48 s blur feel, 24 fps cadence, amplitude per shot DNA"},
+    {"id": "C8", "name": "Prompt / plate adherence", "weight": 5, "measures": "beats present in order; framing vs plate overlay"}
+  ],
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "anchors": {
+      "5": "Theatrical: indistinguishable from photographed live-action at 100% inspection; zero noted defects",
+      "4": "Acceptable: defects only visible at freeze-frame/zoom, not in real-time viewing; no DNA violation",
+      "3": "Remediable: visible defect in real-time but fixable in post at bounded cost",
+      "2": "Reject-soft: defect violates a shot-DNA lock or needs unbounded post; candidate rejected",
+      "1": "Reject-hard: hard-stop risk instance or anatomy/physics break"
+    }
+  },
+  "math": "weighted = sum(weight_i * score_i) / 5 -> 0..100",
+  "acceptance": {
+    "G3_final_shot": {"weighted_min": 80, "C2_min": 4, "C3_min": 4, "no_criterion_at_or_below": 2, "hard_stop_instances": 0},
+    "G2_motion_test": {"weighted_min": 70, "C6_min": 3, "C7_min": 3}
+  },
+  "panel": {
+    "min_scorers": 3,
+    "roles": ["director", "dp", "vfx_supervisor"],
+    "procedure": ["real-time pass", "50% pass", "100% freeze audit at 12-frame intervals", "zoom audit on faces/hands/props"],
+    "disagreement_rule": "spread >1 point on any criterion triggers discussion re-score; persistent split: director's score governs (human authority)"
+  },
+  "score_sheet_required_fields": ["candidate_id", "model", "model_version", "seed", "parameters", "prompt_hash", "plate_checksum", "gate", "scorers", "date"],
+  "model_comparison_mode": "identical prompt/plate batches across candidate models; compare mean weighted score per shot and hard-stop incidence; per-shot winners allowed; selection rationale recorded with human sign-off"
+}

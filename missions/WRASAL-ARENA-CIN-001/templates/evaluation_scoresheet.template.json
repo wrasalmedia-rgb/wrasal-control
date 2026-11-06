@@ -1,0 +1,24 @@
+{
+  "_template": "wrasal-evaluation-scoresheet/v1 — one per candidate per gate. Scores 1-5 per rubric anchors.",
+  "schema": "wrasal-evaluation-scoresheet/v1",
+  "candidate": {"id": "{{ID}}", "shot_id": "{{SHOT-ID}}", "model": "{{MODEL}}", "model_version": "{{VER}}", "seed": "{{SEED}}", "parameters": {}, "prompt_hash": "{{HASH}}", "plate_checksum": "{{SHA256|null}}", "mode": "t2v|i2v"},
+  "gate": "G2|G3",
+  "date": "{{YYYY-MM-DD}}",
+  "scores": [
+    {"criterion": "C1", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": "{{defects observed, freeze-frame refs}}"},
+    {"criterion": "C2", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C3", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C4", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C5", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C6", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C7", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""},
+    {"criterion": "C8", "scorer_1": 0, "scorer_2": 0, "scorer_3": 0, "final": 0, "notes": ""}
+  ],
+  "hard_stop_instances": [],
+  "weighted_score": 0,
+  "acceptance_check": {"threshold_met": false, "C2_min_met": false, "C3_min_met": false, "no_criterion_at_or_below_2": false, "hard_stops_zero": false},
+  "disagreement_log": [],
+  "panel": [{"name": "{{NAME}}", "role": "director|dp|vfx_supervisor"}],
+  "disposition": "advance|reject|remediate",
+  "_note": "score sheet is evidence; gate acceptance recorded separately in mission changelog with named sign-off"
+}

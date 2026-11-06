@@ -1,0 +1,15 @@
+{
+  "_template": "wrasal-negative-constraints/v1 — blank. Keep N-GLOBAL intact per package; add shot sets.",
+  "schema": "wrasal-negative-constraints/v1",
+  "mission": "{{MISSION_ID}}",
+  "enforcement_doctrine": "negative prompts are model-support-dependent (CAP-04); every constraint is ALSO a rejection criterion in the QC checklist and rubric",
+  "sets": [
+    {"id": "N-GLOBAL", "apply_to": "all", "anatomy_humans": ["{{ITEMS from package doctrine}}"], "physics_motion": ["{{ITEMS}}"], "look_grade": ["{{ITEMS}}"], "content_rights": ["{{ITEMS incl. no burned-in text, no real-person likeness, no trademarked designs}}"], "frame": ["{{ITEMS}}"]},
+    {"id": "N-{{X}}", "apply_to": "{{SHOT-ID}}", "items": ["{{SHOT-SPECIFIC BANS derived from physics_locks inverses}}"]}
+  ],
+  "delivery_matrix": [
+    {"model_class": "native negative-prompt field", "delivery": "paste shot list verbatim", "fallback": null},
+    {"model_class": "no negative support", "delivery": null, "fallback": "rejection sampling + QC gates + prompt hardening"},
+    {"model_class": "mask/region control", "delivery": "region masks for absolute bans", "fallback": "clean plate prep"}
+  ]
+}

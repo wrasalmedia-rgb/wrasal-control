@@ -1,0 +1,20 @@
+{
+  "_template": "wrasal-prompt-i2v/v1 — conditioning plate must be an approved lock (QC-005/015) and prep-clean.",
+  "prompt_id": "I2V-{{X}}",
+  "shot_id": "{{SHOT-ID}}",
+  "conditioning_plate": "{{PLATE_PATH}}",
+  "plate_prep": "{{e.g. subtitle inpaint mandatory (QC-002) | none}}",
+  "blocks": {
+    "move": "{{what animates, with amplitudes and beat order}}",
+    "hold": "{{what must stay frozen: geometry, values, framing, defocus}}",
+    "cam": "{{camera move + amplitude}}",
+    "amp": "{{LOW|MED|HIGH}}",
+    "phys": "{{physics locks verbatim from shot DNA}}",
+    "absolute": "{{hard bans, e.g. no text any frame}}",
+    "texture": "{{preserve texture notes + grain}}"
+  },
+  "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: {{move}} HOLD: {{hold}} CAM: {{cam}} AMP: {{amp}} PHYS: {{phys}} ABSOLUTE: {{absolute}} Texture: {{texture}}",
+  "parameters": {"duration_s": 0.0, "first_frame": "plate", "motion_strength": "{{LOW|MED|HIGH}}", "last_frame": "{{OPTIONAL per CAP-06}}"},
+  "negatives": ["N-GLOBAL", "N-{{X}}"],
+  "governance": {"identity_rule": "named characters animate only from locked plate or G1 look-dev still", "capability_checks": ["CAP-03", "CAP-06 if last_frame used"], "log_fields": ["model", "model_version", "seed", "parameters", "prompt_hash", "plate_checksum"]}
+}

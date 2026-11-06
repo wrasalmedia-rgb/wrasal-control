@@ -14,3 +14,8 @@ yute:
   state: active
   organization: Wrasal Media
   repo: yute
+arena-cin-001:
+  state: active
+  objective: AI-assisted cinematic reproduction production package for the WRASAL-ARENA-CIN-001 four-frame desert reference (specs, templates, registers)
+  parent: wrasal
+  repo: wrasal-control

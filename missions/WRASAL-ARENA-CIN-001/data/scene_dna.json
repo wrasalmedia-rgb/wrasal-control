@@ -1,0 +1,90 @@
+{
+  "schema": "wrasal-scene-dna/v1",
+  "scene_id": "SCN-ARENA-CIN-001",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "working_title": "The Crimson Oath",
+  "status": "DRAFT_PENDING_G0",
+  "recorded_on": "2026-11-06",
+  "source_reference": {
+    "path": "reference/source/image-1.png",
+    "sha256": "bea6ed1c68c92e86ad3359c2c53ad518303f3da33b13bf6c57e7df7ef292cc20",
+    "size_px": [1920, 824],
+    "interpretation": "visual reference only; not proof of narrative continuity"
+  },
+  "technical_envelope": {
+    "aspect_ratio": "2.39:1",
+    "fps": 24,
+    "shutter": "180deg (1/48s)",
+    "finish_primary": "3996x1668",
+    "finish_alternate": "3840x1608",
+    "color": "Rec.709 display render, filmic tone map; ACEScg working space if verified (CAP-11)",
+    "grain": {"class": "35mm fine", "strength": "2/5", "coupling": "luminance", "pattern": "static per shot"},
+    "halation": {"enabled": true, "edge": "red", "max_radius_pct_frame_h": 1.5, "sources_only": ["practicals", "sun"]},
+    "gate_weave_pct_frame_h_max": 0.05,
+    "burned_in_text": "forbidden; reference Hangul '가자!' is a source localization placeholder, excluded"
+  },
+  "palette": [
+    {"id": "P-01", "name": "dune sand soft day", "srgb": [180, 141, 102], "hex": "#B48D66", "role": "SHOT-A background field", "sampled_at": [700, 120]},
+    {"id": "P-02", "name": "hood cream shadow side", "srgb": [166, 136, 110], "hex": "#A6886E", "role": "CH-01 costume base", "sampled_at": [300, 50]},
+    {"id": "P-03", "name": "skin soft key", "srgb": [157, 120, 93], "hex": "#9D785D", "role": "CH-01 face", "sampled_at": [240, 95]},
+    {"id": "P-04", "name": "mentor charcoal", "srgb": [10, 10, 10], "hex": "#0A0A0A", "role": "CH-02 robe value anchor", "sampled_at": [880, 220]},
+    {"id": "P-05", "name": "night sky dusk blue-teal", "srgb": [15, 32, 39], "hex": "#0F2027", "role": "SHOT-B ambient top", "sampled_at": [1360, 40]},
+    {"id": "P-06", "name": "adobe in firelight", "srgb": [133, 61, 15], "hex": "#853D0F", "role": "SHOT-B architecture key side", "sampled_at": [1826, 160]},
+    {"id": "P-07", "name": "fire core white-hot", "srgb": [250, 250, 248], "hex": "#FAFAF8", "role": "practical peak", "sampled_at": [1106, 286]},
+    {"id": "P-08", "name": "flame body", "srgb": [171, 102, 47], "hex": "#AB662F", "role": "fire mid-tone", "sampled_at": [1706, 240]},
+    {"id": "P-09", "name": "anomaly slit cool white", "srgb": [237, 241, 252], "hex": "#EDF1FC", "role": "ANOM-01 single light", "sampled_at": [1450, 80]},
+    {"id": "P-10", "name": "sunset haze pink", "srgb": [249, 204, 185], "hex": "#F9CCB9", "role": "SHOT-C sky field", "sampled_at": [672, 470]},
+    {"id": "P-11", "name": "sun disc clipped", "srgb": [254, 254, 254], "hex": "#FEFEFE", "role": "SHOT-C backlight source", "sampled_at": [624, 548]},
+    {"id": "P-12", "name": "hair rim backlit", "srgb": [134, 82, 71], "hex": "#865247", "role": "CH-03 hair edge", "sampled_at": [150, 520]},
+    {"id": "P-13", "name": "storm crimson mid", "srgb": [190, 44, 39], "hex": "#BE2C27", "role": "SHOT-D cloud body", "sampled_at": [1226, 492]},
+    {"id": "P-14", "name": "storm deep red", "srgb": [57, 0, 9], "hex": "#390009", "role": "SHOT-D cloud shadow mass", "sampled_at": [1693, 492]},
+    {"id": "P-15", "name": "horizon glow dust-lit", "srgb": [229, 185, 160], "hex": "#E5B9A0", "role": "SHOT-D luminance anchor lower-left", "sampled_at": [1093, 718]},
+    {"id": "P-16", "name": "silhouette black-red", "srgb": [27, 11, 12], "hex": "#1B0B0C", "role": "SHOT-D subject value", "sampled_at": [1360, 598]},
+    {"id": "P-17", "name": "profile frontal near-black", "srgb": [16, 12, 9], "hex": "#100C09", "role": "SHOT-C face frontal plane (legal near-black)", "sampled_at": [275, 615]},
+    {"id": "P-18", "name": "backlit skin translucency", "srgb": [128, 50, 38], "hex": "#803226", "role": "SHOT-C lit rim skin", "sampled_at": [450, 590]}
+  ],
+  "tone_doctrine": {
+    "SHOT-A": {"key_fill": "2.5:1", "black_point": "warm lift +2 IRE", "highlight_policy": "no clips"},
+    "SHOT-B": {"key_fill": "6:1 in fire pools", "black_point": "deep textured", "highlight_policy": "fire cores clip <=0.5% px"},
+    "SHOT-C": {"key_fill": "5:1 backlit", "black_point": "frontal profile near-black legal (P-17)", "highlight_policy": "sun disc only legal full clip"},
+    "SHOT-D": {"key_fill": "n/a silhouette", "black_point": "subject -6..-8 stops vs sky", "highlight_policy": "sky shoulder soft; glow <=5% px near-clip"}
+  },
+  "light_doctrine": [
+    "every photon motivated: sun state, fire, or sun-through-dust",
+    "color temperature is narrative: soft neutral-warm -> fire-vs-dusk split -> low gold -> dust-red diffuse",
+    "fire flicker 6-9 Hz natural non-periodic",
+    "backlight escalation: A none, B fire rim, C sun rim, D total silhouette"
+  ],
+  "wind_doctrine": {
+    "screen_vector_deg": 270,
+    "rule": "all wind-born elements move screen-left in every shot",
+    "shots": {"SHOT-A": "beaufort 1-2", "SHOT-B": "beaufort 2-3 + fire draft", "SHOT-C": "beaufort 5-6 gusting", "SHOT-D": "beaufort 6-7"}
+  },
+  "composition_doctrine": [
+    "faces on thirds; negative space >=30% in gaze/wind direction",
+    "horizon high in B, low in D, absent in A/C",
+    "silhouette punctuation only at mythic beats; partial silhouette at emotional beats",
+    "anomaly never centered, never largest value contrast"
+  ],
+  "texture_restrictions": [
+    "natural human anatomy; pore-level skin; no artificial smoothing",
+    "physical plausibility: gravity, mass, contact shadows, correct archery/equine mechanics",
+    "no exaggerated fantasy rendering: no glow auras, no saturated magic FX",
+    "fabric weave visible: linen/wool/leather; no synthetic sheen"
+  ],
+  "continuity_vectors": {
+    "CH-01_wardrobe": "cream hooded linen robe, hood UP, wood recurve bow no ornament",
+    "CH-03_wardrobe": "dark leather pauldron LEFT shoulder, charcoal cloak, hair unbound",
+    "wind_vector_deg": 270,
+    "grain_halation": "single package-wide recipe",
+    "value_escalation": ["SHOT-A", "SHOT-B", "SHOT-C", "SHOT-D"]
+  },
+  "sequence_edit": {"order": ["SHOT-A", "SHOT-B", "SHOT-C", "SHOT-D"], "durations_s": [4.0, 6.0, 3.5, 5.0], "total_s": 18.5, "total_frames": 444, "transitions": "hard cuts only"},
+  "governance": {
+    "creative_state": "DRAFT",
+    "gates": ["G0", "G1", "G2", "G3", "G4"],
+    "capability_register": "data/capability_matrix.json",
+    "assumptions_register": "05-character-continuity.md#53",
+    "rule_of_non_implication": "QC/rubric passes establish technical conformity only; named human sign-off promotes state"
+  }
+}

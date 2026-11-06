@@ -1,0 +1,30 @@
+{
+  "_template": "wrasal-scene-dna/v1 — blank. Copy, rename, fill. Fields in {{DOUBLE_BRACES}} are required; arrays may grow.",
+  "schema": "wrasal-scene-dna/v1",
+  "scene_id": "{{SCENE_ID}}",
+  "mission": "{{MISSION_ID}}",
+  "working_title": "{{TITLE}}",
+  "status": "DRAFT_PENDING_G0",
+  "recorded_on": "{{YYYY-MM-DD}}",
+  "source_reference": {"path": "{{PLATE_PATH}}", "sha256": "{{SHA256}}", "size_px": [0, 0], "interpretation": "visual reference only; not proof of narrative continuity"},
+  "technical_envelope": {
+    "aspect_ratio": "2.39:1",
+    "fps": 24,
+    "shutter": "180deg (1/48s)",
+    "finish_primary": "3996x1668",
+    "finish_alternate": "3840x1608",
+    "color": "{{COLOR_PIPELINE}}",
+    "grain": {"class": "{{GRAIN_CLASS}}", "strength": "{{0-5}}", "coupling": "luminance", "pattern": "static per shot"},
+    "halation": {"enabled": true, "edge": "{{red|neutral}}", "max_radius_pct_frame_h": 1.5, "sources_only": ["{{SOURCE_TYPES}}"]},
+    "burned_in_text": "forbidden unless explicitly specified as deliverable layer"
+  },
+  "palette": [{"id": "P-01", "name": "{{NAME}}", "srgb": [0, 0, 0], "hex": "#000000", "role": "{{ROLE}}", "sampled_at": [0, 0]}],
+  "tone_doctrine": {"{{SHOT_ID}}": {"key_fill": "{{RATIO}}", "black_point": "{{POLICY}}", "highlight_policy": "{{POLICY}}"}},
+  "light_doctrine": ["{{RULE}}"],
+  "wind_doctrine": {"screen_vector_deg": 270, "rule": "{{RULE}}", "shots": {"{{SHOT_ID}}": "beaufort {{N}}"}},
+  "composition_doctrine": ["{{RULE}}"],
+  "texture_restrictions": ["natural human anatomy; no artificial smoothing", "physical plausibility", "no exaggerated fantasy rendering", "{{MORE}}"],
+  "continuity_vectors": {"{{VECTOR_NAME}}": "{{LOCK}}"},
+  "sequence_edit": {"order": ["{{SHOT_IDS}}"], "durations_s": [0.0], "total_s": 0.0, "total_frames": 0, "transitions": "{{POLICY}}"},
+  "governance": {"creative_state": "DRAFT", "gates": ["G0", "G1", "G2", "G3", "G4"], "capability_register": "data/capability_matrix.json", "assumptions_register": "{{PATH}}", "rule_of_non_implication": "QC/rubric passes establish technical conformity only; named human sign-off promotes state"}
+}

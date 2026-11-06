@@ -1,0 +1,20 @@
+{
+  "_template": "wrasal-prompt-t2v/v1 — assemble in grammar order; keep style_prefix identical across a package.",
+  "prompt_id": "T2V-{{X}}",
+  "shot_id": "{{SHOT-ID}}",
+  "style_prefix": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur.",
+  "blocks": {
+    "frame_lens": "{{size, angle, height, focal, stop, focus, DoF intent}}",
+    "subject_wardrobe": "{{character id + wardrobe lock + age band}}",
+    "beat_verbs": "{{ordered micro-actions with amplitudes per 09}}",
+    "environment": "{{ENV block from 06 gen prompt block}}",
+    "light": "{{source, kelvin, direction, ratio, rim, halation policy}}",
+    "camera_move": "{{move + amplitude + settle}}",
+    "texture_grain": "{{pore/fabric detail, grain class, halation, no smoothing}}",
+    "physics_locks": "{{locks from shot DNA physics_locks}}"
+  },
+  "prompt_text": "{{CONCATENATE blocks in order as flowing prose; <=1500 chars per model call}}",
+  "parameters": {"duration_s": 0.0, "fps": 24, "aspect": "2.39:1", "motion": "{{LOW|MED|HIGH}}", "camera": "{{static|breathe|handheld|locked}}"},
+  "negatives": ["N-GLOBAL", "N-{{X}}"],
+  "governance": {"capability_checks": ["CAP-XX ids invoked"], "batch_size": {"G2": 6, "G3": 12}, "log_fields": ["model", "model_version", "seed", "parameters", "prompt_hash", "plate_checksum"]}
+}

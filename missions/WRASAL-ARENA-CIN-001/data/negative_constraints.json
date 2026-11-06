@@ -1,0 +1,41 @@
+{
+  "schema": "wrasal-negative-constraints/v1",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "enforcement_doctrine": "negative prompts are model-support-dependent (CAP-04 UNVERIFIED); every constraint is ALSO a rejection criterion in 16-qc-checklist.md and 14-model-evaluation-rubric.md",
+  "sets": [
+    {
+      "id": "N-GLOBAL",
+      "apply_to": "all",
+      "anatomy_humans": ["extra limbs", "extra or missing fingers", "fused or melted hands", "doubled faces", "asymmetric eyes", "wrong tooth count or dental arch", "neck twist beyond natural range", "sexualized or aged-inconsistent minor depiction", "waxy or corpse-like skin", "artificial skin smoothing, airbrushing, plastic sheen, beauty-filter look"],
+      "physics_motion": ["floating objects without support", "missing contact shadows", "gravity reversals", "object teleport between frames", "limb tangling", "non-contralateral crawl gait", "hooves sliding without dust", "cloth ignoring wind vector", "smoke drifting against 270deg wind vector", "fire without heat shimmer or smoke source", "periodic or looping flicker", "time-lapse cloud motion in real-time shots", "motion blur inconsistent with 1/48 s", "soap-opera interpolated cadence", "temporal flicker or boiling texture"],
+      "look_grade": ["oversaturated fantasy grading", "neon or magic glows", "aura effects", "anamorphic streak flares", "cold digital crushed blacks", "clean noise-free digital texture", "HDR-soap look", "unspecified vignetting", "unspecified lens dirt"],
+      "content_rights": ["burned-in subtitles, captions, glyphs, watermarks, logos (reference Hangul '가자!' excluded as source localization placeholder)", "modern artifacts: power lines, glass, plastics, zippers, synthetic sheen, signage, vehicles", "identifiable real-person likeness", "trademarked franchise designs (tripod anomaly must remain original matte three-legged design)"],
+      "frame": ["aspect drift from 2.39:1", "model reframing or cropping", "added letterbox bars inside frame", "upsampling ringing or shimmer"]
+    },
+    {
+      "id": "N-A",
+      "apply_to": "SHOT-A",
+      "items": ["bowstring passing through face, neck, or bow arm", "arrow floating off the riser", "mirrored nock side (arrow right of riser)", "draw elbow dropped below arrow line", "hood slipping or fold pattern morphing", "mentor torso entering focus or moving", "background structures or vegetation appearing", "blink at aim peak", "expression shifting to anger or fear (register = concentration)"]
+    },
+    {
+      "id": "N-B",
+      "apply_to": "SHOT-B",
+      "items": ["figure standing upright", "homolateral crawl gait", "limbs through ground or walls", "fire on roof lines", "blue moonlight key", "tripod slit glowing colored or casting spill on street", "tripod walking or changing leg count", "cart wheel intact while burning rim", "smoke drifting screen-right", "embers rising against draft", "horizon roll >1 deg", "survivor face becoming legible or heroic"]
+    },
+    {
+      "id": "N-C",
+      "apply_to": "SHOT-C",
+      "items": ["any text or glyph anywhere, especially reappearance of removed subtitle", "hair strands crossing the face", "eyes closed during scream", "jaw unhinged or cartoonish mouth", "frontal face plane lifting out of near-black exposure fix", "sun disc gaining hard edge or streak flare", "haze field banding", "profile rotating toward camera", "pauldron switching shoulders"]
+    },
+    {
+      "id": "N-D",
+      "apply_to": "SHOT-D",
+      "items": ["readable detail on rider or horse (silhouette breach)", "glow fringe around silhouette", "fifth leg or merged legs", "cape merging with horse body or growing from saddle", "horse rearing on forelegs", "hooves sliding on crest", "cloud boil exceeding 2% frame/s", "sun disc appearing", "horizon tilt", "crest line warping", "plume drifting screen-right"]
+    }
+  ],
+  "delivery_matrix": [
+    {"model_class": "native negative-prompt field", "delivery": "paste shot list verbatim", "fallback": null},
+    {"model_class": "no negative support", "delivery": null, "fallback": "rejection sampling at batch sizes per 10-text-to-video-prompts.md 10.5 + QC gates + prompt hardening (critical locks moved into positive text)"},
+    {"model_class": "mask/region control", "delivery": "N-C text rule as region mask on subtitle zone", "fallback": "inpaint-clean plate (already mandatory)"}
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "wrasal-prompts/v1",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "status": "TEMPLATE_DRAFTS_PENDING_G2",
+  "style_prefix": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur.",
+  "assembly_grammar": ["STYLE", "FRAME/LENS", "SUBJECT+WARDROBE", "BEAT VERBS", "ENVIRONMENT", "LIGHT", "CAMERA MOVE", "TEXTURE/GRAIN", "PHYSICS LOCKS"],
+  "governance_note": "model parameters are UNVERIFIED per model; consult data/capability_matrix.json before execution; encode unsupported params as prompt text per 08-camera-lens-specs.md 8.6",
+  "t2v": [
+    {
+      "prompt_id": "T2V-A",
+      "shot_id": "SHOT-A",
+      "prompt_text": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur. Medium close-up at eye level, 85 mm lens at T2.8, focus locked on the near eye of a child archer aged ten to twelve in a cream linen hooded robe, hood up. She holds a full recurve-bow draw: bow arm extended off-frame left, string anchored at the corner of her mouth passing beside her nose, one eye squinted in aim, breath held, a slight tremor in the drawing elbow, then resolve as her chin lifts one degree. Soft shadowless daylight at 5200 K from camera-left, gentle 2.5:1 fall-off, warm sand bounce from below. Background: wind-rippled dune sand twelve meters back, melted into creamy round bokeh, one stop under. Frame-right edge: out-of-focus charcoal-robed adult torso, completely still. Camera locked with organic micro-breath only. Natural pore-level skin with dust, no smoothing; fine 35 mm film grain; subtle warm halation. Physics: bowstring never intersects face or neck; arrow nocked left of riser; hood folds static.",
+      "parameters": {"duration_s": 4.0, "fps": 24, "aspect": "2.39:1", "motion": "LOW", "camera": "static-breathe"},
+      "negatives": ["N-GLOBAL", "N-A"]
+    },
+    {
+      "prompt_id": "T2V-B",
+      "shot_id": "SHOT-B",
+      "prompt_text": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur. Wide shot, low angle half a meter off the ground, 32 mm lens at T4, deep focus. A straight street of mud-brick adobe buildings at night, civil-dusk teal sky above. Two ground fires burn: a firewood pool foreground-left and a wooden cart with a spoked wheel mid-right, flames 1900-2200 K with natural non-periodic flicker, smoke layers backlit orange. A person in a soiled white wool robe crawls fast and low toward camera-left, hand slips on sand, hip drops, instant recovery without standing, then glances up in terror while moving. At the street end, sixty meters out, a tall matte-dark tripod machine straddles the wall line, ovoid head bearing a single vertical cool-white slit, swaying less than half a degree, no spill light on the street. Reactive handheld: eight-degree pan-left over two seconds then settle, horizon off-axis under one degree. Firelight ratio six-to-one in the pools; deep textured blacks; fine 35 mm grain; ember and smoke drift screen-left. Physics: contralateral crawl gait; wheel burns rim-inward; no flames on roofs.",
+      "parameters": {"duration_s": 6.0, "fps": 24, "aspect": "2.39:1", "motion": "HIGH-subject/LOW-camera-settle", "camera": "handheld-reactive"},
+      "negatives": ["N-GLOBAL", "N-B"]
+    },
+    {
+      "prompt_id": "T2V-C",
+      "shot_id": "SHOT-C",
+      "prompt_text": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur. Medium close-up in hard profile at eye level, 85 mm lens at T4, sun disc in frame. A warrior woman of twenty-five to thirty-five, long black hair unbound, dark leather pauldron on her left shoulder, charcoal cloak, screams a command into the wind: inhale against the gust, then jaw drops wide with teeth and tongue anatomically correct, eyes open and fixed off-frame right, neck cords engaged, sustain, then mouth snaps shut into a locked glare. Hard backlight from a low soft-edged sun at eight degrees elevation through thick pink dust haze; sky-bounce fill only, five-to-one; warm rim on hair and jaw; her profile frontal plane stays near-black. Hair streams screen-left in a constant vector. Camera: handheld breathe with a two percent push-in over three and a half seconds. Gentle red-edge halation around the sun, no streak flares; haze field uniform; fine 35 mm grain. No text, no captions, no watermark anywhere in frame. Physics: hair never crosses the face; jaw hinge natural.",
+      "parameters": {"duration_s": 3.5, "fps": 24, "aspect": "2.39:1", "motion": "MED", "camera": "handheld-breathe-push"},
+      "negatives": ["N-GLOBAL", "N-C"]
+    },
+    {
+      "prompt_id": "T2V-D",
+      "shot_id": "SHOT-D",
+      "prompt_text": "Photorealistic live-action cinema, 2.39:1, 24 fps, 1/48 s motion blur. Extreme wide tableau, low angle from the dune base, 90 mm lens at T8, locked-off camera. A knife-edge dune crest across the lower third; on it a rider on a rearing horse in pure silhouette, exposed six to eight stops under the sky: hind hooves planted, hocks flexed, forelegs tucked asymmetric, neck arched, rider's seat deep with level shoulders, cape from the shoulders fully extended screen-left. Behind: towering boiling crimson dust-storm cumulus filling the upper two thirds, slow cloud motion under two percent of frame per second, luminance ramp from a bright dust glow at lower-left horizon to deep red mass upper-right; sun hidden, no disc. Crest dust plume drifts screen-left. No detail readable on rider or horse - clean silhouette edges; no glow fringe. Fine 35 mm grain; warm-tinted blacks. Physics: center of mass over hindquarters; four correct legs; cape never merges with horse body.",
+      "parameters": {"duration_s": 5.0, "fps": 24, "aspect": "2.39:1", "motion": "MED-LOW", "camera": "locked"},
+      "negatives": ["N-GLOBAL", "N-D"]
+    }
+  ],
+  "i2v": [
+    {
+      "prompt_id": "I2V-A",
+      "shot_id": "SHOT-A",
+      "conditioning_plate": "reference/plates/shot-A.png",
+      "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: the child archer's draw-arm micro-tremor (1-2 mm), a single suppressed breath in the chest, hood edge flutter, dust motes in the key light; blink suppression (eyes stay as framed). HOLD: bow geometry and string path beside the nose, arrow nock, hood fold pattern, mentor torso position and defocus, background bokeh field, framing. CAM: locked with organic micro-breath <=0.3 deg, no pan. AMP: LOW. PHYS: string never intersects face; no arrow drift; no head turn. Texture: preserve pore-level skin and linen weave; add fine 35 mm grain; no smoothing, no warping of the face.",
+      "parameters": {"duration_s": 4.0, "first_frame": "plate", "motion_strength": "LOW"},
+      "negatives": ["N-GLOBAL", "N-A"]
+    },
+    {
+      "prompt_id": "I2V-B",
+      "shot_id": "SHOT-B",
+      "conditioning_plate": "reference/plates/shot-B.png",
+      "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: crawling figure's contralateral crawl toward screen-left with a hand-slip stumble and recovery at mid-duration, then an upward glance; fire flicker natural 6-9 Hz non-periodic in both pools; cart-wheel flames licking rim-inward; smoke and embers drifting screen-left; tripod anomaly sway <=0.5 deg/s with slit steady. HOLD: adobe architecture layout, cart and wheel position, fire pool positions, sky value, slit color and shape, horizon angle. CAM: handheld reactive pan-left 8 deg over 2 s then settle; horizon roll <=1 deg. AMP: HIGH subject / LOW camera after settle. PHYS: limbs never tangle; robe hem drags; dust kicks at knees; no flames appear on roofs. Texture: keep soot and sand detail; fine 35 mm grain.",
+      "parameters": {"duration_s": 6.0, "first_frame": "plate", "motion_strength": "MED-HIGH"},
+      "negatives": ["N-GLOBAL", "N-B"]
+    },
+    {
+      "prompt_id": "I2V-C",
+      "shot_id": "SHOT-C",
+      "conditioning_plate": "reference/plates/prep/shot-C-clean.png",
+      "plate_prep": "subtitle inpaint mandatory (QC-002, R-14)",
+      "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: scream performance - jaw opens wider on onset with correct teeth and tongue, eyes stay open and fixed off-frame right, neck cords engage, sustain, then mouth closes into a glare; hair streams screen-left in gusts with three hero strands leading; cloak shoulder flutter. HOLD: sun disc position and soft edge, haze density and pink field value, profile near-black frontal plane, warm rim on hair and jaw, pauldron shape, framing. CAM: handheld breathe + 2% push-in. AMP: MED. PHYS: hair never crosses the face; jaw hinge natural; no head rotation out of profile. ABSOLUTE: no text, caption, glyph or watermark may appear at any frame (the source plate's burned-in subtitle was removed in prep; its reappearance is an automatic fail). Texture: preserve backlit skin translucency; fine 35 mm grain; gentle halation only.",
+      "parameters": {"duration_s": 3.5, "first_frame": "clean plate", "motion_strength": "MED"},
+      "negatives": ["N-GLOBAL", "N-C"]
+    },
+    {
+      "prompt_id": "I2V-D",
+      "shot_id": "SHOT-D",
+      "conditioning_plate": "reference/plates/shot-D.png",
+      "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: horse completes its rise into the rear and holds it - hind hooves planted, two small hip pulses, tail sweep, forelegs tuck asymmetric; cape extends fully screen-left and ripples; crest dust plume bleeds screen-left; storm clouds boil slowly (<=2% frame/s). HOLD: silhouette value (no readable detail on rider or horse), silhouette outline class, crest line, luminance ramp (glow lower-left to deep red upper-right), framing. CAM: locked-off; optional 1.5% push. AMP: MED-LOW. PHYS: center of mass over hindquarters at all times; four correct legs; cape pivot at shoulders only, never merging with horse; no hoof slide on crest. Texture: crisp silhouette edges, no glow fringe; fine 35 mm grain.",
+      "parameters": {"duration_s": 5.0, "first_frame": "plate", "motion_strength": "LOW-MED"},
+      "negatives": ["N-GLOBAL", "N-D"],
+      "optional_variant": "start+end frame conditioning per 11-image-to-video-prompts.md 11.5 if CAP-06 verified"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "wrasal-risk-register/v1",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "scoring": "likelihood x impact (1-5); >=15 red blocking at G2; 8-14 amber QC-monitored; <=7 green",
+  "hard_stop_risks": ["R-01", "R-08", "R-14", "R-15", "R-18"],
+  "risks": [
+    {"id": "R-01", "title": "Bowstring intersects face/neck/arm during draw", "shots": ["SHOT-A"], "likelihood": 4, "impact": 4, "score": 16, "class": "red", "mitigation": "geometry lock 08 8.4 in prompt + N-A; frame-by-frame string-path check", "qc_gate": "QC-101"},
+    {"id": "R-02", "title": "Arrow nock side flips or arrow floats off riser", "shots": ["SHOT-A"], "likelihood": 3, "impact": 4, "score": 12, "class": "amber", "mitigation": "N-A; prop lock diagram; still-frame audit at 12 fr intervals", "qc_gate": "QC-102"},
+    {"id": "R-03", "title": "Draw-hand anchor drifts (string creeps off cheek)", "shots": ["SHOT-A"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "HOLD list in I2V-A; tremor amplitude capped", "qc_gate": "QC-103"},
+    {"id": "R-04", "title": "Fire flicker aliases at 24 fps (strobe/periodicity)", "shots": ["SHOT-B"], "likelihood": 3, "impact": 4, "score": 12, "class": "amber", "mitigation": "natural non-periodic flicker spec; temporal flicker QC on 144 fr", "qc_gate": "QC-204"},
+    {"id": "R-05", "title": "Smoke/ember wind vector contradicts 270deg rule", "shots": ["SHOT-B", "SHOT-C", "SHOT-D"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "vector rule in prompt + N lists; vector audit per 24 fr", "qc_gate": "QC-203"},
+    {"id": "R-06", "title": "Tripod gait/leg-count errors or slit color drift", "shots": ["SHOT-B"], "likelihood": 3, "impact": 4, "score": 12, "class": "amber", "mitigation": "ANOM-01 static-sway lock; VFX fallback CG replacement pass", "qc_gate": "QC-104"},
+    {"id": "R-07", "title": "Crawling figure limb tangle / ground penetration", "shots": ["SHOT-B"], "likelihood": 4, "impact": 3, "score": 12, "class": "amber", "mitigation": "contralateral gait spec; N-B; stumble beat bounded", "qc_gate": "QC-105"},
+    {"id": "R-08", "title": "Scream face collapse (teeth, tongue, jaw)", "shots": ["SHOT-C"], "likelihood": 4, "impact": 4, "score": 16, "class": "red", "mitigation": "anatomy verbs 09 9.4; N-C; close-up audit at 84 fr", "qc_gate": "QC-106"},
+    {"id": "R-09", "title": "Hair wind loop / strands crossing face", "shots": ["SHOT-C"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "3 hero strands continuity; gust variance spec", "qc_gate": "QC-107"},
+    {"id": "R-10", "title": "Horse rear imbalance (CoM off hocks, hoof slide)", "shots": ["SHOT-D"], "likelihood": 3, "impact": 5, "score": 15, "class": "red", "mitigation": "equine lock 08 8.5; N-D; frame audit at rear-hold", "qc_gate": "QC-108a"},
+    {"id": "R-11", "title": "Cape merges with horse body or wrong pivot", "shots": ["SHOT-D"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "pivot-at-shoulders lock; silhouette outline class check", "qc_gate": "QC-109"},
+    {"id": "R-12", "title": "Cloud boil reads as time-lapse", "shots": ["SHOT-D"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "<=2% frame/s spec; cadence check vs 24 fps feel", "qc_gate": "QC-201"},
+    {"id": "R-13", "title": "Silhouette edge melt / glow fringe / detail leak", "shots": ["SHOT-D"], "likelihood": 3, "impact": 4, "score": 12, "class": "amber", "mitigation": "expose-for-sky lock; edge crispness audit", "qc_gate": "QC-202"},
+    {"id": "R-14", "title": "Subtitle '가자!' bleeds back from plate C", "shots": ["SHOT-C"], "likelihood": 4, "impact": 4, "score": 16, "class": "red", "mitigation": "mandatory clean-plate prep; ABSOLUTE text ban in I2V-C; per-frame visual scan", "qc_gate": "QC-002"},
+    {"id": "R-15", "title": "Identity drift CH-01/CH-03 across candidates and shots", "shots": ["SHOT-A", "SHOT-C", "SHOT-D"], "likelihood": 4, "impact": 4, "score": 16, "class": "red", "mitigation": "plate-locked I2V; drift stack test vs lock still; reference sets if CAP-05 verified", "qc_gate": "QC-015"},
+    {"id": "R-16", "title": "Upscale shimmer / grain loss at 4K finish", "shots": ["all"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "supervised upscale (CAP-02); grain re-application post-upscale per 03 3.1", "qc_gate": "QC-301"},
+    {"id": "R-17", "title": "Frame-rate conform judder (23.976/30 sources)", "shots": ["all"], "likelihood": 3, "impact": 3, "score": 9, "class": "amber", "mitigation": "true-24 sourcing or documented conform; judder scan", "qc_gate": "QC-302"},
+    {"id": "R-18", "title": "Uncanny skin smoothing from model prior", "shots": ["SHOT-A", "SHOT-C"], "likelihood": 4, "impact": 4, "score": 16, "class": "red", "mitigation": "texture doctrine; N-GLOBAL; pore-level audit at 100% zoom", "qc_gate": "QC-108"},
+    {"id": "R-19", "title": "Aspect/framing drift by model (crop, reframe)", "shots": ["all"], "likelihood": 2, "impact": 4, "score": 8, "class": "amber", "mitigation": "2.39:1 param + frame-edge audit vs plate overlay", "qc_gate": "QC-303"},
+    {"id": "R-20", "title": "Rights/clearance: source-frame likeness or franchise design leakage", "shots": ["all"], "likelihood": 2, "impact": 5, "score": 10, "class": "amber", "mitigation": "original-design rule for ANOM-01; synthetic identities only; legal review at G4", "qc_gate": "QC-111"}
+  ],
+  "assumptions": [
+    {"id": "AS-P1", "text": "listed failure modes occur at non-trivial rates in generative candidates (industry-observed; unmeasured for selected model until G2 batches exist)"},
+    {"id": "AS-P2", "text": "24 fps 180-degree shutter feel achievable natively or via rejection (CAP-08 UNVERIFIED)"},
+    {"id": "AS-P3", "text": "silhouette shots are lower identity-risk but higher physics-risk; face shots inverse"}
+  ],
+  "measurement_plan": "at G2 record observed failure rates per risk from batch results; update likelihood scores with evidence; register is living",
+  "blocking_rules": [
+    "any red risk observed in a candidate rejects it regardless of rubric score",
+    "hard-stop risks: single confirmed instance rejects candidate and triggers prompt/plate remediation before next batch"
+  ]
+}

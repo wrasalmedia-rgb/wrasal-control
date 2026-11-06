@@ -1,0 +1,22 @@
+{
+  "schema": "wrasal-capability-matrix/v1",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "doctrine": "No capability is treated as verified until a human attaches vendor documentation: doc URL + access date + plan/tier. Until then status stays UNVERIFIED and pipelines must use the listed fallback. Vendor names, where present, are candidates for G2 comparison, not endorsements.",
+  "status_vocabulary": ["UNVERIFIED", "VERIFIED", "VERIFIED_WITH_LIMITS", "REFUTED"],
+  "capabilities": [
+    {"id": "CAP-01", "capability": "text-to-video generation at >=1080p with photoreal quality", "status": "UNVERIFIED", "evidence_required": "vendor docs: resolution/quality specs + access date", "fallback": "generate at max native res, supervise upscale at P3"},
+    {"id": "CAP-02", "capability": "supervised AI upscale to 4K without shimmer/ringing", "status": "UNVERIFIED", "evidence_required": "vendor docs + internal test reel at G3", "fallback": "conservative upscale + grain re-application + QC-301"},
+    {"id": "CAP-03", "capability": "image-to-video first-frame conditioning preserving composition/palette", "status": "UNVERIFIED", "evidence_required": "vendor docs: i2v mode + fidelity notes", "fallback": "T2V arm with plate-described prompts; tighter rejection sampling"},
+    {"id": "CAP-04", "capability": "negative prompt support in video generation", "status": "UNVERIFIED", "evidence_required": "vendor docs: negative/avoid parameter per model", "fallback": "rejection sampling + QC gates + prompt hardening (12 12.5)"},
+    {"id": "CAP-05", "capability": "character reference / identity lock across generations", "status": "UNVERIFIED", "evidence_required": "vendor docs: reference-image/identity feature", "fallback": "plate-locked I2V only; drift test QC-015 per candidate"},
+    {"id": "CAP-06", "capability": "start+end frame conditioning", "status": "UNVERIFIED", "evidence_required": "vendor docs: keyframe conditioning", "fallback": "first-frame only; pose guaranteed via rejection + VFX paint"},
+    {"id": "CAP-07", "capability": "parameterized camera moves (pan/tilt/zoom/amplitude)", "status": "UNVERIFIED", "evidence_required": "vendor docs: camera control parameters", "fallback": "camera grammar in prompt text (08 8.6) + post stabilization bounds"},
+    {"id": "CAP-08", "capability": "native 24 fps output and 180-degree shutter motion blur feel", "status": "UNVERIFIED", "evidence_required": "vendor docs: fps options + motion blur behavior", "fallback": "true-24 conform plan (QC-302); documented retiming only with VFX sup approval"},
+    {"id": "CAP-09", "capability": "clip duration >=6 s in one generation", "status": "UNVERIFIED", "evidence_required": "vendor docs: duration limits per plan", "fallback": "segment + invisible-cut stitch at settle points; QC-208 continuity"},
+    {"id": "CAP-10", "capability": "region inpaint removing burned-in subtitle without texture damage", "status": "UNVERIFIED", "evidence_required": "vendor docs + P0 test on plate C", "fallback": "manual paint by VFX artist; QC-002"},
+    {"id": "CAP-11", "capability": "ACEScg or equivalent color-managed pipeline in grade tool", "status": "UNVERIFIED", "evidence_required": "color system docs", "fallback": "Rec.709 display-referenced grade with show LUT trims"},
+    {"id": "CAP-12", "capability": "temporal flicker removal / texture boil suppression tools", "status": "UNVERIFIED", "evidence_required": "tool docs + P4 test", "fallback": "candidate rejection at QC-204/C6; regenerate"}
+  ],
+  "evidence_log": [],
+  "rule": "any deliverable invoking a capability must cite its CAP id; QC-900 fails if an invoked CAP lacks VERIFIED status with doc evidence at gate time"
+}

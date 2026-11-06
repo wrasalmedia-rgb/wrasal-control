@@ -1,0 +1,18 @@
+{
+  "_template": "wrasal-qc-checklist/v1 — instantiate per candidate and per master. Result vocabulary: pass|fail|na. Every fail requires disposition: fix|reject|waive-with-human-signoff.",
+  "schema": "wrasal-qc-checklist/v1",
+  "subject": {"candidate_id": "{{ID}}", "shot_id": "{{SHOT-ID}}", "stage": "{{P0-P9}}", "gate": "{{G0-G4|null}}", "checked_by": "{{NAME}}", "date": "{{YYYY-MM-DD}}"},
+  "checks": [
+    {"id": "QC-001", "group": "plate-prep", "text": "source plate sha256 matches manifest", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-002", "group": "plate-prep", "text": "no glyph/subtitle anywhere; diff confined to subtitle bbox", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-101", "group": "anatomy-physics", "text": "string path beside nose every frame (A)", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-108", "group": "anatomy-physics", "text": "pore-level skin, no smoothing", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-203", "group": "grammar", "text": "wind vector 270deg on all carriers", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-301", "group": "finish", "text": "upscale clean; grain post-upscale", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-900", "group": "governance", "text": "all invoked CAP ids VERIFIED with doc evidence", "result": "pass|fail|na", "disposition": null},
+    {"id": "QC-903", "group": "governance", "text": "hard-stop risks zero-instance attested", "result": "pass|fail|na", "disposition": null}
+  ],
+  "_note": "full check catalogue lives in 16-qc-checklist.md; copy relevant groups per stage",
+  "summary": {"pass": 0, "fail": 0, "na": 0, "waivers": 0, "overall": "pass|fail"},
+  "signoff": {"name": null, "role": null, "date": null, "note": "executor signoff only; gate acceptance is separate human act"}
+}
