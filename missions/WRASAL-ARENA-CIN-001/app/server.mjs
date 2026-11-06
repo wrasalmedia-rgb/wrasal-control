@@ -56,7 +56,13 @@ function providers() {
       id: 'external-provider',
       klass: 'authorized external video provider (async HTTP contract)',
       configured: Boolean(process.env.ARENA_CIN_PROVIDER_URL),
-      exit_if_missing: 'set ARENA_CIN_PROVIDER_URL and ARENA_CIN_PROVIDER_KEY in the deployment environment, or connect an Arena video connector; probes runway/sora/openai/luma all returned unsupported on 2026-11-06',
+      exit_if_missing: 'set ARENA_CIN_PROVIDER_URL and ARENA_CIN_PROVIDER_KEY in the deployment environment, or connect an Arena video connector; probes runway/sora/openai/luma all returned unsupported on 2026-11-06 (runway re-probed same date: unsupported)',
+    },
+    {
+      id: 'external-ingest',
+      klass: 'ingest of footage generated in another environment + as-reported metadata (existing adapter, not a new framework)',
+      configured: true,
+      exit_if_missing: '',
     },
   ];
 }
@@ -214,7 +220,7 @@ const server = http.createServer(async (req, res) => {
         .map((j) => ({ ...j, has_media: fs.existsSync(path.join(JOBS, j.id, 'out.mp4')) }));
       return send(res, 200, jobs);
     }
-    const jobMatch = p.match(/^\/api\/jobs\/([\w-]+)(\/.*)?$/);
+    const jobMatch = p.match(/^\/api\/jobs\/(?!ingest(?:\/|$))([\w-]+)(\/.*)?$/);
     if (jobMatch) {
       const id = jobMatch[1];
       const dir = path.join(JOBS, id);
@@ -268,6 +274,43 @@ const server = http.createServer(async (req, res) => {
           rights: 'REF-ONLY conditioning asset; export of tech-viz material carries no commercial clearance (G4/QC-111 pending)',
         });
       }
+    }
+    if (req.method === 'POST' && p === '/api/jobs/ingest') {
+      let body = '';
+      for await (const chunk of req) body += chunk;
+      if (body.length > 150_000_000) return send(res, 413, { error: 'body too large (150 MB cap)' });
+      const b = JSON.parse(body || '{}');
+      const shotId = b.shot_id;
+      if (!/^SHOT-[A-D]$/.test(shotId || '')) return send(res, 400, { error: 'shot_id must be SHOT-A..SHOT-D' });
+      if (typeof b.video_base64 !== 'string') return send(res, 400, { error: 'video_base64 required' });
+      const buf = Buffer.from(b.video_base64, 'base64');
+      if (buf.length < 20000 || buf.toString('latin1', 4, 8) !== 'ftyp') return send(res, 400, { error: 'video_base64 is not a real MP4 (ftyp magic missing or too small)' });
+      const id = `job-ingest-${Date.now().toString(36)}-${crypto.randomBytes(3).toString('hex')}`;
+      const dir = path.join(JOBS, id);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, 'out.mp4'), buf);
+      const reported = b.metadata || {};
+      const plate = plateForShot(shotId);
+      const metadata = {
+        adapter: 'external-ingest',
+        class: 'externally generated video ingested with as-reported metadata (provider claims require documentation before VERIFIED status per QC-900)',
+        reported,
+        ingest_source: b.source || 'external',
+        plate_sha256: await sha256File(plate),
+        prompt_hash: sha256Text(String(reported.prompt || '')),
+        ingested_at: new Date().toISOString(),
+      };
+      fs.writeFileSync(path.join(dir, 'metadata.json'), JSON.stringify(metadata, null, 2));
+      const job = {
+        id, shot_id: shotId, provider_id: 'external-ingest', status: 'succeeded',
+        created_at: metadata.ingested_at, finished_at: metadata.ingested_at,
+        params: reported.params || {}, prompt_text: String(reported.prompt || ''),
+        prompt_hash: metadata.prompt_hash, plate: path.relative(REPO, plate),
+        review: null, error: null,
+        ingest: { source: metadata.ingest_source, reported_model: reported.model || null, reported_provider: reported.provider || null },
+      };
+      fs.writeFileSync(path.join(dir, 'job.json'), JSON.stringify(job, null, 2));
+      return send(res, 201, job);
     }
     if (req.method === 'POST' && p === '/api/jobs') {
       let body = '';

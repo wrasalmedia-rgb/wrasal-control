@@ -61,6 +61,22 @@ async function main() {
   ok('manifest.outputs', man.outputs.some((o) => o.file === 'out.mp4' && o.sha256.length === 64));
   ok('manifest.rights_note', String(man.rights).includes('REF-ONLY'));
 
+  const ing = await fetch(`${BASE}/api/jobs/ingest`, {
+    method: 'POST', headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      shot_id: 'SHOT-C', source: 'smoke-fixture', video_base64: buf.toString('base64'),
+      metadata: { provider: 'smoke-external-fixture', model: 'none', prompt: 'smoke ingest fixture reusing tech-viz bytes; NOT an AI generation claim', params: { duration_s: 5, fps: 24 } },
+    }),
+  });
+  const ingJob = await ing.json();
+  ok('ingest.accepted', ing.ok && Boolean(ingJob.id), `status=${ing.status}`);
+  let ig = ingJob;
+  for (let i = 0; i < 5 && ig.status !== 'succeeded'; i += 1) { await sleep(500); ig = await (await fetch(`${BASE}/api/jobs/${ingJob.id}`)).json(); }
+  ok('ingest.job_succeeded', ig.status === 'succeeded' && ig.provider_id === 'external-ingest');
+  const im = await fetch(`${BASE}/api/jobs/${ingJob.id}/media`);
+  const ibuf = Buffer.from(await im.arrayBuffer());
+  ok('ingest.media_magic', ibuf.toString('latin1', 4, 8) === 'ftyp' && ibuf.length === buf.length);
+
   const bj = await (await fetch(`${BASE}/api/jobs`, {
     method: 'POST', headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ shot_id: 'SHOT-C', provider_id: 'external-provider' }),

@@ -39,6 +39,7 @@ footer{padding:14px 20px;color:var(--dim);font-size:11px;border-top:1px solid va
   <h1>WRASAL // ARENA-CIN-001 · PRODUCTION CONSOLE</h1>
   <span class="sub" id="ver"></span>
   <span class="badge warn" id="g0"></span>
+  <span class="badge warn" id="rel"></span>
   <span class="badge" id="rights"></span>
 </header>
 <nav>
@@ -49,6 +50,10 @@ footer{padding:14px 20px;color:var(--dim);font-size:11px;border-top:1px solid va
   <button data-t="exp">Export</button>
 </nav>
 <main>
+  <div class="panel" style="border-color:var(--warn)">
+    <b style="color:var(--warn)">TECH-VIZ ≠ AI GENERATION.</b>
+    <span class="note">Plate-render jobs prove the pipeline only — they are labeled NOT AI generation in jobs, metadata and manifests. AI generation: BLOCKED (WRASAL-0014). Production deployment: NOT_AUTHORIZED. Creative acceptance: PENDING. Externally generated footage enters via <code>/api/jobs/ingest</code> with as-reported metadata.</span>
+  </div>
   <section id="t-ws"></section>
   <section id="t-gen" hidden></section>
   <section id="t-jobs" hidden></section>
@@ -61,7 +66,9 @@ const $=s=>document.querySelector(s);const el=(t,c,h)=>{const e=document.createE
 let WS=null,JOBS=[],CUR_JOB=null;
 const api=(p,o)=>fetch(p,o).then(r=>{if(!r.ok)return r.json().then(j=>{throw new Error(j.error||r.status)});return r.json()});
 async function loadWS(){WS=await api('/api/workspace');$('#ver').textContent='v'+WS.version.version+' · '+WS.version.release_state;
- $('#g0').textContent='G0: '+(WS.g0_status||'pending');$('#rights').textContent='REF-ONLY assets';renderWS();renderGen();}
+ $('#g0').textContent='G0: '+(WS.g0_status||'pending');$('#rights').textContent='REF-ONLY assets';
+ $('#rel').textContent=`SANDBOX ${WS.version.sandbox_status} · AI ${WS.version.ai_generation} · PROD ${WS.version.production_deployment} · NEXT ${WS.version.next_gate}`;
+ renderWS();renderGen();}
 function renderWS(){const s=$('#t-ws');s.innerHTML='';
  const env=el('div','panel','<h2>TECHNICAL ENVELOPE</h2>');const e=WS.technical_envelope;
  env.appendChild(el('div','kv',`<b>aspect</b> ${e.aspect_ratio} · <b>fps</b> ${e.fps} · <b>shutter</b> ${e.shutter} · <b>finish</b> ${e.finish_primary} / ${e.finish_alternate}<br><b>grain</b> ${e.grain.class} ${e.grain.strength} · <b>halation</b> ${e.halation.edge} ≤${e.halation.max_radius_pct_frame_h}% · <b>burned-in text</b> forbidden`));
@@ -71,7 +78,7 @@ function renderWS(){const s=$('#t-ws');s.innerHTML='';
  const sh=el('div','panel','<h2>SHOTS &amp; PLATES</h2>');const g=el('div','grid c2');
  WS.shots.forEach(shx=>{const pl=WS.plates.find(q=>q.path.includes('shot-'+shx.shot_id.slice(-1)))||WS.plates.find(q=>q.path.includes('prep')&&shx.shot_id==='SHOT-C'&&q.status==='DERIVED');
   const card=el('div','panel');card.style.background='var(--panel2)';
-  card.innerHTML=`<h2>${shx.shot_id} · ${shx.title}</h2><img class="plate" src="/api/plates/${shx.plate.includes('prep')?'plates/prep/':'plates/'}${shx.plate.split('/').pop()}" alt="${shx.shot_id} plate">
+  card.innerHTML=`<h2>${shx.shot_id} · ${shx.title}</h2><img class="plate" src="/api/plates/${shx.plate.split('/').slice(-2).join('/')}" alt="${shx.shot_id} plate">
   <div class="kv" style="margin-top:8px"><b>frame</b> ${JSON.stringify(shx.frame.size)} ${shx.frame.lens_mm}mm T${shx.frame.t_stop} · <b>dur</b> ${shx.duration_s}s<br><b>function</b> ${shx.narrative_function}<br><b>plate</b> <span class="note">${shx.plate}</span></div>`;
   g.appendChild(card)});
  sh.appendChild(g);s.appendChild(sh);
@@ -106,9 +113,10 @@ async function loadJobs(){JOBS=await api('/api/jobs');const s=$('#t-jobs');s.inn
 async function loadRev(){const s=$('#t-rev');s.innerHTML='';if(!CUR_JOB&&JOBS.length)CUR_JOB=(JOBS.find(j=>j.status==='succeeded')||JOBS[0]).id;
  if(!CUR_JOB){s.appendChild(el('div','panel','<h2>REVIEW STATION</h2><div class="note">No jobs yet.</div>'));return}
  const j=await api('/api/jobs/'+CUR_JOB);const p=el('div','panel',`<h2>REVIEW · ${j.id} · ${j.shot_id}</h2>`);
+ let meta=null;try{meta=await api('/api/jobs/'+CUR_JOB+'/metadata')}catch(e){}
  const media=j.has_media?`<video controls loop src="/api/jobs/${j.id}/media"></video>`:`<div class="err">no media (status ${j.status})</div>`;
- p.innerHTML+=`<div class="grid c2"><div>${media}<div class="note">candidate (job output)</div></div><div><img class="plate" src="/api/plates/${j.plate.split('/').slice(-2).join('/')}" alt="reference"><div class="note">conditioning reference · ${j.plate}</div></div></div>
- <div class="kv" style="margin-top:10px"><b>prompt hash</b> ${j.prompt_hash.slice(0,16)}… · <b>params</b> ${JSON.stringify(j.params)}</div>`;
+ p.innerHTML+=`<div class="grid c2"><div>${media}<div class="note">candidate (job output) · <b class="${(meta&&String(meta.class).includes('NOT AI'))?'err':'ok'}">${meta?meta.class:'no metadata'}</b></div></div><div><img class="plate" src="/api/plates/${j.plate.split('/').slice(-2).join('/')}" alt="reference"><div class="note">conditioning reference · ${j.plate}</div></div></div>
+ <div class="kv" style="margin-top:10px"><b>prompt hash</b> ${j.prompt_hash.slice(0,16)}… · <b>params</b> ${JSON.stringify(j.params)}${meta&&meta.reported?` · <b>reported provider</b> ${JSON.stringify(meta.reported.provider||meta.reported.model||'n/a')}`:''}</div>`;
  const rub=el('div','panel','<h2>RUBRIC SCORES (1–5) · G2 thresholds: weighted ≥70, C6≥3, C7≥3</h2>');
  const W={C1:15,C2:20,C3:15,C4:10,C5:15,C6:10,C7:10,C8:5};
  rub.innerHTML+=`<div class="grid c3">${Object.keys(W).map(c=>`<div><label>${c} (w${W[c]})</label><select id="sc-${c}">${[1,2,3,4,5].map(v=>`<option ${v===4?'selected':''}>${v}</option>`).join('')}</select></div>`).join('')}</div><div class="kv" style="margin-top:8px">weighted: <b id="wsum">–</b></div>`;

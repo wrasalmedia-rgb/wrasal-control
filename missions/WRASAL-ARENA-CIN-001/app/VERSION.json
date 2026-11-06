@@ -1,7 +1,14 @@
 {
   "app": "wrasal-arena-cin-production-console",
   "version": "0.1.0-rc1",
-  "release_state": "CANDIDATE — human release approval pending (Rule 3)",
+  "release_state": "SANDBOX: CONDITIONALLY_ACCEPTED · PRODUCTION: NOT_AUTHORIZED (RELEASE-NOTES-v0.1.0-rc1, 2026-11-06)",
+  "sandbox_status": "CONDITIONALLY_ACCEPTED",
+  "technical_pipeline": "DEMONSTRATED",
+  "ai_generation": "BLOCKED",
+  "creative_acceptance": "PENDING",
+  "production_deployment": "NOT_AUTHORIZED",
+  "next_gate": "AI_PROVIDER_INTEGRATION",
+  "standing_distinction": "tech-viz renders demonstrate pipeline only; they are NOT AI generation and NOT creative approval",
   "branch": "arena/abe9e5ac-wrasal-control",
   "rollback": "redeploy previous release commit and restart process; procedure in missions/WRASAL-ARENA-CIN-001/deployment/SANDBOX-DEPLOY-001.md §Rollback"
 }
