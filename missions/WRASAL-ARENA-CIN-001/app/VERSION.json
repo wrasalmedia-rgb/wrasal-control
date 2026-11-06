@@ -10,6 +10,7 @@
   "production_security": "SANDBOX_HARDENED; verification PARTIAL (independent certification pending); production mode fail-closed + read authz implemented",
   "plate_rights": "HOLD-CIN-PLATE-001 ACTIVE: reference-derived plates NO-GO for external generation until rights evidence or G1-approved synthetic substitute",
   "chain_anchoring": "heads pinned to git-tracked evidence/arena-cin-chain-anchors.json; optional external anchor via ARENA_CIN_ANCHOR_URL",
+  "deployment_topology": "modes single|gateway|worker implemented; staging gateway 8820 (production auth) + worker staging-w1 live; topology smoke 13/13 incl. rollback drill; s3/cross-host store driver remains the production-cloud increment",
   "production_deployment": "NOT_AUTHORIZED",
   "next_gate": "AI_PROVIDER_INTEGRATION",
   "next_execution": "SHOT-C-I2V-001",

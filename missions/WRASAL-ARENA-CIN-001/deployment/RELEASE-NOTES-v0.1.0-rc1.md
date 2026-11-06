@@ -107,6 +107,38 @@ Responses implemented in this revision:
 4. **Rights hold.** `HOLD-CIN-PLATE-001`: reference-derived plates are NO-GO for external generation until rights-holder evidence is committed or the synthetic substitute plate is G1-approved. Test kit updated; WRASAL-0014 cannot leave `blocked` without one of these.
 5. **No specification expansion.** This revision adds only controls that unblock the two named outcomes (real footage, independently verified deployment); rc2 sequence unchanged per directive §04.
 
+## Addendum 4 — Milestone 004 response: Track B deployment evidence (2026-11-06)
+
+Governance block recorded:
+
+```
+SANDBOX: CONDITIONALLY_ACCEPTED
+SECURITY: HARDENED / INDEPENDENT REVIEW PENDING
+REFERENCE_PLATE: RIGHTS_HOLD_ACTIVE
+SYNTHETIC_SUBSTITUTE: G1_APPROVAL_PENDING
+AI_GENERATION: BLOCKED
+PRODUCTION_DEPLOYMENT: PENDING
+NEXT_ACCEPTANCE_EVIDENCE: REAL_AI_FOOTAGE_OR_VERIFIED_DEPLOYMENT
+```
+
+### Track B evidence (topology smoke 13/13, `.runtime/topology-smoke-report.json`)
+
+| Required evidence | Result | Check |
+|---|---|---|
+| Durable storage: assets survive restart + worker replacement | shared-volume store; media served 200 after gateway restart; jobs continued after worker swap | `topo.durable_across_gateway_restart`, `topo.worker_replacement` |
+| Worker separation: jobs execute independently of dashboard process | `ARENA_CIN_MODE=worker` polls the store; metadata carries `worker.id/mode`; gateway never executes inline | `topo.worker_executed`, `topo.gateway_stateless` |
+| Stateless gateway: API without local persistent execution | gateway mode defers execution; serves from store only | `topo.gateway_stateless` |
+| Production auth fails closed | unauthenticated reads/mutations 401 on production gateway (topology + live staging) | `topo.public_fail_closed`, curl evidence below |
+| Publicly reachable authenticated staging URL | live gateway `0.0.0.0:8820` (production mode, token set at launch — value not committed; rotate before production) + worker `staging-w1`, behind the Arena preview proxy; loopback curl: jobs 401 / workspace 200 / mutation 401 / login 200 | this addendum + process records |
+| Topology smoke: real upload, execution, review, export | binary ingest 201 → QC recorded → manifest with verified chain | `topo.real_upload_ingest`, `topo.review_qc_recorded`, `topo.export_manifest` |
+| Rollback: previous release restorable | drill boots `2d8b995` from git history via worktree, serves workspace, fails closed; removed cleanly | `topo.rollback_previous_release_boots`, `topo.rollback_fail_closed` |
+
+Honest scope note: durable storage is demonstrated on a **shared-volume store** (single host). The `s3`/cross-host driver from `PRODUCTION-ARCH-001` step 1 remains the production-cloud increment; worker/gateway modes and session persistence (file-backed sessions) are implemented now. Main single-mode suite remains green (42/42) — no regression, no second dashboard, no new framework.
+
+### Track A status
+
+Synthetic substitute provenance recorded (`lookdev/SHOT-C-I2V-001/substitute-provenance.json`: sha `b309d05d…`, tool, verbatim prompt, zero source-image inputs). Status **G1_APPROVAL_PENDING** — reviewer inspection required; recommendation is not authorization. HOLD-CIN-PLATE-001 unchanged.
+
 ## Known limitations (rc1)
 
 1. Job store is local filesystem (`.runtime/`) — single-host only; see `PRODUCTION-ARCH-001.md`.

@@ -47,7 +47,10 @@ const UI = path.join(APP, 'ui', 'index.html');
 const PORT = Number(process.env.PORT || 8787);
 const TOKEN = process.env.ARENA_CIN_AUTH_TOKEN || null;
 const AUTH_MODE = process.env.ARENA_CIN_AUTH_MODE || 'sandbox'; // 'sandbox' | 'production'
+const APP_MODE = process.env.ARENA_CIN_MODE || 'single'; // 'single' | 'gateway' | 'worker'
+const WORKER_ID = process.env.ARENA_CIN_WORKER_ID || `worker-${process.pid}`;
 const SESSIONS = new Map();
+const SESSIONS_FILE = path.join(RUNTIME, 'sessions.json');
 const SESSION_TTL_MS = 8 * 3600 * 1000;
 const SENSITIVE_SUB = new Set(['', '/media', '/metadata', '/manifest', '/qc', '/qc-history', '/verify']);
 const MAX_UPLOAD = Number(process.env.ARENA_CIN_MAX_UPLOAD_BYTES || 64 * 1024 * 1024);
@@ -154,8 +157,26 @@ function readOk(req) {
   if (AUTH_MODE !== 'production') return true;
   if (TOKEN && (req.headers.authorization || '') === `Bearer ${TOKEN}`) return true;
   const m = String(req.headers.cookie || '').match(/acin_session=([a-f0-9]{32})/);
-  if (m && SESSIONS.has(m[1]) && SESSIONS.get(m[1]) > Date.now()) return true;
+  const sessions = loadSessions();
+  if (m && sessions[m[1]] && sessions[m[1]] > Date.now()) return true;
   return false;
+}
+
+function loadSessions() {
+  try {
+    if (!fs.existsSync(SESSIONS_FILE)) return {};
+    const raw = JSON.parse(fs.readFileSync(SESSIONS_FILE, 'utf8'));
+    const now = Date.now();
+    const live = {};
+    for (const [k, v] of Object.entries(raw)) if (v > now) live[k] = v;
+    return live;
+  } catch { return {}; }
+}
+
+function saveSession(sid, exp) {
+  const all = loadSessions();
+  all[sid] = exp;
+  fs.writeFileSync(SESSIONS_FILE, JSON.stringify(all, null, 2));
 }
 
 function providers() {
@@ -206,6 +227,7 @@ async function runJob(job) {
           frames: Math.round(job.params.duration_s * job.params.fps),
           resolution: '960x412', fps: job.params.fps,
           camera_move: 'push-in per shot DNA amplitude', zoom: job.params.zoom, grain: job.params.grain,
+          worker: { id: WORKER_ID, pid: process.pid, mode: APP_MODE },
           plate_sha256: await sha256File(plate),
           prompt_hash: job.prompt_hash,
           command: ['python3', ...args],
@@ -326,7 +348,7 @@ const server = http.createServer(async (req, res) => {
       try { t = JSON.parse(body || '{}').token; } catch { /* invalid */ }
       if (TOKEN && t === TOKEN) {
         const sid = crypto.randomBytes(16).toString('hex');
-        SESSIONS.set(sid, Date.now() + SESSION_TTL_MS);
+        saveSession(sid, Date.now() + SESSION_TTL_MS);
         res.writeHead(200, { 'set-cookie': `acin_session=${sid}; HttpOnly; Path=/; SameSite=Strict`, 'content-type': 'application/json', 'cache-control': 'no-store' });
         return res.end(JSON.stringify({ ok: true, mode: AUTH_MODE }));
       }
@@ -472,8 +494,8 @@ const server = http.createServer(async (req, res) => {
         const hist = fs.existsSync(hp) ? readJson(hp) : [];
         hist.push(qc);
         fs.writeFileSync(hp, JSON.stringify(hist, null, 2));
-        await appendChain(dir, 'qc-recorded', ['qc.json', 'qc-history.json', 'job.json']);
         updateJob(job, { review: 'recorded' });
+        await appendChain(dir, 'qc-recorded', ['qc.json', 'qc-history.json', 'job.json']);
         return send(res, 200, { saved: true, qc });
       }
       if (req.method === 'GET' && sub === '/qc') {
@@ -536,7 +558,7 @@ const server = http.createServer(async (req, res) => {
         review: null, error: null,
       };
       fs.writeFileSync(path.join(JOBS, id, 'job.json'), JSON.stringify(job, null, 2));
-      setImmediate(() => runJob(job));
+      if (APP_MODE !== 'gateway') setImmediate(() => runJob(job)); // gateway defers execution to a worker
       return send(res, 201, job);
     }
     return send(res, 404, { error: 'not found' });
@@ -545,7 +567,31 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`WRASAL-ARENA-CIN-001 production console listening on 0.0.0.0:${PORT} (auth mode: ${AUTH_MODE}${TOKEN ? ', token configured' : ', NO TOKEN'}${AUTH_MODE === 'production' && !TOKEN ? ' => FAIL-CLOSED' : ''})`);
+if (APP_MODE !== 'worker') server.listen(PORT, '0.0.0.0', () => {
+  console.log(`WRASAL-ARENA-CIN-001 production console listening on 0.0.0.0:${PORT} (mode: ${APP_MODE}, auth: ${AUTH_MODE}${TOKEN ? ', token configured' : ', NO TOKEN'}${AUTH_MODE === 'production' && !TOKEN ? ' => FAIL-CLOSED' : ''})`);
   if (AUTH_MODE !== 'production') console.log('WARNING: sandbox auth mode - loopback mutations allowed without token. Set ARENA_CIN_AUTH_MODE=production and ARENA_CIN_AUTH_TOKEN for any external exposure.');
 });
+
+// --- worker mode: executes queued jobs independently of any HTTP process ---
+if (APP_MODE === 'worker') {
+  console.log(`WRASAL-ARENA-CIN-001 worker ${WORKER_ID} (pid ${process.pid}) polling ${JOBS}`);
+  const tick = () => {
+    let ids = [];
+    try { ids = fs.readdirSync(JOBS); } catch { return; }
+    for (const id of ids) {
+      const jf = path.join(JOBS, id, 'job.json');
+      if (!fs.existsSync(jf)) continue;
+      let job;
+      try { job = readJson(jf); } catch { continue; }
+      if (job.status !== 'queued') continue;
+      if (!['plate-render-techviz-v1', 'external-provider'].includes(job.provider_id)) continue;
+      if (job.lock && job.lock.worker === WORKER_ID) continue;
+      job.lock = { worker: WORKER_ID, pid: process.pid, at: new Date().toISOString() };
+      fs.writeFileSync(jf, JSON.stringify(job, null, 2));
+      console.log(`worker ${WORKER_ID} claimed ${id}`);
+      runJob(job);
+    }
+  };
+  setInterval(tick, 2000);
+  tick();
+}

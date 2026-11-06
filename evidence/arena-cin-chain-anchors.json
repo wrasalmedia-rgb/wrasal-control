@@ -84,7 +84,35 @@
       "head_hash": "52a7c4dc82088a748e52e4d2f27b47e99e3da0b7fd3d196882aa45ea6b31fa42",
       "chain_file_sha256": "5132d1fdc289407a2212e1c7ac2c772d46efdbb4b4bf2541c3bbec74c9eebda2",
       "anchored_at": "2026-11-06T09:05:36.557Z"
+    },
+    "job-ingest-mw4rg7ae-630724": {
+      "job_id": "job-ingest-mw4rg7ae-630724",
+      "head_seq": 0,
+      "head_hash": "30648249fef58085c977adc0e11ddd28eb131ebc1fc9d987714201846f6169ee",
+      "chain_file_sha256": "43c1aa5bc5cc6030414e8bad5aaf3287e4362bc06bfdd4ec6d7da1f4212cf8a4",
+      "anchored_at": "2026-11-06T09:18:38.899Z"
+    },
+    "job-ingest-mw4ri0lr-be0621": {
+      "job_id": "job-ingest-mw4ri0lr-be0621",
+      "head_seq": 0,
+      "head_hash": "daf3e2983dc86807301d6282ca2b98e9f59044d5ed94211dce0fc718c1f9bcc1",
+      "chain_file_sha256": "026d65159dbdbf4f0b6d2d90ab2ba49f8d8b5010d8fbcc85aeecdf0e5238aec5",
+      "anchored_at": "2026-11-06T09:18:38.899Z"
+    },
+    "job-mw4rfxwz-729770": {
+      "job_id": "job-mw4rfxwz-729770",
+      "head_seq": 2,
+      "head_hash": "7fdc24bcbee012e564038dc74896d13af0cca86c07062474287643f24a7bcba2",
+      "chain_file_sha256": "5b8649ca0d44a8bbf6a26c6833c4cfb8003e428c589738620681f6557bb46a27",
+      "anchored_at": "2026-11-06T09:18:38.899Z"
+    },
+    "job-mw4rhpo6-8d41cd": {
+      "job_id": "job-mw4rhpo6-8d41cd",
+      "head_seq": 2,
+      "head_hash": "5753c059a3347f772e9d68b08a36296c22a38f899a772eeb83005e4595897a67",
+      "chain_file_sha256": "468a674c944f19e0078aa5321fb7dffb0e227f043ce59e1d59ac8d8ff8dc0fca",
+      "anchored_at": "2026-11-06T09:18:38.899Z"
     }
   },
-  "last_anchored_at": "2026-11-06T09:05:36.557Z"
+  "last_anchored_at": "2026-11-06T09:18:38.899Z"
 }

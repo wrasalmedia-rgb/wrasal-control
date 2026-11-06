@@ -1,0 +1,16 @@
+{
+  "schema": "wrasal-asset-provenance/v1",
+  "asset": "reference/plates/alt/shot-C-synthetic-candidate.png",
+  "sha256": "b309d05d74e418778b300eb846174d4e8ca8c5cf4a7aa955cf5297b0c2eb3c70",
+  "dimensions": "1600x672 (2.38:1, matches 2.39:1 target family)",
+  "created_at": "2026-11-06",
+  "created_by": "Arena external execution worker",
+  "generation_tool": "Arena generate_image (text-to-image mode)",
+  "input_images": [],
+  "derivation_from_restricted_source": "none — no reference frame, plate, or crop was supplied as input; prompt derived solely from the DNA-C text specification (04-shot-dna.md / data/shot_dna.json SHOT-C)",
+  "prompt_verbatim": "Photorealistic live-action cinema film still, 2.39:1 widescreen composition. Medium close-up in hard profile of a warrior woman aged twenty-five to thirty-five, East Asian features, long black hair unbound and streaming to the left in strong wind, dark leather pauldron on her left shoulder, charcoal cloak. She screams a command: jaw wide, eyes open and focused off-frame right, neck cords engaged. Hard backlight from a low soft-edged sun disc at eight degrees elevation visible in frame upper right, thick uniform pink dust haze field, sky-bounce fill only so her profile frontal plane stays near-black with a warm rim on hair and jaw. Gentle red-edge halation around the sun, no streak flares. Flat desert plain horizon low, no landmarks. Natural pore-level skin with dust, no smoothing, fine 35 mm film grain. No text, no captions, no watermark.",
+  "rights_posture": "original synthetic work of this production; no third-party source frames embedded; candidate status only — G1 human inspection and approval required before use as SHOT-C conditioning lock (HOLD-CIN-PLATE-001 release condition 2)",
+  "status": "G1_APPROVAL_PENDING",
+  "inspection_note": "reviewer directive 2026-11-06 (Milestone 004): approval pending inspection of the actual image and this provenance record; recommendation is not authorization",
+  "qc_crossrefs": ["HOLD-CIN-PLATE-001", "QC-111", "CLEAR-G4"]
+}
