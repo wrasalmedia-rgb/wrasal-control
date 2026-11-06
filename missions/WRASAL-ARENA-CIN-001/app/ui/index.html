@@ -52,7 +52,7 @@ footer{padding:14px 20px;color:var(--dim);font-size:11px;border-top:1px solid va
 <main>
   <div class="panel" style="border-color:var(--warn)">
     <b style="color:var(--warn)">TECH-VIZ ≠ AI GENERATION.</b>
-    <span class="note">Plate-render jobs prove the pipeline only — they are labeled NOT AI generation in jobs, metadata and manifests. AI generation: BLOCKED (WRASAL-0014). Production deployment: NOT_AUTHORIZED. Creative acceptance: PENDING. Externally generated footage enters via <code>/api/jobs/ingest</code> with as-reported metadata.</span>
+    <span class="note">Plate-render jobs prove the pipeline only — they are labeled NOT AI generation in jobs, metadata and manifests. AI generation: BLOCKED (WRASAL-0014). Production deployment: NOT_AUTHORIZED. Creative acceptance: PENDING. Externally generated footage enters via binary <code>/api/jobs/ingest</code> (streamed, size-capped, deep-validated, rate-limited, quota-checked, evidence-chained); metadata is as-reported and immutable — amendments are logged, never overwritten.</span>
   </div>
   <section id="t-ws"></section>
   <section id="t-gen" hidden></section>
@@ -141,7 +141,9 @@ async function loadExp(){const s=$('#t-exp');s.innerHTML='';if(!CUR_JOB&&JOBS.le
  m.outputs.forEach(o=>{const tr=el('tr');tr.innerHTML=`<td>${o.file}</td><td>${o.bytes}</td><td class="note">${o.sha256.slice(0,20)}…</td><td><a class="act" style="text-decoration:none" href="/api/jobs/${CUR_JOB}/${o.file==='out.mp4'?'media':o.file==='metadata.json'?'metadata':'qc'}" download="${CUR_JOB}-${o.file}">download</a></td>`;tb.appendChild(tr)});
  p.appendChild(tb);
  p.appendChild(el('div','note','Full manifest JSON: <a href="/api/jobs/'+CUR_JOB+'/manifest" download="'+CUR_JOB+'-manifest.json">download</a>'));
- s.appendChild(p);}
+ p.appendChild(el('div','',`<button class="act" id="vfy" style="margin-top:8px">Verify evidence chain</button> <span id="vfy-msg"></span>`));
+ s.appendChild(p);
+ $('#vfy').onclick=async()=>{const v=await api('/api/jobs/'+CUR_JOB+'/verify');$('#vfy-msg').innerHTML=v.ok?`<span class="ok">chain intact (${v.entries} entries)</span>`:`<span class="err">TAMPERED: ${v.reasons.join('; ')}</span>`};}
 function switchTab(t){document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));
  ['ws','gen','jobs','rev','exp'].forEach(x=>$('#t-'+x).hidden=x!==t);
  if(t==='jobs')loadJobs();if(t==='rev')loadRev();if(t==='exp')loadExp();}

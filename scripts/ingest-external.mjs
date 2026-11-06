@@ -2,14 +2,16 @@
 /**
  * Ingest externally generated video (e.g. from a Runway session in another
  * environment) into the existing WRASAL-ARENA-CIN-001 console.
- * Uses the implemented external-ingest adapter — no new provider framework.
+ * Binary upload contract (security gate): raw MP4 body, metadata in header.
  *
  * Usage:
  *   node scripts/ingest-external.mjs --file out.mp4 --shot SHOT-C \
- *        [--url http://127.0.0.1:8787] [--meta metadata.json] [--source runway-session]
+ *        [--url http://127.0.0.1:8787] [--meta metadata.json] [--source runway-session] \
+ *        [--token $ARENA_CIN_AUTH_TOKEN]
  *
- * metadata.json (as-reported fields; claims require docs before VERIFIED):
- *   {"provider":"runway","model":"gen-4","seed":"...","prompt":"...","params":{...},"provider_job_id":"..."}
+ * metadata.json (as-reported; claims require docs before VERIFIED per QC-900):
+ *   {"provider":"runway","model":"gen-4","generation_id":"...","seed":"...",
+ *    "prompt":"...","params":{...},"provider_job_id":"..."}
  */
 import fs from 'node:fs';
 
@@ -23,23 +25,21 @@ const shot = arg('shot', 'SHOT-C');
 const base = arg('url', 'http://127.0.0.1:8787');
 const metaPath = arg('meta');
 const source = arg('source', 'external');
+const token = arg('token', process.env.ARENA_CIN_AUTH_TOKEN || null);
 
 if (!file || !fs.existsSync(file)) {
-  console.error('usage: node scripts/ingest-external.mjs --file out.mp4 --shot SHOT-C [--url BASE] [--meta meta.json] [--source LABEL]');
+  console.error('usage: node scripts/ingest-external.mjs --file out.mp4 --shot SHOT-C [--url BASE] [--meta meta.json] [--source LABEL] [--token TOK]');
   process.exit(2);
 }
 
-const payload = {
-  shot_id: shot,
-  source,
-  video_base64: fs.readFileSync(file).toString('base64'),
-  metadata: metaPath ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : {},
-};
+const meta = metaPath ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : {};
+const headers = { 'content-type': 'application/octet-stream', 'x-arena-cin-meta': Buffer.from(JSON.stringify(meta)).toString('base64') };
+if (token) headers.authorization = `Bearer ${token}`;
 
-const res = await fetch(`${base}/api/jobs/ingest`, {
+const res = await fetch(`${base}/api/jobs/ingest?shot=${encodeURIComponent(shot)}&source=${encodeURIComponent(source)}`, {
   method: 'POST',
-  headers: { 'content-type': 'application/json' },
-  body: JSON.stringify(payload),
+  headers,
+  body: fs.readFileSync(file),
 });
 const job = await res.json();
 if (!res.ok) {
@@ -47,5 +47,6 @@ if (!res.ok) {
   process.exit(1);
 }
 console.log(`INGESTED ${job.id} (shot ${shot}, provider_id ${job.provider_id})`);
+console.log(`media validation: ${job.status === 'succeeded' ? 'passed server-side (container+codec+decode)' : job.status}`);
 console.log(`review: ${base}/  -> Jobs -> review ${job.id}`);
-console.log('note: metadata is as-reported; provider claims require documentation before VERIFIED status (QC-900).');
+console.log('note: metadata is as-reported and immutable; amendments are logged, not overwritten (QC-900 applies to provider claims).');

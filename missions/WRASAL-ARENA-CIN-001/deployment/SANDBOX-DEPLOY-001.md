@@ -48,6 +48,10 @@ node missions/WRASAL-ARENA-CIN-001/app/server.mjs   # PORT env optional (default
 node scripts/smoke-app.mjs                      # SMOKE_BASE env optional; writes .runtime/smoke-report.json
 ```
 
+## 3b. Security gate (production hardening, 2026-11-06)
+
+Mutations (`POST /api/jobs`, `/api/jobs/ingest`, `/api/jobs/:id/qc`, `/metadata-amend`) require `Authorization: Bearer $ARENA_CIN_AUTH_TOKEN` when set; **without a token, mutations are loopback-only** — a publicly exposed instance is read-only until configured. Ingest is a **binary contract**: raw MP4 body streamed to disk under `ARENA_CIN_MAX_UPLOAD_BYTES` (default 64 MB), metadata base64 in `x-arena-cin-meta` (≤64 KB, write-once, amendments logged), deep validation via `tools/validate_media.py` (codec/dimension/duration policy + head/tail decode), rejects quarantined in `.runtime/ingest-rejects/`, per-IP rate limit (429) and storage quota (507), per-job tamper-evident evidence chain with `GET /api/jobs/:id/verify`. Env summary in `app/server.mjs` header comment.
+
 ## 4. External provider HTTP contract (for authorized AI generation)
 
 - `POST $ARENA_CIN_PROVIDER_URL` body `{model, prompt, image (data-url PNG), duration_s, fps, aspect}` → `200 {job_id}`

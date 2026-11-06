@@ -1,0 +1,22 @@
+{
+  "_template": "wrasal-return-metadata/v1 — fill in the generating environment; pass via --meta to scripts/ingest-external.mjs. All fields as-reported; claims require documentation before VERIFIED status (QC-900).",
+  "generation_id": "{{UNIQUE-ID tying every evidence artifact of this test}}",
+  "shot_id": "SHOT-C",
+  "test_id": "SHOT-C-I2V-001",
+  "provider": "{{runway|other}}",
+  "workspace": "{{provider workspace/project name}}",
+  "model": "{{model id}}",
+  "model_version": "{{version}}",
+  "seed": "{{seed or null}}",
+  "parameters": {"duration_s": 5.0, "fps": 24, "aspect": "2.39:1", "motion_strength": "MED", "first_frame": "plate sha d39a1cb3..."},
+  "prompt": "{{verbatim I2V-C prompt with 5.0 s override, from data/prompts.json}}",
+  "prompt_hash": "{{sha256 of prompt string}}",
+  "plate_sha256": "d39a1cb306a4cccddfdc58ea14fd725b6ead71cf6d45fbcdc39b491984cb3d53",
+  "provider_job_id": "{{provider-side job id}}",
+  "video_file": {"name": "{{local filename}}", "sha256": "{{sha256 of downloaded file}}", "bytes": 0},
+  "started_at": "{{ISO}}",
+  "finished_at": "{{ISO}}",
+  "operator": "{{human or session identifier}}",
+  "environment": "{{execution environment distinct from Arena sandbox}}",
+  "notes": "{{deviations, retries, observations}}"
+}
