@@ -1,0 +1,93 @@
+{
+  "work_order_id": "WRASAL-0015",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / DEPLOYMENT CONTROL directive",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Record the human release authorization for v0.1.0-rc1 (sandbox conditional acceptance, production not authorized); make the tech-viz-vs-AI-generation distinction visible in dashboard, release notes and evidence; add an ingest path on the existing adapter for footage generated in other environments (no new provider framework); verify serverless-dependency claims and document the incremental Vercel/worker/durable-storage architecture; extend the smoke suite to cover ingest.",
+  "success_condition": "Authorization block recorded verbatim with statuses; UI header/banner and review station label candidate class; POST /api/jobs/ingest validates real MP4 bytes and creates reviewable/exportable job records with as-reported metadata; dependency audit concludes serverless-inappropriate with evidence; migration plan incremental and non-destructive; smoke suite passes including ingest round-trip.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "5f868b3ffbb76c600968d59aad2bf3e8884fdf5d",
+    "validation_evidence": "evidence/WRASAL-0015-validation.json",
+    "release_notes": "missions/WRASAL-ARENA-CIN-001/deployment/RELEASE-NOTES-v0.1.0-rc1.md",
+    "architecture_record": "missions/WRASAL-ARENA-CIN-001/deployment/PRODUCTION-ARCH-001.md",
+    "smoke_report": ".runtime/smoke-report.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0015-authorization-recorded",
+      "type": "governance_record",
+      "attribution": "Arena external execution worker",
+      "source": "deployment/RELEASE-NOTES-v0.1.0-rc1.md; app/VERSION.json",
+      "observed_result": "Authorization block recorded verbatim: SANDBOX_STATUS CONDITIONALLY_ACCEPTED, TECHNICAL_PIPELINE DEMONSTRATED, AI_GENERATION BLOCKED, CREATIVE_ACCEPTANCE PENDING, PRODUCTION_DEPLOYMENT NOT_AUTHORIZED, NEXT_GATE AI_PROVIDER_INTEGRATION. No promotion to production performed.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-distinction-visible",
+      "type": "ui_audit",
+      "attribution": "Arena external execution worker",
+      "source": "app/ui/index.html (header badges, standing banner, review-station candidate class), metadata.class fields, manifest rights",
+      "observed_result": "Dashboard shows sandbox/production/next-gate statuses and a permanent TECH-VIZ != AI GENERATION banner; review station prints each candidate's class (tech-viz flagged, ingested external flagged as as-reported).",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-ingest-adapter",
+      "type": "feature_test",
+      "attribution": "Arena external execution worker",
+      "source": "POST /api/jobs/ingest; scripts/ingest-external.mjs; smoke checks ingest.accepted / ingest.job_succeeded / ingest.media_magic",
+      "observed_result": "Ingest validates MP4 magic and size, stores bytes + as-reported metadata (flagged: claims require docs before VERIFIED per QC-900), creates a reviewable/exportable succeeded job on the existing adapter; no new provider framework introduced.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-runway-environment-note",
+      "type": "tooling_probe",
+      "attribution": "Arena external execution worker",
+      "source": "list_connector_tools('runway') re-probe 2026-11-06",
+      "observed_result": "Still unsupported in this Arena sandbox, confirming the reviewer's Runway integration lives in a different execution environment; ingest path is the compliant bridge.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-architecture-audit",
+      "type": "code_audit",
+      "attribution": "Arena external execution worker",
+      "source": "deployment/PRODUCTION-ARCH-001.md section 1 (audit of app/server.mjs, tools/render_plate_test.py)",
+      "observed_result": "Verified persistent local files (.runtime, tools/pylibs), in-process encoding, and long-running polls; concluded whole-app serverless deployment inappropriate; incremental Vercel gateway + persistent worker + durable storage plan documented without discarding the Node app.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-smoke-extended",
+      "type": "test_run",
+      "attribution": "Arena external execution worker",
+      "source": "node scripts/smoke-app.mjs -> .runtime/smoke-report.json",
+      "observed_result": "SMOKE PASS 22/22 including ingest round-trip, blocked-provider handling, and post-job source integrity.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0015-implementation-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "local git commit on arena/abe9e5ac-wrasal-control",
+      "observed_result": "Release notes, architecture record, UI/server/CLI/smoke changes committed as 5f868b3ffbb76c600968d59aad2bf3e8884fdf5d.",
+      "reference": "5f868b3ffbb76c600968d59aad2bf3e8884fdf5d",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "release authorization recorded as conditional sandbox acceptance; production deployment explicitly not authorized",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; NEXT_GATE AI_PROVIDER_INTEGRATION tracked by WRASAL-0014"
+  },
+  "next_candidate": "AI_PROVIDER_INTEGRATION: generate one actual AI-assisted SHOT-C clip (reviewer-environment Runway test or provider credentials via ARENA_CIN_PROVIDER_*), ingest via scripts/ingest-external.mjs, complete cinematic QC at G2, then re-evaluate v0.1.0-rc1 (or rc2) for production deployment per PRODUCTION-ARCH-001."
+}
