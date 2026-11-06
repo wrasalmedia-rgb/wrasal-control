@@ -1,0 +1,76 @@
+{
+  "work_order_id": "WRASAL-0016",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / DEPLOYMENT CONTROL directive (security gate + SHOT-C-I2V-001)",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Implement the production security gate on external ingestion before any public exposure (authentication and project-scoped authorization; streaming upload caps; server-side media validation beyond container signature; safe filenames and isolated storage; metadata change protection; rate limits and quotas; evidence integrity). Prepare the SHOT-C-I2V-001 test kit (plate card with authorization scope, generation spec, return-metadata schema, evidence-binding sequence). Record the second authorization block and rc2 scope.",
+  "success_condition": "All seven security requirements implemented on the existing adapter without a new framework, each mapped to a smoke assertion or documented as construction-only; invalid media rejected with quarantine records; auth enforced on an isolated token instance; evidence chain verifies; test kit published with plate authorization scope; release records updated; smoke suite green.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "b0d7ee324d132d0d720c70f30ff8ae9da776d822",
+    "validation_evidence": "evidence/WRASAL-0016-validation.json",
+    "release_notes": "missions/WRASAL-ARENA-CIN-001/deployment/RELEASE-NOTES-v0.1.0-rc1.md",
+    "test_kit": "missions/WRASAL-ARENA-CIN-001/lookdev/SHOT-C-I2V-001/TEST-KIT.md",
+    "smoke_report": ".runtime/smoke-report.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0016-security-gate",
+      "type": "feature_test",
+      "attribution": "Arena external execution worker",
+      "source": "scripts/smoke-app.mjs (34 checks) against app/server.mjs security gate; tools/validate_media.py",
+      "observed_result": "Auth: mutations 401 without bearer token on token instance, 201 with token, loopback-only default. Uploads: streamed with cap, 413 enforced on isolated instance. Media: deep validation (codec allowlist, dimensions, duration, head+tail decode) passes real MP4 and rejects ftyp-only junk with 422 + quarantine record. Storage: server-generated ids, fixed filenames, isolated dirs, reject quarantine. Metadata: immutable reported blob + authenticated append-only amendments; QC history append-only (2 entries verified). Rate: 429 on sixth ingest in window. Evidence: per-job hash chain verifies; manifest embeds chain + verification.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0016-chain-semantics-fix",
+      "type": "design_review",
+      "attribution": "Arena external execution worker",
+      "source": "app/server.mjs verifyChain; smoke failure then fix",
+      "observed_result": "Initial verify compared every historical entry against current file state and correctly failed after later QC writes; fixed to assert link integrity across all entries and content integrity against the latest chained state per file. Append-only semantics preserved.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0016-test-kit",
+      "type": "deliverable_audit",
+      "attribution": "Arena external execution worker",
+      "source": "lookdev/SHOT-C-I2V-001/TEST-KIT.md + return-metadata.template.json",
+      "observed_result": "Plate card with sha256 and derivation evidence; authorization scope limited to private conditioning for the named test (rights clearance remains G4/QC-111); generation spec with 5 s override and hard stops; Generate-Download-Verify-Ingest-Review-QC-Export sequence with generation_id binding; ingest CLI command included.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0016-authorization-recorded",
+      "type": "governance_record",
+      "attribution": "Arena external execution worker",
+      "source": "deployment/RELEASE-NOTES-v0.1.0-rc1.md Addendum 2; app/VERSION.json",
+      "observed_result": "Second directive block recorded verbatim (EXTERNAL_INGEST IMPLEMENTED/SMOKE_TESTED, PRODUCTION_SECURITY pending->sandbox-hardened, NEXT_EXECUTION SHOT-C-I2V-001); rc2 scope confirmed as the five listed items; no production promotion.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0016-smoke-suite",
+      "type": "test_run",
+      "attribution": "Arena external execution worker",
+      "source": "node scripts/smoke-app.mjs -> .runtime/smoke-report.json",
+      "observed_result": "SMOKE PASS 34/34 including security gate checks; isolated token instance cleaned after run; single managed console process remains; source plate integrity re-verified post-jobs.",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "ingest security gate live in sandbox; external exposure still requires token configuration and rc2 topology",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; WRASAL-0014 (AI generation) remains the blocking gate with SHOT-C-I2V-001 as its execution vehicle"
+  },
+  "next_candidate": "Execute SHOT-C-I2V-001 in the reviewer's Runway environment using the test kit; ingest via scripts/ingest-external.mjs; G2 review; then rc2 (durable storage, worker split, Vercel gateway) and production deployment evaluation. WRASAL-0014 moves off blocked only upon ingested real AI footage with complete provenance."
+}
