@@ -1,0 +1,84 @@
+{
+  "work_order_id": "WRASAL-0017",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / security review directive",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Respond to the security review without specification expansion: (1) fail-closed production authentication with no loopback escape; (2) authorization on sensitive read endpoints (footage, manifests, evidence) with session login; (3) anchor evidence-chain heads outside application-controlled storage; (4) record HOLD-CIN-PLATE-001 making reference-derived plates NO-GO for external generation until rights-holder evidence or G1-approved synthetic substitute; (5) generate the original synthetic substitute candidate; (6) record the third authorization block.",
+  "success_condition": "Production mode without token rejects all mutations and sensitive reads (fail closed); production mode with token gates reads behind bearer or HttpOnly session; chain heads pinned into git-tracked evidence with optional external anchor; rights hold recorded and test kit updated; substitute candidate present and labeled candidate-only; smoke suite green including new auth checks; no new applications or dashboards introduced.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "2d8b9958ee77643cb82e75b924f21662ff664e08",
+    "validation_evidence": "evidence/WRASAL-0017-validation.json",
+    "hold_record": "missions/WRASAL-ARENA-CIN-001/lookdev/SHOT-C-I2V-001/PLATE-RIGHTS-HOLD.md",
+    "anchors": "evidence/arena-cin-chain-anchors.json",
+    "smoke_report": ".runtime/smoke-report.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0017-fail-closed-auth",
+      "type": "feature_test",
+      "attribution": "Arena external execution worker",
+      "source": "smoke checks authprod.fail_closed_mutation, authprod.fail_closed_read (isolated production-mode instance without token)",
+      "observed_result": "Production mode without ARENA_CIN_AUTH_TOKEN rejects mutations with 401 AUTH_NOT_CONFIGURED and rejects sensitive reads likewise; sandbox loopback convenience retained as dev-only with startup warning.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0017-read-authorization",
+      "type": "feature_test",
+      "attribution": "Arena external execution worker",
+      "source": "smoke checks authprod.read_requires_auth, login_invalid_401, login_ok, session_read_jobs, session_read_media, media_without_session_401",
+      "observed_result": "Production mode with token gates /api/jobs, job detail, /media, /metadata, /manifest, /qc*, /verify behind bearer or HttpOnly SameSite=Strict session cookie from POST /api/auth/login; dashboard presents login gate; unauthenticated footage access 401.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0017-chain-anchoring",
+      "type": "feature_test",
+      "attribution": "Arena external execution worker",
+      "source": "scripts/anchor-evidence.mjs; evidence/arena-cin-chain-anchors.json",
+      "observed_result": "Chain heads (12 jobs at run time) pinned into git-tracked evidence outside .runtime/; optional external anchor via ARENA_CIN_ANCHOR_URL documented; reviewer limitation accepted verbatim in RELEASE-NOTES Addendum 3 (chain detects change, proves neither authorship nor filesystem-attacker resistance).",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0017-rights-hold",
+      "type": "governance_record",
+      "attribution": "Arena external execution worker",
+      "source": "lookdev/SHOT-C-I2V-001/PLATE-RIGHTS-HOLD.md; TEST-KIT.md status; data/manifest.json clearance labels",
+      "observed_result": "HOLD-CIN-PLATE-001 active: reference-derived plates NO-GO for external generation until rights-holder evidence committed or synthetic substitute G1-approved; WRASAL-0014 cannot leave blocked without one; test-kit permission-scope section relabeled as proposal, not authorization.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0017-substitute-candidate",
+      "type": "asset_creation",
+      "attribution": "Arena external execution worker",
+      "source": "reference/plates/alt/shot-C-synthetic-candidate.png (generated from DNA-C text only; no derivation from restricted source)",
+      "observed_result": "Original synthetic candidate plate created and labeled candidate-only pending human G1 approval as SHOT-C conditioning substitute; manifest clearance ORIGINAL with hold cross-reference.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0017-smoke-suite",
+      "type": "test_run",
+      "attribution": "Arena external execution worker",
+      "source": "node scripts/smoke-app.mjs -> .runtime/smoke-report.json",
+      "observed_result": "SMOKE PASS 42/42 including eight new production-auth checks; isolated instances cleaned; single managed console process; source integrity re-verified.",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "security verification remains PARTIAL pending independent certification; rights hold active on reference plates",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; NEXT_GATE SHOT-C-I2V-001 gated by HOLD-CIN-PLATE-001 and WRASAL-0014"
+  },
+  "next_candidate": "One of the two named outcomes, no further specification: (a) rights-holder clearance evidence or G1 approval of the synthetic substitute, then Runway generation + ingest + G2 review (real footage); or (b) independently verified deployment evidence via rc2 sequence (durable storage, worker split, stateless gateway, topology smoke) under human release review."
+}
