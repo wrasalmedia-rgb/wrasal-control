@@ -62,7 +62,7 @@ Common fields abbreviated here; full values in JSON.
 - **Move:** locked-off; optional 1.5% push / 5 s. **Dur:** 5.0 s / 120 fr.
 - **Light:** sun hidden behind dust wall; luminance ramp P-15 (lower-left) → P-14 (upper-right); no visible source.
 - **Atmos:** boiling dust cumulus (slow), crest plume 270°.
-- **Subjects:** rider (CH-04 or CH-03-rider, G0 decision) + horse, rear-hold.
+- **Subjects:** rider = CH-04 (distinct silhouette record until evidence identifies otherwise; G0-REC-001) + horse, rear-hold.
 - **Wardrobe/props:** cape from shoulders (length to horse's withers), silhouette-readable tack.
 - **Beats:** rise to rear (2-beat) → hold 1.5 s micro-adjust → cape full extension → hold.
 - **Physics:** hind hooves planted; CoM over hocks; cape never merges with horse; cloud boil ≤2% frame/s; 4 legs visible & correct.

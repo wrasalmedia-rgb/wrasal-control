@@ -1,0 +1,17 @@
+{
+  "schema": "wrasal-qc-checklist/v1",
+  "subject": {"candidate_id": "LOOKDEV-001-stage1", "shot_id": "SHOT-C", "stage": "P0", "gate": null, "checked_by": "Arena external execution worker", "date": "2026-11-06"},
+  "checks": [
+    {"id": "QC-001", "group": "plate-prep", "text": "source plate sha256 matches manifest", "result": "pass", "disposition": null, "note": "all five reference checksums re-verified 2026-11-06"},
+    {"id": "QC-002", "group": "plate-prep", "text": "no glyph/subtitle anywhere; diff confined to subtitle bbox", "result": "pass", "disposition": null, "note": "qc-002-evidence.json: diff bbox 72x41+444+359 inside patch region; outside-region max diff 0; visual scan clean"},
+    {"id": "QC-003", "group": "plate-prep", "text": "plate crops geometrically exact (960x412 quadrants, no resample)", "result": "pass", "disposition": null, "note": "make-plates.sh geometry; identifies confirm 960x412"},
+    {"id": "QC-004", "group": "plate-prep", "text": "look-dev stills approved at G1 for all four shots", "result": "na", "disposition": null, "note": "G1 not reached; SHOT-C look-dev test pending stage 2"},
+    {"id": "QC-005", "group": "plate-prep", "text": "face/wardrobe lock stills registered per named character", "result": "pass", "disposition": null, "note": "CH-03 lock registered = plate C + clean derivative; G1 approval pending; per G0-REC-001 continuity applies only to explicitly recurring characters (currently none)"},
+    {"id": "QC-106", "group": "anatomy-physics", "text": "scream anatomy audit", "result": "na", "disposition": null, "note": "no video candidates yet"},
+    {"id": "QC-107", "group": "anatomy-physics", "text": "hair vector 270deg, no strand across face", "result": "na", "disposition": null, "note": "no video candidates yet"},
+    {"id": "QC-900", "group": "governance", "text": "all invoked CAP ids VERIFIED with doc evidence", "result": "na", "disposition": null, "note": "no gate invoked at this stage; CAP-10 invoked for prep remains UNVERIFIED pending vendor docs (internal P0 test logged in capability evidence_log); QC-900 will be evaluated at G1/G2"},
+    {"id": "QC-903", "group": "governance", "text": "hard-stop risks zero-instance attested", "result": "na", "disposition": null, "note": "no candidates generated yet"}
+  ],
+  "summary": {"pass": 4, "fail": 0, "na": 5, "waivers": 0, "overall": "pass"},
+  "signoff": {"name": "Arena external execution worker", "role": "executor", "date": "2026-11-06", "note": "executor signoff only; gate acceptance is a separate human act (G0 formal acceptance PENDING per G0-REC-001)"}
+}

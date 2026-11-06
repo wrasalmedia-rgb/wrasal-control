@@ -17,6 +17,8 @@
 3. **Verified vs. assumed is a first-class distinction.** Every capability claim about external tooling lives in `data/capability_matrix.json` with status `UNVERIFIED` until a human attaches vendor documentation (URL + access date). No deliverable in this package asserts a model feature as fact.
 4. **Human creative approval governs all final decisions.** Gates `G0–G4` (below) are blocking. Executor pass ≠ canonical acceptance (per `work_orders/status-vocabulary.json`).
 5. **Restrictions are hard constraints:** natural human anatomy; physical plausibility; no exaggerated fantasy rendering; no artificial skin smoothing.
+6. **Reference asset rights:** `reference/source/image-1.png` and all derived plates are **REF-ONLY** research/look-dev assets. Repository inclusion establishes **no license** to redistribute, publish, or commercially reproduce the source frames or closely traceable derivatives. Final deliverables must be synthesized original footage; any use traceable to source frames requires rights clearance at G4 (QC-111 / CLEAR-G4).
+7. **G0-REC-001 working interpretation (2026-11-06, conditional):** the four plates are **independent cinematic test cases** under one unified evaluation methodology; no presumed shared character identity or fictional universe; the shared visual grammar is a **proposed direction for creator consideration**, not a ratified story fact; character continuity applies only where a character is explicitly established as recurring (currently: none). Formal G0 acceptance remains **PENDING** until exact assumption definitions and approval authority are reconciled.
 
 ---
 
@@ -82,3 +84,5 @@ Reference assets: `reference/source/image-1.png` (authoritative plate) and `refe
 | Date | Change | Authority |
 |---|---|---|
 | 2026-11-06 | Package v1 drafted (deliverables 1–17, templates, registers) | Arena external execution worker; **all creative states DRAFT pending G0** |
+| 2026-11-06 | G0-REC-001 recorded: conditional approval of four-independent-test strategy; assumptions ASM-01…05 stay UNRATIFIED pending exact-definition review; SHOT-D rider = CH-04 until evidence; reference rights note added (§0 rule 6). Formal G0 acceptance PENDING | Reviewer directive (human); recorded by Arena worker — **not a ratification** |
+| 2026-11-06 | SHOT-C LOOKDEV-001 stage 1 complete: plates/manifest verified, subtitle-free derivative with QC-002 confinement evidence, spec reference, 5 s test run sheet staged. Stage 2 (I2V comparison) BLOCKED — no i2v tooling in Arena session (probes `runway`, `sora` unsupported) | `lookdev/SHOT-C-LOOKDEV-001/`; `work_orders/WRASAL-0012.json` |

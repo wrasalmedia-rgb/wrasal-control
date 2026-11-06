@@ -82,6 +82,10 @@
   "sequence_edit": {"order": ["SHOT-A", "SHOT-B", "SHOT-C", "SHOT-D"], "durations_s": [4.0, 6.0, 3.5, 5.0], "total_s": 18.5, "total_frames": 444, "transitions": "hard cuts only"},
   "governance": {
     "creative_state": "DRAFT",
+    "g0_status": "CONDITIONAL PER G0-REC-001; FORMAL ACCEPTANCE PENDING until exact assumption definitions and approval authority reconciled",
+    "test_strategy": "four independent cinematic test cases; unified evaluation methodology; no presumed shared character identity or fictional universe; shared visual grammar = proposed direction for creator consideration",
+    "continuity_rule": "character continuity applies only where a character is explicitly established as recurring (currently: none)",
+    "reference_rights": "REF-ONLY; repository inclusion establishes no license to reproduce source frames commercially; clearance at G4 (QC-111)",
     "gates": ["G0", "G1", "G2", "G3", "G4"],
     "capability_register": "data/capability_matrix.json",
     "assumptions_register": "05-character-continuity.md#53",

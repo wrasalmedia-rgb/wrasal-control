@@ -57,8 +57,18 @@ Identity strategy for AI-assisted production: **plate-locked identity**. Each ch
 
 | ID | Assumption | Status |
 |---|---|---|
-| ASM-01 | Four plates share one story world | ASSUMED |
-| ASM-02 | Rider (D) = CH-03 | ASSUMED (alt: CH-04 distinct) |
-| ASM-03 | CH-02 is CH-01's guardian/mentor | ASSUMED |
-| ASM-04 | ANOM-01 is hostile force behind B's burning | ASSUMED |
-| ASM-05 | Chronology A→B→C→D | ASSUMED (edit grammar only, not story fact) |
+| ASM-01 | Four plates share one story world | UNRATIFIED (G0-REC-001: inspect exact definitions before any ratification; working disposition: independent test cases) |
+| ASM-02 | Rider (D) = CH-03 | UNRATIFIED — **not used as working assumption**; rider carried as CH-04 (distinct) until evidence identifies otherwise |
+| ASM-03 | CH-02 is CH-01's guardian/mentor | UNRATIFIED (working disposition: relationship undefined; CH-02 = frame-right torso only) |
+| ASM-04 | ANOM-01 is hostile force behind B's burning | UNRATIFIED (working disposition: threat reading optional per test) |
+| ASM-05 | Chronology A→B→C→D | UNRATIFIED (working disposition: edit grammar option only, not story fact) |
+
+## 5.4 G0-REC-001 working dispositions (conditional, not acceptance)
+
+Recorded from the 2026-11-06 reviewer directive; formal G0 acceptance **PENDING** until exact assumption definitions and approval authority are reconciled.
+
+1. **Four independent cinematic test cases**, one unified evaluation methodology; no presumed shared character identity or fictional universe.
+2. **Shared visual language** (documented lighting, palette, camera, film-response specs) approved as a *proposed direction for creator consideration*.
+3. **Character continuity applies only where a character is explicitly established as recurring.** As of this record: no character is established as recurring; CH-01…CH-05 and ANOM-01 are per-shot records.
+4. **SHOT-D rider = CH-04** (distinct silhouette record) until evidence identifies otherwise.
+5. Human performance truth and physical plausibility remain the governing standards for every test.

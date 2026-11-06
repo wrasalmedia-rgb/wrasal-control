@@ -1,0 +1,27 @@
+{
+  "check_id": "QC-002",
+  "mission": "WRASAL-ARENA-CIN-001",
+  "shot_id": "SHOT-C",
+  "stage": "P0.3 / LOOKDEV-001 step 2",
+  "date": "2026-11-06",
+  "original": {"path": "reference/plates/shot-C.png", "sha256": "065a8e423aa5ba122bbac5a170915e48446c791d996b2d1b7f52a49560273a1f"},
+  "clean_derivative": {"path": "reference/plates/prep/shot-C-clean.png", "sha256": "d39a1cb306a4cccddfdc58ea14fd725b6ead71cf6d45fbcdc39b491984cb3d53"},
+  "subtitle_bbox_detected": {"x": 451, "y": 366, "w": 58, "h": 26, "method": "grayscale threshold sweep 80/88/93% on band y=350..412; identical bbox at all three thresholds"},
+  "patch_region": {"x": 443, "y": 358, "w": 74, "h": 42, "feather_px": 2},
+  "inpaint_tool": "Arena generate_image edit mode (model identifier not disclosed by platform)",
+  "intermediates_retained": [
+    {"path": "reference/plates/prep/shot-C-inpaint-candidate.png", "sha256": "see manifest", "role": "AI inpaint candidate, full frame"},
+    {"path": "reference/plates/prep/mask.png", "sha256": "see manifest", "role": "feathered patch mask"}
+  ],
+  "composite_method": "original plate + candidate patch blended only inside patch_region via feathered mask; pixels outside region untouched by construction",
+  "diff_evidence": {
+    "max_diff_inside_patch": 152,
+    "diff_bbox_at_2pct_threshold": "72x41+444+359",
+    "confined_to_patch_region": true,
+    "outside_region_max_diff": 0
+  },
+  "visual_scan": "no glyphs, captions, or watermarks anywhere in frame; haze and cloak-edge reconstruction coherent; grain and value continuous across patch boundary",
+  "result": "pass",
+  "provenance": "original plate preserved unmodified; derivative is a look-dev asset only",
+  "residual_risk": "inpaint model id undisclosed; CAP-10 remains UNVERIFIED pending vendor documentation; per-frame text scan remains mandatory on any video output (R-14, N-C absolute ban)"
+}

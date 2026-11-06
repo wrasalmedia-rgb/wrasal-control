@@ -9,7 +9,9 @@
     {"asset": "plate B", "path": "reference/plates/shot-B.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "a32dc734695a86a7d128a204325c20e8ecd378119258f6f9987bcfe46977342a", "clearance": "REF-ONLY"},
     {"asset": "plate C", "path": "reference/plates/shot-C.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "065a8e423aa5ba122bbac5a170915e48446c791d996b2d1b7f52a49560273a1f", "clearance": "REF-ONLY"},
     {"asset": "plate D", "path": "reference/plates/shot-D.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "d8a7d0b15cbf2d06991d04be7264ff9e968e64271563483bfa80efba2357b8bc", "clearance": "REF-ONLY"},
-    {"asset": "plate C clean (subtitle removed)", "path": "reference/plates/prep/shot-C-clean.png", "type": "PNG 960x412", "status": "TO_CREATE", "sha256": null, "clearance": "ORIGINAL", "stage": "P0.3"},
+    {"asset": "plate C clean (subtitle removed)", "path": "reference/plates/prep/shot-C-clean.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "d39a1cb306a4cccddfdc58ea14fd725b6ead71cf6d45fbcdc39b491984cb3d53", "clearance": "ORIGINAL", "stage": "P0.3 complete 2026-11-06; QC-002 pass; look-dev asset only"},
+    {"asset": "plate C inpaint candidate (intermediate)", "path": "reference/plates/prep/shot-C-inpaint-candidate.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "677da35f9b32640ab1cdf8817a7f6e4808730b79e61a378662fc3838568ce42c", "clearance": "ORIGINAL", "stage": "audit intermediate"},
+    {"asset": "patch mask (intermediate)", "path": "reference/plates/prep/mask.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "acf1917534f01a989ebe99de79618ae40dd200092e6f86070688a04f282a3e82", "clearance": "ORIGINAL", "stage": "audit intermediate"},
     {"asset": "crop script", "path": "reference/make-plates.sh", "type": "shell", "status": "EXISTING", "sha256": null, "clearance": "ORIGINAL"}
   ],
   "specs_and_registers": [
@@ -60,5 +62,6 @@
   ],
   "external_media": [],
   "storage_policy": "package specs/templates/reference in-repo; large media out of git, referenced here by checksum + external location when created",
+  "rights_note": "reference source and derived plates are REF-ONLY look-dev assets; repository inclusion establishes no license to redistribute or commercially reproduce source frames or closely traceable derivatives; final deliverables must be synthesized original footage; clearance at G4 (QC-111 / CLEAR-G4)",
   "retention": "winning candidates + logs kept for mission life; rejected batches purge-optional after G3"
 }

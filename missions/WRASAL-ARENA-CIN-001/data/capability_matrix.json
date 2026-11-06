@@ -17,6 +17,19 @@
     {"id": "CAP-11", "capability": "ACEScg or equivalent color-managed pipeline in grade tool", "status": "UNVERIFIED", "evidence_required": "color system docs", "fallback": "Rec.709 display-referenced grade with show LUT trims"},
     {"id": "CAP-12", "capability": "temporal flicker removal / texture boil suppression tools", "status": "UNVERIFIED", "evidence_required": "tool docs + P4 test", "fallback": "candidate rejection at QC-204/C6; regenerate"}
   ],
-  "evidence_log": [],
+  "evidence_log": [
+    {
+      "cap": "CAP-10",
+      "date": "2026-11-06",
+      "type": "internal_test",
+      "event": "P0 inpaint test on plate C passed: subtitle removed, diff confined to patch region (72x41+444+359 inside 74x42+443+358), visual scan clean (lookdev/SHOT-C-LOOKDEV-001/qc-002-evidence.json). Vendor documentation still outstanding; status remains UNVERIFIED per doctrine."
+    },
+    {
+      "cap": "CAP-03",
+      "date": "2026-11-06",
+      "type": "tooling_probe",
+      "event": "Arena session tooling probe: connectors 'runway' and 'sora' returned unsupported; session toolset contains no image-to-video generation capability. I2V execution (LOOKDEV-001 step 4) requires an external/human-run batch or a future connector; blocked status recorded in work_orders/WRASAL-0012.json."
+    }
+  ],
   "rule": "any deliverable invoking a capability must cite its CAP id; QC-900 fails if an invoked CAP lacks VERIFIED status with doc evidence at gate time"
 }

@@ -14,8 +14,12 @@ Clearance column: `REF-ONLY` = reference use only, no redistribution claims abou
 | Plate B | `reference/plates/shot-B.png` | PNG 960×412 | DERIVED | `a32dc734…342a` | REF-ONLY |
 | Plate C | `reference/plates/shot-C.png` | PNG 960×412 | DERIVED | `065a8e42…3a1f` | REF-ONLY |
 | Plate D | `reference/plates/shot-D.png` | PNG 960×412 | DERIVED | `d8a7d0b1…b8bc` | REF-ONLY |
-| Plate C clean | `reference/plates/prep/shot-C-clean.png` | PNG 960×412 | TO_CREATE (P0.3) | — | ORIGINAL |
+| Plate C clean | `reference/plates/prep/shot-C-clean.png` | PNG 960×412 | DERIVED (P0.3 done 2026-11-06) | `d39a1cb3…d53` | ORIGINAL (look-dev asset only) |
+| Plate C inpaint candidate (intermediate) | `reference/plates/prep/shot-C-inpaint-candidate.png` | PNG 960×412 | DERIVED | `677da35f…e42c` | ORIGINAL (audit) |
+| Patch mask (intermediate) | `reference/plates/prep/mask.png` | PNG 960×412 | DERIVED | `acf19175…3e82` | ORIGINAL (audit) |
 | Crop script | `reference/make-plates.sh` | sh | EXISTING | — | ORIGINAL |
+
+**Rights note (G0-REC-001):** the reference source and all derived plates are REF-ONLY research/look-dev assets. Repository inclusion establishes no license to redistribute, publish, or commercially reproduce the source frames or closely traceable derivatives. Final deliverables must be synthesized original footage; any use traceable to source frames requires rights clearance at G4 (QC-111 / CLEAR-G4).
 
 ## 17.2 Specs & registers (this package)
 

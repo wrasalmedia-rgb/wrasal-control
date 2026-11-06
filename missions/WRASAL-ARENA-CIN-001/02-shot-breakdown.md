@@ -54,7 +54,7 @@ Plates: `reference/plates/shot-{A,B,C,D}.png`. Frame counts at 24 fps. All angle
 | Field | Value |
 |---|---|
 | Size / angle / height | EW tableau, low angle ≈ −8° from dune base, 0 m relative |
-| Subject & blocking | CH-04/CH-03-rider (see `05`) on rearing horse at dune crest, center-left third; cape streaming 270°; storm front fills upper 2/3; horizon glow lower-left |
+| Subject & blocking | CH-04 (rider; distinct record until evidence identifies otherwise, G0-REC-001 — see `05` §5.4) on rearing horse at dune crest, center-left third; cape streaming 270°; storm front fills upper 2/3; horizon glow lower-left |
 | Lens / stop / focus | 75–100 mm spherical, T5.6–T8, focus ∞; expose for sky → subject −6 to −8 stops = clean silhouette |
 | Camera move | Locked-off tripod; optional 1.5% push over 5 s |
 | Duration | 5.0 s / 120 fr |

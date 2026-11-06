@@ -59,6 +59,7 @@
       "plate_prep": "subtitle inpaint mandatory (QC-002, R-14)",
       "prompt_text": "Animate this exact frame as photorealistic live-action cinema, 24 fps, 1/48 s motion blur, 2.39:1 preserved. MOVE: scream performance - jaw opens wider on onset with correct teeth and tongue, eyes stay open and fixed off-frame right, neck cords engage, sustain, then mouth closes into a glare; hair streams screen-left in gusts with three hero strands leading; cloak shoulder flutter. HOLD: sun disc position and soft edge, haze density and pink field value, profile near-black frontal plane, warm rim on hair and jaw, pauldron shape, framing. CAM: handheld breathe + 2% push-in. AMP: MED. PHYS: hair never crosses the face; jaw hinge natural; no head rotation out of profile. ABSOLUTE: no text, caption, glyph or watermark may appear at any frame (the source plate's burned-in subtitle was removed in prep; its reappearance is an automatic fail). Texture: preserve backlit skin translucency; fine 35 mm grain; gentle halation only.",
       "parameters": {"duration_s": 3.5, "first_frame": "clean plate", "motion_strength": "MED"},
+      "test_override": {"duration_s": 5.0, "authority": "G0-REC-001 directive (SHOT-C LOOKDEV-001 five-second performance test)", "beat_extension": "sustain/glare-hold tail: inhale 0-0.8 s, onset 0.8-2.0 s, sustain 2.0-3.5 s, glare hold 3.5-5.0 s; DNA-C cut duration unchanged pending G1"},
       "negatives": ["N-GLOBAL", "N-C"]
     },
     {
