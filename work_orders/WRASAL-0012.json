@@ -1,0 +1,84 @@
+{
+  "work_order_id": "WRASAL-0012",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / G0-REC-001",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "SHOT-C LOOKDEV-001 stage 1 per the G0-REC-001 directive: (1) verify committed source plate and manifest checksums; (2) prepare a subtitle-free derivative reference with confinement evidence, original preserved for provenance; (3) reference the approved character/exposure specification for SHOT-C; (4) stage the documented image-to-video comparison harness (run sheet, metadata log, QC and score sheets) for the five-second performance test.",
+  "success_condition": "Stage 1 artifacts exist and verify: checksums match manifest; subtitle-free derivative passes QC-002 with diff confinement evidence and visual scan; spec references recorded; run sheet states test parameters (5.0 s override), comparison design, and blocking status of stage 2 without misrepresenting footage as produced. Stage 2 (I2V execution, scoring, human approval) explicitly queued as next candidate work order.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "66b81d70460b0cd0162ea49eace590ae9da88da5",
+    "validation_evidence": "evidence/WRASAL-0012-validation.json",
+    "lookdev_record": "missions/WRASAL-ARENA-CIN-001/lookdev/SHOT-C-LOOKDEV-001/README.md",
+    "qc_evidence": "missions/WRASAL-ARENA-CIN-001/lookdev/SHOT-C-LOOKDEV-001/qc-002-evidence.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0012-plate-verification",
+      "type": "checksum_verification",
+      "attribution": "Arena external execution worker",
+      "source": "sha256sum over reference/source/image-1.png and reference/plates/shot-{A,B,C,D}.png compared to data/manifest.json",
+      "observed_result": "All five checksums match the manifest exactly (bea6ed1c..., 2d05dbf7..., a32dc734..., 065a8e42..., d8a7d0b1...).",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-subtitle-removal",
+      "type": "qc_measurement",
+      "attribution": "Arena external execution worker",
+      "source": "lookdev/SHOT-C-LOOKDEV-001/qc-002-evidence.json; reference/plates/prep/shot-C-clean.png",
+      "observed_result": "Subtitle bbox detected identically at 80/88/93% thresholds (58x26+451+16 in band); AI inpaint patch composited only inside feathered 74x42+443+358 region; diff bbox 72x41+444+359 confined, outside-region max diff 0; visual scan shows no glyphs and coherent reconstruction; clean derivative sha d39a1cb3... recorded in manifest; original preserved unmodified.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-spec-reference",
+      "type": "spec_audit",
+      "attribution": "Arena external execution worker",
+      "source": "04-shot-dna.md DNA-C; data/shot_dna.json SHOT-C; 09-performance-direction.md 9.4; 03-scene-dna.md palette P-10/P-11/P-17/P-18",
+      "observed_result": "Character and exposure specification for SHOT-C fully referenced in run sheet (85 mm T4 profile, sun disc in frame, frontal plane P-17, rim P-12/P-18, haze P-10, 5:1 ratio, halation policy, beat verbs); G1 human approval correctly marked pending, not assumed.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-i2v-tooling-probe",
+      "type": "tooling_probe",
+      "attribution": "Arena external execution worker",
+      "source": "Arena list_connector_tools probes: 'runway' and 'sora' (2026-11-06); session toolset inventory",
+      "observed_result": "Both probes returned unsupported; session toolset contains no image-to-video generation tool. LOOKDEV-001 step 4 cannot execute in this session; blocked status recorded in run sheet and capability_matrix evidence_log; comparison design prepared for external/human execution.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-harness-staged",
+      "type": "deliverable_audit",
+      "attribution": "Arena external execution worker",
+      "source": "lookdev/SHOT-C-LOOKDEV-001/README.md; qc-sheet-SHOT-C-LOOKDEV-001.json; data/prompts.json I2V-C test_override",
+      "observed_result": "Run sheet defines 5.0 s directive override with beat extension, conditioning plate checksum, negatives, acceptance thresholds, comparison design, and empty metadata log; QC sheet instantiated with stage-1 results (4 pass, 0 fail, 5 na); no footage claimed.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0012-implementation-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "local git commit on arena/abe9e5ac-wrasal-control",
+      "observed_result": "Stage-1 artifacts and G0-REC-001 dispositions committed as 66b81d70460b0cd0162ea49eace590ae9da88da5.",
+      "reference": "66b81d70460b0cd0162ea49eace590ae9da88da5",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "unchanged; G0-REC-001 recorded as conditional reviewer directive, formal G0 acceptance remains pending",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; creative gates G0/G1/G2 remain open for human sign-off"
+  },
+  "next_candidate": "WRASAL-0013: SHOT-C LOOKDEV-001 stage 2 - execute the documented image-to-video comparison (external/human-run batch or future Arena connector), preserve original outputs plus model metadata, score against rubric, complete QC report, present at G1/G2 for human creative approval. Blocked until image-to-video tooling access exists; probes evidenced none in Arena session as of 2026-11-06."
+}
