@@ -46,6 +46,10 @@ const ENCODER_DIR = path.join(REPO, 'tools', 'pylibs', 'av');
 const UI = path.join(APP, 'ui', 'index.html');
 const PORT = Number(process.env.PORT || 8787);
 const TOKEN = process.env.ARENA_CIN_AUTH_TOKEN || null;
+const AUTH_MODE = process.env.ARENA_CIN_AUTH_MODE || 'sandbox'; // 'sandbox' | 'production'
+const SESSIONS = new Map();
+const SESSION_TTL_MS = 8 * 3600 * 1000;
+const SENSITIVE_SUB = new Set(['', '/media', '/metadata', '/manifest', '/qc', '/qc-history', '/verify']);
 const MAX_UPLOAD = Number(process.env.ARENA_CIN_MAX_UPLOAD_BYTES || 64 * 1024 * 1024);
 const QUOTA = Number(process.env.ARENA_CIN_QUOTA_BYTES || 2_000_000_000);
 const RATE_LIMIT = Number(process.env.ARENA_CIN_RATE_LIMIT || 5);
@@ -130,11 +134,28 @@ async function verifyChain(dir) {
 }
 
 function authOk(req) {
-  if (TOKEN) {
-    const h = req.headers.authorization || '';
-    return h === `Bearer ${TOKEN}`;
+  // production mode FAILS CLOSED: no token configured => every mutation rejected
+  if (AUTH_MODE === 'production') {
+    return Boolean(TOKEN) && (req.headers.authorization || '') === `Bearer ${TOKEN}`;
   }
-  return LOOPBACK.has(req.socket.remoteAddress || '');
+  if (TOKEN) return (req.headers.authorization || '') === `Bearer ${TOKEN}`;
+  return LOOPBACK.has(req.socket.remoteAddress || ''); // sandbox dev convenience only
+}
+
+function mutAuthFail(res) {
+  return send(res, 401, {
+    error: AUTH_MODE === 'production' && !TOKEN ? 'auth not configured (production mode fails closed)' : 'unauthorized: bearer token required',
+    code: TOKEN ? 'AUTH_REQUIRED' : (AUTH_MODE === 'production' ? 'AUTH_NOT_CONFIGURED' : 'LOOPBACK_ONLY'),
+  });
+}
+
+function readOk(req) {
+  // sensitive reads (footage, manifests, evidence) are gated in production mode
+  if (AUTH_MODE !== 'production') return true;
+  if (TOKEN && (req.headers.authorization || '') === `Bearer ${TOKEN}`) return true;
+  const m = String(req.headers.cookie || '').match(/acin_session=([a-f0-9]{32})/);
+  if (m && SESSIONS.has(m[1]) && SESSIONS.get(m[1]) > Date.now()) return true;
+  return false;
 }
 
 function providers() {
@@ -269,7 +290,12 @@ async function workspace() {
     shots, prompts, capabilities: caps.capabilities, capability_evidence_log: caps.evidence_log,
     plates, providers: providers(),
     security: {
-      auth_mode: TOKEN ? 'bearer-token required for mutations' : 'no token configured: mutations loopback-only, public reads only',
+      auth_mode: AUTH_MODE === 'production'
+        ? (TOKEN ? 'production: bearer token or session required for mutations AND sensitive reads (footage/manifests/evidence)' : 'production: FAIL-CLOSED, no token configured - all mutations and sensitive reads rejected')
+        : (TOKEN ? 'sandbox: bearer-token required for mutations' : 'sandbox: no token configured, mutations loopback-only (dev convenience; never a production default)'),
+      auth_mode_id: AUTH_MODE,
+      fail_closed: AUTH_MODE === 'production' && !TOKEN,
+      read_auth_required: AUTH_MODE === 'production',
       max_upload_bytes: MAX_UPLOAD, quota_bytes: QUOTA, rate_limit: `${RATE_LIMIT} ingest / ${RATE_WINDOW}s / ip`,
       media_validation: 'container+codec+dimensions+duration policy and head/tail decode (tools/validate_media.py)',
       evidence_chain: 'tamper-evident per-job hash chain; GET /api/jobs/:id/verify',
@@ -293,7 +319,21 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(200, { 'content-type': 'image/png', 'cache-control': 'no-store' });
       return fs.createReadStream(abs).pipe(res);
     }
+    if (req.method === 'POST' && p === '/api/auth/login') {
+      let body = '';
+      for await (const chunk of req) body += chunk;
+      let t = null;
+      try { t = JSON.parse(body || '{}').token; } catch { /* invalid */ }
+      if (TOKEN && t === TOKEN) {
+        const sid = crypto.randomBytes(16).toString('hex');
+        SESSIONS.set(sid, Date.now() + SESSION_TTL_MS);
+        res.writeHead(200, { 'set-cookie': `acin_session=${sid}; HttpOnly; Path=/; SameSite=Strict`, 'content-type': 'application/json', 'cache-control': 'no-store' });
+        return res.end(JSON.stringify({ ok: true, mode: AUTH_MODE }));
+      }
+      return send(res, 401, { error: 'invalid token' });
+    }
     if (req.method === 'GET' && p === '/api/jobs') {
+      if (!readOk(req)) return send(res, 401, { error: TOKEN ? 'authentication required (production mode)' : 'auth not configured (production mode fails closed)', code: TOKEN ? 'AUTH_REQUIRED' : 'AUTH_NOT_CONFIGURED' });
       const ids = fs.readdirSync(JOBS).filter((d) => fs.existsSync(path.join(JOBS, d, 'job.json')));
       const jobs = ids.map((id) => readJson(path.join(JOBS, id, 'job.json')))
         .sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
@@ -302,7 +342,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && p === '/api/jobs/ingest') {
-      if (!authOk(req)) return send(res, 401, { error: 'unauthorized: bearer token required (or loopback origin when no token configured)' });
+      if (!authOk(req)) return mutAuthFail(res);
       if (!rateOk(ip)) return send(res, 429, { error: 'ingest rate limit exceeded', retry_after_s: RATE_WINDOW });
       if (dirSize(JOBS) > QUOTA) return send(res, 507, { error: 'storage quota exceeded', quota_bytes: QUOTA });
       const shotId = url.searchParams.get('shot');
@@ -391,6 +431,9 @@ const server = http.createServer(async (req, res) => {
       if (!fs.existsSync(jf)) return send(res, 404, { error: 'unknown job' });
       const sub = jobMatch[2] || '';
       const job = readJson(jf);
+      if (req.method === 'GET' && SENSITIVE_SUB.has(sub) && !readOk(req)) {
+        return send(res, 401, { error: TOKEN ? 'authentication required (production mode)' : 'auth not configured (production mode fails closed)', code: TOKEN ? 'AUTH_REQUIRED' : 'AUTH_NOT_CONFIGURED' });
+      }
       if (req.method === 'GET' && sub === '') return send(res, 200, { ...job, has_media: fs.existsSync(path.join(dir, 'out.mp4')) });
       if (req.method === 'GET' && sub === '/media') {
         const mp = path.join(dir, 'out.mp4');
@@ -406,7 +449,7 @@ const server = http.createServer(async (req, res) => {
         return send(res, 200, { ...meta, amendments: fs.existsSync(ap) ? readJson(ap) : [] });
       }
       if (req.method === 'POST' && sub === '/metadata-amend') {
-        if (!authOk(req)) return send(res, 401, { error: 'unauthorized' });
+        if (!authOk(req)) return mutAuthFail(res);
         let body = '';
         for await (const chunk of req) body += chunk;
         const amend = JSON.parse(body || '{}');
@@ -418,7 +461,7 @@ const server = http.createServer(async (req, res) => {
         return send(res, 200, { amended: true, entries: log.length });
       }
       if (req.method === 'POST' && sub === '/qc') {
-        if (!authOk(req)) return send(res, 401, { error: 'unauthorized' });
+        if (!authOk(req)) return mutAuthFail(res);
         let body = '';
         for await (const chunk of req) body += chunk;
         const qc = JSON.parse(body);
@@ -470,7 +513,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (req.method === 'POST' && p === '/api/jobs') {
-      if (!authOk(req)) return send(res, 401, { error: 'unauthorized: bearer token required (or loopback origin when no token configured)' });
+      if (!authOk(req)) return mutAuthFail(res);
       let body = '';
       for await (const chunk of req) body += chunk;
       if (body.length > 1_000_000) return send(res, 413, { error: 'body too large' });
@@ -503,5 +546,6 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`WRASAL-ARENA-CIN-001 production console listening on 0.0.0.0:${PORT} (auth mode: ${TOKEN ? 'bearer-token' : 'loopback-mutations-only'})`);
+  console.log(`WRASAL-ARENA-CIN-001 production console listening on 0.0.0.0:${PORT} (auth mode: ${AUTH_MODE}${TOKEN ? ', token configured' : ', NO TOKEN'}${AUTH_MODE === 'production' && !TOKEN ? ' => FAIL-CLOSED' : ''})`);
+  if (AUTH_MODE !== 'production') console.log('WARNING: sandbox auth mode - loopback mutations allowed without token. Set ARENA_CIN_AUTH_MODE=production and ARENA_CIN_AUTH_TOKEN for any external exposure.');
 });

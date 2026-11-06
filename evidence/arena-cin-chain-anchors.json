@@ -1,0 +1,90 @@
+{
+  "schema": "wrasal-chain-anchors/v1",
+  "anchors": {
+    "job-ingest-mw4qi299-468afe": {
+      "job_id": "job-ingest-mw4qi299-468afe",
+      "head_seq": 0,
+      "head_hash": "c44f10b9a8f81243cda4d644580f1859b23f1c33838232b146029ce60baaf619",
+      "chain_file_sha256": "a8b7e34fa32b46886ca3c48b1d29f03dddb8ea9cf874b6507dbaa8e31bde051b",
+      "anchored_at": "2026-11-06T09:04:10.656Z"
+    },
+    "job-ingest-mw4qjpdy-9d7aa8": {
+      "job_id": "job-ingest-mw4qjpdy-9d7aa8",
+      "head_seq": 0,
+      "head_hash": "c3b2c8705e55fc301f5eb9aa5b1809726799fd906978c30e9b5c41cd2db423bc",
+      "chain_file_sha256": "3ac3032fd0a5c5cfb0c7b0494f214022368fe7f8e6a49fb0a2411297c2a371b0",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-ingest-mw4qmigd-818387": {
+      "job_id": "job-ingest-mw4qmigd-818387",
+      "head_seq": 0,
+      "head_hash": "ff23253ab0f4e2825dbb08723fd428a2b72228b062fecfc3b474acc7e408739e",
+      "chain_file_sha256": "9b0ca4080498c8ef38a26b128c0abcc5dd45c550d23b35bf44c497ad0664ee79",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-ingest-mw4qos8o-901c2d": {
+      "job_id": "job-ingest-mw4qos8o-901c2d",
+      "head_seq": 0,
+      "head_hash": "c167f654a6cba6f7359b7572be80809549d709d9c922dde5f1f697df700ee7da",
+      "chain_file_sha256": "201deb9b578673accbd18b49ade03443254b6a157ee9b02da25cf4fb868ad098",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-ingest-mw4qznpb-6b4922": {
+      "job_id": "job-ingest-mw4qznpb-6b4922",
+      "head_seq": 0,
+      "head_hash": "d4f72224709022558d47b8367253376390bcb998a175f65fc33586d14f1b4918",
+      "chain_file_sha256": "8c9070cd24e83dc005877b0c58350a7e770d591d85651a06084c2db0ddd41f96",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-mw4qhrbx-e84f1c": {
+      "job_id": "job-mw4qhrbx-e84f1c",
+      "head_seq": 2,
+      "head_hash": "3e0a265124577b22a13393a17981bb14a9070ecf24bdedbec1824c13cada01ba",
+      "chain_file_sha256": "f52e12b98c4dd0b583c62f92827a41e18a7dc4f2ed135789b2a54b2aa60aa5fe",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-mw4qjegu-5928a3": {
+      "job_id": "job-mw4qjegu-5928a3",
+      "head_seq": 2,
+      "head_hash": "732f4cf21863276e3ab363e546680b081f79efeb9a8677dc991276021771665a",
+      "chain_file_sha256": "eab9aeddf46df54187476bd9e2468aed9b842b4ce671a90993d9bcbb8d5fadba",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-mw4qm7jj-3fa943": {
+      "job_id": "job-mw4qm7jj-3fa943",
+      "head_seq": 2,
+      "head_hash": "8d6229344ca9d50ff1fb04d72457c8bf4780bdac37b1708a4e18d31e5bccad70",
+      "chain_file_sha256": "1dd2543dcb130335b2230b0eab67cfb9ffc69c6a2d640478ad05f9e4dd903143",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-mw4qohbi-ccf9a2": {
+      "job_id": "job-mw4qohbi-ccf9a2",
+      "head_seq": 2,
+      "head_hash": "78357a7025c83de066848d34c006114b07b74f0871f69da3b4fc571cd5316e68",
+      "chain_file_sha256": "ceee7de5a452f2b7102e4b364a82b1d628e364d256dae563a238aaf78e01bf59",
+      "anchored_at": "2026-11-06T09:04:10.657Z"
+    },
+    "job-mw4qzcsd-e4728d": {
+      "job_id": "job-mw4qzcsd-e4728d",
+      "head_seq": 2,
+      "head_hash": "c03ed4a14ab5379f5a95f94f0f67b5d4aa52d95fc9ff2c92b0713a663c98e015",
+      "chain_file_sha256": "5ba5e716834cfd8eaa2a37739bb130030ae8c096106d6778202c920e22e80772",
+      "anchored_at": "2026-11-06T09:04:10.658Z"
+    },
+    "job-ingest-mw4r1hzi-b1af8b": {
+      "job_id": "job-ingest-mw4r1hzi-b1af8b",
+      "head_seq": 0,
+      "head_hash": "8d91b885b9ea419c731d9ff4de8753314bcae59e121d91f268ec4483a0c60369",
+      "chain_file_sha256": "806d024dee7b006fbe024cbe6c68b79e8924b094deb7189eb88ca11b0ddd2074",
+      "anchored_at": "2026-11-06T09:05:36.556Z"
+    },
+    "job-mw4r172t-d1b451": {
+      "job_id": "job-mw4r172t-d1b451",
+      "head_seq": 2,
+      "head_hash": "52a7c4dc82088a748e52e4d2f27b47e99e3da0b7fd3d196882aa45ea6b31fa42",
+      "chain_file_sha256": "5132d1fdc289407a2212e1c7ac2c772d46efdbb4b4bf2541c3bbec74c9eebda2",
+      "anchored_at": "2026-11-06T09:05:36.557Z"
+    }
+  },
+  "last_anchored_at": "2026-11-06T09:05:36.557Z"
+}

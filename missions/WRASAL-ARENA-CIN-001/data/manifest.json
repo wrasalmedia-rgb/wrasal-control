@@ -12,6 +12,7 @@
     {"asset": "plate C clean (subtitle removed)", "path": "reference/plates/prep/shot-C-clean.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "d39a1cb306a4cccddfdc58ea14fd725b6ead71cf6d45fbcdc39b491984cb3d53", "clearance": "ORIGINAL", "stage": "P0.3 complete 2026-11-06; QC-002 pass; look-dev asset only"},
     {"asset": "plate C inpaint candidate (intermediate)", "path": "reference/plates/prep/shot-C-inpaint-candidate.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "677da35f9b32640ab1cdf8817a7f6e4808730b79e61a378662fc3838568ce42c", "clearance": "ORIGINAL", "stage": "audit intermediate"},
     {"asset": "patch mask (intermediate)", "path": "reference/plates/prep/mask.png", "type": "PNG 960x412", "status": "DERIVED", "sha256": "acf1917534f01a989ebe99de79618ae40dd200092e6f86070688a04f282a3e82", "clearance": "ORIGINAL", "stage": "audit intermediate"},
+    {"asset": "synthetic SHOT-C substitute candidate (text-derived, no source derivation)", "path": "reference/plates/alt/shot-C-synthetic-candidate.png", "type": "PNG", "status": "EXISTING", "sha256": null, "clearance": "ORIGINAL - candidate only; G1 approval required before use as conditioning lock; see HOLD-CIN-PLATE-001", "stage": "generated 2026-11-06; pending G1"},
     {"asset": "crop script", "path": "reference/make-plates.sh", "type": "shell", "status": "EXISTING", "sha256": null, "clearance": "ORIGINAL"}
   ],
   "specs_and_registers": [
@@ -40,7 +41,8 @@
     {"asset": "risk register machine", "path": "data/risk_register.json", "status": "EXISTING"},
     {"asset": "rubric machine", "path": "data/rubric.json", "status": "EXISTING"},
     {"asset": "capability matrix", "path": "data/capability_matrix.json", "status": "EXISTING"},
-    {"asset": "manifest machine", "path": "data/manifest.json", "status": "EXISTING"}
+    {"asset": "manifest machine", "path": "data/manifest.json", "status": "EXISTING"},
+    {"asset": "chain anchor pins (git-tracked, outside app storage)", "path": "evidence/arena-cin-chain-anchors.json (repo root)", "type": "JSON", "status": "DERIVED", "sha256": null, "clearance": "ORIGINAL", "stage": "scripts/anchor-evidence.mjs"}
   ],
   "templates": [
     {"asset": "scene DNA blank", "path": "templates/scene_dna.template.json"},

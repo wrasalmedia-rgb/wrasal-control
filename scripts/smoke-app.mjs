@@ -126,6 +126,59 @@ async function main() {
   child.kill('SIGTERM');
   fs.rmSync(RT2, { recursive: true, force: true });
 
+  // --- production mode WITHOUT token: fail closed ---
+  const PORT3 = 8801;
+  const RT3 = '.runtime-smoke3';
+  fs.rmSync(RT3, { recursive: true, force: true });
+  const c3 = spawn('node', ['missions/WRASAL-ARENA-CIN-001/app/server.mjs'], {
+    cwd: process.cwd(), env: { ...process.env, PORT: String(PORT3), ARENA_CIN_AUTH_MODE: 'production', ARENA_CIN_RUNTIME: RT3 },
+  });
+  const B3 = `http://127.0.0.1:${PORT3}`;
+  let up3 = false;
+  for (let i = 0; i < 20 && !up3; i += 1) { await sleep(400); up3 = await fetch(`${B3}/api/workspace`).then((r) => r.ok).catch(() => false); }
+  if (up3) {
+    const m3 = await fetch(`${B3}/api/jobs`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ shot_id: 'SHOT-C', provider_id: 'plate-render-techviz-v1' }) });
+    const m3j = await m3.json();
+    ok('authprod.fail_closed_mutation', m3.status === 401 && m3j.code === 'AUTH_NOT_CONFIGURED', `status=${m3.status}`);
+    const r3 = await fetch(`${B3}/api/jobs`);
+    ok('authprod.fail_closed_read', r3.status === 401, `status=${r3.status}`);
+  } else { ok('authprod.instance_up', false); }
+  c3.kill('SIGTERM');
+  fs.rmSync(RT3, { recursive: true, force: true });
+
+  // --- production mode WITH token: session login gates sensitive reads ---
+  const PORT4 = 8802;
+  const RT4 = '.runtime-smoke4';
+  fs.rmSync(RT4, { recursive: true, force: true });
+  const c4 = spawn('node', ['missions/WRASAL-ARENA-CIN-001/app/server.mjs'], {
+    cwd: process.cwd(), env: { ...process.env, PORT: String(PORT4), ARENA_CIN_AUTH_MODE: 'production', ARENA_CIN_AUTH_TOKEN: 'smoke-token2', ARENA_CIN_RUNTIME: RT4 },
+  });
+  const B4 = `http://127.0.0.1:${PORT4}`;
+  let up4 = false;
+  for (let i = 0; i < 20 && !up4; i += 1) { await sleep(400); up4 = await fetch(`${B4}/api/workspace`).then((r) => r.ok).catch(() => false); }
+  if (up4) {
+    const noRead = await fetch(`${B4}/api/jobs`);
+    ok('authprod.read_requires_auth', noRead.status === 401, `status=${noRead.status}`);
+    const badLogin = await fetch(`${B4}/api/auth/login`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ token: 'wrong' }) });
+    ok('authprod.login_invalid_401', badLogin.status === 401, `status=${badLogin.status}`);
+    const login = await fetch(`${B4}/api/auth/login`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ token: 'smoke-token2' }) });
+    const cookie = (login.headers.get('set-cookie') || '').split(';')[0];
+    ok('authprod.login_ok', login.status === 200 && cookie.startsWith('acin_session='), `cookie=${cookie.slice(0, 18)}…`);
+    const mk = await fetch(`${B4}/api/jobs`, { method: 'POST', headers: { 'content-type': 'application/json', authorization: 'Bearer smoke-token2' }, body: JSON.stringify({ shot_id: 'SHOT-C', provider_id: 'plate-render-techviz-v1', duration_s: 1, fps: 24 }) });
+    const mkj = await mk.json();
+    let mk2 = mkj;
+    for (let i = 0; i < 30 && mk2.status !== 'succeeded'; i += 1) { await sleep(1000); mk2 = await (await fetch(`${B4}/api/jobs/${mkj.id}`, { headers: { authorization: 'Bearer smoke-token2' } })).json(); }
+    const sessJobs = await fetch(`${B4}/api/jobs`, { headers: { cookie } });
+    ok('authprod.session_read_jobs', sessJobs.status === 200, `status=${sessJobs.status}`);
+    const sessMedia = await fetch(`${B4}/api/jobs/${mkj.id}/media`, { headers: { cookie } });
+    const smb = Buffer.from(await sessMedia.arrayBuffer());
+    ok('authprod.session_read_media', sessMedia.status === 200 && smb.toString('latin1', 4, 8) === 'ftyp', `status=${sessMedia.status}`);
+    const noSessMedia = await fetch(`${B4}/api/jobs/${mkj.id}/media`);
+    ok('authprod.media_without_session_401', noSessMedia.status === 401, `status=${noSessMedia.status}`);
+  } else { ok('authprod.instance_up_token', false); }
+  c4.kill('SIGTERM');
+  fs.rmSync(RT4, { recursive: true, force: true });
+
   const ws2 = await (await fetch(`${BASE}/api/workspace`)).json();
   ok('source.integrity_after_jobs', ws2.plates.find((p) => p.path.endsWith('source/image-1.png'))?.sha256_live === EXPECT.source);
 

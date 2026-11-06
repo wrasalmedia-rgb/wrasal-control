@@ -86,6 +86,27 @@ Smoke suite now **34 checks** (`.runtime/smoke-report.json`).
 
 No new dashboard, workflow engine, or database abstraction beyond what the existing implementation demonstrably requires.
 
+## Addendum 3 — security review response (2026-11-06, same day)
+
+Third reviewer directive recorded:
+
+```
+SANDBOX: CONDITIONALLY_ACCEPTED
+SECURITY_IMPLEMENTATION: REPORTED_COMPLETE
+SECURITY_VERIFICATION: PARTIAL
+AI_GENERATION: BLOCKED
+PRODUCTION_DEPLOYMENT: NOT_AUTHORIZED
+NEXT_GATE: SHOT-C-I2V-001
+```
+
+Responses implemented in this revision:
+
+1. **Fail-closed production auth.** `ARENA_CIN_AUTH_MODE=production` rejects every mutation when no token is configured (no loopback escape); sandbox loopback convenience remains dev-only and logs a warning. Smoke: `authprod.fail_closed_mutation`, `authprod.fail_closed_read`.
+2. **Read authorization on sensitive endpoints.** In production mode, footage (`/media`), manifests, metadata, QC and verify endpoints require bearer or an HttpOnly session cookie obtained via `POST /api/auth/login`; dashboard shows a login gate. Smoke: `authprod.read_requires_auth`, `authprod.login_invalid_401`, `authprod.login_ok`, `authprod.session_read_jobs`, `authprod.session_read_media`, `authprod.media_without_session_401`.
+3. **Chain anchoring outside app storage.** Reviewer note accepted verbatim: a hash chain detects change but proves neither authorship nor resistance to an attacker with filesystem access. `scripts/anchor-evidence.mjs` pins chain heads into git-tracked `evidence/arena-cin-chain-anchors.json` (immutable history outside `.runtime/`) and optionally posts to `ARENA_CIN_ANCHOR_URL` (WORM/timestamp/ledger) for production.
+4. **Rights hold.** `HOLD-CIN-PLATE-001`: reference-derived plates are NO-GO for external generation until rights-holder evidence is committed or the synthetic substitute plate is G1-approved. Test kit updated; WRASAL-0014 cannot leave `blocked` without one of these.
+5. **No specification expansion.** This revision adds only controls that unblock the two named outcomes (real footage, independently verified deployment); rc2 sequence unchanged per directive §04.
+
 ## Known limitations (rc1)
 
 1. Job store is local filesystem (`.runtime/`) — single-host only; see `PRODUCTION-ARCH-001.md`.

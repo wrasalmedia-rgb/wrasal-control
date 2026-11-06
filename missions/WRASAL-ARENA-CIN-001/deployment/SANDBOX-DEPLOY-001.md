@@ -48,7 +48,13 @@ node missions/WRASAL-ARENA-CIN-001/app/server.mjs   # PORT env optional (default
 node scripts/smoke-app.mjs                      # SMOKE_BASE env optional; writes .runtime/smoke-report.json
 ```
 
-## 3b. Security gate (production hardening, 2026-11-06)
+## 3b. Security gate (production hardening, 2026-11-06; revised same day per security review)
+
+**Auth modes:** `ARENA_CIN_AUTH_MODE=sandbox` (default; loopback mutations without token — dev convenience, startup warning) vs `production` (**fail-closed**: no token ⇒ all mutations rejected; token or HttpOnly session required for mutations AND sensitive reads: `/api/jobs`, job detail, `/media`, `/metadata`, `/manifest`, `/qc*`, `/verify`; session via `POST /api/auth/login`; dashboard shows login gate).
+**Chain anchoring:** hash chains detect change but prove neither authorship nor resistance to filesystem-level attackers; heads are pinned outside app storage via `scripts/anchor-evidence.mjs` → git-tracked `evidence/arena-cin-chain-anchors.json`, optional external anchor `ARENA_CIN_ANCHOR_URL` (WORM/timestamp/ledger) for production.
+**Rights:** HOLD-CIN-PLATE-001 — reference-derived plates NO-GO for external generation until rights evidence or G1-approved synthetic substitute.
+
+## 3a. Security gate (original hardening, 2026-11-06)
 
 Mutations (`POST /api/jobs`, `/api/jobs/ingest`, `/api/jobs/:id/qc`, `/metadata-amend`) require `Authorization: Bearer $ARENA_CIN_AUTH_TOKEN` when set; **without a token, mutations are loopback-only** — a publicly exposed instance is read-only until configured. Ingest is a **binary contract**: raw MP4 body streamed to disk under `ARENA_CIN_MAX_UPLOAD_BYTES` (default 64 MB), metadata base64 in `x-arena-cin-meta` (≤64 KB, write-once, amendments logged), deep validation via `tools/validate_media.py` (codec/dimension/duration policy + head/tail decode), rejects quarantined in `.runtime/ingest-rejects/`, per-IP rate limit (429) and storage quota (507), per-job tamper-evident evidence chain with `GET /api/jobs/:id/verify`. Env summary in `app/server.mjs` header comment.
 

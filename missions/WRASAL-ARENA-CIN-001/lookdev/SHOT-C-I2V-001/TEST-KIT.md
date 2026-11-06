@@ -13,7 +13,9 @@
 | Derivation | confined-patch subtitle removal from `reference/plates/shot-C.png` (sha `065a8e42…`); diff confined to `72×41+444+359`; evidence `../SHOT-C-LOOKDEV-001/qc-002-evidence.json` |
 | Source | `reference/source/image-1.png` sha `bea6ed1c…` (REF-ONLY) |
 
-**Authorization scope for this test (recorded, not a rights clearance):** the plate is authorized as a **private conditioning input** for the named technical test in one selected Runway workspace. Not authorized: public distribution or commercial use of outputs traceable to the source frames; any use beyond SHOT-C-I2V-001. Formal rights clearance remains a human decision at G4/QC-111. Keep the plate inside WRASAL-controlled storage and the selected private workspace only.
+**Authorization status: 🔴 HOLD-CIN-PLATE-001 ACTIVE (2026-11-06).** The scope below is an internal proposal only — *recording a permission scope is not proof of authorization* (reviewer directive §03). Generation against reference-derived plates is **NO-GO** until either (1) rights-holder clearance evidence is committed, or (2) the original synthetic substitute `reference/plates/alt/shot-C-synthetic-candidate.png` (text-derived from DNA-C, no source derivation) is approved at G1. See `PLATE-RIGHTS-HOLD.md`.
+
+Proposed scope once released: private conditioning input for the named technical test in one selected Runway workspace. Not authorized: public distribution or commercial use of outputs traceable to the source frames; any use beyond SHOT-C-I2V-001. Formal rights clearance remains a human decision at G4/QC-111.
 
 ## 2. Generation spec
 

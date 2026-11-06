@@ -148,7 +148,10 @@ function switchTab(t){document.querySelectorAll('nav button').forEach(b=>b.class
  ['ws','gen','jobs','rev','exp'].forEach(x=>$('#t-'+x).hidden=x!==t);
  if(t==='jobs')loadJobs();if(t==='rev')loadRev();if(t==='exp')loadExp();}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>switchTab(b.dataset.t));
-loadWS();setInterval(()=>{if(!$('#t-jobs').hidden)loadJobs()},2000);
+function showLogin(){const m=el('div','panel','<h2>LOGIN REQUIRED (production mode)</h2><label>bearer token</label><input id="lg-tok" type="password"><div style="margin-top:8px"><button class="act primary" id="lg-go">Authenticate</button> <span id="lg-msg"></span></div><div class="note">Sensitive reads (footage, manifests, evidence) and all mutations are gated in production mode.</div>');document.querySelector('main').prepend(m);
+ $('#lg-go').onclick=async()=>{const r=await fetch('/api/auth/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({token:$('#lg-tok').value})});if(r.ok){location.reload()}else{$('#lg-msg').innerHTML='<span class="err">invalid token</span>'}};}
+async function boot(){const r=await fetch('/api/jobs');if(r.status===401){showLogin();return}loadWS();setInterval(()=>{if(!$('#t-jobs').hidden)loadJobs()},2000);}
+boot();
 </script>
 </body>
 </html>
