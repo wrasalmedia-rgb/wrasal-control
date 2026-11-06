@@ -1,0 +1,92 @@
+{
+  "work_order_id": "WRASAL-0018",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-ARENA-CIN-001 / Milestone 004 directive (Track B priority)",
+  "recorded_on": "2026-11-06",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Deliver Track B deployment evidence on the existing application without new dashboards or frameworks: worker separation, durable storage across restarts and worker replacement, stateless gateway, fail-closed production auth on a publicly reachable staging topology, topology smoke with real upload/execution/review/export, rollback drill from git history; record substitute-plate provenance for G1 inspection (Track A remains approval-pending).",
+  "success_condition": "Gateway and worker run as separate processes over a shared store; jobs execute only in workers when in gateway mode; assets survive gateway restart and worker replacement; unauthenticated public access fails closed; staging gateway publicly reachable behind preview proxy with login; topology smoke green; previous release boots from git history fail-closed; main single-mode smoke green; governance block recorded; no specification expansion beyond these outcomes.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "implementation_commit": "bec144561a6c1465ecbcf0835164d4c963888344",
+    "validation_evidence": "evidence/WRASAL-0018-validation.json",
+    "topology_report": ".runtime/topology-smoke-report.json",
+    "release_notes": "missions/WRASAL-ARENA-CIN-001/deployment/RELEASE-NOTES-v0.1.0-rc1.md",
+    "substitute_provenance": "missions/WRASAL-ARENA-CIN-001/lookdev/SHOT-C-I2V-001/substitute-provenance.json",
+    "pull_request": null,
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0018-worker-separation",
+      "type": "topology_test",
+      "attribution": "Arena external execution worker",
+      "source": "scripts/smoke-topology.mjs: topo.worker_executed (worker=w1), topo.gateway_stateless (mode=worker), topo.worker_replacement (worker=w2)",
+      "observed_result": "ARENA_CIN_MODE=worker processes claim queued jobs from the shared store and execute them; gateway mode never executes inline; metadata records executing worker id/pid; a replacement worker continued execution after the first was killed.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-durable-storage",
+      "type": "topology_test",
+      "attribution": "Arena external execution worker",
+      "source": "topo.durable_across_gateway_restart",
+      "observed_result": "After killing and restarting the gateway process, job list and MP4 media served 200 with valid ftyp bytes from the shared store; sessions persisted via file-backed session store.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-fail-closed-staging",
+      "type": "deployment_test",
+      "attribution": "Arena external execution worker",
+      "source": "topo.public_fail_closed; live staging gateway 0.0.0.0:8820 curl matrix (jobs 401, workspace 200, mutation 401, login 200); worker staging-w1 attached",
+      "observed_result": "Production-mode gateway rejects unauthenticated reads of jobs/footage/evidence and all mutations; login issues HttpOnly session; staging topology publicly reachable via Arena preview proxy; token set at launch, not committed, rotation noted.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-topology-flow",
+      "type": "topology_test",
+      "attribution": "Arena external execution worker",
+      "source": "topo.real_upload_ingest (201), topo.review_qc_recorded, topo.export_manifest (chain verified)",
+      "observed_result": "Real binary upload through the gateway validated and stored; QC decision recorded via authenticated session; export manifest includes outputs, evidence chain and verification.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-rollback-drill",
+      "type": "rollback_drill",
+      "attribution": "Arena external execution worker",
+      "source": "topo.rollback_previous_release_boots (sha 2d8b995 via git worktree), topo.rollback_fail_closed; worktree removed after drill",
+      "observed_result": "Previous release code booted from git history on an isolated port/runtime, served workspace, rejected unauthenticated mutations; drill artifacts cleaned.",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-no-regression",
+      "type": "test_run",
+      "attribution": "Arena external execution worker",
+      "source": "scripts/smoke-app.mjs (42 checks) + scripts/smoke-topology.mjs (13 checks); .runtime reports",
+      "observed_result": "Both suites green after topology changes; single-mode sandbox deployment unchanged; chain-ordering bug found and fixed during topology runs (QC chain now captures post-update job.json).",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0018-substitute-provenance",
+      "type": "provenance_record",
+      "attribution": "Arena external execution worker",
+      "source": "lookdev/SHOT-C-I2V-001/substitute-provenance.json (sha b309d05d..., tool, verbatim prompt, input_images empty)",
+      "observed_result": "Provenance for the synthetic substitute recorded for reviewer inspection; status G1_APPROVAL_PENDING; HOLD-CIN-PLATE-001 unchanged; Track A execution waits on human approval.",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_validation_tooling": "unchanged",
+    "project_semantics": "rc2 topology demonstrated in sandbox staging; production deployment remains PENDING human authorization; s3/cross-host store driver remains the cloud increment",
+    "projects_yml_facts": "unchanged",
+    "status_vocabulary": "unchanged",
+    "wrasal_runtime_world_state": "none",
+    "pull_request": "not opened",
+    "merge": "not performed",
+    "canonical_acceptance_promotion": "not performed; NEXT_ACCEPTANCE_EVIDENCE = REAL_AI_FOOTAGE_OR_VERIFIED_DEPLOYMENT"
+  },
+  "next_candidate": "Track A on approval: reviewer inspects substitute plate + provenance, grants or denies G1; if granted, Runway generation of SHOT-C-I2V-001, ingest with provider metadata, G2 QC, export. Track B remaining increment: s3/cross-host store driver + Vercel gateway placement under human release review."
+}
