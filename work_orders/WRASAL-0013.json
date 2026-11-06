@@ -1,0 +1,89 @@
+{
+  "work_order_id": "WRASAL-0013",
+  "project": "WRASAL",
+  "record_authority": "WRASAL-0013",
+  "recorded_on": "2026-10-26",
+  "recorded_by": "Arena external execution worker",
+  "objective": "Record supplemental visual evidence (rendered full-body/medium portrait plus GLOBAL VISUAL STANDARD v001 prompt fragments: Card 03-style chiaroscuro prompt, Card 07-style texture swatches a-d, system color palette) as inspectable control-plane evidence, without granting canonical acceptance.",
+  "success_condition": "The repository contains (a) the rendered image stored as inspectable evidence at evidence/GLOBAL-VISUAL-STANDARD-v001-02-FULL-BODY.webp, (b) the prompt fragments stored as evidence at evidence/WRASAL-0013-prompt-fragments.txt, linked to concept concepts/GLOBAL-VISUAL-STANDARD-v001.md Cards 02/03/07, (c) a passing control-plane validator run recorded as machine-readable evidence at evidence/WRASAL-0013-validation.json, and (d) canonical_acceptance remains pending.",
+  "execution_status": "passed",
+  "implementation_result": "pass",
+  "verification_result": "pass",
+  "canonical_acceptance": "pending",
+  "references": {
+    "source_image": "evidence/GLOBAL-VISUAL-STANDARD-v001-02-FULL-BODY.webp",
+    "prompt_fragments": "evidence/WRASAL-0013-prompt-fragments.txt",
+    "concept_record": "concepts/GLOBAL-VISUAL-STANDARD-v001.md",
+    "validation_report": "evidence/WRASAL-0013-validation.json",
+    "branch": "arena/7c7845f4-wrasal-control",
+    "commit": "511078c9fcd4c074c4b2fefa8ff48889c754f6f4",
+    "remote_branch": "arena/7c7845f4-wrasal-control",
+    "remote_ref": "refs/heads/arena/7c7845f4-wrasal-control",
+    "remote_commit": "511078c9fcd4c074c4b2fefa8ff48889c754f6f4",
+    "pull_request": "https://github.com/wrasalmedia-rgb/wrasal-control/pull/6",
+    "merge": null,
+    "canonical_acceptance_record": null
+  },
+  "evidence": [
+    {
+      "id": "wrasal-0013-source-image-intake",
+      "type": "source_artifact",
+      "attribution": "Arena external execution worker",
+      "source": "uploaded image \"IMG_6327.webp\" received in conversation and stored at evidence/GLOBAL-VISUAL-STANDARD-v001-02-FULL-BODY.webp",
+      "observed_result": "The image is a 1024x1024 WEBP rendering (1.3 MB, sha256 7d4060dea1e5107bd577993abda6ca5cb61510cf93b940063ca4feef0b38ad77) showing a man standing center in rain on a wet city street at night under a streetlamp, wearing an unzipped dark jacket open to bare chest, thin necklace, black trousers, head slightly tilted down with direct intense gaze, warm golden-orange backlight halo and wet-pavement reflections, urban background with trees and distant city lights, strong verticals and centered composition, cinematic high contrast, raw tactile texture, deep shadows, no gloss, no retouching. Stored as inspectable supplemental evidence; consistent with the standard's Card 02 full-body environment-scale intent (centered, strong verticals, raw skin texture) though rendered in a rainy urban setting rather than the volcanic wasteland of the transcribed prompts.",
+      "reference": "evidence/GLOBAL-VISUAL-STANDARD-v001-02-FULL-BODY.webp",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-prompt-fragments-intake",
+      "type": "source_artifact",
+      "attribution": "Arena external execution worker",
+      "source": "prompt fragments pasted in conversation and stored at evidence/WRASAL-0013-prompt-fragments.txt",
+      "observed_result": "Pasted fragments match transcribed GLOBAL VISUAL STANDARD v001 content: system color palette #0E0E10 #1C1C1E #8B1E1E #E6491D #EAEAEA (\"Black basalt \u2022 Red grass \u2022 Orange flare\" badge tones), Card 03-style extreme close-up chiaroscuro prompt (\"half of face in deep shadow, other half lit with intense directional red light, sweat and skin texture visible, serious intense stare, pure black background, high contrast chiaroscuro, cinematic --ar 1:1\"), and Card 07-style four-material swatches (a black cracked volcanic rock, b wrinkled deep red fabric, c close-up raw human skin with pores/sweat unretouched, d dark red dry grass growing from black ash soil). Stored as provenance evidence linking to the concept record; concept record itself unchanged.",
+      "reference": "evidence/WRASAL-0013-prompt-fragments.txt",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-validator-run",
+      "type": "validator_run",
+      "attribution": "Arena external execution worker",
+      "source": "npm ci && npm run validate:control-plane -- --report evidence/WRASAL-0013-validation.json",
+      "observed_result": "Repository-pinned control-plane validator passed with 869 checks against the updated control-plane records (projects, status vocabulary, all work-order JSON records including WRASAL-0013 with 6 evidence entries), validator self-tests passed (npm test), and machine-readable validation evidence was written to evidence/WRASAL-0013-validation.json.",
+      "reference": "evidence/WRASAL-0013-validation.json",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-git-commit",
+      "type": "git_commit_reference",
+      "attribution": "Arena external execution worker",
+      "source": "git commit on branch arena/7c7845f4-wrasal-control",
+      "observed_result": "Commit 511078c9fcd4c074c4b2fefa8ff48889c754f6f4 anchors the WRASAL-0013 supplemental records (evidence/GLOBAL-VISUAL-STANDARD-v001-02-FULL-BODY.webp, evidence/WRASAL-0013-prompt-fragments.txt, evidence/WRASAL-0013-validation.json, work_orders/WRASAL-0013.json) in local Git history, supplementing WRASAL-0011/0012 without modifying canonical acceptance.",
+      "reference": "511078c9fcd4c074c4b2fefa8ff48889c754f6f4",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-remote-push",
+      "type": "git_remote_push",
+      "attribution": "Arena external execution worker",
+      "source": "git push origin arena/7c7845f4-wrasal-control and git ls-remote origin",
+      "observed_result": "The branch arena/7c7845f4-wrasal-control was pushed to origin (https://github.com/wrasalmedia-rgb/wrasal-control.git); the remote reference refs/heads/arena/7c7845f4-wrasal-control was independently verified via git ls-remote at 511078c9fcd4c074c4b2fefa8ff48889c754f6f4. No pull request was merged and canonical acceptance remains pending.",
+      "reference": "refs/heads/arena/7c7845f4-wrasal-control",
+      "result": "pass"
+    },
+    {
+      "id": "wrasal-0013-review-only-pr",
+      "type": "github_pr_creation",
+      "attribution": "Arena external execution worker",
+      "source": "gh pr view 6 and gh api repos/wrasalmedia-rgb/wrasal-control/pulls/6",
+      "observed_result": "Review-only pull request #6 (https://github.com/wrasalmedia-rgb/wrasal-control/pull/6) remains OPEN from arena/7c7845f4-wrasal-control into main and now includes WRASAL-0013 (HEAD 511078c9fcd4c074c4b2fefa8ff48889c754f6f4). The PR was not merged, no approval was claimed, and canonical acceptance remains pending.",
+      "reference": "https://github.com/wrasalmedia-rgb/wrasal-control/pull/6",
+      "result": "pass"
+    }
+  ],
+  "canonical_state_impact": {
+    "repository_control_records": "changed in working tree under WRASAL-0013 authority",
+    "wrasal_runtime_world_state": "none",
+    "canonical_acceptance_promotion": "not performed"
+  },
+  "next_candidate": "If authorized, human reviewers ratify the GLOBAL VISUAL STANDARD v001 concept record (including this supplemental visual evidence) and decide in a separate S5 decision whether it becomes recognized WRASAL canon; canonical acceptance remains pending."
+}

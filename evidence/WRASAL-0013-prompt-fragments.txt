@@ -1,0 +1,29 @@
+GLOBAL VISUAL STANDARD v001 — prompt fragments (supplemental provenance evidence)
+=================================================================
+Source: fragments pasted in conversation, linked to concept
+concepts/GLOBAL-VISUAL-STANDARD-v001.md (Card 02 full body, Card 03 lighting 1,
+Card 07 texture swatches). Not part of the canonical concept record itself;
+stored as provenance only. Canonical acceptance remains pending.
+
+--- System color palette (badge: "Black basalt • Red grass • Orange flare") ---
+#0E0E10   black basalt / deep shadow base
+#1C1C1E   dark volcanic ground
+#8B1E1E   blood-red dry grass / red key light
+#E6491D   warm orange-red prism flare
+#EAEAEA   raw skin highlights / desaturated fill
+
+--- Card 03 — LIGHTING 1 (face in red, chiaroscuro) ---
+extreme close-up portrait of a man's face, half of face in deep shadow,
+other half lit with intense directional red light, sweat and skin texture
+visible, serious intense stare, pure black background, high contrast
+chiaroscuro, cinematic --ar 1:1
+
+--- Card 07 — TEXTURE SWATCHES (4 materials, macro system) ---
+a) black cracked volcanic rock, rough porous texture, macro detail
+b) wrinkled deep red fabric, heavy woven texture, folds and shadows
+c) close-up raw human skin texture, pores, sweat, unretouched
+d) dark red dry grass, wiry texture, growing from black ash soil
+
+--- Usage rule ---
+Swap [SUBJECT] with talent brief. Keep lighting language identical across
+cards for consistency.
