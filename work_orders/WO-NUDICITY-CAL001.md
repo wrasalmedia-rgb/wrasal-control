@@ -6,7 +6,7 @@ VERSION: v001
 
 CREATED_ON: 2026-11-11
 
-STATUS: BLOCKED AT G0 — MODEL SELECTION COMPLETE, PIPELINE VALIDATED ON STAND-IN, SOURCE FRAME NOT PRESENT (canonical_acceptance: pending)
+STATUS: BLOCKED AT G0 ON SOURCE DELIVERY ONLY — MODEL SELECTION APPROVED (C3-PLATE), CONSENT SCOPE CONFIRMED, PIPELINE VALIDATED ON STAND-IN, SOURCE FRAME NOT YET ATTACHED (canonical_acceptance: pending)
 
 PROJECT: NUDICITY (WRASAL Media — fine-art photographic production; Chapter III "AFTER DARK")
 
@@ -25,22 +25,25 @@ AUTHORITATIVE_INPUTS:
 - missions/WO-NUDICITY-CAL001/evidence/environment_probe.json (observed environment and egress evidence)
 
 DEPENDENCIES:
-- O1 (BLOCKS G0) — Delivery of the source frame 8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg into the execution environment. Not present: a whole-filesystem search returned zero JPEG files outside system directories, and a Google Drive search across all drives including trashed items returned only one unrelated JPEG.
-- O2 (BLOCKS G0) — Written model consent scope confirming coverage of AI-assisted edits and stating any limits on third-party processing. Not supplied with the dispatch.
-- O3 (BLOCKS G1 GAP) — Written retention and licence statement for the Arena-native image provider, if the Creative Director requires the source frame to be sent to that provider. Note the selected route uploads no source pixels, so this is required only if the frame itself may be transmitted.
-- O4 (BLOCKS G2 on the real frame) — Operator-authored subject seed rectangles and the window opening rectangle, to be entered in config/cal001_mask_config.template.json.
-- O5 (G4) — NUDICITY Creative Director approval of the model selection and of the final composite.
+- O1 (BLOCKS G0 — ONLY REMAINING BLOCKER) — Delivery of the source frame 8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg into the execution environment. Not present: a whole-filesystem search returned zero JPEG files outside system directories, and a Google Drive search across all drives including trashed items returned only one unrelated JPEG. Route chosen 2026-11-11: attach the file to the Arena conversation.
+- O2 (CLOSED 2026-11-11) — Model consent scope. The NUDICITY Creative Director confirmed the consent covers AI-assisted edits AND third-party processing.
+- O3 (CLOSED 2026-11-11 BY INFORMED DECISION) — Retention and licence statement for the Arena-native image provider. The disclosure gap was documented in model_inventory.md and qa_report.md before the C3-PLATE approval was given. The selected route uploads no source pixels, so the provider never holds the source frame.
+- O4 (BLOCKS G2 on the real frame) — Operator-authored subject seed rectangles and the window opening rectangle, to be entered in config/cal001_mask_config.template.json. Actionable the moment the frame is attached.
+- O5 (G4) — NUDICITY Creative Director approval of the final composite.
 
-CURRENT_TASK: G0 — deliver the source frame and the consent scope (O1, O2). The selection, the pipeline and the dry-run are complete and require no further work before the source arrives.
+CURRENT_TASK: G0 source delivery — await the attached source frame (O1), then author the seed rectangles (O4) and run the single-command source-frame pipeline: PLATE=<plate> bash missions/WO-NUDICITY-CAL001/scripts/run_source_frame.sh <source.jpeg>. The selection, the consent element, the pipeline and the dry-run are complete and require no further work before the source arrives.
 
 ACCEPTANCE:
-- G0 Privacy/consent — PASS before any external inference. Currently BLOCKED.
-- G1 Model eligibility — PASS with a documented open gap (the Arena-native image tool exposes no model id, version, provider, licence or retention policy in its interface or result payload).
+- G0 Privacy/consent — consent element PASS (scope confirmed 2026-11-11); source-lock steps blocked only on source delivery (O1). PASS required before any external inference.
+- G1 Model eligibility — PASS. Nine candidate families inventoried against observed evidence; the Arena-native image tool exposes no model id, version, provider, licence or retention policy in its interface or result payload, and that gap was disclosed before the Creative Director approved C3-PLATE on 2026-11-11, closing it by informed decision rather than by verification.
+- G4 Human approval — selection approved 2026-11-11 (C3-PLATE, with C4-LOCAL as runner-up); approval of the creative result still pending because the composite does not yet exist.
 - G2 Subject pixel integrity — zero modified pixels inside the protected core mask; feathering strictly outside the protected region. PASS on the dry-run (0 changed pixels, max |delta| = 0, 0 protected pixels covered by the feather band).
 - G3 Visual coherence — no halos, doubled limbs, false contact shadows or implausible light; window geometry preserved. PASS on the dry-run (0 new hard vertical seams, edge-strength delta +3.23 of 6.0 allowed, rim delta -6.33 of 10.0 allowed, window alignment residual dx 0 px / dy 0 px).
-- G4 Human approval — Creative Director explicitly approves or requests revisions. PENDING.
+- G4 Human approval — Creative Director explicitly approves or requests revisions. Selection approved 2026-11-11; creative-result approval PENDING (the composite does not yet exist).
 - Deliverables produced: model_inventory.md, selection_matrix.csv, run_manifest.json, qa_report.md, dryrun/ artefacts, evidence/environment_probe.json, scripts/, config/cal001_mask_config.template.json.
 - Deliverables withheld: CAL001_background_test.png (permitted only if G0 and G1 pass), CAL001_subject_mask.png and CAL001_subject_diff.png (require the source frame).
+- One-command source-frame run: scripts/run_source_frame.sh performs the source lock (private read-only copy + SHA-256), the mask, the composite and the independent verification, refuses an uncompleted config, exits non-zero on any G2/G3 failure, and never writes to the source file.
+- Pinned environment: requirements.lock.txt plus scripts/bootstrap_env.sh. /home/user/.venv is excluded from Arena session snapshot persistence and is removed between session turns (observed during this work order); the bootstrap restores the exact versions the dry-run artefacts were produced with.
 - Control-plane validation: npm test PASS.
 
 DECISIONS:
@@ -88,3 +91,6 @@ EVIDENCE:
 - missions/WO-NUDICITY-CAL001/scripts/audit_editor_probe.py
 - missions/WO-NUDICITY-CAL001/scripts/probe_environment.py
 - missions/WO-NUDICITY-CAL001/scripts/build_manifest.py
+- missions/WO-NUDICITY-CAL001/scripts/run_source_frame.sh
+- missions/WO-NUDICITY-CAL001/scripts/bootstrap_env.sh
+- missions/WO-NUDICITY-CAL001/requirements.lock.txt

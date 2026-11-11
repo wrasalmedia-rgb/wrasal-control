@@ -1,10 +1,12 @@
 # WO-NUDICITY-CAL001 — First Edit Model Selection & Calibration
 
-**Status:** 🛑 BLOCKED at G0 — the source frame is not present in the execution
-environment. The model selection and the background-only editing pipeline are
-complete and validated on a non-sensitive synthetic stand-in; the single
-permitted source-frame edit has not been performed and no private photograph
-was transmitted to any service.
+**Status:** 🛑 BLOCKED at G0 **on source delivery only** — the source frame is not
+yet attached to the session. The model selection was approved (C3-PLATE) and the
+consent scope was confirmed (covers AI-assisted edits and third-party
+processing) on 2026-11-11. The background-only editing pipeline is complete and
+validated on a non-sensitive synthetic stand-in; the single permitted
+source-frame edit has not been performed and no private photograph was
+transmitted to any service.
 
 **Creative brief:** Chapter III — AFTER DARK
 **Owner / approval authority:** NUDICITY Creative Director
@@ -48,7 +50,26 @@ Two properties fall out of this design:
 2. **No source pixels leave the sandbox.** The generator receives a text prompt
    and numeric geometry; it never receives the frame.
 
-## Runbook (once O1–O4 in `qa_report.md` §7 are met)
+## Runbook (once O1 and O4 in `qa_report.md` §7 are met)
+
+**One command does the whole source-frame run** — source lock, mask, composite
+and independent verification — and refuses to run against an uncompleted
+config:
+
+```sh
+cd missions/WO-NUDICITY-CAL001
+PLATE=<generated_plate.png> bash scripts/run_source_frame.sh <path_to_source.jpeg>
+```
+
+`/home/user/.venv` is excluded from Arena session snapshot persistence and is
+removed between session turns. Restore it first with:
+
+```sh
+bash missions/WO-NUDICITY-CAL001/scripts/bootstrap_env.sh
+```
+
+<details>
+<summary>Underlying steps, run individually</summary>
 
 ```sh
 cd missions/WO-NUDICITY-CAL001/scripts
@@ -94,6 +115,8 @@ $P build_manifest.py
 compositor writes `CAL001_after.png` and the Creative Director promotes it to
 the briefed filename after human approval.
 
+</details>
+
 ## Reproducing the dry-run from scratch
 
 ```sh
@@ -121,7 +144,7 @@ $P build_manifest.py
 
 ## Environment
 
-Python 3.11.2 in `/home/user/.venv` with `numpy 2.4.6`,
-`opencv-python-headless 5.0.0`, `Pillow 13.0.0`, `SciPy 1.17.1`,
-`matplotlib 3.11.2`. No GPU. No ComfyUI. No model weights obtainable — see
-`model_inventory.md` §1.
+Python 3.11.2 with `numpy 2.4.6`, `opencv-python-headless 5.0.0.93`,
+`Pillow 13.0.0`, `SciPy 1.17.1`, `matplotlib 3.11.2` — pinned in
+`requirements.lock.txt` and restored by `scripts/bootstrap_env.sh`. No GPU. No
+ComfyUI. No model weights obtainable — see `model_inventory.md` §1.

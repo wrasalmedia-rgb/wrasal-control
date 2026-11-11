@@ -75,6 +75,9 @@ def main() -> None:
         artefact("scripts/audit_editor_probe.py", "editor direct-route auditor", "code", "repository"),
         artefact("scripts/probe_environment.py", "environment prober", "code", "repository"),
         artefact("scripts/build_manifest.py", "manifest builder", "code", "repository"),
+        artefact("scripts/run_source_frame.sh", "one-command source-frame runner", "code", "repository"),
+        artefact("scripts/bootstrap_env.sh", "pinned environment bootstrap", "code", "repository"),
+        artefact("requirements.lock.txt", "pinned environment lockfile", "code", "repository"),
     ]
 
     # Source-frame artefacts that the gate conditions did not permit producing.
@@ -144,11 +147,28 @@ def main() -> None:
         "artifacts": artefacts,
         "withheld_artifacts": withheld,
         "gates": {
-            "G0_privacy_consent": "blocked",
-            "G1_model_eligibility": "pass_with_open_documentation_gap",
-            "G2_subject_pixel_integrity": "pass (dry-run)",
-            "G3_visual_coherence": "pass (dry-run)",
-            "G4_human_approval": "pending",
+            "G0_privacy_consent": ("blocked on source delivery only - consent scope "
+                                    "confirmed 2026-11-11 (covers AI-assisted edits and "
+                                    "third-party processing); the source-lock steps "
+                                    "(private read-only copy + SHA-256) await the frame"),
+            "G1_model_eligibility": ("pass - nine candidate families inventoried against "
+                                     "observed evidence; the provider disclosure gap was "
+                                     "disclosed before the C3-PLATE approval of 2026-11-11 "
+                                     "and is closed by that informed decision"),
+            "G2_subject_pixel_integrity": "pass (dry-run, 9/9 checks, 0 changed protected pixels)",
+            "G3_visual_coherence": "pass (dry-run, 0 new hard seams, window residual 0 px)",
+            "G4_human_approval": ("partial - model selection approved 2026-11-11; approval "
+                                   "of the creative result pending because the source "
+                                   "composite does not yet exist"),
+        },
+        "reproducibility": {
+            "environment": "requirements.lock.txt",
+            "bootstrap": "scripts/bootstrap_env.sh",
+            "note": ("/home/user/.venv is excluded from Arena session snapshot persistence "
+                     "and is removed between session turns (observed during this work "
+                     "order). The lockfile pins the exact versions the dry-run artefacts "
+                     "were produced with."),
+            "source_frame_runner": "scripts/run_source_frame.sh",
         },
     }
 

@@ -251,13 +251,43 @@
       "stage": "code"
     },
     {
-      "bytes": 9220,
+      "bytes": 10927,
       "note": "",
       "path": "scripts/build_manifest.py",
       "present": true,
       "provenance": "repository",
       "role": "manifest builder",
-      "sha256": "241fb46818dcb3156064ac08af9e08f6ab08787ece176bd46f14ed5979fdc2e2",
+      "sha256": "340a848ed702cc1a26500dc350f70f1725e018ffac886df886643a369fae30f3",
+      "stage": "code"
+    },
+    {
+      "bytes": 4070,
+      "note": "",
+      "path": "scripts/run_source_frame.sh",
+      "present": true,
+      "provenance": "repository",
+      "role": "one-command source-frame runner",
+      "sha256": "c306909858e473c58e3a27c4da692ece1eb238e153485d7e9c2a19d7777d3f0e",
+      "stage": "code"
+    },
+    {
+      "bytes": 1315,
+      "note": "",
+      "path": "scripts/bootstrap_env.sh",
+      "present": true,
+      "provenance": "repository",
+      "role": "pinned environment bootstrap",
+      "sha256": "6c79660ab32a9b5b82085040db72951217dc51a094bdf5d9136204ee21e0e896",
+      "stage": "code"
+    },
+    {
+      "bytes": 818,
+      "note": "",
+      "path": "requirements.lock.txt",
+      "present": true,
+      "provenance": "repository",
+      "role": "pinned environment lockfile",
+      "sha256": "74236543eafcf7065f20afb7e8ff874a029e70a304d21edfe85b2072672ced50",
       "stage": "code"
     }
   ],
@@ -272,13 +302,13 @@
     "workspace_venv": "/home/user/.venv"
   },
   "gates": {
-    "G0_privacy_consent": "blocked",
-    "G1_model_eligibility": "pass_with_open_documentation_gap",
-    "G2_subject_pixel_integrity": "pass (dry-run)",
-    "G3_visual_coherence": "pass (dry-run)",
-    "G4_human_approval": "pending"
+    "G0_privacy_consent": "blocked on source delivery only - consent scope confirmed 2026-11-11 (covers AI-assisted edits and third-party processing); the source-lock steps (private read-only copy + SHA-256) await the frame",
+    "G1_model_eligibility": "pass - nine candidate families inventoried against observed evidence; the provider disclosure gap was disclosed before the C3-PLATE approval of 2026-11-11 and is closed by that informed decision",
+    "G2_subject_pixel_integrity": "pass (dry-run, 9/9 checks, 0 changed protected pixels)",
+    "G3_visual_coherence": "pass (dry-run, 0 new hard seams, window residual 0 px)",
+    "G4_human_approval": "partial - model selection approved 2026-11-11; approval of the creative result pending because the source composite does not yet exist"
   },
-  "generated_at_utc": "2026-11-11T06:48:36+00:00",
+  "generated_at_utc": "2026-11-11T08:08:27+00:00",
   "model": {
     "interface": "Arena-native image generation tool (generate_image)",
     "invocation_mode_used": "text-to-image plate generation (no input image uploaded)",
@@ -295,6 +325,12 @@
       "standin_synthesis": 20261111
     },
     "selected_role": "background plate generator"
+  },
+  "reproducibility": {
+    "bootstrap": "scripts/bootstrap_env.sh",
+    "environment": "requirements.lock.txt",
+    "note": "/home/user/.venv is excluded from Arena session snapshot persistence and is removed between session turns (observed during this work order). The lockfile pins the exact versions the dry-run artefacts were produced with.",
+    "source_frame_runner": "scripts/run_source_frame.sh"
   },
   "settings": {
     "composite": {

@@ -164,17 +164,20 @@ The route **has not** been run on the real source frame, because the source
 frame is absent from the environment and no consent or external-processing
 clearance record was supplied. See `qa_report.md`.
 
-### Open items the Creative Director must close
+### Open items — status as at 2026-11-11
 
-| # | Open item | Blocks |
+| # | Item | Status |
 |---|---|---|
-| O1 | Deliver the source frame `8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg` (1152 × 1536) into the sandbox | G0, and every source-dependent artefact |
-| O2 | Supply the model consent scope: does it cover AI-assisted edits, and does it limit third-party processing? | G0 |
-| O3 | If C3 may receive the frame at all, obtain a written retention/licence statement for the Arena-native image provider | G1 gap |
-| O4 | Author the operator seed rectangles over the real frame and record the window opening rectangle (`config/cal001_mask_config.template.json` is ready to complete) | G2 on the real frame |
+| O1 | Deliver the source frame `8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg` (1152 × 1536) into the sandbox | ⏳ **Open** — route chosen: attach it to the Arena conversation |
+| O2 | Model consent scope: does it cover AI-assisted edits, and does it limit third-party processing? | ✅ **Closed** — covers AI-assisted edits **and** third-party processing |
+| O3 | Written retention/licence statement for the Arena-native image provider | ✅ **Closed by informed decision** — the gap was disclosed here and in `qa_report.md` §1/§3 *before* the Creative Director approved C3-PLATE on 2026-11-11. The selected route uploads no source pixels, so the provider never holds the source frame; the statement would only be required if the frame itself were to be transmitted |
+| O4 | Author the operator seed rectangles over the real frame and record the window opening rectangle (`config/cal001_mask_config.template.json` is ready to complete) | ⏳ **Open** — actionable the moment the frame is attached |
 
-Note on O3: the selected route deliberately uploads **no source pixels**, which
-neutralises the retention question for the source image itself. A provider
-statement is still required if the Creative Director wants the frame to be sent
-to the provider at all, or wants the plate-generation step to be treated as
-in-scope third-party processing.
+### Reproducibility note
+
+`/home/user/.venv` is excluded from Arena session snapshot persistence and is
+removed between session turns — observed during this work order. The
+environment is therefore pinned in `requirements.lock.txt` and restored with
+`scripts/bootstrap_env.sh`, which re-creates the exact versions the dry-run
+artefacts were produced with. Re-running the pipeline with those pins
+reproduces byte-identical mask and composite outputs.

@@ -9,7 +9,7 @@
 
 ## 1. Verdict
 
-> ## 🛑 BLOCKED — at gate G0
+> ## 🛑 BLOCKED — at gate G0 — awaiting one thing: the source frame
 >
 > **The source frame is not present in the execution environment.**
 > `8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg` (1152 × 1536) could not be
@@ -31,6 +31,19 @@
 > independent verification: **9 / 9 integrity and coherence checks pass, 0
 > modified pixels inside the protected region.** The pipeline is validated and
 > ready; it is the *input* that is missing.
+>
+> ### Resolved on 2026-11-11 (Creative Director)
+>
+> | Item | Answer | Effect |
+> |---|---|---|
+> | Model selection | **C3-PLATE approved** (winner; C4-LOCAL retained as runner-up) | G1 selection closed |
+> | Model consent scope | **Covers AI-assisted edits and third-party processing** | G0 consent element closed |
+> | Provider retention / licence gap | Accepted by the approval above, with the gap disclosed in `model_inventory.md` §3 and in §1 of this report *before* the approval was given | G1 documentation gap closed by informed decision |
+> | Source delivery | **To be attached to the Arena conversation** | ⏳ The only remaining blocker |
+>
+> **G0 is therefore blocked on source delivery alone.** Once the frame is
+> attached, `scripts/run_source_frame.sh` executes the source lock, the mask,
+> the composite and the independent verification in one command.
 
 ---
 
@@ -38,11 +51,11 @@
 
 | Gate | Result | Evidence |
 |---|---|---|
-| **G0 Privacy / consent** | 🛑 **BLOCKED** | Source frame absent from the sandbox and from Drive → cannot copy it to a read-only location, cannot record its SHA-256, cannot verify consent scope attached to the frame. No consent record covering AI-assisted edits or third-party processing was supplied with the dispatch. |
-| **G1 Model eligibility** | ⚠️ **PASS with an open documentation gap** | Seven candidate families inventoried and probed (`model_inventory.md`). Two are eligible. The selected editor **does not expose a model id, version, provider, licence or retention policy** — its tool result returns only `{file_path, status}`. Recorded as an open gap, not as an assertion. |
+| **G0 Privacy / consent** | 🛑 **BLOCKED on source delivery only** | *Consent element ✅ closed 2026-11-11:* the Creative Director confirmed the model consent scope covers AI-assisted edits **and** third-party processing. *Remaining:* the source frame is absent from the sandbox and from Drive → cannot yet copy it to a private read-only location or record its SHA-256 (the two source-lock steps). |
+| **G1 Model eligibility** | ✅ **PASS** | Nine candidate families inventoried and probed (`model_inventory.md`); two eligible. The Arena-native generator **does not expose a model id, version, provider, licence or retention policy** — its tool result returns only `{file_path, status}`. That gap was disclosed in `model_inventory.md` §3 and in §1/§3 of this report **before** the Creative Director selected C3-PLATE on 2026-11-11 with the gap disclosed, so it is closed by informed decision rather than by verification. |
 | **G2 Subject pixel integrity** | ✅ **PASS (dry-run)** | `dryrun/dryrun_verification.json` — 9/9 checks. `changed_pixels_inside_protected = 0`, `max_abs_delta_in_protected = 0`, `feather_pixels_inside_protected = 0`, `changed_pixels_outside_edit_region = 0`, `changed_pixels_in_window = 0`, `subject_pixels_outside_protected = 0`. |
 | **G3 Visual coherence** | ✅ **PASS (dry-run)** | `new_hard_vertical_seams = 0`; boundary edge-strength delta `+3.23` (threshold 6.0); rim-luma delta `-6.33` (threshold 10.0); window geometry residual `dx = 0 px, dy = 0 px`; drapery column coverage 0.70 (left) / 0.94 (right); background mean-luma drift 29.7 vs 28.9 — i.e. the replacement reads as the same scene under the same light. |
-| **G4 Human approval** | ⏳ **PENDING** | Awaiting the NUDICITY Creative Director. Nothing was approved implicitly by the pipeline passing. |
+| **G4 Human approval** | ⏳ **PARTIAL — awaiting final composite** | *Selection ✅ approved 2026-11-11* (C3-PLATE). The G4 approval of the **creative result** still requires the source-frame composite, which does not yet exist. Nothing was approved implicitly by the pipeline passing. |
 
 ### G2 detail — independent verification
 
@@ -147,6 +160,12 @@ alpha is produced alongside it, so the masking route can be scored numerically.
 | Plate→frame window alignment residual | dx = 0 px, dy = 0 px |
 | Plate window suppression | performed (the plate's own window is inpainted away so the preserved source window is the only one) |
 
+**Determinism.** The full pipeline was re-run from scratch in a freshly rebuilt
+environment (`/home/user/.venv` re-created from `requirements.lock.txt`) and
+**all 29 tracked artefacts came back byte-identical** — 29 identical SHA-256
+values, 0 changed. The mask and composite stages are therefore reproducible,
+not merely repeatable.
+
 ---
 
 ## 5. Defects found and corrected during the dry-run
@@ -193,14 +212,28 @@ was created, and no private photograph was transmitted to any service.
 
 ## 7. What is required to unblock
 
-| # | Requirement | Owner | Blocks |
+| # | Requirement | Owner | Status |
 |---|---|---|---|
-| **O1** | Deliver `8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg` (1152 × 1536) into the sandbox, or authorise a retrieval path for it | Work order owner | G0, all source-dependent artefacts |
-| **O2** | Supply the model consent scope: does it cover AI-assisted edits, and does it limit third-party processing? | NUDICITY Creative Director | G0 |
-| **O3** | Confirm that **no source pixels** are to be uploaded to any provider. The selected route already satisfies this (text-to-image plate only). If the frame itself may be sent to the provider, a written retention/licence statement is required first | NUDICITY Creative Director | G1 gap |
-| **O4** | Author the operator seed rectangles over the real frame and record the window opening rectangle | NUDICITY Creative Director / retoucher | G2 on the real frame |
+| **O1** | Deliver `8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg` (1152 × 1536) into the sandbox — **by attaching it to the Arena conversation** (route chosen 2026-11-11) | Work order owner | ⏳ **Open — the only blocker** |
+| **O2** | Model consent scope: does it cover AI-assisted edits, and does it limit third-party processing? | NUDICITY Creative Director | ✅ **Closed 2026-11-11 — covers AI-assisted edits and third-party processing** |
+| **O3** | Written retention/licence statement for the Arena-native image provider | NUDICITY Creative Director | ✅ **Closed 2026-11-11** — the gap was disclosed in `model_inventory.md` §3 and §1 of this report *before* the C3-PLATE approval was given, so it is closed by informed decision rather than by verification. The selected route uploads no source pixels, so the provider never holds the source frame |
+| **O4** | Author the operator seed rectangles over the real frame and record the window opening rectangle (`config/cal001_mask_config.template.json` is ready to complete) | NUDICITY Creative Director / retoucher | ⏳ Open — becomes actionable the moment the frame is attached |
+| **O5** | G4 approval of the final composite | NUDICITY Creative Director | ⏳ Open — the composite does not yet exist |
 
-### The exact command sequence that runs once O1–O4 are met
+### The whole source-frame run is now one command
+
+Once O1 and O4 are met, the source lock (private read-only copy + SHA-256), the
+mask, the composite and the independent verification all run together. The
+script refuses to run against an uncompleted config and exits non-zero if any
+G2 or G3 check fails. It never writes to the source file.
+
+```sh
+cd missions/WO-NUDICITY-CAL001
+PLATE=<generated_plate.png> bash scripts/run_source_frame.sh <path_to_source.jpeg>
+```
+
+<details>
+<summary>Underlying steps, if you prefer to run them individually</summary>
 
 ```sh
 cd missions/WO-NUDICITY-CAL001/scripts
@@ -227,24 +260,34 @@ $P verify_integrity.py --source <source> \
                        --out ../dryrun/CAL001_verification.json
 ```
 
+</details>
+
 ---
 
 ## 8. Approval request
 
-**To the NUDICITY Creative Director:**
+**To the NUDICITY Creative Director — decisions taken 2026-11-11:**
 
-1. **Approve or amend the model selection** — C3-PLATE (92/100) as winner, with
-   C4-LOCAL (83/100) as runner-up. If you consider the Arena-native provider's
-   undisclosed retention and licence terms disqualifying (O3), the runner-up
-   executes with zero egress but a materially weaker result.
-2. **Confirm the privacy posture** — the selected route uploads no source pixels
-   (O3).
-3. **Note that nothing has been approved implicitly.** G4 remains PENDING. The
-   dry-run passed its own gates on a synthetic stand-in; that is a statement
-   about the *pipeline*, not about the *creative result*, which does not yet
-   exist.
-4. **Release the source frame and the consent scope** (O1, O2) to schedule the
-   single permitted source-frame edit.
+1. ✅ **Model selection approved** — C3-PLATE (92/100) as winner, with C4-LOCAL
+   (83/100) retained as runner-up. The Arena-native provider's undisclosed
+   retention and licence terms (O3) were disclosed before this approval and are
+   accepted; note again that the selected route uploads no source pixels.
+2. ✅ **Privacy posture confirmed** — text-to-image plate only; no source
+   pixels leave the sandbox.
+3. ✅ **Consent scope confirmed** — the model consent covers AI-assisted edits
+   and third-party processing, which closes the G0 consent element.
+4. ⏳ **Still needed from you:**
+   - the source frame attached to the Arena conversation (O1) — the only
+     remaining blocker;
+   - the operator seed rectangles and window rectangle over the real frame
+     (O4), which can be authored the moment the frame is attached;
+   - G4 approval of the resulting composite (O5).
 
-**Status returned to Arena intake: BLOCKED at G0, with the pipeline validated
-and the selection documented.**
+**Nothing was approved implicitly.** The dry-run passed its own gates on a
+synthetic stand-in; that is a statement about the *pipeline*, not about the
+*creative result*, which does not yet exist. G4 for the creative result remains
+PENDING.
+
+**Status returned to Arena intake: BLOCKED at G0 on source delivery alone, with
+the selection approved, the consent element closed, and the pipeline validated
+and reproducible in one command.**
