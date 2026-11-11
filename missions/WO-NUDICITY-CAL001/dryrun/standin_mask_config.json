@@ -1,0 +1,52 @@
+{
+  "provenance": "WO-NUDICITY-CAL001 dry-run; synthetic non-sensitive stand-in frame",
+  "subject_seed_rects": [
+    {
+      "label": "figure_A",
+      "x0": 262,
+      "y0": 280,
+      "x1": 548,
+      "y1": 1060
+    },
+    {
+      "label": "figure_B",
+      "x0": 548,
+      "y0": 390,
+      "x1": 806,
+      "y1": 1080
+    }
+  ],
+  "window_rect": {
+    "x0": 548,
+    "y0": 196,
+    "x1": 934,
+    "y1": 768
+  },
+  "window_guard_px": 10,
+  "edit_region_rect": {
+    "x0": 0,
+    "y0": 0,
+    "x1": 1152,
+    "y1": 1180
+  },
+  "inner_shrink_px": 26,
+  "outer_expand_px": 46,
+  "grabcut_iterations": 6,
+  "refine_band_px": 14,
+  "core_erode_px": 12,
+  "feather_band_px": 10,
+  "min_area_frac": 0.004,
+  "safety_dilate_px": 8,
+  "left_curtain_rect": {
+    "x0": 36,
+    "y0": 0,
+    "x1": 536,
+    "y1": 1180
+  },
+  "right_curtain_rect": {
+    "x0": 946,
+    "y0": 0,
+    "x1": 1152,
+    "y1": 1180
+  }
+}

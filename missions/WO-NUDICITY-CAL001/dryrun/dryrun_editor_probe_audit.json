@@ -1,0 +1,22 @@
+{
+  "changed_pixel_fraction_of_protected": 0.997586,
+  "changed_pixels_in_core": 411703,
+  "changed_pixels_in_protected": 462837,
+  "changed_pixels_in_subject": 307759,
+  "editor_output": "/home/user/wrasal-control/missions/WO-NUDICITY-CAL001/dryrun/dryrun_editor_editmode_probe.png",
+  "editor_output_size": {
+    "height": 1536,
+    "width": 1152
+  },
+  "g2_direct_route_verdict": "fail",
+  "max_abs_delta_in_protected": 192,
+  "mean_abs_delta_in_protected": 8.293,
+  "note": "The editor has no mask input, so it re-renders the whole frame. The direct route therefore cannot satisfy G2. The selected route uses the editor only to generate a background plate and restores the protected region from the source with a local compositor.",
+  "route": "Arena-native editor applied directly to the frame (no local compositor)",
+  "source": "/home/user/wrasal-control/missions/WO-NUDICITY-CAL001/dryrun/standin_source.png",
+  "source_size": {
+    "height": 1536,
+    "width": 1152
+  },
+  "subject_pixels": 307997
+}

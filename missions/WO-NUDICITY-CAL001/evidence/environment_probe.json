@@ -1,0 +1,112 @@
+{
+  "work_order_id": "WO-NUDICITY-CAL001",
+  "purpose": "verifiable execution-environment inventory for the model-selection gate",
+  "host": {
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+    "machine": "x86_64",
+    "python": "3.11.2",
+    "venv_python": "/home/user/.venv/bin/python",
+    "nvidia_smi_present": false,
+    "gpu_available": false,
+    "comfyui_on_path": false
+  },
+  "installed_packages": {
+    "numpy": "2.4.6",
+    "opencv-python-headless": "5.0.0",
+    "Pillow": "13.0.0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "egress_probe": [
+    {
+      "host": "pypi.org",
+      "url": "https://pypi.org/simple/",
+      "purpose": "python package index",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "host": "files.pythonhosted.org",
+      "url": "https://files.pythonhosted.org/",
+      "purpose": "python package CDN",
+      "status": 404,
+      "reachable": true
+    },
+    {
+      "host": "registry.npmjs.org",
+      "url": "https://registry.npmjs.org/",
+      "purpose": "npm registry",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "host": "github.com",
+      "url": "https://github.com/",
+      "purpose": "source hosting + release metadata",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "host": "api.github.com",
+      "url": "https://api.github.com/",
+      "purpose": "release metadata API",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "host": "codeload.github.com",
+      "url": "https://codeload.github.com/",
+      "purpose": "source tarballs",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "host": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/",
+      "purpose": "raw file host",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    },
+    {
+      "host": "objects.githubusercontent.com",
+      "url": "https://objects.githubusercontent.com/",
+      "purpose": "release asset CDN",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    },
+    {
+      "host": "release-assets.githubusercontent.com",
+      "url": "https://release-assets.githubusercontent.com/",
+      "purpose": "release asset CDN",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    },
+    {
+      "host": "huggingface.co",
+      "url": "https://huggingface.co/",
+      "purpose": "model weight host (diffusion / SAM)",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    },
+    {
+      "host": "civitai.com",
+      "url": "https://civitai.com/",
+      "purpose": "model weight host (community)",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    },
+    {
+      "host": "storage.googleapis.com",
+      "url": "https://storage.googleapis.com/",
+      "purpose": "model weight host (mediapipe)",
+      "status": null,
+      "reachable": false,
+      "error": "URLError"
+    }
+  ]
+}

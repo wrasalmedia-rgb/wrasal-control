@@ -1,0 +1,50 @@
+{
+  "band_pixels": 344691,
+  "components": 1,
+  "core_pixels": 262482,
+  "core_subject_coverage": 0.951,
+  "ground_truth_pixels": 271979,
+  "image": "/home/user/wrasal-control/missions/WO-NUDICITY-CAL001/dryrun/standin_source.png",
+  "image_size": {
+    "height": 1536,
+    "width": 1152
+  },
+  "protected_false_negative_pixels": 0,
+  "protected_false_positive_pixels": 36018,
+  "protected_mask_iou": 0.883057,
+  "raw_false_negative_pixels": 483,
+  "raw_false_positive_pixels": 4718,
+  "raw_mask_iou": 0.981203,
+  "seed_rects": [
+    {
+      "label": "figure_A",
+      "x0": 262,
+      "x1": 548,
+      "y0": 280,
+      "y1": 1060
+    },
+    {
+      "label": "figure_B",
+      "x0": 548,
+      "x1": 806,
+      "y0": 390,
+      "y1": 1080
+    }
+  ],
+  "settings": {
+    "core_erode_px": 12,
+    "feather_band_px": 10,
+    "grabcut_iterations": 6,
+    "inner_shrink_px": 26,
+    "outer_expand_px": 46,
+    "refine_band_px": 14
+  },
+  "subject_bbox": {
+    "x0": 240,
+    "x1": 828,
+    "y0": 294,
+    "y1": 1081
+  },
+  "subject_pixel_coverage": 1.0,
+  "subject_pixels": 307997
+}

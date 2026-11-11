@@ -1,0 +1,24 @@
+{
+  "_comment": [
+    "TEMPLATE for the real CAL001 source frame (8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg).",
+    "This file is intentionally a template: the source frame was NOT present in the",
+    "execution environment, so no real subject seed rectangles could be authored.",
+    "A human operator must draw the seed rectangles over the real frame and record",
+    "the window opening rectangle before the masked run can be executed.",
+    "Coordinates are in source-frame pixel space; the source frame is 1152 x 1536."
+  ],
+  "provenance": "TEMPLATE - operator must complete against the delivered source frame",
+  "source_file": "8B9E1FE1-EE2E-49E6-A10E-375D1CAF4CEB.jpeg",
+  "source_sha256": null,
+  "subject_seed_rects": [],
+  "window_rect": null,
+  "window_guard_px": 10,
+  "edit_region_rect": null,
+  "inner_shrink_px": 26,
+  "outer_expand_px": 46,
+  "grabcut_iterations": 6,
+  "refine_band_px": 14,
+  "core_erode_px": 12,
+  "feather_band_px": 10,
+  "min_area_frac": 0.004
+}

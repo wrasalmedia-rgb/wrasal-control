@@ -1,0 +1,55 @@
+{
+  "aspect_ratio": "3:4",
+  "edit_region_rect": {
+    "x0": 0,
+    "x1": 1152,
+    "y0": 0,
+    "y1": 1180
+  },
+  "figure_seed_rects": [
+    {
+      "label": "figure_A",
+      "x0": 262,
+      "x1": 548,
+      "y0": 280,
+      "y1": 1060
+    },
+    {
+      "label": "figure_B",
+      "x0": 548,
+      "x1": 806,
+      "y0": 390,
+      "y1": 1080
+    }
+  ],
+  "left_curtain_rect": {
+    "x0": 36,
+    "x1": 536,
+    "y0": 0,
+    "y1": 1180
+  },
+  "note": "Seed rects stand in for the coarse operator-authored trimap that the same script consumes for a real source frame.",
+  "right_curtain_rect": {
+    "x0": 946,
+    "x1": 1152,
+    "y0": 0,
+    "y1": 1180
+  },
+  "standin_size": {
+    "height": 1536,
+    "width": 1152
+  },
+  "subject_union_bbox": {
+    "x0": 243,
+    "x1": 793,
+    "y0": 302,
+    "y1": 1073
+  },
+  "window_guard_px": 10,
+  "window_rect": {
+    "x0": 548,
+    "x1": 934,
+    "y0": 196,
+    "y1": 768
+  }
+}

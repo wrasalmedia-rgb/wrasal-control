@@ -1,0 +1,100 @@
+{
+  "after": "/home/user/wrasal-control/missions/WO-NUDICITY-CAL001/dryrun/dryrun_after.png",
+  "checks": [
+    {
+      "check": "frame_size_identical",
+      "detail": {
+        "after": [
+          1536,
+          1152,
+          3
+        ],
+        "source": [
+          1536,
+          1152,
+          3
+        ]
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2a_core_pixels_unmodified",
+      "detail": {
+        "changed_pixels_in_core": 0,
+        "core_pixels": 412794,
+        "max_abs_delta_in_core": 0
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2b_protected_region_unmodified",
+      "detail": {
+        "changed_pixels_in_protected": 0,
+        "max_abs_delta_in_protected": 0,
+        "protected_pixels": 463957
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2c_feather_strictly_outside_protected",
+      "detail": {
+        "feather_band_pixels": 41561,
+        "feather_pixels_inside_protected": 0
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2d_no_change_outside_edit_region",
+      "detail": {
+        "changed_pixels_outside_edit_region": 0
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2e_window_opening_preserved",
+      "detail": {
+        "changed_pixels_in_window": 0,
+        "max_abs_delta_in_window": 0,
+        "window_pixels": 220792
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G3a_no_new_hard_vertical_seams",
+      "detail": {
+        "columns": [],
+        "new_seam_count": 0
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G3b_no_halo_rim_at_subject_boundary",
+      "detail": {
+        "composite_boundary_edge_strength": 17.171,
+        "composite_near_minus_far_rim_luma": -6.805,
+        "edge_strength_delta": 3.232,
+        "edge_strength_delta_threshold": 6.0,
+        "rim_delta": -6.33,
+        "rim_delta_threshold": 10.0,
+        "source_boundary_edge_strength": 13.939,
+        "source_near_minus_far_rim_luma": -0.476
+      },
+      "result": "pass"
+    },
+    {
+      "check": "G2f_protected_region_covers_subject",
+      "detail": {
+        "subject_ground_truth_pixels": 271979,
+        "subject_pixels_outside_protected": 0
+      },
+      "result": "pass"
+    }
+  ],
+  "source": "/home/user/wrasal-control/missions/WO-NUDICITY-CAL001/dryrun/standin_source.png",
+  "summary": {
+    "failed": 0,
+    "passed": 9,
+    "total": 9
+  },
+  "verdict": "pass"
+}
