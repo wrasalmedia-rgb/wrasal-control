@@ -101,13 +101,13 @@
       "stage": "mask_build"
     },
     {
-      "bytes": 1078,
+      "bytes": 1145,
       "note": "",
       "path": "dryrun/dryrun_mask_metrics.json",
       "present": true,
       "provenance": "synthetic non-sensitive stand-in generated locally by scripts/synth_standin.py; no real person depicted",
       "role": "mask metrics vs ground truth",
-      "sha256": "4167f250cd3130dbf897540d47b5b1bdf8b883393f1d389d55d31643c7de57f4",
+      "sha256": "6c14530a717a5ce4e7b25929639549143dab01f886247d8ddaa975c5823b771c",
       "stage": "mask_build"
     },
     {
@@ -201,33 +201,33 @@
       "stage": "code"
     },
     {
-      "bytes": 9096,
+      "bytes": 9636,
       "note": "",
       "path": "scripts/build_mask.py",
       "present": true,
       "provenance": "repository",
       "role": "subject mask builder",
-      "sha256": "84b291a3fad21bece3327657d35af30820e40de5015b26e795653f97233e2be8",
+      "sha256": "b26a88b56b45453a1a468767452dba2a11dc7320d06328ef810416c7f818ec38",
       "stage": "code"
     },
     {
-      "bytes": 14679,
+      "bytes": 18318,
       "note": "",
       "path": "scripts/composite.py",
       "present": true,
       "provenance": "repository",
       "role": "background compositor",
-      "sha256": "8373d4d76fd3562d1c9e7015afb3d6b9471b6b7280422315634a66e484f636da",
+      "sha256": "048facafbffe02910592d694c6bb1b174174adf9db4ef27deee19e9fbe10d26d",
       "stage": "code"
     },
     {
-      "bytes": 8188,
+      "bytes": 9131,
       "note": "",
       "path": "scripts/verify_integrity.py",
       "present": true,
       "provenance": "repository",
       "role": "independent integrity verifier",
-      "sha256": "742082d922a597974d79d94463f5b9b495ae22efbec369b191a6a561adc5104f",
+      "sha256": "208aef04924b1f5dc1756f4c8da8c0779f04a24bc84767cfeee0975aea717b2d",
       "stage": "code"
     },
     {
@@ -308,7 +308,7 @@
     "G3_visual_coherence": "pass (dry-run, 0 new hard seams, window residual 0 px)",
     "G4_human_approval": "partial - model selection approved 2026-11-11; approval of the creative result pending because the source composite does not yet exist"
   },
-  "generated_at_utc": "2026-11-11T08:08:27+00:00",
+  "generated_at_utc": "2026-11-11T09:02:36+00:00",
   "model": {
     "interface": "Arena-native image generation tool (generate_image)",
     "invocation_mode_used": "text-to-image plate generation (no input image uploaded)",

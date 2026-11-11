@@ -51,6 +51,14 @@ def main() -> None:
           {"source": list(source.shape), "after": list(after.shape)})
 
     # ---- rebuild the protected region independently --------------------
+    # Radii are scaled the same way build_mask.py and composite.py scale them,
+    # so the verifier checks the geometry that was actually used.
+    reference_width = float(cfg.get("reference_width_px", 1152))
+    scale = max(w / reference_width, 0.25)
+
+    def S(value):
+        return max(1, int(round(float(value) * scale)))
+
     protected = subject.copy()
     window_mask = None
     wr = cfg.get("window_rect")
@@ -58,8 +66,14 @@ def main() -> None:
         window_mask = rect_mask((h, w), wr["x0"], wr["y0"], wr["x1"], wr["y1"])
         protected = np.maximum(protected, dilate(window_mask, int(cfg.get("window_guard_px", 10))))
 
-    core = erode(protected, int(cfg.get("core_erode_px", 12)))
-    band = dilate(protected, int(cfg.get("feather_band_px", 10)))
+    marker_masks = []
+    for marker in cfg.get("preserve_markers", []) or []:
+        m = rect_mask((h, w), marker["x0"], marker["y0"], marker["x1"], marker["y1"])
+        marker_masks.append(m)
+        protected = np.maximum(protected, m)
+
+    core = erode(protected, S(cfg.get("core_erode_px", 12)))
+    band = dilate(protected, S(cfg.get("feather_band_px", 10)))
     feather_band = np.logical_and(band > 0, protected == 0)
 
     # ---- G2a: core mask pixels are byte-identical ---------------------
@@ -102,6 +116,13 @@ def main() -> None:
               {"window_pixels": int(win.sum()),
                "changed_pixels_in_window": changed_win,
                "max_abs_delta_in_window": int(diff[win].max())})
+
+    # ---- G2g: provenance markers preserved byte-exact -------------------
+    if marker_masks:
+        changed_markers = int(sum(np.logical_and(changed, m > 0).sum() for m in marker_masks))
+        check("G2g_provenance_markers_preserved", changed_markers == 0,
+              {"markers": len(marker_masks),
+               "changed_pixels_inside_markers": changed_markers})
 
     # ---- G3a: no new hard vertical seams in the background -------------
     def column_profile(img):

@@ -32,11 +32,13 @@
     }
   ],
   "settings": {
+    "applied_radius_scale": 1.0,
     "core_erode_px": 12,
     "feather_band_px": 10,
     "grabcut_iterations": 6,
     "inner_shrink_px": 26,
     "outer_expand_px": 46,
+    "reference_width_px": 1152.0,
     "refine_band_px": 14
   },
   "subject_bbox": {

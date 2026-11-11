@@ -164,6 +164,15 @@ def main() -> None:
     seeds = cfg["subject_seed_rects"]
     iterations = cfg.get("grabcut_iterations", 6)
 
+    # Radii are authored against a reference frame width and scaled to the
+    # actual frame, so the same config behaves identically at 1152 px and on a
+    # larger frame instead of becoming proportionally too tight.
+    reference_width = float(cfg.get("reference_width_px", 1152))
+    scale = max(w / reference_width, 0.25)
+
+    def S(value: int) -> int:
+        return max(1, int(round(float(value) * scale)))
+
     mask = grabcut_union_with_rects(bgr, seeds, iterations)
     mask = select_subject_components(mask, seeds, cfg.get("min_area_frac", 0.004))
     mask = fill_holes(mask)
@@ -171,7 +180,7 @@ def main() -> None:
                             cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9)))
     mask = fill_holes(mask)
 
-    refined = refine_banded(bgr, mask, cfg.get("refine_band_px", 14))
+    refined = refine_banded(bgr, mask, S(cfg.get("refine_band_px", 14)))
     refined = select_subject_components(refined, seeds, cfg.get("min_area_frac", 0.004))
     refined = fill_holes(refined)
     raw_mask = refined
@@ -179,11 +188,11 @@ def main() -> None:
     # Safety dilation: the protected region must fully CONTAIN the subject.
     # Over-protection is safe (it only preserves more original pixels);
     # under-protection would let the composite touch a subject pixel.
-    safety = cfg.get("safety_dilate_px", 8)
+    safety = S(cfg.get("safety_dilate_px", 8))
     mask = dilate(raw_mask, safety) if safety > 0 else raw_mask.copy()
 
-    core = erode(mask, cfg.get("core_erode_px", 12))
-    band = dilate(mask, cfg.get("feather_band_px", 10))
+    core = erode(mask, S(cfg.get("core_erode_px", 12)))
+    band = dilate(mask, S(cfg.get("feather_band_px", 10)))
 
     out_dir = os.path.normpath(args.out_dir)
     os.makedirs(out_dir, exist_ok=True)
@@ -201,9 +210,11 @@ def main() -> None:
             "inner_shrink_px": cfg.get("inner_shrink_px", 26),
             "outer_expand_px": cfg.get("outer_expand_px", 46),
             "grabcut_iterations": cfg.get("grabcut_iterations", 6),
-            "refine_band_px": cfg.get("refine_band_px", 14),
-            "core_erode_px": cfg.get("core_erode_px", 12),
-            "feather_band_px": cfg.get("feather_band_px", 10),
+            "refine_band_px": S(cfg.get("refine_band_px", 14)),
+            "core_erode_px": S(cfg.get("core_erode_px", 12)),
+            "feather_band_px": S(cfg.get("feather_band_px", 10)),
+            "reference_width_px": reference_width,
+            "applied_radius_scale": round(scale, 4),
         },
         "subject_pixels": int((mask > 0).sum()),
         "core_pixels": int((core > 0).sum()),

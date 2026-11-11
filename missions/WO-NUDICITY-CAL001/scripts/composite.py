@@ -55,6 +55,65 @@ def detect_window(plate_rgb):
             "area_frac": round(frac, 5)}
 
 
+def detect_horizon(image_rgb):
+    """Row of the strongest horizontal scene transition (sea/sky, wall/floor).
+
+    Scores each row by how abruptly both luminance and the blue-red balance
+    change across it, which is far more stable than either cue alone.
+    """
+    h = image_rgb.shape[0]
+    gray = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2GRAY).astype(np.float32)
+    luma_row = gray.mean(axis=1)
+    br_row = (image_rgb[:, :, 2].astype(np.float32) - image_rgb[:, :, 0].astype(np.float32)).mean(axis=1)
+    score = np.abs(np.diff(luma_row)) + np.abs(np.diff(br_row))
+    score = cv2.GaussianBlur(score.reshape(-1, 1).astype(np.float32), (1, 41), 0)[:, 0]
+    lo, hi = int(h * 0.06), int(h * 0.66)
+    if hi <= lo:
+        return None
+    return int(np.argmax(score[lo:hi]) + lo)
+
+
+def fit_plate_by_horizon(plate_rgb, src_w, src_h, source_horizon_y):
+    """Fit the plate at 1:1 and align its horizon to the source horizon.
+
+    Scale is never used for alignment: zooming the plate would move its
+    horizon relative to the frame and distort the scene's proportions.
+    """
+    plate = plate_rgb
+    ph, pw = plate.shape[:2]
+    target_ratio = src_w / float(src_h)
+    if pw / float(ph) > target_ratio:
+        new_w = int(round(ph * target_ratio))
+        x0 = (pw - new_w) // 2
+        plate = plate[:, x0:x0 + new_w]
+    else:
+        new_h = int(round(pw / target_ratio))
+        y0 = (ph - new_h) // 2
+        plate = plate[y0:y0 + new_h, :]
+    plate = cv2.resize(plate, (src_w, src_h), interpolation=cv2.INTER_AREA)
+
+    detected = detect_horizon(plate)
+    alignment = {"mode": "uniform_fit", "detected_horizon": detected}
+    if detected is None or source_horizon_y is None:
+        return plate, alignment
+
+    max_shift = int(round(src_h * 0.12))
+    ty = float(np.clip(source_horizon_y - detected, -max_shift, max_shift))
+    matrix = np.array([[1.0, 0.0, 0.0], [0.0, 1.0, ty]], dtype=np.float64)
+    aligned = cv2.warpAffine(plate, matrix, (src_w, src_h),
+                             flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT_101)
+    after = detect_horizon(aligned)
+    alignment = {
+        "mode": "translation_only_horizon",
+        "source_horizon_y": int(source_horizon_y),
+        "plate_horizon_y_detected": int(detected),
+        "ty": round(ty, 2),
+        "aligned_horizon_y": int(after) if after is not None else None,
+        "horizon_residual_px": int(after - source_horizon_y) if after is not None else None,
+    }
+    return aligned, alignment
+
+
 def detect_drapery_columns(plate_rgb, band=(0.15, 0.75), min_amplitude=2.5):
     """Columns that carry vertical drapery-fold structure.
 
@@ -198,6 +257,15 @@ def main() -> None:
                                 window_rect["x1"], window_rect["y1"])
         protected = np.maximum(protected, dilate(window_mask, window_guard_px))
 
+    # ---- provenance markers must survive byte-exact ----------------------
+    # A watermark or AI-generation label is part of the frame's provenance and
+    # must never be painted over by a background replacement.
+    marker_masks = []
+    for marker in cfg.get("preserve_markers", []) or []:
+        m = rect_mask((h, w), marker["x0"], marker["y0"], marker["x1"], marker["y1"])
+        marker_masks.append(m)
+        protected = np.maximum(protected, m)
+
     # ---- edit region ------------------------------------------------------
     if edit_rect:
         edit_region = rect_mask((h, w), edit_rect["x0"], edit_rect["y0"],
@@ -206,10 +274,16 @@ def main() -> None:
         edit_region = np.full((h, w), 255, dtype=np.uint8)
 
     # ---- plate fitting ----------------------------------------------------
-    aligned, alignment = fit_plate_to_frame(plate, w, h, window_rect)
+    anchor = cfg.get("alignment_anchor", {"type": "window"})
+    if anchor.get("type") == "horizon":
+        aligned, alignment = fit_plate_by_horizon(plate, w, h, anchor.get("source_horizon_y"))
+    else:
+        aligned, alignment = fit_plate_to_frame(plate, w, h, window_rect)
 
     # ---- composite --------------------------------------------------------
-    band_px = int(cfg.get("feather_band_px", 10))
+    reference_width = float(cfg.get("reference_width_px", 1152))
+    radius_scale = max(w / reference_width, 0.25)
+    band_px = max(1, int(round(float(cfg.get("feather_band_px", 10)) * radius_scale)))
     alpha = outward_feather_alpha(protected, band_px)
 
     # alpha == 0 on every protected pixel (exact copy) and ramps to 1 across
@@ -317,6 +391,14 @@ def main() -> None:
             "window_pixels": int(win.sum()),
             "changed_pixels_inside_window": int((changed & win).sum()),
             "max_abs_diff_inside_window": int(dmap[win].max()),
+        }
+
+    if marker_masks:
+        g3["preserved_provenance_markers"] = {
+            "count": len(marker_masks),
+            "marker_pixels": int(sum((m > 0).sum() for m in marker_masks)),
+            "changed_pixels_inside_markers": int(sum(
+                np.logical_and(changed, m > 0).sum() for m in marker_masks)),
         }
 
     metrics["g3_coherence"] = g3
